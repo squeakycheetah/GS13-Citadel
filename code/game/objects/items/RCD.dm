@@ -23,6 +23,7 @@ RLD
 	throw_range = 5
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron=100000)
+	slot_flags = ITEM_SLOT_BELT //GS13 EDIT
 	req_access_txt = "11"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 50)
 	resistance_flags = FIRE_PROOF
