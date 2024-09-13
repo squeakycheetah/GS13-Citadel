@@ -4,7 +4,6 @@
 	value = 0 //ERP quirk
 	gain_text = "<span class='notice'>You feel absorbant.</span>"
 	lose_text = "<span class='notice'>You don't feel absorbant anymore.</span>"
-	category = CATEGORY_FOOD
 	mob_trait = TRAIT_WATER_SPONGE
 
 /datum/reagent/water/on_mob_add(mob/living/L, amount)
@@ -28,7 +27,7 @@
 			M.reagents.add_reagent(/datum/reagent/water, reac_volume/2)
 		if(method == VAPOR)
 			M.reagents.add_reagent(/datum/reagent/water, reac_volume/3)
-	
+
 
 /datum/reagent/water/proc/fat_hide(mob/living/carbon/user)
 	return volume * 3.5
@@ -67,7 +66,7 @@
 		add_fingerprint(usr)
 		attached = target
 		START_PROCESSING(SSobj, src)
-	
+
 /obj/structure/sink/process()
 	if(!(get_dist(src, attached) <= 1 && isturf(attached.loc)))
 		to_chat(attached, "<span class='userdanger'>[attached] is ripped from the sink!</span>") // GS13
@@ -78,7 +77,7 @@
 		attached.reagents.add_reagent(/datum/reagent/water, 5)
 	else
 		return PROCESS_KILL
-	
+
 /obj/structure/sink/attack_hand(mob/living/user)
 	if(attached)
 		visible_message("[attached] is detached from [src]")

@@ -1,7 +1,7 @@
 /obj/machinery/vending/mealdor
 	name = "Meal Vendor"
 	desc = "The vending machine used by starving people. Looks like they've changed the shell, it looks cuter."
-	icon = 'icons/obj/vending.dmi'
+	icon = 'GainStation13/icons/obj/vending.dmi'
 	icon_state = "mealdor"
 	product_slogans = "Are you hungry? Eat some of my food!;Be sure to eat one of our tasty treats!;Was that your stomach? Go ahead, get some food!"
 	vend_reply = "Enjoy your meal."
@@ -40,8 +40,6 @@
 				/obj/item/reagent_containers/food/snacks/cookie = 10,
 				/obj/item/reagent_containers/food/snacks/salad/fruit = 15,
 				/obj/item/reagent_containers/food/snacks/salad = 20,
-				/obj/item/reagent_containers/food/snacks/salad/hellcobb = 10,
-				/obj/item/clothing/under/cowkini = 5,
 				/obj/item/reagent_containers/food/snacks/blueberry_gum = 5
 				)
 	premium = list(

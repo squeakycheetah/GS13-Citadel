@@ -87,11 +87,11 @@
 
 /datum/reagent/consumable/caloriteblessing/on_mob_metabolize(mob/living/L)
 	..()
-	ADD_TRAIT(L, TRAIT_GOTTAGOFAST, type)
+	L.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
 
 
 /datum/reagent/consumable/caloriteblessing/on_mob_end_metabolize(mob/living/L)
-	REMOVE_TRAIT(L, TRAIT_GOTTAGOFAST, type)
+	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
 	..()
 
 

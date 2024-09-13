@@ -4,7 +4,6 @@
 	value = 0 //ERP quirk
 	gain_text = "<span class='notice'>You feel like you could eat steel.</span>"
 	lose_text = "<span class='notice'>Your teeth hurt too much...</span>"
-	category = CATEGORY_FOOD
 	mob_trait = TRAIT_METAL_CRUNCHER
 
 /obj/item/stack

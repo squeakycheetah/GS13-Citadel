@@ -54,6 +54,9 @@
 #define CRYOKINESIS /datum/mutation/human/cryokinesis
 #define SPIDER_WEB	/datum/mutation/human/webbing
 #define CLUWNEMUT   /datum/mutation/human/cluwne
+// GS13 DEFINES
+#define FATFANG		/datum/mutation/human/fatfang
+#define RADFAT		/datum/mutation/human/radfat
 
 #define UI_CHANGED "ui changed"
 #define UE_CHANGED "ue changed"

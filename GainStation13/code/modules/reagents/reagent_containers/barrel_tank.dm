@@ -46,7 +46,7 @@
 
 /obj/item/reagent_containers/barrel_tank/equipped(mob/user, slot)
 	..()
-	if(slot != SLOT_BACK && U != null)
+	if(slot !=ITEM_SLOT_BACK && U != null)
 		to_chat(user, "<span class='warning'>The barrel's tube slips out of your mouth!</span>")
 		U = null
 

@@ -1,7 +1,7 @@
 /obj/item/gun/fatbeam // GS13
 	name = "Fatbeam Gun"
 	desc = "Apparently used to treat malnourished patients from a safe distance... But we all know what it will truly be used for."
-	icon = 'icons/obj/fatbeam.dmi'
+	icon = 'GainStation13/icons/obj/weapons/fatbeam.dmi'
 	icon_state = "fatbeam"
 	item_state = "fatbeam"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -41,7 +41,7 @@
 		on_beam_release(current_target)
 	current_target = null
 
-/obj/item/gun/fatbeam/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
+/obj/item/gun/fatbeam/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0, stan_cost = 0)
 	if(isliving(user))
 		add_fingerprint(user)
 

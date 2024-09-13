@@ -7,32 +7,32 @@
 	min_players = 6
 
 /datum/round_event/dessert_infestation
-	announceWhen = 100
-	var/static/list/dessert_station_areas_blacklist = typecacheof(/area/space, 
+	announce_when = 100
+	var/static/list/dessert_station_areas_blacklist = typecacheof(/area/space,
 	/area/shuttle,
-	/area/mine, 
-	/area/holodeck, 
-	/area/ruin, 
-	/area/hallway, 
-	/area/hallway/primary, 
-	/area/hallway/secondary, 
+	/area/mine,
+	/area/holodeck,
+	/area/ruin,
+	/area/hallway,
+	/area/hallway/primary,
+	/area/hallway/secondary,
 	/area/hallway/secondary/entry,
-	/area/engine/supermatter, 
-	/area/engine/atmospherics_engine, 
-	/area/engine/engineering/reactor_core, 
-	/area/engine/engineering/reactor_control, 
+	/area/engine/supermatter,
+	/area/engine/atmospherics_engine,
+	/area/engine/engineering/reactor_core,
+	/area/engine/engineering/reactor_control,
 	/area/ai_monitored/turret_protected,
-	/area/layenia/cloudlayer, 
-	/area/asteroid/nearstation, 
-	/area/science/server, 
-	/area/science/explab, 
+	/area/layenia/cloudlayer,
+	/area/asteroid/nearstation,
+	/area/science/server,
+	/area/science/explab,
 	/area/science/xenobiology,
 	/area/security/processing)
 	var/spawncount = 1
 	fakeable = FALSE
 
 /datum/round_event/dessert_infestation/setup()
-	announceWhen = rand(announceWhen, announceWhen + 50)
+	announce_when = rand(announce_when, announce_when + 50)
 	spawncount = rand(4, 7)
 
 /datum/round_event/dessert_infestation/announce(fake)
@@ -67,11 +67,6 @@
 		pickedArea = pick_n_take(eligible_areas)
 		var/list/turf/t = get_area_turfs(pickedArea, SSmapping.station_start)
 		for(var/turf/thisTurf in t) // now we check if it's a closed turf, cold turf or occupied turf and yeet it
-			if(isopenturf(thisTurf))
-				var/turf/open/tempGet = thisTurf
-				if(tempGet.air.temperature <= T0C)
-					t -= thisTurf
-					continue
 			if(isclosedturf(thisTurf))
 				t -= thisTurf
 			else

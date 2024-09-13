@@ -4,7 +4,6 @@
 	value = 0 //ERP quirk
 	gain_text = "<span class='notice'>Your body feels like it could grow at any moment.</span>"
 	lose_text = "<span class='notice'>The feeling of impending growth is gone...</span>"
-	category = CATEGORY_SEXUAL
 	mob_trait = TRAIT_FATROUSAL
 
 /datum/quirk/fatrousal/add()
@@ -23,7 +22,7 @@
 		return C.getArousalLoss()*35
 	return FALSE
 
-///mob/living/adjustArousalLoss(amount, updating_arousal=1)
+///mob/living/adjust_arousal(amount, updating_arousal=1)
 //	if(HAS_TRAIT(src, TRAIT_FATROUSAL))
 //		amount = amount * 0.2
 //	..()

@@ -4,7 +4,6 @@
 	value = 0 //ERP quirk
 	gain_text = "<span class='notice'>You find yourself able to weave webs.</span>"
 	lose_text = "<span class='notice'>You are no longer able to weave webs.</span>"
-	category = CATEGORY_SEXUAL
 	mob_trait = TRAIT_WEB_WEAVER
 	///What action is linked with this quirk?
 	var/datum/action/innate/wrap_target/linked_action1
@@ -20,7 +19,7 @@
 	linked_action1.Remove(quirk_holder)
 	linked_action2.Remove(quirk_holder)
 	return ..()
-	
+
 /datum/action/innate/wrap_target
 	name = "wrap"
 	desc = "encases a humanoid in a web cocoon."
@@ -32,14 +31,14 @@
 	var/mob/living/carbon/user = owner
 	if(!user || !ishuman(user))
 		return FALSE
-	
+
 	var/mob/living/carbon/human/target = user.pulling
 	if(!target || !ishuman(target) || user.grab_state < GRAB_AGGRESSIVE) //Add a check for a bondage pref whenever that gets added in.
 		to_chat(user, "<span class='warning'>You need to aggressively grab a humanoid to use this.</span>")
 		return FALSE
 
 	if(target.wear_suit)
-		var/obj/item/clothing/suit = target.wear_suit 
+		var/obj/item/clothing/suit = target.wear_suit
 		if(istype(suit, /obj/item/clothing/suit/straight_jacket/web))
 			user.visible_message("<span class='warning'>[user] begins to fully encase [target] in a cocoon!</span>", "<span class='warning'>You begin to fully encase [target] in a cocoon.</span>")
 			if(!do_after_mob(user, target, 30 SECONDS))
@@ -58,7 +57,7 @@
 			new_matrix.Translate(0,16 * (cocoon_size-1))
 			spawned_cocoon.transform = new_matrix
 
-			return TRUE 
+			return TRUE
 
 		user.visible_message("<span class='warning'>[user] attempts to remove [target]'s [target.wear_suit]!</span>", "<span class='warning'>You attempt to remove [target]'s [target.wear_suit].</span>")
 		if(!do_after_mob(user, target, 10 SECONDS) || !target.dropItemToGround(suit))
@@ -69,7 +68,7 @@
 		return FALSE
 
 	user.visible_message("<span class='warning'>[user] attempts to wrap [target] inside of [wrapping]!</span>", "<span class='warning'>You attempt to wrap [target] inside of [wrapping].</span>")
-	if(!do_after_mob(user, target, 20 SECONDS) || !target.equip_to_slot_if_possible(wrapping, SLOT_WEAR_SUIT, TRUE, TRUE))
+	if(!do_after_mob(user, target, 20 SECONDS) || !target.equip_to_slot_if_possible(wrapping,ITEM_SLOT_WEAR_SUIT, TRUE, TRUE))
 		user.visible_message("<span class='warning'>[user] fails to wrap [target] inside of [wrapping]!</span>", "<span class='warning'>You fail to wrap [target] inside of [wrapping].</span>")
 		return FALSE
 
@@ -86,10 +85,10 @@
 	breakouttime = 600 //1 minute is reasonable.
 	equip_delay_other = 0
 	equip_delay_self = 0
-	mutantrace_variation = NO_MUTANTRACE_VARIATION
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/straight_jacket/web/equipped(mob/user, slot)
-	. = ..()	
+	. = ..()
 	if((user.get_item_by_slot(SLOT_WEAR_SUIT)) != src && !QDELETED(src))
 		qdel(src)
 

@@ -8,7 +8,7 @@
 
 /obj/item/clothing/mask/gas/fattening/equipped(mob/M, slot)
 	. = ..()
-	if (slot == SLOT_WEAR_MASK)
+	if (slot ==ITEM_SLOT_WEAR_MASK)
 		if(iscarbon(M))
 			C = M
 			START_PROCESSING(SSobj, src)

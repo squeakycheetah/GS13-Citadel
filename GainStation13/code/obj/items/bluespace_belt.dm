@@ -5,16 +5,16 @@
 	icon_state = "bluespace_belt"
 	item_state = "bluespace_belt"
 	slot_flags = ITEM_SLOT_BELT
-	equip_sound = 'sound/items/equip/toolbelt_equip.ogg'
-	drop_sound = 'sound/items/handling/toolbelt_drop.ogg'
-	pickup_sound =  'sound/items/handling/toolbelt_pickup.ogg'
+	equip_sound = 'GainStation13/sound/items/equip/toolbelt_equip.ogg'
+	drop_sound = 'GainStation13/sound/items/handling/toolbelt_drop.ogg'
+	pickup_sound =  'GainStation13/sound/items/handling/toolbelt_pickup.ogg'
 
 /obj/item/bluespace_belt/equipped(mob/user, slot)
 	..()
 	if(!iscarbon(user))
 		return
 	var/mob/living/carbon/U = user
-	if(slot == SLOT_BELT)
+	if(slot ==ITEM_SLOT_BELT)
 		to_chat(U, "<span class='notice'>You put the belt around your waist and your mass begins to shrink...</span>")
 		U.hider_add(src)
 	else

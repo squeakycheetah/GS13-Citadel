@@ -165,7 +165,7 @@
   Putnam3145:
   - rscadd: Configurable weekly high-chaos days
   SandPoot:
-  - refactor: Kills off SLOT_ in favor of ITEM_SLOT_
+  - refactor: Kills offITEM_SLOT_ in favor of ITEM_SLOT_
   SandPoot and Crowbar764:
   - rscadd: TGUI for the player playtimes menu.
   bunny232:

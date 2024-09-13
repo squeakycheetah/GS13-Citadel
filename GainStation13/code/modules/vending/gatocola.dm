@@ -1,7 +1,7 @@
 /obj/machinery/vending/gato
 	name = "GATO Vending Machine"
 	desc = "A GATO branded cola machine, a cute little cat is plastered onto it."
-	icon = 'icons/obj/vending.dmi'
+	icon = 'GainStation13/icons/obj/vending.dmi'
 	icon_state = "cola_black"
 	product_slogans = "Meow~, time for some cola!"
 	vend_reply = "Meow~ Meow~"

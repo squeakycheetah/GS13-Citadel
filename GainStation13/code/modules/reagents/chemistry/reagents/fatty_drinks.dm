@@ -11,7 +11,6 @@
 	glass_name = "belly bloats"
 	glass_desc = "The perfect mix to be big and merry with."
 	shot_glass_icon_state = "shotglassbrown"
-	hydration = 3
 
 /datum/reagent/consumable/ethanol/belly_bloats/on_mob_life(mob/living/carbon/M)
 	if(M && M?.client?.prefs.weight_gain_food) // GS13
@@ -31,7 +30,6 @@
 	glass_name = "blobby mary"
 	glass_desc = "For the morbidly obese ladies and gentlemen."
 	shot_glass_icon_state = "shotglassred"
-	hydration = 4
 
 /datum/reagent/consumable/ethanol/blobby_mary/on_mob_life(mob/living/carbon/M)
 	if(M && M?.client?.prefs.weight_gain_food) // GS13
@@ -51,7 +49,6 @@
 	glass_name = "beltbuster mead"
 	glass_desc = "The ambrosia of the blubbery gods."
 	shot_glass_icon_state = "shotglassgold"
-	hydration = 4
 
 /datum/reagent/consumable/ethanol/beltbuster_mead/on_mob_life(mob/living/carbon/M)
 	if(M && M?.client?.prefs.weight_gain_food) // GS13
@@ -70,7 +67,6 @@
 	glass_name = "heavy cafe"
 	glass_desc = "To enjoy slow mornings with."
 	shot_glass_icon_state = "shotglassbrown"
-	hydration = 3
 
 /datum/reagent/consumable/heavy_cafe/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-5)
@@ -96,7 +92,6 @@
 	glass_name = "fruits tea"
 	glass_desc = "Goes down really easy and stays there for a long time."
 	shot_glass_icon_state = "shotglassgold"
-	hydration = 4
 
 /datum/reagent/consumable/fruits_tea/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-2)
@@ -123,7 +118,6 @@
 	glass_name = "snakebite"
 	glass_desc = "Won't hurt like a real bite, but you'll still regert drinking this."
 	shot_glass_icon_state = "shotglassgreen"
-	hydration = 4
 
 /datum/reagent/consumable/snakebite/on_mob_life(mob/living/carbon/M)
 	if(M && M?.client?.prefs.weight_gain_food) // GS13
@@ -143,7 +137,6 @@
 	glass_name = "vanilla milkshake"
 	glass_desc = "Guess they fixed the milkshake machine after all, huh?"
 	shot_glass_icon_state = "shotglasscream"
-	hydration = 3
 
 /datum/reagent/consumable/milkshake_chocolate
 	name = "Chocolate Milkshake"
@@ -156,4 +149,3 @@
 	glass_name = "chocolate milkshake"
 	glass_desc = "Nothing better than cream AND cocoa!"
 	shot_glass_icon_state = "shotglassbrown"
-	hydration = 3

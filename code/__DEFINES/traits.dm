@@ -261,6 +261,14 @@
 #define TRAIT_NO_FAT_SLOWDOWN "no_fat_slowdown"
 #define HELPLESSNESS_TRAIT "helplessness"
 
+#define TRAIT_RADRESONANCE "radresonance" //FIX THIS LATER
+#define COMSIG_MICRO_PICKUP_FEET "micro_force_grabbed"			//From /datum/element/mob_holder/micro
+#define COMSIG_MOBSIZE_CHANGED "mobsize_changed"				//Adding this in so items and whatnot can check when someone changes size. -Cap'n
+
+#define TRAIT_MACROPHILE		"macrophile" //likes the big
+#define TRAIT_MICROPHILE		"microphile" //likes the small
+#define TRAIT_APATHETIC			"apathetic" //doesn't care
+
 #define TRAIT_FATTER			"fatter"
 #define TRAIT_VERYFAT			"veryfat"
 #define TRAIT_OBESE				"obese"

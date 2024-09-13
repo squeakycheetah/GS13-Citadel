@@ -15,7 +15,6 @@
 	prereq_ids = list("adv_engi", "adv_bluespace")
 	design_ids = list("arcd_design")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7000)
-	export_price = 7000
 
 /obj/item/borg/upgrade/arcd
 	name = "cyborg ARCD"

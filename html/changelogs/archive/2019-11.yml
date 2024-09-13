@@ -1225,7 +1225,7 @@
   - tweak: Air alarm All clear color changed from green to blue
   - balance: APCs are harder to destroy.
   - rscadd: Added Digitigrade versions of everything appliciable in suit.dmi
-  - imageadd: Snowflake Icons weren't modified, and were given NO_MUTANTRACE_VARIATION
+  - imageadd: Snowflake Icons weren't modified, and were given NONE
   - imageadd: naga and quad Taurs literally don't freeze their ass off in space anymore.
   - bugfix: Digitigrade legs will toggle on/off properly on character menue
   - bugfix: The misleading "normal" has been removed from species options
