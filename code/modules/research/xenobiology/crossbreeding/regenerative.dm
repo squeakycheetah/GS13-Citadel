@@ -47,6 +47,7 @@ Regenerative extracts:
 		user.visible_message("<span class='notice'>[user] crushes the [src] over [M], the milky goo quickly regenerating all of [M.p_their()] injuries!</span>",
 			"<span class='notice'>You squeeze the [src], and it bursts over [M], the milky goo regenerating [M.p_their()] injuries.</span>")
 	else
+	/* GS13 EDIT START
 		user.visible_message("<span class='notice'>[user] crushes the [src] over [user.p_them()]self, the milky goo quickly regenerating all of [user.p_their()] injuries!</span>",
 			"<span class='notice'>You squeeze the [src], and it bursts in your hand, splashing you with milky goo which quickly regenerates your injuries!</span>")
 	core_effect_before(M, user)
@@ -57,6 +58,13 @@ Regenerative extracts:
 	M.revive(full_heal = 1)
 	M.set_disgust(new_disgust_level)
 	core_effect(M, user)
+	*/
+		user.visible_message("<span class='notice'>[user] crushes the [src] over [user.p_them()]self, the milky goo quickly seeping into [user.p_their()] skin!</span>",
+			"<span class='notice'>You squeeze the [src], and it bursts in your hand, splashing you with milky goo which seeps into your skin!</span>")
+	core_effect_before(H, user)
+	target.reagents.add_reagent(/datum/reagent/medicine/pure_regen_jelly,5) //No instant aheals. Gives medicine instead, extremely fast acting and very powerful. But not instant.
+	core_effect(H, user)
+	//GS13 EDIT END
 	playsound(target, 'sound/effects/splat.ogg', 40, 1)
 	//warn receivers of the extract about the disgust if they're carbon, making it clear that the regenerative extract is causing this.
 	if(iscarbon(M))
@@ -88,7 +96,8 @@ Regenerative extracts:
 	colour = "purple"
 
 /obj/item/slimecross/regenerative/purple/core_effect(mob/living/target, mob/user)
-	target.reagents.add_reagent(/datum/reagent/medicine/regen_jelly,10)
+	//GS13 EDIT target.reagents.add_reagent(/datum/reagent/medicine/regen_jelly,10)
+	target.reagents.add_reagent(/datum/reagent/medicine/pure_neo_jelly,5) //Varies what it applies so you get two powerful healing chems at once since Purples are all about healing.
 
 /obj/item/slimecross/regenerative/blue
 	colour = "blue"
