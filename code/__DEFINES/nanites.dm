@@ -50,3 +50,7 @@
 #define NES_SCAN_TYPE "Scan Type"
 #define NES_BUTTON_NAME "Button Name"
 #define NES_ICON "Icon"
+
+//GS13 DEFINES
+#define NES_FATNESS "BFI"
+#define NES_FAT_GAIN_LOSS "Loss/Gain"

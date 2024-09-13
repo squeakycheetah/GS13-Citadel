@@ -248,6 +248,39 @@
 //used because it's more reliable than checking for the component
 #define TRAIT_DULLAHAN "dullahan"
 
+//GS13
+#define TRAIT_WEIGHT_LOSS_IMMUNE "weight_loss_immune"
+#define TRAIT_UNIVERSAL_GAINER "universal_gainer"
+#define TRAIT_NO_MOVE "no_move"
+#define TRAIT_NO_JUMPSUIT "no_jumpsuit"
+#define TRAIT_NO_MISC "no_misc"
+#define TRAIT_NO_BACKPACK "no_backpack"
+#define TRAIT_NO_BUCKLE "no_buckle"
+#define TRAIT_DOCILE "docile"
+#define TRAIT_LIVESTOCK "livestock"
+#define TRAIT_NO_FAT_SLOWDOWN "no_fat_slowdown"
+#define HELPLESSNESS_TRAIT "helplessness"
+
+#define TRAIT_FATTER			"fatter"
+#define TRAIT_VERYFAT			"veryfat"
+#define TRAIT_OBESE				"obese"
+#define TRAIT_MORBIDLYOBESE		"morbildyobese"
+#define TRAIT_EXTREMELYOBESE	"extremelyobese"
+#define TRAIT_BARELYMOBILE		"barelymobile"
+#define TRAIT_IMMOBILE			"immobile"
+#define TRAIT_BLOB				"blobweight"
+
+//GS13 quirks
+#define TRAIT_FAT_GOOD			"fat_good"
+#define TRAIT_FAT_BAD			"fat_bad"
+#define TRAIT_LIPOLICIDE_TOLERANCE "lipolicide_tolerance"
+#define TRAIT_WEAKLEGS			"weak_legs"
+#define TRAIT_STRONGLEGS		"strong_legs"
+#define TRAIT_WEB_WEAVER		"web_weaving"
+#define TRAIT_METAL_CRUNCHER 	"metal_cruncher"
+#define TRAIT_WATER_SPONGE 		"water_sponge"
+#define TRAIT_FATROUSAL         "fatrousal"
+
 // mobility flag traits
 // IN THE FUTURE, IT WOULD BE NICE TO DO SOMETHING SIMILAR TO https://github.com/tgstation/tgstation/pull/48923/files (ofcourse not nearly the same because I have my.. thoughts on it)
 // BUT FOR NOW, THESE ARE HOOKED TO DO update_mobility() VIA COMSIG IN living_mobility.dm

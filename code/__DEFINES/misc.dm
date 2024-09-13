@@ -571,3 +571,18 @@ GLOBAL_LIST_INIT(pda_reskins, list(
 #define NOTIFY_JUMP "jump"
 #define NOTIFY_ATTACK "attack"
 #define NOTIFY_ORBIT "orbit"
+
+//GS13 WEIGHT GAIN TYPES
+#define MINIMUM_FATNESS_LEVEL 0
+
+#define FATTENING_TYPE_ITEM "item"
+#define FATTENING_TYPE_FOOD "food"
+#define FATTENING_TYPE_CHEM "chem"
+#define FATTENING_TYPE_WEAPON "weapon"
+#define FATTENING_TYPE_MAGIC "magic"
+#define FATTENING_TYPE_VIRUS "virus"
+#define FATTENING_TYPE_NANITES "nanites"
+#define FATTENING_TYPE_RADIATIONS "radiations"
+#define FATTENING_TYPE_WEIGHT_LOSS "weight_loss"
+
+#define FATNESS_TO_WEIGHT_RATIO 0.25

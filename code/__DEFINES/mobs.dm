@@ -380,3 +380,31 @@
 #define CURRENT_LIVING_ANTAGS	"living_antags_list"
 #define CURRENT_DEAD_PLAYERS	"dead_players_list"
 #define CURRENT_OBSERVERS		"current_observers_list"
+
+//Fullness levels, no more infinite eating my dudes!
+#define FULLNESS_LEVEL_NOMOREPLZ 280
+#define FULLNESS_LEVEL_BEEG 140
+#define FULLNESS_LEVEL_BLOATED 80
+#define FULLNESS_LEVEL_FILLED 40
+#define FULLNESS_LEVEL_HALF_FULL 20
+#define FULLNESS_LEVEL_EMPTY 0
+
+//Fullness emote cooldown
+#define FULLNESS_REDUCTION_COOLDOWN 50
+
+//Fatness levels, Here we go!
+#define FATNESS_LEVEL_BLOB 3440
+#define FATNESS_LEVEL_IMMOBILE 2540
+#define FATNESS_LEVEL_BARELYMOBILE 1840
+#define FATNESS_LEVEL_EXTREMELY_OBESE 1240
+#define FATNESS_LEVEL_MORBIDLY_OBESE 840
+#define FATNESS_LEVEL_OBESE 440
+#define FATNESS_LEVEL_VERYFAT 330
+#define FATNESS_LEVEL_FATTER 250
+#define FATNESS_LEVEL_FAT 170
+
+//Math stuff for fatness movement speed
+#define FATNESS_DIVISOR 860
+#define FATNESS_MAX_MOVE_PENALTY 4
+#define FATNESS_WEAKLEGS_MODIFIER 35 // GS13 tweak
+#define FATNESS_STRONGLEGS_MODIFIER 0.5
