@@ -34,7 +34,7 @@
 						. += mutable_appearance('GainStation13/icons/mob/modclothes/chefmodular.dmi', "belly_[G.size]_d", GENITALS_UNDER_LAYER)
 					else
 						. += mutable_appearance('GainStation13/icons/mob/modclothes/chefmodular.dmi', "belly_9_d", GENITALS_UNDER_LAYER)
-			if(istype(O, /obj/item/organ/genital/anus))
+			if(istype(O, /obj/item/organ/genital/butt))
 				G = O
 				if(suit_style == DIGITIGRADE_SUIT_STYLE)
 					if(G.size <= 10)
@@ -68,7 +68,7 @@
 /obj/item/clothing/under/color/grey/modular
 	name = "grey modular jumpsuit" //change name from base clothes to distinguish them
 	desc = "A tasteful grey jumpsuit that reminds you of the good old days. Now adjusts to the match the wearer's size!" //description same as above
-	
+
 	var/icon_location = 'GainStation13/icons/mob/modclothes/graymodular.dmi' //specify the file path where the modular overlays for those clothes are located
 	var/mob/living/carbon/U //instance a variable for keeping track of the user
 
@@ -148,7 +148,7 @@
 
 
 /obj/item/clothing/under/color/grey/modular/bra
-	name = "grey modular bra" 
+	name = "grey modular bra"
 	desc = "A tasteful grey bra that reminds you of the good old days. Now adjusts to the match the wearer's size!"
 	icon_location = 'GainStation13/icons/mob/modclothes/graymodular_bra.dmi'
 	icon_state = "grey"

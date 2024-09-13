@@ -20,6 +20,7 @@
 	if(iscarbon(quirk_holder))
 		var/mob/living/carbon/C = quirk_holder
 		return C.getArousalLoss()*35
+
 	return FALSE
 
 ///mob/living/adjust_arousal(amount, updating_arousal=1)

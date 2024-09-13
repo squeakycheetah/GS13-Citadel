@@ -51,7 +51,6 @@
 	filling_color = "#001aff"
 	tastes = list("blueberry gum" = 1)
 	foodtype = FRUIT
-	price = 5
 
 //blueberry gum trash
 

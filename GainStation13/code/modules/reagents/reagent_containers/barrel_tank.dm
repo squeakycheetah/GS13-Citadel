@@ -17,7 +17,9 @@
 	possible_transfer_amounts = list(0)
 	volume = 500
 	spillable = FALSE
-	splashable = FALSE
+
+/datum/action/item_action/toggle_tube //GS13
+	name = "Toggle Tube"
 
 /obj/item/reagent_containers/barrel_tank/ui_action_click(mob/user)
 	toggle_tube(user)

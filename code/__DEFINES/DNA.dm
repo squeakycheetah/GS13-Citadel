@@ -187,6 +187,8 @@
 #define ORGAN_SLOT_TESTICLES "testicles"
 #define ORGAN_SLOT_BREASTS "breasts"
 #define ORGAN_SLOT_BUTT "butt"
+// GS13 EDIT
+#define ORGAN_SLOT_BELLY "belly"
 
 ////organ defines
 #define STANDARD_ORGAN_THRESHOLD 	100

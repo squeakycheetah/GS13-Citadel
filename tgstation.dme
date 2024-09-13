@@ -3959,6 +3959,7 @@
 #include "GainStation13\code\modules\hydroponics\munchies_weed.dm"
 #include "GainStation13\code\modules\hydroponics\grown\berries.dm"
 #include "GainStation13\code\modules\mapping\areas.dm"
+#include "GainStation13\code\modules\mob\living\belly.dm"
 #include "GainStation13\code\modules\mob\living\emote.dm"
 #include "GainStation13\code\modules\mob\living\emote_modular.dm"
 #include "GainStation13\code\modules\mob\living\emote_ported.dm"
