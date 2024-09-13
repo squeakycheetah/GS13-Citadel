@@ -130,7 +130,7 @@
 		V.toggle_visibility(picked_visibility)
 
 	if(href_list["hidebreasts"])
-		var/obj/item/organ/genital/breasts/B = usr.getorganslot("breasts")
+		var/obj/item/organ/genital/breasts/B = usr.getorganslot(ORGAN_SLOT_BREASTS)
 		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by clothes", "Always hidden")
 		B.toggle_visibility(picked_visibility)
 
@@ -140,7 +140,7 @@
 		E.toggle_visibility(picked_visibility)
 
 	if(href_list["hideanus"])
-		var/obj/item/organ/genital/anus/A = usr.getorganslot("anus")
+		var/obj/item/organ/genital/butt/A = usr.getorganslot(ORGAN_SLOT_BUTT)
 		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by clothes", "Always hidden")
 		A.toggle_visibility(picked_visibility)
 
@@ -262,7 +262,7 @@
 		O.equipment = null
 
 	if(href_list["removeequipmentbreasts"])
-		var/obj/item/organ/genital/breasts/O = usr.getorganslot("breasts")
+		var/obj/item/organ/genital/breasts/O = usr.getorganslot(ORGAN_SLOT_BREASTS)
 		var/obj/item/I = O.equipment
 		usr.put_in_hands(I)
 		O.equipment = null
@@ -284,7 +284,7 @@
 		O.equipment = null
 
 	if(href_list["removeequipmentanus"])
-		var/obj/item/organ/genital/anus/O = usr.getorganslot("anus")
+		var/obj/item/organ/genital/butt/O = usr.getorganslot(ORGAN_SLOT_BUTT)
 		var/obj/item/I = O.equipment
 		usr.put_in_hands(I)
 		O.equipment = null
@@ -630,7 +630,7 @@ obj/screen/arousal/proc/feedyourself()
 		picked_organ = input(src, "with what?", "Climax", null)  as null|obj in genitals_list
 	else
 		return
-	
+
 	if(picked_organ)
 		//Good, got an organ, time to pick a container
 		if(picked_organ.name == "penis")//if the select organ is a penis

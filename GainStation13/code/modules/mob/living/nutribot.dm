@@ -84,7 +84,7 @@
 	skin = new_skin
 	update_icon()
 
-/mob/living/simple_animal/bot/nutribot/update_canmove()
+/mob/living/simple_animal/bot/nutribot/update_mobility()
 	. = ..()
 	update_icon()
 
@@ -113,10 +113,8 @@
 /mob/living/simple_animal/bot/nutribot/attack_paw(mob/user)
 	return attack_hand(user)
 
-/mob/living/simple_animal/bot/nutribot/get_controls(mob/user)
+/mob/living/simple_animal/bot/nutribot/proc/get_controls(mob/user)
 	var/dat
-	dat += hack(user)
-	dat += showpai(user)
 	dat += "<TT><B>Nutritional Unit Controls v1.1</B></TT><BR><BR>"
 	dat += "Status: <A href='?src=[REF(src)];power=1'>[on ? "On" : "Off"]</A><BR>"
 	dat += "Maintenance panel panel is [open ? "opened" : "closed"]<BR>"
@@ -251,8 +249,7 @@
 		return
 
 /mob/living/simple_animal/bot/nutribot/proc/tip_over(mob/user)
-	canmove = 0
-	//mobility_flags &= ~MOBILITY_MOVE
+	mobility_flags &= ~MOBILITY_MOVE
 	playsound(src, 'sound/machines/warning-buzzer.ogg', 50)
 	user.visible_message("<span class='danger'>[user] tips over [src]!</span>", "<span class='danger'>You tip [src] over!</span>")
 	mode = BOT_TIPPED
@@ -260,8 +257,7 @@
 	transform = mat.Turn(180)
 
 /mob/living/simple_animal/bot/nutribot/proc/set_right(mob/user)
-	canmove = 1
-	//mobility_flags &= MOBILITY_MOVE
+	mobility_flags &= MOBILITY_MOVE
 	var/list/messagevoice
 	if(user)
 		user.visible_message("<span class='notice'>[user] sets [src] right-side up!</span>", "<span class='green'>You set [src] right-side up!</span>")
@@ -564,9 +560,6 @@
 		soft_reset()
 		return
 
-	reagent_id = null
-	return
-
 /mob/living/simple_animal/bot/nutribot/proc/check_overdose(mob/living/carbon/patient,reagent_id,injection_amount)
 	var/datum/reagent/R  = GLOB.chemical_reagents_list[reagent_id]
 	if(!R.overdose_threshold) //Some chems do not have an OD threshold
@@ -599,6 +592,21 @@
 
 /obj/machinery/bot_core/nutribot
 	req_one_access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_ROBOTICS)
+
+/// Add these for now, until it is upgraded to TGUI.
+/mob/living/simple_animal/bot/nutribot/proc/show_controls(mob/M)
+	users |= M
+	var/dat = ""
+	dat = get_controls(M)
+	var/datum/browser/popup = new(M,window_id,window_name,350,600)
+	popup.set_content(dat)
+	popup.open(use_onclose = 0)
+	onclose(M,window_id,ref=src)
+	return
+
+/mob/living/simple_animal/bot/nutribot/proc/update_controls()
+	for(var/mob/M in users)
+		show_controls(M)
 
 #undef NUTRIBOT_PANIC_NONE
 #undef NUTRIBOT_PANIC_LOW

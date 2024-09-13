@@ -19,8 +19,8 @@
 			playsound(M,'sound/items/eatfood.ogg', rand(10,50), 1)
 			use(1)
 			M.nutrition += crunch_value
-			if(HAS_TRAIT(M, TRAIT_VORACIOUS))
-				M.changeNext_move(CLICK_CD_MELEE * 0.5)
+			//if(HAS_TRAIT(M, TRAIT_VORACIOUS))
+			//	M.changeNext_move(CLICK_CD_MELEE * 0.5)
 		return
 	. = ..()
 

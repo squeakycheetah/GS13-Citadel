@@ -1,3 +1,6 @@
+/obj/item/reagent_containers/food
+	var/blessed = 0
+
 /obj/item/reagent_containers/food/snacks/gbburrito
 	name = "\improper GATO Gas Giant Burrito"
 	icon_state = "gbburrito"
@@ -7,7 +10,6 @@
 	filling_color = "#74291b"
 	tastes = list("refried beans","grease" = 1)
 	foodtype = MEAT
-	price = 3
 
 //these have been ported from CHOMPstation / Virgo
 /obj/item/reagent_containers/food/snacks/doner_kebab

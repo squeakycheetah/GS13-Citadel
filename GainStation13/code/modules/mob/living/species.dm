@@ -1,3 +1,34 @@
+/datum/species/proc/update_body_size(mob/living/carbon/human/H, size_change)
+	if (!H)
+		return
+
+	var/obj/item/organ/genital/butt/anus = H.getorganslot(ORGAN_SLOT_BUTT)
+	var/obj/item/organ/genital/belly/belly = H.getorganslot("belly")
+	var/obj/item/organ/genital/breasts/breasts = H.getorganslot(ORGAN_SLOT_BREASTS)
+
+	update_genital_size(anus, size_change)
+	update_genital_size(belly, size_change)
+	update_breasts_size(breasts, size_change)
+
+	H.genital_override = TRUE
+	H.update_body()
+	H.update_inv_w_uniform()
+	H.update_inv_wear_suit()
+
+/datum/species/proc/update_genital_size(obj/item/organ/genital/G, size_change)
+	if (!G)
+		return
+
+	G.size = G.size + size_change
+	G.update()
+
+/datum/species/proc/update_breasts_size(obj/item/organ/genital/breasts/G, size_change)
+	if (!G)
+		return
+
+	G.cached_size = G.cached_size + size_change
+	G.update()
+
 /datum/species/proc/handle_fatness_trait(mob/living/carbon/human/H, trait, trait_lose, trait_gain, fatness_lose, fatness_gain, chat_lose, chat_gain)
 	if(H.fatness < fatness_lose)
 		if (chat_lose)
@@ -376,48 +407,48 @@
 		if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FULL)
 			H.clear_alert("nutrition")
 		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
-			H.throw_alert("nutrition", /obj/screen/alert/hungry)
+			H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
-			H.throw_alert("nutrition", /obj/screen/alert/starving)
+			H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
 
 	switch(H.fullness)
 		if(0 to FULLNESS_LEVEL_BLOATED)
 			H.clear_alert("fullness")
 		if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
-			H.throw_alert("fullness", /obj/screen/alert/bloated)
+			H.throw_alert("fullness", /atom/movable/screen/alert/gs13/bloated)
 		if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
-			H.throw_alert("fullness", /obj/screen/alert/stuffed)
+			H.throw_alert("fullness", /atom/movable/screen/alert/gs13/stuffed)
 		if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
-			H.throw_alert("fullness", /obj/screen/alert/beegbelly)
+			H.throw_alert("fullness", /atom/movable/screen/alert/gs13/beegbelly)
 
 
 	switch(H.fatness)
 		if(FATNESS_LEVEL_BLOB to INFINITY)
-			H.throw_alert("fatness", /obj/screen/alert/blob)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/blob)
 
 		if(FATNESS_LEVEL_IMMOBILE to FATNESS_LEVEL_BLOB)
-			H.throw_alert("fatness", /obj/screen/alert/immobile)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/immobile)
 
 		if(FATNESS_LEVEL_BARELYMOBILE to FATNESS_LEVEL_IMMOBILE)
-			H.throw_alert("fatness", /obj/screen/alert/barelymobile)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/barelymobile)
 
 		if(FATNESS_LEVEL_EXTREMELY_OBESE to FATNESS_LEVEL_BARELYMOBILE)
-			H.throw_alert("fatness", /obj/screen/alert/extremelyobese)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/extremelyobese)
 
 		if(FATNESS_LEVEL_MORBIDLY_OBESE to FATNESS_LEVEL_EXTREMELY_OBESE)
-			H.throw_alert("fatness", /obj/screen/alert/morbidlyobese)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/morbidlyobese)
 
 		if(FATNESS_LEVEL_OBESE to FATNESS_LEVEL_MORBIDLY_OBESE)
-			H.throw_alert("fatness", /obj/screen/alert/obese)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/obese)
 
 		if(FATNESS_LEVEL_VERYFAT to FATNESS_LEVEL_OBESE)
-			H.throw_alert("fatness", /obj/screen/alert/veryfat)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/veryfat)
 
 		if(FATNESS_LEVEL_FATTER to FATNESS_LEVEL_VERYFAT)
-			H.throw_alert("fatness", /obj/screen/alert/fatter)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/fatter)
 
 		if(FATNESS_LEVEL_FAT to FATNESS_LEVEL_FATTER)
-			H.throw_alert("fatness", /obj/screen/alert/fat)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/fat)
 
 		if(0 to FATNESS_LEVEL_FAT)
 			H.clear_alert("fatness")

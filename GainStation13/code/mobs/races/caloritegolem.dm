@@ -18,9 +18,6 @@ var/charges = 3
 	var/datum/action/innate/unburden/speed
 	var/datum/action/innate/recharge/power
 
-
-
-
 /datum/species/golem/calorite/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	if(ishuman(C))
@@ -101,7 +98,7 @@ var/charges = 3
 
 			for(var/mob/living/L in view(3, owner))
 				if(iscarbon(L))
-					if(!HAS_TRAIT(L, TRAIT_GOTTAGOFAST))
+					if(!L.has_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants))
 						L.reagents.add_reagent(/datum/reagent/consumable/caloriteblessing, 5)
 
 	else

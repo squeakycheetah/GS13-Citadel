@@ -2,24 +2,24 @@
 /mob/living/carbon/wendigo/proc/metabolize_hunger()
 	if(HAS_TRAIT(src, TRAIT_NOHUNGER))
 		return
-	
+
 	if(connected_link)
 		if(connected_link.souls.len > 3)
 			nutrition = min(800, nutrition + (HUNGER_FACTOR*connected_link.souls.len))
 		nutrition = max(0, nutrition - (HUNGER_FACTOR / (physiology.hunger_mod / (connected_link.souls.len + 1))))
 	else
 		nutrition = max(0, nutrition - (HUNGER_FACTOR / physiology.hunger_mod))
-	
+
 	switch(nutrition)
 		if(NUTRITION_LEVEL_WELL_FED to INFINITY)
-			throw_alert("nutrition", /obj/screen/alert/full)
+			throw_alert("nutrition", /atom/movable/screen/alert/full)
 		if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FED)
-			throw_alert("nutrition", /obj/screen/alert/sated)
+			throw_alert("nutrition", /atom/movable/screen/alert/sated)
 		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
-			throw_alert("nutrition", /obj/screen/alert/hungry)
+			throw_alert("nutrition", /atom/movable/screen/alert/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
-			throw_alert("nutrition", /obj/screen/alert/starving)
-	
+			throw_alert("nutrition", /atom/movable/screen/alert/starving)
+
 /mob/living/carbon/wendigo/reagent_check(datum/reagent/R)
 	if(istype(R, /datum/reagent/fermi))
 		var/had_changed = FALSE
@@ -35,7 +35,7 @@
 		if(R.type == /datum/reagent/fermi/BEsmaller)
 			fake_breast_size = max(0, fake_breast_size - 0.25)
 			had_changed = "BEsmaller"
-		
+
 		if(had_changed)
 			R.volume -= R.metabolization_rate
 			if(round(fake_penis_size, 1) == fake_penis_size && fake_penis_size)

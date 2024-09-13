@@ -120,7 +120,7 @@
 			return TRUE
 
 		if(abs(get_effective_size()/tmob.get_effective_size()) >= 2)
-			if(H.a_intent == "disarm" && H.canmove && !H.buckled)
+			if(H.a_intent == "disarm" && CHECK_MOBILITY(H, MOBILITY_MOVE) && !H.buckled)
 				now_pushing = 0
 				H.forceMove(tmob.loc)
 				sizediffStamLoss(tmob)
@@ -147,7 +147,7 @@
 						return TRUE
 					* commenting out for now.*/
 
-			if(H.a_intent == "harm" && H.canmove && !H.buckled)
+			if(H.a_intent == "harm" && CHECK_MOBILITY(H, MOBILITY_MOVE) && !H.buckled)
 				now_pushing = 0
 				H.forceMove(tmob.loc)
 				sizediffStamLoss(tmob)
@@ -177,7 +177,7 @@
 					commenting out for now */
 					return TRUE
 
-			// if(H.a_intent == "grab" && H.canmove && !H.buckled)
+			// if(H.a_intent == "grab" && CHECK_MOBILITY(H, MOBILITY_MOVE) && !H.buckled)
 			// 	now_pushing = 0
 			// 	H.forceMove(tmob.loc)
 			// 	sizediffStamLoss(tmob)

@@ -52,7 +52,7 @@
 	update_icon()
 
 
-/mob/living/simple_animal/bot/hugbot/update_canmove()
+/mob/living/simple_animal/bot/hugbot/update_mobility()
 	. = ..()
 	update_icon()
 
@@ -253,11 +253,11 @@
 			C.adjustStaminaLoss(-15)
 		else if(resting)
 			C.resting = 0
-			C.update_canmove()
+			C.update_mobility()
 	else
 		C.Knockdown(100)
 		C.Stun(100)
-		C.update_canmove()
+		C.update_mobility()
 
 	playsound(C.loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 

@@ -1,3 +1,8 @@
+/obj/machinery/iv_drip
+	/// What is the name of the thing being attached to the mob?
+	var/attachment_point = "needle"
+
+
 /obj/machinery/iv_drip/feeding_tube
 	name = "\improper Feeding tube"
 	desc = "Originally meant to automatically feed cattle and farm animals, this model was repurposed for more... personal usage."
@@ -69,7 +74,7 @@
 				if(attached)
 					attached = null
 					update_icon()
-				
+
 				return PROCESS_KILL
 
 /obj/machinery/iv_drip/feeding_tube/attackby(obj/item/W, mob/user, params)
@@ -89,6 +94,6 @@
 		return FALSE
 
 
-//it sure is a solution. 
+//it sure is a solution.
 /obj/machinery/iv_drip/feeding_tube/toggle_mode()
 	return FALSE

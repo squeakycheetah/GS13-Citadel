@@ -99,8 +99,8 @@
 		balls.fluid_mult = balls.fluid_mult * productivity_mult
 		balls.fluid_max_volume = balls.fluid_max_volume * productivity_mult
 
-	if(target_human?.getorganslot("breasts"))
-		var/obj/item/organ/genital/breasts/boobs = target_human?.getorganslot("breasts")
+	if(target_human?.getorganslot(ORGAN_SLOT_BREASTS))
+		var/obj/item/organ/genital/breasts/boobs = target_human?.getorganslot(ORGAN_SLOT_BREASTS)
 		boobs.fluid_mult = boobs.fluid_mult * productivity_mult
 		boobs.fluid_max_volume = boobs.fluid_max_volume * productivity_mult
 
@@ -109,17 +109,17 @@
 	if(!.)
 		return FALSE
 
-	var/mob/living/carbon/human/target_human = source 
+	var/mob/living/carbon/human/target_human = source
 	target_human.real_name = stored_name
-	target_human.name = stored_name	
+	target_human.name = stored_name
 
 	if(target_human?.getorganslot("testicles"))
 		var/obj/item/organ/genital/testicles/balls = target_human?.getorganslot("testicles")
 		balls.fluid_mult = balls.fluid_mult / productivity_mult
 		balls.fluid_max_volume = balls.fluid_max_volume / productivity_mult
 
-	if(target_human?.getorganslot("breasts"))
-		var/obj/item/organ/genital/breasts/boobs = target_human?.getorganslot("breasts")
+	if(target_human?.getorganslot(ORGAN_SLOT_BREASTS))
+		var/obj/item/organ/genital/breasts/boobs = target_human?.getorganslot(ORGAN_SLOT_BREASTS)
 		boobs.fluid_mult = boobs.fluid_mult / productivity_mult
 		boobs.fluid_max_volume = boobs.fluid_max_volume / productivity_mult
 

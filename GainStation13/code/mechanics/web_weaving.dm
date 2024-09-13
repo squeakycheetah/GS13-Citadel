@@ -79,7 +79,7 @@
 	name = "web bindings"
 	desc = "A mesh of sticky web that binds whoever is stuck inside of it"
 	icon = 'GainStation13/icons/obj/clothing/web.dmi'
-	worn_ico = 'GainStation13/icons/mob/web.dmi'
+	worn_icon = 'GainStation13/icons/mob/web.dmi'
 	icon_state = "web_bindings"
 	item_state = "web_bindings"
 	breakouttime = 600 //1 minute is reasonable.
@@ -89,7 +89,7 @@
 
 /obj/item/clothing/suit/straight_jacket/web/equipped(mob/user, slot)
 	. = ..()
-	if((user.get_item_by_slot(SLOT_WEAR_OCLOTHING)) != src && !QDELETED(src))
+	if((user.get_item_by_slot(ITEM_SLOT_OCLOTHING)) != src && !QDELETED(src))
 		qdel(src)
 
 /obj/structure/spider/cocoon/quirk

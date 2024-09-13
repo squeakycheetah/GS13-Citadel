@@ -275,3 +275,7 @@
   */
 #define FEEBLE_ATTACK_MSG_THRESHOLD 0.5
 
+// GS13 EDIT
+#define FAT 		"fat"
+/// What is the rate that one damage is converted to fatness?
+#define FAT_DAMAGE_TO_FATNESS 4

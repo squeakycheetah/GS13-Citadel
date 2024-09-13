@@ -42,7 +42,7 @@
 		opened = TRUE
 		spillable = TRUE
 		reagent_flags = OPENCONTAINER
-		ENABLE_BITFIELD(reagents.reagents_holder_flags, OPENCONTAINER)
+		reagents.reagents_holder_flags |= OPENCONTAINER
 		icon_state = "lipo_nutcut_full"
 		desc = "A foreign fruit with an hard shell, the liquid inside looks very inviting."
 		playsound(user, W.hitsound, 50, 1, -1)

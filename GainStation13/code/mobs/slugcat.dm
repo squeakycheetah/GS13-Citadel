@@ -47,7 +47,7 @@
 	AddElement(/datum/element/wuv, "purrs!", EMOTE_AUDIBLE, /datum/mood_event/pet_animal, "hisses!", EMOTE_AUDIBLE)
 	AddElement(/datum/element/mob_holder, held_icon)
 
-/mob/living/simple_animal/pet/slugcat/update_canmove()
+/mob/living/simple_animal/pet/slugcat/update_mobility()
 	..()
 	if(client && stat != DEAD)
 		if (resting)

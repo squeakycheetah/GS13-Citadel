@@ -11,8 +11,6 @@
 	icon_state = "fizzwiz"
 	list_reagents = list(/datum/reagent/consumable/space_cola = 25, /datum/reagent/consumable/fizulphite = 15)
 	foodtype = SUGAR
-	price = 3
-
 
 /obj/item/reagent_containers/food/drinks/soda_cans/soothseltz
 	name = "Soothing Seltzer"
@@ -23,4 +21,3 @@
 	icon_state = "soothseltz"
 	list_reagents = list(/datum/reagent/consumable/space_cola = 25, /datum/reagent/consumable/extilphite = 15)
 	foodtype = SUGAR
-	price = 3

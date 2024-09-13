@@ -28,7 +28,7 @@
 		return
 
 	var/obj/item/organ/genital/penis/P = L.getorganslot("penis")
-	var/obj/item/organ/genital/breasts/B = L.getorganslot("breasts")
+	var/obj/item/organ/genital/breasts/B = L.getorganslot(ORGAN_SLOT_BREASTS)
 	var/obj/item/organ/genital/testicles/T = L.getorganslot("testicles")
 
 //reset data, just incase they dont have that genitle

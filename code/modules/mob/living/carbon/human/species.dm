@@ -2224,6 +2224,10 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		if(BRAIN)
 			var/damage_amount = forced ? damage : damage * hit_percent * H.physiology.brain_mod
 			H.adjustOrganLoss(ORGAN_SLOT_BRAIN, damage_amount)
+		// GS13 EDIT
+		if(FAT)
+			H.applyFatnessDamage(damage * hit_percent)
+
 	return TRUE
 
 /datum/species/proc/on_hit(obj/item/projectile/P, mob/living/carbon/human/H)

@@ -53,7 +53,7 @@
 	var/click_delay = 2
 
 	slot_flags = ITEM_SLOT_BACK
-	sharpness = IS_BLUNT
+	sharpness = SHARP_NONE
 	w_class = WEIGHT_CLASS_BULKY
 	attack_verb = list("smashed", "whacked", "smacked", "bonked")
 	hitsound = "swing_hit"
@@ -66,9 +66,11 @@
 	. = ..()
 	set_light(l_range, l_power, light_color)
 
+/*
 /obj/item/nullrod/dream_breaker/attack(mob/living/target, mob/living/user)
 	. = ..()
 	user.changeNext_move(CLICK_CD_MELEE * click_delay)
+*/
 
 /obj/item/nullrod/dream_breaker/ui_action_click(mob/user, action)
 	if(!isliving(user))
