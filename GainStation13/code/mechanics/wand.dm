@@ -19,7 +19,7 @@
 
 /obj/item/projectile/magic/food
 	name = "bolt of food"
-	pass_flags = PASSGLASS|PASSDOOR|PASSGRILLE
+	pass_flags = PASSGLASS|PASSGRILLE
 	///What foods are able to be spawned by the wand?
 	var/list/spawnable_foods = list(
 		/obj/item/reagent_containers/food/snacks/burger/bigbite,
@@ -33,7 +33,7 @@
 		/obj/item/reagent_containers/food/snacks/pizza/margherita,
 		/obj/item/reagent_containers/food/snacks/pizza/meat,
 	)
-	
+
 	///How much Lipoifier should be added to the spawned in food? Keep this at 10 maximum.
 	var/lipoifier_to_add = 5
 
@@ -44,14 +44,14 @@
 	if(!floor || iswallturf(floor))
 		return FALSE
 
-	var/food_to_spawn = pick(spawnable_foods)	
+	var/food_to_spawn = pick(spawnable_foods)
 	var/obj/item/reagent_containers/food/snacks/spawned_food = new food_to_spawn(floor)
 	if(!spawned_food)
 		return FALSE
 
-	spawned_food.reagents.add_reagent(/datum/reagent/consumable/lipoifier, lipoifier_to_add) 
+	spawned_food.reagents.add_reagent(/datum/reagent/consumable/lipoifier, lipoifier_to_add)
 	return TRUE
-	
+
 /obj/item/projectile/magic/food/strong
 	name = "strong bolt of food"
 	lipoifier_to_add = 10

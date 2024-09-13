@@ -13,7 +13,7 @@
 	desc = "A serving tray for food, now somehow using bluespace to hold more stuff."
 	id = "tray_holding"
 	build_type = PROTOLATHE
-	materials = list(MAT_GOLD = 250, MAT_URANIUM = 500)
+	materials = list(/datum/material/gold = 250, /datum/material/uranium = 500)
 	build_path =/obj/item/storage/bag/tray/holding
 	category = list("Bluespace Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
@@ -43,6 +43,6 @@
 	id = "borg_tray_hold"
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/tray_hold
-	materials = list(MAT_GOLD = 250, MAT_URANIUM = 500)
+	materials = list(/datum/material/gold = 250, /datum/material/uranium = 500)
 	construction_time = 100
 	category = list("Cyborg Upgrade Modules")

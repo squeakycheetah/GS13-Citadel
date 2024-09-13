@@ -1,8 +1,8 @@
 // This is an emote file for random shit we've ported. Im just copying the style recipes_ported.dm did, yell at me if im wrong later.
-// It said it was lazy but personally I think this might be a better way of organizing otherwise unique content that we're porting 
+// It said it was lazy but personally I think this might be a better way of organizing otherwise unique content that we're porting
 // for ourselves. -Reo
 
-// I found this tacked onto the bottom of code/modules/mob/living/emote.dm. No //code add: notice or anything. Moving it here, 
+// I found this tacked onto the bottom of code/modules/mob/living/emote.dm. No //code add: notice or anything. Moving it here,
 // since it seems to all be ported emotes. -Reo
 /*
 //Carl wuz here
@@ -96,6 +96,28 @@
 //End of the random emotes I found in mob/living
 
 
+/datum/emote/living
+	/// What sound do we want to play?
+	var/sound
+
+/datum/emote/living/proc/get_sound()
+	return
+
+
+/datum/emote/living/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!. || user.is_muzzled())
+		return
+
+	var/sound_to_play = sound
+	if(!sound)
+		sound_to_play = get_sound()
+
+	if(!sound_to_play)
+		return
+
+	playsound(user.loc, sound_to_play, 50, 1, 4, 1.2)
+
 //Rewrites of the above start.
 /datum/emote/living/carbon/racc
 	key = "racc_chitter"
@@ -121,7 +143,7 @@
 			'hyperstation/sound/voice/emotes/bat_c5.ogg','hyperstation/sound/voice/emotes/bat_c6.ogg', \
 			'hyperstation/sound/voice/emotes/bat_c7.ogg', 'hyperstation/sound/voice/emotes/bat_c8.ogg',\
 			'hyperstation/sound/voice/emotes/bat_c9.ogg')
-		
+
 //Rewrites of the above end.
 
 //Ported from Vorestation

@@ -8,7 +8,7 @@
 	name = "Basic Fatoray"
 	id = "fatoray_weak"
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 8000, MAT_GLASS = 6000, MAT_CALORITE = 10000)
+	materials = list(/datum/material/iron = 8000, /datum/material/glass = 6000, /datum/material/calorite = 10000)
 	construction_time = 75
 	build_path = /obj/item/gun/energy/fatoray/weak
 	category = list("Weapons")
@@ -18,7 +18,7 @@
 	name = "Basic Cannonshot Fatoray"
 	id = "fatoray_cannon_weak"
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 8000, MAT_CALORITE = 20000)
+	materials = list(/datum/material/iron = 10000, /datum/material/glass = 8000, /datum/material/calorite = 20000)
 	construction_time = 200
 	build_path = /obj/item/gun/energy/fatoray/cannon_weak
 	category = list("Weapons")
@@ -28,7 +28,7 @@
 	name = "AL-T-Ray: Metabolism"
 	id = "alter_ray_metabolism"
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 8000, MAT_CALORITE = 26000)
+	materials = list(/datum/material/iron = 10000, /datum/material/glass = 8000, /datum/material/calorite = 26000)
 	construction_time = 200
 	build_path = /obj/item/gun/energy/laser/alter_ray/gainrate
 	category = list("Weapons")
@@ -39,7 +39,7 @@
 	name = "AL-T-Ray: Reverser"
 	id = "alter_ray_reverser"
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 8000, MAT_CALORITE = 26000)
+	materials = list(/datum/material/iron = 10000, /datum/material/glass = 8000, /datum/material/calorite = 26000)
 	construction_time = 200
 	build_path = /obj/item/gun/energy/laser/alter_ray/noloss
 	category = list("Weapons")
@@ -51,7 +51,7 @@
 	desc = "A collar that amplifies caloric intake of the wearer."
 	id = "calorite_collar"
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 1000, MAT_CALORITE = 4000)
+	materials = list(/datum/material/iron = 1000, /datum/material/calorite = 4000)
 	construction_time = 75
 	build_path = /obj/item/clothing/neck/petcollar/calorite
 	category = list("Equipment", "Misc", "Medical Designs")
@@ -63,7 +63,7 @@
 	id = "ci-nutrimentturbo"
 	build_type = PROTOLATHE | MECHFAB
 	construction_time = 100
-	materials = list(MAT_METAL = 800, MAT_GLASS = 800, MAT_GOLD = 750, MAT_URANIUM = 1000)
+	materials = list(/datum/material/iron = 800, /datum/material/glass = 800, /datum/material/gold = 750, /datum/material/uranium = 1000)
 	build_path = /obj/item/organ/cyberimp/chest/nutriment/turbo
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
@@ -74,7 +74,7 @@
 	id = "ci-fatmobility"
 	build_type = PROTOLATHE | MECHFAB
 	construction_time = 100
-	materials = list(MAT_METAL = 800, MAT_GLASS = 800, MAT_GOLD = 750, MAT_URANIUM = 1000)
+	materials = list(/datum/material/iron = 800, /datum/material/glass = 800, /datum/material/gold = 750, /datum/material/uranium = 1000)
 	build_path = /obj/item/organ/cyberimp/chest/mobility
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
@@ -85,7 +85,7 @@
 	id = "bluespace_belt"
 	build_type = PROTOLATHE
 	construction_time = 100
-	materials = list(MAT_SILVER = 4000, MAT_GOLD = 4000, MAT_BLUESPACE = 2000, )
+	materials = list(/datum/material/silver = 4000, /datum/material/gold = 4000, MAT_BLUESPACE = 2000, )
 	build_path = /obj/item/bluespace_belt
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
@@ -96,7 +96,7 @@
 	id = "cookie_synthesizer"
 	build_type = PROTOLATHE
 	construction_time = 100
-	materials = list(MAT_SILVER = 4000, MAT_URANIUM = 1000, MAT_BLUESPACE = 1000, MAT_CALORITE = 2000)
+	materials = list(/datum/material/silver = 4000, /datum/material/uranium = 1000, MAT_BLUESPACE = 1000, /datum/material/calorite = 2000)
 	build_path = /obj/item/cookiesynth
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_SERVICE
@@ -107,7 +107,7 @@
 	id = "borg_upgrade_cookiesynthesizer"
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/cookiesynth
-	materials = list(MAT_METAL=10000, MAT_GOLD=1500, MAT_URANIUM=250, MAT_PLASMA=1500)
+	materials = list(/datum/material/iron=10000, /datum/material/gold=1500, /datum/material/uranium=250, MAT_PLASMA=1500)
 	construction_time = 100
 	category = list("Cyborg Upgrade Modules")
 
@@ -116,7 +116,7 @@
 	id = "borg_upgrade_fatoray"
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/fatoray
-	materials = list(MAT_METAL = 8000, MAT_GLASS = 6000, MAT_CALORITE = 10000)
+	materials = list(/datum/material/iron = 8000, /datum/material/glass = 6000, /datum/material/calorite = 10000)
 	construction_time = 100
 	category = list("Cyborg Upgrade Modules")
 
@@ -125,7 +125,7 @@
 	id = "borg_upgrade_feedingtube"
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/feedtube
-	materials = list(MAT_METAL = 8000, MAT_GLASS = 6000, MAT_CALORITE = 10000)
+	materials = list(/datum/material/iron = 8000, /datum/material/glass = 6000, /datum/material/calorite = 10000)
 	construction_time = 100
 	category = list("Cyborg Upgrade Modules")
 
@@ -138,7 +138,7 @@
 
 /obj/item/borg/upgrade/cookiesynth/action(mob/living/silicon/robot/R, user = usr)
 	. = ..()
-	if(.)		
+	if(.)
 		var/obj/item/cookiesynth/S = new(R.module)
 		R.module.basic_modules += S
 		R.module.add_module(S, FALSE, TRUE)
@@ -167,7 +167,7 @@
 
 /obj/item/borg/upgrade/fatoray/action(mob/living/silicon/robot/R, user = usr)
 	. = ..()
-	if(.)		
+	if(.)
 		var/obj/item/gun/energy/fatoray/weak/cyborg/S = new(R.module)
 		R.module.basic_modules += S
 		R.module.add_module(S, FALSE, TRUE)
@@ -203,7 +203,7 @@
 	if(!istype(M))
 		return
 	if(R.total_volume && M.can_inject(user, 1, user.zone_selected,bypass_protection))
-	
+
 		if(M == user.pulling && ishuman(user.pulling))
 			starttime = world.time
 			while(starttime + 300 > world.time && in_range(user, M))
@@ -239,7 +239,7 @@
 
 /obj/item/borg/upgrade/feedtube/action(mob/living/silicon/robot/R, user = usr)
 	. = ..()
-	if(.)		
+	if(.)
 		var/obj/item/reagent_containers/borghypo/feeding_tube/S = new(R.module)
 		R.module.basic_modules += S
 		R.module.add_module(S, FALSE, TRUE)

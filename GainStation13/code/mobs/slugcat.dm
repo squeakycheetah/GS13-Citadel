@@ -36,7 +36,7 @@
 	devourable = 1
 	digestable = 1
 	feeding = 1
-	var/obj/item/twohanded/spear/weapon
+	var/obj/item/spear/weapon
 
 /mob/living/simple_animal/pet/slugcat/Initialize(mapload)
 	. = ..()
@@ -61,7 +61,7 @@
 	if(!isitem(A))
 		return
 
-	if(!weapon && istype(A, /obj/item/twohanded/spear))
+	if(!weapon && istype(A, /obj/item/spear))
 		visible_message("<span class='notice'>[src] pick up the [A].</span>", "<span class='notice'>You pick up the [A].</span>")
 		weapon = A
 		weapon.forceMove(src)
@@ -71,7 +71,7 @@
 		melee_damage_type = weapon.damtype
 		attack_sound = weapon.hitsound
 		update_icons()
-	else if(!weapon && !istype(A, /obj/item/twohanded/spear))
+	else if(!weapon && !istype(A, /obj/item/spear))
 		to_chat(src, "<span class='warning'>You do not know how to wield the [A]!</span>")
 
 /mob/living/simple_animal/pet/slugcat/RangedAttack(atom/A, params)

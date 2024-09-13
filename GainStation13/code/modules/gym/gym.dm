@@ -8,7 +8,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	throw_speed = 2
 	throw_range = 3
-	materials = list(MAT_METAL=10)
+	custom_materials = list(/datum/material/iron=10)
 	pressure_resistance = 2
 	var/reps = 0
 	var/using = FALSE
@@ -16,7 +16,7 @@
 /obj/item/dumbbell/dropped(mob/user, silent)
 	reps = 0
 	. = ..()
-	
+
 /obj/item/dumbbell/attack_self(mob/user)
 	. = ..()
 	if(!using)
@@ -42,12 +42,12 @@
 	var/fatloss = -10
 
 /obj/machinery/treadmill/Uncross(atom/movable/AM, atom/newloc)
-	if(stat & BROKEN)
+	if(machine_stat & BROKEN)
 		return ..()
 	if(!isliving(AM))
 		return ..()
 	var/mob/living/M = AM
-	if(M.throwing || M.floating || M.is_flying()) //Make sure they're not going over it
+	if(M.throwing || (M.movement_type & FLOATING) || M.is_flying()) //Make sure they're not going over it
 		return ..()
 	if(AM.dir != dir) //Make sure they're going into the treadmill
 		return ..()
@@ -64,11 +64,11 @@
 		C.adjust_fatness(fatloss, FATTENING_TYPE_WEIGHT_LOSS)
 	flick("conveyor-1", src)
 	return FALSE
-	
+
 /obj/machinery/treadmill/RefreshParts(obj/item/O, mob/user, params)
 	for(var/obj/item/stock_parts/manipulator/M in component_parts)
 		fatloss += M.rating * -10
-	
+
 /obj/machinery/treadmill/attackby(obj/item/O, mob/living/user, params)
 	if(default_deconstruction_screwdriver(user, "conveyor0", "conveyor0", O))
 		return TRUE
@@ -90,7 +90,7 @@
 	name = "Treadmill Board"
 	id = "treadmill"
 	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
+	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
 	build_path = /obj/item/circuitboard/machine/treadmill
 	category = list("inital", "Construction")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -99,7 +99,7 @@
 	name = "Dumbbell"
 	id = "dumbbell"
 	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 2000)
+	materials = list(/datum/material/iron = 2000)
 	build_path = /obj/item/dumbbell
 	category = list("initial", "Tools")
 /*
@@ -107,7 +107,7 @@
 	name = "Treadmill"
 	id = "treadmill"
 	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 5000)
+	materials = list(/datum/material/iron = 5000)
 	build_path = /obj/item/conveyor_construct/treadmill
 	category = list("initial", "Construction")
 */

@@ -55,7 +55,7 @@
 
 /obj/machinery/power/adipoelectric_generator/emp_act(severity)
 	. = ..()
-	if(!(stat & (BROKEN|NOPOWER)))
+	if(!(machine_stat & (BROKEN|NOPOWER)))
 		emp_timer = world.time + 600
 		if(occupant)
 			src.visible_message("<span class='alert'>The [src] buzzes and expels anyone inside!.</span>")

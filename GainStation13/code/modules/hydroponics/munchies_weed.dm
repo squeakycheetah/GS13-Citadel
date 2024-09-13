@@ -1,6 +1,10 @@
 /mob/living/carbon
 	var/nutri_mult = 1
 
+/datum/plant_gene/trait/glow/orange
+	name = "Orange Bioluminescence"
+	glow_color = "#ff9166"
+
 /obj/item/seeds/cannabis/munchies
 	name = "pack of munchies weed seeds"
 	desc = "These seeds grow into munchies weed."

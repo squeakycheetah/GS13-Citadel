@@ -20,10 +20,6 @@
 	lethal_projectile = /obj/item/projectile/beam/fattening/cannon
 	shot_delay = 30
 
-/obj/machinery/porta_turret/fattening/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/empprotection, EMP_PROTECT_SELF | EMP_PROTECT_WIRES)
-
 /obj/machinery/porta_turret/fattening/setup()
 	return
 

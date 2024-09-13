@@ -3,7 +3,7 @@
 	desc = "A tool that can construct and deconstruct walls, airlocks and floors on the fly. This model works at a distance."
 	id = "arcd_design"
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = MINERAL_MATERIAL_AMOUNT, MAT_GLASS = MINERAL_MATERIAL_AMOUNT, MAT_DIAMOND = 500, MAT_BLUESPACE = 500)  // costs more than what it did in the autolathe, this one comes loaded.
+	materials = list(/datum/material/iron = MINERAL_MATERIAL_AMOUNT, /datum/material/glass = MINERAL_MATERIAL_AMOUNT, /datum/material/diamond = 500, MAT_BLUESPACE = 500)  // costs more than what it did in the autolathe, this one comes loaded.
 	build_path = /obj/item/construction/rcd/arcd
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -41,6 +41,6 @@
 	id = "borg_arcd"
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/arcd
-	materials = list(MAT_METAL = MINERAL_MATERIAL_AMOUNT, MAT_GLASS = MINERAL_MATERIAL_AMOUNT, MAT_DIAMOND = 500, MAT_BLUESPACE = 500)
+	materials = list(/datum/material/iron = MINERAL_MATERIAL_AMOUNT, /datum/material/glass = MINERAL_MATERIAL_AMOUNT, /datum/material/diamond = 500, MAT_BLUESPACE = 500)
 	construction_time = 100
 	category = list("Cyborg Upgrade Modules")

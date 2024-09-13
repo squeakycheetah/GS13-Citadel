@@ -1,31 +1,13 @@
 //I am not a coder. Please fucking tear apart my code, and insult me for how awful I am at coding. Please and thank you. -Dahlular
 //alright bet -BoxBoy
-#define RESIZE_MACRO 6
-#define RESIZE_HUGE 4
-#define RESIZE_BIG 2
-#define RESIZE_NORMAL 1
-#define RESIZE_SMALL 0.75
-#define RESIZE_TINY 0.50
-#define RESIZE_MICRO 0.25
-
 //Moving these here - Jay
 /mob/living
 	var/size_multiplier = 1 //multiplier for the mob's icon size atm
 	var/previous_size = 1
+	var/custom_body_size = 100
 
 //Cyanosis - Action that resizes the sprite for the client but nobody else. Say goodbye to attacking yourself when someone's above you lmao
 	var/datum/action/sizecode_resize/small_sprite
-
-#define MOVESPEED_ID_SIZE      "SIZECODE"
-#define MOVESPEED_ID_STOMP     "STEPPY"
-
-//averages
-#define RESIZE_A_MACROHUGE (RESIZE_MACRO + RESIZE_HUGE) / 2
-#define RESIZE_A_HUGEBIG (RESIZE_HUGE + RESIZE_BIG) / 2
-#define RESIZE_A_BIGNORMAL (RESIZE_BIG + RESIZE_NORMAL) / 2
-#define RESIZE_A_NORMALSMALL (RESIZE_NORMAL + RESIZE_SMALL) / 2
-#define RESIZE_A_SMALLTINY (RESIZE_SMALL + RESIZE_TINY) / 2
-#define RESIZE_A_TINYMICRO (RESIZE_TINY + RESIZE_MICRO) / 2
 
 //Scale up a mob's icon by the size_multiplier
 /mob/living/update_transform()
@@ -142,7 +124,7 @@
 				now_pushing = 0
 				H.forceMove(tmob.loc)
 				sizediffStamLoss(tmob)
-				H.add_movespeed_modifier(MOVESPEED_ID_STOMP, multiplicative_slowdown = 10) //Full stop
+				H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/size, multiplicative_slowdown = 10) //Full stop
 				addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/, remove_movespeed_modifier), MOVESPEED_ID_STOMP), 3) //0.3 seconds
 				if(get_effective_size() > tmob.get_effective_size() && iscarbon(H))
 					if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
@@ -171,7 +153,7 @@
 				sizediffStamLoss(tmob)
 				sizediffBruteloss(tmob)
 				playsound(loc, 'sound/misc/splort.ogg', 50, 1)
-				H.add_movespeed_modifier(MOVESPEED_ID_STOMP, multiplicative_slowdown = 10)
+				H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/size, multiplicative_slowdown = 10)
 				addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/, remove_movespeed_modifier), MOVESPEED_ID_STOMP), 10) //1 second
 				//H.Stun(20)
 				if(get_effective_size() > tmob.get_effective_size() && iscarbon(H))

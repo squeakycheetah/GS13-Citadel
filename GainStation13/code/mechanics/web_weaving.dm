@@ -68,7 +68,7 @@
 		return FALSE
 
 	user.visible_message("<span class='warning'>[user] attempts to wrap [target] inside of [wrapping]!</span>", "<span class='warning'>You attempt to wrap [target] inside of [wrapping].</span>")
-	if(!do_after_mob(user, target, 20 SECONDS) || !target.equip_to_slot_if_possible(wrapping,ITEM_SLOT_WEAR_SUIT, TRUE, TRUE))
+	if(!do_after_mob(user, target, 20 SECONDS) || !target.equip_to_slot_if_possible(wrapping, ITEM_SLOT_OCLOTHING, TRUE, TRUE))
 		user.visible_message("<span class='warning'>[user] fails to wrap [target] inside of [wrapping]!</span>", "<span class='warning'>You fail to wrap [target] inside of [wrapping].</span>")
 		return FALSE
 
@@ -79,7 +79,7 @@
 	name = "web bindings"
 	desc = "A mesh of sticky web that binds whoever is stuck inside of it"
 	icon = 'GainStation13/icons/obj/clothing/web.dmi'
-	alternate_worn_icon = 'GainStation13/icons/mob/web.dmi'
+	worn_ico = 'GainStation13/icons/mob/web.dmi'
 	icon_state = "web_bindings"
 	item_state = "web_bindings"
 	breakouttime = 600 //1 minute is reasonable.
@@ -89,7 +89,7 @@
 
 /obj/item/clothing/suit/straight_jacket/web/equipped(mob/user, slot)
 	. = ..()
-	if((user.get_item_by_slot(SLOT_WEAR_SUIT)) != src && !QDELETED(src))
+	if((user.get_item_by_slot(SLOT_WEAR_OCLOTHING)) != src && !QDELETED(src))
 		qdel(src)
 
 /obj/structure/spider/cocoon/quirk

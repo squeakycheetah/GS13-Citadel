@@ -1,3 +1,7 @@
+/// Checks if the mob is able to be teleported.
+/obj/machinery/quantumpad/proc/check_mob_teleportability(mob/living/mob_to_check)
+	return TRUE
+
 /obj/machinery/quantumpad/supply_only
 	name = "supply pad"
 	desc = "A modified version of the quantum pad, only able to teleport supplies and livestock."

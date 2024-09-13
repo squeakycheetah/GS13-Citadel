@@ -135,3 +135,6 @@
 //defines for the two colour schemes, advanced and old
 #define OLD_CHARACTER_COLORING			"old_color_system"
 #define ADVANCED_CHARACTER_COLORING		"advanced_color_system"
+
+#define FARTING_NOISES		(1<<4) //GS13
+#define BURPING_NOISES		(1<<5) //GS13

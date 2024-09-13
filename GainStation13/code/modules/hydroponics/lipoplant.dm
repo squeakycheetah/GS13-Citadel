@@ -35,7 +35,6 @@
 	attack_verb = list("klonked", "donked", "bonked")
 	distill_reagent = "creme_de_coconut"
 	var/opened = FALSE
-	sharpness = IS_BLUNT
 
 /obj/item/reagent_containers/food/snacks/grown/lipofruit/attackby(obj/item/W, mob/user, params)
 	if(!opened && W.sharpness)

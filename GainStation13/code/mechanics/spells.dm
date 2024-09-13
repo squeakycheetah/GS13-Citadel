@@ -35,11 +35,11 @@
 /obj/item/melee/touch_attack/fattening/afterattack(atom/target, mob/living/carbon/user, proximity)
 	if(!proximity || !iscarbon(target) || target == user)
 		return FALSE
-	
+
 	var/mob/living/carbon/gainer = target
 	if(!gainer || !weight_to_add)
 		return FALSE
-	
+
 	if(!gainer.adjust_fatness(weight_to_add, FATTENING_TYPE_MAGIC))
 		to_chat(user,"<span class='warning'[target] seems unaffected by [src]</span>")
 		return FALSE
@@ -83,7 +83,7 @@
 	if(. != null && !.)
 		return FALSE
 
-	user.adjust_fatness(-weight_to_add, FATTENING_TYPE_MAGIC)	
+	user.adjust_fatness(-weight_to_add, FATTENING_TYPE_MAGIC)
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/the_traps/fat
 	name = "Fat Traps!"
@@ -114,7 +114,6 @@
 	icon = 'GainStation13/icons/obj/spells/spellbooks.dmi'
 	icon_state = "add_weight"
 	desc = "This book feels warm to the touch."
-	page_time = 10
 
 /obj/item/book/granter/spell/fattening/transfer
 	name = "weight transfer tome"

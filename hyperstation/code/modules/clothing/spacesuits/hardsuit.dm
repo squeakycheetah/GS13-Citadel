@@ -38,7 +38,7 @@
 		return
 	if(!ishuman(user))
 		return
-	if(slot ==ITEM_SLOT_WEAR_SUIT)
+	if(slot == ITEM_SLOT_SUIT)
 		if(!firstpickup)
 			SEND_SOUND(user, sound('hyperstation/sound/halflife/hevsuit_pickup.ogg', volume = 50))
 		else

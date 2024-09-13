@@ -51,6 +51,8 @@
 
 //For glove slots
 /obj/item/clothing/gloves/ring/syntech/equipped(mob/living/user, slot)
+	. = ..()
+
 	if(ishuman(user))
 		var/mob/living/carbon/human/human_target = user
 		if(slot ==ITEM_SLOT_GLOVES)
@@ -59,6 +61,7 @@
 				normalize_mob_size(human_target)
 
 /obj/item/clothing/gloves/ring/syntech/dropped(mob/living/user, slot)
+	. = ..()
 	if(ishuman(user))
 		var/mob/living/carbon/human/human_target = user
 
@@ -87,6 +90,7 @@
 
 //For neck items
 /obj/item/clothing/neck/syntech/equipped(mob/living/user, slot)
+	. = ..()
 	if(ishuman(user))
 		var/mob/living/carbon/human/human_target = user
 		if(slot ==ITEM_SLOT_NECK)
@@ -95,6 +99,7 @@
 				normalize_mob_size(human_target)
 
 /obj/item/clothing/neck/syntech/dropped(mob/living/user, slot)
+	. = ..()
 	if(ishuman(user))
 		var/mob/living/carbon/human/human_target = user
 

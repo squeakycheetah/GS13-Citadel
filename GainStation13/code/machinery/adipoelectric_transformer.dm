@@ -59,7 +59,7 @@ GLOBAL_LIST_EMPTY(adipoelectric_transformer)
 
 /obj/machinery/adipoelectric_transformer/emp_act(severity)
 	. = ..()
-	if(!(stat & (BROKEN|NOPOWER)))
+	if(!(machine_stat & (BROKEN|NOPOWER)))
 		if(occupant)
 			src.visible_message("<span class='alert'>[src] emits ominous cracking noises!</span>")
 			emp_timer = world.time //stuck in for 600 ticks, about 60 seconds
@@ -97,7 +97,7 @@ GLOBAL_LIST_EMPTY(adipoelectric_transformer)
 /obj/machinery/adipoelectric_transformer/close_machine()
 	. = ..()
 	if(LAZYLEN(GLOB.adipoelectric_transformer) < 1 && occupant)
-		var/turf/T = loc	
+		var/turf/T = loc
 		if(isturf(T) && !T.intact)
 			attached = locate() in T
 		add_fingerprint(occupant)

@@ -160,6 +160,18 @@
 				if(QDELETED(ROI))
 					continue //sleeps in CHECK_TICK
 
+				//GS13 EDIT START
+				if(isliving(ROI) && !check_mob_teleportability(ROI))
+					continue
+
+				var/able_to_teleport_item = TRUE
+				for(var/mob/living/found_mob in ROI.contents)
+					if(isliving(found_mob) && !check_mob_teleportability(found_mob))
+						able_to_teleport_item = FALSE
+
+				if(!able_to_teleport_item)
+					continue
+
 				// if is anchored, don't let through
 				if(ROI.anchored)
 					if(isliving(ROI))

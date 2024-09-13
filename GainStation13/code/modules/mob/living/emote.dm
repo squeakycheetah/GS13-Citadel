@@ -22,10 +22,11 @@
 	. = ..()
 	if(!.)
 		return FALSE
-	
+
 	playsound_prefed(user, noise_type, noise_pref, 100, TRUE, -4)
 
-	user.reduce_fullness(rand(reduction_min,reduction_max))
+	var/mob/living/carbon/carbon_user = user
+	carbon_user.reduce_fullness(rand(reduction_min,reduction_max))
 
 /datum/emote/living/burp/fart //Butt burp.
 	key = "fart"
@@ -77,7 +78,7 @@
 	key = "goonfart"
 	key_third_person = "goonfarts"
 	noise_type = 'goon/sound/voice/farts/fart4.ogg'
-	
+
 //Shhh... It's a secret! Don't tell or I'll steal your legs
 /datum/emote/living/burunyu
 	key = "burunyu"
@@ -96,5 +97,6 @@
 	. = ..()
 	if(!.)
 		return FALSE
-	
-	user.reduce_fullness(rand(4,16), FALSE)
+
+	var/mob/living/carbon/carbon_user = user
+	carbon_user.reduce_fullness(rand(4,16), FALSE)

@@ -1,4 +1,4 @@
-GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, /area/maintenance, /area/security/prison, /area/holodeck, /area/security/vacantoffice, /area/space, /area/ruin, /area/lavaland, /area/awaymission, /area/centcom, /area/fatlab))
+GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/maintenance, /area/security/prison, /area/holodeck, /area/vacantoffice, /area/space, /area/ruin, /area/lavaland, /area/awaymission, /area/centcom, /area/fatlab))
 
 /mob/living/carbon
 	//Due to the changes needed to create the system to hide fatness, here's some notes:
@@ -23,6 +23,9 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 	var/fullness = FULLNESS_LEVEL_HALF_FULL
 	var/fullness_reduction_timer = 0
 	var/burpslurring = 0
+
+	var/overeatduration = 0		// How long this guy is overeating //Carbon
+	var/fullness_reducion_timer = 0 // When was the last time they emoted to reduce their fullness
 
 /**
 * Adjusts the fatness level of the parent mob.

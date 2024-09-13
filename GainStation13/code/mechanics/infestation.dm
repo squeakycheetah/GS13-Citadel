@@ -17,12 +17,8 @@
 	/area/hallway/primary,
 	/area/hallway/secondary,
 	/area/hallway/secondary/entry,
-	/area/engine/supermatter,
-	/area/engine/atmospherics_engine,
-	/area/engine/engineering/reactor_core,
-	/area/engine/engineering/reactor_control,
+	/area/engineering/supermatter,
 	/area/ai_monitored/turret_protected,
-	/area/layenia/cloudlayer,
 	/area/asteroid/nearstation,
 	/area/science/server,
 	/area/science/explab,
@@ -36,7 +32,7 @@
 	spawncount = rand(4, 7)
 
 /datum/round_event/dessert_infestation/announce(fake)
-	priority_announce("Unidentified lifesigns detected aboard [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", 'sound/ai/aliens.ogg')
+	priority_announce("Unidentified lifesigns detected aboard [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", 'GainStation13/sound/ai/aliens.ogg')
 
 /datum/round_event/dessert_infestation/start()
 	var/list/area/stationAreas = list()

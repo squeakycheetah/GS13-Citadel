@@ -13,7 +13,7 @@
 	force = 8
 	sharpness = TRUE
 	w_class = WEIGHT_CLASS_HUGE
-	materials = list(MAT_METAL=50)
+	materials = list(/datum/material/iron=50)
 	attack_verb = list("slashed", "sawed")
 
 /obj/item/carpentry/hammer
@@ -24,7 +24,7 @@
 	force = 7
 	sharpness = FALSE
 	w_class = WEIGHT_CLASS_NORMAL
-	materials = list(MAT_METAL=100)
+	materials = list(/datum/material/iron=100)
 	attack_verb = list("bonked", "nailed")
 
 /obj/item/carpentry/glue
@@ -44,7 +44,7 @@
 	force = 3
 	sharpness = TRUE
 	w_class = WEIGHT_CLASS_SMALL
-	materials = list(MAT_METAL=25)
+	materials = list(/datum/material/iron=25)
 	attack_verb = list("bored", "drilled")
 
 /obj/item/carpentry/sandpaper
@@ -54,7 +54,7 @@
 	force = 1
 	sharpness = FALSE
 	w_class = WEIGHT_CLASS_TINY
-	materials = list(MAT_GLASS=1) //lmao
+	materials = list(/datum/material/glass=1) //lmao
 	attack_verb = list("sanded", "licked")
 
 /obj/item/nails
@@ -65,7 +65,7 @@
 	force = 0
 	sharpness = TRUE
 	w_class = WEIGHT_CLASS_TINY
-	materials = list(MAT_METAL=10)
+	materials = list(/datum/material/iron=10)
 	attack_verb = list("nailed", "screwed")
 
 /obj/item/cushion
