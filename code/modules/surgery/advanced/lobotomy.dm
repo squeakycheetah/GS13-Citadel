@@ -23,7 +23,7 @@
 
 /datum/surgery_step/lobotomize
 	name = "perform lobotomy"
-	implements = list(TOOL_SCALPEL = 85, /obj/item/melee/transforming/energy/sword = 55, /obj/item/kitchen/knife = 35,
+	implements = list(TOOL_SCALPEL = 90, /obj/item/melee/transforming/energy/sword = 55, /obj/item/kitchen/knife = 35,
 		/obj/item/shard = 25, /obj/item = 20)
 	time = 100
 	preop_sound = 'sound/surgery/scalpel1.ogg'
@@ -47,6 +47,7 @@
 	target.cure_all_traumas(TRAUMA_RESILIENCE_LOBOTOMY)
 	if(target.mind && target.mind.has_antag_datum(/datum/antagonist/brainwashed))
 		target.mind.remove_antag_datum(/datum/antagonist/brainwashed)
+/* GS13 EDIT START
 	if(prob(50))
 		switch(rand(1,3))//Now let's see what hopefully-not-important part of the brain we cut off
 			if(1)
@@ -58,6 +59,15 @@
 	// you're cutting off a part of the brain.w
 	var/obj/item/organ/brain/B = target.getorganslot(ORGAN_SLOT_BRAIN)
 	B.applyOrganDamage(50, 100)
+*/
+	switch(rand(1,4))//Now let's see what hopefully-not-important part of the brain we cut off
+		if(1)
+			target.gain_trauma_type(BRAIN_TRAUMA_MILD, TRAUMA_RESILIENCE_SURGERY)
+		if(2)
+			target.gain_trauma_type(BRAIN_TRAUMA_SEVERE, TRAUMA_RESILIENCE_SURGERY)
+		if(3)
+			target.gain_trauma_type(BRAIN_TRAUMA_SPECIAL, TRAUMA_RESILIENCE_SURGERY)
+	//GS13 EDIT END
 	return TRUE
 
 /datum/surgery_step/lobotomize/failure(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
