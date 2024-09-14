@@ -92,6 +92,8 @@
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/breasts, GLOB.breasts_shapes_list)
 	if(!GLOB.butt_shapes_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/butt, GLOB.butt_shapes_list)
+	if(!GLOB.belly_shapes_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/butt, GLOB.belly_shapes_list)
 	if(!GLOB.ipc_screens_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/screen, GLOB.ipc_screens_list)
 	if(!GLOB.ipc_antennas_list.len)
@@ -211,7 +213,12 @@
 		"has_butt"			= FALSE,
 		"butt_size"			= BUTT_SIZE_DEF,
 		"butt_color"		= pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F"),
-
+		// GS13 EDIT START - BELLY
+		"has_belly" 		= FALSE,
+		"hide_belly" 		= FALSE,
+		"inflatable_belly" 	= FALSE,
+		"belly_color" 		= pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F"),
+		// GS13 EDIT END
 
 		"balls_visibility"	= GEN_VISIBLE_NO_UNDIES,
 		"breasts_visibility"= GEN_VISIBLE_NO_UNDIES,

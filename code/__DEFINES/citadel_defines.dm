@@ -66,6 +66,9 @@
 #define BUTT_SIZE_DEF		1
 #define BUTT_SIZE_MAX		5  //butt genitals are special in that they have caps. if there's the event there's even bigger butt sprites, raise this number.
 
+#define BELLY_SIZE_DEF	0
+#define BELLY_SIZE_MAX	10
+
 //visibility toggles defines to avoid errors typos code errors.
 #define GEN_VISIBLE_ALWAYS "Always visible"
 #define GEN_VISIBLE_NO_CLOTHES "Hidden by clothes"

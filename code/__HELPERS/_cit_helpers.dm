@@ -57,6 +57,7 @@ GLOBAL_LIST_EMPTY(genitals_list)
 GLOBAL_LIST_EMPTY(cock_shapes_list)
 GLOBAL_LIST_EMPTY(balls_shapes_list)
 GLOBAL_LIST_EMPTY(butt_shapes_list)
+GLOBAL_LIST_EMPTY(belly_shapes_list)
 GLOBAL_LIST_EMPTY(breasts_shapes_list)
 GLOBAL_LIST_EMPTY(vagina_shapes_list)
 //longcat memes.
@@ -127,6 +128,11 @@ GLOBAL_VAR_INIT(miscreants_allowed, FALSE)
 
 /mob/living/carbon/proc/has_butt()
 	if(getorganslot(ORGAN_SLOT_BUTT))
+		return TRUE
+	return FALSE
+
+/mob/living/carbon/proc/has_belly()
+	if(getorganslot(ORGAN_SLOT_BELLY))
 		return TRUE
 	return FALSE
 

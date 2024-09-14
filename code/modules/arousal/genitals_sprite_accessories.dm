@@ -135,3 +135,14 @@
 /datum/sprite_accessory/butt/pair
 	icon_state = "pair"
 	name = "Pair"
+
+//BELLY BE HERE
+/datum/sprite_accessory/belly
+	icon = 'hyperstation/icons/obj/genitals/belly.dmi'
+	icon_state = "belly"
+	name = "belly"
+	color_src = "belly_color"
+
+/datum/sprite_accessory/belly/belly
+	icon_state = "belly"
+	name = "belly"

@@ -769,6 +769,24 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "</td>"
 					dat += "</td>"
 					dat += "</tr></table>"
+					// GS13 EDIT BELLY START
+					dat += APPEARANCE_CATEGORY_COLUMN
+					dat += "<h3>Belly</h3>"
+					dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=has_belly'>[features["has_belly"] == TRUE ? "Yes" : "No"]</a>"
+					if(features["has_belly"])
+						dat += "<b>Belly Size:</b> <a style='display:block;width:120px' href='?_src_=prefs;preference=belly_size;task=input'>[features["belly_size"]]</a>"
+						if(pref_species.use_skintones && features["genitals_use_skintone"] == TRUE)
+							dat += "<b>Color:</b></a><BR>"
+							dat += "<span style='border: 1px solid #161616; background-color: #[SKINTONE2HEX(skin_tone)];'>&nbsp;&nbsp;&nbsp;</span>(Skin tone overriding)<br>"
+						else
+							dat += "<b>Color:</b></a><BR>"
+							dat += "<span style='border: 1px solid #161616; background-color: #[features["belly_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=belly_color;task=input'>Change</a><br>"
+							dat += "<b>Belly Visibility:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=belly_visibility;task=input'>[features["belly_visibility"]]</a>"
+						// GS13: tweak inflation description
+						//dat += "<b>Inflation (climax with and manual belly size change in arousal menu):</b><a style='display:block;width:50px' href='?_src_=prefs;preference=inflatable_belly'>[features["inflatable_belly"] == 1 ? "Yes" : "No"]</a>"
+
+					dat += "</td>"
+
 				//Markings
 				if(MARKINGS_CHAR_TAB)
 					var/iterated_markings = 0
@@ -2566,6 +2584,29 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(n_vis)
 						features["butt_visibility"] = n_vis
 
+				if("belly_color")
+					var/new_bellycolor = input(user, "Belly Color:", "Character Preference", "#"+features["belly_color"]) as color|null
+					if(new_bellycolor)
+						var/temp_hsv = RGBtoHSV(new_bellycolor)
+						if(new_bellycolor == "#000000")
+							features["belly_color"] = pref_species.default_color
+						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3])
+							features["belly_color"] = sanitize_hexcolor(new_bellycolor)
+						else
+							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+
+				if("belly_size") //GS13 Edit here if we add more belly sprites
+					// GS13: Adjust sprite ranges in char setup
+					var/new_bellysize = input(user, "Belly size :\n(1-10)", "Character Preference") as num|null
+					if(new_bellysize)
+						features["belly_size"] = clamp(new_bellysize, 1, 10)
+
+				if("belly_visibility")
+					var/n_vis = input(user, "Belly Visibility", "Character Preference") as null|anything in CONFIG_GET(str_list/safe_visibility_toggles)
+					if(n_vis)
+						features["belly_visibility"] = n_vis
+
+
 				if("ooccolor")
 					var/new_ooccolor = input(user, "Choose your OOC colour:", "Game Preference",ooccolor) as color|null
 					if(new_ooccolor)
@@ -2854,6 +2895,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					features["has_womb"] = !features["has_womb"]
 				if("has_butt")
 					features["has_butt"] = !features["has_butt"]
+				if("has_belly")
+					features["has_belly"] = !features["has_belly"]
 				if("widescreenpref")
 					widescreenpref = !widescreenpref
 					user.client.view_size.setDefault(getScreenSize(widescreenpref))

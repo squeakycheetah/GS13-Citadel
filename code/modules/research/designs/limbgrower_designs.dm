@@ -222,3 +222,14 @@
 	reagents_list = list(/datum/reagent/medicine/synthflesh = 25)
 	build_path = /obj/item/organ/genital/butt
 	category = list("initial","human","lizard","fly","insect","plasmaman","mammal","xeno")
+
+// GS13 EDIT
+/datum/design/belly
+	name = "Belly"
+	id = "belly"
+	research_icon_state = "testicles_single_3_s"
+	research_icon = 'icons/obj/genitals/testicles.dmi'
+	build_type = LIMBGROWER
+	reagents_list = list(/datum/reagent/medicine/synthflesh = 25)
+	build_path = /obj/item/organ/genital/belly
+	category = list("initial","human","lizard","fly","insect","plasmaman","mammal","xeno")
