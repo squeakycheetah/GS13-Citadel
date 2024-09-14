@@ -15,12 +15,6 @@
 	var/size_cached			= 0
 	var/prev_size			= 0
 
-/obj/item/organ/genital/belly/on_life()
-	if(QDELETED(src))
-		return
-	if(!owner)
-		return
-
 /obj/item/organ/genital/belly/modify_size(modifier, min = BELLY_SIZE_DEF, max = BELLY_SIZE_MAX)
 	var/new_value = clamp(size_cached + modifier, min, max)
 	if(new_value == size_cached)
@@ -32,20 +26,16 @@
 	..()
 
 /obj/item/organ/genital/belly/update_appearance()
-	var/string
+	icon_state = "belly_[shape]_[size]"
 	if(owner)
 		if(owner.dna.species.use_skintones && owner.dna.features["genitals_use_skintone"])
-			if(ishuman(owner))
-				var/mob/living/carbon/human/H = owner
-				color = "#[SKINTONE2HEX(H.skin_tone)]"
+			if(ishuman(owner)) // Check before recasting type, although someone fucked up if you're not human AND have use_skintones somehow...
+				var/mob/living/carbon/human/H = owner // only human mobs have skin_tone, which we need.
+				color = SKINTONE2HEX(H.skin_tone)
+				if(!H.dna.skin_tone_override)
+					icon_state += "_s"
 		else
 			color = "#[owner.dna.features["belly_color"]]"
-		if(ishuman(owner))
-			var/mob/living/carbon/human/H = owner
-			icon_state = sanitize_text(string)
-			H.update_genitals()
-
-			icon_state = sanitize_text(string)
 
 /obj/item/organ/genital/belly/get_features(mob/living/carbon/human/H)
 	var/datum/dna/D = H.dna

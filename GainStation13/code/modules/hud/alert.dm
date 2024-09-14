@@ -1,3 +1,6 @@
+/atom/movable/screen/alert/gs13
+	icon = 'GainStation13/icons/mob/screen_alert.dmi'
+
 /atom/movable/screen/alert/gs13/blob
 	name = "Fatty Blob"
 	desc = "Every last piece of your corpulent body is now plush and bloated with vast rolls of blubber. Your corpulence is such that you are akin to a gigantic, towering wad of dough."

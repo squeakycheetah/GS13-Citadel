@@ -1,33 +1,22 @@
 /datum/species/proc/update_body_size(mob/living/carbon/human/H, size_change)
-	if (!H)
+	if(!istype(H))
 		return
 
-	var/obj/item/organ/genital/butt/anus = H.getorganslot(ORGAN_SLOT_BUTT)
-	var/obj/item/organ/genital/belly/belly = H.getorganslot("belly")
+	var/obj/item/organ/genital/butt/butt = H.getorganslot(ORGAN_SLOT_BUTT)
+	var/obj/item/organ/genital/belly/belly = H.getorganslot(ORGAN_SLOT_BELLY)
 	var/obj/item/organ/genital/breasts/breasts = H.getorganslot(ORGAN_SLOT_BREASTS)
 
-	update_genital_size(anus, size_change)
-	update_genital_size(belly, size_change)
-	update_breasts_size(breasts, size_change)
+	if(butt)
+		butt.modify_size(size_change)
+	if(belly)
+		belly.modify_size(size_change)
+	if(breasts)
+		breasts.modify_size(size_change)
 
 	H.genital_override = TRUE
 	H.update_body()
 	H.update_inv_w_uniform()
 	H.update_inv_wear_suit()
-
-/datum/species/proc/update_genital_size(obj/item/organ/genital/G, size_change)
-	if (!G)
-		return
-
-	G.size = G.size + size_change
-	G.update()
-
-/datum/species/proc/update_breasts_size(obj/item/organ/genital/breasts/G, size_change)
-	if (!G)
-		return
-
-	G.cached_size = G.cached_size + size_change
-	G.update()
 
 /datum/species/proc/handle_fatness_trait(mob/living/carbon/human/H, trait, trait_lose, trait_gain, fatness_lose, fatness_gain, chat_lose, chat_gain)
 	if(H.fatness < fatness_lose)
