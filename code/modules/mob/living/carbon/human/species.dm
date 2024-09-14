@@ -1502,6 +1502,9 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	if(HAS_TRAIT(H, TRAIT_NOHUNGER))
 		return //hunger is for BABIES
 
+	handle_fatness(H) // GS13 EDIT
+
+	/*
 	//The fucking TRAIT_FAT mutation is the dumbest shit ever. It makes the code so difficult to work with
 	if(HAS_TRAIT(H, TRAIT_FAT))//I share your pain, past coder.
 		if(H.overeatduration < 100)
@@ -1517,6 +1520,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			H.add_movespeed_modifier(/datum/movespeed_modifier/obesity)
 			H.update_inv_w_uniform()
 			H.update_inv_wear_suit()
+	*/
 
 	// nutrition decrease and satiety
 	if (H.nutrition > 0 && H.stat != DEAD && !HAS_TRAIT(H, TRAIT_NOHUNGER))
@@ -1587,6 +1591,38 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
 			H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
+
+	//GS13 EDIT
+	switch(H.fatness)
+		if(FATNESS_LEVEL_BLOB to INFINITY)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/blob)
+
+		if(FATNESS_LEVEL_IMMOBILE to FATNESS_LEVEL_BLOB)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/immobile)
+
+		if(FATNESS_LEVEL_BARELYMOBILE to FATNESS_LEVEL_IMMOBILE)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/barelymobile)
+
+		if(FATNESS_LEVEL_EXTREMELY_OBESE to FATNESS_LEVEL_BARELYMOBILE)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/extremelyobese)
+
+		if(FATNESS_LEVEL_MORBIDLY_OBESE to FATNESS_LEVEL_EXTREMELY_OBESE)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/morbidlyobese)
+
+		if(FATNESS_LEVEL_OBESE to FATNESS_LEVEL_MORBIDLY_OBESE)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/obese)
+
+		if(FATNESS_LEVEL_VERYFAT to FATNESS_LEVEL_OBESE)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/veryfat)
+
+		if(FATNESS_LEVEL_FATTER to FATNESS_LEVEL_VERYFAT)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/fatter)
+
+		if(FATNESS_LEVEL_FAT to FATNESS_LEVEL_FATTER)
+			H.throw_alert("fatness", /atom/movable/screen/alert/gs13/fat)
+
+		if(0 to FATNESS_LEVEL_FAT)
+			H.clear_alert("fatness")
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
 	return FALSE

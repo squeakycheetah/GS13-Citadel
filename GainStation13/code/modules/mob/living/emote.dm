@@ -77,7 +77,7 @@
 /datum/emote/living/burp/fart/goon // Fart but it's funny !
 	key = "goonfart"
 	key_third_person = "goonfarts"
-	noise_type = 'goon/sound/voice/farts/fart4.ogg'
+	noise_type = 'GainStation13/sound/voice/farts/fart4.ogg'
 
 //Shhh... It's a secret! Don't tell or I'll steal your legs
 /datum/emote/living/burunyu

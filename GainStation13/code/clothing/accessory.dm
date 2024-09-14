@@ -3,7 +3,6 @@
 	desc = "You shouldn't see this."
 	icon = 'GainStation13/icons/mob/accessories.dmi'
 	icon_state = "gato_middleman"
-	item_color = "gato" //btw I had to move the sprite for this to 'icons/mob/accessories.dmi', the shitty code made me do it!! GS13 will just have a backup but it's not referenced here
 	above_suit = TRUE
 
 /obj/item/clothing/accessory/medal/gato_badge/middleman

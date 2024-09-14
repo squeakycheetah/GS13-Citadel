@@ -36,7 +36,7 @@
 						. += mutable_appearance('GainStation13/icons/mob/modclothes/chefmodular.dmi', "belly_9_d", GENITALS_UNDER_LAYER)
 			if(istype(O, /obj/item/organ/genital/butt))
 				G = O
-				if(suit_style == DIGITIGRADE_SUIT_STYLE)
+				if(mutantrace_variation == STYLE_DIGITIGRADE)
 					if(G.size <= 10)
 						. += mutable_appearance('GainStation13/icons/mob/modclothes/chefmodular.dmi', "butt_[G.size]_l", GENITALS_FRONT_LAYER)
 						. += mutable_appearance('GainStation13/icons/mob/modclothes/chefmodular.dmi', "butt_[G.size]_l_NORTH", GENITALS_FRONT_LAYER)
@@ -62,8 +62,8 @@
 			. += mutable_appearance('icons/effects/item_damage.dmi', "damageduniform")
 		if(blood_DNA)
 			. += mutable_appearance('icons/effects/blood.dmi', "uniformblood", color = blood_DNA_to_color())
-		if(accessory_overlay)
-			. += accessory_overlay
+		if(length(accessory_overlays))
+			. += accessory_overlays
 
 /obj/item/clothing/under/color/grey/modular
 	name = "grey modular jumpsuit" //change name from base clothes to distinguish them
@@ -103,9 +103,9 @@
 							. += mutable_appearance(icon_location, "belly_[G.size]_d", GENITALS_UNDER_LAYER)
 						else
 							. += mutable_appearance(icon_location, "belly_9_d", GENITALS_UNDER_LAYER)
-				if(istype(O, /obj/item/organ/genital/anus)) //if that organ is the butt
+				if(istype(O, /obj/item/organ/genital/butt)) //if that organ is the butt
 					G = O
-					if(suit_style == DIGITIGRADE_SUIT_STYLE) //check if the suit needs to use sprites for digitigrade characters
+					if(mutantrace_variation == STYLE_DIGITIGRADE) //check if the suit needs to use sprites for digitigrade characters
 						if(G.size <= 10)
 							. += mutable_appearance(icon_location, "butt_[G.size]_l", GENITALS_FRONT_LAYER)
 							. += mutable_appearance(icon_location, "butt_[G.size]_l_NORTH", GENITALS_FRONT_LAYER) //to not adjust overlays every time a character turns, north-facing breasts and bellies are drawn separately, with individual icons
@@ -143,8 +143,8 @@
 				. += mutable_appearance('icons/effects/item_damage.dmi', "damageduniform")
 			if(blood_DNA)
 				. += mutable_appearance('icons/effects/blood.dmi', "uniformblood", color = blood_DNA_to_color())
-			if(accessory_overlay)
-				. += accessory_overlay
+			if(length(accessory_overlays))
+				. += accessory_overlays
 
 
 /obj/item/clothing/under/color/grey/modular/bra
@@ -153,4 +153,4 @@
 	icon_location = 'GainStation13/icons/mob/modclothes/graymodular_bra.dmi'
 	icon_state = "grey"
 	item_state = "grey_bra"
-	item_color = "grey_bra"
+//	item_color = "grey_bra"

@@ -52,7 +52,7 @@
 			playsound(M.loc, 'sound/effects/splat.ogg',rand(10,50), 1)
 		return
 	..()
- 
+
 /obj/effect/decal/cleanable/juice
 	name = "berry juice"
 	desc = "It's blue and smells enticingly sweet."
@@ -69,3 +69,7 @@
 /obj/effect/decal/cleanable/juice/streak
 	random_icon_states = list("streak1", "streak2", "streak3", "streak4", "streak5")
 
+/obj/effect/decal/cleanable/blood/update_icon()
+	color = blood_DNA_to_color()
+	if(blood_state == BLOOD_STATE_JUICE)
+		color = BLOOD_COLOR_JUICE
