@@ -64,6 +64,12 @@
 	///What is the max weight that the person wishes to be? If set to FALSE, there will be no max weight
 	var/max_weight = FALSE
 
+	var/starting_weight = 0				//how thicc you wanna be at start
+	var/permanent_fat = 0				//If it isn't the consequences of your own actions
+	var/wg_rate = 0.5
+	var/wl_rate = 0.5
+	var/ckeyslot
+
 /// Prompts the user to choose a weight and returns said weight.
 /datum/preferences/proc/chose_weight(input_text = "Choose a weight.", mob/user)
 	var/chosen_weight = FALSE
@@ -74,7 +80,7 @@
 
 	switch(picked_weight_class)
 		if("Fat")
-			chosen_weight = FATNESS_LEVEL_FATTER 
+			chosen_weight = FATNESS_LEVEL_FATTER
 		if("Fatter")
 			chosen_weight = FATNESS_LEVEL_VERYFAT
 		if("Very Fat")
@@ -89,13 +95,12 @@
 			chosen_weight = FATNESS_LEVEL_IMMOBILE
 		if("Immobile")
 			chosen_weight = FATNESS_LEVEL_BLOB
-	
+
 	if(picked_weight_class != "Other")
 		return chosen_weight
-	
+
 	var/custom_fatness = input(user, "What fatness level (BFI) would you like to use?", "Character Preference")  as null|num
 	if(isnull(custom_fatness))
 		custom_fatness = FALSE
 
 	return custom_fatness
-	

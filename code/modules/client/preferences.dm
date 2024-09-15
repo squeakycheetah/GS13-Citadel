@@ -1068,6 +1068,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<a href='?_src_=prefs;preference=preferences_tab;tab=[GAME_PREFS_TAB]' [preferences_tab == GAME_PREFS_TAB ? "class='linkOn'" : ""]>General</a>"
 			dat += "<a href='?_src_=prefs;preference=preferences_tab;tab=[OOC_PREFS_TAB]' [preferences_tab == OOC_PREFS_TAB ? "class='linkOn'" : ""]>OOC</a>"
 			dat += "<a href='?_src_=prefs;preference=preferences_tab;tab=[CONTENT_PREFS_TAB]' [preferences_tab == CONTENT_PREFS_TAB ? "class='linkOn'" : ""]>Content</a>"
+			dat += "<a href='?_src_=prefs;preference=preferences_tab;tab=[GS13_PREFS_TAB]' [preferences_tab == GS13_PREFS_TAB ? "class='linkOn'" : ""]>GS13</a>"
 			dat += "</center>"
 
 			dat += "<HR>"
@@ -1305,6 +1306,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<b>Ass Slapping:</b> <a href='?_src_=prefs;preference=ass_slap'>[(cit_toggles & NO_ASS_SLAP) ? "Disallowed" : "Allowed"]</a><br>"
 					dat += "<b>Automatic Wagging:</b> <a href='?_src_=prefs;preference=auto_wag'>[(cit_toggles & NO_AUTO_WAG) ? "Disabled" : "Enabled"]</a><br>"
 					dat += "</tr></table>"
+		if(GS13_PREFS_TAB)
 
 		if(KEYBINDINGS_TAB) // Custom keybindings
 			dat += "<b>Keybindings:</b> <a href='?_src_=prefs;preference=hotkeys'>[(hotkeys) ? "Hotkeys" : "Input"]</a><br>"

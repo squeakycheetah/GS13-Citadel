@@ -106,6 +106,7 @@
 #define GAME_PREFS_TAB			0
 #define OOC_PREFS_TAB			1
 #define CONTENT_PREFS_TAB		2
+#define GS13_PREFS_TAB			3
 
 //quirks
 #define QUIRK_POSITIVE	"Positive"
