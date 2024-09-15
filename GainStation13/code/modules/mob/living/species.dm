@@ -216,9 +216,31 @@
 		if(HAS_TRAIT_FROM(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT))
 			REMOVE_TRAIT(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT)
 
+/datum/movespeed_modifier/fatness
+	id = "fat"
+	variable = TRUE
 
 /datum/species/proc/handle_fatness(mob/living/carbon/human/H)
 	handle_helplessness(H)
+
+	// update movement speed
+	var/fatness_delay = 0
+	if(H.fatness && !HAS_TRAIT(H, TRAIT_NO_FAT_SLOWDOWN))
+		fatness_delay = (H.fatness / FATNESS_DIVISOR)
+		fatness_delay = min(fatness_delay, FATNESS_MAX_MOVE_PENALTY)
+
+		if(HAS_TRAIT(H, TRAIT_STRONGLEGS))
+			fatness_delay = fatness_delay * FATNESS_STRONGLEGS_MODIFIER
+
+		if(HAS_TRAIT(H, TRAIT_WEAKLEGS))
+			if(H.fatness <= FATNESS_LEVEL_IMMOBILE)
+				fatness_delay += fatness_delay * FATNESS_WEAKLEGS_MODIFIER / 100
+			if(H.fatness > FATNESS_LEVEL_IMMOBILE)
+				fatness_delay += (H.fatness / FATNESS_LEVEL_IMMOBILE) * FATNESS_WEAKLEGS_MODIFIER
+				fatness_delay = min(fatness_delay, 60)
+
+	H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/fatness, TRUE, fatness_delay)
+
 	if(HAS_TRAIT(H, TRAIT_BLOB))
 		handle_fatness_trait(
 			H,

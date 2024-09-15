@@ -99,9 +99,15 @@ Behavior that's still missing from this component that original food items had t
 		return
 	if(!CanConsume(eater, feeder))
 		return
+
 	var/fullness = eater.nutrition + 10 //The theoretical fullness of the person eating if they were to eat this
 	for(var/datum/reagent/consumable/C in eater.reagents.reagent_list) //we add the nutrition value of what we're currently digesting
 		fullness += C.nutriment_factor * C.volume / C.metabolization_rate
+
+	//GS13 Edit
+	var/mob/living/carbon/human/human_eater = eater
+	if(istype(human_eater))
+		fullness = human_eater.fullness
 
 	. = COMPONENT_ITEM_NO_ATTACK //Point of no return I suppose
 
@@ -112,15 +118,15 @@ Behavior that's still missing from this component that original food items had t
 		if(junkiness && eater.satiety < -150 && eater.nutrition > NUTRITION_LEVEL_STARVING + 50 && !HAS_TRAIT(eater, TRAIT_VORACIOUS))
 			to_chat(eater, "<span class='warning'>You don't feel like eating any more junk food at the moment!</span>")
 			return
-		else if(fullness <= 50)
+		else if(fullness <= FULLNESS_LEVEL_HALF_FULL)
 			eater.visible_message("<span class='notice'>[eater] hungrily [eatverb]s \the [parent], gobbling it down!</span>", "<span class='notice'>You hungrily [eatverb] \the [parent], gobbling it down!</span>")
-		else if(fullness > 50 && fullness < 150)
+		else if(fullness > FULLNESS_LEVEL_HALF_FULL && fullness < FULLNESS_LEVEL_FILLED)
 			eater.visible_message("<span class='notice'>[eater] hungrily [eatverb]s \the [parent].</span>", "<span class='notice'>You hungrily [eatverb] \the [parent].</span>")
-		else if(fullness > 150 && fullness < 500)
+		else if(fullness > FULLNESS_LEVEL_FILLED && fullness < FULLNESS_LEVEL_BLOATED)
 			eater.visible_message("<span class='notice'>[eater] [eatverb]s \the [parent].</span>", "<span class='notice'>You [eatverb] \the [parent].</span>")
-		else if(fullness > 500 && fullness < 600)
+		else if(fullness > FULLNESS_LEVEL_BLOATED && fullness < FULLNESS_LEVEL_BEEG)
 			eater.visible_message("<span class='notice'>[eater] unwillingly [eatverb]s a bit of \the [parent].</span>", "<span class='notice'>You unwillingly [eatverb] a bit of \the [parent].</span>")
-		else if(fullness > (600 * (1 + eater.overeatduration / 2000)))	// The more you eat - the more you can eat
+		else if(fullness > (FULLNESS_LEVEL_BEEG * (1 + eater.overeatduration / 2000)))	// The more you eat - the more you can eat
 			eater.visible_message("<span class='warning'>[eater] cannot force any more of \the [parent] to go down [eater.p_their()] throat!</span>", "<span class='warning'>You cannot force any more of \the [parent] to go down your throat!</span>")
 			return
 	else //If you're feeding it to someone else.
@@ -153,6 +159,13 @@ Behavior that's still missing from this component that original food items had t
 	if(eater.satiety > -200)
 		eater.satiety -= junkiness
 	playsound(eater.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
+	var/mob/living/carbon/human/human_eater = eater
+	if(istype(human_eater))
+		var/bitevolume = 1
+		if(HAS_TRAIT(human_eater, TRAIT_VORACIOUS))
+			bitevolume = bitevolume * 0.67
+		human_eater.fullness += bitevolume;
+
 	if(owner.reagents.total_volume)
 		SEND_SIGNAL(parent, COMSIG_FOOD_EATEN, eater, feeder)
 		var/fraction = min(bite_consumption / owner.reagents.total_volume, 1)

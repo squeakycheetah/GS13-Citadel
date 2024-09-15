@@ -113,9 +113,14 @@ All foods are distributed among various categories. Use common sense.
 		if(!canconsume(M, user))
 			return FALSE
 
+		//GS13 EDIT, FULNESS
 		var/fullness = M.nutrition + 10
-		for(var/datum/reagent/consumable/C in M.reagents.reagent_list) //we add the nutrition value of what we're currently digesting
-			fullness += C.nutriment_factor * C.volume / C.metabolization_rate
+		//for(var/datum/reagent/consumable/C in M.reagents.reagent_list) //we add the nutrition value of what we're currently digesting
+		//	fullness += C.nutriment_factor * C.volume / C.metabolization_rate
+		//GS13 Edit
+		var/mob/living/carbon/human/human_eater = M
+		if(istype(human_eater))
+			fullness = human_eater.fullness
 
 		if(M == user)								//If you're eating it yourself.
 			if(junkiness && M.satiety < -150 && M.nutrition > NUTRITION_LEVEL_STARVING + 50 )
@@ -123,18 +128,18 @@ All foods are distributed among various categories. Use common sense.
 				return FALSE
 			else if(fullness <= 50)
 				user.visible_message("<span class='notice'>[user] hungrily takes a [eatverb] from \the [src], gobbling it down!</span>", "<span class='notice'>You hungrily take a [eatverb] from \the [src], gobbling it down!</span>")
-			else if(fullness > 50 && fullness < 150)
+			else if(fullness > FULLNESS_LEVEL_HALF_FULL && fullness < FULLNESS_LEVEL_FILLED)
 				user.visible_message("<span class='notice'>[user] hungrily takes a [eatverb] from \the [src].</span>", "<span class='notice'>You hungrily take a [eatverb] from \the [src].</span>")
-			else if(fullness > 150 && fullness < 500)
+			else if(fullness > FULLNESS_LEVEL_FILLED && fullness < FULLNESS_LEVEL_BLOATED)
 				user.visible_message("<span class='notice'>[user] takes a [eatverb] from \the [src].</span>", "<span class='notice'>You take a [eatverb] from \the [src].</span>")
-			else if(fullness > 500 && fullness < 600)
+			else if(fullness > FULLNESS_LEVEL_BLOATED && fullness < FULLNESS_LEVEL_BEEG)
 				user.visible_message("<span class='notice'>[user] unwillingly takes a [eatverb] of a bit of \the [src].</span>", "<span class='warning'>You unwillingly take a [eatverb] of a bit of \the [src].</span>")
-			else if(fullness > (600 * (1 + M.overeatduration / 2000)))	// The more you eat - the more you can eat
+			else if(fullness > (FULLNESS_LEVEL_BEEG * (1 + M.overeatduration / 2000)))	// The more you eat - the more you can eat
 				user.visible_message("<span class='warning'>[user] cannot force any more of \the [src] to go down [user.p_their()] throat!</span>", "<span class='danger'>You cannot force any more of \the [src] to go down your throat!</span>")
 				return FALSE
 		else
 			if(!isbrain(M))		//If you're feeding it to someone else.
-				if(fullness <= (600 * (1 + M.overeatduration / 1000)))
+				if(fullness <= (FULLNESS_LEVEL_BEEG * (1 + M.overeatduration / 1000)))
 					M.visible_message("<span class='danger'>[user] attempts to feed [M] [src].</span>", \
 										"<span class='userdanger'>[user] attempts to feed [M] [src].</span>")
 				else
@@ -156,6 +161,12 @@ All foods are distributed among various categories. Use common sense.
 			if(M.satiety > -200)
 				M.satiety -= junkiness
 			playsound(M.loc,'sound/items/eatfood.ogg', rand(10,50), 1)
+			var/bitevolume = 1
+			if(HAS_TRAIT(M, TRAIT_VORACIOUS))
+				bitevolume = bitevolume * 0.67
+			if(istype(human_eater))
+				human_eater.fullness += bitevolume;
+
 			if(reagents.total_volume)
 				SEND_SIGNAL(src, COMSIG_FOOD_EATEN, M, user)
 				var/fraction = min(bitesize / reagents.total_volume, 1)

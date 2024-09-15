@@ -118,6 +118,42 @@
 		if(7 to INFINITY)
 			msg += "<span class='notice'><b><i>[t_He] [t_is] just absolutely fucked up, you can look again to take a closer look...</i></b></span>\n"
 
+	//GS13 EDIT FAT EXAMINE
+	switch(fullness)
+		if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
+			msg += "[t_He] look[p_s()] like [t_He] ate a bit too much.\n"
+		if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
+			msg += "[t_His] stomach looks very round and very full.\n"
+		if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
+			msg += "[t_His] stomach has been stretched to enormous proportions.\n"
+
+	if(nutrition < NUTRITION_LEVEL_STARVING - 50)
+		msg += "[t_He] [t_is] severely malnourished.\n"
+
+	if(fatness >= FATNESS_LEVEL_BLOB)
+		msg += "[t_He] [t_is] completely engulfed in rolls upon rolls of flab. [t_His] head is poking out on top of [t_His] body, akin to a marble on top of a hill.\n"
+
+	else if(fatness >= FATNESS_LEVEL_IMMOBILE)
+		msg += "[t_His] body is buried in an overflowing surplus of adipose, and [t_His] legs are completely buried beneath layers of meaty, obese flesh.\n"
+
+	else if(fatness >= FATNESS_LEVEL_BARELYMOBILE)
+		msg += "[t_He] [t_is] as wide as [t_He] [t_is] tall, barely able to move [t_His] masssive body that seems to be overtaken with piles of flab.\n"
+
+	else if(fatness >= FATNESS_LEVEL_EXTREMELY_OBESE)
+		msg += "[t_He] [t_is] ripe with numerous rolls of fat, almost all of [t_His] body layered with adipose.\n"
+
+	else if(fatness >= FATNESS_LEVEL_MORBIDLY_OBESE)
+		msg += "[t_He] [t_is] utterly stuffed with abundant lard, [t_He] doesn't seem to be able to move much.\n"
+
+	else if(fatness >= FATNESS_LEVEL_OBESE)
+		msg += "[t_He] [t_is] engorged with fat, [t_His] body laden in rolls of fattened flesh.\n"
+
+	else if(fatness >= FATNESS_LEVEL_VERYFAT)
+		msg += "[t_He] [t_is] pleasantly plushy, [t_His] body gently wobbling whenever they move. \n"
+
+	else if(fatness >= FATNESS_LEVEL_FATTER)
+		msg += "[t_He] [t_is] soft and curvy, [t_His] belly looking like a small pillow.\n"
+
 	if(msg.len)
 		. += "<span class='warning'>[msg.Join("")]</span>"
 

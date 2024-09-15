@@ -126,7 +126,8 @@
 
 //BUTT BE HERE
 /datum/sprite_accessory/butt
-	icon = 'icons/obj/genitals/butt_onmob.dmi'
+	//icon = 'icons/obj/genitals/butt_onmob.dmi' GS13 EDIT - ASS SPRITES
+	icon = 'hyperstation/icons/obj/genitals/butt.dmi'
 	icon_state = "butt"
 	name = "butt"
 	color_src = "butt_color"

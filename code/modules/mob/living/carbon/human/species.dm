@@ -1545,13 +1545,31 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		hunger_rate *= H.physiology.hunger_mod
 		H.adjust_nutrition(-hunger_rate)
 
-
+/*
 	if (H.nutrition > NUTRITION_LEVEL_FULL)
 		if(H.overeatduration < 600) //capped so people don't take forever to unfat
 			H.overeatduration++
 	else
 		if(H.overeatduration > 1)
 			H.overeatduration -= 2 //doubled the unfat rate
+*/
+	if (H.nutrition > NUTRITION_LEVEL_FULL)
+		// fatConversionRate is functionally useless. It seems under normal curcumstances, each tick only processes, at most, 1 nutrition anyway. reducing the value has no effect.
+		var/fatConversionRate = 100 //GS13 what percentage of the excess nutrition should go to fat (total nutrition to transfer can't be under 1)
+		var/nutritionThatBecomesFat = max((H.nutrition - NUTRITION_LEVEL_FULL)*(fatConversionRate / 100),1)
+		H.nutrition -= nutritionThatBecomesFat
+		H.adjust_fatness(nutritionThatBecomesFat, FATTENING_TYPE_FOOD)
+	if(H.fullness > FULLNESS_LEVEL_EMPTY)//GS13 stomach-emptying routine
+		var/ticksToEmptyStomach = 20 // GS13 how many ticks it takes to decrease the fullness by 1
+		if(HAS_TRAIT(H, TRAIT_VORACIOUS))
+			ticksToEmptyStomach = ticksToEmptyStomach * 0.5
+		H.fullness -= 1/ticksToEmptyStomach
+	if (H.fullness > FULLNESS_LEVEL_BLOATED) //GS13 overeating depends on fullness now
+		if(H.overeatduration < 5000) //capped so people don't take forever to unfat
+			H.overeatduration++
+	else
+		if(H.overeatduration > 1)
+			H.overeatduration -= 1 //doubled the unfat rate -- GS13 Nah, put it back
 
 	//metabolism change
 	if(H.nutrition > NUTRITION_LEVEL_FAT)
