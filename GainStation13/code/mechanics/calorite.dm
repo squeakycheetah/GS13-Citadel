@@ -2,8 +2,22 @@
 	name = "calorite"
 	sheet_type = /obj/item/stack/sheet/mineral/calorite
 
+/turf/closed/mineral/calorite //GS13
+	mineralType = /obj/item/stack/ore/calorite
+
+/obj/item/stack/ore/calorite //GS13
+	name = "calorite ore"
+	icon = 'GainStation13/icons/obj/mining.dmi'
+	icon_state = "calorite ore"
+	item_state = "calorite ore"
+	singular_name = "Calorite ore chunk"
+	points = 40
+	custom_materials = list(/datum/material/calorite=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/mineral/calorite
+
 /obj/item/stack/sheet/mineral/calorite
 	name = "calorite"
+	icon = 'GainStation13/icons/obj/stack_objects.dmi'
 	icon_state = "sheet-calorite"
 	item_state = "sheet-calorite"
 	singular_name = "calorite sheet"

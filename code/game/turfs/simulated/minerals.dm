@@ -225,7 +225,7 @@
 	mineralChance = 25
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 35, /obj/item/stack/ore/diamond = 30, /obj/item/stack/ore/gold = 45, /obj/item/stack/ore/titanium = 45,
-		/obj/item/stack/ore/silver = 50, /obj/item/stack/ore/plasma = 50, /obj/item/stack/ore/bluespace_crystal = 20)
+		/obj/item/stack/ore/silver = 50, /obj/item/stack/ore/plasma = 50, /obj/item/stack/ore/bluespace_crystal = 20, /obj/item/stack/ore/calorite = 20,) //GS13 EDIT
 
 /turf/closed/mineral/random/high_chance/volcanic
 	environment_type = "basalt"
@@ -235,7 +235,7 @@
 	defer_change = TRUE
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 35, /obj/item/stack/ore/diamond = 30, /obj/item/stack/ore/gold = 45, /obj/item/stack/ore/titanium = 45,
-		/obj/item/stack/ore/silver = 50, /obj/item/stack/ore/plasma = 50, /obj/item/stack/ore/bluespace_crystal)
+		/obj/item/stack/ore/silver = 50, /obj/item/stack/ore/plasma = 50, /obj/item/stack/ore/bluespace_crystal = 20, /obj/item/stack/ore/calorite = 20,) //GS13 EDIT
 
 /turf/closed/mineral/random/low_chance
 	icon_state = "rock_lowchance"
@@ -243,7 +243,7 @@
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 2, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 4, /obj/item/stack/ore/titanium = 4,
 		/obj/item/stack/ore/silver = 6, /obj/item/stack/ore/plasma = 15, /obj/item/stack/ore/iron = 40,
-		/turf/closed/mineral/gibtonite = 2, /obj/item/stack/ore/bluespace_crystal = 1)
+		/turf/closed/mineral/gibtonite = 2, /obj/item/stack/ore/bluespace_crystal = 1, /obj/item/strangerock = 3, /obj/item/stack/ore/calorite = 1,) //GS13 EDIT
 
 /turf/closed/mineral/random/volcanic
 	environment_type = "basalt"
@@ -256,7 +256,7 @@
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10, /obj/item/stack/ore/titanium = 11,
 		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40,
-		/turf/closed/mineral/gibtonite/volcanic = 4, /obj/item/stack/ore/bluespace_crystal = 1)
+		/turf/closed/mineral/gibtonite/volcanic = 4, /obj/item/stack/ore/bluespace_crystal = 1, /obj/item/strangerock = 3, /obj/item/stack/ore/calorite = 1,) //GS13 EDIT
 
 /turf/closed/mineral/random/snow
 	name = "snowy mountainside"
@@ -285,7 +285,7 @@
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10, /obj/item/stack/ore/titanium = 11,
 		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40,
-		/turf/closed/mineral/gibtonite/ice/icemoon = 4, /obj/item/stack/ore/bluespace_crystal = 1)
+		/turf/closed/mineral/gibtonite/ice/icemoon = 4, /obj/item/stack/ore/bluespace_crystal = 1, /obj/item/strangerock = 3, /obj/item/stack/ore/calorite = 1,) //GS13 EDIT
 
 /turf/closed/mineral/random/snow/underground
 	baseturfs = /turf/open/floor/plating/asteroid/snow/icemoon
@@ -294,12 +294,12 @@
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 10, /obj/item/stack/ore/diamond = 4, /obj/item/stack/ore/gold = 20, /obj/item/stack/ore/titanium = 22,
 		/obj/item/stack/ore/silver = 24, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 20, /obj/item/stack/ore/bananium = 1,
-		/turf/closed/mineral/gibtonite/ice/icemoon = 8, /obj/item/stack/ore/bluespace_crystal = 2)
+		/turf/closed/mineral/gibtonite/ice/icemoon = 8, /obj/item/stack/ore/bluespace_crystal = 2, /obj/item/strangerock = 6, /obj/item/stack/ore/calorite = 2,) //GS13 EDIT
 
 /turf/closed/mineral/random/snow/high_chance
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 35, /obj/item/stack/ore/diamond  = 30, /obj/item/stack/ore/gold = 45, /obj/item/stack/ore/titanium = 45,
-		/obj/item/stack/ore/silver = 50, /obj/item/stack/ore/plasma = 50, /obj/item/stack/ore/bluespace_crystal = 20)
+		/obj/item/stack/ore/silver = 50, /obj/item/stack/ore/plasma = 50, /obj/item/stack/ore/bluespace_crystal = 20, /obj/item/stack/ore/calorite = 20,) //GS13 EDIT
 
 /turf/closed/mineral/random/labormineral
 	icon_state = "rock_labor"
