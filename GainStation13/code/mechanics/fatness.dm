@@ -189,7 +189,7 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/command/bridge, /area/mainten
 	if(client?.prefs?.weight_gain_extreme && !normalized)
 		var/xwg_size = sqrt(fatness/FATNESS_LEVEL_BLOB)
 		xwg_size = min(xwg_size, RESIZE_MACRO)
-		xwg_size = max(xwg_size, custom_body_size*0.01)
+		xwg_size = max(xwg_size, custom_body_size)
 		if(xwg_size > RESIZE_BIG) //check if the size needs capping otherwise don't bother searching the list
 			if(!is_type_in_list(get_area(src), GLOB.uncapped_resize_areas)) //if the area is not int the uncapped whitelist and new size is over the cap
 				xwg_size = RESIZE_BIG

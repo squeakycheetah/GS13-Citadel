@@ -280,6 +280,12 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	var/mob/living/mob_occupant = occupant
 	var/list/crew_member = list()
 
+	//GS13 Process permanent fat
+	if(iscarbon(mob_occupant))
+		var/mob/living/carbon/C = mob_occupant
+		if(C)
+			C.perma_fat_save(C)
+
 	crew_member["name"] = mob_occupant.real_name
 
 	if(mob_occupant.mind)

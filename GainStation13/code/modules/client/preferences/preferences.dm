@@ -64,6 +64,7 @@
 	///What is the max weight that the person wishes to be? If set to FALSE, there will be no max weight
 	var/max_weight = FALSE
 
+	var/body_size = 1					//Body Size in percent
 	var/starting_weight = 0				//how thicc you wanna be at start
 	var/permanent_fat = 0				//If it isn't the consequences of your own actions
 	var/wg_rate = 0.5

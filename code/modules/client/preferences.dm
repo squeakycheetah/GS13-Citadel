@@ -314,6 +314,43 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	if(!path)
 		dat += "<div class='notice'>Please create an account to save your preferences</div>"
 
+	// GS13 EDIT
+	if (body_size == null)
+		body_size = 1
+	if (starting_weight == null)
+		starting_weight = 0
+	if (wg_rate == null)
+		wg_rate = 0.5
+	if (wl_rate == null)
+		wl_rate = 0.5
+	if(isnull(stuckage))
+		stuckage = 0
+	if(isnull(max_weight))
+		max_weight = 0
+	if(isnull(chair_breakage))
+		chair_breakage = 0
+
+	if(isnull(helplessness_no_movement))
+		helplessness_no_movement = 0
+	if(isnull(helplessness_clumsy))
+		helplessness_clumsy = 0
+	if(isnull(helplessness_clothing_back))
+		helplessness_clothing_back = 0
+	if(isnull(helplessness_clothing_jumpsuit))
+		helplessness_clothing_jumpsuit = 0
+	if(isnull(helplessness_hidden_face))
+		helplessness_hidden_face = 0
+	if(isnull(helplessness_mute))
+		helplessness_mute = 0
+	if(isnull(helplessness_no_buckle))
+		helplessness_no_buckle = 0
+	if(isnull(helplessness_nearsighted))
+		helplessness_nearsighted = 0
+	if(isnull(helplessness_clothing_misc))
+		helplessness_clothing_misc = 0
+	if(isnull(helplessness_immobile_arms))
+		helplessness_immobile_arms = 0
+
 	dat += "</center>"
 
 	dat += "<HR>"
@@ -518,6 +555,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<b>Custom Species Name:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=custom_species;task=input'>[custom_species ? custom_species : "None"]</a><BR>"
 					dat += "<b>Random Body:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=all;task=random'>Randomize!</A><BR>"
 					dat += "<b>Always Random Body:</b><a href='?_src_=prefs;preference=all'>[be_random_body ? "Yes" : "No"]</A><BR>"
+					//GS13 EDIT
+					dat += "<b>Starting weight :</b> <a href='?_src_=prefs;preference=fatness;task=input'>[starting_weight]</a><br>"
+					dat += "<b>Weight Gain Rate :</b> <a href='?_src_=prefs;preference=wg_rate;task=input'>[wg_rate]</a><br>"
+					dat += "<b>Weight Loss Rate :</b> <a href='?_src_=prefs;preference=wl_rate;task=input'>[wl_rate]</a><br>"
 					dat += "<br><b>Cycle background:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=cycle_bg;task=input'>[bgstate]</a><BR>"
 
 					dat += "</td>"
@@ -547,7 +588,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "<span style='border: 1px solid #161616; background-color: #[features["mcolor3"]];'><font color='[color_hex2num(features["mcolor3"]) < 200 ? "FFFFFF" : "000000"]'>#[features["mcolor3"]]</font></span> <a href='?_src_=prefs;preference=mutant_color3;task=input'>Change</a><BR>"
 						mutant_colors = TRUE
 
-						dat += "<b>Sprite Size:</b> <a href='?_src_=prefs;preference=body_size;task=input'>[features["body_size"]*100]%</a><br>"
+						dat += "<b>Sprite Size:</b> <a href='?_src_=prefs;preference=body_size;task=input'>[(body_size * 100)]%</a><br>" //GS13 Edit
 
 					if(!(NOEYES in pref_species.species_traits))
 						dat += "<h3>Eye Type</h3>"
@@ -1306,7 +1347,56 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<b>Ass Slapping:</b> <a href='?_src_=prefs;preference=ass_slap'>[(cit_toggles & NO_ASS_SLAP) ? "Disallowed" : "Allowed"]</a><br>"
 					dat += "<b>Automatic Wagging:</b> <a href='?_src_=prefs;preference=auto_wag'>[(cit_toggles & NO_AUTO_WAG) ? "Disabled" : "Enabled"]</a><br>"
 					dat += "</tr></table>"
-		if(GS13_PREFS_TAB)
+
+				if(GS13_PREFS_TAB)
+					dat += "<table><tr><td width='340px' height='300px' valign='top'>"
+					dat += "<h2>Weight prefs</h2>"
+					dat += "<b>Maximum Weight:</b><a href='?_src_=prefs;preference=max_fatness'>[max_weight == FALSE ? "None" : max_weight]</a><BR>"
+					dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Bot Feeding:</b><a href='?_src_=prefs;preference=bot_feeding'>[bot_feeding == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Blueberry Inflation:</b><a href='?_src_=prefs;preference=blueberry_inflation'>[blueberry_inflation == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+
+					dat += "<h2>Weight Gain Types</h2>"
+					dat += "<b>Food:</b><a href='?_src_=prefs;preference=weight_gain_food'>[weight_gain_food == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Items:</b><a href='?_src_=prefs;preference=weight_gain_items'>[weight_gain_items == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Chems:</b><a href='?_src_=prefs;preference=weight_gain_chems'>[weight_gain_chems == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Weapons:</b><a href='?_src_=prefs;preference=weight_gain_weapons'>[weight_gain_weapons == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Magic:</b><a href='?_src_=prefs;preference=weight_gain_magic'>[weight_gain_magic == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Viruses:</b><a href='?_src_=prefs;preference=weight_gain_viruses'>[weight_gain_viruses == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Nanites:</b><a href='?_src_=prefs;preference=weight_gain_nanites'>[weight_gain_nanites == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "</td>"
+
+					dat +="<td width='300px' height='300px' valign='top'>"
+					dat += "<h2>GS13 Gameplay Preferences</h2>"
+					dat += "<b>Stuckage (at what weight will you get stuck in doors?):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == FALSE ? "Disabled" : stuckage]</a><BR>"
+					dat += "<b>Chair Breakage (at what weight will you break chairs?):</b><a href='?_src_=prefs;preference=chair_breakage'>[chair_breakage == FALSE ? "Disabled" : chair_breakage]</a><BR>"
+					dat += "<br></br>"
+					dat += "This preference will allow items that work based on weight to work to you, <b>usually to your detriment.</b> <BR>"
+					dat += "<b>Fatness Vulnerability:</b><a href='?_src_=prefs;preference=fatness_vulnerable'>[fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<br></br>"
+					dat += "This preference functions similar to the one before but allows for items with more drastic effects. <b>Do not enable this if you aren't okay with more drastic things happening to your character.</b><BR>"
+					dat += "<b>Extreme Fatness Vulnerability:</b><a href='?_src_=prefs;preference=extreme_fatness_vulnerable'>[extreme_fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<br></br>"
+					dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Persistent Fat (endround/cryo weight becomes your new start weight):</b><a href='?_src_=prefs;preference=weight_gain_persistent'>[weight_gain_persistent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Permanent Weight (hard to remove and persistent weight):</b><a href='?_src_=prefs;preference=weight_gain_permanent'>[weight_gain_permanent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "</td>"
+
+					dat +="<td width='300px' height='300px' valign='top'>"
+					dat += "<h2>GS13 Helplessness Preferences</h2>"
+					dat += "<b>Please be careful when using these mechanics as not to use them in a way that negatively impacts those around you. If you are seriously needed for something, especially something station critical, do not use these as an excuse to ignore your duty.</b><BR><BR>"
+					dat += "<b>No Movement:</b><a href='?_src_=prefs;preference=helplessness_no_movement'>[helplessness_no_movement == FALSE ? "Disabled" : helplessness_no_movement]</a><BR>"
+					dat += "<b>Clumsy:</b><a href='?_src_=prefs;preference=helplessness_clumsy'>[helplessness_clumsy == FALSE ? "Disabled" : helplessness_clumsy]</a><BR>"
+					dat += "<b>Nearsighted:</b><a href='?_src_=prefs;preference=helplessness_nearsighted'>[helplessness_nearsighted == FALSE ? "Disabled" : helplessness_nearsighted]</a><BR>"
+					dat += "<b>Hidden Face:</b><a href='?_src_=prefs;preference=helplessness_hidden_face'>[helplessness_hidden_face == FALSE ? "Disabled" : helplessness_hidden_face]</a><BR>"
+					dat += "<b>Mute:</b><a href='?_src_=prefs;preference=helplessness_mute'>[helplessness_mute == FALSE ? "Disabled" : helplessness_mute]</a><BR>"
+					dat += "<b>Immobile Arms:</b><a href='?_src_=prefs;preference=helplessness_immobile_arms'>[helplessness_immobile_arms == FALSE ? "Disabled" : helplessness_immobile_arms]</a><BR>"
+					dat += "<b>Clothing Jumpsuit:</b><a href='?_src_=prefs;preference=helplessness_clothing_jumpsuit'>[helplessness_clothing_jumpsuit == FALSE ? "Disabled" : helplessness_clothing_jumpsuit]</a><BR>"
+					dat += "<b>Clothing, Suit, Boots, and Gloves:</b><a href='?_src_=prefs;preference=helplessness_clothing_misc'>[helplessness_clothing_misc == FALSE ? "Disabled" : helplessness_clothing_misc]</a><BR>"
+					dat += "<b>Clothing Back:</b><a href='?_src_=prefs;preference=helplessness_clothing_back'>[helplessness_clothing_back == FALSE ? "Disabled" : helplessness_clothing_back]</a><BR>"
+					dat += "<b>No Buckle:</b><a href='?_src_=prefs;preference=helplessness_no_buckle'>[helplessness_no_buckle == FALSE ? "Disabled" : helplessness_no_buckle]</a><BR>"
+					dat += "</td>"
+
 
 		if(KEYBINDINGS_TAB) // Custom keybindings
 			dat += "<b>Keybindings:</b> <a href='?_src_=prefs;preference=hotkeys'>[(hotkeys) ? "Hotkeys" : "Input"]</a><br>"
@@ -2716,9 +2806,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					gender = chosengender
 
 				if("body_size")
-					var/new_body_size = input(user, "Choose your desired sprite size: ([CONFIG_GET(number/body_size_min)]-[CONFIG_GET(number/body_size_max)]%)\nWarning: This may make your character look distorted. Additionally, any size under 100% takes a 10% maximum health penalty", "Character Preference", features["body_size"]*100) as num|null
+					var/new_body_size = input(user, "Choose your desired sprite size: ([CONFIG_GET(number/body_size_min) * 100]-[CONFIG_GET(number/body_size_max) * 100]%)\nWarning: This may make your character look distorted. Additionally, any size under 100% takes a 10% maximum health penalty", "Character Preference", (body_size * 100)) as num|null
 					if(new_body_size)
-						features["body_size"] = clamp(new_body_size * 0.01, CONFIG_GET(number/body_size_min), CONFIG_GET(number/body_size_max))
+						body_size = clamp((new_body_size / 100), CONFIG_GET(number/body_size_min), CONFIG_GET(number/body_size_max)) //GS13 EDIT
 
 				if("tongue")
 					var/selected_custom_tongue = input(user, "Choose your desired tongue (none means your species tongue)", "Character Preference") as null|anything in GLOB.roundstart_tongues
@@ -2776,6 +2866,22 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/selected_body_sprite = input(user, "Choose your desired body sprite", "Character Preference") as null|anything in pref_species.allowed_limb_ids
 					if(selected_body_sprite)
 						chosen_limb_id = selected_body_sprite //this gets sanitized before loading
+
+				// GS13
+				if("fatness")
+					var/new_fatness = input(user, "Choose your amount of fat at start :\n(0-8000), Fat changes appearance and move speed. \nThresholds are 170, 250, 330, 440, 840, 1240, 1840, 2540, 3440. Warning : If using the 'weak legs' trait, being too fat will make you immobile and unable to leave the shuttle without a wheelchair or help", "Character Preference") as num|null
+					if (new_fatness)
+						starting_weight = max(min( round(text2num(new_fatness)), 8000),0)
+
+				if("wg_rate")
+					var/new_wg_rate = input(user, "Choose your weight gain rate from 0.1 (10%) to 2 (200%).\n Decimals such as 0.2 indicate 20% rate.\nDefault recommended rate is 0.5 (50%)", "Character Preference", wg_rate) as num|null
+					if (new_wg_rate)
+						wg_rate = max(min(round(text2num(new_wg_rate),0.01),2),0)
+
+				if("wl_rate")
+					var/new_wl_rate = input(user, "Choose your weight loss rate from 0.1 (10%) to 2 (200%).\n Decimals such as 0.2 indicate 20% rate.\nDefault recommended rate is 0.5 (50%)", "Character Preference", wl_rate) as num|null
+					if (new_wl_rate)
+						wl_rate = max(min(round(text2num(new_wl_rate),0.01),2),0)
 
 				if("marking_down")
 					// move the specified marking down
@@ -3217,6 +3323,67 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					cit_toggles ^= NO_AUTO_WAG
 
 				//END CITADEL EDIT
+				//GS13 EDIT
+				if("weight_gain_items")
+					weight_gain_items = !weight_gain_items
+				if("weight_gain_chems")
+					weight_gain_chems = !weight_gain_chems
+				if("weight_gain_food")
+					weight_gain_food = !weight_gain_food
+				if("weight_gain_weapons")
+					weight_gain_weapons = !weight_gain_weapons
+				if("weight_gain_magic")
+					weight_gain_magic = !weight_gain_magic
+				if("weight_gain_viruses")
+					weight_gain_viruses = !weight_gain_viruses
+				if("weight_gain_nanites")
+					weight_gain_nanites = !weight_gain_nanites
+				if("weight_gain_extreme")
+					weight_gain_extreme = !weight_gain_extreme
+				if("weight_gain_persistent")
+					weight_gain_persistent = !weight_gain_persistent
+				if("weight_gain_permanent")
+					weight_gain_permanent = !weight_gain_permanent
+				if("noncon_weight_gain")
+					noncon_weight_gain = !noncon_weight_gain
+				if("bot_feeding")
+					bot_feeding = !bot_feeding
+				if("stuckage")
+					stuckage = chose_weight("Choose the level of fatness where your weight will hinder your ability to go through airlocks? None will disable this alltogether", user)
+				if("chair_breakage")
+					chair_breakage = chose_weight("Choose the level of fatness where your weight will be too much for chairs to handle? None will disable this alltogether", user)
+				if("fatness_vulnerable")
+					fatness_vulnerable = !fatness_vulnerable
+				if("extreme_fatness_vulnerable")
+					extreme_fatness_vulnerable = !extreme_fatness_vulnerable
+
+				if("blueberry_inflation")
+					blueberry_inflation = !blueberry_inflation
+				if("max_fatness")
+					max_weight = chose_weight("Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit", user)
+
+				if("helplessness_no_movement")
+					helplessness_no_movement = chose_weight("Choose the level of fatness that you would like to be made completely able to move at. None will disable this alltogether", user)
+				if("helplessness_clumsy")
+					helplessness_clumsy = chose_weight("Choose the level of fatness that you would like to be made clumsy at. None will disable this alltogether", user)
+				if("helplessness_nearsighted")
+					helplessness_nearsighted = chose_weight("Choose the level of fatness that you would like to be made nearsighted at. None will disable this alltogether", user)
+				if("helplessness_hidden_face")
+					helplessness_hidden_face = chose_weight("Choose the level of fatness that you would like to have you face hidden at. None will disable this alltogether", user)
+				if("helplessness_mute")
+					helplessness_mute = chose_weight("Choose the level of fatness that you would like to be made unable to speak at. None will disable this alltogether", user)
+				if("helplessness_immobile_arms")
+					helplessness_immobile_arms = chose_weight("Choose the level of fatness that you would like to be made unable to use your arms at. None will disable this alltogether", user)
+				if("helplessness_clothing_jumpsuit")
+					helplessness_clothing_jumpsuit = chose_weight("Choose the level of fatness that you would like to be made unable to wear jumpsuits at. None will disable this alltogether", user)
+				if("helplessness_clothing_misc")
+					helplessness_clothing_misc = chose_weight("Choose the level of fatness that you would like to be made unable to wear other non-jumpsuit clothing at. None will disable this alltogether", user)
+				if("helplessness_clothing_back")
+					helplessness_clothing_back = chose_weight("Choose the level of fatness that you would like to be made unable to wear anything on your back at. None will disable this alltogether", user)
+				if("helplessness_no_buckle")
+					helplessness_no_buckle = chose_weight("Choose the level of fatness that you would like to be made unable to be buckled to anything at. None will disable this alltogether", user)
+
+				//GS13 EDIT END
 
 				if("ambientocclusion")
 					ambientocclusion = !ambientocclusion
@@ -3398,11 +3565,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			else if(firstspace == name_length)
 				real_name += "[pick(GLOB.last_names)]"
 
+/* GS13 EDIT
 	//reset size if applicable
 	if(character.dna.features["body_size"])
 		var/initial_old_size = character.dna.features["body_size"]
 		character.dna.features["body_size"] = RESIZE_DEFAULT_SIZE
 		character.dna.update_body_size(initial_old_size)
+*/
+	if(body_size)
+		character.custom_body_size = body_size
 
 	character.real_name = nameless ? "[real_name] #[rand(10000, 99999)]" : real_name
 	character.name = character.real_name
@@ -3458,9 +3629,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.dna.nameless = character.nameless
 	character.dna.custom_species = character.custom_species
 
+	/* GS13 EDIT
 	var/old_size = RESIZE_DEFAULT_SIZE
 	if(isdwarf(character))
 		character.dna.features["body_size"] = RESIZE_DEFAULT_SIZE
+	*/
 
 	if((parent && parent.can_have_part("meat_type")) || pref_species.mutant_bodyparts["meat_type"])
 		character.type_of_meat = GLOB.meat_types[features["meat_type"]]
@@ -3477,7 +3650,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	character.give_genitals(TRUE) //character.update_genitals() is already called on genital.update_appearance()
 
-	character.dna.update_body_size(old_size)
+	//GS13 EDIT character.dna.update_body_size(old_size)
+	if(character.custom_body_size)
+		character.resize(character.custom_body_size)
 
 	//speech stuff
 	if(custom_tongue != "default")

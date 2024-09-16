@@ -4,7 +4,7 @@
 /mob/living
 	var/size_multiplier = 1 //multiplier for the mob's icon size atm
 	var/previous_size = 1
-	var/custom_body_size = 100
+	var/custom_body_size = 1
 
 //Cyanosis - Action that resizes the sprite for the client but nobody else. Say goodbye to attacking yourself when someone's above you lmao
 	var/datum/action/sizecode_resize/small_sprite
@@ -102,6 +102,7 @@
 
 /datum/movespeed_modifier/size
 	id = MOVESPEED_ID_SIZE
+	variable = TRUE
 
 /mob/living/proc/resize(var/new_size, var/animate = TRUE)
 	size_multiplier = new_size //This will be passed into update_transform() and used to change health and speed.

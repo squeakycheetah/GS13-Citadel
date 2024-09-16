@@ -8,7 +8,7 @@ mob/proc/checkloadappearance()
 			if(alert(H, "You should only load a character that has not currently died in the round. Do you accept this?", "Warning", "Yes", "No") == "Yes" && world.time <= (H.time_initialized + 900))
 				H.client?.prefs?.copy_to(H)
 				if (H.custom_body_size) //Do they have a custom size set?
-					H.resize(H.custom_body_size * 0.01)
+					H.resize(H.custom_body_size)
 				H.real_name = H.client?.prefs?.real_name
 				H.mind.name = H.real_name //Makes sure to change their mind name to their real name.
 				SSquirks.AssignQuirks(H, H.client, TRUE, FALSE, H.job, FALSE)//This Assigns the selected character's quirks
