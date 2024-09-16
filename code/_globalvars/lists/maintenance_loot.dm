@@ -116,6 +116,11 @@ GLOBAL_LIST_INIT(maintenance_loot, list(
 	/obj/item/storage/box/marshmallow = 2,
 	/obj/item/clothing/gloves/tackler/offbrand = 1,
 	/obj/item/stack/sticky_tape = 1,
+	//GS13 EDIT
+	/obj/item/trash/fatoray_scrap1 = 1,
+	/obj/item/trash/fatoray_scrap2 = 1,
+	/obj/item/trash/odd_disk = 1,
+	// GS13 EDIT END
 	"" = 3
 	))
 

@@ -64,6 +64,11 @@
 		to_chat(user, finishmessage)
 		user.apply_status_effect(STATUS_EFFECT_EXERCISED)
 
+		//GS13
+		var/mob/living/carbon/lifter = user
+		if(lifter)
+			lifter.adjust_fatness(-loss_per_use, FATTENING_TYPE_WEIGHT_LOSS)
+
 /obj/structure/weightmachine/stacklifter
 	name = "chest press machine"
 	icon_state = "stacklifter"
