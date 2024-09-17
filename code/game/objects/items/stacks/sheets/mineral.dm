@@ -25,6 +25,11 @@ Mineral Sheets
 
 GLOBAL_LIST_INIT(sandstone_recipes, list ( \
 	new/datum/stack_recipe("pile of dirt", /obj/machinery/hydroponics/soil, 3, time = 10, one_per_turf = 1, on_floor = 1), \
+	// GS13 EDIT START
+	new/datum/stack_recipe("sandstone tile", /obj/item/stack/tile/mineral/sandstone, 1, 4, 20), \
+	new/datum/stack_recipe("crimson tile", /obj/item/stack/tile/mineral/crimsonstone, 1, 4, 20), \
+	new/datum/stack_recipe("basalt tile", /obj/item/stack/tile/mineral/basaltstone, 1, 4, 20), \
+	// GS13 EDIT END
 	new/datum/stack_recipe("sandstone door", /obj/structure/mineral_door/sandstone, 10, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("aesthetic volcanic floor tile", /obj/item/stack/tile/basalt, 2, 2, 4, 20), \
 	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = 0, on_floor = 1) \
