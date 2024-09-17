@@ -24,4 +24,4 @@
 		crosser.emote(pick("belch","burp"))
 
 	crosser.Knockdown(500)
-	
+
