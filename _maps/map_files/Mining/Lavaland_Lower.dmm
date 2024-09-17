@@ -55,11 +55,11 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "ak" = (
-/obj/item/toy/prize/mauler,
+/obj/item/toy/mecha/mauler,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "al" = (
-/obj/item/toy/prize/deathripley,
+/obj/item/toy/mecha/deathripley,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "am" = (
@@ -75,12 +75,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ao" = (
-/obj/item/toy/prize/honk,
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
-/area/lavaland/surface/outdoors)
-"ap" = (
-/obj/item/toy/plush/nukeplushie,
-/obj/effect/decal/cleanable/femcum,
+/obj/item/toy/mecha/honk,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "aq" = (
@@ -250,12 +245,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
-"aQ" = (
-/obj/item/shield/riot/egyptian{
-	pixel_x = 20
-	},
-/turf/open/indestructible/necropolis,
-/area/lavaland/surface/outdoors)
 "aR" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -276,12 +265,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/arch)
-"aT" = (
-/obj/item/toy/plush/amogus{
-	desc = "Holding such might make you insane."
-	},
-/turf/open/indestructible/necropolis,
-/area/lavaland/surface/outdoors)
 "aU" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -5860,7 +5843,7 @@
 /area/xenoarch/gen)
 "nq" = (
 /obj/structure/table/wood,
-/obj/item/storage/pill_bottle/dice,
+/obj/item/storage/dice,
 /turf/open/floor/carpet/royalblue,
 /area/xenoarch/gen)
 "nr" = (
@@ -6719,7 +6702,6 @@
 	dir = 8;
 	light_color = "#e8eaff"
 	},
-/obj/item/caution,
 /turf/open/floor/plating{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
@@ -6896,7 +6878,6 @@
 	},
 /area/lavaland/surface/outdoors)
 "pW" = (
-/obj/item/caution,
 /obj/item/mop,
 /turf/open/floor/plating{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
@@ -8653,7 +8634,6 @@
 "yc" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/closet/crate/miningcar,
-/obj/item/card/mining_point_card/mp500,
 /turf/open/floor/plating,
 /area/lavaland/surface/outdoors)
 "yd" = (
@@ -9147,16 +9127,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
-"AA" = (
-/obj/structure/table,
-/obj/effect/turf_decal/loading_area{
-	dir = 10;
-	icon_state = "steel_panel";
-	name = "steel pannel"
-	},
-/obj/item/carpentry/hammer,
-/turf/open/floor/plasteel,
-/area/xenoarch/caloriteresearch_powered)
 "AB" = (
 /obj/structure/scale,
 /obj/effect/turf_decal/box,
@@ -9339,7 +9309,7 @@
 "Bg" = (
 /obj/structure/bed,
 /obj/item/bedsheet/black,
-/obj/item/toy/plush/mothplushie/moffplush{
+/obj/item/toy/plush/mothplushie{
 	pixel_x = 12
 	},
 /turf/open/floor/wood,
@@ -11454,14 +11424,6 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating,
 /area/lavaland/surface/outdoors)
-"Lz" = (
-/obj/machinery/atm{
-	pixel_y = 30
-	},
-/turf/open/floor/plasteel/dark/side{
-	dir = 1
-	},
-/area/xenoarch/arch)
 "LE" = (
 /obj/effect/turf_decal{
 	dir = 1
@@ -11919,9 +11881,6 @@
 /turf/open/floor/plating,
 /area/lavaland/surface/outdoors)
 "NP" = (
-/obj/machinery/atm{
-	pixel_y = 30
-	},
 /obj/machinery/light{
 	dir = 1
 	},
@@ -12700,12 +12659,6 @@
 /obj/machinery/mineral/processing_unit_console,
 /turf/closed/wall,
 /area/xenoarch/caloriteresearch_powered)
-"RK" = (
-/obj/structure/closet/cabinet,
-/obj/item/clothing/under/rank/chief_engineer,
-/obj/item/clothing/shoes/workboots/toeless,
-/turf/open/floor/wood,
-/area/xenoarch/caloriteresearch_powered)
 "RL" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -12871,7 +12824,7 @@
 /turf/open/floor/plasteel/rockvault,
 /area/xenoarch/nothinghere)
 "SA" = (
-/obj/item/trash/soy_food,
+/obj/item/trash/boritos,
 /obj/effect/turf_decal/loading_area{
 	icon_state = "drain";
 	name = "drain";
@@ -13402,7 +13355,6 @@
 	name = "Yips-A-Lot";
 	real_name = "Wags-His-Tail"
 	},
-/obj/structure/bed/plaswooddogbed,
 /obj/item/flashlight/lamp{
 	pixel_y = 8
 	},
@@ -14233,7 +14185,6 @@
 /area/xenoarch/caloriteresearch_powered)
 "YX" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/under/rank/security/blueshirt,
 /obj/item/clothing/head/helmet/blueshirt,
 /obj/item/clothing/suit/armor/vest/blueshirt,
 /obj/item/clothing/shoes/jackboots,
@@ -16985,7 +16936,7 @@ ay
 ms
 mz
 mz
-aQ
+mz
 mz
 mz
 mz
@@ -17242,7 +17193,7 @@ ay
 ms
 mz
 mz
-aT
+mz
 mz
 mz
 mz
@@ -21308,7 +21259,7 @@ ab
 ab
 ab
 fL
-Lz
+Kg
 qI
 bl
 bE
@@ -21565,7 +21516,7 @@ ab
 ab
 ab
 fL
-Lz
+Kg
 qI
 bl
 ho
@@ -69801,7 +69752,7 @@ Dr
 SH
 yX
 Dr
-AA
+YO
 xk
 Vw
 RI
@@ -74947,7 +74898,7 @@ OA
 Ls
 wt
 OA
-RK
+UL
 rb
 we
 Ny
@@ -78925,7 +78876,7 @@ af
 lQ
 mG
 lQ
-ap
+af
 lQ
 lQ
 lQ

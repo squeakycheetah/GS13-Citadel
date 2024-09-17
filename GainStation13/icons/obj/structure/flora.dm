@@ -1,6 +1,80 @@
+/obj/structure/ashtree/ashstump
+	name = "Ashtree stump"
+	desc = "Return to ashes."
+	icon = 'GainStation13/icons/obj/flora/ashtree.dmi'
+	icon_state = "ashtree_stump"
+	density = FALSE
+	pixel_x = -16
+
+/obj/structure/flora/ashtree/ashtreee
+	name = "Ashtree"
+	desc = "A small native lavaland tree."
+	icon = 'GainStation13/icons/obj/flora/ashtree.dmi'
+	icon_state = "ashtree_1"
+	var/list/icon_states = list("ashtree_1", "ashtree_2")
+
+/obj/structure/flora/ashtree/ashtreee/Initialize()
+	. = ..()
+
+	if(islist(icon_states && icon_states.len))
+		icon_state = pick(icon_states)
+
+//
+/obj/structure/flora/gmushroom
+	name = "Giant mushroom"
+	desc = "An impressive overgrown mushroom."
+	max_integrity = 80
+	density = TRUE
+	pixel_x = -16
+	layer = FLY_LAYER
+	var/log_amount = 10
+
+/obj/structure/flora/gmushroom/attackby(obj/item/W, mob/user, params)
+	if(log_amount && (!(flags_1 & NODECONSTRUCT_1)))
+		if(W.sharpness && W.force > 0)
+			if(W.hitsound)
+				playsound(get_turf(src), W.hitsound, 100, 0, 0)
+			user.visible_message("<span class='notice'>[user] begins to cut down [src] with [W].</span>","<span class='notice'>You begin to cut down [src] with [W].</span>", "You hear the sound of sawing.")
+			if(do_after(user, 1000/W.force, target = src)) //5 seconds with 20 force, 8 seconds with a hatchet, 20 seconds with a shard.
+				user.visible_message("<span class='notice'>[user] fells [src] with the [W].</span>","<span class='notice'>You fell [src] with the [W].</span>", "You hear the sound of a tree falling.")
+				playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , 0, 0)
+				for(var/i=1 to log_amount)
+					new /obj/item/grown/log(get_turf(src))
+
+				var/obj/structure/gmushroom/gmushroomstump/S = new(loc)
+				S.name = "[name] stump"
+
+				qdel(src)
+
+	else
+		return ..()
+
+/obj/structure/gmushroom/gmushroomstump
+	name = "Giant mushroom stump"
+	desc = "It will grow back. Maybe. One day."
+	icon = 'GainStation13/icons/obj/flora/gmushroom.dmi'
+	icon_state = "gmushroom_stump"
+	density = FALSE
+	pixel_x = -16
+
+/obj/structure/flora/gmushroom/gggmushroom
+	name = "Giant mushroom"
+	desc = "An impressive overgrown mushroom."
+	icon = 'GainStation13/icons/obj/flora/gmushroom.dmi'
+	icon_state = "gmushroom_1"
+	var/list/icon_states = list("gmushroom_1", "gmushroom_2")
+
+/obj/structure/flora/gmushroom/gggmushroom/Initialize()
+	. = ..()
+
+	if(islist(icon_states && icon_states.len))
+		icon_state = pick(icon_states)
+
+
 /obj/structure/flora/shadowtree
 	name = "Shadow tree"
 	desc = "A native lavaland tree, with a remarkable purple color."
+	icon = 'GainStation13/icons/obj/flora/shadowtree.dmi'
 	max_integrity = 80
 	density = TRUE
 	pixel_x = -16

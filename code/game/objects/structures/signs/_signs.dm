@@ -1,5 +1,5 @@
 /obj/structure/sign
-	icon = 'icons/obj/decals.dmi'
+	icon = 'GainStation13/icons/obj/decals.dmi' //GS13 EDIT
 	anchored = TRUE
 	opacity = 0
 	density = FALSE

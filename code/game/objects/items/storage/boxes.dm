@@ -453,6 +453,9 @@
 	icon_state = "donkpocketbox"
 	illustration=null
 	custom_premium_price = PRICE_ABOVE_NORMAL // git gud
+	//GS13 EDIT
+	var/donktype = /obj/item/reagent_containers/food/snacks/donkpocket
+	var/warmtype = /obj/item/reagent_containers/food/snacks/donkpocket/warm
 
 /obj/item/storage/box/donkpockets/ComponentInitialize()
 	. = ..()
@@ -461,7 +464,7 @@
 
 /obj/item/storage/box/donkpockets/PopulateContents()
 	for(var/i in 1 to 6)
-		new /obj/item/reagent_containers/food/snacks/donkpocket(src)
+		new donktype(src) //GS13 EDIT
 
 /obj/item/storage/box/monkeycubes
 	name = "monkey cube box"
