@@ -48,3 +48,14 @@
 	barefootstep = FOOTSTEP_WATER
 	clawfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
+
+/turf/open/floor/carpet/gato //GS13
+	icon = 'GainStation13/icons/turf/carpet_gato.dmi'
+	floor_tile = /obj/item/stack/tile/carpet/gato
+	canSmoothWith = list(/turf/open/floor/carpet/gato)
+
+/obj/item/stack/tile/carpet/gato //GS13
+	icon = 'GainStation13/icons/obj/tiles.dmi'
+	name = "gato-themed carpet"
+	icon_state = "tile-carpet-gato"
+	turf_type = /turf/open/floor/carpet/gato

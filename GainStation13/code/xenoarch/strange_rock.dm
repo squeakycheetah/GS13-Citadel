@@ -110,3 +110,9 @@
 		to_chat(user,"Current depth dug: [dugdepth] centimeters.")
 		playsound(loc, HM.usesound, 50, 1, -1)
 //
+/turf/closed/mineral/random/volcanic/strangerock
+	mineralChance = 10
+	mineralSpawnChanceList = list(
+		/obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10, /obj/item/stack/ore/titanium = 11,
+		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40,
+		/turf/closed/mineral/gibtonite/volcanic = 4, /obj/item/stack/ore/bluespace_crystal = 1, /obj/item/strangerock = 15, /obj/item/stack/ore/calorite = 1,) //GS13 EDIT

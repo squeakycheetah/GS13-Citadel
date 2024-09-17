@@ -6,7 +6,6 @@
 	glass_icon_state  = "whiskeycolaglass"
 	glass_name = "glass of Pilk"
 	glass_desc = "Why would you do this to yourself?"
-	hydration = 3
 
 /datum/reagent/consumable/pilk/on_mob_life(mob/living/carbon/M)
 	M.drowsyness = max(0,M.drowsyness-3)

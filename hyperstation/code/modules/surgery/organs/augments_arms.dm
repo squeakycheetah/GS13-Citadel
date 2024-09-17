@@ -21,5 +21,5 @@
 	armour_penetration = 80
 	flags_1 = CONDUCT_1
 	w_class = WEIGHT_CLASS_BULKY
-	sharpness = IS_SHARP_ACCURATE
+	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "cut")

@@ -43,7 +43,7 @@
 	Additionally, you are only able to get 900 credits from a person.\
 	<br><br>\
 	You are able to use the console and pad to send victims back to the station after you are done with them. Avoid sending them anywhere dangerous or obvious unless you want to risk the ire of GATO. "
-	
+
 // calorite research facility
 
 /obj/item/paper/fluff/ruins/calorite_facility/note1
@@ -153,6 +153,7 @@
 //fastfood
 /obj/item/paper/fluff/ruins/fastfood/general_info
 	name = "Welcome to GATO!"
+	icon = 'GainStation13/icons/obj/library.dmi'
 	info = "We are glad to have you be a part of our galaxy-wide GATO franchise locations! As a restaurant worker / manager, you are a part of the GATO Corp and for security purposes, you may be treated as a part of the General Station 13's crew. Make sure to keep your restaurant clean and well-stocked. Good luck!"
 
 
@@ -160,6 +161,7 @@
 
 /obj/item/book/manual/gato_spacelaw
 	name = "GATO Space Law"
+	icon = 'GainStation13/icons/obj/library.dmi'
 	desc = "A set of GATO-Station guidelines for keeping law and order on their space stations."
 	icon_state = "bookSpaceLaw"
 	author = "GATO PMC"
@@ -480,6 +482,7 @@
 //gato pamphlets
 /obj/item/book/lorebooks/welcome_to_gato
 	name = "Welcome to GATO Industrial Concern!"
+	icon = 'GainStation13/icons/obj/library.dmi'
 	icon_state = "bookwelcometogato"
 	desc = "A book stamped with GATO's feline logo. It serves the purpose of introducing employees to their current accommodations"
 	author = "A. Tenebrae"

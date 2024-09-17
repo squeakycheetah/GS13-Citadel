@@ -53,3 +53,10 @@
 	id = /datum/reagent/consumable/milkshake_chocolate
 	results = list(/datum/reagent/consumable/milkshake_chocolate = 3)
 	required_reagents = list(/datum/reagent/consumable/milk/chocolate_milk = 1, /datum/reagent/consumable/cream = 1, /datum/reagent/consumable/coco = 1)
+
+/obj/structure/reagent_dispensers/keg/lipoifier //gs13
+	name = "keg of lipoifier"
+	desc = "Good luck downing that and not getting beached."
+	icon_state = "orangekeg"
+	reagent_id = /datum/reagent/consumable/lipoifier
+	tank_volume = 300

@@ -40,7 +40,6 @@
 		/obj/effect/particle_effect/ion_trails,
 		/obj/effect/dummy/phased_mob,
 		/obj/effect/immovablerod,
-		/obj/effect/crystalline_reentry
 		)) //Gotta make sure certain things can phase through it otherwise the railings also block them.
 
 /obj/structure/railing/CanPass(atom/movable/mover, turf/target)

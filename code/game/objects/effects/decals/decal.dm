@@ -32,7 +32,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /obj/effect/turf_decal
-	icon = 'icons/turf/decals.dmi'
+	icon = 'GainStation13/icons/obj/decals.dmi' //GS13 OVERWRITE ORIGINAL ICON - 'icons/turf/decals.dmi'
 	icon_state = "warningline"
 	layer = TURF_DECAL_LAYER
 	plane = ABOVE_WALL_PLANE

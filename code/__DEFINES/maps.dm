@@ -131,3 +131,13 @@ require only minor tweaks.
 //Random z-levels name defines.
 #define AWAY_MISSION_NAME "Away Mission"
 #define VIRT_REALITY_NAME "Virtual Reality"
+
+#define ZTRAITS_LAVALAND_UNDERRGOUND list(\
+	ZTRAIT_LAVA_UNDERGROUND = TRUE, \
+	ZTRAIT_BOMBCAP_MULTIPLIER = 2, \
+	ZTRAIT_UP = 1, \
+	ZTRAIT_BASETURF = /turf/open/lava/smooth/lava_land_surface)
+
+#define ZTRAITS_DINER list(ZTRAIT_DINER = TRUE, ZTRAIT_BOMBCAP_MULTIPLIER = 0.5)
+
+#define ZTRAITS_FASTFOOD list(ZTRAIT_FASTFOOD = TRUE, ZTRAIT_BOMBCAP_MULTIPLIER = 0.5) //GS13

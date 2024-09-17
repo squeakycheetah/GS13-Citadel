@@ -42,6 +42,7 @@ GLOBAL_LIST_INIT(calorite_recipes, list ( \
 	name = "Calorite tile"
 	singular_name = "Calorite floor tile"
 	desc = "A tile made out of calorite. Bwoomph."
+	icon = 'GainStation13/icons/obj/tiles.dmi'
 	icon_state = "tile_calorite"
 	turf_type = /turf/open/floor/mineral/calorite
 	mineralType = "calorite"
@@ -70,6 +71,7 @@ GLOBAL_LIST_INIT(calorite_recipes, list ( \
 
 /turf/open/floor/mineral/calorite
 	name = "Calorite floor"
+	icon = 'GainStation13/icons/turf/floors.dmi'
 	icon_state = "calorite"
 	floor_tile = /obj/item/stack/tile/mineral/calorite
 	icons = list("calorite","calorite_dam")
@@ -111,6 +113,7 @@ GLOBAL_LIST_INIT(calorite_recipes, list ( \
 
 
 /obj/structure/statue/calorite
+	icon = 'GainStation13/icons/obj/statue.dmi'
 	max_integrity = 400
 	custom_materials = list(/datum/material/calorite=MINERAL_MATERIAL_AMOUNT*5)
 
@@ -172,3 +175,70 @@ GLOBAL_LIST_INIT(calorite_recipes, list ( \
 
 /obj/structure/statue/calorite/fatty/attack_paw(mob/living/carbon/M)
 	statue_fatten(M)
+
+
+/turf/closed/wall/mineral/calorite //GS13
+	name = "calorite wall"
+	desc = "A wall with calorite plating. Burp."
+	icon = 'GainStation13/icons/turf/calorite_wall.dmi'
+	icon_state = "calorite"
+	sheet_type = /obj/item/stack/sheet/mineral/calorite
+	canSmoothWith = list(/turf/closed/wall/mineral/calorite, /obj/structure/falsewall/calorite)
+
+/turf/closed/wall/mineral/calorite/proc/fatten()
+	if(!active)
+		if(world.time > last_event+15)
+			active = 1
+			for(var/mob/living/carbon/human/M in orange(3,src))
+				M.adjust_fatness(30, FATTENING_TYPE_ITEM)
+			last_event = world.time
+			active = null
+			return
+	return
+
+/turf/closed/wall/mineral/calorite/Bumped(atom/movable/AM)
+	fatten()
+	..()
+
+/turf/closed/wall/mineral/calorite/attackby(obj/item/W, mob/user, params)
+	fatten()
+	return ..()
+
+/turf/closed/wall/mineral/calorite/attack_hand(mob/user)
+	fatten()
+	. = ..()
+
+/obj/structure/falsewall/calorite            //GS13
+	name = "calorite wall"
+	desc = "A wall with calorite plating. Burp."
+	icon = 'GainStation13/icons/turf/calorite_wall.dmi'
+	icon_state = "calorite"
+	mineral = /obj/item/stack/sheet/mineral/calorite
+	walltype = /turf/closed/wall/mineral/calorite
+	canSmoothWith = list(/obj/structure/falsewall/calorite, /turf/closed/wall/mineral/calorite)
+	var/active = null
+	var/last_event = 0
+
+/obj/structure/falsewall/calorite/proc/fatten()
+	if(!active)
+		if(world.time > last_event+15)
+			active = 1
+			for(var/mob/living/carbon/human/M in orange(3,src))
+				M.adjust_fatness(30, FATTENING_TYPE_ITEM)
+			last_event = world.time
+			active = null
+			return
+	return
+
+/obj/structure/falsewall/calorite/Bumped(atom/movable/AM)
+	fatten()
+	..()
+
+/obj/structure/falsewall/calorite/attackby(obj/item/W, mob/user, params)
+	fatten()
+	return ..()
+
+/obj/structure/falsewall/calorite/attack_hand(mob/user)
+	fatten()
+	. = ..()
+
