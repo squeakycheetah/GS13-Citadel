@@ -319,7 +319,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 		control_computer.frozen_crew += list(crew_member)
 
 	// Make an announcement and log the person entering storage.
-	if(GLOB.announcement_systems.len)
+	if(GLOB.announcement_systems.len && alert_comms) //GS13 EDIT
 		var/obj/machinery/announcement_system/announcer = pick(GLOB.announcement_systems)
 		announcer.announce("CRYOSTORAGE", mob_occupant.real_name, announce_rank, list())
 
