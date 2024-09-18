@@ -4,5 +4,4 @@
 	icon = 'hyperstation/icons/obj/clothing/uniforms.dmi'
 	icon_state = "zaounder"
 	item_state = "zaounder"
-	item_color = "zaounder"
 	mob_overlay_icon = 'hyperstation/icons/mobs/uniforms.dmi'

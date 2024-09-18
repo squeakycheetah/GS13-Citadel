@@ -6,14 +6,12 @@
 	icon = 'hyperstation/icons/obj/clothing/gloves.dmi'
 	mob_overlay_icon = 'hyperstation/icons/mobs/gloves.dmi'
 	mutantrace_variation = NONE
-	price = 5
 
 /obj/item/clothing/gloves/latexsleeves/security
 	name = "security sleeves"
 	desc = "A pair of latex sleeves, with a band of red above the elbows denoting that the wearer is part of the security team."
 	icon_state = "latexsec"
 	item_state = "latexsec"
-	price = 5
 
 /obj/item/clothing/head/dominatrixcap
 	name = "dominatrix cap"
@@ -35,7 +33,7 @@
 
 /obj/item/clothing/shoes/highheels/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/squeak, list('sound/effects/footstep/highheel1.ogg' = 1,'sound/effects/footstep/highheel2.ogg' = 1), 20)
+	AddComponent(/datum/component/squeak, list('hyperstation/sound/footstep/highheel1.ogg' = 1,'hyperstation/sound/footstep/highheel2.ogg' = 1), 20)
 //the classic click clack
 
 obj/item/clothing/neck/stole
@@ -45,7 +43,6 @@ obj/item/clothing/neck/stole
 	w_class = WEIGHT_CLASS_SMALL
 	icon_state = "stole"
 	item_state = ""	//no inhands
-	price = 3
 
 obj/item/clothing/neck/stole/black
 	name = "black boa"
@@ -55,7 +52,6 @@ obj/item/clothing/neck/stole/black
 	icon_state = "stole"
 	item_state = ""	//no inhands
 	color = "#3d3d3d"
-	price = 3
 
 /obj/item/clothing/suit/fluffyhalfcrop
 	name = "fluffy half-crop jacket"
@@ -86,7 +82,7 @@ obj/item/clothing/neck/stole/black
 	item_state = "r_suit"
 	can_adjust = FALSE
 	mutantrace_variation = NONE
-	do_not_cover_butt = TRUE
+	body_parts_covered = CHEST|LEGS|ARMS
 
 /obj/item/clothing/under/sexynursesuit
 	name = "Sexy nurse outfit"
@@ -97,6 +93,7 @@ obj/item/clothing/neck/stole/black
 	item_state = "r_suit"
 	can_adjust = FALSE
 	mutantrace_variation = NONE
+	body_parts_covered = CHEST|LEGS|ARMS
 
 /obj/item/clothing/under/centcomdress
 	name = "Centcom Dress Uniform"

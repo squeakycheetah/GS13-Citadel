@@ -11,7 +11,6 @@
 	mob_overlay_icon =  'hyperstation/icons/mobs/eyes.dmi'
 	hud_type = DATA_HUD_SECURITY_ADVANCED
 	actions_types = list(/datum/action/item_action/switch_hud)
-	glass_colour_type = /datum/client_colour/glass_colour/lightyellow
 
 /obj/item/clothing/glasses/hud/toggle/zao/attack_self(mob/user)
 	if(!ishuman(user))
@@ -30,14 +29,12 @@
 		hud_type = null
 		flash_protect = 0
 		tint = 0
-		change_glass_color(user, /datum/client_colour/glass_colour/white)
 	else
 		hud_type = DATA_HUD_SECURITY_ADVANCED
 		icon_state = "zaovisor"
 		item_state = "zaovisor"
 		flash_protect = 1
 		tint = 1
-		change_glass_color(user, /datum/client_colour/glass_colour/lightyellow)
 
 	if (hud_type)
 		var/datum/atom_hud/H = GLOB.huds[hud_type]

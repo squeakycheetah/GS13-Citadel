@@ -4,7 +4,6 @@
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
 	icon_state = "zaocoat"
 	item_state = "zaocoat"
-	item_color = "zaocoat"
 	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	togglename = "zipper"
 	body_parts_covered = CHEST|ARMS|LEGS
