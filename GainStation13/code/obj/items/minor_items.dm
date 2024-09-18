@@ -134,6 +134,8 @@
 /obj/item/clothing/mask/pig/gag //this one only lets you say "oink" and similar
 	name = "Voice modulator - pig"
 	desc = "A small gag, used to silence people in a rather 'original' way."
+	icon = 'GainStation13/icons/obj/masks.dmi'
+	mob_overlay_icon = 'GainStation13/icons/mob/mask.dmi'
 	icon_state = "ballgag"
 	item_state = "ballgag"
 	flags_inv = HIDEFACE
@@ -144,7 +146,8 @@
 /obj/item/clothing/mask/cowmask/gag //this one only lets you say "moo" and similar
 	name = "Voice modulator - cow"
 	desc = "A small gag, used to silence people in a rather 'original' way."
-	icon = 'icons/obj/clothing/masks.dmi'
+	icon = 'GainStation13/icons/obj/masks.dmi'
+	mob_overlay_icon = 'GainStation13/icons/mob/mask.dmi'
 	icon_state = "ballgag"
 	item_state = "ballgag"
 	flags_inv = HIDEFACE
