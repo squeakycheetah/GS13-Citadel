@@ -11460,17 +11460,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
-"LP" = (
-/obj/machinery/porta_turret/aux_base{
-	dir = 5;
-	icon_state = "standard_broken";
-	obj_integrity = 20;
-	stat = 1
-	},
-/turf/open/floor/plasteel/grimy{
-	icon_state = "engine"
-	},
-/area/xenoarch/nothinghere)
 "LR" = (
 /obj/effect/turf_decal{
 	dir = 4
@@ -74679,7 +74668,7 @@ nx
 ph
 Sa
 Mb
-LP
+rf
 nx
 St
 FE

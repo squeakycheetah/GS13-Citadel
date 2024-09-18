@@ -8,7 +8,7 @@
 	tint = 1
 	flags_cover = GLASSESCOVERSEYES
 	visor_flags_cover = GLASSESCOVERSEYES
-	alternate_worn_icon =  'hyperstation/icons/mobs/eyes.dmi'
+	mob_overlay_icon =  'hyperstation/icons/mobs/eyes.dmi'
 	hud_type = DATA_HUD_SECURITY_ADVANCED
 	actions_types = list(/datum/action/item_action/switch_hud)
 	glass_colour_type = /datum/client_colour/glass_colour/lightyellow

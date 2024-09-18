@@ -4,7 +4,7 @@
 	icon_state = "latex"
 	item_state = "latex"
 	icon = 'hyperstation/icons/obj/clothing/gloves.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/gloves.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/gloves.dmi'
 	mutantrace_variation = NONE
 	price = 5
 
@@ -21,7 +21,7 @@
 	icon_state = "dominatrix"
 	item_state = "dominatrix"
 	icon = 'hyperstation/icons/obj/clothing/head.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/head.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/head.dmi'
 	mutantrace_variation = NONE
 
 /obj/item/clothing/shoes/highheels
@@ -30,7 +30,7 @@
 	icon_state = "highheels"
 	item_state = "highheels"
 	icon = 'hyperstation/icons/obj/clothing/shoes.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/feet.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/feet.dmi'
 
 
 /obj/item/clothing/shoes/highheels/Initialize(mapload)
@@ -63,7 +63,7 @@ obj/item/clothing/neck/stole/black
 	icon_state = "fluffy"
 	item_state = "fluffy"
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/suits.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	body_parts_covered = CHEST|LEGS|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	mutantrace_variation = NONE
@@ -73,7 +73,7 @@ obj/item/clothing/neck/stole/black
 	desc = "A tight fitting jumpsuit made of latex."
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
 	icon_state = "latex"
-	alternate_worn_icon = 'hyperstation/icons/mobs/suits.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	item_state = "r_suit"
 	can_adjust = FALSE
 
@@ -82,7 +82,7 @@ obj/item/clothing/neck/stole/black
 	desc = "A tight fitting outfit made of latex, that covers the wearers torso."
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
 	icon_state = "latexhalf"
-	alternate_worn_icon = 'hyperstation/icons/mobs/suits.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	item_state = "r_suit"
 	can_adjust = FALSE
 	mutantrace_variation = NONE
@@ -93,7 +93,7 @@ obj/item/clothing/neck/stole/black
 	desc = "A very revealing nurse's outfit. Not very sanitary. Does it even count as clothing?"
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
 	icon_state = "sexynursesuit"
-	alternate_worn_icon = 'hyperstation/icons/mobs/suits.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	item_state = "r_suit"
 	can_adjust = FALSE
 	mutantrace_variation = NONE
@@ -103,7 +103,7 @@ obj/item/clothing/neck/stole/black
 	desc = "A stylish yet revealing dress uniform worn in extravagent black and gold, worthy of those who sit around and watch cameras all day in an office."
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
 	icon_state = "ccdress"
-	alternate_worn_icon = 'hyperstation/icons/mobs/suits.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	item_state = "r_suit"
 	can_adjust = FALSE
 	//We will never know why CC can make their skimpy outfits tough as nails
@@ -119,7 +119,7 @@ obj/item/clothing/neck/stole/black
 	desc = "This black and gold beauty does not help paperwork get done, it seems."
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
 	icon_state = "ccdressvk"
-	alternate_worn_icon = 'hyperstation/icons/mobs/suits.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	item_state = "r_suit"
 	can_adjust = FALSE
 	//We will never know why CC can make their skimpy outfits tough as nails

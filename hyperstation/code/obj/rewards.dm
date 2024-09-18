@@ -22,14 +22,14 @@
 	icon_state = "shackles"
 	item_state = "shackles"
 	icon = 'hyperstation/icons/mobs/rewards.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/rewards.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/rewards.dmi'
 	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/luwethtrench
 	name = "Syndicate Commander's Coat"
 	desc = "A sinister looking black and red jacket. The gold collar and shoulders denote that this belongs to a high ranking syndicate officer. A rather strange brooch is pinned to the coat, displaying a unique range of lustrous brass cracks through the deep blacks of it’s hammered finish."
 	icon = 'hyperstation/icons/obj/clothing/rewards.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/rewards.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/rewards.dmi'
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	icon_state = "luwethtrench"
 	item_state = "luwethtrench"
@@ -93,14 +93,14 @@
 	name = "crystalline shards"
 	icon = 'hyperstation/icons/obj/rewards.dmi'
 	desc = "A handful of blue crystals. They look like they came from some sort of cave."
-	alternate_worn_icon = 'hyperstation/icons/mobs/rewards.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/rewards.dmi'
 	icon_state = "crystalline"
 
 /obj/item/clothing/mask/keaton
 	name = "keaton mask"
 	desc = "A mask made to look like the mythical Keaton."
 	icon = 'hyperstation/icons/obj/rewards.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/rewards.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/rewards.dmi'
 	icon_state = "keaton"
 	flags_inv = HIDEFACE|HIDEFACIALHAIR
 	w_class = WEIGHT_CLASS_SMALL
@@ -120,7 +120,7 @@
 	name = "Fleet Commander's Beret"
 	desc = "A beret bearing a worn golden symbol that stikes fear in the hearts of many. It smells faintly of plasma and gunpowder."
 	icon = 'hyperstation/icons/obj/clothing/rewards.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/rewards.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/rewards.dmi'
 	icon_state = "commissar_beret"
 	item_state = "commissar_beret"
 
@@ -136,7 +136,7 @@
 	name = "Fleet Commander's Sabre"
 	desc = "An elegant weapon, similar in design to the Captain's Sabre, but with a syndicate twist."
 	icon = 'icons/obj/custom.dmi'
-	alternate_worn_icon = 'icons/mob/custom_w.dmi'
+	mob_overlay_icon = 'icons/mob/custom_w.dmi'
 	icon_state = "darksabre"
 	item_state = "darksabre"
 	force = 5

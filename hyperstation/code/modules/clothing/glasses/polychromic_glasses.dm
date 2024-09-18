@@ -5,25 +5,25 @@
 	icon_state = "polygar"
 	item_color = "polygar"
 	item_state = "polygar"
-	alternate_worn_icon = 'hyperstation/icons/mob/eyes.dmi' //Because, as it appears, the item itself is normally not directly aware of its worn overlays, so this is about the easiest way, without adding a new var.
+	mob_overlay_icon = 'hyperstation/icons/mob/eyes.dmi' //Because, as it appears, the item itself is normally not directly aware of its worn overlays, so this is about the easiest way, without adding a new var.
 	hasprimary = TRUE
 	primary_color = "#0c0c0c"
 	vision_correction = 1
 
-/obj/item/clothing/glasses/polychromic/worn_overlays(isinhands, icon_file)	//this is where the main magic happens. Also mandates that ALL polychromic stuff MUST USE alternate_worn_icon
+/obj/item/clothing/glasses/polychromic/worn_overlays(isinhands, icon_file)	//this is where the main magic happens. Also mandates that ALL polychromic stuff MUST USE mob_overlay_icon
 	. = ..()
 	if(hasprimary | hassecondary | hastertiary)
 		if(!isinhands)	//prevents the worn sprites from showing up if you're just holding them
 			if(hasprimary)	//checks if overlays are enabled
-				var/mutable_appearance/primary_worn = mutable_appearance(alternate_worn_icon, "[item_color]-primary")	//automagical sprite selection
+				var/mutable_appearance/primary_worn = mutable_appearance(mob_overlay_icon, "[item_color]-primary")	//automagical sprite selection
 				primary_worn.color = primary_color	//colors the overlay
 				. += primary_worn	//adds the overlay onto the buffer list to draw on the mob sprite.
 			if(hassecondary)
-				var/mutable_appearance/secondary_worn = mutable_appearance(alternate_worn_icon, "[item_color]-secondary")
+				var/mutable_appearance/secondary_worn = mutable_appearance(mob_overlay_icon, "[item_color]-secondary")
 				secondary_worn.color = secondary_color
 				. += secondary_worn
 			if(hastertiary)
-				var/mutable_appearance/tertiary_worn = mutable_appearance(alternate_worn_icon, "[item_color]-tertiary")
+				var/mutable_appearance/tertiary_worn = mutable_appearance(mob_overlay_icon, "[item_color]-tertiary")
 				tertiary_worn.color = tertiary_color
 				. += tertiary_worn
 

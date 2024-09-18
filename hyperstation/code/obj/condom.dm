@@ -75,7 +75,7 @@ obj/item/condom/update_icon()
 	name = "condom"
 	icon = 'hyperstation/icons/obj/condom.dmi'
 	desc = "Looks like someone had abit of some fun!"
-	alternate_worn_icon = 'hyperstation/icons/obj/clothing/head.dmi'
+	mob_overlay_icon = 'hyperstation/icons/obj/clothing/head.dmi'
 	icon_state = "b_condom_out"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 5, "rad" = 0, "fire" = 0, "acid" = 0)
 

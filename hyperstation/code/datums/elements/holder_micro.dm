@@ -93,7 +93,7 @@
 	if(_can_head_override)
 		can_head = _can_head_override
 	if(alt_worn)
-		alternate_worn_icon = alt_worn
+		mob_overlay_icon = alt_worn
 	if(_worn_state)
 		item_state = _worn_state
 		icon_state = _worn_state

@@ -114,7 +114,7 @@
 			if(hud_used.inventory_shown)
 				client.screen += ears
 
-		overlays_standing[EARS_LAYER] = ears.build_worn_icon(state = ears.icon_state, default_layer = EARS_LAYER, default_icon_file = ((ears.alternate_worn_icon) ? ears.alternate_worn_icon : 'icons/mob/ears.dmi'))
+		overlays_standing[EARS_LAYER] = ears.build_worn_icon(state = ears.icon_state, default_layer = EARS_LAYER, default_icon_file = ((ears.mob_overlay_icon) ? ears.mob_overlay_icon : 'icons/mob/ears.dmi'))
 		var/mutable_appearance/ears_overlay = overlays_standing[EARS_LAYER]
 		switch(dir)
 			if(NORTH)
@@ -146,7 +146,7 @@
 		if(!t_state)
 			t_state = belt.icon_state
 
-		overlays_standing[BELT_LAYER] = belt.build_worn_icon(state = t_state, default_layer = BELT_LAYER, default_icon_file = ((belt.alternate_worn_icon) ? belt.alternate_worn_icon : 'icons/mob/belt.dmi'))
+		overlays_standing[BELT_LAYER] = belt.build_worn_icon(state = t_state, default_layer = BELT_LAYER, default_icon_file = ((belt.mob_overlay_icon) ? belt.mob_overlay_icon : 'icons/mob/belt.dmi'))
 		var/mutable_appearance/belt_overlay = overlays_standing[BELT_LAYER]
 		switch(dir)
 			if(NORTH)
@@ -287,7 +287,7 @@
 //HEAD
 /mob/living/carbon/wendigo/update_inv_head()
 	remove_overlay(HEAD_LAYER)
-	
+
 	if(head)
 		head.screen_loc = ui_head
 		if(client && hud_used && hud_used.hud_shown)

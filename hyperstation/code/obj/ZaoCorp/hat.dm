@@ -5,7 +5,7 @@
 	icon_state = "zaohat"
 	item_state = "helmet"
 	item_color = "zaohat"
-	alternate_worn_icon = 'hyperstation/icons/mobs/head.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/head.dmi'
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 10,"energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 60)
 	cold_protection = HEAD
 	min_cold_protection_temperature = FIRE_HELM_MIN_TEMP_PROTECT

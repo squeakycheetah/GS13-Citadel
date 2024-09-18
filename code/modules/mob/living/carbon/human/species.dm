@@ -1557,7 +1557,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		// fatConversionRate is functionally useless. It seems under normal curcumstances, each tick only processes, at most, 1 nutrition anyway. reducing the value has no effect.
 		var/fatConversionRate = 100 //GS13 what percentage of the excess nutrition should go to fat (total nutrition to transfer can't be under 1)
 		var/nutritionThatBecomesFat = max((H.nutrition - NUTRITION_LEVEL_FULL)*(fatConversionRate / 100),1)
-		H.nutrition -= nutritionThatBecomesFat
+		H.adjust_nutrition(-nutritionThatBecomesFat)
 		H.adjust_fatness(nutritionThatBecomesFat, FATTENING_TYPE_FOOD)
 	if(H.fullness > FULLNESS_LEVEL_EMPTY)//GS13 stomach-emptying routine
 		var/ticksToEmptyStomach = 20 // GS13 how many ticks it takes to decrease the fullness by 1

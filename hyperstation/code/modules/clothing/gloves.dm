@@ -4,7 +4,7 @@
 	icon_state = "guncaster"
 	item_state = "guncaster"
 	icon = 'hyperstation/icons/obj/clothing/gloves.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/gloves.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/gloves.dmi'
 	item_color = null	//So they don't wash.
 	transfer_prints = TRUE
 	strip_delay = 40

@@ -39,7 +39,6 @@
 				/obj/item/clothing/head/chefhat = 5,
 				/obj/item/reagent_containers/food/snacks/cookie = 10,
 				/obj/item/reagent_containers/food/snacks/salad/fruit = 15,
-				/obj/item/reagent_containers/food/snacks/salad = 20,
 				/obj/item/reagent_containers/food/snacks/blueberry_gum = 5
 				)
 	premium = list(

@@ -5,7 +5,7 @@
 	item_state = "kaminacape"
 	body_parts_covered = 0
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/suits.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/gcvest
@@ -14,7 +14,7 @@
 	icon_state = "guncaster"
 	item_state = "guncaster"
 	icon = 'hyperstation/icons/obj/clothing/suits.dmi'
-	alternate_worn_icon = 'hyperstation/icons/mobs/suits.dmi'
+	mob_overlay_icon = 'hyperstation/icons/mobs/suits.dmi'
 	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/gcvest/alt
