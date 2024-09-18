@@ -15,11 +15,9 @@
 	var/conversion_rate = 10000
 	var/emp_timer = 0
 	var/active = FALSE
-	var/datum/looping_sound/generator/soundloop
 
 /obj/machinery/power/adipoelectric_generator/Initialize(mapload)
 	. = ..()
-	soundloop = new(list(src), active)
 	if(anchored)
 		connect_to_network()
 	update_icon()
@@ -41,17 +39,14 @@
 		active = TRUE
 		add_avail(conversion_rate * laser_modifier * max_fat)
 		occupant:adjust_fatness(-max_fat, FATTENING_TYPE_ITEM)
-		soundloop.start()
 	else
 		active = FALSE
-		soundloop.stop()
 	update_icon()
 
 /obj/machinery/power/adipoelectric_generator/relaymove(mob/user)
 	if(user.stat)
 		return
 	open_machine()
-	soundloop.stop()
 
 /obj/machinery/power/adipoelectric_generator/emp_act(severity)
 	. = ..()
@@ -96,7 +91,6 @@
 		close_machine()
 	else
 		open_machine()
-		soundloop.stop()
 	update_icon()
 
 /obj/machinery/power/adipoelectric_generator/open_machine()
@@ -136,7 +130,6 @@
 	update_icon()
 
 /obj/machinery/power/adipoelectric_generator/Destroy()
-	QDEL_NULL(soundloop)
 	. = ..()
 
 /obj/machinery/power/adipoelectric_generator/examine(mob/user)
