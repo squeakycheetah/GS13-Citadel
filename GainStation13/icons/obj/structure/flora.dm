@@ -243,3 +243,15 @@
 /obj/structure/flora/redgrass/redg/Initialize()
 	icon_state = "tallgrass[rand(1, 4)]bb"
 	. = ..()
+
+/obj/structure/flora/tree/desertdead
+	icon = 'GainStation13/icons/obj/flora/desertdead.dmi'
+	desc = "A dead tree in the middle of the desert."
+	icon_state = "desertdead_1"
+	var/list/icon_states = list ("desertdead_1", "desertdead_2", "desertdead_3")
+
+/obj/structure/flora/tree/desertdead/Initialize()
+	. = ..()
+
+	if(islist(icon_states && icon_states.len))
+		icon_state = pick(icon_states)

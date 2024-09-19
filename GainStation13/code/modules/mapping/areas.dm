@@ -150,3 +150,6 @@
 	name = "CARTS"
 	desc = "You are entering a motorized cart area."
 	icon_state = "carts"
+
+/area/ruin/powered/gluttony
+	icon_state = "dk_yellow"

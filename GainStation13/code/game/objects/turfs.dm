@@ -29,3 +29,32 @@
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
+
+/turf/open/floor/concrete/
+	name = "concrete"
+	icon = 'GainStation13/icons/turf/floors.dmi'
+	icon_state = "concrete"
+	baseturfs = /turf/open/floor/plating/asteroid
+
+/turf/open/floor/concrete/smooth
+	icon = 'GainStation13/icons/turf/floors.dmi'
+	icon_state = "concrete2"
+
+/turf/open/floor/cobble/side
+	icon = 'GainStation13/icons/turf/floors.dmi'
+	icon_state = "cobble_side"
+
+/turf/open/floor/cobble/corner
+	icon = 'GainStation13/icons/turf/floors.dmi'
+	icon_state = "cobble_corner"
+
+/turf/open/floor/cobble
+	name = "cobblestone path"
+	desc = "A simple but beautiful path made of various sized stones."
+	icon = 'GainStation13/icons/turf/floors.dmi'
+	icon_state = "cobble"
+	baseturfs = /turf/open/floor/plating/asteroid
+	footstep = FOOTSTEP_FLOOR
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY

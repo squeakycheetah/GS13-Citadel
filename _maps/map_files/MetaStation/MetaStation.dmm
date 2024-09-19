@@ -74711,6 +74711,17 @@
 /obj/machinery/atmospherics/pipe/simple/dark/visible,
 /turf/open/floor/plasteel/dark,
 /area/engineering/atmos)
+"rVO" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
+/obj/machinery/quantumpad{
+	map_pad_id = "station";
+	map_pad_link_id = "xenoarch";
+	mapped_quantum_pads = list("station","xenoarch")
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
 "rWl" = (
 /obj/item/radio/intercom{
 	name = "Station Intercom (General)";
@@ -116229,7 +116240,7 @@ bWC
 bSS
 bZn
 caB
-ccj
+rVO
 cdO
 ceU
 cgi

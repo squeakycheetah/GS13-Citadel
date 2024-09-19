@@ -70437,6 +70437,14 @@
 "hkc" = (
 /turf/open/floor/carpet/blackred,
 /area/commons/dorms)
+"hkf" = (
+/obj/machinery/quantumpad{
+	map_pad_id = "station";
+	map_pad_link_id = "xenoarch";
+	mapped_quantum_pads = list("station","xenoarch")
+	},
+/turf/open/floor/plasteel/white,
+/area/hallway/primary/fore)
 "hky" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -129210,7 +129218,7 @@ aPd
 aFV
 aGK
 aCL
-aHV
+hkf
 aJF
 ngt
 aWc

@@ -52306,6 +52306,19 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/maintenance/department/security/brig)
+"dVu" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/machinery/quantumpad{
+	map_pad_id = "station";
+	map_pad_link_id = "xenoarch";
+	mapped_quantum_pads = list("station","xenoarch")
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
 "dVI" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -99726,7 +99739,7 @@ bBo
 bks
 blD
 bko
-bko
+dVu
 bko
 bqf
 bko

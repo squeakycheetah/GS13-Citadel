@@ -10521,6 +10521,11 @@
 /obj/structure/sign/departments/science{
 	pixel_x = 32
 	},
+/obj/machinery/quantumpad{
+	map_pad_id = "station";
+	map_pad_link_id = "xenoarch";
+	mapped_quantum_pads = list("station","xenoarch")
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "arE" = (

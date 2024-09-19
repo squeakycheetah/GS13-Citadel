@@ -90,7 +90,7 @@
 "cR" = (/obj/item/clothing/suit/space/fragile,/obj/item/clothing/head/helmet/space/orange,/turf/open/floor/pod/dark,/area/ruin/powered/beach)
 "cW" = (/obj/machinery/light{dir = 4},/turf/open/floor/wood,/area/ruin/powered/beach)
 "dw" = (/obj/machinery/door/airlock/sandstone{name = "Beach Access"},/turf/open/floor/pod/dark,/area/ruin/powered/beach)
-"eD" = (/obj/structure/chair/comfy/plywood,/obj/item/toy/plush/rose,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
+"eD" = (/obj/structure/chair/comfy/plywood,/obj/item/toy/plush/gs13/rose,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "fr" = (/obj/machinery/door/airlock/wood/glass,/turf/open/floor/wood,/area/ruin/powered/beach)
 "fE" = (/obj/effect/turf_decal/stripes/asteroid/line{dir = 1},/obj/effect/turf_decal/sand,/obj/machinery/vending/gato,/turf/open/floor/plasteel,/area/ruin/powered/beach)
 "gS" = (/obj/effect/turf_decal/sand,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel,/area/ruin/powered/beach)

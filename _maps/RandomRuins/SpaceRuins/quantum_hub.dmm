@@ -4,10 +4,10 @@
 "d" = (/obj/machinery/door/airlock{id_tag = "quantum_door_three"; dir = 1},/obj/structure/fans/tiny,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "e" = (/obj/machinery/door/airlock{id_tag = "quantum_door_two"; dir = 1},/obj/structure/fans/tiny,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "f" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/circuit,/area/ruin/space/has_grav/powered/quantum_hub)
-"g" = (/obj/item/twohanded/required/kirbyplants/photosynthetic,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
+"g" = (/obj/item/kirbyplants/photosynthetic,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "h" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/circuit,/area/ruin/space/has_grav/powered/quantum_hub)
 "i" = (/turf/closed/wall/mineral/plastitanium,/area/ruin/space/has_grav/powered/quantum_hub)
-"j" = (/obj/machinery/light{dir = 4},/obj/item/twohanded/required/kirbyplants/random,/obj/machinery/button/door{id = "quantum_door_one"; name = "Room 1 Lock"; normaldoorcontrol = 1; specialfunctions = 4; pixel_y = 4; pixel_x = 21; dir = 0},/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
+"j" = (/obj/machinery/light{dir = 4},/obj/item/kirbyplants/random,/obj/machinery/button/door{id = "quantum_door_one"; name = "Room 1 Lock"; normaldoorcontrol = 1; specialfunctions = 4; pixel_y = 4; pixel_x = 21; dir = 0},/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "l" = (/obj/structure/rack,/obj/item/multitool,/obj/item/screwdriver,/obj/item/wrench,/obj/machinery/light,/obj/item/storage/box/quantum_pad_parts,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "m" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/machinery/vending/gato,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/powered/quantum_hub)
 "n" = (/obj/structure/window/reinforced,/turf/open/floor/circuit,/area/ruin/space/has_grav/powered/quantum_hub)
@@ -29,7 +29,7 @@
 "J" = (/obj/structure/chair,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "L" = (/obj/machinery/door/airlock{id_tag = "quantum_door_one"; dir = 4},/obj/structure/fans/tiny,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "M" = (/obj/machinery/light{dir = 8},/obj/structure/table/reinforced,/obj/item/gps{gpstag = "Quantum Hub"},/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
-"N" = (/obj/machinery/light,/obj/item/twohanded/required/kirbyplants/random,/obj/machinery/button/door{id = "quantum_door_three"; name = "Room 3 Lock"; normaldoorcontrol = 1; specialfunctions = 4; pixel_y = -21; pixel_x = 4; dir = 0},/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
+"N" = (/obj/machinery/light,/obj/item/kirbyplants/random,/obj/machinery/button/door{id = "quantum_door_three"; name = "Room 3 Lock"; normaldoorcontrol = 1; specialfunctions = 4; pixel_y = -21; pixel_x = 4; dir = 0},/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "O" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "P" = (/obj/machinery/light{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "Q" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/open/floor/circuit,/area/ruin/space/has_grav/powered/quantum_hub)
@@ -39,7 +39,7 @@
 "V" = (/turf/open/floor/plasteel/cafeteria,/area/ruin/space/has_grav/powered/quantum_hub)
 "W" = (/obj/machinery/door/airlock{dir = 4},/obj/structure/fans/tiny,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 "Y" = (/obj/structure/closet,/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
-"Z" = (/obj/machinery/light,/obj/item/twohanded/required/kirbyplants/random,/obj/machinery/button/door{id = "quantum_door_two"; name = "Room 2 Lock"; normaldoorcontrol = 1; specialfunctions = 4; pixel_y = -21; pixel_x = 4; dir = 0},/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
+"Z" = (/obj/machinery/light,/obj/item/kirbyplants/random,/obj/machinery/button/door{id = "quantum_door_two"; name = "Room 2 Lock"; normaldoorcontrol = 1; specialfunctions = 4; pixel_y = -21; pixel_x = 4; dir = 0},/turf/open/floor/plasteel,/area/ruin/space/has_grav/powered/quantum_hub)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaa

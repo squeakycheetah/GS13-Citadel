@@ -22971,6 +22971,11 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+/obj/machinery/quantumpad{
+	map_pad_id = "station";
+	map_pad_link_id = "xenoarch";
+	mapped_quantum_pads = list("station","xenoarch")
+	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/starboard)
 "bfZ" = (
@@ -27230,8 +27235,6 @@
 	layer = 2.9
 	},
 /obj/structure/table/reinforced,
-/obj/item/destTagger,
-/obj/item/destTagger,
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
@@ -42163,7 +42166,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/mob/living/simple_animal/parrot/Poly,
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/ce)
 "cbr" = (

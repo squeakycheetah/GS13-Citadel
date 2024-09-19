@@ -5346,9 +5346,6 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/duelshotgun{
-	pixel_y = -32
-	},
 /turf/open/floor/plasteel,
 /area/security/brig)
 "anj" = (
@@ -55350,6 +55347,11 @@
 /obj/machinery/camera{
 	c_tag = "Aft Hallway - MedSci Port";
 	dir = 4
+	},
+/obj/machinery/quantumpad{
+	map_pad_id = "station";
+	map_pad_link_id = "xenoarch";
+	mapped_quantum_pads = list("station","xenoarch")
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)

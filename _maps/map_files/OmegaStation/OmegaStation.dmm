@@ -26690,6 +26690,11 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
+/obj/machinery/quantumpad{
+	map_pad_id = "station";
+	map_pad_link_id = "xenoarch";
+	mapped_quantum_pads = list("station","xenoarch")
+	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "aXC" = (

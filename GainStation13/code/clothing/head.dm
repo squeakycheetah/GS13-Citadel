@@ -5,7 +5,6 @@
 	desc = "Exclusive version of a hardsuit helmet, usually reserved for GATO CC personnel."
 	icon = 'GainStation13/icons/mob/head.dmi'
 	icon_state = "hardsuit0-gato"
-	item_state = "hardsuit0-gato"
 	mutantrace_variation = NONE
 
 /obj/item/clothing/head/HoS/beret/gato
@@ -13,7 +12,6 @@
 	desc = "A robust beret for the CC personnel, for looking stylish while not sacrificing protection."
 	icon = 'GainStation13/icons/mob/head.dmi'
 	icon_state = "gato_beret"
-	item_state = "gato_beret"
 	mutantrace_variation = NONE
 
 /obj/item/clothing/head/HoS/gato
@@ -21,5 +19,12 @@
 	desc = "The robust standard-issue cap of the CC personnel."
 	icon = 'GainStation13/icons/mob/head.dmi'
 	icon_state = "gato_cap"
-	item_state = "gato_cap"
 	mutantrace_variation = NONE
+
+/obj/item/clothing/head/beret/sec/bitch
+	name = "security's bitch beret"
+	desc = "A softer beret with the word 'BITCH' embroidered on it in pink thread."
+	mob_overlay_icon = 'GainStation13/icons/mob/head.dmi'
+	icon_state = "bitchberet"
+	mutantrace_variation = NONE
+
