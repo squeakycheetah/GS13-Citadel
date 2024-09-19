@@ -1,5 +1,5 @@
 /datum/gear/bluespace_belt
 	name = "Bluespace Belt"
-	category = SLOT_IN_BACKPACK
+	category = LOADOUT_SUBCATEGORY_BACKPACK_GENERAL
 	path = /obj/item/bluespace_belt
 	cost = 5

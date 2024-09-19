@@ -69,8 +69,13 @@
 					genital.set_aroused_state(TRUE, null)
 
 	mannequin.regenerate_icons()
-
-	parent.show_character_previews(new /mutable_appearance(mannequin))
+	//GS13 EDIT START
+	if(body_size>100)
+		parent.show_character_previews_large(new /mutable_appearance(mannequin))//just to stop clipping of larger characters
+	else
+		parent.show_character_previews(new /mutable_appearance(mannequin))
+	//GS13 EDIT END
+	//parent.show_character_previews(new /mutable_appearance(mannequin))
 	unset_busy_human_dummy(DUMMY_HUMAN_SLOT_PREFERENCES)
 
 /datum/preferences/proc/get_highest_job()

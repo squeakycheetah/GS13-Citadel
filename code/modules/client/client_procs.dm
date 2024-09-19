@@ -1066,6 +1066,30 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		preview.dir = dir
 		preview.screen_loc = "character_preview_map:0,[pos]"
 
+//GS13 EDIT
+/client/proc/show_character_previews_large(mutable_appearance/source)
+	LAZYINITLIST(char_render_holders)
+	if(!LAZYLEN(char_render_holders))
+		for(var/plane_master_path as anything in subtypesof(/atom/movable/screen/plane_master))
+			var/atom/movable/screen/plane_master/plane_master = new plane_master_path()
+			char_render_holders["plane_master-[plane_master.plane]"] = plane_master
+			plane_master.backdrop(mob)
+			screen |= plane_master
+			plane_master.screen_loc = "character_preview_map:0,CENTER"
+
+	var/pos = 0
+	for(var/dir in GLOB.cardinals)
+		pos++
+		pos++
+		var/atom/movable/screen/preview = char_render_holders["preview-[dir]"]
+		if(!preview)
+			preview = new
+			char_render_holders["preview-[dir]"] = preview
+			screen |= preview
+		preview.appearance = source
+		preview.dir = dir
+		preview.screen_loc = "character_preview_map:-1,[pos]"
+
 /client/proc/clear_character_previews()
 	for(var/index in char_render_holders)
 		var/atom/movable/screen/S = char_render_holders[index]
