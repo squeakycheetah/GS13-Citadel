@@ -194,7 +194,7 @@
 	icon_state = "sleeper_s-open"
 	alert_comms = FALSE
 
-/obj/machinery/cryopod/syndicate/find_control_computer()	//We don't want to store anything
+/obj/machinery/cryopod/syndicate/find_control_computer(urgent = FALSE)	//We don't want to store anything
 	return
 
 /obj/machinery/cryopod/syndicate/MouseDrop_T(mob/living/target, mob/user)

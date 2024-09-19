@@ -70,7 +70,7 @@
 
 	mannequin.regenerate_icons()
 	//GS13 EDIT START
-	if(body_size>100)
+	if(body_size>1.0)
 		parent.show_character_previews_large(new /mutable_appearance(mannequin))//just to stop clipping of larger characters
 	else
 		parent.show_character_previews(new /mutable_appearance(mannequin))

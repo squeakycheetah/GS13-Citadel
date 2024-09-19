@@ -1052,7 +1052,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			char_render_holders["plane_master-[plane_master.plane]"] = plane_master
 			plane_master.backdrop(mob)
 			screen |= plane_master
-			plane_master.screen_loc = "character_preview_map:0,CENTER"
+			plane_master.screen_loc = "character_preview_map:CENTER,0"
 
 	var/pos = 0
 	for(var/dir in GLOB.cardinals)
@@ -1064,7 +1064,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			screen |= preview
 		preview.appearance = source
 		preview.dir = dir
-		preview.screen_loc = "character_preview_map:0,[pos]"
+		preview.screen_loc = "character_preview_map:[pos],0"
 
 //GS13 EDIT
 /client/proc/show_character_previews_large(mutable_appearance/source)
@@ -1075,7 +1075,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			char_render_holders["plane_master-[plane_master.plane]"] = plane_master
 			plane_master.backdrop(mob)
 			screen |= plane_master
-			plane_master.screen_loc = "character_preview_map:0,CENTER"
+			plane_master.screen_loc = "character_preview_map:CENTER,0"
 
 	var/pos = 0
 	for(var/dir in GLOB.cardinals)
@@ -1088,7 +1088,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			screen |= preview
 		preview.appearance = source
 		preview.dir = dir
-		preview.screen_loc = "character_preview_map:-1,[pos]"
+		preview.screen_loc = "character_preview_map:[pos],-1"
 
 /client/proc/clear_character_previews()
 	for(var/index in char_render_holders)
