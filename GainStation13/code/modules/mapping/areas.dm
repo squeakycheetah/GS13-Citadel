@@ -156,3 +156,47 @@
 
 /area/ruin/powered/beach
 	icon_state = "dk_yellow"
+
+
+/area/ruin/unpowered/syndicate_lava_base/engineering
+	name = "Syndicate Lavaland Engineering"
+
+/area/ruin/unpowered/syndicate_lava_base/medbay
+	name = "Syndicate Lavaland Medbay"
+
+/area/ruin/unpowered/syndicate_lava_base/arrivals
+	name = "Syndicate Lavaland Arrivals"
+
+/area/ruin/unpowered/syndicate_lava_base/bar
+	name = "Syndicate Lavaland Bar"
+
+/area/ruin/unpowered/syndicate_lava_base/main
+	name = "Syndicate Lavaland Primary Hallway"
+
+/area/ruin/unpowered/syndicate_lava_base/cargo
+	name = "Syndicate Lavaland Cargo Bay"
+
+/area/ruin/unpowered/syndicate_lava_base/chemistry
+	name = "Syndicate Lavaland Chemistry"
+
+/area/ruin/unpowered/syndicate_lava_base/virology
+	name = "Syndicate Lavaland Virology"
+
+/area/ruin/unpowered/syndicate_lava_base/testlab
+	name = "Syndicate Lavaland Experimentation Lab"
+
+/area/ruin/unpowered/syndicate_lava_base/dormitories
+	name = "Syndicate Lavaland Dormitories"
+
+/area/ruin/unpowered/syndicate_lava_base/telecomms
+	name = "Syndicate Lavaland Telecommunications"
+
+/area/ruin/unpowered/syndicate_lava_base/circuits
+	name = "Syndicate Lavaland Circuit Lab"
+
+/area/ruin/unpowered/syndicate_lava_base/nanites
+	name = "Syndicate Lavaland Nanite Lab"
+
+/area/ruin/unpowered/syndicate_lava_base/outdoors //Putting this area down should prevent fauna from spawning nearby
+	name = "Syndicate Lavaland Approach"
+	icon_state = "red"

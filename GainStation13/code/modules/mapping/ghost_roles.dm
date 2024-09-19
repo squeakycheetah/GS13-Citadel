@@ -187,3 +187,28 @@
 /obj/machinery/cryopod/feederden/find_control_computer(urgent = FALSE)	//We don't want to store anything
 	return
 
+/obj/machinery/cryopod/syndicate
+	name = "subspace cryogenic sleeper"
+	desc = "A special mobility sleeper for storing agents in a disclosed location."
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper_s-open"
+	alert_comms = FALSE
+
+/obj/machinery/cryopod/syndicate/find_control_computer()	//We don't want to store anything
+	return
+
+/obj/machinery/cryopod/syndicate/MouseDrop_T(mob/living/target, mob/user)
+	if(!isliving(target))
+		return
+	if(!target.faction.Find("Syndicate"))
+		to_chat(user, "<span class='warning'>The machine's internal checks prevent you from putting [target == user ? "yourself" : "[target]"] inside.</span>")
+		return
+	..()
+
+/obj/machinery/cryopod/syndicate/open_machine()
+	..()
+	icon_state = "sleeper_s-open"
+
+/obj/machinery/cryopod/syndicate/close_machine(mob/user)
+	..()
+	icon_state = "sleeper_s"
