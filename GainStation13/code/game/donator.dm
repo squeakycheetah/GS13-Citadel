@@ -1,3 +1,34 @@
+//GS13: donator items and other ckey-locked junk
+/datum/gear/gatobadge_employee //these are available only to admins with CC-related characters
+	name = "GATO Badge - Employee"
+	category = LOADOUT_CATEGORY_DONATOR
+	path = /obj/item/clothing/accessory/medal/gato_badge/employee
+	ckeywhitelist = list("sonoida", "yeeny")
+
+/datum/gear/gatobadge_middleman //these are available to players who were granted permission to have their characters to CC
+	name = "GATO Badge - Correspondent"
+	category = LOADOUT_CATEGORY_DONATOR
+	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
+	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny", "Not Number")
+
+/datum/gear/halsey_overcoat
+	name = "Halsey's Commander Overcoat"
+	category = LOADOUT_CATEGORY_DONATOR
+	path = /obj/item/clothing/suit/chloe/halsey
+	ckeywhitelist = list("yeeny")
+
+/datum/gear/haydee_suit
+	name = "Haydee Suit"
+	category = LOADOUT_CATEGORY_DONATOR
+	path = /obj/item/clothing/suit/space/hardsuit/engine/haydee
+	ckeywhitelist = list("lumu", "sonoida")
+
+/datum/gear/haydee_pistol
+	name = "Haydee Pistol"
+	category = LOADOUT_CATEGORY_DONATOR
+	path = /obj/item/gun/ballistic/automatic/toy/pistol/haydee
+	ckeywhitelist = list("lumu", "sonoida")
+
 //sorry for defining this here, just thought it'd be more convenient
 /obj/item/clothing/suit/chloe/halsey //sorry to whoever chloe is, but that coat is far too badass not to be used
 	name = "Halsey's Commander Overcoat"
