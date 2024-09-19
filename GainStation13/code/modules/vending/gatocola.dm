@@ -26,4 +26,9 @@
 
 /obj/item/vending_refill/mealdor
 	machine_name = "Meal Vendor Refill"
+	icon = 'GainStation13/icons/obj/vending_restock.dmi'
 	icon_state = "refill_mealdor"
+
+/obj/machinery/vending
+	/// Are the products inside free?
+	var/free = FALSE

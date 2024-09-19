@@ -3963,6 +3963,7 @@
 #include "GainStation13\code\mobs\cakegolem.dm"
 #include "GainStation13\code\mobs\chocoslime.dm"
 #include "GainStation13\code\mobs\races\caloritegolem.dm"
+#include "GainStation13\code\modules\cargo\packs.dm"
 #include "GainStation13\code\modules\client\preferences\preferences.dm"
 #include "GainStation13\code\modules\clothing\under\jobs\clothing.dm"
 #include "GainStation13\code\modules\clothing\under\jobs\modcivilian.dm"

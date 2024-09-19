@@ -182,6 +182,13 @@
  * * TRUE - all other cases
  */
 /obj/machinery/vending/Initialize(mapload)
+	//GS13 EDIT START
+	if(free)
+		default_price = 0
+		extra_price = 0
+		scan_id = 0 // Why would we do this? Shit's free.
+
+	//GS13 EDIT END
 	var/build_inv = FALSE
 	if(!refill_canister)
 		circuit = null
@@ -322,6 +329,11 @@ GLOBAL_LIST_EMPTY(vending_products)
 		///Prices of vending machines are all increased uniformly.
 		R.custom_price = initial(temp.custom_price)
 		R.custom_premium_price = initial(temp.custom_premium_price)
+		//GS13 EDIT
+		if(free)
+			R.custom_price = 0
+			R.custom_premium_price = 0
+		//GS13 EDIT END
 		// R.age_restricted = initial(temp.age_restricted)
 		// R.colorable = !!(initial(temp.greyscale_config) && initial(temp.greyscale_colors) && (initial(temp.flags_1) & IS_PLAYER_COLORABLE_1))
 		recordlist += R

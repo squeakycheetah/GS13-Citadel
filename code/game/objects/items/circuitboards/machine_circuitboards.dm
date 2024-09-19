@@ -644,6 +644,7 @@
 		/obj/machinery/vending/engineering = "Robco Tool Maker",
 		/obj/machinery/vending/sovietsoda = "BODA",
 		/obj/machinery/vending/security = "SecTech",
+		/obj/machinery/vending/mealdor = "Meal Vendor", //GS13 EDIT
 		// /obj/machinery/vending/modularpc = "Deluxe Silicate Selections",
 		/obj/machinery/vending/custom = "Custom Vendor")
 

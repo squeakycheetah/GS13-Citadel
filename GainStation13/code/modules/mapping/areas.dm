@@ -153,3 +153,6 @@
 
 /area/ruin/powered/gluttony
 	icon_state = "dk_yellow"
+
+/area/ruin/powered/beach
+	icon_state = "dk_yellow"

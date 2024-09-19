@@ -313,6 +313,7 @@ SUBSYSTEM_DEF(mapping)
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
 		LoadGroup(FailedZs, "Lavaland_Lower", "map_files/Mining", "Lavaland_Lower.dmm", default_traits = ZTRAITS_LAVALAND_UNDERRGOUND)
 		LoadGroup(FailedZs, "Lavaland_Demone", "map_files/Mining", "Lavaland_Demone.dmm", default_traits = ZTRAITS_LAVALAND_UNDERRGOUND)
+		LoadGroup(FailedZs, "Fast_Food", "map_files/gs13", "Fast_Food.dmm", default_traits = ZTRAITS_FASTFOOD) //GS13
 	else if (!isnull(config.minetype) && config.minetype != "none")
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")
 #endif
