@@ -169,6 +169,11 @@
 	if(SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_ACTIVE))
 		. += "[t_He] [t_is] visibly tense[CHECK_MOBILITY(src, MOBILITY_STAND) ? "." : ", and [t_is] standing in combative stance."]"
 
+	//GS13 EDIT START
+	if(client?.prefs?.noncon_weight_gain)
+		msg += "<span class='purple'><b>Non-con fattening is allowed</b></span>\n"
+	//GS13 EDIT END
+
 	var/trait_exam = common_trait_examine()
 	if (!isnull(trait_exam))
 		. += trait_exam
