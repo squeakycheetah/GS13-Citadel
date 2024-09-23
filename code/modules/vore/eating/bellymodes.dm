@@ -93,6 +93,15 @@
 					digest_alert_prey = replacetext(digest_alert_prey,"%prey",M)
 					digest_alert_prey = replacetext(digest_alert_prey,"%belly",lowertext(name))
 
+					//GS13 edit
+					var/mob/living/carbon/gainer = owner
+					if(iscarbon(gainer) && owner?.client?.prefs?.weight_gain_food)
+						var/mob/living/carbon/prey = M
+						if(iscarbon(prey) && prey.fatness_real)
+							var/fatness_to_add = (prey.fatness_real * 0.80)
+							gainer.adjust_fatness(fatness_to_add, FATTENING_TYPE_FOOD)
+					//GS13 edit end
+
 					//Send messages
 					to_chat(owner, "<span class='warning'>[digest_alert_owner]</span>")
 					to_chat(M, "<span class='warning'>[digest_alert_prey]</span>")
