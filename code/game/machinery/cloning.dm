@@ -110,7 +110,7 @@
 	return examine(user)
 
 //Start growing a human clone in the pod!
-/obj/machinery/clonepod/proc/growclone(ckey, clonename, ui, mutation_index, mindref, blood_type, datum/species/mrace, list/features, factions, list/quirks, datum/bank_account/insurance, list/traumas)
+/obj/machinery/clonepod/proc/growclone(ckey, clonename, ui, mutation_index, mindref, blood_type, datum/species/mrace, list/features, factions, list/quirks, datum/bank_account/insurance, list/traumas, fatness) //GS13 EDIT
 	if(panel_open)
 		return FALSE
 	if(mess || attempting)
@@ -171,6 +171,11 @@
 
 	if(clonemind)
 		clonemind.transfer_to(H)
+
+	// GS13 EDIT START
+	if(fatness)
+		H.fatness_real = fatness
+	// GS13 EDIT END
 
 	else if(get_clone_mind == CLONEPOD_POLL_MIND)
 		poll_for_mind(H, clonename)

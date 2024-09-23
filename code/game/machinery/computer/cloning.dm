@@ -79,7 +79,7 @@
 		if(pod.occupant)
 			continue	//how though?
 
-		if(pod.growclone(R.fields["ckey"], R.fields["name"], R.fields["UI"], R.fields["SE"], R.fields["mind"], R.fields["blood_type"], R.fields["mrace"], R.fields["features"], R.fields["factions"], R.fields["quirks"], R.fields["bank_account"], R.fields["traumas"]))
+		if(pod.growclone(R.fields["ckey"], R.fields["name"], R.fields["UI"], R.fields["SE"], R.fields["mind"], R.fields["blood_type"], R.fields["mrace"], R.fields["features"], R.fields["factions"], R.fields["quirks"], R.fields["bank_account"], R.fields["traumas"], fatness = R.fields["fatness"])) //GS13 EDIT
 			temp = "[R.fields["name"]] => <font class='good'>Cloning cycle in progress...</font>"
 			records -= R
 
@@ -243,7 +243,7 @@
 		else if(pod.occupant)
 			temp = "Warning: Cloning cycle already in progress."
 			playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
-		else if(pod.growclone(C.fields["ckey"], C.fields["name"], C.fields["UI"], C.fields["SE"], C.fields["mind"], C.fields["blood_type"], C.fields["mrace"], C.fields["features"], C.fields["factions"], C.fields["quirks"], C.fields["bank_account"], C.fields["traumas"]))
+		else if(pod.growclone(C.fields["ckey"], C.fields["name"], C.fields["UI"], C.fields["SE"], C.fields["mind"], C.fields["blood_type"], C.fields["mrace"], C.fields["features"], C.fields["factions"], C.fields["quirks"], C.fields["bank_account"], C.fields["traumas"], fatness = C.fields["fatness"])) //GS13 EDIT
 			temp = "Notice: [C.fields["name"]] => Cloning cycle in progress..."
 			playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, 0)
 			records.Remove(C)
@@ -447,6 +447,15 @@
 	R.fields["bank_account"] = has_bank_account
 	if (!isnull(mob_occupant.mind)) //Save that mind so traitors can continue traitoring after cloning.
 		R.fields["mind"] = "[REF(mob_occupant.mind)]"
+
+	//GS13 EDIT START
+	var/fatness_to_save = 0
+	var/mob/living/carbon/human/clone_human = C
+	if(istype(clone_human))
+		fatness_to_save = clone_human.fatness_real
+
+	R.fields["fatness"] = fatness_to_save
+	// GS13 EDIT END
 
    //Add an implant if needed
 	var/obj/item/implant/health/imp
