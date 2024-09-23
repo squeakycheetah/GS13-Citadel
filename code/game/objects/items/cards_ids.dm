@@ -574,7 +574,14 @@
 /obj/item/card/id/captains_spare/Initialize(mapload)
 	var/datum/job/captain/J = new/datum/job/captain
 	access = J.get_access()
+	GLOB.poi_list |= src //GS13 EDIT
 	. = ..()
+
+// GS13 EDIT START
+/obj/item/card/id/captains_spare/Destroy()
+	GLOB.poi_list -= src
+	. = ..()
+// GS13 EDIT END
 
 /obj/item/card/id/centcom
 	name = "\improper CentCom ID"
