@@ -19,7 +19,7 @@
 
 /// Allows respawning as a combat role, defined as security/head.
 /datum/config_entry/flag/allow_combat_role_respawn
-	default = FTRUE
+	default = TRUE
 
 /// Allows respawning as the same character as a previous life
 /datum/config_entry/flag/allow_same_character_respawn
