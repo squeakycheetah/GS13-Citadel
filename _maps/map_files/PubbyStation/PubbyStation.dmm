@@ -8339,9 +8339,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_y = 30
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "avm" = (
@@ -52490,9 +52488,7 @@
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "epj" = (
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "epJ" = (
@@ -53248,9 +53244,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "fIN" = (

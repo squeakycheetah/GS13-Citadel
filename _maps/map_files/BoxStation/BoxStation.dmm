@@ -12366,7 +12366,6 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
-/obj/machinery/cryopod,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -23323,9 +23322,7 @@
 /turf/closed/wall,
 /area/medical/chemistry)
 "bfG" = (
-/obj/machinery/cryopod{
-	dir = 4
-	},
+/obj/machinery/cryopod/tele,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -63830,9 +63827,7 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "tqg" = (
-/obj/machinery/cryopod{
-	dir = 4
-	},
+/obj/machinery/cryopod/tele,
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
@@ -64545,9 +64540,7 @@
 /turf/closed/wall,
 /area/commons/toilet)
 "ujF" = (
-/obj/machinery/cryopod{
-	dir = 4
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/carpet,
 /area/commons/cryopod)
 "ujS" = (
@@ -65983,9 +65976,6 @@
 /turf/open/floor/plasteel/freezer,
 /area/security/prison/cells)
 "woR" = (
-/obj/machinery/cryopod{
-	dir = 1
-	},
 /turf/open/floor/carpet,
 /area/commons/cryopod)
 "wph" = (

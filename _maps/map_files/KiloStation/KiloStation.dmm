@@ -65846,9 +65846,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel/showroomfloor,
 /area/commons/locker)
 "cbs" = (
@@ -78421,9 +78419,7 @@
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "cxv" = (
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel/showroomfloor,
 /area/commons/locker)
 "cxw" = (

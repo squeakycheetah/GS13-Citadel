@@ -54772,7 +54772,7 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "gXt" = (
-/obj/machinery/cryopod,
+/obj/machinery/cryopod/tele,
 /obj/machinery/camera{
 	c_tag = "Cryogenics"
 	},
@@ -59171,7 +59171,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/cryopod,
+/obj/machinery/cryopod/tele,
 /obj/machinery/light_switch{
 	pixel_x = -26
 	},
@@ -66609,7 +66609,7 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "nHL" = (
-/obj/machinery/cryopod,
+/obj/machinery/cryopod/tele,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -74683,7 +74683,7 @@
 /turf/open/floor/plating,
 /area/command/bridge)
 "rUL" = (
-/obj/machinery/cryopod,
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel/dark,
 /area/commons/cryopod)
 "rVu" = (

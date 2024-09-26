@@ -93139,9 +93139,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel/dark,
 /area/commons/locker)
 "lDE" = (
@@ -98358,9 +98356,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel/dark,
 /area/commons/locker)
 "ntB" = (
@@ -122716,9 +122712,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
 /turf/open/floor/plasteel/dark,
 /area/commons/locker)
 "wbx" = (
