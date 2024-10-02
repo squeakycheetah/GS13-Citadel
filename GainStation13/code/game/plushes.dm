@@ -66,3 +66,11 @@
 
 /obj/item/toy/plush/gs13/mammal/fox
 	icon_state = "fox"
+
+
+/obj/item/toy/plush/mothplushie/moffplush
+	name = "moth plushie"
+	desc = "A plushie depicting an adorable mothperson. It's a huggable bug!"
+	icon_state = "moffplush"
+	item_state = "moffplush"
+	squeak_override = list('modular_citadel/sound/voice/scream_moth.ogg' = 1)

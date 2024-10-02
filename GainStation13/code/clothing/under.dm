@@ -21,3 +21,17 @@
 	mob_overlay_icon = 'GainStation13/icons/mob/uniform.dmi'
 	icon_state = "rsecuritypink"
 	item_state = "r_suit"
+
+
+/obj/item/clothing/under/shorts/yellowwshort
+	name = "Yellow workout short"
+	icon_state = "yellowwshort"
+	icon = 'GainStation13/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'GainStation13/icons/mob/uniform.dmi'
+
+/obj/item/clothing/under/shorts/pinkwshort
+	name = "Pink workout short"
+	icon_state = "pinkwshort"
+	icon = 'GainStation13/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'GainStation13/icons/mob/uniform.dmi'
+	item_color = "pinkwshort"

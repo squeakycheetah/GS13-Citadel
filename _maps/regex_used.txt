@@ -1,0 +1,53 @@
+Non-Regex:
+
+Kirbyplants
+/obj/item/twohanded/required/kirbyplants
+/obj/item/kirbyplants
+
+Destination Tagger
+/obj/item/destTagger
+/obj/item/dest_tagger
+
+Piano
+/obj/structure/piano
+/obj/structure/musician/piano
+
+Minesweeper - We don't have minesweeper.
+/obj/machinery/computer/arcade/minesweeper
+/obj/machinery/computer/arcade/orion_trail
+
+Double Beds
+/obj/structure/double_bed
+/obj/structure/bed/double
+
+Dice
+/obj/item/storage/pill_bottle/dice
+/obj/item/storage/dice
+
+AI Modules
+/obj/item/aiModule/
+/obj/item/ai_module/
+
+Burial Clothing
+/obj/item/clothing/under/burial
+/obj/item/clothing/under/misc/buria
+
+Security Pet Bed
+/obj/structure/bed/secbed
+/obj/structure/bed/dogbed
+
+RCL
+/obj/item/twohanded/rcl
+/obj/item/rcl
+
+Treadmills
+
+/obj/item/conveyor_construct/treadmill
+/obj/machinery/treadmill
+
+Regex Starts here
+
+Shorts
+/obj/item/clothing/under/shorts/(.+)wshort
+/obj/item/clothing/under/shorts/$1
+

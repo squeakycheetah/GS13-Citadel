@@ -3913,6 +3913,7 @@
 #include "GainStation13\code\clothing\suits.dm"
 #include "GainStation13\code\clothing\under.dm"
 #include "GainStation13\code\datums\bark.dm"
+#include "GainStation13\code\datums\crates.dm"
 #include "GainStation13\code\datums\lavaland_ruins.dm"
 #include "GainStation13\code\datums\ruins.dm"
 #include "GainStation13\code\datums\traits.dm"

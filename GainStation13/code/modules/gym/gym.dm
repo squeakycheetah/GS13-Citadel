@@ -83,7 +83,7 @@
 
 /obj/item/circuitboard/machine/treadmill
 	name = "Treadmill (Machine Board)"
-	build_path = /obj/machinery/autolathe
+	build_path = /obj/item/conveyor_construct/treadmill
 	req_components = list(/obj/item/stock_parts/manipulator = 1)
 
 /datum/design/treadmill
@@ -91,7 +91,7 @@
 	id = "treadmill"
 	build_type = AUTOLATHE | PROTOLATHE
 	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
-	build_path = /obj/item/circuitboard/machine/treadmill
+	build_path = /obj/machinery/treadmill
 	category = list("inital", "Construction")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
