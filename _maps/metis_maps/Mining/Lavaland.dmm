@@ -595,7 +595,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/brown,
-/obj/item/twohanded/required/kirbyplants/photosynthetic,
+/obj/item/kirbyplants/photosynthetic,
 /turf/open/floor/plasteel,
 /area/mine/eva)
 "bg" = (
@@ -1141,7 +1141,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 5
 	},
-/obj/item/twohanded/required/kirbyplants/photosynthetic,
+/obj/item/kirbyplants/photosynthetic,
 /turf/open/floor/plasteel/white,
 /area/mine/living_quarters)
 "cf" = (
@@ -4994,7 +4994,7 @@
 /turf/open/floor/circuit,
 /area/mine/maintenance)
 "Ys" = (
-/obj/item/twohanded/required/kirbyplants/photosynthetic,
+/obj/item/kirbyplants/photosynthetic,
 /obj/effect/turf_decal/loading_area{
 	icon_state = "drain";
 	name = "drain";

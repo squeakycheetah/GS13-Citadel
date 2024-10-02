@@ -3087,7 +3087,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/xenoarch/gen)
 "gZ" = (
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
@@ -3287,7 +3287,7 @@
 /turf/open/floor/plasteel/checker,
 /area/xenoarch/gen)
 "hy" = (
-/obj/structure/double_bed,
+/obj/structure/bed/double,
 /obj/item/bedsheet/double_gato,
 /turf/open/floor/carpet/gato,
 /area/xenoarch/gen)
@@ -3897,7 +3897,7 @@
 /area/xenoarch/gen)
 "iZ" = (
 /obj/structure/disposalpipe/segment,
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "ja" = (
@@ -3989,7 +3989,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "jl" = (
@@ -4459,7 +4459,7 @@
 	},
 /area/lavaland/surface/outdoors)
 "ko" = (
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/item/kirbyplants/random,
 /turf/open/floor/carpet,
 /area/xenoarch/gen)
 "kp" = (
@@ -5860,7 +5860,7 @@
 /area/xenoarch/gen)
 "nq" = (
 /obj/structure/table/wood,
-/obj/item/storage/pill_bottle/dice,
+/obj/item/storage/dice,
 /turf/open/floor/carpet/royalblue,
 /area/xenoarch/gen)
 "nr" = (
@@ -6241,7 +6241,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/dark/corner,
 /area/xenoarch/gen)
 "oj" = (
@@ -7394,7 +7394,7 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "rT" = (
-/obj/structure/double_bed,
+/obj/structure/bed/double,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "rU" = (
@@ -7724,7 +7724,7 @@
 /turf/open/floor/plating/airless,
 /area/xenoarch/caloriteresearch_unpowered)
 "tv" = (
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/item/kirbyplants/random,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
@@ -8728,7 +8728,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "yp" = (
 /obj/machinery/light/broken,
-/obj/item/twohanded/required/kirbyplants,
+/obj/item/kirbyplants,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
@@ -11261,7 +11261,7 @@
 	dir = 1
 	},
 /obj/structure/table/reinforced,
-/obj/item/twohanded/required/kirbyplants{
+/obj/item/kirbyplants{
 	icon_state = "plant-18"
 	},
 /obj/machinery/computer/security/telescreen/entertainment{
@@ -11385,7 +11385,7 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "Lh" = (
-/obj/item/twohanded/required/kirbyplants,
+/obj/item/kirbyplants,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/airless,
 /area/xenoarch/caloriteresearch_powered)
@@ -11548,7 +11548,7 @@
 /turf/open/floor/plating,
 /area/xenoarch/gen)
 "LW" = (
-/obj/structure/double_bed,
+/obj/structure/bed/double,
 /obj/item/bedsheet/double_blue,
 /turf/open/floor/carpet/royalblue,
 /area/xenoarch/caloriteresearch_powered)
@@ -12765,7 +12765,7 @@
 /turf/open/floor/plating/airless,
 /area/xenoarch/caloriteresearch_powered)
 "Sd" = (
-/obj/item/twohanded/required/kirbyplants{
+/obj/item/kirbyplants{
 	icon_state = "plant-21";
 	pixel_x = -3;
 	pixel_y = 3
@@ -12867,7 +12867,7 @@
 /turf/closed/wall,
 /area/xenoarch/gen)
 "Sz" = (
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/rockvault,
 /area/xenoarch/nothinghere)
 "SA" = (
@@ -13533,7 +13533,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/item/twohanded/required/kirbyplants/photosynthetic,
+/obj/item/kirbyplants/photosynthetic,
 /turf/open/floor/plasteel/white,
 /area/xenoarch/gen)
 "Vw" = (

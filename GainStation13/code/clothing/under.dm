@@ -23,13 +23,13 @@
 	item_state = "r_suit"
 
 
-/obj/item/clothing/under/shorts/yellowwshort
+/obj/item/clothing/under/shorts/yellow
 	name = "Yellow workout short"
 	icon_state = "yellowwshort"
 	icon = 'GainStation13/icons/obj/clothing/uniforms.dmi'
 	mob_overlay_icon = 'GainStation13/icons/mob/uniform.dmi'
 
-/obj/item/clothing/under/shorts/pinkwshort
+/obj/item/clothing/under/shorts/pink
 	name = "Pink workout short"
 	icon_state = "pinkwshort"
 	icon = 'GainStation13/icons/obj/clothing/uniforms.dmi'
