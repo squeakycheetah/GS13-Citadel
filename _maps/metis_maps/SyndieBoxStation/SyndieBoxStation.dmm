@@ -41712,7 +41712,7 @@
 /area/science/xenobiology)
 "bOw" = (
 /obj/structure/table/plasmaglass,
-/obj/item/toy/prize/mauler{
+/obj/item/toy/mecha/mauler{
 	pixel_y = 12
 	},
 /turf/open/floor/carpet/black,

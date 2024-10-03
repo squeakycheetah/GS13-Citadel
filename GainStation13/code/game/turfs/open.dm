@@ -59,3 +59,25 @@
 	name = "gato-themed carpet"
 	icon_state = "tile-carpet-gato"
 	turf_type = /turf/open/floor/carpet/gato
+
+
+/turf/open/indestructible/layenia/crystal
+	name = "Lattice Crystal"
+	desc = "A glowing azure crystal, with strange properties to make things float."
+	icon = 'GainStation13/icons/turf/crystal_floor.dmi'
+	baseturfs = /turf/open/indestructible/layenia/crystal
+	slowdown = 1
+	light_range = 4
+	light_power = 0.5
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	light_color = LIGHT_COLOR_BLUE
+	initial_gas_mix = FROZEN_ATMOS
+	planetary_atmos = TRUE
+	smooth = SMOOTH_TRUE | SMOOTH_BORDER | SMOOTH_MORE
+	canSmoothWith = list(/turf/open/indestructible/layenia/crystal)
+
+/turf/open/indestructible/layenia/crystal/garden
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
+	planetary_atmos = TRUE

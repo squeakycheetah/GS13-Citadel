@@ -141,6 +141,45 @@ Spear
 /obj/item/twohanded/spear
 /obj/item/spear
 
+Schoolgirl
+/obj/item/clothing/under/schoolgirl
+/obj/item/clothing/under/costume/schoolgirl
+
+Cybernetic
+cybernetic/upgraded
+cybernetic/tier3
+
+ears/cybernetic/tier3
+ears/cybernetic/upgraded
+
+CTF
+/obj/item/twohanded/ctf
+/obj/item/ctf
+
+Nun
+/obj/item/clothing/suit/nun
+/obj/item/clothing/suit/chaplain/nun
+
+Roman
+/obj/item/clothing/under/roman
+/obj/item/clothing/under/costume/roman
+
+Priest
+/obj/item/clothing/suit/holidaypriest
+/obj/item/clothing/suit/chaplain/holidaypriest
+
+Jabroni
+/obj/item/clothing/under/jabroni
+/obj/item/clothing/under/costume/jabroni
+
+Bird Seed
+/obj/item/reagent_containers/food/snacks/bird_seed
+/obj/item/reagent_containers/food/snacks/chips
+
+Toys
+prize/
+mecha/
+
 Regex Starts here:
 
 Shorts

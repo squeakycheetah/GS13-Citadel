@@ -3906,6 +3906,7 @@
 #include "GainStation13\code\clothing\accessory.dm"
 #include "GainStation13\code\clothing\backpacks.dm"
 #include "GainStation13\code\clothing\calorite_collar.dm"
+#include "GainStation13\code\clothing\cloaks.dm"
 #include "GainStation13\code\clothing\fat_mask.dm"
 #include "GainStation13\code\clothing\haydee_suit.dm"
 #include "GainStation13\code\clothing\head.dm"

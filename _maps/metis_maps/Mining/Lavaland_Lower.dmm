@@ -55,11 +55,11 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "ak" = (
-/obj/item/toy/prize/mauler,
+/obj/item/toy/mecha/mauler,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "al" = (
-/obj/item/toy/prize/deathripley,
+/obj/item/toy/mecha/deathripley,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "am" = (
@@ -75,7 +75,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ao" = (
-/obj/item/toy/prize/honk,
+/obj/item/toy/mecha/honk,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ap" = (

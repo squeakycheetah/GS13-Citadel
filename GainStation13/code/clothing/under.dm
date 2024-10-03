@@ -34,4 +34,3 @@
 	icon_state = "pinkwshort"
 	icon = 'GainStation13/icons/obj/clothing/uniforms.dmi'
 	mob_overlay_icon = 'GainStation13/icons/mob/uniform.dmi'
-	item_color = "pinkwshort"
