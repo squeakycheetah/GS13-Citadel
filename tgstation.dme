@@ -3938,6 +3938,7 @@
 #include "GainStation13\code\game\objects\items\toys.dm"
 #include "GainStation13\code\game\objects\items\storage\bags.dm"
 #include "GainStation13\code\game\objects\structures\medikit.dm"
+#include "GainStation13\code\game\objects\structures\sofa.dm"
 #include "GainStation13\code\game\objects\structures\statues.dm"
 #include "GainStation13\code\game\turfs\closed.dm"
 #include "GainStation13\code\game\turfs\open.dm"
