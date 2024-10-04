@@ -83,7 +83,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 /obj/machinery/power/supermatter_crystal
 	name = "supermatter crystal"
 	desc = "A strangely translucent and iridescent crystal."
-	icon = 'icons/obj/supermatter.dmi'
+	icon = 'GainStation13/icons/turf/supermatter.dmi' // GS13 EDIT 'icons/obj/supermatter.dmi'
 	icon_state = "darkmatter"
 	density = TRUE
 	anchored = TRUE
