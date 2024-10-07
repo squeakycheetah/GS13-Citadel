@@ -3948,6 +3948,7 @@
 #include "GainStation13\code\machinery\fattening_turret.dm"
 #include "GainStation13\code\machinery\feeding_tube.dm"
 #include "GainStation13\code\machinery\gym.dm"
+#include "GainStation13\code\machinery\powered_quantum_pad.dm"
 #include "GainStation13\code\machinery\supply_teleporter.dm"
 #include "GainStation13\code\mechanics\calorite.dm"
 #include "GainStation13\code\mechanics\fatness.dm"

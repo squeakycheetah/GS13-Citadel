@@ -3226,6 +3226,23 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
+"Xd" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/quantumpad/always_powered{
+	name = "To xenoarch";
+	map_pad_id = "from_mining";
+	map_pad_link_id = "to_mining"
+	},
+/turf/open/floor/plasteel,
+/area/mine/living_quarters)
 "Xo" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -5436,7 +5453,7 @@ Ms
 rU
 se
 EH
-JP
+Xd
 Ag
 VN
 IY
