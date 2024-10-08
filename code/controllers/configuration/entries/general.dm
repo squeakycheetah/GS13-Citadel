@@ -347,3 +347,5 @@
 
 /datum/config_entry/str_list/randomizing_station_name_message
 	default = list()
+
+/datum/config_entry/number/border_control // If border control is enabled

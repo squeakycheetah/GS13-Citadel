@@ -40,3 +40,4 @@ $include entries/urls.txt
 $include entries/vote.txt
 
 $include plushies/defines.txt
+$include entries/border.txt
