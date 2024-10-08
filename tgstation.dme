@@ -3958,6 +3958,7 @@
 #include "GainStation13\code\mechanics\infestation.dm"
 #include "GainStation13\code\mechanics\metal_cruncher.dm"
 #include "GainStation13\code\mechanics\permanent_fat.dm"
+#include "GainStation13\code\mechanics\recipes.dm"
 #include "GainStation13\code\mechanics\spells.dm"
 #include "GainStation13\code\mechanics\wand.dm"
 #include "GainStation13\code\mechanics\water_sponge.dm"
