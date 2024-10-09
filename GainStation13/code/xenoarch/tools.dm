@@ -388,7 +388,7 @@
 	desc = "A hammer that destroys 1 cm of debris."
 	id = "hammercm1"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/clean/hammer/cm1
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -398,7 +398,7 @@
 	desc = "A hammer that destroys 2 cm of debris."
 	id = "hammercm2"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/clean/hammer/cm2
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -408,7 +408,7 @@
 	desc = "A hammer that destroys 3 cm of debris."
 	id = "hammercm3"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/clean/hammer/cm3
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -418,7 +418,7 @@
 	desc = "A hammer that destroys 4 cm of debris."
 	id = "hammercm4"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/clean/hammer/cm4
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -428,7 +428,7 @@
 	desc = "A hammer that destroys 5 cm of debris."
 	id = "hammercm5"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/clean/hammer/cm5
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -438,7 +438,7 @@
 	desc = "A hammer that destroys 6 cm of debris."
 	id = "hammercm6"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/clean/hammer/cm6
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -448,7 +448,7 @@
 	desc = "A hammer that destroys 15 cm of debris."
 	id = "hammercm15"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/clean/hammer/cm15
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -458,7 +458,7 @@
 	desc = "A hammer that destroys up to 30 cm of debris."
 	id = "hammercmadv"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 1500)
+	materials = list(/datum/material/plastic = 1500)
 	build_path = /obj/item/xenoarch/clean/hammer/advanced
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -468,7 +468,7 @@
 	desc = "A brush that cleans debris."
 	id = "hammerbrush"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/clean/brush/basic
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -478,7 +478,7 @@
 	desc = "A brush that cleans debris."
 	id = "hammerbrushadv"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 1500)
+	materials = list(/datum/material/plastic = 1500)
 	build_path = /obj/item/xenoarch/clean/brush/adv
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -490,7 +490,7 @@
 	desc = "A tool that scans depths of rocks."
 	id = "xenoscanner"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/help/scanner
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -500,7 +500,7 @@
 	desc = "A tool that scans depths of rocks."
 	id = "advxenoscanner"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 1500)
+	materials = list(/datum/material/plastic = 1500)
 	build_path = /obj/item/xenoarch/help/scanneradv
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -510,7 +510,7 @@
 	desc = "A tool to measure the dug depth of rocks."
 	id = "xenomeasure"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 500)
+	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/xenoarch/help/measuring
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -520,7 +520,7 @@
 	desc = "A tool used to get research points from artifacts."
 	id = "xenoresearch"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 1000)
+	materials = list(/datum/material/plastic = 1000)
 	build_path = /obj/item/xenoarch/help/research
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -530,7 +530,7 @@
 	desc = "A tool to extract the seeds from prehistoric fossils."
 	id = "xenoplant"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 1000)
+	materials = list(/datum/material/plastic = 1000)
 	build_path = /obj/item/xenoarch/help/plant
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -540,7 +540,7 @@
 	desc = "A tool used to sell items, virtually."
 	id = "advcargoscanner"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 1000, MAT_BLUESPACE = 1000)
+	materials = list(/datum/material/plastic = 1000, /datum/material/bluespace = 1000)
 	build_path = /obj/item/xenoarch/help/cargo
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_CARGO
@@ -550,7 +550,7 @@
 	desc = "A belt used to store some xenoarch tools."
 	id = "xenobelt"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 2000)
+	materials = list(/datum/material/plastic = 2000)
 	build_path = /obj/item/storage/belt/xenoarch
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -560,7 +560,7 @@
 	desc = "A bag used to store 10 strange rocks."
 	id = "xenorockback"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 2000)
+	materials = list(/datum/material/plastic = 2000)
 	build_path = /obj/item/storage/bag/strangerock
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -570,7 +570,7 @@
 	desc = "A bluespace bag used to store 50 strange rocks."
 	id = "xenorockbackadv"
 	build_type = PROTOLATHE
-	materials = list(MAT_PLASTIC = 2000, MAT_BLUESPACE = 1000)
+	materials = list(/datum/material/plastic = 2000, /datum/material/bluespace = 1000)
 	build_path = /obj/item/storage/bag/strangerockadv
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE

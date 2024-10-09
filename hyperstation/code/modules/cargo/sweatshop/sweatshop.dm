@@ -34,7 +34,7 @@
 	force = 0
 	sharpness = FALSE
 	w_class = WEIGHT_CLASS_SMALL
-	materials = list(MAT_PLASTIC=25)
+	materials = list(/datum/material/plastic=25)
 	attack_verb = list("glued", "coughed")
 
 /obj/item/carpentry/borer
