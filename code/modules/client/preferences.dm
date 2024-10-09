@@ -3677,6 +3677,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.vocal_pitch = bark_pitch
 	character.vocal_pitch_range = bark_variance
 
+	// GS13 EDIT
+	character.fatness = starting_weight
+	character.fatness_real = starting_weight
+	if(weight_gain_permanent)
+		character.fatness_perma = permanent_fat
+	character.weight_gain_rate = wg_rate
+	character.weight_loss_rate = wl_rate
+	// GS13 EDIT - END
+
+
 	//limb stuff, only done when initially spawning in
 	if(initial_spawn)
 		//delete any existing prosthetic limbs to make sure no remnant prosthetics are left over - But DO NOT delete those that are species-related
