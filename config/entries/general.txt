@@ -1,8 +1,8 @@
 ## Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
-LOBBY_COUNTDOWN 120
+LOBBY_COUNTDOWN 180
 
 ## Round End Time: This is the amount of time after the round ends that players have to murder death kill each other.
-ROUND_END_COUNTDOWN 90
+ROUND_END_COUNTDOWN 120
 
 ## period of time in seconds for players to be considered inactive
 # INACTIVITY_PERIOD 300
@@ -14,7 +14,7 @@ ROUND_END_COUNTDOWN 90
 # KICK_INACTIVE
 
 ## Job slot open/close by identification consoles delay in seconds
-ID_CONSOLE_JOBSLOT_DELAY 30
+ID_CONSOLE_JOBSLOT_DELAY 10
 
 
 ## disables calling del(src) on newmobs if they logout before spawnin in
@@ -163,13 +163,13 @@ MINIMAL_ACCESS_THRESHOLD 20
 #JOBS_HAVE_MINIMAL_ACCESS
 
 ## Uncomment to give assistants maint access.
-#ASSISTANTS_HAVE_MAINT_ACCESS
+ASSISTANTS_HAVE_MAINT_ACCESS
 
 ## Uncoment to give security maint access. Note that if you dectivate JOBS_HAVE_MINIMAL_ACCESS security already gets maint from that.
-#SECURITY_HAS_MAINT_ACCESS
+SECURITY_HAS_MAINT_ACCESS
 
 ## Uncomment to give everyone maint access.
-#EVERYONE_HAS_MAINT_ACCESS
+EVERYONE_HAS_MAINT_ACCESS
 
 ## Comment this out this to make security officers spawn in departmental security posts
 SEC_START_BRIG
@@ -177,7 +177,7 @@ SEC_START_BRIG
 
 ## GHOST INTERACTION ###
 ## Uncomment to let ghosts spin chairs. You may be wondering why this is a config option. Don't ask.
-#GHOST_INTERACTION
+GHOST_INTERACTION
 
 ## NON-VOCAL SILICONS ###
 ## Uncomment these to stop the AI, or cyborgs, from having vocal communication.
@@ -279,7 +279,7 @@ ROUNDSTART_RACES human
 ROUNDSTART_RACES lizard
 ROUNDSTART_RACES synthliz
 #ROUNDSTART_RACES fly
-#ROUNDSTART_RACES insect
+ROUNDSTART_RACES insect
 ROUNDSTART_RACES plasmaman
 #ROUNDSTART_RACES shadow
 ROUNDSTART_RACES felinid
@@ -302,7 +302,7 @@ ROUNDSTART_RACES ethereal
 #ROUNDSTART_RACES skeleton
 #ROUNDSTART_RACES zombie
 #ROUNDSTART_RACES slime
-#ROUNDSTART_RACES pod
+ROUNDSTART_RACES pod
 #ROUNDSTART_RACES military_synth
 #ROUNDSTART_RACES agent
 
@@ -320,7 +320,7 @@ ROUNDSTART_RACES arachnid
 ##-------------------------------------------------------------------------------------------
 
 ## Uncomment to give players the choice of joining as a human with mutant bodyparts before they join the game
-#JOIN_WITH_MUTANT_HUMANS
+JOIN_WITH_MUTANT_HUMANS
 
 ##Overflow job. Default is assistant
 OVERFLOW_JOB Assistant
@@ -385,13 +385,13 @@ BOMBCAP 20
 ## a less lootfilled or smaller or less round effecting ruin costs less to
 ## spawn, while the converse is true. Alter this number to affect the amount
 ## of ruins.
-LAVALAND_BUDGET 60
+LAVALAND_BUDGET 80
 
 ## Ice Moon Budget
 ICEMOON_BUDGET 90
 
 ## Space Ruin Budget
-Space_Budget 16
+Space_Budget 20
 
 ## Station Ruin Budget
 STATION_SPACE_BUDGET 10
@@ -408,13 +408,13 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
-MICE_ROUNDSTART 10
+MICE_ROUNDSTART 5
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
 
 ## Determines if players are allowed to print integrated circuits, uncomment to allow.
-#IC_PRINTING
+IC_PRINTING
 
 ## Uncomment to allow roundstart quirk selection in the character setup menu.
 ## This used to be named traits, hence the config name, but it handles quirks, not the other kind of trait!
@@ -442,10 +442,10 @@ NIGHTSHIFT_TOGGLE_PUBLIC_REQUIRES_AUTH
 #SHIFT_TIME_REALTIME
 
 ## A cap on how many monkeys may be created via monkey cubes
-MONKEYCAP 64
+MONKEYCAP 32
 
 ## A cap on how many mice can be bred via cheese wedges
-RATCAP 64
+RATCAP 32
 
 ## Enable the capitalist agenda on your server.
 ECONOMY
@@ -465,7 +465,7 @@ BOX_RANDOM_ENGINE Box Tesla,3
 BOX_RANDOM_ENGINE Box Singulo,3
 BOX_RANDOM_ENGINE Box SM 1x3,1
 BOX_RANDOM_ENGINE Box SM 5x5,1
-BOX_RANDOM_ENGINE Box SM 3x,0
+BOX_RANDOM_ENGINE Box SM 3x,1
 BOX_RANDOM_ENGINE Box TEG,3
 BOX_RANDOM_ENGINE Box Empty,0
 BOX_RANDOM_ENGINE Box Antimatter,1
