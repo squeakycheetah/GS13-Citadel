@@ -2,6 +2,7 @@
 	name = "Calorite dance floor"
 	result = /obj/item/stack/tile/mineral/calorite/dance
 	reqs = list(/obj/item/stack/cable_coil = 3, /obj/item/stack/tile/mineral/calorite = 1)
+	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISCELLANEOUS
 
 /datum/crafting_recipe/nutribot
@@ -11,5 +12,4 @@
 				/obj/item/bodypart/r_arm/robot = 1,
 				/obj/item/assembly/prox_sensor = 1)
 	result = /mob/living/simple_animal/bot/nutribot
-	time = 40
 	category = CAT_ROBOT
