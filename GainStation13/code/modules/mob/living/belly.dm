@@ -14,6 +14,7 @@
 	var/inflatable			= FALSE //For inflation connoisseurs
 	var/size_cached			= 0
 	var/prev_size			= 0
+	layer_index = BELLY_LAYER_INDEX
 
 /obj/item/organ/genital/belly/modify_size(modifier, min = BELLY_SIZE_DEF, max = BELLY_SIZE_MAX)
 	var/new_value = clamp(size_cached + modifier, min, max)

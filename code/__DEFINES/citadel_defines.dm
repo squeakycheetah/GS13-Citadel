@@ -9,10 +9,11 @@
 #define BUTT_LAYER_INDEX		1
 #define VAGINA_LAYER_INDEX		2
 #define TESTICLES_LAYER_INDEX	3
-#define GENITAL_LAYER_INDEX		4
-#define PENIS_LAYER_INDEX		5
+#define BELLY_LAYER_INDEX		4
+#define GENITAL_LAYER_INDEX		5
+#define PENIS_LAYER_INDEX		6
 
-#define GENITAL_LAYER_INDEX_LENGTH 5 //keep it updated with each new index added, thanks.
+#define GENITAL_LAYER_INDEX_LENGTH 6 //keep it updated with each new index added, thanks.
 
 //genital flags
 #define GENITAL_BLACKLISTED		(1<<0) //for genitals that shouldn't be added to GLOB.genitals_list.
