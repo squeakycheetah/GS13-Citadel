@@ -1,0 +1,188 @@
+Non-Regex:
+
+Kirbyplants
+/obj/item/twohanded/required/kirbyplants
+/obj/item/kirbyplants
+
+Destination Tagger
+/obj/item/destTagger
+/obj/item/dest_tagger
+
+Piano
+/obj/structure/piano
+/obj/structure/musician/piano
+
+Minesweeper - We don't have minesweeper.
+/obj/machinery/computer/arcade/minesweeper
+/obj/machinery/computer/arcade/orion_trail
+
+Double Beds
+/obj/structure/double_bed
+/obj/structure/bed/double
+
+Dice
+/obj/item/storage/pill_bottle/dice
+/obj/item/storage/dice
+
+AI Modules
+/obj/item/aiModule/
+/obj/item/ai_module/
+
+Burial Clothing
+/obj/item/clothing/under/burial
+/obj/item/clothing/under/misc/buria
+
+Security Pet Bed
+/obj/structure/bed/secbed
+/obj/structure/bed/dogbed
+
+RCL
+/obj/item/twohanded/rcl
+/obj/item/rcl
+
+Treadmills
+
+/obj/item/conveyor_construct/treadmill
+/obj/machinery/treadmill
+
+Red Shorts
+redwshort
+red
+
+Yellow Shorts
+yellowwshort
+yellow
+
+Maid Costume
+/obj/item/clothing/under/maid
+/obj/item/clothing/under/costume/maid
+
+Polly
+/mob/living/simple_animal/parrot/Poly
+/mob/living/simple_animal/parrot/Polly
+
+Suits
+/obj/item/clothing/under/suit_jacket/
+/obj/item/clothing/under/suit/
+
+Mailman
+/obj/item/clothing/under/rank/mailman
+/obj/item/clothing/under/misc/mailman
+
+Hand Drill
+/obj/item/handdrill
+/obj/item/screwdriver/power
+
+Jaws of Life
+/obj/item/jawsoflife
+/obj/item/crowbar/power
+
+Kilt
+/obj/item/clothing/under/kilt
+/obj/item/clothing/under/costume/kilt
+
+Waiter
+/obj/item/clothing/under/waiter
+/obj/item/clothing/under/suit/waiter
+
+sl_suit
+/obj/item/clothing/under/sl_suit
+/obj/item/clothing/under/suit/sl
+
+Treasure Hunter Clothing
+/obj/item/clothing/under/rank/curator
+/obj/item/clothing/under/rank/civilian/curator
+
+Geisha
+/obj/item/clothing/under/geisha
+/obj/item/clothing/under/costume/geisha
+
+HoS Grey
+/obj/item/clothing/under/rank/head_of_security/grey
+/obj/item/clothing/under/rank/security/head_of_security/grey
+
+Warden Grey
+/obj/item/clothing/under/rank/warden/grey
+/obj/item/clothing/under/rank/security/warden/grey
+
+Detective
+/obj/item/clothing/under/rank/det
+/obj/item/clothing/under/rank/security/detective
+
+Red Evening Gown
+/obj/item/clothing/under/redeveninggown
+/obj/item/clothing/under/dress/redeveninggown
+
+Nurse Suit
+/obj/item/clothing/under/rank/nursesuit
+/obj/item/clothing/under/rank/medical/doctor/nurse
+
+Owl Suit
+/obj/item/clothing/under/owl
+/obj/item/clothing/under/costume/owl
+
+Really Black Suit
+/obj/item/clothing/under/suit/really_black
+/obj/item/clothing/under/rank/civilian/lawyer/really_black
+
+Female Lawyer
+/obj/item/clothing/under/lawyer/femal
+/obj/item/clothing/under/rank/civilian/lawyer/female
+
+Centcom Commander
+/obj/item/clothing/under/rank/centcom_commander
+/obj/item/clothing/under/rank/centcom/commander
+
+Janitor Maid
+/obj/item/clothing/under/janimaid
+/obj/item/clothing/under/rank/civilian/janitor/maid
+
+Spear
+/obj/item/twohanded/spear
+/obj/item/spear
+
+Schoolgirl
+/obj/item/clothing/under/schoolgirl
+/obj/item/clothing/under/costume/schoolgirl
+
+Cybernetic
+cybernetic/upgraded
+cybernetic/tier3
+
+ears/cybernetic/tier3
+ears/cybernetic/upgraded
+
+CTF
+/obj/item/twohanded/ctf
+/obj/item/ctf
+
+Nun
+/obj/item/clothing/suit/nun
+/obj/item/clothing/suit/chaplain/nun
+
+Roman
+/obj/item/clothing/under/roman
+/obj/item/clothing/under/costume/roman
+
+Priest
+/obj/item/clothing/suit/holidaypriest
+/obj/item/clothing/suit/chaplain/holidaypriest
+
+Jabroni
+/obj/item/clothing/under/jabroni
+/obj/item/clothing/under/costume/jabroni
+
+Bird Seed
+/obj/item/reagent_containers/food/snacks/bird_seed
+/obj/item/reagent_containers/food/snacks/chips
+
+Toys
+prize/
+mecha/
+
+Regex Starts here:
+
+Shorts
+/obj/item/clothing/under/shorts/(.+)?wshort
+/obj/item/clothing/under/shorts/$1
+
