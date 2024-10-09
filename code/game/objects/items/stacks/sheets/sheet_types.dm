@@ -25,6 +25,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("bar stool", /obj/structure/chair/stool/bar, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("bed", /obj/structure/bed, 2, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("double bed", /obj/structure/bed/double, 4, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("scale", /obj/structure/scale, 3, one_per_turf = TRUE, on_floor = TRUE), \ //GS13 EDIT
 	//CIT CHANGE - adds sofas to metal recipe list
 	new/datum/stack_recipe_list("sofas", list( \
 		new /datum/stack_recipe("sofa (middle)", /obj/structure/chair/sofa, one_per_turf = TRUE, on_floor = TRUE), \
