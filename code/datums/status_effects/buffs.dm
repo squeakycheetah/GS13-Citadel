@@ -573,7 +573,7 @@
 	duration = 1 MINUTES
 	status_type = STATUS_EFFECT_REPLACE
 	alert_type = /atom/movable/screen/alert/status_effect/regenerative_core
-	var/heal_amount = 25
+	var/heal_amount = 60
 
 /datum/status_effect/regenerative_core/on_apply()
 	. = ..()

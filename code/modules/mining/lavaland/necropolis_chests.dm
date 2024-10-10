@@ -59,6 +59,14 @@
 			new /obj/item/gun/magic/wand/book/healing(src)
 		if(10)
 			new /obj/item/guardiancreator(src)
+		if(11)
+			new /obj/item/book/granter/spell/fattening(src)
+			new /obj/item/grenade/chem_grenade/lipoifier_weak(src)
+		if(12)
+			new /obj/item/book/granter/spell/fattening/transfer(src)
+			new /obj/item/book/granter/spell/fattening/steal (src)
+		if(13)
+			new /obj/item/gun/magic/wand/food(src)
 
 /obj/structure/closet/crate/necropolis/tendril/weapon_armor/PopulateContents()
 	var/loot = rand(1,10)
@@ -77,13 +85,25 @@
 			new /obj/item/reagent_containers/food/drinks/bottle/holywater/hell(src)
 			new /obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor/old(src)
 		if(7)
-			new /obj/item/grenade/clusterbuster/inferno(src)
-		if(8)
 			new /obj/item/gun/magic/wand/book/shock(src)
-		if(9)
+		if(8)
 			new /obj/item/gun/magic/wand/book/page(src)
-		if(10)
+		if(9)
 			new /obj/item/gun/magic/wand/book/spark(src)
+		if(10)
+			new /obj/item/book/granter/spell/fattening(src)
+			new /obj/item/grenade/chem_grenade/lipoifier_weak(src)
+		if(11)
+			new /obj/item/book/granter/spell/fattening/transfer(src)
+			new /obj/item/book/granter/spell/fattening/steal (src)
+		if(12)
+			new /obj/item/gun/energy/fatoray(src)
+		if(13)
+			new /obj/item/gun/energy/fatoray/cannon(src)
+		if(14)
+			new /obj/item/gun/magic/wand/food(src)
+		if(15)
+			new /obj/item/karl_pickaxe(src)
 
 /obj/structure/closet/crate/necropolis/tendril/misc/PopulateContents()
 	var/loot = rand(1,12)
@@ -113,6 +133,20 @@
 			new /obj/item/clothing/suit/space/hardsuit/cult(src)
 		if(12)
 			new /obj/item/katana/lavaland(src)
+		if(13)
+			new /obj/item/book/granter/spell/fattening(src)
+			new /obj/item/grenade/chem_grenade/lipoifier_weak(src)
+		if(14)
+			new /obj/item/book/granter/spell/fattening/transfer(src)
+			new /obj/item/book/granter/spell/fattening/steal (src)
+		if(15)
+			new /obj/item/gun/energy/fatoray(src)
+		if(16)
+			new /obj/item/gun/energy/fatoray/cannon(src)
+		if(17)
+			new /obj/item/gun/magic/wand/food(src)
+		if(18)
+			new /obj/item/karl_pickaxe(src)
 
 /obj/structure/closet/crate/necropolis/tendril/all/PopulateContents()
 	var/loot = rand(1,28)
@@ -148,34 +182,47 @@
 			new /obj/item/reagent_containers/food/drinks/bottle/holywater/hell(src)
 			new /obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor/old(src)
 		if(15)
-			new /obj/item/grenade/clusterbuster/inferno(src)
-		if(16)
 			new /obj/item/gun/magic/wand/book/shock(src)
-		if(17)
+		if(16)
 			new /obj/item/gun/magic/wand/book/page(src)
-		if(18)
+		if(17)
 			new /obj/item/gun/magic/wand/book/spark(src)
-		if(19)
+		if(18)
 			new /obj/item/soulstone/anybody(src)
-		if(20)
+		if(19)
 			new /obj/item/rod_of_asclepius(src)
-		if(21)
+		if(20)
 			new /obj/item/organ/heart/cursed/wizard(src)
-		if(22)
+		if(21)
 			new /obj/item/book/granter/spell/summonitem(src)
-		if(23)
+		if(22)
 			new /obj/item/borg/upgrade/modkit/lifesteal(src)
 			new /obj/item/bedsheet/cult(src)
-		if(24)
+		if(23)
 			new /obj/item/clothing/neck/necklace/memento_mori(src)
-		if(25)
+		if(24)
 			new /obj/item/warp_cube/red(src)
-		if(26)
+		if(25)
 			new /obj/item/immortality_talisman(src)
-		if(27)
+		if(26)
 			new /obj/item/gun/magic/wand/book/healing(src)
-		if(28)
+		if(27)
 			new /obj/item/guardiancreator(src)
+//GS13 stuff
+		if(28)
+			new /obj/item/book/granter/spell/fattening(src)
+			new /obj/item/grenade/chem_grenade/lipoifier_weak(src)
+		if(29)
+			new /obj/item/book/granter/spell/fattening/transfer(src)
+			new /obj/item/book/granter/spell/fattening/steal (src)
+		if(30)
+			new /obj/item/gun/energy/fatoray(src)
+		if(31)
+			new /obj/item/gun/energy/fatoray/cannon(src)
+		if(32)
+			new /obj/item/gun/magic/wand/food(src)
+		if(33)
+			new /obj/item/karl_pickaxe(src)
 
 //KA modkit design discs
 /obj/item/disk/design_disk/modkit_disc
@@ -353,6 +400,23 @@
 		to_chat(owner, "<span class='warning'>You try to free your lifeforce from the pendant...</span>")
 		if(do_after(owner, 40, target = owner))
 			MM.mori()
+
+//Karl's pickaxe
+/obj/item/karl_pickaxe //GS13 addition
+	name = "karl's pickaxe"
+	desc = "You can never dig too deep"
+	icon = 'GainStation13/icons/obj/mining.dmi'
+	icon_state = "karlpick"
+	flags_1 = CONDUCT_1
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
+	force = 30
+	throwforce = 20
+	w_class = WEIGHT_CLASS_SMALL
+	tool_behaviour = TOOL_MINING
+	toolspeed = 0.01
+	usesound = list('sound/effects/picaxe1.ogg', 'sound/effects/picaxe2.ogg', 'sound/effects/picaxe3.ogg')
+	attack_verb = list("hit", "pierced", "sliced", "attacked", "rocked", "stoned", "power attacked")
+
 
 //Wisp Lantern
 /obj/item/wisp_lantern
