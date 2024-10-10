@@ -15,7 +15,6 @@
 	desc = "A seedy table for seedy dealings in seedy places."
 	icon = 'GainStation13/icons/obj/smooth_structures/plaswoodpoker_table.dmi'
 	icon_state = "plaswoodpoker_table"
-	frame = /obj/structure/table_frame/plaswood
 	buildstack = /obj/item/stack/tile/carpet
 
 /obj/structure/table/gmushroom
@@ -33,5 +32,4 @@
 	desc = "A seedy table for seedy dealings in seedy places."
 	icon = 'GainStation13/icons/obj/smooth_structures/gmushroompoker_table.dmi'
 	icon_state = "gmushroompoker_table"
-	frame = /obj/structure/table_frame/gmushroom
 	buildstack = /obj/item/stack/tile/carpet
