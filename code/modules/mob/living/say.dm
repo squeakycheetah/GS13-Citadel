@@ -254,6 +254,12 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	if (client?.prefs.chat_on_map && stat != UNCONSCIOUS && (client.prefs.see_chat_non_mob || ismob(speaker)) && can_hear())
 		create_chat_message(speaker, message_language, raw_message, spans, message_mode)
 
+	//GS13 EDIT START
+	if(stat != UNCONSCIOUS && can_hear() && radio_freq)
+		playsound_local(src,'sound/voice/radio.ogg', 30, 0)
+
+	//GS13 EDIT END
+
 	// Recompose message for AI hrefs, language incomprehension.
 	message = compose_message(speaker, message_language, raw_message, radio_freq, spans, message_mode, FALSE, source)
 
