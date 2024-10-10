@@ -521,6 +521,17 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 
 	var/restingpwr = 1 + 4 * !CHECK_MOBILITY(src, MOBILITY_STAND)
 
+	//GS13 EDIT START
+	if(ckey)
+		if(!client && !(stat == DEAD))
+			if(!SSD)
+				add_status_indicator("ssd")
+				SSD = TRUE
+		else
+			if(SSD)
+				remove_status_indicator("ssd")
+				SSD = FALSE
+	//GS13 EDIT END
 	//Dizziness
 	if(dizziness)
 		var/client/C = client
