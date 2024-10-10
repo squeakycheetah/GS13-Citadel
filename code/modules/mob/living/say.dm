@@ -256,7 +256,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	//GS13 EDIT START
 	if(stat != UNCONSCIOUS && can_hear() && radio_freq)
-		playsound_local(src,'sound/voice/radio.ogg', 30, 0)
+		playsound_local(src,'GainStation13/sound/voice/radio.ogg', 30, 0)
 
 	//GS13 EDIT END
 
