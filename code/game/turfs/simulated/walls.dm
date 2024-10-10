@@ -3,7 +3,7 @@
 /turf/closed/wall
 	name = "wall"
 	desc = "A huge chunk of metal used to separate rooms."
-	icon = 'icons/turf/walls/wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/wall.dmi' //GS13
 	icon_state = "wall"
 	explosion_block = 1
 	wave_explosion_block = EXPLOSION_BLOCK_WALL
