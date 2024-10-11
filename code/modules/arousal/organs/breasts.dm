@@ -124,5 +124,10 @@
 	prev_size = cached_size
 	toggle_visibility(D.features["breasts_visibility"], FALSE)
 
+	// GS13 EDIT START
+	if(D?.features["breasts_fluid"])
+		fluid_id = owner.dna.features["breasts_fluid"]
+	// GS13 EDIT END
+
 #undef BREASTS_ICON_MIN_SIZE
 #undef BREASTS_ICON_MAX_SIZE

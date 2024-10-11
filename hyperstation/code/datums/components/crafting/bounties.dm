@@ -100,6 +100,6 @@ datum/bounty/lewd/fluid/New() //GS13 made some edits here that changes stuff int
 
 	worth += fluids[/datum/reagent/consumable/semen]*2
 	worth += fluids[/datum/reagent/consumable/milk]*2
-	worth += fluids[/datum/reagent/consumable/femcum]*5
+	worth += fluids[/datum/reagent/consumable/semen/femcum]*5
 	return worth
 */

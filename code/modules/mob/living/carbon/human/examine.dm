@@ -390,6 +390,47 @@
 	if (length(msg))
 		. += "<span class='warning'>[msg.Join("")]</span>"
 
+	//GS13 EDIT FAT EXAMINE
+	switch(fullness)
+		if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
+			. += "[t_He] look[p_s()] like [t_He] ate a bit too much.\n"
+		if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
+			. += "[t_His] stomach looks very round and very full.\n"
+		if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
+			. += "[t_His] stomach has been stretched to enormous proportions.\n"
+
+	if(nutrition < NUTRITION_LEVEL_STARVING - 50)
+		. += "[t_He] [t_is] severely malnourished.\n"
+
+	if(fatness >= FATNESS_LEVEL_BLOB)
+		. += span_boldwarning("[t_He] [t_is] completely engulfed in rolls upon rolls of flab. [t_His] head is poking out on top of [t_His] body, akin to a marble on top of a hill.")
+
+	else if(fatness >= FATNESS_LEVEL_IMMOBILE)
+		. += span_boldwarning("[t_His] body is buried in an overflowing surplus of adipose, and [t_His] legs are completely buried beneath layers of meaty, obese flesh.")
+
+	else if(fatness >= FATNESS_LEVEL_BARELYMOBILE)
+		. += span_warning("[t_He] [t_is] as wide as [t_He] [t_is] tall, barely able to move [t_His] masssive body that seems to be overtaken with piles of flab.")
+
+	else if(fatness >= FATNESS_LEVEL_EXTREMELY_OBESE)
+		. += span_warning("[t_He] [t_is] ripe with numerous rolls of fat, almost all of [t_His] body layered with adipose.")
+
+	else if(fatness >= FATNESS_LEVEL_MORBIDLY_OBESE)
+		. += span_warning("[t_He] [t_is] utterly stuffed with abundant lard, [t_He] doesn't seem to be able to move much.")
+
+	else if(fatness >= FATNESS_LEVEL_OBESE)
+		. += span_warning("[t_He] [t_is] engorged with fat, [t_His] body laden in rolls of fattened flesh.")
+
+	else if(fatness >= FATNESS_LEVEL_VERYFAT)
+		. += span_notice("[t_He] [t_is] pleasantly plushy, [t_His] body gently wobbling whenever they move.")
+
+	else if(fatness >= FATNESS_LEVEL_FATTER)
+		. += span_notice("[t_He] [t_is] soft and curvy, [t_His] belly looking like a small pillow.")
+
+	//GS13 EDIT START
+	if(client?.prefs?.noncon_weight_gain)
+		. += "\n<span class='purple'><b>Non-con fattening is allowed</b></span>\n"
+	//GS13 EDIT END
+
 	var/trait_exam = common_trait_examine()
 	if (!isnull(trait_exam))
 		. += trait_exam

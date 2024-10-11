@@ -132,7 +132,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/eye_type = DEFAULT_EYES_TYPE	//Eye type
 	var/split_eye_colors = FALSE
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
-	var/list/features = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF", "mcolor3" = "FFFFFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "horns_color" = "85615a", "ears" = "None", "wings" = "None", "wings_color" = "FFF", "frills" = "None", "deco_wings" = "None", "spines" = "None", "legs" = "Plantigrade", "insect_wings" = "Plain", "insect_fluff" = "None", "insect_markings" = "None", "arachnid_legs" = "Plain", "arachnid_spinneret" = "Plain", "arachnid_mandibles" = "Plain", "mam_body_markings" = list(), "mam_ears" = "None", "mam_snouts" = "None", "mam_tail" = "None", "mam_tail_animated" = "None", "xenodorsal" = "Standard", "xenohead" = "Standard", "xenotail" = "Xenomorph Tail", "taur" = "None", "genitals_use_skintone" = FALSE, "has_cock" = FALSE, "cock_shape" = DEF_COCK_SHAPE, "cock_length" = COCK_SIZE_DEF, "cock_diameter_ratio" = COCK_DIAMETER_RATIO_DEF, "cock_color" = "ffffff", "cock_taur" = FALSE, "has_balls" = FALSE, "balls_color" = "ffffff", "balls_shape" = DEF_BALLS_SHAPE, "balls_size" = BALLS_SIZE_DEF, "balls_cum_rate" = CUM_RATE, "balls_cum_mult" = CUM_RATE_MULT, "balls_efficiency" = CUM_EFFICIENCY, "has_breasts" = FALSE, "breasts_color" = "ffffff", "breasts_size" = BREASTS_SIZE_DEF, "breasts_shape" = DEF_BREASTS_SHAPE, "breasts_producing" = FALSE, "has_vag" = FALSE, "vag_shape" = DEF_VAGINA_SHAPE, "vag_color" = "ffffff", "has_womb" = FALSE,  "has_butt" = FALSE, "butt_color" = "ffffff", "butt_size" = BUTT_SIZE_DEF, "balls_visibility"	= GEN_VISIBLE_NO_UNDIES, "breasts_visibility"= GEN_VISIBLE_NO_UNDIES, "cock_visibility"	= GEN_VISIBLE_NO_UNDIES, "vag_visibility"	= GEN_VISIBLE_NO_UNDIES, "butt_visibility" = GEN_VISIBLE_NO_UNDIES, "ipc_screen" = "Sunburst", "ipc_antenna" = "None", "flavor_text" = "", "silicon_flavor_text" = "", "ooc_notes" = "", "meat_type" = "Mammalian", "body_model" = MALE, "body_size" = RESIZE_DEFAULT_SIZE, "color_scheme" = OLD_CHARACTER_COLORING)
+	var/list/features = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF", "mcolor3" = "FFFFFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "horns_color" = "85615a", "ears" = "None", "wings" = "None", "wings_color" = "FFF", "frills" = "None", "deco_wings" = "None", "spines" = "None", "legs" = "Plantigrade", "insect_wings" = "Plain", "insect_fluff" = "None", "insect_markings" = "None", "arachnid_legs" = "Plain", "arachnid_spinneret" = "Plain", "arachnid_mandibles" = "Plain", "mam_body_markings" = list(), "mam_ears" = "None", "mam_snouts" = "None", "mam_tail" = "None", "mam_tail_animated" = "None", "xenodorsal" = "Standard", "xenohead" = "Standard", "xenotail" = "Xenomorph Tail", "taur" = "None", "genitals_use_skintone" = FALSE, "has_cock" = FALSE, "cock_shape" = DEF_COCK_SHAPE, "cock_length" = COCK_SIZE_DEF, "cock_diameter_ratio" = COCK_DIAMETER_RATIO_DEF, "cock_color" = "ffffff", "cock_taur" = FALSE, "has_balls" = FALSE, "balls_color" = "ffffff", "balls_shape" = DEF_BALLS_SHAPE, "balls_size" = BALLS_SIZE_DEF, "balls_cum_rate" = CUM_RATE, "balls_cum_mult" = CUM_RATE_MULT, "balls_efficiency" = CUM_EFFICIENCY, "has_breasts" = FALSE, "breasts_color" = "ffffff", "breasts_size" = BREASTS_SIZE_DEF, "breasts_shape" = DEF_BREASTS_SHAPE, "breasts_fluid" = /datum/reagent/consumable/milk,  "breasts_producing" = FALSE, "has_vag" = FALSE, "vag_shape" = DEF_VAGINA_SHAPE, "vag_color" = "ffffff", "has_womb" = FALSE,  "has_butt" = FALSE, "butt_color" = "ffffff", "butt_size" = BUTT_SIZE_DEF, "balls_visibility"	= GEN_VISIBLE_NO_UNDIES, "breasts_visibility"= GEN_VISIBLE_NO_UNDIES, "cock_visibility"	= GEN_VISIBLE_NO_UNDIES, "vag_visibility"	= GEN_VISIBLE_NO_UNDIES, "butt_visibility" = GEN_VISIBLE_NO_UNDIES, "ipc_screen" = "Sunburst", "ipc_antenna" = "None", "flavor_text" = "", "silicon_flavor_text" = "", "ooc_notes" = "", "meat_type" = "Mammalian", "body_model" = MALE, "body_size" = RESIZE_DEFAULT_SIZE, "color_scheme" = OLD_CHARACTER_COLORING)
 
 	var/custom_speech_verb = "default" //if your say_mod is to be something other than your races
 	var/custom_tongue = "default" //if your tongue is to be something other than your races
@@ -794,6 +794,29 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							dat += "<b>Breasts Shape:</b><a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_shape;task=input'>[features["breasts_shape"]]</a>"
 							dat += "<b>Breasts Visibility:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=breasts_visibility;task=input'>[features["breasts_visibility"]]</a>"
 							dat += "<b>Lactates:</b><a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_producing'>[features["breasts_producing"] == TRUE ? "Yes" : "No"]</a>"
+							if(features["breasts_producing"])
+								switch(features["breasts_fluid"])
+									if(/datum/reagent/consumable/milk)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Milk</a>"
+									if(/datum/reagent/water)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Water</a>"
+									if(/datum/reagent/consumable/semen)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Semen</a>"
+									if(/datum/reagent/consumable/semen/femcum)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Femcum</a>"
+									if(/datum/reagent/consumable/alienhoney)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Honey</a>"
+									if(/datum/reagent/consumable/milk/pinkmilk)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Strawberry Milk</a>"
+									if(/datum/reagent/consumable/nutriment)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nutriment</a>"
+									if(/datum/reagent/blueberry_juice)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Berry Juice</a>"
+									else
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nothing?</a>"
+									//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
+									//DO NOT REMOVE IT UNLESS YOU HAVE A GOOD IDEA
+
 						dat += "</td>"
 						dat += APPEARANCE_CATEGORY_COLUMN
 						dat += "<h3>Butt</h3>"
@@ -2614,6 +2637,29 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_shape = input(user, "Breast Shape", "Character Preference") as null|anything in GLOB.breasts_shapes_list
 					if(new_shape)
 						features["breasts_shape"] = new_shape
+
+				// GS13 EDIT START
+				if("breasts_fluid")
+					var/new_shape
+					new_shape = input(user, "Breast Fluid", "Character Preference") as null|anything in GLOB.genital_fluids_list
+					switch(new_shape)
+						if("Milk")
+							features["breasts_fluid"] = /datum/reagent/consumable/milk
+						if("Water")
+							features["breasts_fluid"] = /datum/reagent/water
+						if("Semen")
+							features["breasts_fluid"] = /datum/reagent/consumable/semen
+						if("Femcum")
+							features["breasts_fluid"] = /datum/reagent/consumable/semen/femcum
+						if("Honey")
+							features["breasts_fluid"] = /datum/reagent/consumable/alienhoney
+						if("Strawberry Milk")
+							features["breasts_fluid"] = /datum/reagent/consumable/milk/pinkmilk
+						if("Nutriment")
+							features["breasts_fluid"] = /datum/reagent/consumable/nutriment
+						if("Berry Juice")
+							features["breasts_fluid"] = /datum/reagent/blueberry_juice
+				// GS13 EDIT EN
 
 				if("breasts_color")
 					var/new_breasts_color = input(user, "Breast Color:", "Character Preference","#"+features["breasts_color"]) as color|null

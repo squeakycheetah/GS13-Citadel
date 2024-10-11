@@ -949,6 +949,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["fatness_vulnerable"] >> fatness_vulnerable
 	S["extreme_fatness_vulnerable"] >> extreme_fatness_vulnerable
 	S["blueberry_inflation"] >> blueberry_inflation
+	S["feature_breasts_fluid"]			>> features["breasts_fluid"]
 
 	//gear loadout
 	if(S["loadout"])
@@ -1227,6 +1228,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["fatness_vulnerable"], fatness_vulnerable)
 	WRITE_FILE(S["extreme_fatness_vulnerable"], extreme_fatness_vulnerable)
 	WRITE_FILE(S["blueberry_inflation"], blueberry_inflation)
+	WRITE_FILE(S["feature_breasts_fluid"], features["breasts_fluid"])
 
 	// records
 	WRITE_FILE(S["security_records"]		, security_records)
