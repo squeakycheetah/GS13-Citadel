@@ -7,6 +7,7 @@
 	canSmoothWith = null
 	smooth = SMOOTH_TRUE
 
+
 //GS13: Most of these walls have icon paths changed to GS13 folders
 
 /turf/closed/wall/mineral/gold
