@@ -176,7 +176,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	var/list/ignoring = list()
 
-	var/clientfps = 0
+	var/clientfps = 60 //GS13 Change
 
 	var/parallax = PARALLAX_INSANE
 
