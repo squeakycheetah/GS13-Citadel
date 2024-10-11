@@ -1,11 +1,13 @@
 /*
  * False Walls
  */
+
+//GS13: Most of these walls have icon paths changed to GS13 folders
 /obj/structure/falsewall
 	name = "wall"
 	desc = "A huge chunk of metal used to separate rooms."
 	anchored = TRUE
-	icon = 'icons/turf/walls/wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/wall.dmi'
 	icon_state = "wall"
 	plane = WALL_PLANE
 	layer = LOW_OBJ_LAYER
@@ -147,7 +149,7 @@
 /obj/structure/falsewall/reinforced
 	name = "reinforced wall"
 	desc = "A huge chunk of reinforced metal used to separate rooms."
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/reinforced_wall.dmi'
 	icon_state = "r_wall"
 	walltype = /turf/closed/wall/r_wall
 	mineral = /obj/item/stack/sheet/plasteel
@@ -168,7 +170,7 @@
 /obj/structure/falsewall/uranium
 	name = "uranium wall"
 	desc = "A wall with uranium plating. This is probably a bad idea."
-	icon = 'icons/turf/walls/uranium_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/uranium_wall.dmi'
 	icon_state = "uranium"
 	mineral = /obj/item/stack/sheet/mineral/uranium
 	walltype = /turf/closed/wall/mineral/uranium
@@ -202,7 +204,7 @@
 /obj/structure/falsewall/gold
 	name = "gold wall"
 	desc = "A wall with gold plating. Swag!"
-	icon = 'icons/turf/walls/gold_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/gold_wall.dmi'
 	icon_state = "gold"
 	mineral = /obj/item/stack/sheet/mineral/gold
 	walltype = /turf/closed/wall/mineral/gold
@@ -211,7 +213,7 @@
 /obj/structure/falsewall/silver
 	name = "silver wall"
 	desc = "A wall with silver plating. Shiny."
-	icon = 'icons/turf/walls/silver_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/silver_wall.dmi'
 	icon_state = "silver"
 	mineral = /obj/item/stack/sheet/mineral/silver
 	walltype = /turf/closed/wall/mineral/silver
@@ -220,7 +222,7 @@
 /obj/structure/falsewall/diamond
 	name = "diamond wall"
 	desc = "A wall with diamond plating. You monster."
-	icon = 'icons/turf/walls/diamond_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/diamond_wall.dmi'
 	icon_state = "diamond"
 	mineral = /obj/item/stack/sheet/mineral/diamond
 	walltype = /turf/closed/wall/mineral/diamond
@@ -230,7 +232,7 @@
 /obj/structure/falsewall/plasma
 	name = "plasma wall"
 	desc = "A wall with plasma plating. This is definitely a bad idea."
-	icon = 'icons/turf/walls/plasma_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/plasma_wall.dmi'
 	icon_state = "plasma"
 	mineral = /obj/item/stack/sheet/mineral/plasma
 	walltype = /turf/closed/wall/mineral/plasma
@@ -258,7 +260,7 @@
 /obj/structure/falsewall/bananium
 	name = "bananium wall"
 	desc = "A wall with bananium plating. Honk!"
-	icon = 'icons/turf/walls/bananium_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/bananium_wall.dmi'
 	icon_state = "bananium"
 	mineral = /obj/item/stack/sheet/mineral/bananium
 	walltype = /turf/closed/wall/mineral/bananium
@@ -268,7 +270,7 @@
 /obj/structure/falsewall/sandstone
 	name = "sandstone wall"
 	desc = "A wall with sandstone plating. Rough."
-	icon = 'icons/turf/walls/sandstone_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/sandstone_wall.dmi'
 	icon_state = "sandstone"
 	mineral = /obj/item/stack/sheet/mineral/sandstone
 	walltype = /turf/closed/wall/mineral/sandstone
@@ -277,7 +279,7 @@
 /obj/structure/falsewall/wood
 	name = "wooden wall"
 	desc = "A wall with wooden plating. Stiff."
-	icon = 'icons/turf/walls/wood_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/wood_wall.dmi'
 	icon_state = "wood"
 	mineral = /obj/item/stack/sheet/mineral/wood
 	walltype = /turf/closed/wall/mineral/wood
@@ -286,7 +288,7 @@
 /obj/structure/falsewall/iron
 	name = "rough metal wall"
 	desc = "A wall with rough metal plating."
-	icon = 'icons/turf/walls/iron_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/iron_wall.dmi'
 	icon_state = "iron"
 	mineral = /obj/item/stack/rods
 	mineral_amount = 5
@@ -315,7 +317,7 @@
 /obj/structure/falsewall/plastitanium
 	name = "wall"
 	desc = "An evil wall of plasma and titanium."
-	icon = 'icons/turf/walls/plastitanium_wall.dmi'
+	icon = 'GainStation13/icons/turf/walls/plastitanium_wall.dmi'
 	icon_state = "shuttle"
 	mineral = /obj/item/stack/sheet/mineral/plastitanium
 	walltype = /turf/closed/wall/mineral/plastitanium
