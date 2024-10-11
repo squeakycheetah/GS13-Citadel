@@ -126,7 +126,7 @@
 
 	// GS13 EDIT START
 	if(D?.features["breasts_fluid"])
-		fluid_id = owner.dna.features["breasts_fluid"]
+		fluid_id = D?.features["breasts_fluid"]
 	// GS13 EDIT END
 
 #undef BREASTS_ICON_MIN_SIZE
