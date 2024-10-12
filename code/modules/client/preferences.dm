@@ -832,7 +832,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							dat += "<b>Butt Visibility:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=butt_visibility;task=input'>[features["butt_visibility"]]</a>"
 						dat += "</td>"
 					dat += "</td>"
-					dat += "</tr></table>"
 					// GS13 EDIT BELLY START
 					dat += APPEARANCE_CATEGORY_COLUMN
 					dat += "<h3>Belly</h3>"
@@ -850,6 +849,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						//dat += "<b>Inflation (climax with and manual belly size change in arousal menu):</b><a style='display:block;width:50px' href='?_src_=prefs;preference=inflatable_belly'>[features["inflatable_belly"] == 1 ? "Yes" : "No"]</a>"
 
 					dat += "</td>"
+					dat += "</tr></table>"
 
 				//Markings
 				if(MARKINGS_CHAR_TAB)
@@ -2737,7 +2737,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					// GS13: Adjust sprite ranges in char setup
 					var/new_bellysize = input(user, "Belly size :\n(1-10)", "Character Preference") as num|null
 					if(new_bellysize)
-						features["belly_size"] = clamp(new_bellysize, 1, 10)
+						features["belly_size"] = clamp(round(new_bellysize), 1, 10)
 
 				if("belly_visibility")
 					var/n_vis = input(user, "Belly Visibility", "Character Preference") as null|anything in CONFIG_GET(str_list/safe_visibility_toggles)
