@@ -43,8 +43,8 @@
 	if(D.species.use_skintones && D.features["genitals_use_skintone"])
 		color = SKINTONE2HEX(H.skin_tone)
 	else
-		color = "[D.features["belly_color"]]"
-	size = "[D.features["belly_size"]]"
+		color = "#[D.features["belly_color"]]"
+	size = D.features["belly_size"]
 	toggle_visibility(D.features["belly_visibility"], FALSE)
 
 
