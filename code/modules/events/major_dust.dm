@@ -1,6 +1,7 @@
 /datum/round_event_control/meteor_wave/major_dust
 	name = "Major Space Dust"
 	typepath = /datum/round_event/meteor_wave/major_dust
+	min_players = 8 //GS13
 	weight = 8
 	description = "The station is pelted by sand."
 

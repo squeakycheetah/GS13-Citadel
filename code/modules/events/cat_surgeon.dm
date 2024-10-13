@@ -1,7 +1,7 @@
 /datum/round_event_control/cat_surgeon
 	name = "Cat Surgeon"
 	typepath = /datum/round_event/cat_surgeon
-	max_occurrences = 1
+	max_occurrences = 0 //GS13 - this one's just cruel lmao
 	weight = 5
 	category = EVENT_CATEGORY_ENTITIES
 	description = "Spawns a crazy surgeon ready to perverse things with the crew."

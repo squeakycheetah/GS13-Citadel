@@ -3,6 +3,7 @@
 	typepath = /datum/round_event/vent_clog
 	weight = 10
 	max_occurrences = 3
+	min_players = 10
 	category = EVENT_CATEGORY_HEALTH
 	description = "All the scrubbers onstation spit random chemicals in smoke form."
 
@@ -14,10 +15,9 @@
 	var/list/vents  = list()
 	var/randomProbability = 0
 	var/reagentsAmount = 100
-	var/list/saferChems = list(
+	var/list/saferChems = list( //GS13 - removed some of those chems, just a couple particularly annoying ones
 		/datum/reagent/water,
 		/datum/reagent/carbon,
-		/datum/reagent/consumable/flour,
 		/datum/reagent/space_cleaner,
 		/datum/reagent/consumable/nutriment,
 		/datum/reagent/consumable/condensedcapsaicin,
@@ -25,11 +25,9 @@
 		/datum/reagent/lube,
 		/datum/reagent/glitter/pink,
 		/datum/reagent/cryptobiolin,
-		/datum/reagent/toxin/plantbgone,
 		/datum/reagent/blood,
 		/datum/reagent/medicine/charcoal,
 		/datum/reagent/drug/space_drugs,
-		/datum/reagent/medicine/morphine,
 		/datum/reagent/water/holywater,
 		/datum/reagent/consumable/ethanol,
 		/datum/reagent/consumable/hot_coco,
@@ -107,14 +105,14 @@
 	name = "Clogged Vents: Threatening"
 	typepath = /datum/round_event/vent_clog/threatening
 	weight = 4
-	min_players = 15
+	min_players = 18
 	max_occurrences = 1
 	earliest_start = 35 MINUTES
 	description = "Extra dangerous chemicals come out of the scrubbers."
 
 /datum/round_event/vent_clog/threatening
 	randomProbability = 10
-	reagentsAmount = 200
+	reagentsAmount = 100
 
 /datum/round_event_control/vent_clog/catastrophic
 	name = "Clogged Vents: Catastrophic"
