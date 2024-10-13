@@ -9,6 +9,7 @@
 	var/orgasm_verb = "cumming" //present continous
 	var/arousal_verb = "You feel aroused"
 	var/unarousal_verb = "You no longer feel aroused"
+	var/can_climax				= FALSE
 	var/fluid_transfer_factor = 0 //How much would a partner get in them if they climax using this?
 	var/size = 2 //can vary between num or text, just used in icon_state strings
 	var/datum/reagent/fluid_id = null
@@ -16,11 +17,22 @@
 	var/fluid_efficiency = 1
 	var/fluid_rate = CUM_RATE
 	var/fluid_mult = 1
+	var/producing = FALSE
 	var/last_orgasmed = 0
-	var/aroused_state = FALSE //Boolean used in icon_state strings
+	var/aroused_state			= FALSE //Boolean used in icon_state strings
+	var/aroused_amount			= 50 //This is a num from 0 to 100 for arousal percentage for when to use arousal state icons.
 	var/obj/item/organ/genital/linked_organ
 	var/linked_organ_slot //used for linking an apparatus' organ to its other half on update_link().
 	var/layer_index = GENITAL_LAYER_INDEX //Order should be very important. FIRST vagina, THEN testicles, THEN penis, as this affects the order they are rendered in.
+	var/through_clothes			= FALSE
+	var/internal				= FALSE
+	var/hidden					= FALSE
+	var/colourtint				= ""
+	var/mode					= "clothes"
+	var/obj/item/equipment 		//for fun stuff that goes on the gentials/maybe rings down the line
+	var/dontlist				= FALSE
+	var/nochange				= FALSE //stops people changing visablity.
+
 
 /obj/item/organ/genital/Initialize(mapload, do_update = TRUE)
 	. = ..()

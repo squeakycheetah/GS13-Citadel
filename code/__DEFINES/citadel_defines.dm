@@ -70,6 +70,11 @@
 #define BELLY_SIZE_DEF	0
 #define BELLY_SIZE_MAX	10
 
+//GS13 Port - Add back Arousal
+#define AROUSAL_MINIMUM_DEFAULT 	0
+#define AROUSAL_MAXIMUM_DEFAULT 	100
+#define AROUSAL_START_VALUE			1
+
 //visibility toggles defines to avoid errors typos code errors.
 #define GEN_VISIBLE_ALWAYS "Always visible"
 #define GEN_VISIBLE_NO_CLOTHES "Hidden by clothes"

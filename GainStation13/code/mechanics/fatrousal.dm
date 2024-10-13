@@ -20,7 +20,7 @@
 /datum/quirk/fatrousal/proc/fat_hide(var/mob/living/carbon/user)
 	if(iscarbon(quirk_holder))
 		var/mob/living/carbon/C = quirk_holder
-		return C.getArousalLoss()*35
+		return C.getArousal()*35
 
 	return FALSE
 */

@@ -14,6 +14,7 @@
 	shape = DEF_BALLS_SHAPE
 	fluid_id = /datum/reagent/consumable/semen
 	masturbation_verb = "massage"
+	can_climax				= TRUE
 	layer_index = TESTICLES_LAYER_INDEX
 
 /obj/item/organ/genital/testicles/generate_fluid()
