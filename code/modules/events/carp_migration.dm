@@ -2,9 +2,9 @@
 	name = "Carp Migration"
 	typepath = /datum/round_event/carp_migration
 	weight = 15
-	min_players = 2
-	earliest_start = 10 MINUTES
-	max_occurrences = 6
+	min_players = 5 //GS13 - tweaked player count, earlier start and max occurences, to fit lowpop better
+	earliest_start = 20 MINUTES
+	max_occurrences = 4
 	category = EVENT_CATEGORY_ENTITIES
 	description = "Summons a school of space carp."
 

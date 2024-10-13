@@ -2,7 +2,7 @@
 	name = "Spontaneous Brain Trauma"
 	typepath = /datum/round_event/brain_trauma
 	weight = 25
-	min_players = 5
+	min_players = 8 //GS13 - somewhat harmless ig
 	category = EVENT_CATEGORY_HEALTH
 	description = "A crewmember gains a random trauma."
 

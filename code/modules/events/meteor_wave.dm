@@ -7,9 +7,9 @@
 	name = "Meteor Wave: Normal"
 	typepath = /datum/round_event/meteor_wave
 	weight = 4
-	min_players = 15
-	max_occurrences = 3
-	earliest_start = 25 MINUTES
+	min_players = 16 //GS13 - tweaked all meteor waves to nerf them a bit
+	max_occurrences = 2
+	earliest_start = 40 MINUTES
 	category = EVENT_CATEGORY_SPACE
 	description = "A regular meteor wave."
 
@@ -87,8 +87,8 @@
 	typepath = /datum/round_event/meteor_wave/threatening
 	weight = 5
 	min_players = 20
-	max_occurrences = 3
-	earliest_start = 35 MINUTES
+	max_occurrences = 1
+	earliest_start = 45 MINUTES
 	description = "A meteor wave with higher chance of big meteors."
 
 /datum/round_event/meteor_wave/threatening
@@ -100,8 +100,8 @@
 	typepath = /datum/round_event/meteor_wave/catastrophic
 	weight = 7
 	min_players = 25
-	max_occurrences = 3
-	earliest_start = 45 MINUTES
+	max_occurrences = 1
+	earliest_start = 55 MINUTES
 	description = "A meteor wave that might summon a tunguska class meteor."
 
 /datum/round_event/meteor_wave/catastrophic

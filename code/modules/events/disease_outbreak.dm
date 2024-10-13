@@ -1,8 +1,8 @@
 /datum/round_event_control/disease_outbreak
 	name = "Disease Outbreak"
 	typepath = /datum/round_event/disease_outbreak
-	max_occurrences = 1
-	min_players = 3
+	max_occurrences = 3
+	min_players = 5
 	weight = 5
 	category = EVENT_CATEGORY_HEALTH
 	description = "A classic or advanced disease will infect some crewmembers."

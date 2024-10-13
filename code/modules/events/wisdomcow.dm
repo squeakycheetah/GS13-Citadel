@@ -1,7 +1,7 @@
 /datum/round_event_control/wisdomcow
 	name = "Wisdom cow"
 	typepath = /datum/round_event/wisdomcow
-	max_occurrences = 1
+	max_occurrences = 2
 	weight = 10
 	category = EVENT_CATEGORY_FRIENDLY
 	description = "A cow appears to tell you wise words."
