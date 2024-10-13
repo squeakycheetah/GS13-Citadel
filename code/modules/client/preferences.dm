@@ -2729,7 +2729,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(new_bellycolor == "#000000")
 							features["belly_color"] = pref_species.default_color
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3])
-							features["belly_color"] = sanitize_hexcolor(new_bellycolor)
+							features["belly_color"] = sanitize_hexcolor(new_bellycolor, 6)
 						else
 							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
