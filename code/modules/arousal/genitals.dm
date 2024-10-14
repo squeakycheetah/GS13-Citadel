@@ -45,8 +45,14 @@
 	linked_organ = null
 	. = ..()
 
+//GS13 Port - Make gentials actually produce "reagents"
 /obj/item/organ/genital/on_life()
-	return
+	if(QDELETED(src))
+		return
+	if(!reagents || !owner)
+		return
+
+	generate_fluid(reagents)
 
 /obj/item/organ/genital/proc/set_aroused_state(new_state,cause = "manual toggle")
 	if(!(genital_flags & GENITAL_CAN_AROUSE))

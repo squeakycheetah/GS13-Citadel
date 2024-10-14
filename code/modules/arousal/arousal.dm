@@ -348,7 +348,7 @@
 		if(!G.linked_organ)
 			to_chat(src, "<span class='warning'>Your [G.name] is unable to produce it's own fluids, it's missing the organs for it.</span>")
 			return
-	fluid_source = G.linked_organ.reagents
+		fluid_source = G.linked_organ.reagents
 	total_fluids = fluid_source.total_volume
 
 	if(mb_time && !remote) //Skip warning if this is an instant climax.
