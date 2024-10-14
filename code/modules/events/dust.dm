@@ -2,7 +2,7 @@
 	name = "Minor Space Dust"
 	typepath = /datum/round_event/space_dust
 	weight = 200
-	max_occurrences = 1000
+	max_occurrences = 15 //GS13 - it was originaly 1000 occurences, which won't work out well in our super long rounds
 	earliest_start = 0 MINUTES
 	alert_observers = FALSE
 	category = EVENT_CATEGORY_SPACE
@@ -21,7 +21,7 @@
 	typepath = /datum/round_event/sandstorm
 	weight = 5
 	max_occurrences = 1
-	min_players = 10
+	min_players = 20
 	earliest_start = 20 MINUTES
 	category = EVENT_CATEGORY_SPACE
 	description = "The station is pelted by an extreme amount of sand for several minutes."

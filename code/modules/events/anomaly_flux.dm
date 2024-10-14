@@ -1,8 +1,8 @@
 /datum/round_event_control/anomaly/anomaly_flux
 	name = "Anomaly: Hyper-Energetic Flux"
 	typepath = /datum/round_event/anomaly/anomaly_flux
-
-	max_occurrences = 5
+	min_players = 20
+	max_occurrences = 0 //GS13 - this event ends poorly 90% of the time
 	weight = 20
 	description = "This anomaly shocks and explodes."
 
