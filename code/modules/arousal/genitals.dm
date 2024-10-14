@@ -28,7 +28,7 @@
 	var/internal				= FALSE
 	var/hidden					= FALSE
 	var/colourtint				= ""
-	var/mode					= "clothes"
+	var/mode					= ""
 	var/obj/item/equipment 		//for fun stuff that goes on the gentials/maybe rings down the line
 	var/dontlist				= FALSE
 	var/nochange				= FALSE //stops people changing visablity.
@@ -107,17 +107,21 @@
 			if(owner)
 				owner.log_message("Exposed their [src]",LOG_EMOTE)
 				owner.exposed_genitals += src
+			mode = GEN_VISIBLE_ALWAYS
 		if(GEN_VISIBLE_NO_CLOTHES)
 			if(owner)
 				owner.log_message("Hid their [src] under clothes only",LOG_EMOTE)
+			mode = GEN_VISIBLE_NO_CLOTHES
 		if(GEN_VISIBLE_NO_UNDIES)
 			genital_flags |= GENITAL_UNDIES_HIDDEN
 			if(owner)
 				owner.log_message("Hid their [src] under underwear",LOG_EMOTE)
+			mode = GEN_VISIBLE_NO_UNDIES
 		if(GEN_VISIBLE_NEVER)
 			genital_flags |= GENITAL_HIDDEN
 			if(owner)
 				owner.log_message("Hid their [src] completely",LOG_EMOTE)
+			mode = GEN_VISIBLE_NEVER
 
 	if(update && owner && ishuman(owner)) //recast to use update genitals proc
 		var/mob/living/carbon/human/H = owner

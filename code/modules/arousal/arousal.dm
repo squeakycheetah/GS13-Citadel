@@ -429,7 +429,6 @@
 							else
 								to_chat(L, "<span class='userlove'>You feel your belly strain.</span>")
 
-				var/obj/item/organ/genital/penis/P = G
 				fluid_source.trans_to(L, total_fluids)
 				total_fluids = 0
 				if(!remote)
@@ -719,8 +718,8 @@
 				if(picked_organ)
 					var/mob/living/partner = pick_partner() //Get someone
 					if(partner)
+						/*GS13 Port - De we need breeding? For now disable it for inital porting
 						var/obj/item/organ/genital/penis/P = picked_organ
-						/*GS13 Port - De we need breeding?
 						if(partner.breedable == 1 && picked_organ.name == "penis")
 							var/impreg = input(src, "Would this action carry the risk of pregnancy?", "Choose a option", "Yes") as anything in list("Yes", "No")
 							if(impreg == "Yes") //If we are impregging

@@ -12,10 +12,9 @@
 		if(!G.nochange)
 			if(!G.dontlist)
 				// GS13: Fix spelling
-				dat	+= "<a href='byond://?src=[REF(src)];hide[G.name]=1'>[G.mode == "hidden" ? "[G.name] <font color='red'>(Hidden)</font>" : (G.mode == "clothes" ? "[G.name] <font color='yellow'>(Hidden by Clothes)</font>" : (G.mode == "visible" ? "[G.name] <font color='green'>(Visible)</font>" : "[G.name] <font color='green'>(Visible)</font>"))]</a><BR>"
+				dat	+= "<a href='byond://?src=[REF(src)];hide[G.name]=1'>[G.mode == GEN_VISIBLE_NEVER ? "[G.name] <font color='red'>(Hidden)</font>" : (G.mode == GEN_VISIBLE_NO_UNDIES ? "[G.name] <font color='yellow'>(Hidden by Undies)</font>" : (G.mode == GEN_VISIBLE_NO_CLOTHES ? "[G.name] <font color='yellow'>(Hidden by Clothes)</font>" : (G.mode == GEN_VISIBLE_ALWAYS ? "[G.name] <font color='green'>(Visible)</font>" : "[G.name] <font color='green'>(Visible)</font>")))]</a><BR>"
 
 	dat	+=	{"<BR><B>Contexual Options</B><BR><HR>"}
-	var/obj/item/organ/genital/penis/P = user.getorganslot("penis")
 	//Options
 	dat	+= "<a href='byond://?src=[REF(src)];masturbate=1'>Masturbate</A>"
 	dat	+=	"(Stimulate a sexual organ with your hands.)<BR>"
@@ -111,32 +110,32 @@
 
 	if(href_list["hidepenis"])
 		var/obj/item/organ/genital/penis/P = usr.getorganslot("penis")
-		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by clothes", "Always hidden")
+		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by Undies", "Hidden by clothes", "Always hidden")
 		P.toggle_visibility(picked_visibility)
 
 	if(href_list["hidevagina"])
 		var/obj/item/organ/genital/vagina/V = usr.getorganslot("vagina")
-		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by clothes", "Always hidden")
+		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by Undies", "Hidden by clothes", "Always hidden")
 		V.toggle_visibility(picked_visibility)
 
 	if(href_list["hidebreasts"])
 		var/obj/item/organ/genital/breasts/B = usr.getorganslot(ORGAN_SLOT_BREASTS)
-		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by clothes", "Always hidden")
+		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by Undies", "Hidden by clothes", "Always hidden")
 		B.toggle_visibility(picked_visibility)
 
 	if(href_list["hidebelly"])
 		var/obj/item/organ/genital/belly/E = usr.getorganslot("belly")
-		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by clothes", "Always hidden")
+		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by Undies", "Hidden by clothes", "Always hidden")
 		E.toggle_visibility(picked_visibility)
 
-	if(href_list["hideanus"])
+	if(href_list["hidebutt"])
 		var/obj/item/organ/genital/butt/A = usr.getorganslot(ORGAN_SLOT_BUTT)
-		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by clothes", "Always hidden")
+		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by Undies", "Hidden by clothes", "Always hidden")
 		A.toggle_visibility(picked_visibility)
 
 	if(href_list["hidetesticles"])
 		var/obj/item/organ/genital/testicles/T = usr.getorganslot("testicles")
-		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by clothes", "Always hidden")
+		var/picked_visibility = input(usr, "Choose visibility", "Expose/Hide genitals", "Hidden by clothes") in list("Always visible", "Hidden by Undies", "Hidden by clothes", "Always hidden")
 		T.toggle_visibility(picked_visibility)
 
 	if(href_list["masturbate"])
@@ -379,7 +378,6 @@
 		var/mob/living/partner = L
 		if(partner)
 			src << browse(null, "window=arousal") //alls fine, we can close the window now.
-			var/obj/item/organ/genital/penis/P = picked_organ
 			var/spillage = "No" //default to no, just incase player has items on to prevent climax
 			spillage = input(src, "Would your fluids spill outside?", "Choose overflowing option", "Yes") as anything in list("Yes", "No")
 			if(spillage == "Yes")
@@ -404,7 +402,6 @@
 		src << browse(null, "window=arousal") //alls fine, we can close the window now.
 		var/mob/living/partner = L
 		if(partner)
-			var/obj/item/organ/genital/penis/P = picked_organ
 			mob_climax_partner(picked_organ, partner, FALSE, FALSE, TRUE)
 		else
 			to_chat(src, "<span class='warning'>You cannot do this alone.</span>")
