@@ -1,15 +1,16 @@
 /datum/round_event_control/electrical_storm
 	name = "Electrical Storm"
 	typepath = /datum/round_event/electrical_storm
-	earliest_start = 20 MINUTES
+	earliest_start = 30 MINUTES
 	min_players = 5
 	weight = 40
+	max_occurrences = 2
 	category = EVENT_CATEGORY_ENGINEERING
 	description = "Destroys all lights in a large area."
 
 /datum/round_event/electrical_storm
 	var/lightsoutAmount	= 1
-	var/lightsoutRange	= 25
+	var/lightsoutRange	= 10
 	announce_when	= 1
 
 /datum/round_event/electrical_storm/announce(fake)
