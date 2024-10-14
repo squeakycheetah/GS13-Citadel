@@ -162,6 +162,10 @@
 	var/has_field_of_vision = FALSE
 	var/field_of_vision_type = FOV_90_DEGREES
 
+	var/time_initialized = null
+	var/mirrorcanloadappearance = FALSE
+
+
 
 	///////TYPING INDICATORS///////
 	/// Set to true if we want to show typing indicators.

@@ -183,6 +183,7 @@
 	var/hair_style
 	var/facial_hair_style
 	var/skin_tone
+	var/mirrorcanloadappearance = FALSE
 
 /obj/effect/mob_spawn/human/Initialize(mapload)
 	if(ispath(outfit))
@@ -251,6 +252,8 @@
 			W.assignment = id_job
 		W.registered_name = H.real_name
 		W.update_label()
+	if (mirrorcanloadappearance)
+		H.mirrorcanloadappearance = TRUE
 
 //Instant version - use when spawning corpses during runtime
 /obj/effect/mob_spawn/human/corpse

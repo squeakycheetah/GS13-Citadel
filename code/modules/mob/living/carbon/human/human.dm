@@ -13,6 +13,7 @@
 	add_verb(src, /mob/living/verb/subtler)
 	//initialize limbs first
 	create_bodyparts()
+	time_initialized = world.time
 
 	setup_human_dna()
 
