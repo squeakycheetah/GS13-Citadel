@@ -6,20 +6,14 @@ Space-hulk
 Lab
 Hazard
 Academy
-Spess Junk
 Fishery
-No-Moon
 Tomb
 Crypt
-Hut
-Monkey
-Bomb
 Trade Post
 Fortress
 Village
 Town
 City
-Edition
 Hive
 Complex
 Base
@@ -48,7 +42,6 @@ Office
 Object
 Fortification
 Colony
-Planet-Cracker
 Roost
 Fat Camp
 Airstrip
@@ -57,9 +50,5 @@ Garden
 Continent
 Environment
 Course
-Country
-Province
 Workspace
-Metro
 Warehouse
-Space Junk
