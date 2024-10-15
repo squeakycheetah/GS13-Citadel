@@ -8,6 +8,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/client/parent
 	//doohickeys for savefiles
 	var/path
+	var/clientckey //GS13 EDIT
 	var/vr_path
 	var/default_slot = 1				//Holder so it doesn't default to slot 1, rather the last one used
 	var/max_save_slots = 24
@@ -280,6 +281,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	if(istype(C))
 		if(!IsGuestKey(C.key))
 			load_path(C.ckey)
+			clientckey = C.ckey //GS13 EDIT
 			unlock_content = C.IsByondMember()
 			if(unlock_content)
 				max_save_slots = 32
@@ -3732,6 +3734,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		character.fatness_perma = permanent_fat
 	character.weight_gain_rate = wg_rate
 	character.weight_loss_rate = wl_rate
+	character.savekey = clientckey
+	character.ckeyslot = ckeyslot
 	// GS13 EDIT - END
 
 

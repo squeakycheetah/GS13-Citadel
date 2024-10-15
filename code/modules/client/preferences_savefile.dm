@@ -714,6 +714,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		default_slot = slot
 		WRITE_FILE(S["default_slot"] , slot)
 
+	ckeyslot = slot
 	S.cd = "/character[slot]"
 	var/needs_update = savefile_needs_update(S)
 	if(needs_update == -2)		//fatal, can't load any data
