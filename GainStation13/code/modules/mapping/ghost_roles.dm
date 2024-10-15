@@ -108,7 +108,6 @@
 	death = FALSE
 	roundstart = FALSE
 	mob_species = /datum/species/human
-	mirrorcanloadappearance = TRUE
 
 /datum/outfit/feeders_den/fanatic
 	name = "Feeder Fanatic"

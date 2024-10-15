@@ -4058,7 +4058,6 @@
 #include "hyperstation\code\game\objects\structures\sauna_oven.dm"
 #include "hyperstation\code\modules\clothing\sizeaccessories.dm"
 #include "hyperstation\code\modules\food_and_drinks\recipes\drinks_recipes.dm"
-#include "hyperstation\code\modules\mob\mob_helpers.dm"
 #include "hyperstation\code\modules\mob\living\status_indicators.dm"
 #include "hyperstation\code\modules\reagents\chemistry\reagents\drink_reagents.dm"
 #include "hyperstation\code\modules\reagents\chemistry\reagents\food_reagents.dm"
