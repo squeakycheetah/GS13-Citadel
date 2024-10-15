@@ -240,26 +240,6 @@
 	if(!. && !silent)
 		to_chat(H, "<span class='warning'>Your [name] is unable to produce it's own fluids, it's missing the organs for it.</span>")
 
-//GS13 Port
-/mob/living/proc/mob_climax()//This is just so I can test this shit without being forced to add actual content to get rid of arousal. Will be a very basic proc for a while.
-	set name = "Masturbate"
-	set category = "IC"
-	if(canbearoused && !restrained() && !stat)
-		if(mb_cd_timer <= world.time)
-			//start the cooldown even if it fails
-			mb_cd_timer = world.time + mb_cd_length
-			if(getArousal() >= ((max_arousal / 100) * 33))//33% arousal or greater required
-				src.visible_message("<span class='danger'>[src] starts masturbating!</span>", \
-								"<span class='userdanger'>You start masturbating.</span>")
-				if(do_after(src, 30, target = src))
-					src.visible_message("<span class='danger'>[src] relieves [p_them()]self!</span>", \
-								"<span class='userdanger'>You have relieved yourself.</span>")
-					SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "orgasm", /datum/mood_event/orgasm)
-					setArousal(min_arousal)
-			else
-				to_chat(src, "<span class='notice'>You aren't aroused enough for that.</span>")
-
-
 //These are various procs that we'll use later, split up for readability instead of having one, huge proc.
 //For all of these, we assume the arguments given are proper and have been checked beforehand.
 /mob/living/carbon/human/proc/mob_masturbate(obj/item/organ/genital/G, mb_time = 30) //Masturbation, keep it gender-neutral
@@ -604,7 +584,7 @@
 
 
 //Here's the main proc itself
-/mob/living/carbon/human/mob_climax(forced_climax=FALSE) //Forced is instead of the other proc, makes you cum if you have the tools for it, ignoring restraints
+/mob/living/carbon/human/mob_climax(forced_climax=FALSE, cause = "none") //Forced is instead of the other proc, makes you cum if you have the tools for it, ignoring restraints
 	if(mb_cd_timer > world.time)
 		if(!forced_climax) //Don't spam the message to the victim if forced to come too fast
 			to_chat(src, "<span class='warning'>You need to wait [DisplayTimeText((mb_cd_timer - world.time), TRUE)] before you can do that again!</span>")

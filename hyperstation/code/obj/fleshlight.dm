@@ -188,7 +188,6 @@
 			M.adjust_arousal(5)
 
 		return
-	..()
 
 /obj/item/portallight/proc/updatesleeve()
 	//get their looks and vagina colour!
