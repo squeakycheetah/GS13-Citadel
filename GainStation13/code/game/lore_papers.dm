@@ -549,3 +549,9 @@
 				</body>
 				</html>
 				"}
+
+//gs13 snack attack shuttle loan
+
+/obj/item/paper/fluff/chocoslime_research
+	name = "Stained Research Papers"
+	info = "<b>AUDIO LOG OF CHOCOLATE SLIME REPORT NO.3</b>. Despite possessing no obvious combat capabilities, the chocolate slime can feed itself to its victim, possibly rupturing its st-- mmhfph- grhm... ...(AUDIO LOG END)."
