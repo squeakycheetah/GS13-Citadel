@@ -3917,6 +3917,7 @@
 #include "GainStation13\code\datums\lavaland_ruins.dm"
 #include "GainStation13\code\datums\ruins.dm"
 #include "GainStation13\code\datums\traits.dm"
+#include "GainStation13\code\datums\achievements\fat.dm"
 #include "GainStation13\code\datums\components\fattening_door.dm"
 #include "GainStation13\code\datums\components\crafting\recipes\recipes_misc_gs.dm"
 #include "GainStation13\code\datums\diseases\advance\presets.dm"

@@ -60,6 +60,25 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/command/bridge, /area/mainten
 	perma_apply()	//Check and apply for permanent fat
 	xwg_resize()	//Apply XWG
 
+	// Handle Awards
+	if(client)
+		if(fatness > FATNESS_LEVEL_BLOB)
+			client.give_award(/datum/award/achievement/fat/blob, H)
+		if(fatness > 10000)
+			client.give_award(/datum/award/achievement/fat/milestone_one, H)
+		if(fatness > 25000)
+			client.give_award(/datum/award/achievement/fat/milestone_two, H)
+		if(fatness > 50000)
+			client.give_award(/datum/award/achievement/fat/milestone_three, H)
+		if(fatness > 100000)
+			client.give_award(/datum/award/achievement/fat/milestone_four, H)
+		if(fatness > 500000)
+			client.give_award(/datum/award/achievement/fat/milestone_five, H)
+		if(fatness > 1000000)
+			client.give_award(/datum/award/achievement/fat/milestone_six, H)
+		if(fatness > 10000000)
+			client.give_award(/datum/award/achievement/fat/milestone_seven, H)
+
 	return TRUE
 
 /mob/living/carbon/fully_heal(admin_revive)
