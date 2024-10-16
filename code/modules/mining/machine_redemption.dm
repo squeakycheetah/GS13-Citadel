@@ -46,7 +46,7 @@
 	for(var/obj/item/stock_parts/manipulator/M in component_parts)
 		ore_pickup_rate_temp = 15 * M.rating
 	for(var/obj/item/stock_parts/micro_laser/L in component_parts)
-		point_upgrade_temp = 0.65 + (0.35 * L.rating)
+		point_upgrade_temp = 0.83 + (0.17 * L.rating) //GS13 EDIT
 	avg_bin_level /= bins? bins : 1
 	ore_multiplier = STANDARD_PART_LEVEL_ORE_COEFFICIENT(avg_bin_level)
 	ore_pickup_rate = ore_pickup_rate_temp
