@@ -80,7 +80,6 @@
 	name = "Universal diet"
 	desc = "You are fine with eating just about anything normally edible, you have no strong dislikes in food. Toxic food will still hurt you, though."
 	value = 0
-	category = CATEGORY_FOOD
 	gain_text = "<span class='notice'>You feel like you can eat any food type.</span>"
 	lose_text = "<span class='notice'>You start to dislike certain food types again.</span>"
 	medical_record_text = "Patient reports no strong dietary dislikes."
