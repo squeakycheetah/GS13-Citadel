@@ -14,4 +14,5 @@
 	)
 	result = /obj/structure/disposaloutlet/industrial_feeding_tube
 	tools = list(TOOL_WELDER, TOOL_WRENCH, TOOL_SCREWDRIVER)
-	category = CAT_MISC
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISCELLANEOUS

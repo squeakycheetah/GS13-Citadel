@@ -1,6 +1,6 @@
 /**
  * Contains:
- * Industrial Feeding Tube 
+ * Industrial Feeding Tube
  */
 
 /obj/structure/disposaloutlet/industrial_feeding_tube
@@ -13,7 +13,7 @@
 	/// Is it welded down?
 	var/welded = FALSE
 	///	Who the tube is attached to
-	var/mob/living/attached 
+	var/mob/living/attached
 	/// Where the tube tries to dump it's stuff into
 	var/output_dest
 	/// It's Glogged !
@@ -54,12 +54,12 @@
 		new /obj/item/stack/sheet/plastic(loc, 5)
 		new /obj/item/pipe/binary(loc, PIPE_STRAIGHT, NORTH)
 		new /obj/item/pipe/binary(loc, PIPE_STRAIGHT, NORTH)
-			
+
 	if(contents) //Anything still glogged inside...
 		for(var/atom/movable/AM in src)
 			AM.forceMove(loc)
 	qdel(src)
-	
+
 /obj/structure/disposaloutlet/industrial_feeding_tube/Destroy()
 	if(attached)
 		attached = null
@@ -73,7 +73,7 @@
 					AM.forceMove(loc)
 					continue
 				qdel(AM)
-			
+
 	return ..()
 
 /obj/structure/disposaloutlet/industrial_feeding_tube/MouseDrop(mob/living/target)
@@ -89,8 +89,8 @@
 		attached.visible_message("<span class='warning'>[attached] is detached from [src].</span>")
 		attached = null
 		update_icon()
-		return		
-	
+		return
+
 	if(iscarbon(target))
 		var/mob/living/carbon/feedee = target
 
@@ -113,12 +113,12 @@
 				face_atom(feedee)
 				return
 		//Either we arn't attaching to vorebelly, or we arnt able to. Let's try to feed them normally!
-		if(usr != feedee) // 
+		if(usr != feedee) //
 			var/feedeePrefCheck = alert(feedee, "[usr] is attempting to shove \the [src]'s tube into your mouth! Do you want this?", "THE TUBE", "Yes!!", "No!")
 			if(feedeePrefCheck != "Yes!!")
 				to_chat(usr, "[feedee] doesnt want to be fed by \the [src]...")
 				return
-		
+
 		output_dest = feedee //Attach normally
 		attached = feedee
 
@@ -147,7 +147,7 @@
 	cut_overlays()
 
 	var/mutable_appearance/tube_overlay = mutable_appearance('GainStation13/icons/obj/feeding_tube_industrial.dmi', "tube_idle")
-	
+
 	if(pumping)
 		tube_overlay.icon_state = "tube-pump"
 	else
@@ -155,7 +155,7 @@
 			tube_overlay.icon_state = "tube-active"
 		else
 			tube_overlay.icon_state = "tube-idle"
-	
+
 	if(welded) //if we're not welded, dont show our light on.
 		add_overlay("light-[clogged ? "r" : "g"]")
 
@@ -166,7 +166,7 @@
 // called when the holder exits the outlet
 /obj/structure/disposaloutlet/industrial_feeding_tube/expel(obj/structure/disposalholder/H)
 	var/clunkVol = LAZYLEN(H.contents)
-	if(H.hasmob) //Uh oh- 
+	if(H.hasmob) //Uh oh-
 		clunkVol += 25
 	playsound(src, H.hasmob ? "clang" : "clangsmall", clamp(clunkVol, 5, H.hasmob ? 50 : 25))
 	H.active = FALSE
@@ -180,7 +180,7 @@
 			if(!pumping) //Lets start a new pump cycle if we arnt pumping. Otherwise, it'll just be added to the queue.
 				pump()
 	qdel(H)
-	
+
 /obj/structure/disposaloutlet/industrial_feeding_tube/proc/pump(repeat = TRUE, unlimited = FALSE)
 	if(clogged)
 		return
@@ -204,7 +204,7 @@
 			if(LAZYLEN(pump_stuff) && repeat)
 				pump()
 			return
-		
+
 		var/fed_something = FALSE
 		// Feed Normally
 		if(isliving(output_dest))
@@ -251,11 +251,13 @@
 					if(is_type_in_list(I, item_vore_blacklist))
 						inedible += I
 						continue
+				/*
 				if(isliving(AM))
 					var/mob/living/cutie = AM
 					if(cutie.devourable != TRUE) //Do not eat this QT...
 						inedible += cutie
 						continue
+				*/
 
 				fed_something = TRUE
 				AM.forceMove(output_dest)
@@ -272,7 +274,7 @@
 		else
 			pumping = FALSE
 			update_icon()
-		
+
 /obj/structure/disposaloutlet/industrial_feeding_tube/expel_holder(obj/structure/disposalholder/H, playsound=FALSE)
 	if(playsound)
 		playsound(src, 'sound/machines/hiss.ogg', 50, 0, 0)
@@ -292,7 +294,7 @@
 		attached = null
 		output_dest = null
 		update_icon()
-		return		
+		return
 
 /obj/structure/disposaloutlet/industrial_feeding_tube/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent != INTENT_HELP)
@@ -330,7 +332,7 @@
 				if(!found_trunk)
 					to_chat(user, "<span class='warning'>\The [src] requires a trunk underneath it in order to work!</span>")
 					return
-				
+
 				to_chat(user, "<span class='notice'>You attach \the [src] to the trunk.</span>")
 				anchored = TRUE
 
@@ -342,7 +344,7 @@
 			if(!clogged)
 				to_chat(user, "<span class='notice'>\The [src] doesnt seem to be clogged at the moment...")
 				return TRUE
-			
+
 			user.visible_message("<span class='italics'>[user] starts to pry open the maintenance hatch of \the [src], attempting to unclog it...</span>")
 			if(do_after(user, 30, TRUE, src))
 				user.visible_message("<span class='notice'>[user] unclogs \the [src]!</span>")
@@ -355,7 +357,7 @@
 		return
 	if(anchored)
 		//var/turf/T = get_turf(src)
-		if(!welded) 
+		if(!welded)
 			if(!trunk) // If we're attaching it, we need to check for the pipe we're attaching to
 				to_chat(user, "<span class='danger'>\The [src] needs to be welded to a trunk.</span>")
 				return TRUE
@@ -381,8 +383,8 @@
 				welded = TRUE
 				trunk.linked = src
 				return TRUE
-			
-		
+
+
 	else
 		playsound(src, 'sound/items/welder2.ogg', 100, 1)
 		to_chat(user, "<span class='notice'>You begin deconstructing \the [src]</span>")
@@ -393,7 +395,7 @@
 
 // Someone got stuck inside after it got clogged!
 // Lets let them force their way out
-/obj/structure/disposaloutlet/industrial_feeding_tube/container_resist(mob/living/user) 
+/obj/structure/disposaloutlet/industrial_feeding_tube/container_resist(mob/living/user)
 	if(user.stat || !clogged) //If it's not clogged, they'll be ejected soon... One way or another.
 		return
 	playsound(src, 'sound/effects/clang.ogg', 50)
@@ -407,14 +409,14 @@
 		if(!(AM in pump_stuff))
 			pump_stuff += AM
 		AM.forceMove(src)
-		
-	
+
+
 	update_icon()
 	if(loud)
 		playsound(src, 'sound/machines/warning-buzzer.ogg', 50, 1)
 
 /obj/structure/disposaloutlet/industrial_feeding_tube/proc/unclog()
-	
+
 	spew(pump_stuff)
 
 	clogged = FALSE
@@ -422,7 +424,7 @@
 
 /obj/structure/disposaloutlet/industrial_feeding_tube/proc/spew(var/list/spew_stuff, playsound = FALSE)
 	var/turf/T = get_turf(src)
-	
+
 	if(playsound)
 		playsound(src, 'sound/machines/hiss.ogg', 50, 0, 0)
 	for(var/atom/movable/AM in spew_stuff)
