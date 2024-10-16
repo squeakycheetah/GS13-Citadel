@@ -131,7 +131,7 @@
 #define GLUTTONY_BLOB "Blob"
 #define GLUTTONY_MILESTONE_ONE "Gluttony Milestone One"
 #define GLUTTONY_MILESTONE_TWO "Gluttony Milestone Two"
-#define GLUTTONY_MILESTONE_THEE "Gluttony Milestone Three"
+#define GLUTTONY_MILESTONE_THREE "Gluttony Milestone Three"
 #define GLUTTONY_MILESTONE_FOUR "Gluttony Milestone Four"
 #define GLUTTONY_MILESTONE_FIVE "Gluttony Milestone Five"
 #define GLUTTONY_MILESTONE_SIX "Gluttony Milestone Six"
