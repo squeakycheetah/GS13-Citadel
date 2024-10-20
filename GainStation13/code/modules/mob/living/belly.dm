@@ -9,6 +9,7 @@
 	size 					= 0
 	var/statuscheck			= FALSE
 	shape					= "belly"
+	genital_flags 			= UPDATE_OWNER_APPEARANCE
 	masturbation_verb 		= "massage"
 	var/sent_full_message	= TRUE //defaults to 1 since they're full to start
 	var/inflatable			= FALSE //For inflation connoisseurs
