@@ -27,7 +27,22 @@
 	..()
 
 /obj/item/organ/genital/belly/update_appearance()
+	//GS13 - Port Stuffed states
+	// Default settings
 	icon_state = "belly_[shape]_[size]"
+	icon = 'hyperstation/icons/obj/genitals/belly.dmi'
+
+	// Change belly sprite and size based on current fullness
+	switch(owner.fullness)
+		if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
+			icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
+		if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
+			icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
+			icon_state = "belly_[shape]_[size+1]"
+		if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
+			icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
+			icon_state = "belly_[shape]_[size+2]"
+
 	if(owner)
 		if(owner.dna.species.use_skintones && owner.dna.features["genitals_use_skintone"])
 			if(ishuman(owner)) // Check before recasting type, although someone fucked up if you're not human AND have use_skintones somehow...
