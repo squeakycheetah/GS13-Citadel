@@ -66,7 +66,7 @@
 
 		if(mob_size == MOB_SIZE_LARGE)
 			cuff_icon += "_[caste]"
-			dmi_file = 'icons/mob/alienqueen.dmi'
+			dmi_file = 'hyperstation/icons/mobs/alienqueen.dmi' //GS13 - moving over Hyper sprites
 
 		var/mutable_appearance/cuffs = mutable_appearance(dmi_file, cuff_icon, -HANDCUFF_LAYER)
 		cuffs.color = handcuffed.color
