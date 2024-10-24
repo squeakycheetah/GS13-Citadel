@@ -296,11 +296,10 @@
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_HEAD)
 			var/datum/species/S
+			S = dna.species
 			if(ishuman(src))
 				var/mob/living/carbon/human/H = src
-				S = dna.species
-
-				if(HAS_TRAIT(src, TRAIT_DISTANT)) //No mood buff since you're not really liking it.
+				if(HAS_TRAIT(H, TRAIT_DISTANT)) //No mood buff since you're not really liking it.
 					M.visible_message("<span class='notice'>[M] gives [H] a pat on the head to make [p_them()] feel better! They seem annoyed...</span>", \
 						"<span class='warning'>You give [H] a pat on the head to make [p_them()] feel better! They seem annoyed as they're now glaring towards you...</span>")
 					H.adjustArousal(-5) //Why are you touching me?
@@ -315,12 +314,12 @@
 				else if(HAS_TRAIT(H, TRAIT_HEADPAT_SLUT))
 					M.visible_message("<span class='notice'>[M] gives [H] a pat on the head to make [p_them()] feel better! They seem incredibly pleased!</span>", \
 								"<span class='notice'>You give [H] a pat on the head to make [p_them()] feel better! They seem to like it way too much</span>")
-					SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "lewd_headpat", /datum/mood_event/lewd_headpat)
+					SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "lewd_headpat", /datum/mood_event/lewd_headpat)
 					H.adjustArousal(5) //Headpats are hot af
 				else
 					M.visible_message("<span class='notice'>[M] gives [H] a pat on the head to make [p_them()] feel better!</span>", \
 							"<span class='notice'>You give [H] a pat on the head to make [p_them()] feel better!</span>")
-					SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "headpat", /datum/mood_event/headpat)
+					SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "headpat", /datum/mood_event/headpat)
 
 			friendly_check = TRUE
 			if(!(HAS_TRAIT(src, TRAIT_DISTANT)))
