@@ -289,6 +289,13 @@
 #define TRAIT_WATER_SPONGE 		"water_sponge"
 #define TRAIT_FATROUSAL         "fatrousal"
 
+//GS13 Port
+#define TRAIT_HEADPAT_SLUT		"headpat_slut"
+#define TRAIT_NEVER_CLONE       "donotclone"
+#define TRAIT_HEAT				"heat"
+#define TRAIT_DISTANT			"headpat_hater"
+#define TRAIT_CUM_PLUS			"cum_plus"
+
 // mobility flag traits
 // IN THE FUTURE, IT WOULD BE NICE TO DO SOMETHING SIMILAR TO https://github.com/tgstation/tgstation/pull/48923/files (ofcourse not nearly the same because I have my.. thoughts on it)
 // BUT FOR NOW, THESE ARE HOOKED TO DO update_mobility() VIA COMSIG IN living_mobility.dm

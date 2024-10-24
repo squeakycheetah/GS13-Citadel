@@ -162,6 +162,7 @@
 	gain_text = "<span class='notice'>You feel like munching on a can of soda.</span>"
 	lose_text = "<span class='notice'>You no longer feel like you should be eating trash.</span>"
 	mob_trait = TRAIT_TRASHCAN
+	medical_record_text = "Patient has been observed eating inedible garbage."
 
 // GS13 EDIT START
 /datum/quirk/trashcan/add()
@@ -188,3 +189,59 @@
 
 /datum/quirk/dullahan/post_add()
 	quirk_holder.AddComponent(/datum/component/dullahan)
+
+//GS13 Port
+/datum/quirk/inheat
+	name = "In Heat"
+	desc = "Your system burns with the desire to be bred, your body will betray you and alert others' to your desire when examining you. Satisfying your lust will make you happy, but ignoring it may cause you to become sad and needy."
+	value = 0
+	mob_trait = TRAIT_HEAT
+	gain_text = "<span class='notice'>You body burns with the desire to be bred.</span>"
+	lose_text = "<span class='notice'>You feel more in control of your body and thoughts.</span>"
+
+/datum/quirk/headpat_slut
+	name = "Headpat Slut"
+	desc = "You like headpats, alot, maybe even a little bit too much. Headpats give you a bigger mood boost and cause arousal"
+	mob_trait = TRAIT_HEADPAT_SLUT
+	value = 0
+	medical_record_text = "Patient seems overly affectionate."
+
+/datum/quirk/headpat_hater
+	name = "Distant"
+	desc = "You don't seem to show much care for being touched. Whether it's because you're reserved or due to self control, you won't wag your tail outside of your own control should you possess one."
+	mob_trait = TRAIT_DISTANT
+	value = 0
+	medical_record_text = "Patient cares little with or dislikes being touched."
+
+/datum/quirk/universal_diet
+	name = "Universal diet"
+	desc = "You are fine with eating just about anything normally edible, you have no strong dislikes in food. Toxic food will still hurt you, though."
+	value = 0
+	gain_text = "<span class='notice'>You feel like you can eat any food type.</span>"
+	lose_text = "<span class='notice'>You start to dislike certain food types again.</span>"
+	medical_record_text = "Patient reports no strong dietary dislikes."
+
+/datum/quirk/universal_diet/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/datum/species/species = H.dna.species
+	species.disliked_food = null
+
+/datum/quirk/universal_diet/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(H)
+		var/datum/species/species = H.dna.species
+		species.disliked_food = initial(species.disliked_food)
+
+/datum/quirk/fatness_liker //GS13
+	name = "Fat Affinity"
+	desc = "You like being fat, alot, maybe even a little bit too much. Being fat gives you a bigger mood boost."
+	mob_trait = TRAIT_FAT_GOOD
+	value = 0
+	medical_record_text = "Patient seems overly content with gaining weight."
+
+/datum/quirk/fatness_hater //GS13
+	name = "Fat Aversion"
+	desc = "You dislike being fat. Being fat brings your mood down, alot."
+	mob_trait = TRAIT_FAT_BAD
+	value = 0
+	medical_record_text = "Patient seems distressed by gaining weight."

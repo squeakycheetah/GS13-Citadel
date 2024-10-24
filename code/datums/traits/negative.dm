@@ -464,6 +464,15 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>Your mind finally feels calm.</span>"
 	medical_record_text = "Patient's mind is in a vulnerable state, and cannot recover from traumatic events."
 
+//GS13 Port
+//Port from Shadow
+/datum/quirk/donotclone
+	name = "DNC"
+	desc = "You have filed a Do Not Clone order, stating that you do not wish to be cloned. You can still be revived by other means."
+	value = -2
+	mob_trait = TRAIT_NEVER_CLONE
+	medical_record_text = "Patient has a DNC (Do not clone) order on file, and cannot be cloned as a result."
+
 /datum/quirk/blindness
 	name = "Blind"
 	desc = "You are completely blind, nothing can counteract this."

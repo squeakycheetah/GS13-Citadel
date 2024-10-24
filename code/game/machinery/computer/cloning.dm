@@ -413,6 +413,11 @@
 	if(!can_scan(dna, mob_occupant, FALSE, has_bank_account))
 		return
 
+	if(HAS_TRAIT(mob_occupant, TRAIT_NEVER_CLONE))
+		scantemp = "<font class='bad'>Subject has an active DNC record on file. Unable to clone.</font>"
+		playsound(src, 'sound/machines/terminal_alert.ogg', 50, 0)
+		return
+
 	var/datum/data/record/R = new()
 	if(dna.species)
 		// We store the instance rather than the path, because some
