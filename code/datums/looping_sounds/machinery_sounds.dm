@@ -54,7 +54,7 @@
 	mid_sounds = list('sound/machines/fryer/deep_fryer_1.ogg' = 1, 'sound/machines/fryer/deep_fryer_2.ogg' = 1)
 	mid_length = 2
 	end_sound = 'sound/machines/fryer/deep_fryer_emerge.ogg'
-	volume = 15
+	volume = 5
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -63,13 +63,6 @@
 	mid_sounds = list('sound/machines/grill/grillsizzle.ogg' = 1)
 	mid_length = 18
 	volume = 50
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/datum/looping_sound/deep_fryer
-	mid_length = 2
-	mid_sounds = list('sound/machines/fryer/deep_fryer_1.ogg' = 1, 'sound/machines/fryer/deep_fryer_2.ogg' = 1)
-	volume = 30
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

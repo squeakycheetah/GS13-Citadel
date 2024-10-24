@@ -142,7 +142,6 @@
 	reagent_flags = OPENCONTAINER
 	spillable = TRUE
 	container_HP = 5
-
 	pickup_sound = 'sound/items/handling/cardboardbox_pickup.ogg'
 	drop_sound = 'sound/items/handling/cardboardbox_drop.ogg'
 
@@ -150,7 +149,7 @@
 	name = "Small Gulp Cup"
 	desc = "A paper cup. It can hold up to 50 units. It's not very strong."
 	icon_state = "small"
-	materials = list(MAT_PLASTIC=200)
+	custom_materials = list(/datum/material/plastic=200)
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/reagent_containers/food/drinks/flask/paper_cup/medium
@@ -158,7 +157,7 @@
 	desc = "It's a paper cup, but you wouldn't call it 'medium' though. It can hold up to 75 units. It's not very strong."
 	icon_state = "medium"
 	volume = 75
-	materials = list(MAT_PLASTIC=300)
+	custom_materials = list(/datum/material/plastic=300)
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/reagent_containers/food/drinks/flask/paper_cup/big
@@ -166,7 +165,7 @@
 	desc = "A huge paper cup, a normal person would struggle to drink it all in one sitting. It can hold up to 120 units. It's not very strong."
 	icon_state = "big"
 	volume = 120
-	materials = list(MAT_PLASTIC=500)
+	custom_materials = list(/datum/material/plastic=500)
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/reagent_containers/food/drinks/flask/paper_cup/extra_big
@@ -174,7 +173,7 @@
 	desc = "A comically large paper cup. It can hold up to 160 units. It's not very strong."
 	icon_state = "extra_big"
 	volume = 160
-	materials = list(MAT_PLASTIC=600)
+	custom_materials = list(/datum/material/plastic=600)
 	w_class = WEIGHT_CLASS_BULKY
 
 /obj/item/reagent_containers/food/drinks/flask/paper_cup/super_extra_big
@@ -182,5 +181,5 @@
 	desc = "Its called a paper 'cup', but it looks more like an oversized bucket to you. It can hold up to 250 units. It's not very strong."
 	icon_state = "super_extra_big"
 	volume = 250
-	materials = list(MAT_PLASTIC=1000)
+	custom_materials = list(/datum/material/plastic=1000)
 	w_class = WEIGHT_CLASS_HUGE
