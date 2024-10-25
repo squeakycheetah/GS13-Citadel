@@ -93,6 +93,9 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/command/bridge, /area/mainten
 		return FALSE
 
 	switch(type_of_fattening)
+		if(FATTENING_TYPE_ALMIGHTY)
+			return TRUE
+
 		if(FATTENING_TYPE_ITEM)
 			if(!client?.prefs?.weight_gain_items)
 				return FALSE

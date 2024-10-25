@@ -1335,6 +1335,12 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		ADMIN_PUNISHMENT_FRY,
 		ADMIN_PUNISHMENT_CRACK,
 		ADMIN_PUNISHMENT_BLEED,
+		//GS13 EDIT START
+		ADMIN_PUNISHMENT_BONK,
+		ADMIN_PUNISHMENT_BREADIFY,
+		ADMIN_PUNISHMENT_FATTEN,
+		ADMIN_PUNISHMENT_FATTEN_EVIL,
+		//GS13 EDIT END
 		ADMIN_PUNISHMENT_SCARIFY,
 		ADMIN_PUNISHMENT_CLUWNE)
 
@@ -1507,6 +1513,35 @@ Traitors and the like can also be revived with the previous role mostly intact.
 				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>")
 				return
 			target.cluwneify()
+		// GS13 EDIT START
+		if(ADMIN_PUNISHMENT_BONK)
+			playsound(target, 'hyperstation/sound/misc/bonk.ogg', 100, 1)
+			target.AddElement(/datum/element/squish, 60 SECONDS)
+			to_chat(target, "<span class='warning big'>Bonk.</span>")
+		if(ADMIN_PUNISHMENT_BREADIFY)
+			#define BREADIFY_TIME (5 SECONDS)
+			var/mutable_appearance/bread_appearance = mutable_appearance('icons/obj/food/burgerbread.dmi', "bread")
+			var/mutable_appearance/transform_scanline = mutable_appearance('icons/effects/effects.dmi', "transform_effect")
+			target.transformation_animation(bread_appearance, time = BREADIFY_TIME, transform_overlay=transform_scanline, reset_after=TRUE)
+			addtimer(CALLBACK(src, PROC_REF(breadify), target), BREADIFY_TIME)
+			#undef BREADIFY_TIME
+		if(ADMIN_PUNISHMENT_FATTEN)
+			var/mob/living/carbon/human/human_target = target
+			if(!istype(human_target))
+				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>")
+				return
+			human_target.adjust_fatness(10000, FATTENING_TYPE_ALMIGHTY, TRUE) // MR ELECTRIC, SEND HIM TO THE ADMIN JAIL AND HAVE HIM FATTENED!
+			to_chat(target, span_boldwarning("You suddenly feel incredibly fat."))
+		if(ADMIN_PUNISHMENT_FATTEN_EVIL)
+			var/mob/living/carbon/human/human_target = target
+			if(!istype(human_target))
+				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>")
+				return
+			if(!human_target?.client?.prefs?.weight_gain_permanent)
+				return FALSE
+			human_target.fatness_perma += 10000 // Good luck getting this off, fatass.
+			to_chat(target, span_boldwarning("You suddenly feel incredibly fat."))
+		// GS13 EDIT END
 
 	punish_log(target, punishment)
 

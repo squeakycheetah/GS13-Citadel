@@ -3904,6 +3904,7 @@
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
 #include "GainStation13\code\__HELPERS\global_lists.dm"
+#include "GainStation13\code\__HELPERS\transformation.dm"
 #include "GainStation13\code\clothing\accessory.dm"
 #include "GainStation13\code\clothing\backpacks.dm"
 #include "GainStation13\code\clothing\calorite_collar.dm"
