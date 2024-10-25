@@ -588,5 +588,6 @@ GLOBAL_LIST_INIT(pda_reskins, list(
 #define FATTENING_TYPE_NANITES "nanites"
 #define FATTENING_TYPE_RADIATIONS "radiations"
 #define FATTENING_TYPE_WEIGHT_LOSS "weight_loss"
+#define FATTENING_TYPE_ALMIGHTY "almighty" //This ignores prefs, please only use this for smites and other admin controlled instances.
 
 #define FATNESS_TO_WEIGHT_RATIO 0.25
