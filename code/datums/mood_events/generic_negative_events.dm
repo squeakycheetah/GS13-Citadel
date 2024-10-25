@@ -335,9 +335,3 @@
 	description = "<span class='warning'>Those darn savages!</span>\n"
 	mood_change = -5
 	timeout = 2 MINUTES
-
-//GS13 Port
-/datum/mood_event/lewd_headpat
-	description = "<span class='nicegreen'>I love headpats so much!</span>\n"
-	mood_change = 3
-	timeout = 2 MINUTES
