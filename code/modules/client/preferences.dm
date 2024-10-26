@@ -1383,6 +1383,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<h2>Weight prefs</h2>"
 					dat += "<b>Maximum Weight:</b><a href='?_src_=prefs;preference=max_fatness'>[max_weight == FALSE ? "None" : max_weight]</a><BR>"
 					dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Show that you want to be confronted:</b><a href='?_src_=prefs;preference=trouble_seeker'>[trouble_seeker == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Bot Feeding:</b><a href='?_src_=prefs;preference=bot_feeding'>[bot_feeding == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Blueberry Inflation:</b><a href='?_src_=prefs;preference=blueberry_inflation'>[blueberry_inflation == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
@@ -3401,6 +3402,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_permanent = !weight_gain_permanent
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
+				if("trouble_seeker")
+					trouble_seeker = !trouble_seeker
 				if("bot_feeding")
 					bot_feeding = !bot_feeding
 				if("stuckage")

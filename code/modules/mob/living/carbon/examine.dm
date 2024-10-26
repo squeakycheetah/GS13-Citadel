@@ -172,6 +172,8 @@
 	//GS13 EDIT START
 	if(client?.prefs?.noncon_weight_gain)
 		msg += "<span class='purple'><b>Non-con fattening is allowed</b></span>\n"
+	if(client?.prefs?.trouble_seeker)
+		msg += "<span class='purple'><b>[t_He] seems to want to be confronted.</b></span>\n"
 	//GS13 EDIT END
 
 	var/trait_exam = common_trait_examine()

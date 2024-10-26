@@ -57,6 +57,8 @@
 
 	///Does the person wish to be involved with non-con weight gain events?
 	var/noncon_weight_gain = FALSE
+	///Does the person want to get into confrontation?
+	var/trouble_seeker = FALSE
 
 	//Does the person wish to be fed from bots?
 	var/bot_feeding = FALSE

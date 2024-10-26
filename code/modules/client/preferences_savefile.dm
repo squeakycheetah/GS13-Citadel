@@ -933,6 +933,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["wg_rate"] >> wg_rate
 	S["wl_rate"] >> wl_rate
 	S["noncon_weight_gain"] >> noncon_weight_gain
+	S["trouble_seeker"] >> trouble_seeker
 	S["bot_feeding"] >> bot_feeding
 	S["max_weight"] >> max_weight
 	S["helplessness_no_movement"] >> helplessness_no_movement
@@ -1216,6 +1217,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["wg_rate"], wg_rate)
 	WRITE_FILE(S["wl_rate"], wl_rate)
 	WRITE_FILE(S["noncon_weight_gain"], noncon_weight_gain)
+	WRITE_FILE(S["trouble_seeker"], trouble_seeker)
 	WRITE_FILE(S["bot_feeding"], bot_feeding)
 	WRITE_FILE(S["max_weight"], max_weight)
 	WRITE_FILE(S["helplessness_no_movement"], helplessness_no_movement)
