@@ -125,17 +125,3 @@
 	mob_trait = TRAIT_DISTANT
 	value = 0
 	medical_record_text = "Patient cares little with or dislikes being touched."
-
-/datum/quirk/fatness_liker //GS13
-	name = "Fat Affinity"
-	desc = "You like being fat, alot, maybe even a little bit too much. Being fat gives you a bigger mood boost."
-	mob_trait = TRAIT_FAT_GOOD
-	value = 0
-	medical_record_text = "Patient seems overly content with gaining weight."
-
-/datum/quirk/fatness_hater //GS13
-	name = "Fat Aversion"
-	desc = "You dislike being fat. Being fat brings your mood down, alot."
-	mob_trait = TRAIT_FAT_BAD
-	value = 0
-	medical_record_text = "Patient seems distressed by gaining weight."
