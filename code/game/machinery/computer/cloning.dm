@@ -410,6 +410,7 @@
 	if(isbrain(mob_occupant))
 		dna = B.stored_dna
 
+	//GS13 Port - DNC
 	if(HAS_TRAIT(mob_occupant, TRAIT_NEVER_CLONE))
 		scantemp = "Subject has an active DNC record on file. Unable to clone."
 		playsound(src, 'sound/machines/terminal_alert.ogg', 50, 0)

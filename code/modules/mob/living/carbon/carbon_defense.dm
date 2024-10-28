@@ -299,6 +299,7 @@
 			S = dna.species
 			if(ishuman(src))
 				var/mob/living/carbon/human/H = src
+				//GS13 Port - Headpat slut stuff
 				if(HAS_TRAIT(H, TRAIT_DISTANT)) //No mood buff since you're not really liking it.
 					M.visible_message("<span class='notice'>[M] gives [H] a pat on the head to make [p_them()] feel better! They seem annoyed...</span>", \
 						"<span class='warning'>You give [H] a pat on the head to make [p_them()] feel better! They seem annoyed as they're now glaring towards you...</span>")
