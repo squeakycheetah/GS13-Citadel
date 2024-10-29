@@ -3720,6 +3720,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	if(character.custom_body_size)
 		character.resize(character.custom_body_size)
 
+	//GS13 Port - Add back arousal
+	if(NOAROUSAL in pref_species.species_traits)
+		character.canbearoused = FALSE
+	else
+		character.canbearoused = arousable
+
 	//speech stuff
 	if(custom_tongue != "default")
 		var/new_tongue = GLOB.roundstart_tongues[custom_tongue]

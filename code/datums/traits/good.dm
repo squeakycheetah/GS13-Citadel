@@ -190,7 +190,7 @@
 	// Get targets
 	var/obj/item/organ/eyes/old_eyes = quirk_holder.getorganslot(ORGAN_SLOT_EYES)
 	var/obj/item/organ/eyes/robotic/glow/new_eyes = new
-	
+
 	// Replace eyes
 	qdel(old_eyes)
 	new_eyes.Insert(quirk_holder)

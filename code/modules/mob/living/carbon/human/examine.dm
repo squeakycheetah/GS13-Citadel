@@ -107,6 +107,11 @@
 	if(wear_id)
 		. += "[t_He] [t_is] wearing [wear_id.get_examine_string(user)]."
 
+	//GS13 Port
+	//Heat Detection
+	//if(breedable)
+	if(HAS_TRAIT(src, TRAIT_HEAT))
+		. += "<span class='love'>[t_He] [t_is] currently in heat.</span>"
 	//Status effects
 	var/effects_exam = status_effect_examines()
 	if(!isnull(effects_exam))

@@ -162,6 +162,7 @@
 	gain_text = "<span class='notice'>You feel like munching on a can of soda.</span>"
 	lose_text = "<span class='notice'>You no longer feel like you should be eating trash.</span>"
 	mob_trait = TRAIT_TRASHCAN
+	medical_record_text = "Patient has been observed eating inedible garbage."
 
 // GS13 EDIT START
 /datum/quirk/trashcan/add()

@@ -94,3 +94,34 @@
 	if(H)
 		var/datum/species/species = H.dna.species
 		species.disliked_food = initial(species.disliked_food)
+
+//GS13 Port
+//Port from Shadow
+/datum/quirk/donotclone
+	name = "DNC"
+	desc = "You have filed a Do Not Clone order, stating that you do not wish to be cloned. You can still be revived by other means."
+	value = -2
+	mob_trait = TRAIT_NEVER_CLONE
+	medical_record_text = "Patient has a DNC (Do not clone) order on file, and cannot be cloned as a result."
+
+/datum/quirk/inheat
+	name = "In Heat"
+	desc = "Your system burns with the desire to be bred, your body will betray you and alert others' to your desire when examining you. Satisfying your lust will make you happy, but ignoring it may cause you to become sad and needy."
+	value = 0
+	mob_trait = TRAIT_HEAT
+	gain_text = "<span class='notice'>You body burns with the desire to be bred.</span>"
+	lose_text = "<span class='notice'>You feel more in control of your body and thoughts.</span>"
+
+/datum/quirk/headpat_slut
+	name = "Headpat Slut"
+	desc = "You like headpats, alot, maybe even a little bit too much. Headpats give you a bigger mood boost and cause arousal"
+	mob_trait = TRAIT_HEADPAT_SLUT
+	value = 0
+	medical_record_text = "Patient seems overly affectionate."
+
+/datum/quirk/headpat_hater
+	name = "Distant"
+	desc = "You don't seem to show much care for being touched. Whether it's because you're reserved or due to self control, you won't wag your tail outside of your own control should you possess one."
+	mob_trait = TRAIT_DISTANT
+	value = 0
+	medical_record_text = "Patient cares little with or dislikes being touched."
