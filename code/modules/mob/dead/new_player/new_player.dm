@@ -493,7 +493,7 @@
 		if(!arrivals_docked)
 			var/atom/movable/screen/splash/Spl = new(character.client, TRUE)
 			Spl.Fade(TRUE)
-			character.playsound_local(get_turf(character), 'sound/voice/ApproachingTG.ogg', 25)
+			character.playsound_local(get_turf(character), 'GainStation13/sound/voice/Approaching.ogg', 25) //GS13 - "now approaching, general station 13"
 
 	job.standard_assign_skills(character.mind)
 

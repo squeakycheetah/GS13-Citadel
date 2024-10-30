@@ -754,3 +754,10 @@
 	path = /obj/item/clothing/under/rank/civilian/polychromic_clown
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
 	restricted_roles = list("Clown")
+
+
+//GS13 stuff
+
+/datum/gear/uniform/modularjumpsuit
+	name = "Modular Jumpsuit (gray)"
+	path = /obj/item/clothing/under/color/grey/modular
