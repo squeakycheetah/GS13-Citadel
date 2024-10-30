@@ -6,8 +6,8 @@
 	description = "A horde of mice arrives, and perhaps even the Rat King themselves."
 
 /datum/round_event/mice_migration
-	var/minimum_mice = 5
-	var/maximum_mice = 15
+	var/minimum_mice = 3
+	var/maximum_mice = 8
 
 /datum/round_event/mice_migration/announce(fake)
 	var/cause = pick("space-winter", "budget-cuts", "Ragnarok",

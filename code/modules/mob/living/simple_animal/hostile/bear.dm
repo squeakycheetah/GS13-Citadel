@@ -27,7 +27,7 @@
 	spacewalk = TRUE
 	var/armored = FALSE
 
-	obj_damage = 60
+	obj_damage = 20
 	melee_damage_lower = 15 // i know it's like half what it used to be, but bears cause bleeding like crazy now so it works out
 	melee_damage_upper = 15
 	wound_bonus = -5
