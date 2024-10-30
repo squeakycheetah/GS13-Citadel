@@ -1,12 +1,27 @@
 //GS13 - markings, ported or our own (preferably mark where you took them from)
+//I don't know why these need both mam_ears and human variants, because some other ear datums just work fine without that??
+//It didn't want to show up otherwise so I'll keep it as that
 
-/datum/sprite_accessory/mam_ears/dragon //ported from Virgo
+/datum/sprite_accessory/ears/mam_ears/dragon //ported from Virgo
 	name = "Dragon"
 	icon = 'GainStation13/icons/mob/markings/mam_ears.dmi'
 	icon_state = "dragon"
 
-/datum/sprite_accessory/mam_ears/avali
-	name = "Avali"
+/datum/sprite_accessory/ears/human/dragon //ported from Virgo
+	name = "Dragon"
 	icon = 'GainStation13/icons/mob/markings/mam_ears.dmi'
-	icon_state = "avali"
+	icon_state = "dragon"
 
+/datum/sprite_accessory/ears/mam_ears/avali
+	name = "Avali"
+	icon_state = "avali"
+	icon = 'GainStation13/icons/mob/markings/mam_ears.dmi'
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/ears/human/avali
+	name = "Avali"
+	icon_state = "avali"
+	icon = 'GainStation13/icons/mob/markings/mam_ears.dmi'
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
