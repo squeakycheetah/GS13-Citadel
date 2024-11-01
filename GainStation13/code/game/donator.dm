@@ -137,3 +137,15 @@
 	desc = "Vulpine sluts only."
 	icon_state = "eyepatch_white"
 	item_state = "eyepatch_white"
+
+/datum/gear/metis_plush
+	name = "Metis Plush"
+	category = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
+	path = /obj/item/toy/plush/gs13/metis
+	ckeywhitelist = list("paraillegal")
+
+/datum/gear/wheelys
+	name = "Wheely-Heels"
+	category = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
+	path = /obj/item/clothing/shoes/wheelys
+	ckeywhitelist = list("colorlessspy")

@@ -1,5 +1,5 @@
 /obj/item/toy/plush/gs13
-		icon = 'icons/obj/plushes.dmi'
+		icon = 'GainStation13/icons/obj/plushes.dmi'
 
 /obj/item/toy/plush/gs13/metha
 	name = "Magical Captain plushie"
@@ -71,3 +71,8 @@
 	desc = "A plush of a chunky greaseball."
 	icon_state = "delta"
 	attack_verb = list("squished", "hugged", "smushed")
+
+/obj/item/toy/plush/gs13/metis
+	desc = "A plush of black-furred nerdy goat."
+	icon_state = "metis"
+	attack_verb = list("squished", "goated", "baah'd")
