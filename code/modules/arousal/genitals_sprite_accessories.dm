@@ -146,4 +146,9 @@
 
 /datum/sprite_accessory/belly/belly
 	icon_state = "belly"
-	name = "belly"
+	name = "Soft Belly"
+
+/datum/sprite_accessory/belly/roundbelly
+	icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
+	icon_state = "round"
+	name = "Round Belly"
