@@ -40,25 +40,25 @@ Will print: "/mob/living/carbon/human/death" (you can optionally embed it in a s
 #define BODYPARTS_LAYER			31		//Initially "AUGMENTS", this was repurposed to be a catch-all bodyparts flag
 #define MARKING_LAYER			30		//Matrixed body markings because clashing with snouts?
 #define BODY_ADJ_LAYER			29		//certain mutantrace features (snout, body markings) that must appear above the body parts
-#define GENITALS_FRONT_LAYER	28		//Draws some genitalia above clothes and the TAUR body if need be.
-#define BODY_LAYER				27		//underwear, undershirts, socks, eyes, lips(makeup)
-#define BODY_ADJ_UPPER_LAYER	26
-#define FRONT_MUTATIONS_LAYER	25		//mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
-#define DAMAGE_LAYER			24		//damage indicators (cuts and burns)
-#define UNIFORM_LAYER			23
-#define ID_LAYER				22
-#define HANDS_PART_LAYER		21
-#define SHOES_LAYER				20
-#define GLOVES_LAYER			19
-#define EARS_LAYER				18
-#define GENITALS_UNDER_LAYER 	17
-#define SUIT_LAYER				16
-#define GENITALS_EXPOSED_LAYER	15
-#define GLASSES_LAYER			14
-#define BELT_LAYER				13		//Possible make this an overlay of somethign required to wear a belt?
-#define SUIT_STORE_LAYER		12
-#define NECK_LAYER				11
-#define BACK_LAYER				10
+#define BODY_LAYER				28		//underwear, undershirts, socks, eyes, lips(makeup)
+#define BODY_ADJ_UPPER_LAYER	27
+#define FRONT_MUTATIONS_LAYER	26		//mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
+#define DAMAGE_LAYER			25		//damage indicators (cuts and burns)
+#define UNIFORM_LAYER			24
+#define ID_LAYER				23
+#define HANDS_PART_LAYER		22
+#define SHOES_LAYER				21
+#define GLOVES_LAYER			20
+#define EARS_LAYER				19
+#define GENITALS_UNDER_LAYER 	18
+#define SUIT_LAYER				17
+#define GLASSES_LAYER			16
+#define BELT_LAYER				15		//Possible make this an overlay of somethign required to wear a belt?
+#define SUIT_STORE_LAYER		14
+#define NECK_LAYER				13
+#define BACK_LAYER				12
+#define GENITALS_EXPOSED_LAYER	11
+#define GENITALS_FRONT_LAYER	10		//Draws some genitalia above clothes and the TAUR body if need be.
 #define HAIR_LAYER				9		//TODO: make part of head layer?
 #define HORNS_LAYER				8
 #define FACEMASK_LAYER			7
