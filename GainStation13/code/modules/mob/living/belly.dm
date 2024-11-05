@@ -30,16 +30,16 @@
 /obj/item/organ/genital/belly/update_appearance()
 	//GS13 - Port Stuffed states
 	// Default settings
-	var/datum/sprite_accessory/S = GLOB.belly_shapes_list[shape]
-	var/icon_shape_state = S ? S.icon_state : "belly"
+	var/datum/sprite_accessory/S = GLOB.belly_shapes_list[shape] //GS13 - get belly shape
+	var/icon_shape_state = S ? S.icon_state : "belly" //fallback to default belly in case we cant find a shape
 	icon_state = "belly_[icon_shape_state]_[size]"
-	var/icon_shape = S ? S.icon : "hyperstation/icons/obj/genitals/belly.dmi"
+	var/icon_shape = S ? S.icon : "hyperstation/icons/obj/genitals/belly.dmi" //fallback to default belly in case we cant find a shape
 	icon = icon_shape
 
 	// Change belly sprite and size based on current fullness
 	switch(owner.fullness)
 		if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
-			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
+			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi' //We use round belly to represent stuffedness
 		if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
 			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
 			icon_state = "belly_[icon_shape_state]_[size+1]"
