@@ -26,14 +26,14 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
-/datum/sprite_accessory/ears/human/fennec
+/datum/sprite_accessory/ears/human/fennec_tall
 	name = "Fennec (Tall)"
 	icon = 'GainStation13/icons/mob/32x64_mam_ears.dmi'
 	icon_state = "fennectall"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
-/datum/sprite_accessory/ears/mam_ears/fennec
+/datum/sprite_accessory/ears/mam_ears/fennec_tall
 	name = "Fennec (Tall)"
 	icon = 'GainStation13/icons/mob/32x64_mam_ears.dmi'
 	icon_state = "fennectall"
