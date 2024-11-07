@@ -70,6 +70,8 @@
 #define BELLY_SIZE_DEF	1
 #define BELLY_SIZE_MAX	10
 
+#define DEF_BELLY_SHAPE "Soft Belly" //GS13 - More belly types
+
 //GS13 Port - Add back Arousal
 #define AROUSAL_MINIMUM_DEFAULT 	0
 #define AROUSAL_MAXIMUM_DEFAULT 	100
