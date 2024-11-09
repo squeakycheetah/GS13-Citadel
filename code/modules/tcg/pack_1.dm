@@ -178,7 +178,7 @@
 
 /datum/tcg_card/pack_1/ai
 	name = "AI"
-	desc = "The latest generation of NT's top secret artificial intelligence project this time with actual human brains in a jar! Don't tell the press though."
+	desc = "The latest generation of GT's top secret artificial intelligence project this time with actual human brains in a jar! Don't tell the press though."
 	rules = "Asimov. All silicon cards gain +1/0 while this creature is alive."
 	icon_state = "ai"
 
@@ -933,7 +933,7 @@
 	card_type = "Unit"
 
 /datum/tcg_card/pack_1/ert_command
-	name = "NT P.A.V. Suit (Command)"
+	name = "GT P.A.V. Suit (Command)"
 	desc = "Issued to members of Emergency Response Teams the P.A.V. Suit gives superior protection from any threat the galaxy can throw at it. This particular model is outfitted with a sidearm holster and a sleek blue finish."
 	rules = "While equipped give the equipped unit Squad Tactics and First Strike."
 	icon_state = "ert_command"
@@ -947,7 +947,7 @@
 	card_type = "Equipment"
 
 /datum/tcg_card/pack_1/ert_sec
-	name = "NT P.A.V. Suit (Security)"
+	name = "GT P.A.V. Suit (Security)"
 	desc = "Issued to members of Emergency Response Teams the P.A.V. Suit gives superior protection from any threat the galaxy can throw at it. This particular model is outfitted with bulletproof padding and an intimidating red finish."
 	rules = "While equipped give the equipped unit Squad Tactics."
 	icon_state = "ert_sec"
@@ -961,7 +961,7 @@
 	card_type = "Equipment"
 
 /datum/tcg_card/pack_1/ert_med
-	name = "NT P.A.V. Suit (Medical)"
+	name = "GT P.A.V. Suit (Medical)"
 	desc = "Issued to members of Emergency Response Teams the P.A.V. Suit gives superior protection from any threat the galaxy can throw at it. This particular model is outfitted with a sterile coating and a calming white finish."
 	rules = "While equipped give the equipped unit Squad Tactics."
 	icon_state = "ert_med"
@@ -975,7 +975,7 @@
 	card_type = "Equipment"
 
 /datum/tcg_card/pack_1/ert_engi
-	name = "NT P.A.V. Suit (Engineering)"
+	name = "GT P.A.V. Suit (Engineering)"
 	desc = "Issued to members of Emergency Response Teams the P.A.V. Suit gives superior protection from any threat the galaxy can throw at it. This particular model is outfitted with a welding screen and a flashy yellow finish."
 	rules = "While equipped give the equipped unit Squad Tactics."
 	icon_state = "ert_engi"

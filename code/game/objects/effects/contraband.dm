@@ -632,12 +632,12 @@
 	icon_state = "poster_pda"
 
 /obj/structure/sign/poster/official/pda_ad600
-	name = "NT PDA600 Ad"
+	name = "GT PDA600 Ad"
 	desc = "A poster advertising an old discounted GATO PDA. This is the old 600 model, it has a small screen and suffered from security and networking issues."
 	icon_state = "poster_retro"
 
 /obj/structure/sign/poster/official/pda_ad800
-	name = "NT PDA800 Ad"
+	name = "GT PDA800 Ad"
 	desc = "An advertisement on an old GATO PDA model. The 800 fixed a lot of security flaws that the 600 had; it also had large touchscreen and hot-swappable cartridges."
 	icon_state = "poster_classic"
 
@@ -697,12 +697,12 @@
 	icon_state = "poster_medical"
 
 /obj/structure/sign/poster/official/nt_storm_officer
-	name = "NT Storm Ad"
+	name = "GT Storm Ad"
 	desc = "An advertisement for NanoTrasen Storm. A premium infantry helmet, This is the officer variant. I comes with a better radio, better HUD software and better targeting sensors."
 	icon_state = "poster_stormy"
 
 /obj/structure/sign/poster/official/nt_storm
-	name = "NT Storm Ad"
+	name = "GT Storm Ad"
 	desc = "An advertisement for NanoTrasen Storm. A premium infantry helmet, It contains a rebreather and full head coverage for use on harsh environments where the air isn't always safe to breathe."
 	icon_state = "poster_stormier"
 

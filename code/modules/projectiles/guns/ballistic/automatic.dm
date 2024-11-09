@@ -211,7 +211,7 @@
 	burst_shot_delay = 1
 
 /obj/item/gun/ballistic/automatic/ar
-	name = "\improper NT-ARG 'Boarder'"
+	name = "\improper GT-ARG 'Boarder'"
 	desc = "A robust assault rifle used by GATO fighting forces."
 	icon_state = "arg"
 	item_state = "arg"

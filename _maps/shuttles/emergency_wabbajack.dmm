@@ -200,7 +200,7 @@
 	name = "Emergency Shuttle Airlock"
 	},
 /obj/docking_port/mobile/emergency{
-	name = "NT Lepton Violet"
+	name = "GT Lepton Violet"
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,

@@ -20,7 +20,7 @@
 	height = 16;
 	shuttle_id = "whiteship";
 	launch_status = 0;
-	name = "NT Recovery White-Ship";
+	name = "GT Recovery White-Ship";
 	port_direction = 8;
 	preferred_direction = 1;
 	width = 16

@@ -342,7 +342,7 @@
 
 /datum/supply_pack/costumes_toys/randomised/tcg
 	name = "Big-Ass Booster Pack Pack"
-	desc = "A bumper load of NT TCG Booster Packs of varying series. Collect them all!"
+	desc = "A bumper load of NGTT TCG Booster Packs of varying series. Collect them all!"
 	cost = 3000
 	contains = list()
 	crate_name = "booster pack pack"
