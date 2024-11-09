@@ -149,3 +149,9 @@
 	category = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
 	path = /obj/item/clothing/shoes/wheelys
 	ckeywhitelist = list("colorlessspy")
+
+/datum/gear/crowbars_plush
+	name = "Crowbars Plush"
+	category = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
+	path = /obj/item/toy/plush/gs13/crowbars
+	ckeywhitelist = list("M16nPregnant")

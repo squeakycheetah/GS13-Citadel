@@ -76,3 +76,8 @@
 	desc = "A plush of black-furred nerdy goat."
 	icon_state = "metis"
 	attack_verb = list("squished", "goated", "baah'd")
+
+/obj/item/toy/plush/gs13/crowbars
+	desc = "A plush of a silly-eyed xeno seccie."
+	icon_state = "crowbars"
+	attack_verb = list("squished", "crowbared", "beno'd")
