@@ -160,7 +160,7 @@
 
 /obj/item/clothing/suit/hooded/explorer/heva
 	name = "HEVA suit"
-	desc = "The Hazardous Environments extra-Vehicular Activity suit, developed by WanTon & Sons Perilous Mining and sold to Nanotrasen for missions within inhospitable, mineral-rich zones. \
+	desc = "The Hazardous Environments extra-Vehicular Activity suit, developed by WanTon & Sons Perilous Mining and sold to GATO for missions within inhospitable, mineral-rich zones. \
 			Its sleek plating deflects most biological - radioactive - and chemical substances and materials. Most notably, this will negate the effects of ash storms and give goliaths better grip against you."
 	icon_state = "heva"
 	item_state = "heva"

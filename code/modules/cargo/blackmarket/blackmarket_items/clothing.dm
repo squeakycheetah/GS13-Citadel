@@ -29,7 +29,7 @@
 	availability_prob = 50
 
 /datum/blackmarket_item/clothing/full_spacesuit_set
-	name = "Nanotrasen Branded Spacesuit Box"
+	name = "GATO Branded Spacesuit Box"
 	desc = "A few boxes of \"Old Style\" space suits fell off the back of a space truck."
 	item = /obj/item/storage/box
 	price_min = 1500
