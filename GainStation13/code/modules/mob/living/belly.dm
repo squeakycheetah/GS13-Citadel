@@ -7,8 +7,8 @@
 	slot 					= ORGAN_SLOT_BELLY
 	w_class 				= 3
 	size 					= 0
+	shape 					= DEF_BELLY_SHAPE
 	var/statuscheck			= FALSE
-	shape					= "belly"
 	genital_flags 			= UPDATE_OWNER_APPEARANCE
 	masturbation_verb 		= "massage"
 	var/sent_full_message	= TRUE //defaults to 1 since they're full to start
@@ -30,19 +30,22 @@
 /obj/item/organ/genital/belly/update_appearance()
 	//GS13 - Port Stuffed states
 	// Default settings
-	icon_state = "belly_[shape]_[size]"
-	icon = 'hyperstation/icons/obj/genitals/belly.dmi'
+	var/datum/sprite_accessory/S = GLOB.belly_shapes_list[shape] //GS13 - get belly shape
+	var/icon_shape_state = S ? S.icon_state : "belly" //fallback to default belly in case we cant find a shape
+	icon_state = "belly_[icon_shape_state]_[size]"
+	var/icon_shape = S ? S.icon : "hyperstation/icons/obj/genitals/belly.dmi" //fallback to default belly in case we cant find a shape
+	icon = icon_shape
 
 	// Change belly sprite and size based on current fullness
 	switch(owner.fullness)
 		if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
-			icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
+			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi' //We use round belly to represent stuffedness
 		if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
-			icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
-			icon_state = "belly_[shape]_[size+1]"
+			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
+			icon_state = "belly_[icon_shape_state]_[size+1]"
 		if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
-			icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
-			icon_state = "belly_[shape]_[size+2]"
+			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
+			icon_state = "belly_[icon_shape_state]_[size+2]"
 
 	if(owner)
 		if(owner.dna.species.use_skintones && owner.dna.features["genitals_use_skintone"])
@@ -61,6 +64,7 @@
 	else
 		color = "#[D.features["belly_color"]]"
 	size = D.features["belly_size"]
+	shape = D.features["belly_shape"]
 	inflatable = D.features["inflatable_belly"]
 	toggle_visibility(D.features["belly_visibility"], FALSE)
 

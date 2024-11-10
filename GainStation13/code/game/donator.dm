@@ -149,3 +149,15 @@
 	category = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
 	path = /obj/item/clothing/shoes/wheelys
 	ckeywhitelist = list("colorlessspy")
+
+/datum/gear/crowbars_plush
+	name = "Crowbars Plush"
+	category = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
+	path = /obj/item/toy/plush/gs13/crowbars
+	ckeywhitelist = list("M16nPregnant")
+
+/datum/gear/sams_welder
+	name = "Sam's Unlucky Welder"
+	category = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
+	path = /obj/item/weldingtool/bronze
+	ckeywhitelist = list("almaniak")

@@ -3,7 +3,7 @@
 /datum/round_event_control/vent_clog/fattening
 	name = "Clogged Vents: Fattening"
 	typepath = /datum/round_event/vent_clog/fattening
-	max_occurrences = 2
+	max_occurrences = 0
 	min_players = 5
 	description = "Spits out lipoifier foam through the scrubber system."
 

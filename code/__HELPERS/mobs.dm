@@ -216,6 +216,7 @@
 		// GS13 EDIT START - BELLY
 		"has_belly" 		= FALSE,
 		"belly_size"		= BELLY_SIZE_DEF,
+		"belly_shape"		= DEF_BELLY_SHAPE,
 		"hide_belly" 		= FALSE,
 		"inflatable_belly" 	= FALSE,
 		"belly_color" 		= pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F"),

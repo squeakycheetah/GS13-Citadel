@@ -69,7 +69,8 @@
 	name = "grey modular jumpsuit" //change name from base clothes to distinguish them
 	desc = "A tasteful grey jumpsuit that reminds you of the good old days. Now adjusts to the match the wearer's size!" //description same as above
 
-	var/icon_location = 'GainStation13/icons/mob/modclothes/graymodular.dmi' //specify the file path where the modular overlays for those clothes are located
+	var/icon_location = 'GainStation13/icons/mob/modclothes/graymodular.dmi' //Default belly
+	var/icon_round_location = 'GainStation13/icons/mob/modclothes/graymodular_round.dmi'
 	var/icon_stuffed_location = 'GainStation13/icons/mob/modclothes/graymodular_stuffed.dmi'
 	var/mob/living/carbon/U //instance a variable for keeping track of the user
 
@@ -96,9 +97,16 @@
 					G = O //treat that organ as a genital
 					// Change to visually update sprite depending on fullness.
 					if(ishuman(O.owner))
+						// Get mob
 						var/mob/living/carbon/human/H = O.owner
+						// Check what belly shape the mob has
+						var/used_icon_location
+						switch(G.shape)
+							if("Soft Belly")
+								used_icon_location = icon_location
+							if("Round Belly")
+								used_icon_location = icon_round_location
 						var/size = 0
-						var/used_icon_location = icon_location
 
 						switch(H.fullness)
 							if(-100 to FULLNESS_LEVEL_BLOATED) // Normal
