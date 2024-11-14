@@ -202,10 +202,9 @@
 // expel the contents of the holder object, then delete it
 // called when the holder exits the outlet
 /obj/structure/disposaloutlet/industrial_feeding_tube/expel(obj/structure/disposalholder/H)
-	var/clunkVol = LAZYLEN(H.contents)
 	if(H.hasmob) //Uh oh-
-		clunkVol += 25
-	playsound(src, H.hasmob ? "clang" : "clangsmall", clamp(clunkVol, 5, H.hasmob ? 50 : 25))
+		playsound(src, H.hasmob ? "clang", 100)
+		visible_message("<span class='danger'>\The [src] loudly clunks as something large enters it's intake!")
 	H.active = FALSE
 	H.vent_gas(get_turf(src))
 	if(clogged)
