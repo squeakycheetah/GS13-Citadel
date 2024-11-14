@@ -203,8 +203,8 @@
 // called when the holder exits the outlet
 /obj/structure/disposaloutlet/industrial_feeding_tube/expel(obj/structure/disposalholder/H)
 	if(H.hasmob) //Uh oh-
-		playsound(src, H.hasmob ? "clang", 100)
-		visible_message("<span class='danger'>\The [src] loudly clunks as something large enters it's intake!")
+		playsound(src, "clang", 100)
+		visible_message("<span class='danger'>\The [src] loudly clunks as something large enters it's intake!</span>")
 	H.active = FALSE
 	H.vent_gas(get_turf(src))
 	if(clogged)
