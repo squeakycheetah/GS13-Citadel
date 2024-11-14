@@ -32,6 +32,7 @@
 	var/obj/item/equipment 		//for fun stuff that goes on the gentials/maybe rings down the line
 	var/dontlist				= FALSE
 	var/nochange				= FALSE //stops people changing visablity.
+	var/starting_size //GS13 EDIT
 
 
 /obj/item/organ/genital/Initialize(mapload, do_update = TRUE)
