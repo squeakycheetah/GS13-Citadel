@@ -264,7 +264,7 @@
 			D.trunk = src
 
 	var/obj/structure/disposaloutlet/O = locate() in T
-	if(O)
+	if(O && O.anchored) //GS Edit: Added anchored check to fix an edgecase where the trunk could get erroneously linked to an unanchored industrial feeding tube if the trunk was welded solid while the loose tube was above the trunk. Whew...
 		linked = O
 
 
