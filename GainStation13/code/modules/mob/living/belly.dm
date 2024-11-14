@@ -18,7 +18,7 @@
 	layer_index = BELLY_LAYER_INDEX
 
 /obj/item/organ/genital/belly/modify_size(modifier, min = BELLY_SIZE_DEF, max = BELLY_SIZE_MAX)
-	var/new_value = clamp(size_cached + modifier, min, max)
+	var/new_value = clamp(size_cached + modifier, starting_size, max)
 	if(new_value == size_cached)
 		return
 	prev_size = size_cached
@@ -64,6 +64,7 @@
 	else
 		color = "#[D.features["belly_color"]]"
 	size = D.features["belly_size"]
+	starting_size = D.features["belly_size"]
 	shape = D.features["belly_shape"]
 	inflatable = D.features["inflatable_belly"]
 	toggle_visibility(D.features["belly_visibility"], FALSE)

@@ -4,7 +4,6 @@
 	icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	mob_overlay_icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	icon_state = "haydee_helmet"
-	item_state = "item_haydee_helmet"
 	armor = list("melee" = 10, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 25, "fire" = 25, "acid" = 25)
 	slowdown = 0
 	mutantrace_variation = NONE
