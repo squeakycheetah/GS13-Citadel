@@ -1409,6 +1409,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "This preference functions similar to the one before but allows for items with more drastic effects. <b>Do not enable this if you aren't okay with more drastic things happening to your character.</b><BR>"
 					dat += "<b>Extreme Fatness Vulnerability:</b><a href='?_src_=prefs;preference=extreme_fatness_vulnerable'>[extreme_fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<br></br>"
+					dat += "<b>Object TF:</b><a href='?_src_=prefs;preference=object_tf'>[object_tf == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<br></br>"
 					dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Persistent Fat (endround/cryo weight becomes your new start weight):</b><a href='?_src_=prefs;preference=weight_gain_persistent'>[weight_gain_persistent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Permanent Weight (hard to remove and persistent weight):</b><a href='?_src_=prefs;preference=weight_gain_permanent'>[weight_gain_permanent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -3421,6 +3423,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					fatness_vulnerable = !fatness_vulnerable
 				if("extreme_fatness_vulnerable")
 					extreme_fatness_vulnerable = !extreme_fatness_vulnerable
+
+				if("object_tf")
+					object_tf = !object_tf
 
 				if("blueberry_inflation")
 					blueberry_inflation = !blueberry_inflation

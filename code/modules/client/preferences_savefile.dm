@@ -951,6 +951,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["chair_breakage"] >> chair_breakage
 	S["fatness_vulnerable"] >> fatness_vulnerable
 	S["extreme_fatness_vulnerable"] >> extreme_fatness_vulnerable
+	S["object_tf"] >> object_tf
 	S["blueberry_inflation"] >> blueberry_inflation
 	S["feature_breasts_fluid"]			>> features["breasts_fluid"]
 
@@ -1236,6 +1237,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["chair_breakage"], chair_breakage)
 	WRITE_FILE(S["fatness_vulnerable"], fatness_vulnerable)
 	WRITE_FILE(S["extreme_fatness_vulnerable"], extreme_fatness_vulnerable)
+	WRITE_FILE(S["object_tf"], object_tf)
 	WRITE_FILE(S["blueberry_inflation"], blueberry_inflation)
 	WRITE_FILE(S["feature_breasts_fluid"], features["breasts_fluid"])
 
