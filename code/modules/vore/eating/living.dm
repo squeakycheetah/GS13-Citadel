@@ -221,7 +221,7 @@
 //
 /mob/living/proc/escapeOOC()
 	set name = "OOC Escape"
-	set category = "ERP" // GS13 Change
+	set category = "OOC" // GS13 Change
 
 	//GS13 EDIT START
 	handle_transformation_ooc_escape()

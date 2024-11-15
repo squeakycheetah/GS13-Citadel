@@ -1,6 +1,28 @@
 /datum/material/calorite
 	name = "calorite"
 	sheet_type = /obj/item/stack/sheet/mineral/calorite
+	color = list(340/255, 150/255, 50/255,0, 0,0,0,0, 0,0,0,0, 0,0,0,1, 0,0,0,0)
+	strength_modifier = 1.5
+	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	beauty_modifier = 0.05
+	armor_modifiers = list(MELEE = 1.1, BULLET = 1.1, LASER = 1.15, ENERGY = 1.15, BOMB = 1, BIO = 1, RAD = 1, FIRE = 0.7, ACID = 1.1) // Same armor as gold.
+
+/datum/material/calorite/on_applied_obj(obj/source, amount, material_flags)
+	. = ..()
+	if(!(material_flags & MATERIAL_AFFECT_STATISTICS))
+		return
+
+	var/obj/source_obj = source
+	source_obj.damtype = FAT
+
+/datum/material/calorite/on_removed_obj(obj/source, material_flags)
+	if(!(material_flags & MATERIAL_AFFECT_STATISTICS))
+		return ..()
+
+	var/obj/source_obj = source
+	source_obj.damtype = initial(source_obj.damtype)
+	return ..()
+
 
 /turf/closed/mineral/calorite //GS13
 	mineralType = /obj/item/stack/ore/calorite
@@ -33,13 +55,14 @@
 
 GLOBAL_LIST_INIT(calorite_recipes, list ( \
 	new/datum/stack_recipe("Calorite tile", /obj/item/stack/tile/mineral/calorite, 1, 4, 20), \
-	new/datum/stack_recipe("Fatty statue", /obj/structure/statue/calorite/fatty, 5, one_per_turf = 1, on_floor = 1),
-	new/datum/stack_recipe("Calorite doors", /obj/structure/mineral_door/calorite, 5, one_per_turf = 1, on_floor = 1),
+	new/datum/stack_recipe("Calorite Ingots", /obj/item/ingot/calorite, time = 30), \
+	new/datum/stack_recipe("Fatty statue", /obj/structure/statue/calorite/fatty, 5, one_per_turf = 1, on_floor = 1),\
+	new/datum/stack_recipe("Calorite doors", /obj/structure/mineral_door/calorite, 5, one_per_turf = 1, on_floor = 1),\
 	))
 
-/obj/item/stack/sheet/mineral/calorite/Initialize(mapload, new_amount, merge = TRUE)
-	recipes = GLOB.calorite_recipes
+/obj/item/stack/sheet/mineral/calorite/get_main_recipes()
 	. = ..()
+	. += GLOB.calorite_recipes
 
 
 /obj/item/stack/tile/mineral/calorite  //GS13
@@ -246,3 +269,5 @@ GLOBAL_LIST_INIT(calorite_recipes, list ( \
 	fatten()
 	. = ..()
 
+/obj/item/ingot/calorite
+	custom_materials = list(/datum/material/calorite=1500)
