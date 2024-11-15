@@ -22,3 +22,15 @@
 	if(!transformation_component)
 		return FALSE
 
+	if(!transformation_component.able_to_struggle_out)
+		to_chat(src, span_warning("You are unable to struggle out."))
+		return FALSE
+
+	to_chat(src, span_notice("You attempt to escape your transformation."))
+	if(!do_after(src, 60 SECONDS))
+		to_chat(src, span_warning("You fail to escape."))
+		return FALSE
+
+	qdel(transformation_component)
+	return TRUE
+
