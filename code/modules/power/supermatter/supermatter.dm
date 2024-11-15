@@ -965,6 +965,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	name = "supermatter shard"
 	desc = "A strangely translucent and iridescent crystal that looks like it used to be part of a larger structure."
 	base_icon_state = "darkmatter_shard"
+	icon = 'GainStation13/icons/turf/supermatter.dmi' // GS13 EDIT 'icons/obj/supermatter.dmi'
 	icon_state = "darkmatter_shard"
 	anchored = FALSE
 	gasefficency = 0.125
