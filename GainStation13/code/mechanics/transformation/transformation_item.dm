@@ -57,7 +57,10 @@
 	if(target_item in target_mob.get_contents())
 		return FALSE // Don't TF someone into something they are holding.
 
-	// You'll want to check prefs here.
+	if(!target_mob?.client?.prefs?.object_tf)
+		to_chat(user, span_warning("It seems like [target_mob] does not want to be transformed."))
+		return FALSE
+
 	var/datum/component/transformation_item/transformation_component = target_item.AddComponent(/datum/component/transformation_item)
 	// Make sure that we apply our variables before we actually put the mob in the item.
 	transformation_component.able_to_speak = able_to_speak
