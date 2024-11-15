@@ -19,6 +19,8 @@
 	var/stuck_on_item = FALSE
 	/// Is the person able to struggle out?
 	var/able_to_struggle_out = TRUE
+	/// Transfer to vore belly when eaten
+	var/transfer_to_vore = TRUE
 
 /datum/component/transformation_item/Initialize()
 	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, PROC_REF(examine))
