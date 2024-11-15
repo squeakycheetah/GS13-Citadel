@@ -820,6 +820,10 @@
 		//Sure, give clickdelay for anti spam. shouldn't be combat voring anyways.
 		return TRUE
 
+	// GS13 Escape Transformation
+	if(attempt_to_escape_tf())
+		return TRUE
+
 	//Breaking out of a container (Locker, sleeper, cryo...)
 	if(isobj(loc))
 		var/obj/C = loc
