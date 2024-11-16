@@ -407,6 +407,13 @@ GENETICS SCANNER
 		msg += "<span class='info'>Base Species: [H.spec_trait_examine_font()][S.name]</font></span>\n"
 		if(mutant)
 			msg += "<span class='info'>Subject has mutations present.</span>\n"
+
+		//GS13 EDIT START
+		if(H.fatness)
+			msg += span_info("Subject weighs [H.calculate_weight_in_pounds()] pounds ([H.fatness] BFI.)")
+			msg += "\n"
+
+		//GS13 EEDIT END
 	msg += "<span class='info'>Body temperature: [round(M.bodytemperature-T0C,0.1)] &deg;C ([round(M.bodytemperature*1.8-459.67,0.1)] &deg;F)</span>\n"
 
 	// Time of death
