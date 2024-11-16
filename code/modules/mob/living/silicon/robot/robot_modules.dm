@@ -844,7 +844,7 @@
 		"(Service) Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekserv"),
 		"(Service) Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyserv"),
 		"(Service) Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_service"),
-		"(Service) Busty" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "busty_service")
+		"(Service) Busty" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "busty_service"),
 		"(Janitor) Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "janitor"),
 		"(Janitor) Marina" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "marinajan"),
 		"(Janitor) Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekjan"),
