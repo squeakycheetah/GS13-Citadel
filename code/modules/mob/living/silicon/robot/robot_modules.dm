@@ -338,7 +338,9 @@
 		"Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekmed"),
 		"Marina" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "marinamed"),
 		"Eyebot" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "eyebotmed"),
-		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavymed")
+		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavymed"),
+		"Haydee" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "haydeemedical"), //GS13 EDIT
+		"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_medical"), //GS13 EDIT
 		)
 		var/list/L = list("Medihound" = "medihound", "Medihound Dark" = "medihounddark", "Vale" = "valemed")
 		for(var/a in L)
@@ -399,6 +401,16 @@
 			moduleselect_icon = "medihound"
 			moduleselect_alternate_icon = 'modular_citadel/icons/ui/screen_cyborg.dmi'
 			dogborg = TRUE
+		//GS13 EDIT START
+		if("Haydee")
+			cyborg_base_icon = "haydeemedical"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
+		if("Fat")
+			cyborg_base_icon = "fat_medical"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
+		//GS13 EDIT END
 		else
 			return FALSE
 	return ..()
@@ -457,7 +469,8 @@
 		"Can" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "caneng"),
 		"Marina" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "marinaeng"),
 		"Spider" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "spidereng"),
-		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyeng")
+		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyeng"),
+		"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_engineer"), //GS13 EDIT
 		)
 		var/list/L = list("Pup Dozer" = "pupdozer", "Vale" = "valeeng")
 		for(var/a in L)
@@ -515,6 +528,12 @@
 			cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
 			sleeper_overlay = "valeengsleeper"
 			dogborg = TRUE
+		//GS13 EDIT START
+		if("Fat")
+			cyborg_base_icon = "fat_engineer"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
+		//GS13 EDIT END
 		else
 			return FALSE
 	return ..()
@@ -660,7 +679,8 @@
 	var/static/list/peace_icons = sort_list(list(
 		"Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "peace"),
 		"Borgi" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "borgi"),
-		"Spider" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "whitespider")
+		"Spider" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "whitespider"),
+		"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_peacekeeper"), //GS13 EDIT
 		))
 	var/peace_borg_icon = show_radial_menu(R, R , peace_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(peace_borg_icon)
@@ -669,6 +689,12 @@
 		if("Spider")
 			cyborg_base_icon = "whitespider"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
+		//GS13 EDIT START
+		if("Fat")
+			cyborg_base_icon = "fat_peacekeeper"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
+		//GS13 EDIT END
 		if("Borgi")
 			cyborg_base_icon = "borgi"
 			moduleselect_icon = "borgi"
@@ -817,6 +843,8 @@
 		"(Service) Tophat" = image(icon = 'icons/mob/robots.dmi', icon_state = "tophat"),
 		"(Service) Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekserv"),
 		"(Service) Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyserv"),
+		"(Service) Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_service"),
+		"(Service) Busty" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "busty_service")
 		"(Janitor) Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "janitor"),
 		"(Janitor) Marina" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "marinajan"),
 		"(Janitor) Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekjan"),
@@ -874,6 +902,16 @@
 			cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
 			sleeper_overlay = "valeservsleeper"
 			dogborg = TRUE
+		//GS13 EDIT START
+		if("(Service) Fat")
+			cyborg_base_icon = "fat_service"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
+		if("(Service) Busty")
+			cyborg_base_icon = "busty_service"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 1
+		//GS13 EDIT END
 		if("(Janitor) Default")
 			cyborg_base_icon = "janitor"
 		if("(Janitor) Marina")
@@ -941,7 +979,8 @@
 		"Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekmin"),
 		"Marina" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "marinamin"),
 		"Can" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "canmin"),
-		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavymin")
+		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavymin"),
+		"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_mining"), //GS13 EDIT
 		)
 		var/list/L = list("Blade" = "blade", "Vale" = "valemine")
 		for(var/a in L)
@@ -985,6 +1024,12 @@
 			cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
 			sleeper_overlay = "valeminesleeper"
 			dogborg = TRUE
+		// GS13 EDIT START
+		if("Fat")
+			cyborg_base_icon = "fat_mining"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
+		//GS13 EDIT END
 		else
 			return FALSE
 	return ..()
