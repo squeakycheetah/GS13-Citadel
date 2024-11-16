@@ -203,7 +203,10 @@
 	var/old_icon = icon_regular_floor
 	var/old_dir = dir
 	var/turf/open/floor/W = ..()
-	W.icon_regular_floor = old_icon
+	//GS13 EDIT START
+	if(!(W.type in subtypesof(/turf/open/floor/plasteel)))
+		W.icon_regular_floor = old_icon
+	//GS13 EDIT END
 	W.setDir(old_dir)
 	W.update_icon()
 	return W
