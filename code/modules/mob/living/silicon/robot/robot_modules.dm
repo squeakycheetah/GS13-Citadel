@@ -281,6 +281,7 @@
 		/obj/item/t_scanner/adv_mining_scanner,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/soap/nanotrasen,
+		/obj/item/gripper/food,	//GS13 EDIT
 		/obj/item/borg/cyborghug)
 	emag_modules = list(/obj/item/melee/transforming/energy/sword/cyborg)
 	ratvar_modules = list(
@@ -317,6 +318,7 @@
 		/obj/item/organ_storage,
 		/obj/item/borg/lollipop,
 		/obj/item/sensor_device,
+		/obj/item/gripper/food,	//GS13 EDIT
 		/obj/item/shockpaddles/cyborg)
 	emag_modules = list(/obj/item/reagent_containers/borghypo/hacked)
 	ratvar_modules = list(
@@ -421,6 +423,7 @@
 		/obj/item/storage/part_replacer/cyborg,
 		/obj/item/holosign_creator/combifan,
 		/obj/item/gripper,
+		/obj/item/gripper/food,	//GS13 EDIT
 		/obj/item/lightreplacer/cyborg,
 		/obj/item/geiger_counter/cyborg,
 		/obj/item/assembly/signaler/cyborg,
@@ -527,6 +530,9 @@
 		/obj/item/melee/baton/loaded,
 		/obj/item/gun/energy/disabler/cyborg,
 		/obj/item/clothing/mask/gas/sechailer/cyborg,
+		/obj/item/gripper/food,	//GS13 EDIT
+		/obj/item/reagent_containers/borghypo/feeding_tube,	//GS13 EDIT
+		/obj/item/gun/energy/fatoray/weak/cyborg, //GS13 EDIT
 		/obj/item/pinpointer/crew)
 	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
 	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security,
@@ -632,6 +638,9 @@
 		/obj/item/holosign_creator/cyborg,
 		/obj/item/borg/cyborghug/peacekeeper,
 		/obj/item/megaphone,
+		/obj/item/gripper/food,	//GS13 EDIT
+		/obj/item/reagent_containers/borghypo/feeding_tube,	//GS13 EDIT
+		/obj/item/gun/energy/fatoray/weak/cyborg, //GS13 EDIT
 		/obj/item/borg/projectile_dampen)
 	emag_modules = list(/obj/item/reagent_containers/borghypo/peace/hacked)
 	ratvar_modules = list(
@@ -724,6 +733,8 @@
 		/obj/item/razor,					//killbait material
 		/obj/item/lipstick/purple,
 		/obj/item/reagent_containers/spray/waterflower/cyborg,
+		/obj/item/gripper/food,	//GS13 EDIT
+		/obj/item/reagent_containers/borghypo/feeding_tube,	//GS13 EDIT
 		/obj/item/borg/cyborghug/peacekeeper,
 		/obj/item/borg/lollipop/clown,
 		/obj/item/picket_sign/cyborg,
@@ -764,6 +775,9 @@
 		/obj/item/soap/nanotrasen,
 		/obj/item/storage/bag/trash/cyborg,
 		/obj/item/mop/cyborg,
+		/obj/item/gripper/food,	//GS13 EDIT
+		/obj/item/reagent_containers/borghypo/feeding_tube,	//GS13 EDIT
+		/obj/item/cookiesynth, //GS13 EDIT
 		/obj/item/lightreplacer/cyborg,
 		/obj/item/holosign_creator,
 		/obj/item/reagent_containers/spray/cyborg_drying)
@@ -905,6 +919,7 @@
 		/obj/item/stack/marker_beacon/cyborg,
 		/obj/item/dest_tagger,
 		/obj/item/stack/packageWrap/cyborg,
+		/obj/item/gripper/food,	//GS13 EDIT
 		/obj/item/card/id/miningborg)
 	emag_modules = list(/obj/item/borg/stun)
 	ratvar_modules = list(
@@ -986,6 +1001,7 @@
 		/obj/item/gun/ballistic/revolver/grenadelauncher/cyborg,
 		/obj/item/card/emag,
 		/obj/item/crowbar/cyborg,
+		/obj/item/gripper/food,	//GS13 EDIT
 		/obj/item/pinpointer/syndicate_cyborg)
 
 	ratvar_modules = list(

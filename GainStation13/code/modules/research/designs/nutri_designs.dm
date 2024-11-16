@@ -129,6 +129,15 @@
 	construction_time = 100
 	category = list("Cyborg Upgrade Modules")
 
+/datum/design/borg_foodgrip
+	name = "Cyborg Upgrade (Food Gripper)"
+	id = "borg_upgrade_foodgrip"
+	build_type = MECHFAB
+	build_path = /obj/item/borg/upgrade/feeding_arm
+	materials = list(/datum/material/iron = 8000, /datum/material/glass = 6000)
+	construction_time = 100
+	category = list("Cyborg Upgrade Modules")
+
 //todo: make a seperate file for extra borg modules
 
 /obj/item/borg/upgrade/cookiesynth
