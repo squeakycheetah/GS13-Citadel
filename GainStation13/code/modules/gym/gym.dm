@@ -22,7 +22,7 @@
 	if(!using)
 		using = TRUE
 		to_chat(user, "<span>You do a rep with the [src]. YEEEEEAH!!!</span>")
-		if(do_after(usr, CLICK_CD_RESIST-reps, 0, usr, 1))
+		if(do_after(usr, CLICK_CD_RESIST-reps, usr))
 			if(iscarbon(user))
 				var/mob/living/carbon/U = user
 				U.adjust_fatness(-10, FATTENING_TYPE_WEIGHT_LOSS)
