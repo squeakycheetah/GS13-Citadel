@@ -3,7 +3,7 @@
 	name = "Stray Cargo Pod"
 	typepath = /datum/round_event/stray_cargo
 	weight = 5
-	max_occurrences = 6
+	max_occurrences = 6 //GS13 - increase the amount of possible strays
 	earliest_start = 10 MINUTES
 	category = EVENT_CATEGORY_BUREAUCRATIC
 	description = "A pod containing a random supply crate lands on the station."

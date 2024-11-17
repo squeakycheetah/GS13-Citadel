@@ -10,8 +10,8 @@ In my current plan for it, 'solid' will be defined as anything with density == 1
 /datum/round_event_control/immovable_rod
 	name = "Immovable Rod"
 	typepath = /datum/round_event/immovable_rod
-	min_players = 20 //GS13 - tweaked min players and occurences
-	max_occurrences = 2
+	min_players = 25 //GS13 - tweaked min players and occurences
+	max_occurrences = 1 //GS13 - one is enough as is
 	var/atom/special_target
 	category = EVENT_CATEGORY_SPACE
 	description = "The station passes through an immovable rod."

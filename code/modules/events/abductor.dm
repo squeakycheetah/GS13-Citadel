@@ -2,7 +2,7 @@
 	name = "Abductors"
 	typepath = /datum/round_event/ghost_role/abductor
 	weight = 10
-	max_occurrences = 1
+	max_occurrences = 0 //GS13 - no antags, thanks
 	min_players = 30
 	dynamic_should_hijack = TRUE
 	category = EVENT_CATEGORY_INVASION

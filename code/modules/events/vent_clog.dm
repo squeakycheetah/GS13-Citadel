@@ -2,8 +2,8 @@
 	name = "Clogged Vents: Normal"
 	typepath = /datum/round_event/vent_clog
 	weight = 10
-	max_occurrences = 3
-	min_players = 10
+	max_occurrences = 2 //GS13 - pain in the ass, occurences nerfed until a less disruptive variant is made
+	min_players = 16 //GS13 - pain in the ass, occurences nerfed until a less disruptive variant is made
 	category = EVENT_CATEGORY_HEALTH
 	description = "All the scrubbers onstation spit random chemicals in smoke form."
 

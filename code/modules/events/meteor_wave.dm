@@ -7,7 +7,7 @@
 	name = "Meteor Wave: Normal"
 	typepath = /datum/round_event/meteor_wave
 	weight = 4
-	min_players = 16 //GS13 - tweaked all meteor waves to nerf them a bit
+	min_players = 20 //GS13 - tweaked all meteor waves to nerf them a bit
 	max_occurrences = 2
 	earliest_start = 40 MINUTES
 	category = EVENT_CATEGORY_SPACE
