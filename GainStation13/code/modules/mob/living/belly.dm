@@ -40,12 +40,13 @@
 	switch(owner.fullness)
 		if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
 			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi' //We use round belly to represent stuffedness
+			icon_state = "belly_round_[size]"
 		if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
 			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
-			icon_state = "belly_[icon_shape_state]_[size+1]"
+			icon_state = "belly_round_[size+1]"
 		if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
 			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
-			icon_state = "belly_[icon_shape_state]_[size+2]"
+			icon_state = "belly_round_[size+2]"
 
 	if(owner)
 		if(owner.dna.species.use_skintones && owner.dna.features["genitals_use_skintone"])
