@@ -1,16 +1,16 @@
 /datum/round_event_control/electrical_storm
 	name = "Electrical Storm"
 	typepath = /datum/round_event/electrical_storm
-	earliest_start = 30 MINUTES
+	earliest_start = 30 MINUTES //GS13 Edit: Reducing pain for normal station ongoings.
 	min_players = 5
 	weight = 40
-	max_occurrences = 2
+	max_occurrences = 2 //GS13 Edit: Limiting this.
 	category = EVENT_CATEGORY_ENGINEERING
 	description = "Destroys all lights in a large area."
 
 /datum/round_event/electrical_storm
 	var/lightsoutAmount	= 1
-	var/lightsoutRange	= 10
+	var/lightsoutRange	= 10 //GS13 Edit: 25 down to 10
 	announce_when	= 1
 
 /datum/round_event/electrical_storm/announce(fake)

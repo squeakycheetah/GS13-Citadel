@@ -1,6 +1,6 @@
 /mob/living/carbon/alien/humanoid/royal
 	//Common stuffs for Praetorian and Queen
-	icon = 'hyperstation/icons/mobs/alienqueen.dmi'
+	icon = 'icons/mob/alienqueen.dmi'
 	status_flags = 0
 	unique_name = 0
 	pixel_x = -16
@@ -17,7 +17,7 @@
 	meleeSlashHumanPower = 30
 	meleeSlashSAPower = 60
 
-	var/alt_inhands_file = 'hyperstation/icons/mobs/alienqueen.dmi' //GS13 - moving over Hyper sprites
+	var/alt_inhands_file = 'icons/mob/alienqueen.dmi'
 
 /mob/living/carbon/alien/humanoid/royal/can_inject(mob/user, error_msg, target_zone, penetrate_thick = FALSE, bypass_immunity = FALSE)
 	return FALSE
