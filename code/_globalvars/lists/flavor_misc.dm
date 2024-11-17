@@ -290,11 +290,11 @@ GLOBAL_LIST_INIT(TAGGERLOCATIONS, list("Disposals",
 	"Circuitry", "Toxins", "Dormitories", "Virology",
 	"Xenobiology", "Law Office","Detective's Office"))
 
-GLOBAL_LIST_INIT(station_prefixes, world.file2list("strings/station_prefixes.txt") + "")
+GLOBAL_LIST_INIT(station_prefixes, world.file2list("GainStation13/strings/station_prefixes.txt") + "") //GS13 Edit: Our Names
 
-GLOBAL_LIST_INIT(station_names, world.file2list("strings/station_names.txt" + ""))
+GLOBAL_LIST_INIT(station_names, world.file2list("GainStation13/strings/station_names.txt" + "")) //GS13 Edit: Our names
 
-GLOBAL_LIST_INIT(station_suffixes, world.file2list("strings/station_suffixes.txt"))
+GLOBAL_LIST_INIT(station_suffixes, world.file2list("GainStation13/strings/station_suffixes.txt")) //GS13 Edit: Our names
 
 GLOBAL_LIST_INIT(server_taglines, world.file2list("[global.config.directory]/server_taglines.txt"))
 
@@ -361,4 +361,4 @@ GLOBAL_LIST_INIT(bodypart_names, list(num2text(HEAD) = "Head", num2text(CHEST) =
 // list linking bodypart names back to the bitflags
 GLOBAL_LIST_INIT(bodypart_values, list("Head" = num2text(HEAD), "Chest" = num2text(CHEST), "Left Leg" = num2text(LEG_LEFT), "Right Leg" = num2text(LEG_RIGHT), "Left Arm" = num2text(ARM_LEFT), "Right Arm" = num2text(ARM_RIGHT)))
 
-GLOBAL_LIST_INIT(junkmail_messages, world.file2list("strings/junkmail.txt"))
+GLOBAL_LIST_INIT(junkmail_messages, world.file2list("GainStation13/strings/junkmail.txt")) //GS Edit: Nanotrasen to GATO

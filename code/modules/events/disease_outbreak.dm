@@ -1,7 +1,7 @@
 /datum/round_event_control/disease_outbreak
 	name = "Disease Outbreak"
 	typepath = /datum/round_event/disease_outbreak
-	max_occurrences = 0
+	max_occurrences = 0 //GS13 Edit: Disabling this for now.
 	min_players = 5
 	weight = 5
 	category = EVENT_CATEGORY_HEALTH

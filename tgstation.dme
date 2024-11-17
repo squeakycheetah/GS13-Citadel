@@ -3979,6 +3979,8 @@
 #include "GainStation13\code\modules\arousal\arousal.dm"
 #include "GainStation13\code\modules\cargo\packs.dm"
 #include "GainStation13\code\modules\client\border_control.dm"
+#include "GainStation13\code\modules\client\loadout\head.dm"
+#include "GainStation13\code\modules\client\loadout\uniform.dm"
 #include "GainStation13\code\modules\client\preferences\preferences.dm"
 #include "GainStation13\code\modules\clothing\under\jobs\clothing.dm"
 #include "GainStation13\code\modules\clothing\under\jobs\modcivilian.dm"

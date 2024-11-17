@@ -15,19 +15,23 @@
 	var/list/vents  = list()
 	var/randomProbability = 0
 	var/reagentsAmount = 100
-	var/list/saferChems = list( //GS13 - removed some of those chems, just a couple particularly annoying ones
+	var/list/saferChems = list(
 		/datum/reagent/water,
 		/datum/reagent/carbon,
+		/datum/reagent/consumable/flour,
 		/datum/reagent/space_cleaner,
 		/datum/reagent/consumable/nutriment,
 		/datum/reagent/consumable/condensedcapsaicin,
 		/datum/reagent/drug/mushroomhallucinogen,
 		/datum/reagent/lube,
 		/datum/reagent/glitter/pink,
+		/datum/reagent/glitter/pink_subtle, //GS13 Add: Add our subtle variants of glitter.
 		/datum/reagent/cryptobiolin,
+		//datum/reagent/toxin/plantbgone, //GS13 Remove: Annoying Reagent
 		/datum/reagent/blood,
 		/datum/reagent/medicine/charcoal,
 		/datum/reagent/drug/space_drugs,
+		/datum/reagent/medicine/morphine,
 		/datum/reagent/water/holywater,
 		/datum/reagent/consumable/ethanol,
 		/datum/reagent/consumable/hot_coco,
@@ -47,6 +51,7 @@
 		/datum/reagent/hair_dye,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/glitter/white,
+		/datum/reagent/glitter/white_subtle, //GS13 ADD: Add our subtle variants of glitter. ...Why is this separate from the other glitter, anyhow? Blue glitter's also missing, so I wont add it.
 		/datum/reagent/growthserum,
 		/datum/reagent/consumable/cornoil,
 		/datum/reagent/uranium,
@@ -112,7 +117,7 @@
 
 /datum/round_event/vent_clog/threatening
 	randomProbability = 10
-	reagentsAmount = 100
+	reagentsAmount = 200
 
 /datum/round_event_control/vent_clog/catastrophic
 	name = "Clogged Vents: Catastrophic"
