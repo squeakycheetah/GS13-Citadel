@@ -73,7 +73,7 @@ GENETICS SCANNER
 
 /obj/item/healthanalyzer
 	name = "health analyzer"
-	icon = 'icons/obj/device.dmi'
+	icon = 'GainStation13/icons/obj/device.dmi' //GS13 - better sprite
 	icon_state = "health"
 	item_state = "healthanalyzer"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
@@ -545,6 +545,7 @@ GENETICS SCANNER
 
 /obj/item/healthanalyzer/advanced
 	name = "advanced health analyzer"
+	icon = 'GainStation13/icons/obj/device.dmi' //GS13 - better sprite
 	icon_state = "health_adv"
 	desc = "A hand-held body scanner able to distinguish vital signs of the subject with high accuracy."
 	advanced = TRUE
