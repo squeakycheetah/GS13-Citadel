@@ -1,8 +1,6 @@
 /obj/item/seeds/lipoplant
 	name = "pack of adipolipus"
 	desc = "These seeds grow into a foreign plant."
-	icon = 'GainStation13/icons/obj/hydroponics/lipo_seeds.dmi'
-	icon_state = "lipo_seed"
 	species = "adipolipus"
 	plantname = "Adipolipus"
 	product = /obj/item/reagent_containers/food/snacks/grown/lipofruit
@@ -11,17 +9,19 @@
 	maturation = 8
 	production = 5
 	yield = 1
-	growing_icon = 'GainStation13/icons/obj/hydroponics/lipo_growing.dmi'
+	reagents_add = list(/datum/reagent/consumable/lipoifier = 0.05)
+	icon = 'GainStation13/icons/obj/hydroponics/seeds.dmi'
+	icon_state = "seed-lipo"
+	growing_icon = 'GainStation13/icons/obj/hydroponics/growing.dmi'
 	icon_grow = "lipo-grow" // Uses one growth icons set for all the subtypes
 	icon_dead = "lipo-dead" // Same for the dead icon
 	icon_harvest = "lipo-harvest"
-	reagents_add = list(/datum/reagent/consumable/lipoifier = 0.05)
 
 /obj/item/reagent_containers/food/snacks/grown/lipofruit
 	seed = /obj/item/seeds/lipoplant
 	name = "lipofruit"
 	desc = "A foreign fruit with an hard shell. Perhaps something sharp could open it?"
-	icon = 'GainStation13/icons/obj/hydroponics/lipo_harvest.dmi'
+	icon = 'GainStation13/icons/obj/hydroponics/harvest.dmi'
 	icon_state = "lipo_nut"
 	item_state = "lipo_nut"
 	possible_transfer_amounts = list(5, 10, 15, 20, 25, 30, 50)
