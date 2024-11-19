@@ -4790,9 +4790,9 @@
 	dir = 8;
 	dwidth = 12;
 	height = 17;
-	id = "syndicate_ne";
 	name = "northeast of station";
-	width = 23
+	width = 23;
+	shuttle_id = "syndicate_ne"
 	},
 /turf/open/space,
 /area/space/nearstation)
@@ -8451,10 +8451,10 @@
 	dir = 1;
 	dwidth = 2;
 	height = 6;
-	id = "monastery_shuttle_station";
 	name = "Station";
 	roundstart_template = /datum/map_template/shuttle/escape_pod/large;
-	width = 5
+	width = 5;
+	shuttle_id = "monastery_shuttle_station"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -10755,10 +10755,10 @@
 	dir = 8;
 	dwidth = 2;
 	height = 5;
-	id = "laborcamp_home";
 	name = "fore bay 1";
 	roundstart_template = /datum/map_template/shuttle/labour/box;
-	width = 9
+	width = 9;
+	shuttle_id = "laborcamp_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -22302,9 +22302,9 @@
 	dir = 8;
 	dwidth = 4;
 	height = 15;
-	id = "emergency_home";
 	name = "PubbyStation emergency evac bay";
-	width = 20
+	width = 20;
+	shuttle_id = "emergency_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -28387,10 +28387,10 @@
 	dir = 8;
 	dwidth = 3;
 	height = 13;
-	id = "arrivals_stationary";
 	name = "pubby arrivals";
 	roundstart_template = /datum/map_template/shuttle/arrival/pubby;
-	width = 6
+	width = 6;
+	shuttle_id = "arrivals_stationary"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -34761,9 +34761,9 @@
 	dir = 8;
 	dwidth = 2;
 	height = 13;
-	id = "ferry_home";
 	name = "port bay 2";
-	width = 5
+	width = 5;
+	shuttle_id = "ferry_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -40168,9 +40168,9 @@
 /obj/docking_port/stationary{
 	dwidth = 2;
 	height = 6;
-	id = "monastery_shuttle_asteroid";
 	name = "monastery";
-	width = 5
+	width = 5;
+	shuttle_id = "monastery_shuttle_asteroid"
 	},
 /turf/open/space,
 /area/space/nearstation)
@@ -50726,9 +50726,9 @@
 	dir = 8;
 	dwidth = 11;
 	height = 22;
-	id = "whiteship_home";
 	name = "monastery";
-	width = 35
+	width = 35;
+	shuttle_id = "whiteship_home"
 	},
 /turf/open/space/basic,
 /area/space)

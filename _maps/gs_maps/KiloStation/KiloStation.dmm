@@ -37843,10 +37843,10 @@
 	dir = 4;
 	dwidth = 3;
 	height = 5;
-	id = "mining_home";
 	name = "mining shuttle bay";
 	roundstart_template = /datum/map_template/shuttle/mining/kilo;
-	width = 7
+	width = 7;
+	shuttle_id = "mining_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -38846,9 +38846,9 @@
 	dir = 4;
 	dwidth = 4;
 	height = 7;
-	id = "supply_home";
 	name = "Cargo Bay";
-	width = 12
+	width = 12;
+	shuttle_id = "supply_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -55144,10 +55144,10 @@
 	dir = 2;
 	dwidth = 2;
 	height = 5;
-	id = "laborcamp_home";
 	name = "fore bay 1";
 	roundstart_template = /datum/map_template/shuttle/labour/kilo;
-	width = 9
+	width = 9;
+	shuttle_id = "laborcamp_home"
 	},
 /turf/open/space,
 /area/space)
@@ -57330,9 +57330,9 @@
 	dir = 4;
 	dwidth = 11;
 	height = 18;
-	id = "emergency_home";
 	name = "KiloStation emergency evac bay";
-	width = 30
+	width = 30;
+	shuttle_id = "emergency_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -68359,15 +68359,6 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/main)
-"ckg" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/solar{
-	id = "starboardsolar";
-	name = "Starboard Solar Array"
-	},
-/turf/open/floor/plasteel/airless/solarpanel)
 "ckh" = (
 /obj/machinery/atmospherics/pipe/manifold4w/general/visible,
 /obj/structure/cable{
@@ -76441,9 +76432,9 @@
 	dir = 8;
 	dwidth = 12;
 	height = 17;
-	id = "syndicate_nw";
 	name = "northwest of station";
-	width = 23
+	width = 23;
+	shuttle_id = "syndicate_nw"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -78428,15 +78419,6 @@
 	},
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solars/starboard/fore)
-"cGZ" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/solar{
-	id = "portsolar";
-	name = "Port Solar Array"
-	},
-/turf/open/floor/plasteel/airless/solarpanel)
 "cHa" = (
 /turf/closed/wall/r_wall,
 /area/maintenance/solars/starboard/fore)
@@ -83132,10 +83114,10 @@
 	dir = 4;
 	dwidth = 3;
 	height = 14;
-	id = "arrivals_stationary";
 	name = "kilo arrivals";
 	roundstart_template = /datum/map_template/shuttle/arrival/kilo;
-	width = 7
+	width = 7;
+	shuttle_id = "arrivals_stationary"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -84725,10 +84707,10 @@
 	dir = 8;
 	dwidth = 11;
 	height = 22;
-	id = "whiteship_home";
 	name = "SS13: Auxiliary Dock, Station-Port";
 	roundstart_template = /datum/map_template/shuttle/mining_common/kilo;
-	width = 35
+	width = 35;
+	shuttle_id = "whiteship_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -91817,11 +91799,11 @@ aaa
 aaa
 aaa
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -92074,11 +92056,11 @@ aaa
 aaa
 aaa
 aaa
-cnw
 aaa
-ckk
 aaa
-cnw
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -92331,11 +92313,11 @@ aaa
 aaa
 aaa
 aaa
-ckk
-ckk
-gOX
-ckk
-ckk
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -92579,29 +92561,29 @@ aaa
 aaa
 aaa
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
 aaa
-dtA
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -92836,7 +92818,6 @@ aaa
 aaa
 aaa
 aaa
-ckk
 aaa
 aaa
 aaa
@@ -92846,19 +92827,20 @@ aaa
 aaa
 aaa
 aaa
-aaa
-dtA
-aaa
-aaa
-aaa
-aaa
-aaa
+cnw
+cnw
+cnw
+cnw
+cnw
 aaa
 aaa
 aaa
 aaa
 aaa
-ckk
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -93093,29 +93075,29 @@ aaa
 aaa
 aaa
 aaa
-cnw
 aaa
-ckm
-ckm
-ckm
-ckm
-ckm
-ckm
-ckm
-ckm
 aaa
-jTB
 aaa
-ckm
-ckm
-ckm
-ckm
-ckm
-ckm
-ckm
-ckm
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 cnw
+aaa
+ckk
+aaa
+cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -93350,29 +93332,29 @@ aaa
 aaa
 aaa
 aaa
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 ckk
-nMB
-pbJ
-pbJ
-pbJ
-pbJ
-pbJ
-pbJ
-pbJ
-kam
-mhL
-oVK
-nVn
-nVn
-nVn
-nVn
-nVn
-nVn
-nVn
-djn
 ckk
-cnw
+gOX
+ckk
+ckk
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -93608,27 +93590,27 @@ aeo
 aaa
 aaa
 cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
 aaa
-yaO
-yaO
-yaO
-yaO
-yaO
-yaO
-yaO
-yaO
+dtA
 aaa
-iJT
-aaa
-hCa
-hCa
-hCa
-hCa
-hCa
-hCa
-hCa
-yaO
-aaa
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
 cnw
 aaa
 aaa
@@ -93864,7 +93846,7 @@ acm
 aaa
 aaa
 aaa
-itZ
+ckk
 aaa
 aaa
 aaa
@@ -93875,7 +93857,7 @@ aaa
 aaa
 aaa
 aaa
-iJT
+dtA
 aaa
 aaa
 aaa
@@ -93886,7 +93868,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+ckk
 aaa
 aaa
 aaa
@@ -94132,7 +94114,7 @@ ckm
 ckm
 ckm
 aaa
-iJT
+jTB
 aaa
 ckm
 ckm
@@ -94389,7 +94371,7 @@ pbJ
 pbJ
 pbJ
 kam
-iJT
+mhL
 oVK
 nVn
 nVn
@@ -94892,7 +94874,7 @@ aaa
 aeo
 aaa
 acm
-cnw
+itZ
 aaa
 aaa
 aaa
@@ -95665,13 +95647,13 @@ aaa
 aaa
 cnw
 aaa
-hCa
-hCa
-hCa
-hCa
-hCa
-hCa
-hCa
+yaO
+yaO
+yaO
+yaO
+yaO
+yaO
+yaO
 yaO
 aaa
 iJT
@@ -95942,7 +95924,7 @@ aaa
 aaa
 aaa
 aaa
-itZ
+cnw
 aaa
 aaa
 aaa
@@ -128050,7 +128032,7 @@ acK
 acK
 acm
 acm
-itZ
+cnw
 aaa
 aaa
 aaa
@@ -128072,7 +128054,7 @@ aaa
 aaa
 aaa
 aaa
-itZ
+cnw
 aaa
 aaa
 aaa
@@ -128329,7 +128311,7 @@ tHM
 tHM
 tHM
 aaa
-itZ
+cnw
 aaa
 aaa
 aaa
@@ -128843,7 +128825,7 @@ iAY
 iAY
 upr
 aaa
-cnw
+itZ
 aaa
 aaa
 aaa
@@ -129078,7 +129060,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+itZ
 aaa
 aaa
 aaa
@@ -129345,9 +129327,9 @@ tHM
 tHM
 tHM
 tHM
-aaa
+kFQ
 iFJ
-aaa
+kFQ
 tHM
 tHM
 tHM
@@ -129603,7 +129585,7 @@ ckB
 ckB
 ckB
 wef
-iFJ
+xLu
 qVV
 cKi
 cKi
@@ -129860,7 +129842,7 @@ iAY
 iAY
 upr
 aaa
-iFJ
+oIS
 aaa
 iAY
 iAY
@@ -129871,7 +129853,7 @@ iAY
 iAY
 upr
 aaa
-itZ
+cnw
 aaa
 aaa
 aaa
@@ -130106,7 +130088,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+ckk
 aaa
 aaa
 aaa
@@ -130117,7 +130099,7 @@ aaa
 aaa
 aaa
 aaa
-iFJ
+cNy
 aaa
 aaa
 aaa
@@ -130128,7 +130110,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+ckk
 aaa
 aaa
 aaa
@@ -130363,28 +130345,28 @@ aaa
 aaa
 aaa
 aaa
+itZ
 cnw
-aaa
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-aaa
-iFJ
-aaa
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-aaa
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+aaB
+cNy
+aaB
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
 cnw
 aaa
 aaa
@@ -130620,29 +130602,29 @@ aaa
 aaa
 aaa
 aaa
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 ckk
-wsc
-ckB
-ckB
-ckB
-ckB
-ckB
-ckB
-ckB
-wef
-iFJ
-qVV
-cKi
-cKi
-cKi
-cKi
-cKi
-cKi
-cKi
-fFL
 ckk
-cnw
+jlp
+ckk
+ckk
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -130877,29 +130859,29 @@ aaa
 aaa
 aaa
 aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+cnw
+aaB
+ckk
+aaB
 cnw
 aaa
-iAY
-iAY
-iAY
-iAY
-iAY
-iAY
-iAY
-upr
 aaa
-iFJ
 aaa
-iAY
-iAY
-iAY
-iAY
-iAY
-iAY
-iAY
-upr
 aaa
-itZ
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -131134,19 +131116,6 @@ aaa
 aaa
 aaa
 aaa
-itZ
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-iFJ
-aaa
 aaa
 aaa
 aaa
@@ -131157,6 +131126,19 @@ aaa
 aaa
 aaa
 cnw
+cnw
+cnw
+cnw
+cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -131391,29 +131373,29 @@ aaa
 aaa
 aaa
 aaa
-cnw
 aaa
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-kFQ
-iFJ
-kFQ
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
-tHM
 aaa
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -131648,29 +131630,29 @@ aaa
 aaa
 aaa
 aaa
-cnw
-ckk
-wsc
-ckB
-ckB
-ckB
-ckB
-ckB
-ckB
-ckB
-wef
-xLu
-qVV
-cKi
-cKi
-cKi
-cKi
-cKi
-cKi
-cKi
-fFL
-ckk
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -131905,29 +131887,29 @@ aaa
 aaa
 aaa
 aaa
-cnw
 aaa
-ckg
-ckg
-ckg
-ckg
-ckg
-ckg
-ckg
-cGZ
 aaa
-oIS
 aaa
-iAY
-iAY
-iAY
-iAY
-iAY
-iAY
-iAY
-upr
 aaa
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -132162,7 +132144,6 @@ aaa
 aaa
 aaa
 aaa
-ckk
 aaa
 aaa
 aaa
@@ -132173,7 +132154,6 @@ aaa
 aaa
 aaa
 aaa
-cNy
 aaa
 aaa
 aaa
@@ -132184,7 +132164,9 @@ aaa
 aaa
 aaa
 aaa
-ckk
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -132419,29 +132401,29 @@ aaa
 aaa
 aaa
 aaa
-itZ
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-aaB
-cNy
-aaB
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -132685,11 +132667,11 @@ aaa
 aaa
 aaa
 aaa
-ckk
-ckk
-jlp
-ckk
-ckk
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -132942,11 +132924,11 @@ aaa
 aaa
 aaa
 aaa
-cnw
-aaB
-ckk
-aaB
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -133199,11 +133181,11 @@ aaa
 aaa
 aaa
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
