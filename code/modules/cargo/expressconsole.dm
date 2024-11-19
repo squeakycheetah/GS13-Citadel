@@ -10,7 +10,7 @@
 	name = "express supply console"
 	desc = "This console allows the user to purchase a package \
 		with 1/40th of the delivery time: made possible by GATO's new \"1500mm Orbital Railgun\".\
-		All sales are near instantaneous - please choose carefully"
+		All sales are near instantaneous - please choose carefully" //GS13 - Nanotrasen to GATO
 	icon_screen = "supply_express"
 	circuit = /obj/item/circuitboard/computer/cargo/express
 	blockade_warning = "Bluespace instability detected. Delivery impossible."

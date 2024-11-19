@@ -226,7 +226,7 @@
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Player Panel") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 
-/datum/admins/proc/access_news_network() //MARKER
+/datum/admins/proc/access_news_network() //MARKER //GS13 - Nanotrasen to GATO
 	set category = "Admin.Events"
 	set name = "Access Newscaster Network"
 	set desc = "Allows you to view, add and edit news feeds."

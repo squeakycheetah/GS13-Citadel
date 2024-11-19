@@ -43,7 +43,7 @@
 				</html>
 				"}
 
-/obj/item/book/manual/ripley_build_and_repair
+/obj/item/book/manual/ripley_build_and_repair //GS13 - Nanotrasen to GATO
 	name = "APLU \"Ripley\" Construction and Operation Manual"
 	icon_state ="book"
 	author = "Weyland-Yutani Corp"
@@ -199,7 +199,7 @@
 				</html>
 			"}
 
-/obj/item/book/manual/nuclear
+/obj/item/book/manual/nuclear //GS13 - Nanotrasen to GATO
 	name = "Fission Mailed: Nuclear Sabotage 101"
 	icon_state ="bookNuclear"
 	author = "Syndicate"
@@ -282,7 +282,7 @@
 /obj/item/book/manual/wiki/cit
 	name = "Citadel infobook"
 	icon_state ="book8"
-	author = "GATO"
+	author = "GATO" //GS13 - Nanotrasen to GATO
 	title = "Citadel infobook"
 	page_link = ""
 	window_size = "1500x800" //Too squashed otherwise
@@ -318,7 +318,7 @@
 /obj/item/book/manual/wiki/cit/chemistry
 	name = "Chemistry Textbook"
 	icon_state ="chemistrybook"
-	author = "GATO"
+	author = "GATO" //GS13 - Nanotrasen to GATO
 	title = "Chemistry Textbook"
 	page_link = "main/guides/guide_chemistry"
 
@@ -332,7 +332,7 @@
 /obj/item/book/manual/wiki/chemistry
 	name = "Outdated Chemistry Textbook"
 	icon_state ="chemistrybook_old"
-	author = "GATO"
+	author = "GATO" //GS13 - Nanotrasen to GATO
 	title = "Outdated Chemistry Textbook"
 	page_link = "Guide_to_chemistry"
 
@@ -364,9 +364,9 @@
 
 /obj/item/book/manual/wiki/security_space_law
 	name = "Space Law"
-	desc = "A set of GATO guidelines for keeping law and order on their space stations."
+	desc = "A set of GATO guidelines for keeping law and order on their space stations." //GS13 - Nanotrasen to GATO
 	icon_state = "bookSpaceLaw"
-	author = "GATO"
+	author = "GATO" //GS13 - Nanotrasen to GATO
 	title = "Space Law"
 	page_link = "Space_Law"
 
@@ -398,7 +398,7 @@
 /obj/item/book/manual/wiki/detective
 	name = "The Film Noir: Proper Procedures for Investigations"
 	icon_state ="bookDetective"
-	author = "GATO"
+	author = "GATO" //GS13 - Nanotrasen to GATO
 	title = "The Film Noir: Proper Procedures for Investigations"
 	page_link = "Detective"
 

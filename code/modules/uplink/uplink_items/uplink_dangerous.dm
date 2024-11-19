@@ -159,7 +159,7 @@
 /datum/uplink_item/dangerous/flamethrower
 	name = "Flamethrower"
 	desc = "A flamethrower, fueled by a portion of highly flammable biotoxins stolen previously from GATO \
-			stations. Make a statement by roasting the filth in their own greed. Use with caution."
+			stations. Make a statement by roasting the filth in their own greed. Use with caution." //GS13 - Nanotrasen to GATO
 	item = /obj/item/flamethrower/full/tank
 	cost = 4
 	surplus = 40

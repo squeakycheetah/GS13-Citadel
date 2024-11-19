@@ -180,7 +180,7 @@
 
 /obj/structure/sign/poster/contraband
 	poster_item_name = "contraband poster"
-	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband aboard GATO space facilities."
+	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband aboard GATO space facilities." //GS13 - Nanotrasen to GATO
 	poster_item_icon_state = "rolled_contraband"
 
 /obj/structure/sign/poster/contraband/random
@@ -236,17 +236,17 @@
 
 /obj/structure/sign/poster/contraband/missing_gloves
 	name = "Missing Gloves"
-	desc = "This poster references the uproar that followed GATO's financial cuts toward insulated-glove purchases."
+	desc = "This poster references the uproar that followed GATO's financial cuts toward insulated-glove purchases." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_gloves"
 
 /obj/structure/sign/poster/contraband/hacking_guide
 	name = "Hacking Guide"
-	desc = "This poster details the internal workings of the common GATO airlock. Sadly, it appears out of date."
+	desc = "This poster details the internal workings of the common GATO airlock. Sadly, it appears out of date." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_hack"
 
 /obj/structure/sign/poster/contraband/rip_badger
 	name = "RIP Badger"
-	desc = "This seditious poster references GATO's genocide of a space station full of badgers."
+	desc = "This seditious poster references GATO's genocide of a space station full of badgers." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_badger"
 
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris
@@ -271,7 +271,7 @@
 
 /obj/structure/sign/poster/contraband/power
 	name = "Power"
-	desc = "A poster that positions the seat of power outside GATO."
+	desc = "A poster that positions the seat of power outside GATO." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_power"
 
 /obj/structure/sign/poster/contraband/space_cube
@@ -306,7 +306,7 @@
 
 /obj/structure/sign/poster/contraband/rebels_unite
 	name = "Rebels Unite"
-	desc = "A poster urging the viewer to rebel against GATO."
+	desc = "A poster urging the viewer to rebel against GATO." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_rebel"
 
 /obj/structure/sign/poster/contraband/have_a_puff
@@ -437,12 +437,12 @@
 
 /obj/structure/sign/poster/contraband/scum
 	name = "Security are Scum"
-	desc = "Anti-security propaganda. Features a human GATO security officer being shot in the head, with the words 'Scum' and a short inciteful manifesto. Used to anger security."
+	desc = "Anti-security propaganda. Features a human GATO security officer being shot in the head, with the words 'Scum' and a short inciteful manifesto. Used to anger security." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_scum"
 
 /obj/structure/sign/poster/contraband/manifest
-	name = "GATO Manifest"
-	desc = "A poster listing off various fictional claims of GATO's many rumored corporate mishaps."
+	name = "GATO Manifest" //GS13 - Nanotrasen to GATO
+	desc = "A poster listing off various fictional claims of GATO's many rumored corporate mishaps." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_manifest"
 
 /obj/structure/sign/poster/contraband/bountyhunters
@@ -482,7 +482,7 @@
 
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
-	poster_item_desc = "An official GATO-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "An official GATO-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface." //GS13 - Nanotrasen to GATO
 	poster_item_icon_state = "rolled_legit"
 
 /obj/structure/sign/poster/official/random
@@ -618,7 +618,7 @@
 
 /obj/structure/sign/poster/official/anniversary_vintage_reprint
 	name = "50th Anniversary Vintage Reprint"
-	desc = "A reprint of a poster from 2505, commemorating the 50th Anniversary of Gatoposters Manufacturing, a subsidiary of GATO."
+	desc = "A reprint of a poster from 2505, commemorating the 50th Anniversary of Gatoposters Manufacturing, a subsidiary of GATO." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_vintage"
 
 /obj/structure/sign/poster/official/fruit_bowl
@@ -628,22 +628,22 @@
 
 /obj/structure/sign/poster/official/pda_ad
 	name = "PDA Ad"
-	desc = "A poster advertising the latest PDA from GATO suppliers."
+	desc = "A poster advertising the latest PDA from GATO suppliers." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_pda"
 
 /obj/structure/sign/poster/official/pda_ad600
 	name = "GT PDA600 Ad"
-	desc = "A poster advertising an old discounted GATO PDA. This is the old 600 model, it has a small screen and suffered from security and networking issues."
+	desc = "A poster advertising an old discounted GATO PDA. This is the old 600 model, it has a small screen and suffered from security and networking issues." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_retro"
 
 /obj/structure/sign/poster/official/pda_ad800
 	name = "GT PDA800 Ad"
-	desc = "An advertisement on an old GATO PDA model. The 800 fixed a lot of security flaws that the 600 had; it also had large touchscreen and hot-swappable cartridges."
+	desc = "An advertisement on an old GATO PDA model. The 800 fixed a lot of security flaws that the 600 had; it also had large touchscreen and hot-swappable cartridges." //GS13 - Nanotrasen to GATO
 	icon_state = "poster_classic"
 
 /obj/structure/sign/poster/official/enlist
 	name = "Enlist"
-	desc = "Enlist in the GATO Jannisary reserves today!"
+	desc = "Enlist in the GATO Jannisary reserves today!" //GS13 - Nanotrasen to GATO
 	icon_state = "poster_enlist"
 
 /obj/structure/sign/poster/official/nanomichi_ad

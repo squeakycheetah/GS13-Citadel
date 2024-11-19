@@ -85,7 +85,7 @@
 	id = "tackle_advanced"
 	display_name = "Advanced Grapple Technology"
 	description = "GATO would like to remind its researching staff that it is never acceptable to \"glomp\" your coworkers, and further \"scientific trials\" on the subject \
-	will no longer be accepted in its academic journals."
+	will no longer be accepted in its academic journals." //GS13 - Nanotrasen to GATO
 	design_ids = list("tackle_dolphin", "tackle_rocket")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	hidden = TRUE

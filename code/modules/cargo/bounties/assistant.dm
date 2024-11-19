@@ -2,14 +2,14 @@
 
 /datum/bounty/item/assistant/scooter
 	name = "Scooter"
-	description = "GATO has determined walking to be wasteful. Ship a scooter to CentCom to speed operations up."
+	description = "GATO has determined walking to be wasteful. Ship a scooter to CentCom to speed operations up." //GS13 - Nanotrasen to GATO
 	reward = 900 // the mat hoffman
 	wanted_types = list(/obj/vehicle/ridden/scooter)
 	include_subtypes = FALSE
 
 /datum/bounty/item/assistant/skateboard
 	name = "Skateboard"
-	description = "GATO has determined walking to be wasteful. Ship a skateboard to CentCom to speed operations up."
+	description = "GATO has determined walking to be wasteful. Ship a skateboard to CentCom to speed operations up." //GS13 - Nanotrasen to GATO
 	reward = 800 // the tony hawk
 	wanted_types = list(/obj/vehicle/ridden/scooter/skateboard)
 
@@ -162,7 +162,7 @@
 
 /datum/bounty/item/assistant/ied
 	name = "IED"
-	description = "GATO's maximum security prison at CentCom is undergoing personnel training. Ship a handful of IEDs to serve as a training tools."
+	description = "GATO's maximum security prison at CentCom is undergoing personnel training. Ship a handful of IEDs to serve as a training tools." //GS13 - Nanotrasen to GATO
 	reward = 2000
 	required_count = 3
 	wanted_types = list(/obj/item/grenade/iedcasing)

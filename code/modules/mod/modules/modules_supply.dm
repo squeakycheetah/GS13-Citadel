@@ -5,7 +5,7 @@
 	name = "MOD internal GPS module"
 	desc = "This module uses common GATO technology to calculate the user's position anywhere in space, \
 		down to the exact coordinates. This information is fed to a central database viewable from the device itself, \
-		though using it to help people is up to you."
+		though using it to help people is up to you." //GS13 - Nanotrasen to GATO
 	icon_state = "gps"
 	module_type = MODULE_USABLE
 	complexity = 1
@@ -29,7 +29,7 @@
 	name = "MOD hydraulic clamp module"
 	desc = "A series of actuators installed into both arms of the suit, boasting a lifting capacity of almost a ton. \
 		However, this design has been locked by GATO to be primarily utilized for lifting various crates. \
-		A lot of people would say that loading cargo is a dull job, but you could not disagree more."
+		A lot of people would say that loading cargo is a dull job, but you could not disagree more." //GS13 - Nanotrasen to GATO
 	icon_state = "clamp"
 	module_type = MODULE_ACTIVE
 	complexity = 3

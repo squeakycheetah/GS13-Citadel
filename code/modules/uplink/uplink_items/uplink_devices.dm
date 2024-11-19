@@ -197,7 +197,7 @@
 	desc = "A radioactive microlaser disguised as a standard GATO health analyzer. When used, it emits a \
 			powerful burst of radiation, which, after a short delay, can incapacitate all but the most protected \
 			of humanoids. It has two settings: intensity, which controls the power of the radiation, \
-			and wavelength, which controls the delay before the effect kicks in."
+			and wavelength, which controls the delay before the effect kicks in." //GS13 - Nanotrasen to GATO
 	item = /obj/item/healthanalyzer/rad_laser
 	cost = 3
 

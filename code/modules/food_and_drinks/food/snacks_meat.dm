@@ -476,7 +476,7 @@
 
 /obj/item/reagent_containers/food/snacks/cube/chicken
 	name = "chicken cube"
-	desc = "A new GATO classic, the chicken cube. Tastes like everything!"
+	desc = "A new GATO classic, the chicken cube. Tastes like everything!" //GS13 - Nanotrasen to GATO
 	list_reagents = list(/datum/reagent/consumable/eggyolk = 30, /datum/reagent/medicine/strange_reagent = 1)
 	tastes = list("chicken" = 1, "the country" = 1, "chicken bouillon" = 1)
 	dried_being = /mob/living/simple_animal/chicken

@@ -24,7 +24,7 @@
 /obj/structure/artilleryplaceholder/decorative
 	density = FALSE
 
-/obj/machinery/artillerycontrol/ui_interact(mob/user)
+/obj/machinery/artillerycontrol/ui_interact(mob/user) //GS13 - Nanotrasen to GATO
 	. = ..()
 	var/dat = "<B>Bluespace Artillery Control:</B><BR>"
 	dat += "Locked on<BR>"

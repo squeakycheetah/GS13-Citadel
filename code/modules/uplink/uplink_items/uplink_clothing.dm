@@ -46,7 +46,7 @@
 	name = "Syndicate Space Suit"
 	desc = "This red and black Syndicate space suit is less encumbering than GATO variants, \
 			fits inside bags, and has a weapon slot. GATO crew members are trained to report red space suit \
-			sightings, however."
+			sightings, however." //GS13 - Nanotrasen to GATO
 	item = /obj/item/storage/box/syndie_kit/space
 	cost = 4
 
@@ -56,7 +56,7 @@
 			that runs off standard atmospheric tanks. Toggling the suit in and out of \
 			combat mode will allow you all the mobility of a loose fitting uniform without sacrificing armoring. \
 			Additionally the suit is collapsible, making it small enough to fit within a backpack. \
-			GATO crew who spot these suits are known to panic."
+			GATO crew who spot these suits are known to panic." //GS13 - Nanotrasen to GATO
 	item = /obj/item/clothing/suit/space/hardsuit/syndi
 	cost = 8
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS) //you can't buy it in nuke, because the elite hardsuit costs the same while being better

@@ -104,7 +104,7 @@
 	toolspeed = 0.25
 	icon_state = "screwdriver_nt"
 
-/obj/item/paper/guides/antag/nuke_instructions
+/obj/item/paper/guides/antag/nuke_instructions //GS13 - Nanotrasen to GATO
 	info = "How to break into a GATO self-destruct terminal and remove its plutonium core:<br>\
 	<ul>\
 	<li>Use a screwdriver with a very thin tip (provided) to unscrew the terminal's front panel</li>\

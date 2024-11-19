@@ -214,7 +214,7 @@
 /datum/map_template/shuttle/emergency/asteroid
 	suffix = "asteroid"
 	name = "Asteroid Station Emergency Shuttle"
-	description = "A respectable mid-sized shuttle that first saw service shuttling GATO crew to and from their asteroid belt embedded facilities."
+	description = "A respectable mid-sized shuttle that first saw service shuttling GATO crew to and from their asteroid belt embedded facilities." //GS13 - Nanotrasen to GATO
 	credit_cost = 3000
 
 /datum/map_template/shuttle/emergency/bar
@@ -257,7 +257,7 @@
 /datum/map_template/shuttle/emergency/discoinferno
 	suffix = "discoinferno"
 	name = "Disco Inferno"
-	description = "The glorious results of centuries of plasma research done by GATO employees. This is the reason why you are here. Get on and dance like you're on fire, burn baby burn!"
+	description = "The glorious results of centuries of plasma research done by GATO employees. This is the reason why you are here. Get on and dance like you're on fire, burn baby burn!" //GS13 - Nanotrasen to GATO
 	admin_notes = "Flaming hot. The main area has a dance machine as well as plasma floor tiles that will be ignited by players every single time."
 	credit_cost = 10000
 	// can_be_bought = FALSE
@@ -416,7 +416,7 @@
 /datum/map_template/shuttle/emergency/goon
 	suffix = "goon"
 	name = "NES Port"
-	description = "The GATO Emergency Shuttle Port(NES Port for short) is a shuttle used at other less known GATO facilities and has a more open inside for larger crowds, but fewer onboard shuttle facilities."
+	description = "The GATO Emergency Shuttle Port(NES Port for short) is a shuttle used at other less known GATO facilities and has a more open inside for larger crowds, but fewer onboard shuttle facilities." //GS13 - Nanotrasen to GATO
 	credit_cost = 500
 
 // /datum/map_template/shuttle/emergency/rollerdome
@@ -581,7 +581,7 @@
 /datum/map_template/shuttle/emergency/cog
 	suffix = "cog"
 	name = "NES Classic"
-	description = "A blast from the past! This recreation of the GATO Emergency Shuttle Port features the same focus on seating as the original, but on a slightly longer frame to better accommodate modern shuttle docks."
+	description = "A blast from the past! This recreation of the GATO Emergency Shuttle Port features the same focus on seating as the original, but on a slightly longer frame to better accommodate modern shuttle docks." //GS13 - Nanotrasen to GATO
 	credit_cost = 750
 
 /datum/map_template/shuttle/arrival/box

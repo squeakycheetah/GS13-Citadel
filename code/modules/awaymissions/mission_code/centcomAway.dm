@@ -36,7 +36,7 @@
 
 //centcomAway items
 
-/obj/item/paper/pamphlet/centcom/visitor_info
+/obj/item/paper/pamphlet/centcom/visitor_info //GS13 - Nanotrasen to GATO
 	name = "Visitor Info Pamphlet"
 	info = "<b> XCC-P5831 Visitor Information </b><br>\
 	Greetings, visitor, to  XCC-P5831! As you may know, this outpost was once \

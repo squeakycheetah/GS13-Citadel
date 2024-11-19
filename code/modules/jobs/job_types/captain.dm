@@ -7,7 +7,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "GATO officials and Space law"
+	supervisors = "GATO officials and Space law" //GS13 - Nanotrasen to GATO
 	selection_color = "#aac1ee"
 	req_admin_notify = 1
 	minimal_player_age = 20

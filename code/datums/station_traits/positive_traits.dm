@@ -90,7 +90,7 @@
 	show_in_report = TRUE
 	var/list/scarves
 
-/datum/station_trait/scarves/New()
+/datum/station_trait/scarves/New() //GS13 - Nanotrasen to GATO
 	. = ..()
 	report_message = pick(
 		"GATO is experimenting with seeing if neck warmth improves employee morale.",

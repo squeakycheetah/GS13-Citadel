@@ -11,7 +11,7 @@
 	recommended_enemies = 8
 	reroll_friendly = 0
 	chaos = 7
-	traitor_name = "GATO Internal Affairs Agent"
+	traitor_name = "GATO Internal Affairs Agent" //GS13 - Nanotrasen to GATO
 	antag_flag = ROLE_INTERNAL_AFFAIRS
 
 	traitors_possible = 10 //hard limit on traitors if scaling is turned off
@@ -20,7 +20,7 @@
 
 	announce_text = "There are GATO Internal Affairs Agents trying to kill each other!\n\
 	<span class='danger'>IAA</span>: Eliminate your targets and protect yourself!\n\
-	<span class='notice'>Crew</span>: Stop the IAA agents before they can cause too much mayhem."
+	<span class='notice'>Crew</span>: Stop the IAA agents before they can cause too much mayhem." //GS13 - Nanotrasen to GATO
 
 
 
@@ -80,4 +80,4 @@
 
 /datum/game_mode/traitor/internal_affairs/generate_report()
 	return "GATO denies any accusations of placing internal affairs agents onboard your station to eliminate inconvenient employees.  Any further accusations against CentCom for such \
-			actions will be met with a conversation with an official internal affairs agent."
+			actions will be met with a conversation with an official internal affairs agent." //GS13 - Nanotrasen to GATO

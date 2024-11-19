@@ -675,7 +675,7 @@
 		card.forceMove(src)
 		cards.Add(card)
 
-/obj/item/paper/tcg_rules
+/obj/item/paper/tcg_rules //GS13 - Nanotrasen to GATO
 	name = "TCG Rulebook"
 	desc = "A small rulebook containing a starter guide for TCG."
 	icon = 'icons/obj/tcg/misc.dmi'

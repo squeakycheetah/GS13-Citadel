@@ -143,7 +143,7 @@
 
 	to_chat(owner, "<B><font size=3 color=red>You are the [name].</font></B>")
 
-	var/missiondesc = "Your squad is being sent on a mission to [station_name()] by GATO's Security Division."
+	var/missiondesc = "Your squad is being sent on a mission to [station_name()] by GATO's Security Division." //GS13 - Nanotrasen to GATO
 	if(leader) //If Squad Leader
 		missiondesc += " Lead your squad to ensure the completion of the mission. Board the shuttle when your team is ready."
 	else
@@ -160,7 +160,7 @@
 
 	to_chat(owner, "<B><font size=3 color=red>You are the [name].</font></B>")
 
-	var/missiondesc = "Your squad is being sent on a mission to [station_name()] by GATO's Security Division."
+	var/missiondesc = "Your squad is being sent on a mission to [station_name()] by GATO's Security Division." //GS13 - Nanotrasen to GATO
 	if(leader) //If Squad Leader
 		missiondesc += " Lead your squad to ensure the completion of the mission. Board the shuttle when your team is ready."
 	else
@@ -198,7 +198,7 @@
 		QDEL_NULL(H.wanted_lvl)
 	..()
 
-/datum/antagonist/ert/families/greet()
+/datum/antagonist/ert/families/greet() //GS13 - Nanotrasen to GATO
 	var/missiondesc =  "<span class='warningplain'><B><font size=6 color=red>You are the [name].</font></B>"
 	missiondesc += "<BR><B><font size=5 color=red>You are NOT a GATO Employee. You work for the local government.</font></B>"
 	missiondesc += "<BR><B><font size=5 color=red>You are NOT a deathsquad. You are here to help innocents escape violence, criminal activity, and other dangerous things.</font></B>"
@@ -245,7 +245,7 @@
 	. = ..()
 
 
-/datum/antagonist/ert/families/undercover_cop/greet()
+/datum/antagonist/ert/families/undercover_cop/greet() //GS13 - Nanotrasen to GATO
 	var/missiondesc = "<span class='warningplain'><B><font size=3 color=red>You are the [name].</font></B>"
 	missiondesc += "<BR><B><font size=3 color=red>You are NOT a GATO Employee. You work for the local government.</font></B>"
 	missiondesc += "<BR>You are an undercover police officer on board [station_name()]. You've been sent here by the Spinward Stellar Coalition because of suspected abusive behavior by the security department, and to keep tabs on a potential criminal organization operation."
