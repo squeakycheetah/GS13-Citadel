@@ -15,7 +15,7 @@
 	desc = "Buzzy buzzy bee, stingy sti- Ouch!"
 	icon_state = ""
 	icon_living = ""
-	icon = 'icons/mob/bees.dmi'
+	icon = 'GainStation13/icons/mob/bees.dmi' //GS13 sprite change - brings back smaller bees rather than big goofy ones
 	gender = FEMALE
 	speak_emote = list("buzzes")
 	emote_hear = list("buzzes")
@@ -100,7 +100,7 @@
 	add_overlay("[icon_base]_base")
 
 	var/static/mutable_appearance/greyscale_overlay
-	greyscale_overlay = greyscale_overlay || mutable_appearance('icons/mob/bees.dmi')
+	greyscale_overlay = greyscale_overlay || mutable_appearance('GainStation13/icons/mob/bees.dmi') //GS13 sprite change - brings back smaller bees rather than big goofy ones
 	greyscale_overlay.icon_state = "[icon_base]_grey"
 	greyscale_overlay.color = col
 	add_overlay(greyscale_overlay)
@@ -255,7 +255,7 @@
 	desc = "She's the queen of bees, BZZ BZZ!"
 	icon_state = "queen_item"
 	item_state = ""
-	icon = 'icons/mob/bees.dmi'
+	icon = 'GainStation13/icons/mob/bees.dmi' //GS13 sprite change - brings back smaller bees rather than big goofy ones
 	var/mob/living/simple_animal/hostile/poison/bees/queen/queen
 
 
