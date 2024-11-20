@@ -1,7 +1,7 @@
 /datum/round_event_control/anomaly/anomaly_bluespace
 	name = "Anomaly: Bluespace"
 	typepath = /datum/round_event/anomaly/anomaly_bluespace
-
+	min_players = 12 //GS13 - higher pop = more likely to be solved instead of wrecking a whole dep
 	max_occurrences = 1
 	weight = 5
 	description = "This anomaly randomly teleports all items and mobs in a large area."

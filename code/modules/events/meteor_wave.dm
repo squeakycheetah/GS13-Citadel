@@ -87,7 +87,7 @@
 	typepath = /datum/round_event/meteor_wave/threatening
 	weight = 5
 	min_players = 20
-	max_occurrences = 1
+	max_occurrences = 0 //GS13 - too chaotic
 	earliest_start = 45 MINUTES
 	description = "A meteor wave with higher chance of big meteors."
 
@@ -100,7 +100,7 @@
 	typepath = /datum/round_event/meteor_wave/catastrophic
 	weight = 7
 	min_players = 25
-	max_occurrences = 1
+	max_occurrences = 0 //GS13 - too chaotic
 	earliest_start = 55 MINUTES
 	description = "A meteor wave that might summon a tunguska class meteor."
 
