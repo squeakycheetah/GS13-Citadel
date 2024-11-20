@@ -14,7 +14,7 @@
 /obj/item/wallframe/light_fixture
 	name = "light fixture frame"
 	desc = "Used for building lights."
-	icon = 'icons/obj/lighting.dmi'
+	icon = 'GainStation13/icons/obj/lighting.dmi' //GS13 - sprite change
 	icon_state = "tube-construct-item"
 	result_path = /obj/structure/light_construct
 	inverse = TRUE
@@ -38,7 +38,7 @@
 /obj/structure/light_construct
 	name = "light fixture frame"
 	desc = "A light fixture under construction."
-	icon = 'icons/obj/lighting.dmi'
+	icon = 'GainStation13/icons/obj/lighting.dmi' //GS13 - sprite change
 	icon_state = "tube-construct-stage1"
 	anchored = TRUE
 	layer = WALL_OBJ_LAYER
@@ -178,7 +178,7 @@
 // the standard tube light fixture
 /obj/machinery/light
 	name = "light fixture"
-	icon = 'icons/obj/lighting.dmi'
+	icon = 'GainStation13/icons/obj/lighting.dmi' //GS13 - sprite change
 	var/overlayicon = 'icons/obj/lighting_overlay.dmi'
 	var/base_state = "tube"		// base description and icon_state
 	icon_state = "tube"
@@ -733,7 +733,7 @@
 // will fit into empty /obj/machinery/light of the corresponding type
 
 /obj/item/light
-	icon = 'icons/obj/lighting.dmi'
+	icon = 'GainStation13/icons/obj/lighting.dmi' //GS13 - sprite change
 	force = 2
 	throwforce = 5
 	w_class = WEIGHT_CLASS_TINY
@@ -839,7 +839,7 @@
 
 /obj/machinery/light/floor
 	name = "floor light"
-	icon = 'icons/obj/lighting.dmi'
+	icon = 'GainStation13/icons/obj/lighting.dmi' //GS13 - sprite change
 	base_state = "floor"		// base description and icon_state
 	icon_state = "floor"
 	brightness = 5
