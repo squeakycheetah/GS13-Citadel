@@ -4,7 +4,7 @@
 
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
-		#include "gs_maps\Mining\Lavaland.dmm" //GS13 - gainstation variant
+		#include "map_files\Mining\Lavaland.dmm"
 		#include "map_files\debug\runtimestation.dmm"
 		#include "map_files\Deltastation\DeltaStation2.dmm"
 		#include "gs_maps\MetaStation\MetaStation.dmm" //GS13 - gainstation variant
