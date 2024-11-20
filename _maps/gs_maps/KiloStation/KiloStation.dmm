@@ -12665,6 +12665,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
 	},
+/obj/effect/decal/medium_gato,
 /turf/open/floor/plasteel,
 /area/command/bridge)
 "avR" = (
@@ -34131,6 +34132,9 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /mob/living/carbon/monkey,
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
 /turf/open/floor/grass,
 /area/medical/virology)
 "bfk" = (
@@ -35888,10 +35892,6 @@
 /area/medical/virology)
 "bij" = (
 /obj/structure/flora/junglebush/b,
-/obj/machinery/airalarm{
-	dir = 8;
-	pixel_x = 24
-	},
 /mob/living/carbon/monkey,
 /turf/open/floor/grass,
 /area/medical/virology)
@@ -36942,11 +36942,11 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/disposal/bin,
-/obj/machinery/newscaster{
-	pixel_x = -30
-	},
 /obj/structure/disposalpipe/trunk{
 	dir = 4
+	},
+/obj/structure/sign/painting/library{
+	pixel_x = -32
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/port)
@@ -40296,6 +40296,9 @@
 	dir = 4
 	},
 /obj/structure/closet/firecloset,
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/port)
 "bpu" = (
@@ -40596,6 +40599,9 @@
 	dir = 4
 	},
 /obj/structure/closet/emcloset,
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/port)
 "bpN" = (
@@ -55811,6 +55817,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/decal/medium_gato,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bPC" = (
@@ -82844,6 +82851,11 @@
 /obj/structure/lattice/catwalk,
 /turf/open/floor/plating/airless,
 /area/solars/port/fore)
+"nqB" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/decal/medium_gato,
+/turf/open/floor/plasteel,
+/area/command/bridge)
 "nzO" = (
 /turf/closed/wall/r_wall,
 /area/command/heads_quarters/cmo)
@@ -84004,8 +84016,15 @@
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
 "ttY" = (
-/turf/closed/wall/rust,
-/area/commons/vacant_room/office)
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/structure/sign/painting/library{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/dark,
+/area/service/bar)
 "tCi" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood{
@@ -84171,6 +84190,9 @@
 	dir = 4
 	},
 /obj/machinery/vending/mealdor,
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/port)
 "unX" = (
@@ -111274,7 +111296,7 @@ btY
 bvk
 bvE
 bvH
-aTe
+ttY
 oeS
 bbk
 beA
@@ -115915,7 +115937,7 @@ aqG
 bqt
 cOW
 kZA
-kZA
+nqB
 byw
 ard
 smy
@@ -122875,13 +122897,13 @@ bSH
 bHE
 diq
 ujg
-ttY
-diq
-ttY
 diq
 diq
-ttY
-ttY
+diq
+diq
+diq
+diq
+diq
 bXj
 ckS
 nIt
@@ -127759,7 +127781,7 @@ bTE
 bLg
 bPe
 bWf
-krJ
+bOc
 bWf
 bPe
 bPe

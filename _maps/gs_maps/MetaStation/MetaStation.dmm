@@ -12428,11 +12428,8 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "aXK" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/photocopier{
-	pixel_y = 3
-	},
-/turf/open/floor/carpet,
+/obj/machinery/bookbinder,
+/turf/open/floor/wood,
 /area/service/library)
 "aXL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -26114,6 +26111,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+"ceM" = (
+/obj/structure/bookcase/random/religion,
+/turf/open/floor/wood,
+/area/service/library)
 "ceN" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -32389,6 +32390,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "cul" = (
@@ -48244,7 +48248,11 @@
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
 "dRL" = (
-/turf/open/floor/plasteel/cult,
+/obj/structure/sign/painting/library{
+	pixel_y = 32
+	},
+/obj/structure/chair/bench/left,
+/turf/open/floor/wood,
 /area/service/library)
 "dSm" = (
 /obj/structure/table,
@@ -48781,7 +48789,7 @@
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "egX" = (
-/obj/item/kirbyplants/random,
+/obj/structure/bookcase/random/fiction,
 /turf/open/floor/wood,
 /area/service/library)
 "ehp" = (
@@ -50039,9 +50047,6 @@
 /area/engineering/main)
 "eRD" = (
 /obj/machinery/vending/coffee,
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
 /turf/open/floor/wood,
 /area/service/library)
 "eSb" = (
@@ -53087,10 +53092,8 @@
 /turf/open/floor/plasteel,
 /area/security/office)
 "gLN" = (
-/obj/machinery/door/morgue{
-	name = "Study #2"
-	},
-/turf/open/floor/plasteel/cult,
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/carpet,
 /area/service/library)
 "gLV" = (
 /obj/machinery/vending/boozeomat,
@@ -55912,13 +55915,9 @@
 /turf/open/floor/plasteel,
 /area/service/hydroponics)
 "itP" = (
-/obj/item/kirbyplants/random,
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc/auto_name/south{
-	areastring = "/area/library";
-	name = "Library APC"
+/obj/machinery/airalarm{
+	dir = 1;
+	pixel_y = -22
 	},
 /turf/open/floor/wood,
 /area/service/library)
@@ -57908,9 +57907,8 @@
 /turf/open/floor/plasteel/white,
 /area/science/circuit)
 "jyQ" = (
-/obj/item/kirbyplants/random,
-/obj/structure/sign/poster/official/libraryposter{
-	pixel_y = 32
+/obj/machinery/photocopier{
+	pixel_y = 3
 	},
 /turf/open/floor/wood,
 /area/service/library)
@@ -63693,8 +63691,8 @@
 /turf/open/floor/carpet/red,
 /area/commons/locker)
 "mLh" = (
-/obj/machinery/firealarm{
-	pixel_y = -24
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
 /turf/open/floor/wood,
 /area/service/library)
@@ -63924,7 +63922,6 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/bookbinder,
 /turf/open/floor/carpet,
 /area/service/library)
 "mUE" = (
@@ -63979,11 +63976,15 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "mWA" = (
+/obj/structure/table/wood,
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_x = -32
 	},
 /obj/effect/decal/cleanable/cobweb,
-/obj/structure/bookcase/random/fiction,
+/obj/item/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
 /turf/open/floor/wood,
 /area/service/library)
 "mWP" = (
@@ -64674,7 +64675,6 @@
 "nxP" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
-	dir = 8;
 	name = "Library"
 	},
 /turf/open/floor/wood,
@@ -65454,10 +65454,10 @@
 /turf/open/floor/plating,
 /area/cargo/office)
 "nXO" = (
-/obj/machinery/newscaster{
-	pixel_x = -32
+/obj/structure/sign/painting/library{
+	pixel_y = 32
 	},
-/obj/structure/displaycase/trophy,
+/obj/structure/chair/bench/right,
 /turf/open/floor/wood,
 /area/service/library)
 "nYk" = (
@@ -66891,15 +66891,10 @@
 	},
 /area/commons/fitness/recreation)
 "oMn" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp/green{
-	pixel_x = 1;
-	pixel_y = 5
+/obj/machinery/light{
+	dir = 1
 	},
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_y = 30
-	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/wood,
 /area/service/library)
 "oMq" = (
 /obj/effect/landmark/xeno_spawn,
@@ -70007,13 +70002,11 @@
 /turf/open/floor/plasteel,
 /area/cargo/qm)
 "qwv" = (
-/obj/structure/table/wood,
-/obj/machinery/newscaster{
-	pixel_y = 32
+/obj/structure/chair/office/dark{
+	dir = 1
 	},
-/obj/item/folder,
-/obj/item/folder,
-/turf/open/floor/plasteel/cult,
+/obj/effect/landmark/start/librarian,
+/turf/open/floor/wood,
 /area/service/library)
 "qwP" = (
 /obj/structure/rack,
@@ -70034,14 +70027,17 @@
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
 "qxg" = (
-/obj/structure/table/wood,
-/obj/machinery/newscaster{
-	pixel_y = 32
+/obj/structure/table/wood/fancy/blue,
+/obj/structure/table/wood/fancy/royalblue,
+/obj/structure/sign/painting/library_secure{
+	pixel_x = 32
 	},
-/obj/item/folder,
-/obj/item/folder,
-/obj/effect/decal/cleanable/cobweb/cobweb2,
-/turf/open/floor/plasteel/cult,
+/obj/machinery/door/window{
+	dir = 8;
+	name = "Secure Art Exhibition";
+	req_access_txt = "37"
+	},
+/turf/open/floor/wood,
 /area/service/library)
 "qxN" = (
 /obj/structure/chair/sofa/left,
@@ -72296,19 +72292,20 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
 "rLB" = (
-/obj/machinery/airalarm{
-	dir = 4;
-	pixel_x = -23
+/obj/effect/landmark/barthpot,
+/turf/open/floor/wood{
+	icon_state = "wood-broken7"
 	},
-/obj/structure/displaycase/trophy,
-/turf/open/floor/wood,
 /area/service/library)
 "rLH" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -24
+	},
 /obj/effect/decal/cleanable/cobweb,
-/obj/structure/bookcase/random/fiction,
 /turf/open/floor/wood,
 /area/service/library)
 "rLS" = (
@@ -72345,11 +72342,10 @@
 /turf/open/floor/plasteel,
 /area/security/prison)
 "rMx" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/chair/comfy/black{
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/effect/landmark/start/librarian,
+/obj/effect/landmark/event_spawn,
 /turf/open/floor/carpet,
 /area/service/library)
 "rMA" = (
@@ -73402,16 +73398,11 @@
 /turf/open/floor/plasteel/chapel,
 /area/service/chapel/main)
 "sqe" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp/green{
-	pixel_x = 1;
-	pixel_y = 5
+/obj/structure/sign/painting/library{
+	pixel_y = 32
 	},
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_y = 30
-	},
-/obj/effect/decal/cleanable/cobweb,
-/turf/open/floor/plasteel/cult,
+/obj/structure/chair/bench,
+/turf/open/floor/wood,
 /area/service/library)
 "sqh" = (
 /turf/closed/wall/r_wall,
@@ -73474,10 +73465,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/aisat/exterior)
 "suE" = (
-/obj/machinery/door/morgue{
-	name = "Study #1"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/carpet,
 /area/service/library)
 "suL" = (
 /obj/effect/landmark/start/cargo_technician,
@@ -73816,6 +73808,20 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/solars/port/fore)
+"sGe" = (
+/obj/structure/table/wood/fancy/blue,
+/obj/structure/table/wood/fancy/royalblue,
+/obj/structure/sign/painting/library_secure{
+	pixel_x = 32
+	},
+/obj/machinery/door/window{
+	dir = 8;
+	name = "Secure Art Exhibition";
+	req_access_txt = "37"
+	},
+/obj/structure/window/reinforced/spawner,
+/turf/open/floor/wood,
+/area/service/library)
 "sGh" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -74706,17 +74712,10 @@
 /turf/open/floor/plating,
 /area/engineering/atmos)
 "thm" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
+/turf/open/floor/wood{
+	icon_state = "wood-broken5"
 	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/port)
+/area/service/library)
 "thq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/yellowsiding/corner{
@@ -75137,10 +75136,10 @@
 /turf/open/floor/plasteel/white,
 /area/science/circuit)
 "txq" = (
-/obj/structure/chair/comfy/brown{
-	dir = 1
+/obj/structure/sign/painting/library{
+	pixel_y = -32
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/wood,
 /area/service/library)
 "txP" = (
 /obj/structure/cable/yellow{
@@ -79777,8 +79776,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/status_display/evac{
-	pixel_y = 30
+/obj/machinery/photocopier{
+	pixel_y = 3
 	},
 /turf/open/floor/wood,
 /area/service/library)
@@ -81710,7 +81709,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/effect/landmark/event_spawn,
 /turf/open/floor/wood,
 /area/service/library)
 "xnc" = (
@@ -82012,9 +82010,6 @@
 "xuF" = (
 /obj/structure/chair/comfy/black,
 /obj/effect/landmark/start/assistant,
-/obj/structure/sign/warning/nosmoking/circle{
-	pixel_y = 34
-	},
 /turf/open/floor/wood,
 /area/service/library)
 "xuP" = (
@@ -82437,10 +82432,6 @@
 /area/commons/locker)
 "xGw" = (
 /obj/machinery/light/small,
-/obj/machinery/airalarm{
-	dir = 1;
-	pixel_y = -22
-	},
 /turf/open/floor/wood,
 /area/service/library)
 "xGy" = (
@@ -82719,8 +82710,16 @@
 /area/engineering/main)
 "xMW" = (
 /obj/machinery/light/small,
+/obj/machinery/power/apc{
+	areastring = "/area/service/library";
+	dir = 8;
+	name = "Library APC";
+	pixel_x = -25
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /obj/effect/decal/cleanable/cobweb,
-/obj/structure/bookcase/random/adult,
 /turf/open/floor/wood,
 /area/service/library)
 "xNe" = (
@@ -83088,7 +83087,7 @@
 "xWg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable/yellow{
-	icon_state = "2-4"
+	icon_state = "2-8"
 	},
 /turf/open/floor/carpet,
 /area/service/library)
@@ -83574,10 +83573,10 @@
 /turf/open/floor/carpet/royalblue,
 /area/command/bridge)
 "yhD" = (
+/obj/structure/table/wood,
 /obj/machinery/newscaster{
 	pixel_x = -32
 	},
-/obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/wood,
 /area/service/library)
 "yhY" = (
@@ -102800,14 +102799,14 @@ pKa
 glc
 mWA
 yhD
-xnG
-rLB
-nXO
+jyQ
+pMd
+vyZ
 ndd
 fEX
-xnG
-rLH
 miq
+rLH
+ceM
 xMW
 glc
 lAF
@@ -103055,16 +103054,16 @@ sMT
 dCN
 apA
 glc
+hsi
+qwv
 fEX
+pMd
 fEX
+pMd
 fEX
-fEX
-fEX
-fEX
-fEX
-fEX
-fEX
-fEX
+miq
+thm
+veI
 mLh
 glc
 lBi
@@ -103322,7 +103321,7 @@ nkn
 nkn
 nkn
 nkn
-nkn
+suE
 lIt
 mqZ
 eaK
@@ -103570,9 +103569,9 @@ bqt
 bsy
 wZY
 hZI
-rMx
+hZI
 mUa
-aXK
+hZI
 hZI
 qUy
 hks
@@ -103826,16 +103825,16 @@ lxd
 bql
 awL
 glc
-veI
-hsi
+fEX
+fEX
 wtF
-pMd
+exO
 yhY
-fEb
+rMx
 xmv
+egX
 fEX
-fEX
-fEX
+xnG
 itP
 glc
 uvm
@@ -104083,16 +104082,16 @@ bod
 dix
 bsG
 glc
-glc
-glc
+dRL
+txq
 glc
 eRD
 yhY
 fEb
-fEX
+rLB
 egX
 fEX
-fEX
+xnG
 xGw
 glc
 fEX
@@ -104341,8 +104340,8 @@ bql
 bsH
 glc
 sqe
-dRL
-suE
+txq
+glc
 fEX
 yhY
 vfr
@@ -104597,7 +104596,7 @@ bof
 bql
 uOH
 glc
-qwv
+sqe
 txq
 glc
 xuF
@@ -104606,7 +104605,7 @@ yhY
 fEX
 yko
 fEX
-nOM
+fEX
 pxS
 glc
 glc
@@ -104852,10 +104851,10 @@ bku
 bml
 bog
 bql
-thm
+uOH
 glc
-glc
-glc
+nXO
+txq
 glc
 wmO
 yhY
@@ -105112,10 +105111,10 @@ cfd
 cuj
 glc
 oMn
-dRL
-gLN
 fEX
-yhY
+fEX
+fEX
+gLN
 yhY
 fEX
 tfM
@@ -105369,12 +105368,12 @@ bqw
 bsx
 glc
 qxg
-txq
-glc
-jyQ
-yhY
-yhY
+sGe
 fEX
+fEX
+yhY
+yhY
+aXK
 glc
 glc
 glc

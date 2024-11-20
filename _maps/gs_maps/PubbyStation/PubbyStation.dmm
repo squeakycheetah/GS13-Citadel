@@ -54609,6 +54609,9 @@
 	dir = 4;
 	network = list("ss13","monastery")
 	},
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/dark,
 /area/service/library)
 "czI" = (
@@ -55894,6 +55897,12 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/department/science)
+"efY" = (
+/obj/structure/sign/painting/library{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "egK" = (
 /obj/structure/girder,
 /turf/open/floor/plating{
@@ -60006,6 +60015,9 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/dark,
 /area/service/library)
 "mLc" = (
@@ -60053,6 +60065,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
+"mUw" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-22"
+	},
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "mUE" = (
 /obj/structure/lattice,
 /turf/closed/wall/r_wall,
@@ -63759,6 +63780,12 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel,
 /area/science/explab)
+"usp" = (
+/obj/structure/sign/painting/library{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "uug" = (
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
@@ -63981,6 +64008,12 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/main)
+"uTz" = (
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "uTJ" = (
 /turf/open/floor/plasteel/white,
 /area/engineering/gravity_generator)
@@ -82054,15 +82087,15 @@ aht
 aht
 lKc
 lKc
-tGK
+efY
 mIG
 tGK
-tGK
-tGK
+uTz
+uTz
 tGK
 czH
 tGK
-cyR
+mUw
 sRF
 aaa
 aaa
@@ -82319,7 +82352,7 @@ btj
 czr
 czI
 tGK
-tGK
+usp
 lKc
 lKc
 sRF
