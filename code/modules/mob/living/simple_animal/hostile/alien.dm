@@ -145,7 +145,7 @@
 
 /mob/living/simple_animal/hostile/alien/queen/large
 	name = "alien empress"
-	icon = 'hyperstation/icons/mobs/alienqueen.dmi' //GS13 - moving over Hyper sprites
+	icon = 'icons/mob/alienqueen.dmi'
 	icon_state = "alienq"
 	icon_living = "alienq"
 	icon_dead = "alienq_dead"

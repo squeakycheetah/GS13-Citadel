@@ -102,6 +102,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/pda_style = MONO
 	var/pda_color = "#808000"
 	var/pda_skin = PDA_SKIN_ALT
+	var/list/alt_titles_preferences = list()
 
 	var/uses_glasses_colour = 0
 
@@ -1409,6 +1410,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "This preference functions similar to the one before but allows for items with more drastic effects. <b>Do not enable this if you aren't okay with more drastic things happening to your character.</b><BR>"
 					dat += "<b>Extreme Fatness Vulnerability:</b><a href='?_src_=prefs;preference=extreme_fatness_vulnerable'>[extreme_fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<br></br>"
+					dat += "<b>Object TF:</b><a href='?_src_=prefs;preference=object_tf'>[object_tf == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<br></br>"
 					dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Persistent Fat (endround/cryo weight becomes your new start weight):</b><a href='?_src_=prefs;preference=weight_gain_persistent'>[weight_gain_persistent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Permanent Weight (hard to remove and persistent weight):</b><a href='?_src_=prefs;preference=weight_gain_permanent'>[weight_gain_permanent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -1586,6 +1589,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			HTML += "<tr bgcolor='[job.selection_color]'><td width='60%' align='right'>"
 			var/rank = job.title
+			var/displayed_rank = rank
+			if(job.alt_titles.len && (rank in alt_titles_preferences))
+				displayed_rank = alt_titles_preferences[rank]
 			lastJob = job
 			if(jobban_isbanned(user, rank))
 				HTML += "<font color=red>[rank]</font></td><td><a href='?_src_=prefs;bancheck=[rank]'> BANNED</a></td></tr>"
@@ -1607,10 +1613,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			if((job_preferences["[SSjob.overflow_role]"] == JP_LOW) && (rank != SSjob.overflow_role) && !jobban_isbanned(user, SSjob.overflow_role))
 				HTML += "<font color=orange>[rank]</font></td><td></td></tr>"
 				continue
+			var/rank_title_line = "[displayed_rank]"
 			if((rank in GLOB.command_positions) || (rank == "AI"))//Bold head jobs
-				HTML += "<b><span class='dark'>[rank]</span></b>"
+				rank_title_line = "<b>[rank_title_line]</b>"
+			if(job.alt_titles.len)
+				rank_title_line = "<a href='?_src_=prefs;preference=job;task=alt_title;job_title=[job.title]'>[rank_title_line]</a>"
+
 			else
-				HTML += "<span class='dark'>[rank]</span>"
+				rank_title_line = "<span class='dark'>[rank_title_line]</span>" //Make it dark if we're not adding a button for alt titles
+			HTML += rank_title_line
 
 			HTML += "</td><td width='40%'>"
 
@@ -1864,6 +1875,21 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				SetChoices(user)
 			if("setJobLevel")
 				UpdateJobPreference(user, href_list["text"], text2num(href_list["level"]))
+			if("alt_title")
+				var/job_title = href_list["job_title"]
+				var/titles_list = list(job_title)
+				var/datum/job/J = SSjob.GetJob(job_title)
+				for(var/i in J.alt_titles)
+					titles_list += i
+				var/chosen_title
+				chosen_title = input(user, "Choose your job's title:", "Job Preference") as null|anything in titles_list
+				if(chosen_title)
+					if(chosen_title == job_title)
+						if(alt_titles_preferences[job_title])
+							alt_titles_preferences.Remove(job_title)
+					else
+						alt_titles_preferences[job_title] = chosen_title
+				SetChoices(user)
 			else
 				SetChoices(user)
 		return TRUE
@@ -3421,6 +3447,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					fatness_vulnerable = !fatness_vulnerable
 				if("extreme_fatness_vulnerable")
 					extreme_fatness_vulnerable = !extreme_fatness_vulnerable
+
+				if("object_tf")
+					object_tf = !object_tf
 
 				if("blueberry_inflation")
 					blueberry_inflation = !blueberry_inflation

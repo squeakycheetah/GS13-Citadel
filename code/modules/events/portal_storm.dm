@@ -3,6 +3,7 @@
 	typepath = /datum/round_event/portal_storm/syndicate_shocktroop
 	weight = 2
 	min_players = 20
+	max_occurrences = 0 //GS13 - no antags, thanks
 	earliest_start = 60 MINUTES
 	category = EVENT_CATEGORY_ENTITIES
 	description = "Syndicate troops pour out of portals."

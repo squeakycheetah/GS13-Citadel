@@ -291,11 +291,6 @@
 	icon = "thehive"
 	desc = "Comb in for some sweet drinks! Not known for serving any sappy drink."
 
-/datum/barsign/the_busted_belt //gs13
-	name = "The Busted Belt"
-	icon = "thebustedbelt"
-	desc = "GATO is not liable for any pieces of broken wardrobe." //GS13 - Nanotrasen to GATO
-
 /datum/barsign/hiddensigns
 	hidden = TRUE
 

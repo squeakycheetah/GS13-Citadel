@@ -277,24 +277,26 @@
 	icon_state = "salt_pile"
 	gender = NEUTER
 
-/obj/effect/decal/cleanable/glitter //GS13 - changed glitters to more subtle variants
+/obj/effect/decal/cleanable/glitter
 	name = "generic glitter pile"
 	desc = "The herpes of arts and crafts."
-	icon = 'GainStation13/icons/effects/atmospherics.dmi'
-	icon_state = "glitter"
+	icon = 'icons/effects/atmospherics.dmi'
 	gender = NEUTER
 	mergeable_decal = TRUE
 	persistent = FALSE
 
 /obj/effect/decal/cleanable/glitter/pink
 	name = "pink glitter"
+	icon_state = "plasma_old"
 	color = "#9e0089"
 
 /obj/effect/decal/cleanable/glitter/white
 	name = "white glitter"
+	icon_state = "nitrous_oxide_old"
 
 /obj/effect/decal/cleanable/glitter/blue
 	name = "blue glitter"
+	icon_state = "freon_old"
 	color = "#2dd6ff"
 
 /obj/effect/decal/cleanable/plasma

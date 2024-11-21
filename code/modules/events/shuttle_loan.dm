@@ -1,18 +1,18 @@
-#define SNACK_ATTACK 1 //GS13
-#define HIJACK_SYNDIE 2
-#define RUSKY_PARTY 3
-#define SPIDER_GIFT 4
-#define DEPARTMENT_RESUPPLY 5
-#define ANTIDOTE_NEEDED 6
-#define PIZZA_DELIVERY 7
-#define ITS_HIP_TO 8
-#define MY_GOD_JC 9
-#define DELTA_CRATES 10
+#define HIJACK_SYNDIE 1
+#define RUSKY_PARTY 2
+#define SPIDER_GIFT 3
+#define DEPARTMENT_RESUPPLY 4
+#define ANTIDOTE_NEEDED 5
+#define PIZZA_DELIVERY 6
+#define ITS_HIP_TO 7
+#define MY_GOD_JC 8
+#define DELTA_CRATES 9
+#define SNACK_ATTACK 10 //GS13 Add: Snack attack
 
 /datum/round_event_control/shuttle_loan
 	name = "Shuttle Loan"
 	typepath = /datum/round_event/shuttle_loan
-	max_occurrences = 3
+	max_occurrences = 20 //GS13 Edit: increasing this because they're a fun event
 	earliest_start = 15 MINUTES
 	category = EVENT_CATEGORY_BUREAUCRATIC
 	description = "If cargo accepts the offer, fills the shuttle with loot and/or enemies."
@@ -26,16 +26,13 @@
 	var/thanks_msg = "The cargo shuttle should return in five minutes. Have some supply points for your trouble."
 
 /datum/round_event/shuttle_loan/setup()
-	dispatch_type = pick(HIJACK_SYNDIE, RUSKY_PARTY, SPIDER_GIFT, DEPARTMENT_RESUPPLY, ANTIDOTE_NEEDED, PIZZA_DELIVERY, ITS_HIP_TO, MY_GOD_JC)
+	dispatch_type = pick(HIJACK_SYNDIE, RUSKY_PARTY, SPIDER_GIFT, DEPARTMENT_RESUPPLY, ANTIDOTE_NEEDED, PIZZA_DELIVERY, ITS_HIP_TO, MY_GOD_JC, SNACK_ATTACK) //GS13 Edit: Snack Attack shuttle
 
 /datum/round_event/shuttle_loan/announce(fake)
 	SSshuttle.shuttle_loan = src
 	var/message = "Cargo: I just wanna tell you techs good luck, we are all counting on you."
 	var/title = "CentCom Free Real Estate"
 	switch(dispatch_type)
-		if(SNACK_ATTACK) //GS13
-			message = "Cargo: Our science division took couple too many samples from one the local candy biohabitats. Would you care to dispose of the unneeded specimen?"
-			title = "CentCom Science Division"
 		if(HIJACK_SYNDIE)
 			message = "Cargo: The syndicate are trying to infiltrate your station. If you let them hijack your cargo shuttle, you'll save us a headache."
 			title = "CentCom Counter Intelligence"
@@ -66,6 +63,11 @@
 			message = "Cargo: We have discovered a warehouse of DELTA locked crates. We can't store any more of them at CC, can you take them for us?"
 			title = "CentCom Security Division"
 			bonus_points = 25000 //If you mess up, people die and the shuttle gets turned into swiss cheese
+		//GS13 Start: Snack Attack shuttle
+		if(SNACK_ATTACK)
+			message = "Cargo: Our science division took couple too many samples from one the local candy biohabitats. Would you care to dispose of the unneeded specimen?"
+			title = "CentCom Science Division"
+		//GS13 End
 	if(prob(50))
 		priority_announce(message, title)
 	else
@@ -85,8 +87,6 @@
 	SSshuttle.supply.setTimer(3000)
 
 	switch(dispatch_type)
-		if(SNACK_ATTACK) //GS13
-			SSshuttle.centcom_message += "Snack attack en route."
 		if(HIJACK_SYNDIE)
 			SSshuttle.centcom_message += "Syndicate hijack team incoming."
 		if(RUSKY_PARTY)
@@ -105,6 +105,10 @@
 			SSshuttle.centcom_message += "Live explosive ordnance incoming. Exercise extreme caution."
 		if(DELTA_CRATES)
 			SSshuttle.centcom_message += "DELTA Locked crates incoming. Exercise extreme caution."
+		//GS13 Start: Snack attack shuttle
+		if(SNACK_ATTACK)
+			SSshuttle.centcom_message += "Snack attack en route."
+		//GS13 End
 
 /datum/round_event/shuttle_loan/tick()
 	if(dispatched)
@@ -131,19 +135,6 @@
 
 		var/list/shuttle_spawns = list()
 		switch(dispatch_type)
-			if(SNACK_ATTACK) //GS13
-				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime)
-				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime)
-				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast)
-				if(prob(50))
-					shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast)
-
-				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
-				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
-				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
-				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/chocoorange)
-				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/chocoorange)
-				shuttle_spawns.Add(/obj/item/paper/fluff/chocoslime_research)
 			if(HIJACK_SYNDIE)
 				var/datum/supply_pack/pack = SSshuttle.supply_packs[/datum/supply_pack/emergency/specialops]
 				pack.generate(pick_n_take(empty_shuttle_turfs))
@@ -270,6 +261,21 @@
 					var/turf/T = pick_n_take(empty_shuttle_turfs)
 					new /obj/structure/spider/stickyweb(T)
 					new /obj/effect/decal/cleanable/ash(T)
+			//GS13 Start: Snack Attack Shuttle
+			if(SNACK_ATTACK) //GS13
+				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime)
+				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime)
+				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast)
+				if(prob(50))
+					shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast)
+
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/chocoorange)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/chocoorange)
+				shuttle_spawns.Add(/obj/item/paper/fluff/chocoslime_research)
+			//GS13 End
 
 		var/false_positive = 0
 		while(shuttle_spawns.len && empty_shuttle_turfs.len)
@@ -315,3 +321,4 @@
 #undef ITS_HIP_TO
 #undef MY_GOD_JC
 #undef DELTA_CRATES
+#undef SNACK_ATTACK //GS13 Add: Snack attack

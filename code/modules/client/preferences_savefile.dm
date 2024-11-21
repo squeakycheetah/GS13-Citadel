@@ -951,9 +951,10 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["chair_breakage"] >> chair_breakage
 	S["fatness_vulnerable"] >> fatness_vulnerable
 	S["extreme_fatness_vulnerable"] >> extreme_fatness_vulnerable
+	S["object_tf"] >> object_tf
 	S["blueberry_inflation"] >> blueberry_inflation
 	S["feature_breasts_fluid"]			>> features["breasts_fluid"]
-
+	S["alt_titles_preferences"] 		>> alt_titles_preferences
 	//gear loadout
 	if(istext(S["loadout"]))
 		loadout_data = safe_json_decode(S["loadout"])
@@ -1144,6 +1145,13 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	loadout_slot = sanitize_num_clamp(loadout_slot, 1, MAXIMUM_LOADOUT_SAVES, 1, TRUE)
 
+	alt_titles_preferences = SANITIZE_LIST(alt_titles_preferences)
+	if(SSjob)
+		for(var/datum/job/job in SSjob.occupations)
+			if(alt_titles_preferences[job.title])
+				if(!(alt_titles_preferences[job.title] in job.alt_titles))
+					alt_titles_preferences.Remove(job.title)
+
 	cit_character_pref_load(S)
 
 	return TRUE
@@ -1236,6 +1244,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["chair_breakage"], chair_breakage)
 	WRITE_FILE(S["fatness_vulnerable"], fatness_vulnerable)
 	WRITE_FILE(S["extreme_fatness_vulnerable"], extreme_fatness_vulnerable)
+	WRITE_FILE(S["object_tf"], object_tf)
 	WRITE_FILE(S["blueberry_inflation"], blueberry_inflation)
 	WRITE_FILE(S["feature_breasts_fluid"], features["breasts_fluid"])
 
@@ -1301,6 +1310,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["feature_belly_color"], features["belly_color"])
 	WRITE_FILE(S["feature_hide_belly"], features["hide_belly"])
 	WRITE_FILE(S["feature_inflatable_belly"], features["inflatable_belly"])
+	WRITE_FILE(S["alt_titles_preferences"], alt_titles_preferences)
 
 	WRITE_FILE(S["feature_ooc_notes"], features["ooc_notes"])
 

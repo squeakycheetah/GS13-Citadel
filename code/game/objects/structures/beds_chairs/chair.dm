@@ -160,7 +160,7 @@
 	buildstacktype = null //Custom mats handle this
 
 /obj/structure/chair/wood
-	icon = 'GainStation13/icons/obj/chairs.dmi'
+	icon = 'GainStation13/icons/obj/chairs.dmi' //GS13 Edit: Our sprites
 	icon_state = "wooden_chair"
 	name = "wooden chair"
 	desc = "Old is never too old to not be in fashion."
@@ -540,7 +540,7 @@
 
 /obj/item/chair/wood
 	name = "wooden chair"
-	icon = 'GainStation13/icons/obj/chairs.dmi'
+	icon = 'GainStation13/icons/obj/chairs.dmi' //GS13 Edit: Our sprites
 	icon_state = "wooden_chair_toppled"
 	item_state = "woodenchair"
 	resistance_flags = FLAMMABLE

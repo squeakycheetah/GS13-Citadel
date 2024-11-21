@@ -28,12 +28,8 @@ the %ADJECTIVE% brig
 %A% %ADJECTIVE% shuttle
 %A% %ADJECTIVE% laboratory
 Nanotrasen
-GATO
 the Syndicate
 the Wizard Federation
-Fat people
-Feeders
-Feedees
 %ADJECTIVE% blood
 %ADJECTIVE% plasma
 %ADJECTIVE% wind
@@ -46,8 +42,3 @@ Feedees
 water
 %ADJECTIVE% flames
 some %ADJECTIVE% melons
-%A% %ADJECTIVE% belly
-%A% %ADJECTIVE% gut
-%ADJECTIVE% breasts
-%ADJECTIVE% butts
-%ADJECTIVE% feeding hose

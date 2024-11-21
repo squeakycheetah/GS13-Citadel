@@ -474,11 +474,11 @@
 	uniform = /obj/item/clothing/under/pants/youngfolksjeans
 	id = /obj/item/card/id
 
-/datum/outfit/beachbum/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	..()
-	if(visualsOnly)
-		return
-	H.dna.add_mutation(STONER)
+// /datum/outfit/beachbum/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+// 	..()
+// 	if(visualsOnly)
+// 		return
+// 	H.dna.add_mutation(STONER) //GS13 - removes the stoner trait, it makes the role almost unplayable
 
 /////////////////Officers+Nanotrasen Security//////////////////////
 

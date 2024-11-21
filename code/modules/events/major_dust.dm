@@ -1,7 +1,8 @@
 /datum/round_event_control/meteor_wave/major_dust
 	name = "Major Space Dust"
 	typepath = /datum/round_event/meteor_wave/major_dust
-	min_players = 8 //GS13
+	min_players = 10 //GS13 - do it when there's more people to fix it around
+	max_occurrences = 2 //GS13 - limiting the amount of it
 	weight = 8
 	description = "The station is pelted by sand."
 

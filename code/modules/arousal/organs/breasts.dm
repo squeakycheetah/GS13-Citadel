@@ -75,7 +75,7 @@
 //this is far too lewd wah
 
 /obj/item/organ/genital/breasts/modify_size(modifier, min = -INFINITY, max = INFINITY)
-	var/new_value = clamp(cached_size + modifier, min, max)
+	var/new_value = clamp(cached_size + modifier, starting_size, max) //GS13 EDIT
 	if(new_value == cached_size)
 		return
 	prev_size = cached_size
@@ -115,6 +115,7 @@
 	else
 		color = "#[D.features["breasts_color"]]"
 	size = D.features["breasts_size"]
+	starting_size = D.features["breasts_size"]
 	shape = D.features["breasts_shape"]
 	if(!D.features["breasts_producing"])
 		genital_flags &= ~ (GENITAL_FUID_PRODUCTION|CAN_CLIMAX_WITH|CAN_MASTURBATE_WITH)

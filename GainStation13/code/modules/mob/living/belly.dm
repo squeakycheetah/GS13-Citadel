@@ -18,7 +18,7 @@
 	layer_index = BELLY_LAYER_INDEX
 
 /obj/item/organ/genital/belly/modify_size(modifier, min = BELLY_SIZE_DEF, max = BELLY_SIZE_MAX)
-	var/new_value = clamp(size_cached + modifier, min, max)
+	var/new_value = clamp(size_cached + modifier, starting_size, max)
 	if(new_value == size_cached)
 		return
 	prev_size = size_cached
@@ -40,12 +40,13 @@
 	switch(owner.fullness)
 		if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
 			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi' //We use round belly to represent stuffedness
+			icon_state = "belly_round_[size]"
 		if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
 			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
-			icon_state = "belly_[icon_shape_state]_[size+1]"
+			icon_state = "belly_round_[size+1]"
 		if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
 			icon = 'hyperstation/icons/obj/genitals/belly_round.dmi'
-			icon_state = "belly_[icon_shape_state]_[size+2]"
+			icon_state = "belly_round_[size+2]"
 
 	if(owner)
 		if(owner.dna.species.use_skintones && owner.dna.features["genitals_use_skintone"])
@@ -64,6 +65,7 @@
 	else
 		color = "#[D.features["belly_color"]]"
 	size = D.features["belly_size"]
+	starting_size = D.features["belly_size"]
 	shape = D.features["belly_shape"]
 	inflatable = D.features["inflatable_belly"]
 	toggle_visibility(D.features["belly_visibility"], FALSE)

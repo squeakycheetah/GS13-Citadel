@@ -13,6 +13,7 @@
 	shot_glass_icon_state = "shotglassbrown"
 	pH = 4.5
 	value = 0.1
+	use_gs_icon = TRUE
 
 /datum/reagent/consumable/ethanol/glyphid_slammer
 	name = "Glyphid slammer"
@@ -26,3 +27,4 @@
 	shot_glass_icon_state = "shotglassbrown"
 	pH = 4.5
 	value = 0.1
+	use_gs_icon = TRUE

@@ -295,6 +295,7 @@
 #define TRAIT_HEAT				"heat"
 #define TRAIT_DISTANT			"headpat_hater"
 #define TRAIT_CUM_PLUS			"cum_plus"
+#define TRAIT_TRANSFORMED 		"transformed"
 
 // mobility flag traits
 // IN THE FUTURE, IT WOULD BE NICE TO DO SOMETHING SIMILAR TO https://github.com/tgstation/tgstation/pull/48923/files (ofcourse not nearly the same because I have my.. thoughts on it)

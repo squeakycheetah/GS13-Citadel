@@ -454,14 +454,14 @@ GLOBAL_LIST_INIT(pda_reskins, list(
 #define STACK_CHECK_ADJACENT "adjacent" //checks if there is an object of the result type within one tile
 
 //text files
-#define BRAIN_DAMAGE_FILE "traumas.json"
-#define ION_FILE "ion_laws.json"
+#define BRAIN_DAMAGE_FILE "traumas_gs.json" //GS13 Edit: Less meta memes
+#define ION_FILE "ion_laws_gs.json" //GS13 Edit: we're changing some of the things here, and removing other things
 #define PIRATE_NAMES_FILE "pirates.json"
 #define REDPILL_FILE "redpill.json"
 #define ARCADE_FILE "arcade.json"
 // #define BOOMER_FILE "boomer.json"
 // #define LOCATIONS_FILE "locations.json"
-// #define WANTED_FILE "wanted_message.json"
+// #define WANTED_FILE "wanted_message_gs.json" //GS13 Edit: ...This is commented out, but I'll swap it to ours, incase it needs to be renabled.
 // #define VISTA_FILE "steve.json"
 #define FLESH_SCAR_FILE "wounds/flesh_scar_desc.json"
 #define BONE_SCAR_FILE "wounds/bone_scar_desc.json"
@@ -569,7 +569,7 @@ GLOBAL_LIST_INIT(pda_reskins, list(
 #define SHOES_TIED 1
 #define SHOES_KNOTTED 2
 
-#define WANTED_FILE "wanted_message.json"
+#define WANTED_FILE "wanted_message_gs.json" //GS Edit: Nanotrasen to Gato.
 
 // Notification action types
 #define NOTIFY_JUMP "jump"

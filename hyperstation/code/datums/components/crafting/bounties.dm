@@ -65,7 +65,7 @@ datum/bounty/lewd/fluid/New() //GS13 made some edits here that changes stuff int
             reagent_type = /datum/reagent/consumable/milk
             wanted_reagent = new reagent_type
             name = wanted_reagent.name
-            description = "The GATO annual bake sale is soon, and all of our milk has expired. Help us out."
+            description = "The GATO annual bake sale is soon, and all of our milk has expired. Help us out." //GS13
             reward += rand(10, 17) * 500 //Milk is generally easier to get. Make the reward a little lower.
         if(15,16) //A little romance
             var/static/list/possible_reagents = list(\
@@ -84,7 +84,7 @@ datum/bounty/lewd/fluid/New() //GS13 made some edits here that changes stuff int
             reagent_type = /datum/reagent/consumable/lipoifier
             wanted_reagent = new reagent_type
             name = wanted_reagent.name
-            description = "The quality of GATO's meat-related products have diminished. Send us some lipoifier to help with meat production."
+            description = "The quality of GATO's meat-related products have diminished. Send us some lipoifier to help with meat production." //GS13
             reward += rand(2, 7) * 500
 
 /* //Just not getting this to work.

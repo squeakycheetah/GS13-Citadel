@@ -221,7 +221,12 @@
 //
 /mob/living/proc/escapeOOC()
 	set name = "OOC Escape"
-	set category = "Vore"
+	set category = "OOC" // GS13 Change
+
+	//GS13 EDIT START
+	handle_transformation_ooc_escape()
+	//GS13 EDIT END
+
 
 	//You're in a belly!
 	if(isbelly(loc))
