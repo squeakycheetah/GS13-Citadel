@@ -406,7 +406,7 @@
 			else if(R.chemical_flags & REAGENT_ORGANIC_PROCESS)
 				processtype = "Organics only"
 			else
-				processtype = "Noone?! (Report this to Nanotrasen's spacetime department immediately)"
+				processtype = "Noone?! (Report this to GATO's spacetime department immediately)" //GS13 - Nanotrasen to GATO
 			if(istype(R, /datum/reagent/fermi))
 				fermianalyze = TRUE
 				var/datum/chemical_reaction/Rcr = get_chemical_reaction(reagent)

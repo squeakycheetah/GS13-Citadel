@@ -71,6 +71,7 @@
 /obj/item/reagent_containers/food/snacks/popcorn
 	name = "popcorn"
 	desc = "Now let's find some cinema."
+	icon = 'GainStation13/icons/obj/food/food.dmi' //GS13 - GATO palette
 	icon_state = "popcorn"
 	trash = /obj/item/trash/popcorn
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2)

@@ -1,6 +1,6 @@
 /datum/bounty/item/alien_organs
 	name = "Alien Organs"
-	description = "Nanotrasen is interested in studying Xenomorph biology. Ship a set of organs to be thoroughly compensated."
+	description = "GATO is interested in studying Xenomorph biology. Ship a set of organs to be thoroughly compensated." //GS13 - Nanotrasen to GATO
 	reward = 13500
 	required_count = 3
 	wanted_types = list(/obj/item/organ/brain/alien, /obj/item/organ/alien, /obj/item/organ/body_egg/alien_embryo)
@@ -21,7 +21,7 @@
 
 /datum/bounty/item/adamantine
 	name = "Adamantine"
-	description = "Nanotrasen's anomalous materials division is in desparate need for Adamantine. Send them a large shipment and we'll make it worth your while."
+	description = "GATO's anomalous materials division is in desparate need for Adamantine. Send them a large shipment and we'll make it worth your while." //GS13 - Nanotrasen to GATO
 	reward = 15000
 	required_count = 10
 	wanted_types = list(/obj/item/stack/sheet/mineral/adamantine)

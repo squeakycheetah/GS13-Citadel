@@ -1,6 +1,6 @@
 /datum/bounty/item/chef/birthday_cake
 	name = "Birthday Cake"
-	description = "Nanotrasen's birthday is coming up! Ship them a birthday cake to celebrate!"
+	description = "GATO's birthday is coming up! Ship them a birthday cake to celebrate!" //GS13 - Nanotrasen to GATO
 	reward = 1800
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/store/cake/birthday, /obj/item/reagent_containers/food/snacks/cakeslice/birthday)
 
@@ -27,7 +27,7 @@
 
 /datum/bounty/item/gardencook/onionrings
 	name = "Onion Rings"
-	description = "Nanotrasen is remembering Saturn day. Ship onion rings to show the station's support."
+	description = "GATO is remembering Saturn day. Ship onion rings to show the station's support." //GS13 - Nanotrasen to GATO
 	reward = 1200
 	required_count = 3
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/onionrings)

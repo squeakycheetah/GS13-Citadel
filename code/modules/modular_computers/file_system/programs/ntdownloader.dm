@@ -1,8 +1,8 @@
 /datum/computer_file/program/ntnetdownload
 	filename = "ntsoftwarehub"
-	filedesc = "NT Software Hub"
+	filedesc = "GT Software Hub" //GS13 - NT to GT
 	program_icon_state = "generic"
-	extended_desc = "This program allows downloads of software from official NT repositories"
+	extended_desc = "This program allows downloads of software from official GT repositories" //GS13 - NT to GT
 	unsendable = TRUE
 	undeletable = TRUE
 	size = 4

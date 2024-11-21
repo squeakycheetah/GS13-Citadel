@@ -42,7 +42,7 @@
 
 /datum/supply_pack/misc/book_crate
 	name = "Book Crate"
-	desc = "Surplus from the Nanotrasen Archives, these seven books are sure to be good reads."
+	desc = "Surplus from the GATO Archives, these seven books are sure to be good reads." //GS13 - Nanotrasen to GATO
 	// cost = CARGO_CRATE_VALUE * 3
 	cost = 1500
 	contains = list(/obj/item/book/codex_gigas,
@@ -144,7 +144,7 @@
 
 /datum/supply_pack/misc/bicycle
 	name = "Bicycle"
-	desc = "Nanotrasen reminds all employees to never toy with powers outside their control."
+	desc = "GATO reminds all employees to never toy with powers outside their control." //GS13 - Nanotrasen to GATO
 	cost = 1000000
 	contains = list(/obj/vehicle/ridden/bicycle)
 	crate_name = "Bicycle Crate"
@@ -328,7 +328,7 @@
 
 /datum/supply_pack/misc/potted_plants
 	name = "Potted Plants Crate"
-	desc = "Spruce up the station with these lovely plants! Contains a random assortment of five potted plants from Nanotrasen's potted plant research division. Warranty void if thrown."
+	desc = "Spruce up the station with these lovely plants! Contains a random assortment of five potted plants from GATO's potted plant research division. Warranty void if thrown." //GS13 - Nanotrasen to GATO
 	cost = 730
 	contains = list(/obj/item/kirbyplants/random,
 					/obj/item/kirbyplants/random,

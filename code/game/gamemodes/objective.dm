@@ -417,8 +417,8 @@ If not set, defaults to check_completion instead. Set it. It's used by cryo.
 
 /datum/objective/freedom
 	name = "freedom"
-	explanation_text = "Don't get captured by nanotrasen."
-	team_explanation_text = "Have all members of your team free of nanotrasen custody."
+	explanation_text = "Don't get captured by GATO." //GS13 - Nanotrasen to GATO
+	team_explanation_text = "Have all members of your team free of GATO custody." //GS13 - Nanotrasen to GATO
 
 /datum/objective/freedom/check_completion()
 	var/list/datum/mind/owners = get_owners()

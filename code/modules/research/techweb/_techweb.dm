@@ -62,11 +62,11 @@
 
 /datum/techweb/science	//Global science techweb for RND consoles.
 	id = "SCIENCE"
-	organization = "Nanotrasen"
+	organization = "GATO" //GS13 - Nanotrasen to GATO
 
 /datum/techweb/bepis	//Should contain only 1 BEPIS tech selected at random.
 	id = "EXPERIMENTAL"
-	organization = "Nanotrasen R&D"
+	organization = "GATO R&D" //GS13 - Nanotrasen to GATO
 
 /datum/techweb/bepis/New()
 	. = ..()

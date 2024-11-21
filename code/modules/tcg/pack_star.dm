@@ -207,7 +207,7 @@
 
 /datum/tcg_card/pack_star/phazon
 	name = "Phazon"
-	desc = "The pinnacle of scientific research and pride of Nanotrasen, Phazon uses cutting edge bluespace technology and expensive materials."
+	desc = "The pinnacle of scientific research and pride of GATO, Phazon uses cutting edge bluespace technology and expensive materials." //GS13 - Nanotrasen to GATO
 	rules = "Whenever this unit takes damage, flip a coin. If heads, take no damage. If tails, take double damage."
 	icon_state = "phazon"
 

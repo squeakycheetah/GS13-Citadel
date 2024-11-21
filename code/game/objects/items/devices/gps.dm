@@ -65,7 +65,7 @@
 
 /obj/item/gps/internal/base
 	gpstag = "NT_AUX"
-	desc = "A homing signal from Nanotrasen's mining base."
+	desc = "A homing signal from GATO's mining base." //GS13 - Nanotrasen to GATO
 
 /obj/item/gps/visible_debug
 	name = "visible GPS"

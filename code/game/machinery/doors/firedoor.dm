@@ -426,7 +426,7 @@
 /obj/machinery/door/firedoor/window
 	name = "window shutter"
 	icon = 'icons/obj/doors/doorfirewindow.dmi'
-	desc = "A second window that slides in when the original window is broken, designed to protect against hull breaches. Truly a work of genius by NT engineers."
+	desc = "A second window that slides in when the original window is broken, designed to protect against hull breaches. Truly a work of genius by GT engineers." //GS13 - NT to GT
 	glass = TRUE
 	explosion_block = 0
 	max_integrity = 50

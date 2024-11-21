@@ -214,7 +214,7 @@
 /datum/map_template/shuttle/emergency/asteroid
 	suffix = "asteroid"
 	name = "Asteroid Station Emergency Shuttle"
-	description = "A respectable mid-sized shuttle that first saw service shuttling Nanotrasen crew to and from their asteroid belt embedded facilities."
+	description = "A respectable mid-sized shuttle that first saw service shuttling GATO crew to and from their asteroid belt embedded facilities." //GS13 - Nanotrasen to GATO
 	credit_cost = 3000
 
 /datum/map_template/shuttle/emergency/bar
@@ -257,7 +257,7 @@
 /datum/map_template/shuttle/emergency/discoinferno
 	suffix = "discoinferno"
 	name = "Disco Inferno"
-	description = "The glorious results of centuries of plasma research done by Nanotrasen employees. This is the reason why you are here. Get on and dance like you're on fire, burn baby burn!"
+	description = "The glorious results of centuries of plasma research done by GATO employees. This is the reason why you are here. Get on and dance like you're on fire, burn baby burn!" //GS13 - Nanotrasen to GATO
 	admin_notes = "Flaming hot. The main area has a dance machine as well as plasma floor tiles that will be ignited by players every single time."
 	credit_cost = 10000
 	// can_be_bought = FALSE
@@ -416,20 +416,20 @@
 /datum/map_template/shuttle/emergency/goon
 	suffix = "goon"
 	name = "NES Port"
-	description = "The Nanotrasen Emergency Shuttle Port(NES Port for short) is a shuttle used at other less known Nanotrasen facilities and has a more open inside for larger crowds, but fewer onboard shuttle facilities."
+	description = "The GATO Emergency Shuttle Port(NES Port for short) is a shuttle used at other less known GATO facilities and has a more open inside for larger crowds, but fewer onboard shuttle facilities." //GS13 - Nanotrasen to GATO
 	credit_cost = 500
 
 // /datum/map_template/shuttle/emergency/rollerdome
 // 	suffix = "rollerdome"
 // 	name = "Uncle Pete's Rollerdome"
-// 	description = "Developed by a member of Nanotrasen's R&D crew that claims to have travelled from the year 2028.
+// 	description = "Developed by a member of GATO's R&D crew that claims to have travelled from the year 2028.
 // 	He says this shuttle is based off an old entertainment complex from the 1990s, though our database has no records on anything pertaining to that decade."
 // 	admin_notes = "ONLY NINETIES KIDS REMEMBER. Uses the fun balloon and drone from the Emergency Bar."
 // 	credit_cost = 500 * 5
 
 /datum/map_template/shuttle/emergency/wabbajack
 	suffix = "wabbajack"
-	name = "NT Lepton Violet"
+	name = "GT Lepton Violet" //GS13 - NT to GT
 	description = "The research team based on this vessel went missing one day, and no amount of investigation could discover what happened to them. \
 	The only occupants were a number of dead rodents, who appeared to have clawed each other to death. \
 	Needless to say, no engineering team wanted to go near the thing, and it's only being used as an Emergency Escape Shuttle because there is literally nothing else available."
@@ -509,23 +509,23 @@
 
 /datum/map_template/shuttle/whiteship/pubby
 	suffix = "pubby"
-	name = "NT White UFO"
+	name = "GT White UFO" //GS13 - NT to GT
 
 /datum/map_template/shuttle/whiteship/cere
 	suffix = "cere"
-	name = "NT Construction Vessel"
+	name = "GT Construction Vessel" //GS13 - NT to GT
 
 // /datum/map_template/shuttle/whiteship/kilo
 // 	suffix = "kilo"
-// 	name = "NT Mining Shuttle"
+// 	name = "GT Mining Shuttle"
 
 // /datum/map_template/shuttle/whiteship/donut
 // 	suffix = "donut"
-// 	name = "NT Long-Distance Bluespace Jumper"
+// 	name = "GT Long-Distance Bluespace Jumper"
 
 /datum/map_template/shuttle/whiteship/delta
 	suffix = "delta"
-	name = "NT Frigate"
+	name = "GT Frigate" //GS13 - NT to GT
 
 /datum/map_template/shuttle/whiteship/pod
 	suffix = "whiteship_pod"
@@ -533,7 +533,7 @@
 
 /datum/map_template/shuttle/whiteship/cog
 	suffix = "cog"
-	name = "NT Prisoner Transport"
+	name = "GT Prisoner Transport" //GS13 - NT to GT
 
 /datum/map_template/shuttle/cargo/kilo
 	suffix = "kilo"
@@ -581,7 +581,7 @@
 /datum/map_template/shuttle/emergency/cog
 	suffix = "cog"
 	name = "NES Classic"
-	description = "A blast from the past! This recreation of the Nanotrasen Emergency Shuttle Port features the same focus on seating as the original, but on a slightly longer frame to better accommodate modern shuttle docks."
+	description = "A blast from the past! This recreation of the GATO Emergency Shuttle Port features the same focus on seating as the original, but on a slightly longer frame to better accommodate modern shuttle docks." //GS13 - Nanotrasen to GATO
 	credit_cost = 750
 
 /datum/map_template/shuttle/arrival/box

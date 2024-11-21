@@ -434,8 +434,8 @@
 			var/datum/game_mode/dynamic/dynamic = SSticker.mode
 			dynamic.create_threat(revs_win_injection_amount)
 			dynamic.threat_log += "[worldtime2text()]: Revolution victory. Added [revs_win_injection_amount] threat."
-
-		priority_announce("A recent assessment of your station has marked your station as a severe risk area for high ranking Nanotrasen officials. \
+		//GS13 - Nanotrasen to GATO
+		priority_announce("A recent assessment of your station has marked your station as a severe risk area for high ranking GATO officials. \
 		For the safety of our staff, we have blacklisted your station for new employment of security and command. \
 		[pick(world.file2list("strings/anti_union_propaganda.txt"))]", null, 'sound/announcer/classic/attention.ogg', null, "Central Command Loyalty Monitoring Division")
 

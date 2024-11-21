@@ -494,9 +494,9 @@ GLOBAL_LIST_INIT(ballmer_good_msg, list("Hey guys, what if we rolled out a blues
 										"Why the fuck aren't we just making every pair of shoes into galoshes? We have the technology.",
 										"We can link the Ore Silo to our protolathes, so why don't we also link it to autolathes?",
 										"If we can make better bombs with heated plasma, oxygen, and tritium, then why do station nukes still use plutonium?",
- 										"We should port all our NT programs to modular consoles and do away with computers. They're way more customizable, support cross-platform usage, and would allow crazy amounts of multitasking.",
+ 										"We should port all our GT programs to modular consoles and do away with computers. They're way more customizable, support cross-platform usage, and would allow crazy amounts of multitasking.",
 										"Wait, if we use more manipulators in something, then it prints for cheaper, right? So what if we just made a new type of printer that has like 12 manipulators inside of it to print stuff for really cheap?"
-										))
+										)) //GS13 - NT to GT
 GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put a webserver that's automatically turned on with default admin passwords into every PDA?",
 											"So like, you know how we separate our codebase from the master copy that runs on our consumer boxes? What if we merged the two and undid the separation between codebase and server?",
 											"Dude, radical idea: H.O.N.K mechs but with no bananium required.",
@@ -506,8 +506,8 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 											"Okay, hear me out, what if we make illegal things not illegal, so that sec stops arresting us for having it?",
 											"I have a crazy idea, guys. Rather than having monkeys to test on, what if we only used apes?",
 											"Woh man ok, what if we took slime cores and smashed them into other slimes, be kinda cool to see what happens.",
-											"We're NANOtrasen but we need to unlock nano parts, what's the deal with that?"
-											))
+											"We're GATO but there's barely any cats on these stations, what's up with that??"
+											)) //GS13 - Nanotrasen to GATO
 
 //this updates all special effects: stun, sleeping, knockdown, druggy, stuttering, etc..
 /mob/living/carbon/handle_status_effects()

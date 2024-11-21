@@ -220,7 +220,7 @@
 
 /obj/item/clothing/under/rank/civilian/lawyer/black/alt
 	name = "lawyer black suit"
-	desc = "A professional black suit. Nanotrasen Investigation Bureau approved!"
+	desc = "A professional black suit. GATO Investigation Bureau approved!" //GS13 - Nanotrasen to GATO
 	icon_state = "blacksuit"
 	item_state = "bar_suit"
 	can_adjust = TRUE

@@ -143,7 +143,7 @@
 
 /obj/item/integrated_circuit/time/clock
 	name = "integrated clock (NT Common Time)"
-	desc = "Tells you what the time is, in Nanotrasen Common Time."				//round time
+	desc = "Tells you what the time is, in GATO Common Time." //GS13 - Nanotrasen to GATO
 	icon_state = "clock"
 	inputs = list()
 	outputs = list(

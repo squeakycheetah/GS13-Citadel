@@ -262,7 +262,7 @@
 
 /obj/item/storage/bag/sheetsnatcher
 	name = "sheet snatcher"
-	desc = "A patented Nanotrasen storage system designed for any kind of mineral sheet."
+	desc = "A patented GATO storage system designed for any kind of mineral sheet." //GS13 - Nanotrasen to GATO
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "sheetsnatcher"
 

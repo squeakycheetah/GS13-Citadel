@@ -1,5 +1,5 @@
 /obj/vehicle/sealed/mecha/combat/durand
-	desc = "An aging combat exosuit utilized by the Nanotrasen corporation. Originally developed to combat hostile alien lifeforms."
+	desc = "An aging combat exosuit utilized by the GATO corporation. Originally developed to combat hostile alien lifeforms." //GS13 - Nanotrasen to GATO
 	name = "\improper Durand"
 	icon_state = "durand"
 	movedelay = 4

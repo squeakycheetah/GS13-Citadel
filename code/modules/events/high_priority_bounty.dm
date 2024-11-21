@@ -8,7 +8,7 @@
 	description = "Creates bounties that are three times original worth."
 
 /datum/round_event/high_priority_bounty/announce(fake)
-	priority_announce("Central Command has issued a high-priority cargo bounty. Details have been sent to all bounty consoles.", "Nanotrasen Bounty Program")
+	priority_announce("Central Command has issued a high-priority cargo bounty. Details have been sent to all bounty consoles.", "GATO Bounty Program") //GS13 - Nanotrasen to GATO
 
 /datum/round_event/high_priority_bounty/start()
 	var/datum/bounty/B

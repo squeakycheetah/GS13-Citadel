@@ -278,7 +278,7 @@
 
 /datum/supply_pack/costumes_toys/costume
 	name = "Standard Costume Crate"
-	desc = "Supply the station's entertainers with the equipment of their trade with these Nanotrasen-approved costumes! Contains a full clown and mime outfit, along with a bike horn and a bottle of nothing."
+	desc = "Supply the station's entertainers with the equipment of their trade with these GATO-approved costumes! Contains a full clown and mime outfit, along with a bike horn and a bottle of nothing." //GS13 - Nanotrasen to GATO
 	cost = 1300
 	access = ACCESS_THEATRE
 	contains = list(/obj/item/storage/backpack/clown,
@@ -299,7 +299,7 @@
 
 /datum/supply_pack/costumes_toys/wizard
 	name = "Wizard Costume Crate"
-	desc = "Pretend to join the Wizard Federation with this full wizard outfit! Nanotrasen would like to remind its employees that actually joining the Wizard Federation is subject to termination of job and life."
+	desc = "Pretend to join the Wizard Federation with this full wizard outfit! GATO would like to remind its employees that actually joining the Wizard Federation is subject to termination of job and life." //GS13 - Nanotrasen to GATO
 	cost = 2000
 	contains = list(/obj/item/staff,
 					/obj/item/clothing/suit/wizrobe/fake,
@@ -342,7 +342,7 @@
 
 /datum/supply_pack/costumes_toys/randomised/tcg
 	name = "Big-Ass Booster Pack Pack"
-	desc = "A bumper load of NT TCG Booster Packs of varying series. Collect them all!"
+	desc = "A bumper load of NGTT TCG Booster Packs of varying series. Collect them all!"
 	cost = 3000
 	contains = list()
 	crate_name = "booster pack pack"

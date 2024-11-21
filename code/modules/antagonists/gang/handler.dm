@@ -355,7 +355,7 @@ GLOBAL_VAR(families_override_theme)
 			if(4)
 				team_size = 11
 				cops_to_send = /datum/antagonist/ert/families/beatcop/fbi
-				announcement_message = "We are dispatching our top agents to [station_name()] at the request of the Spinward Stellar Coalition government due to an extreme terrorist level threat against this Nanotrasen owned station. All gangsters must surrender IMMEDIATELY. Failure to comply can and will result in death. We have blockaded your warp gates and will not allow any escape until the situation is resolved within our standard response time of 10 minutes.\n\nSurrender now or face the consequences of your actions."
+				announcement_message = "We are dispatching our top agents to [station_name()] at the request of the Spinward Stellar Coalition government due to an extreme terrorist level threat against this GATO owned station. All gangsters must surrender IMMEDIATELY. Failure to comply can and will result in death. We have blockaded your warp gates and will not allow any escape until the situation is resolved within our standard response time of 10 minutes.\n\nSurrender now or face the consequences of your actions." //GS13 - Nanotrasen to GATO
 				announcer = "Federal Bureau of Investigation"
 			if(5)
 				team_size = 12
@@ -382,7 +382,7 @@ GLOBAL_VAR(families_override_theme)
 			if(4)
 				team_size = 8
 				cops_to_send = /datum/antagonist/ert/families/beatcop/fbi
-				announcement_message = "We are dispatching our top agents to [station_name()] at the request of the Spinward Stellar Coalition government due to an extreme terrorist level threat against this Nanotrasen owned station. All gangsters must surrender IMMEDIATELY. Failure to comply can and will result in death. We have blockaded your warp gates and will not allow any escape until the situation is resolved within our standard response time of 10 minutes.\n\nSurrender now or face the consequences of your actions."
+				announcement_message = "We are dispatching our top agents to [station_name()] at the request of the Spinward Stellar Coalition government due to an extreme terrorist level threat against this GATO owned station. All gangsters must surrender IMMEDIATELY. Failure to comply can and will result in death. We have blockaded your warp gates and will not allow any escape until the situation is resolved within our standard response time of 10 minutes.\n\nSurrender now or face the consequences of your actions." //GS13 - Nanotrasen to GATO
 				announcer = "Federal Bureau of Investigation"
 			if(5)
 				team_size = 10

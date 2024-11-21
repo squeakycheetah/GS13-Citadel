@@ -100,7 +100,7 @@
 	id = "base"
 	starting_node = TRUE
 	display_name = "Basic Research Technology"
-	description = "NT default research technologies."
+	description = "GT default research technologies." //GS13 - NT to GT
 	// Default research tech, prevents bricking
 	design_ids = list("basic_matter_bin", "basic_cell", "basic_scanning", "basic_capacitor", "basic_micro_laser", "micro_mani", "desttagger", "handlabel", "packagewrap",
 	"destructive_analyzer", "circuit_imprinter", "experimentor", "rdconsole", "bepis", "design_disk", "tech_disk", "rdserver", "rdservercontrol", "mechfab", "paystand",

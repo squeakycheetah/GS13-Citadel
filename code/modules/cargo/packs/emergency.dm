@@ -204,7 +204,7 @@
 
 /datum/supply_pack/emergency/mre
 	name = "MRE Packs (Emergency Rations)"
-	desc = "The lights are out. Oxygen's running low. You've run out of food except space weevils. Don't let this be you! Order our NT branded MRE kits today! This pack contains 5 MRE packs with a randomized menu and an oxygen tank."
+	desc = "The lights are out. Oxygen's running low. You've run out of food except space weevils. Don't let this be you! Order our GT branded MRE kits today! This pack contains 5 MRE packs with a randomized menu and an oxygen tank." //GS13 - NT to GT
 	cost = 2000
 	contains = list(/obj/item/storage/box/mre/menu1/safe,
 					/obj/item/storage/box/mre/menu1/safe,

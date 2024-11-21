@@ -1,6 +1,6 @@
 /datum/computer_file/program/supermatter_monitor
 	filename = "ntcims"
-	filedesc = "NT CIMS"
+	filedesc = "GT CIMS" //GS13 - NT to GT
 	category = PROGRAM_CATEGORY_ENGI
 	ui_header = "smmon_0.gif"
 	program_icon_state = "smmon_0"

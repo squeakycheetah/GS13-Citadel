@@ -10,7 +10,7 @@
 
 /obj/machinery/icecream_vat
 	name = "ice cream vat"
-	desc = "Ding-aling ding dong. Get your Nanotrasen-approved ice cream!"
+	desc = "Ding-aling ding dong. Get your GATO-approved ice cream!" //GS13 - Nanotrasen to GATO
 	icon = 'icons/obj/kitchen.dmi'
 	icon_state = "icecream_vat"
 	density = TRUE

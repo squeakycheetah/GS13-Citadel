@@ -29,6 +29,7 @@
 
 /obj/item/trash/popcorn
 	name = "popcorn"
+	icon = 'GainStation13/icons/obj/janitor.dmi' //GS13 - GATO palette
 	icon_state = "popcorn"
 
 /obj/item/trash/sosjerky
