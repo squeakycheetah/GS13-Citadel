@@ -477,6 +477,7 @@
 	pixel_y = -4
 	},
 /obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/spooktime/cobble/sideN,
 /area/eventmap/outside)
 "abH" = (
@@ -5103,16 +5104,13 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aoW" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
+/obj/machinery/door/airlock{
+	name = "Toilet Unit";
+	dir = 8
 	},
-/obj/structure/cable/white{
-	icon_state = "1-8"
+/turf/open/floor/plasteel{
+	icon_state = "sepia"
 	},
-/obj/structure/cable/white{
-	icon_state = "1-4"
-	},
-/turf/open/floor/wood,
 /area/eventmap/inside)
 "aoX" = (
 /obj/effect/decal/cleanable/dirt{
@@ -5554,6 +5552,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 10
 	},
+/obj/machinery/rnd/production/protolathe/department/engineering,
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aqc" = (
@@ -5577,6 +5576,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 6
 	},
+/obj/machinery/rnd/production/protolathe/department/science,
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aqf" = (
@@ -6081,7 +6081,11 @@
 /turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "arK" = (
-/obj/machinery/door/airlock/wood/dorms/dorm06,
+/obj/machinery/door/airlock/command{
+	name = "Captain's Quarters";
+	req_access_txt = "20";
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "arL" = (
@@ -6226,12 +6230,13 @@
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
 "ash" = (
-/obj/machinery/door/airlock/command{
-	name = "Captain's Quarters";
-	req_access_txt = "20"
-	},
 /obj/structure/cable/white{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/command{
+	name = "Captain's Quarters";
+	req_access_txt = "20";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -6386,7 +6391,8 @@
 	},
 /obj/machinery/door/airlock/mining/glass{
 	name = "Cargo Office";
-	req_access_txt = "50"
+	req_access_txt = "50";
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
@@ -6577,7 +6583,7 @@
 /obj/machinery/jukebox/disco/indestructible{
 	req_one_access = list()
 	},
-/turf/open/floor/engine,
+/turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/eventmap/inside)
 "atn" = (
 /obj/structure/cable/yellow{
@@ -8303,12 +8309,13 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "axS" = (
-/obj/machinery/door/airlock{
-	name = "Hydroponics Backroom";
-	req_access_txt = "35"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	name = "Hydroponics Backroom";
+	req_access_txt = "35";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -8710,12 +8717,13 @@
 /turf/open/floor/spooktime/cobble/sideS,
 /area/eventmap/outside)
 "ayU" = (
-/obj/machinery/door/airlock/command{
-	name = "Head of Personnel's Quarters";
-	req_access_txt = "57"
-	},
 /obj/structure/cable/white{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/command{
+	name = "Head of Personnel's Quarters";
+	req_access_txt = "57";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -9297,11 +9305,10 @@
 /area/eventmap/mountain)
 "aAO" = (
 /obj/machinery/door/airlock{
-	name = "Toilet Unit"
+	name = "Toilet Unit";
+	dir = 4
 	},
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
+/turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "aAP" = (
 /obj/structure/sign/departments/showers{
@@ -9354,12 +9361,13 @@
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
 "aAW" = (
-/obj/machinery/door/airlock{
-	name = "Custodial Closet";
-	req_access_txt = "26"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	name = "Custodial Closet";
+	req_access_txt = "26";
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
@@ -10073,12 +10081,13 @@
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aDe" = (
-/obj/machinery/door/airlock/security/glass{
-	name = "Security Office";
-	req_access_txt = "63"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/security/glass{
+	name = "Security Office";
+	req_access_txt = "63";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -10099,9 +10108,7 @@
 /area/eventmap/inside)
 "aDg" = (
 /obj/machinery/recharge_station,
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
+/turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "aDh" = (
 /obj/item/pizzabox/margherita,
@@ -10110,7 +10117,8 @@
 "aDi" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Kitchen Maintenance";
-	req_access_txt = "28"
+	req_access_txt = "28";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/eventmap/inside)
@@ -10219,12 +10227,13 @@
 	},
 /area/shuttle/arrival)
 "aDw" = (
-/obj/machinery/door/airlock{
-	name = "Bar Backroom";
-	req_access_txt = "25"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	name = "Bar Backroom";
+	req_access_txt = "25";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -10283,12 +10292,13 @@
 /turf/open/floor/spooktime/dirtpatch,
 /area/eventmap/mountain)
 "aDF" = (
-/obj/machinery/door/airlock{
-	name = "Bar Storage";
-	req_access_txt = "25"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	name = "Bar Storage";
+	req_access_txt = "25";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -10371,12 +10381,14 @@
 /area/eventmap/inside)
 "aDT" = (
 /obj/machinery/door/airlock/maintenance,
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
+/turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "aDU" = (
-/obj/machinery/door/airlock/wood/dorms/dorm16,
+/obj/machinery/door/airlock/command{
+	name = "Head of Personnel's Quarters";
+	req_access_txt = "57";
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
 "aDV" = (
@@ -10576,17 +10588,13 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
+/turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "aEy" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
+/turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "aEz" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -10599,9 +10607,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
+/turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "aEB" = (
 /obj/structure/sign/poster/official/ian{
@@ -10810,9 +10816,7 @@
 	dir = 4;
 	pixel_x = 11
 	},
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
+/turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "aFl" = (
 /obj/structure/closet/secure_closet/freezer/cream_pie,
@@ -11063,9 +11067,7 @@
 	dir = 4;
 	pixel_x = 11
 	},
-/turf/open/floor/plasteel{
-	icon_state = "sepia"
-	},
+/turf/open/floor/plasteel/freezer,
 /area/eventmap/inside)
 "aGa" = (
 /obj/structure/reagent_dispensers/cooking_oil,
@@ -12176,7 +12178,8 @@
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "MedbayFoyer";
 	name = "Medbay";
-	req_access_txt = "5"
+	req_access_txt = "5";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -12331,7 +12334,8 @@
 	},
 /obj/machinery/door/airlock/mining/glass{
 	name = "Cargo Bay";
-	req_access_txt = "31"
+	req_access_txt = "31";
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
@@ -12449,7 +12453,8 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
 	name = "Labor Shuttle";
-	req_access_txt = "2"
+	req_access_txt = "2";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -12609,7 +12614,8 @@
 	},
 /obj/machinery/door/airlock/security{
 	name = "Labor Shuttle";
-	req_access_txt = "2"
+	req_access_txt = "2";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -13337,7 +13343,8 @@
 "aML" = (
 /obj/machinery/door/airlock/mining/glass{
 	name = "Cargo Bay";
-	req_access_txt = "31"
+	req_access_txt = "31";
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
@@ -13693,15 +13700,16 @@
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
 "aNN" = (
-/obj/machinery/door/airlock/mining{
-	name = "Mining";
-	req_access_txt = "48"
-	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
+	},
+/obj/machinery/door/airlock/mining{
+	name = "Mining";
+	req_access_txt = "48";
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
@@ -13794,13 +13802,14 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/mining{
-	name = "Mining";
-	req_access_txt = "48"
-	},
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
+	},
+/obj/machinery/door/airlock/mining{
+	name = "Mining";
+	req_access_txt = "48";
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/inside)
@@ -14116,7 +14125,8 @@
 	},
 /obj/machinery/door/airlock/mining{
 	name = "Quartermaster's Quarters";
-	req_access_txt = "41"
+	req_access_txt = "41";
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/eventmap/inside)
@@ -16486,7 +16496,8 @@
 /area/eventmap/inside)
 "bfd" = (
 /obj/machinery/door/airlock{
-	name = "Unisex Showers"
+	name = "Unisex Showers";
+	dir = 4
 	},
 /turf/open/floor/plasteel{
 	icon_state = "sepia"
@@ -16607,6 +16618,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/outside)
+"bjw" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	name = "Kitchen";
+	req_access_txt = "28";
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/eventmap/inside)
 "bjJ" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -16641,6 +16661,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
+"clw" = (
+/obj/machinery/door/airlock{
+	name = "Hydroponics Backroom";
+	req_access_txt = "35";
+	dir = 4
+	},
+/turf/open/floor/plasteel{
+	icon_state = "sepia"
+	},
+/area/eventmap/inside)
 "cvj" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -16682,6 +16712,10 @@
 /obj/machinery/telecomms/broadcaster/preset_right,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
+"dkV" = (
+/obj/structure/table/wood/bar,
+/turf/open/floor/carpet,
+/area/eventmap/inside)
 "dqu" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -16731,6 +16765,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/tcommsat/computer)
+"dSn" = (
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/freezer,
+/area/eventmap/inside)
+"dXl" = (
+/obj/structure/cable/yellow,
+/obj/machinery/rnd/production/protolathe/department/service,
+/turf/open/floor/wood,
+/area/eventmap/inside)
 "egY" = (
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
@@ -16779,6 +16822,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+"fya" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/table/wood/bar,
+/turf/open/floor/carpet,
+/area/eventmap/inside)
 "fMI" = (
 /obj/machinery/telecomms/receiver/preset_left,
 /turf/open/floor/plasteel/dark/telecomms,
@@ -16870,6 +16918,12 @@
 /obj/machinery/telecomms/processor/preset_four,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
+"hhu" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/eventmap/inside)
 "hqz" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -17061,6 +17115,12 @@
 	},
 /turf/open/floor/plating,
 /area/eventmap/mountaininside)
+"jHo" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel/freezer,
+/area/eventmap/inside)
 "jNZ" = (
 /obj/machinery/computer/message_monitor{
 	dir = 4
@@ -17083,6 +17143,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/eventmap/mountaininside)
+"kvV" = (
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge";
+	req_access_txt = "19";
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
+"kzm" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/mineral_door/wood,
+/turf/open/floor/wood,
+/area/eventmap/inside)
 "kBF" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/camera{
@@ -17265,6 +17343,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+"oZZ" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
 "paH" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -17278,6 +17365,13 @@
 	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
+"psT" = (
+/obj/machinery/shower{
+	desc = "Despite their age, they seem clean and capable of providing hot water just as well as their modern counterparts. Hopefully Nanotrasen cleaned the water pipes this well...";
+	pixel_y = 24
+	},
+/turf/open/floor/plasteel/freezer,
+/area/eventmap/inside)
 "pur" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -17410,6 +17504,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+"qYX" = (
+/obj/machinery/door/airlock/security{
+	name = "Armoury";
+	req_access_txt = "3";
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
 "rjg" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -17498,6 +17600,14 @@
 /obj/machinery/ntnet_relay,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/tcommsat/server)
+"ufp" = (
+/obj/machinery/door/airlock{
+	name = "Hydroponics Backroom";
+	req_access_txt = "35";
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
 "uhq" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -17586,6 +17696,18 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+"vNU" = (
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/wood,
+/area/eventmap/inside)
 "vQI" = (
 /obj/machinery/telecomms/server/presets/security,
 /turf/open/floor/plasteel/dark/telecomms,
@@ -27649,7 +27771,7 @@ aOE
 aPU
 aOE
 aqr
-aPS
+qYX
 aqr
 aqr
 aqr
@@ -29202,7 +29324,7 @@ aNu
 ajr
 ajr
 aLC
-aBm
+vNU
 aKd
 aOE
 aOE
@@ -31250,7 +31372,7 @@ aBq
 aCJ
 aCJ
 aHT
-aLC
+kzm
 aLC
 aGU
 aHt
@@ -34593,7 +34715,7 @@ aii
 aOE
 aae
 aHT
-aFF
+oZZ
 aqr
 aCd
 aIB
@@ -36867,7 +36989,7 @@ aab
 aqr
 aDI
 aDI
-aBm
+kvV
 ake
 aDI
 alU
@@ -37385,7 +37507,7 @@ aiK
 ako
 akV
 aHt
-aoW
+akV
 aHt
 aqE
 arG
@@ -38449,9 +38571,9 @@ bfA
 bfC
 bfC
 bfD
-bfA
-bfA
-bfA
+fya
+fya
+fya
 bfC
 bfE
 bfC
@@ -38706,9 +38828,9 @@ abJ
 aOE
 aOE
 abC
-abJ
-abJ
-abJ
+dkV
+dkV
+dkV
 aZa
 beH
 aOE
@@ -38963,9 +39085,9 @@ aOE
 aOE
 aOE
 aKm
-abJ
-abJ
-abJ
+dkV
+dkV
+dkV
 aOE
 aFF
 aOE
@@ -41012,8 +41134,8 @@ aoR
 aFF
 aOE
 aAX
-aNu
-aNu
+arJ
+arJ
 aqr
 aEx
 aqr
@@ -41269,7 +41391,7 @@ aoR
 aFF
 aOE
 aqr
-aCe
+psT
 aDg
 aqr
 aAO
@@ -41526,12 +41648,12 @@ aoR
 aFF
 aOE
 aqr
-aCe
-ans
+psT
+dSn
 aqr
-aNu
-aPs
-aNu
+arJ
+jHo
+arJ
 aqr
 aTS
 aOE
@@ -41783,12 +41905,12 @@ aLC
 baX
 aOE
 aqr
-aCe
-aNu
+psT
+arJ
 aDT
 aEy
-ajr
-ajr
+hhu
+hhu
 aGX
 aLC
 aOl
@@ -42040,8 +42162,8 @@ auD
 auD
 abZ
 aqr
-aCe
-aNu
+psT
+arJ
 aqr
 aEA
 aFk
@@ -42525,7 +42647,7 @@ ajI
 ako
 akV
 aHt
-aoW
+akV
 aHt
 aqE
 aup
@@ -43035,7 +43157,7 @@ aau
 aqr
 aDI
 aDI
-aBm
+kvV
 ake
 aDI
 anT
@@ -44595,7 +44717,7 @@ aab
 aau
 aab
 aqr
-aqr
+clw
 aar
 aqr
 aqr
@@ -44607,7 +44729,7 @@ aqr
 awr
 aqr
 axO
-atM
+bjw
 aqr
 aqr
 agN
@@ -46154,7 +46276,7 @@ aAx
 aqr
 aCr
 aFF
-aEc
+dXl
 aqr
 aNu
 aNu
@@ -46660,10 +46782,10 @@ arm
 aiF
 aqr
 aqr
-avr
+ufp
 aqr
 aqr
-avr
+ufp
 aqr
 aqr
 aCw
@@ -47972,9 +48094,9 @@ aaN
 aaN
 aaN
 aaN
-ayQ
-awk
-awk
+aph
+apR
+apR
 awn
 aWA
 aRs
@@ -48229,14 +48351,14 @@ aaN
 aaN
 aaN
 aaN
+aph
+aaN
+apR
 aaN
 aaN
 aaN
-aaN
-aaN
-aaN
-aaN
-aaN
+aWA
+aKq
 aaN
 aaN
 aaN
@@ -48488,12 +48610,12 @@ aaN
 aaN
 aaN
 aaN
-aaN
-aaN
-aaN
-aaN
-aaN
-aaN
+apR
+aWA
+aWA
+aWA
+aWA
+aKq
 aaN
 aaN
 aaN
@@ -48743,14 +48865,14 @@ aaN
 aaN
 aaN
 aaN
+aph
+apR
 aaN
 aaN
 aaN
+aWA
 aaN
-aaN
-aaN
-aaN
-aaN
+aKq
 aaN
 aaN
 aaN
@@ -49000,14 +49122,14 @@ aaN
 aaN
 aaN
 aaN
+aph
+apR
 aaN
 aaN
 aaN
+aKq
 aaN
-aaN
-aaN
-aaN
-aaN
+aKq
 aaN
 aaN
 aaN
@@ -49258,10 +49380,10 @@ aaN
 aaN
 aaN
 aaN
+apR
+awn
 aaN
-aaN
-aaN
-aaN
+aKq
 aaN
 aaN
 aaN
@@ -49515,10 +49637,10 @@ aaN
 aaN
 aaN
 aaN
+apR
 aaN
-aaN
-aaN
-aaN
+aKq
+aWA
 aaN
 aaN
 aaN
@@ -49772,13 +49894,13 @@ aaN
 aaN
 aaN
 aaN
+apR
+aaN
+aKq
+aKq
 aaN
 aaN
-aaN
-aaN
-aaN
-aaN
-aaN
+aKq
 aaN
 aaN
 aaN
@@ -50289,9 +50411,9 @@ aaN
 aaN
 aaN
 aaN
+aKq
 aaN
-aaN
-aaN
+aWA
 aaN
 aaN
 aaN
@@ -50543,12 +50665,12 @@ aaN
 aaN
 aaN
 aaN
+apR
 aaN
 aaN
-aaN
-aaN
-aaN
-aaN
+aKq
+aWA
+aKq
 aaN
 aaN
 aaN
@@ -50803,9 +50925,9 @@ aaN
 aaN
 aaN
 aaN
-aaN
-aaN
-aaN
+aWA
+aWA
+aKq
 aaN
 aaN
 aaN
@@ -51317,7 +51439,7 @@ aaN
 aaN
 aaN
 aaN
-aaN
+aKq
 aaN
 aaN
 aaN
@@ -52061,9 +52183,9 @@ abJ
 beJ
 abJ
 aqr
-aAO
+aoW
 aqr
-aAO
+aoW
 aqr
 aNu
 aOI
@@ -53603,9 +53725,9 @@ abJ
 beJ
 abJ
 aqr
-aAO
+aoW
 aqr
-aAO
+aoW
 aqr
 aEk
 aOE

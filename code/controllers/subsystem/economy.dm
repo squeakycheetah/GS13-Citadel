@@ -1,6 +1,6 @@
 SUBSYSTEM_DEF(economy)
 	name = "Economy"
-	wait = 5 MINUTES
+	wait = 30 MINUTES //GS13 EDIT - ORIGINAL = 5
 	init_order = INIT_ORDER_ECONOMY
 	runlevels = RUNLEVEL_GAME
 	var/roundstart_paychecks = 5

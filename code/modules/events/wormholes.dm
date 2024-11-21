@@ -3,7 +3,7 @@
 	typepath = /datum/round_event/wormholes
 	max_occurrences = 3
 	weight = 2
-	min_players = 2
+	min_players = 8
 	category = EVENT_CATEGORY_SPACE
 	description = "Space time anomalies appear on the station, randomly teleporting people who walk into them."
 

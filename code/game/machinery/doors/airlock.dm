@@ -43,7 +43,7 @@
 
 /obj/machinery/door/airlock
 	name = "airlock"
-	icon = 'icons/obj/doors/airlocks/station/public.dmi'
+	icon = 'GainStation13/icons/obj/doors/airlocks/station/public.dmi' //GS13 Edit: perspective sprites
 	icon_state = "closed"
 	max_integrity = 300
 	var/normal_integrity = AIRLOCK_INTEGRITY_N
@@ -87,8 +87,10 @@
 	var/previous_airlock = /obj/structure/door_assembly //what airlock assembly mineral plating was applied to
 	var/wiretypepath = /datum/wires/airlock // which set of per round randomized wires this airlock type has.
 	var/airlock_material //material of inner filling; if its an airlock with glass, this should be set to "glass"
-	var/overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi'
-	var/note_overlay_file = 'icons/obj/doors/airlocks/station/overlays.dmi' //Used for papers and photos pinned to the airlock
+	//GS13 Edit Start: perspective sprites
+	var/overlays_file = 'GainStation13/icons/obj/doors/airlocks/station/overlays.dmi'
+	var/note_overlay_file = 'GainStation13/icons/obj/doors/airlocks/station/overlays.dmi' //Used for papers and photos pinned to the airlock
+	//GS13 End
 
 	var/cyclelinkeddir = 0
 	var/obj/machinery/door/airlock/cyclelinkedairlock
@@ -611,22 +613,22 @@
 /obj/machinery/door/airlock/proc/check_unres() //unrestricted sides. This overlay indicates which directions the player can access even without an ID
 	if(hasPower() && unres_sides)
 		if(unres_sides & NORTH)
-			var/image/I = image(icon='icons/obj/doors/airlocks/station/overlays.dmi', icon_state="unres_n") //layer=src.layer+1
+			var/image/I = image(icon='GainStation13/icons/obj/doors/airlocks/station/overlays.dmi', icon_state="unres_n") //layer=src.layer+1 //GS13 Edit: perspective sprites
 			I.pixel_y = 32
 			set_light(l_range = 2, l_power = 1)
 			add_overlay(I)
 		if(unres_sides & SOUTH)
-			var/image/I = image(icon='icons/obj/doors/airlocks/station/overlays.dmi', icon_state="unres_s") //layer=src.layer+1
+			var/image/I = image(icon='GainStation13/icons/obj/doors/airlocks/station/overlays.dmi', icon_state="unres_s") //layer=src.layer+1 //GS13 Edit: perspective sprites
 			I.pixel_y = -32
 			set_light(l_range = 2, l_power = 1)
 			add_overlay(I)
 		if(unres_sides & EAST)
-			var/image/I = image(icon='icons/obj/doors/airlocks/station/overlays.dmi', icon_state="unres_e") //layer=src.layer+1
+			var/image/I = image(icon='GainStation13/icons/obj/doors/airlocks/station/overlays.dmi', icon_state="unres_e") //layer=src.layer+1 //GS13 Edit: perspective sprites
 			I.pixel_x = 32
 			set_light(l_range = 2, l_power = 1)
 			add_overlay(I)
 		if(unres_sides & WEST)
-			var/image/I = image(icon='icons/obj/doors/airlocks/station/overlays.dmi', icon_state="unres_w") //layer=src.layer+1
+			var/image/I = image(icon='GainStation13/icons/obj/doors/airlocks/station/overlays.dmi', icon_state="unres_w") //layer=src.layer+1 //GS13 Edit: perspective sprites
 			I.pixel_x = -32
 			set_light(l_range = 2, l_power = 1)
 			add_overlay(I)

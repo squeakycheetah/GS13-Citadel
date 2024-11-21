@@ -215,6 +215,8 @@
 		"butt_color"		= pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F"),
 		// GS13 EDIT START - BELLY
 		"has_belly" 		= FALSE,
+		"belly_size"		= BELLY_SIZE_DEF,
+		"belly_shape"		= DEF_BELLY_SHAPE,
 		"hide_belly" 		= FALSE,
 		"inflatable_belly" 	= FALSE,
 		"belly_color" 		= pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F"),
@@ -225,6 +227,7 @@
 		"cock_visibility"	= GEN_VISIBLE_NO_UNDIES,
 		"vag_visibility"	= GEN_VISIBLE_NO_UNDIES,
 		"butt_visibility"	= GEN_VISIBLE_NO_UNDIES,
+		"belly_visibility"  = GEN_VISIBLE_NO_UNDIES,
 		"ipc_screen"		= snowflake_ipc_antenna_list ? pick(snowflake_ipc_antenna_list) : "None",
 		"ipc_antenna"		= "None",
 		"flavor_text"		= "",

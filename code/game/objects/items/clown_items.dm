@@ -33,6 +33,11 @@
 
 /obj/item/soap/nanotrasen
 	desc = "A Nanotrasen brand bar of soap. Smells of plasma."
+	icon = 'GainStation13/icons/obj/items_and_weapons.dmi' //GS13 - sorry not sorry, but it's just easier to replace this sprite instead of rebranding all instances of nanotrasen soap
+	icon_state = "soapgt"
+
+/obj/item/soap/nanotrasenreal //GS13 - this is the real NT soap :3
+	desc = "A Nanotrasen brand bar of soap. Smells of plasma."
 	icon_state = "soapnt"
 
 /obj/item/soap/homemade

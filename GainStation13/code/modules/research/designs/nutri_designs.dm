@@ -85,7 +85,7 @@
 	id = "bluespace_belt"
 	build_type = PROTOLATHE
 	construction_time = 100
-	materials = list(/datum/material/silver = 4000, /datum/material/gold = 4000, MAT_BLUESPACE = 2000, )
+	materials = list(/datum/material/silver = 4000, /datum/material/gold = 4000, /datum/material/bluespace = 2000, )
 	build_path = /obj/item/bluespace_belt
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
@@ -96,7 +96,7 @@
 	id = "cookie_synthesizer"
 	build_type = PROTOLATHE
 	construction_time = 100
-	materials = list(/datum/material/silver = 4000, /datum/material/uranium = 1000, MAT_BLUESPACE = 1000, /datum/material/calorite = 2000)
+	materials = list(/datum/material/silver = 4000, /datum/material/uranium = 1000, /datum/material/bluespace = 1000, /datum/material/calorite = 2000)
 	build_path = /obj/item/cookiesynth
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_SERVICE
@@ -107,7 +107,7 @@
 	id = "borg_upgrade_cookiesynthesizer"
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/cookiesynth
-	materials = list(/datum/material/iron=10000, /datum/material/gold=1500, /datum/material/uranium=250, MAT_PLASMA=1500)
+	materials = list(/datum/material/iron=10000, /datum/material/gold=1500, /datum/material/uranium=250, /datum/material/plasma=1500)
 	construction_time = 100
 	category = list("Cyborg Upgrade Modules")
 
@@ -126,6 +126,15 @@
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/feedtube
 	materials = list(/datum/material/iron = 8000, /datum/material/glass = 6000, /datum/material/calorite = 10000)
+	construction_time = 100
+	category = list("Cyborg Upgrade Modules")
+
+/datum/design/borg_foodgrip
+	name = "Cyborg Upgrade (Food Gripper)"
+	id = "borg_upgrade_foodgrip"
+	build_type = MECHFAB
+	build_path = /obj/item/borg/upgrade/feeding_arm
+	materials = list(/datum/material/iron = 8000, /datum/material/glass = 6000)
 	construction_time = 100
 	category = list("Cyborg Upgrade Modules")
 

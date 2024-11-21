@@ -9,10 +9,11 @@
 #define BUTT_LAYER_INDEX		1
 #define VAGINA_LAYER_INDEX		2
 #define TESTICLES_LAYER_INDEX	3
-#define GENITAL_LAYER_INDEX		4
-#define PENIS_LAYER_INDEX		5
+#define BELLY_LAYER_INDEX		4
+#define GENITAL_LAYER_INDEX		5
+#define PENIS_LAYER_INDEX		6
 
-#define GENITAL_LAYER_INDEX_LENGTH 5 //keep it updated with each new index added, thanks.
+#define GENITAL_LAYER_INDEX_LENGTH 6 //keep it updated with each new index added, thanks.
 
 //genital flags
 #define GENITAL_BLACKLISTED		(1<<0) //for genitals that shouldn't be added to GLOB.genitals_list.
@@ -66,8 +67,15 @@
 #define BUTT_SIZE_DEF		1
 #define BUTT_SIZE_MAX		10  //butt genitals are special in that they have caps. if there's the event there's even bigger butt sprites, raise this number.
 
-#define BELLY_SIZE_DEF	0
+#define BELLY_SIZE_DEF	1
 #define BELLY_SIZE_MAX	10
+
+#define DEF_BELLY_SHAPE "Soft Belly" //GS13 - More belly types
+
+//GS13 Port - Add back Arousal
+#define AROUSAL_MINIMUM_DEFAULT 	0
+#define AROUSAL_MAXIMUM_DEFAULT 	100
+#define AROUSAL_START_VALUE			1
 
 //visibility toggles defines to avoid errors typos code errors.
 #define GEN_VISIBLE_ALWAYS "Always visible"

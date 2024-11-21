@@ -704,7 +704,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	var/savefile/S = new /savefile(path)
 	if(!S)
 		return FALSE
-	features = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF", "mcolor3" = "FFFFFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "horns_color" = "85615a", "ears" = "None", "wings" = "None", "wings_color" = "FFF", "frills" = "None", "deco_wings" = "None", "spines" = "None", "legs" = "Plantigrade", "insect_wings" = "Plain", "insect_fluff" = "None", "insect_markings" = "None", "arachnid_legs" = "Plain", "arachnid_spinneret" = "Plain", "arachnid_mandibles" = "Plain", "mam_body_markings" = "Plain", "mam_ears" = "None", "mam_snouts" = "None", "mam_tail" = "None", "mam_tail_animated" = "None", "xenodorsal" = "Standard", "xenohead" = "Standard", "xenotail" = "Xenomorph Tail", "taur" = "None", "genitals_use_skintone" = FALSE, "has_cock" = FALSE, "cock_shape" = DEF_COCK_SHAPE, "cock_length" = COCK_SIZE_DEF, "cock_diameter_ratio" = COCK_DIAMETER_RATIO_DEF, "cock_color" = "ffffff", "cock_taur" = FALSE, "has_balls" = FALSE, "balls_color" = "ffffff", "balls_shape" = DEF_BALLS_SHAPE, "balls_size" = BALLS_SIZE_DEF, "balls_cum_rate" = CUM_RATE, "balls_cum_mult" = CUM_RATE_MULT, "balls_efficiency" = CUM_EFFICIENCY, "has_breasts" = FALSE, "breasts_color" = "ffffff", "breasts_size" = BREASTS_SIZE_DEF, "breasts_shape" = DEF_BREASTS_SHAPE, "breasts_producing" = FALSE, "has_vag" = FALSE, "vag_shape" = DEF_VAGINA_SHAPE, "vag_color" = "ffffff", "has_womb" = FALSE, "has_butt" = FALSE, "butt_color" = "ffffff", "butt_size" = BUTT_SIZE_DEF, "balls_visibility"	= GEN_VISIBLE_NO_UNDIES, "breasts_visibility"= GEN_VISIBLE_NO_UNDIES, "cock_visibility"	= GEN_VISIBLE_NO_UNDIES, "vag_visibility"	= GEN_VISIBLE_NO_UNDIES, "butt_visibility"	= GEN_VISIBLE_NO_UNDIES, "belly_visibility" = GEN_VISIBLE_NO_UNDIES, "ipc_screen" = "Sunburst", "ipc_antenna" = "None", "flavor_text" = "", "silicon_flavor_text" = "", "ooc_notes" = "", "meat_type" = "Mammalian", "body_model" = MALE, "body_size" = RESIZE_DEFAULT_SIZE, "color_scheme" = OLD_CHARACTER_COLORING)
+	features = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF", "mcolor3" = "FFFFFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "horns_color" = "85615a", "ears" = "None", "wings" = "None", "wings_color" = "FFF", "frills" = "None", "deco_wings" = "None", "spines" = "None", "legs" = "Plantigrade", "insect_wings" = "Plain", "insect_fluff" = "None", "insect_markings" = "None", "arachnid_legs" = "Plain", "arachnid_spinneret" = "Plain", "arachnid_mandibles" = "Plain", "mam_body_markings" = "Plain", "mam_ears" = "None", "mam_snouts" = "None", "mam_tail" = "None", "mam_tail_animated" = "None", "xenodorsal" = "Standard", "xenohead" = "Standard", "xenotail" = "Xenomorph Tail", "taur" = "None", "genitals_use_skintone" = FALSE, "has_cock" = FALSE, "cock_shape" = DEF_COCK_SHAPE, "cock_length" = COCK_SIZE_DEF, "cock_diameter_ratio" = COCK_DIAMETER_RATIO_DEF, "cock_color" = "ffffff", "cock_taur" = FALSE, "has_balls" = FALSE, "balls_color" = "ffffff", "balls_shape" = DEF_BALLS_SHAPE, "balls_size" = BALLS_SIZE_DEF, "balls_cum_rate" = CUM_RATE, "balls_cum_mult" = CUM_RATE_MULT, "balls_efficiency" = CUM_EFFICIENCY, "has_breasts" = FALSE, "breasts_color" = "ffffff", "breasts_size" = BREASTS_SIZE_DEF, "breasts_shape" = DEF_BREASTS_SHAPE, "breasts_producing" = FALSE, "has_vag" = FALSE, "vag_shape" = DEF_VAGINA_SHAPE, "vag_color" = "ffffff", "has_womb" = FALSE, "has_butt" = FALSE, "butt_color" = "ffffff", "butt_size" = BUTT_SIZE_DEF, "balls_visibility"	= GEN_VISIBLE_NO_UNDIES, "breasts_visibility"= GEN_VISIBLE_NO_UNDIES, "cock_visibility"	= GEN_VISIBLE_NO_UNDIES, "vag_visibility"	= GEN_VISIBLE_NO_UNDIES, "butt_visibility"	= GEN_VISIBLE_NO_UNDIES, "belly_visibility" = GEN_VISIBLE_NO_UNDIES, "belly_size" = BELLY_SIZE_DEF, "belly_shape" = DEF_BELLY_SHAPE, "inflatable_belly" = FALSE, "ipc_screen" = "Sunburst", "ipc_antenna" = "None", "flavor_text" = "", "silicon_flavor_text" = "", "ooc_notes" = "", "meat_type" = "Mammalian", "body_model" = MALE, "body_size" = RESIZE_DEFAULT_SIZE, "color_scheme" = OLD_CHARACTER_COLORING)
 
 	S.cd = "/"
 	if(!slot)
@@ -714,6 +714,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		default_slot = slot
 		WRITE_FILE(S["default_slot"] , slot)
 
+	ckeyslot = slot
 	S.cd = "/character[slot]"
 	var/needs_update = savefile_needs_update(S)
 	if(needs_update == -2)		//fatal, can't load any data
@@ -892,6 +893,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//belly features
 	S["feature_has_belly"]				>> features["has_belly"]
 	S["feature_belly_size"]				>> features["belly_size"]
+	S["feature_belly_shape"]			>> features["belly_shape"]
 	S["feature_belly_color"]			>> features["belly_color"]
 	S["feature_hide_belly"]				>> features["hide_belly"]
 	S["feature_inflatable_belly"]		>> features["inflatable_belly"]
@@ -932,6 +934,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["wg_rate"] >> wg_rate
 	S["wl_rate"] >> wl_rate
 	S["noncon_weight_gain"] >> noncon_weight_gain
+	S["trouble_seeker"] >> trouble_seeker
 	S["bot_feeding"] >> bot_feeding
 	S["max_weight"] >> max_weight
 	S["helplessness_no_movement"] >> helplessness_no_movement
@@ -948,13 +951,17 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["chair_breakage"] >> chair_breakage
 	S["fatness_vulnerable"] >> fatness_vulnerable
 	S["extreme_fatness_vulnerable"] >> extreme_fatness_vulnerable
+	S["object_tf"] >> object_tf
 	S["blueberry_inflation"] >> blueberry_inflation
-
+	S["feature_breasts_fluid"]			>> features["breasts_fluid"]
+	S["alt_titles_preferences"] 		>> alt_titles_preferences
 	//gear loadout
-	if(S["loadout"])
+	if(istext(S["loadout"]))
 		loadout_data = safe_json_decode(S["loadout"])
 	else
 		loadout_data = list()
+	//let's remember their last used slot, i'm sure "oops i brought the wrong stuff" will be an issue now
+	S["loadout_slot"] >> loadout_slot
 
 	//try to fix any outdated data if necessary
 	//preference updating will handle saving the updated data for us.
@@ -1061,6 +1068,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["cock_shape"] = sanitize_inlist(features["cock_shape"], GLOB.cock_shapes_list, DEF_COCK_SHAPE)
 	features["balls_shape"] = sanitize_inlist(features["balls_shape"], GLOB.balls_shapes_list, DEF_BALLS_SHAPE)
 	features["vag_shape"] = sanitize_inlist(features["vag_shape"], GLOB.vagina_shapes_list, DEF_VAGINA_SHAPE)
+	features["belly_shape"] = sanitize_inlist(features["belly_shape"], GLOB.belly_shapes_list, DEF_BELLY_SHAPE) //GS13 - New belly shape
 	features["breasts_color"] = sanitize_hexcolor(features["breasts_color"], 6, FALSE, "FFFFFF")
 	features["cock_color"] = sanitize_hexcolor(features["cock_color"], 6, FALSE, "FFFFFF")
 	features["balls_color"] = sanitize_hexcolor(features["balls_color"], 6, FALSE, "FFFFFF")
@@ -1134,6 +1142,15 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	vore_taste = copytext(vore_taste, 1, MAX_TASTE_LEN)
 	vore_smell = copytext(vore_smell, 1, MAX_TASTE_LEN)
 	belly_prefs = SANITIZE_LIST(belly_prefs)
+
+	loadout_slot = sanitize_num_clamp(loadout_slot, 1, MAXIMUM_LOADOUT_SAVES, 1, TRUE)
+
+	alt_titles_preferences = SANITIZE_LIST(alt_titles_preferences)
+	if(SSjob)
+		for(var/datum/job/job in SSjob.occupations)
+			if(alt_titles_preferences[job.title])
+				if(!(alt_titles_preferences[job.title] in job.alt_titles))
+					alt_titles_preferences.Remove(job.title)
 
 	cit_character_pref_load(S)
 
@@ -1210,6 +1227,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["wg_rate"], wg_rate)
 	WRITE_FILE(S["wl_rate"], wl_rate)
 	WRITE_FILE(S["noncon_weight_gain"], noncon_weight_gain)
+	WRITE_FILE(S["trouble_seeker"], trouble_seeker)
 	WRITE_FILE(S["bot_feeding"], bot_feeding)
 	WRITE_FILE(S["max_weight"], max_weight)
 	WRITE_FILE(S["helplessness_no_movement"], helplessness_no_movement)
@@ -1226,7 +1244,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["chair_breakage"], chair_breakage)
 	WRITE_FILE(S["fatness_vulnerable"], fatness_vulnerable)
 	WRITE_FILE(S["extreme_fatness_vulnerable"], extreme_fatness_vulnerable)
+	WRITE_FILE(S["object_tf"], object_tf)
 	WRITE_FILE(S["blueberry_inflation"], blueberry_inflation)
+	WRITE_FILE(S["feature_breasts_fluid"], features["breasts_fluid"])
 
 	// records
 	WRITE_FILE(S["security_records"]		, security_records)
@@ -1286,9 +1306,11 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//belly features
 	WRITE_FILE(S["feature_has_belly"], features["has_belly"])
 	WRITE_FILE(S["feature_belly_size"], features["belly_size"])
+	WRITE_FILE(S["feature_belly_shape"], features["belly_shape"])
 	WRITE_FILE(S["feature_belly_color"], features["belly_color"])
 	WRITE_FILE(S["feature_hide_belly"], features["hide_belly"])
 	WRITE_FILE(S["feature_inflatable_belly"], features["inflatable_belly"])
+	WRITE_FILE(S["alt_titles_preferences"], alt_titles_preferences)
 
 	WRITE_FILE(S["feature_ooc_notes"], features["ooc_notes"])
 
@@ -1357,10 +1379,11 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 
 	//gear loadout
-	if(length(loadout_data))
+	if(islist(loadout_data))
 		S["loadout"] << safe_json_encode(loadout_data)
 	else
 		S["loadout"] << safe_json_encode(list())
+	WRITE_FILE(S["loadout_slot"], loadout_slot)
 
 	if(length(tcg_cards))
 		S["tcg_cards"] << safe_json_encode(tcg_cards)

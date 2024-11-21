@@ -2,7 +2,7 @@
 	name = "Crystalline Asteroid"
 	typepath = /datum/round_event/crystalline_reentry
 	min_players = 15
-	max_occurrences = 5
+	max_occurrences = 0 //GS13 - removed... for now
 	var/atom/special_target
 
 /datum/round_event_control/crystalline_reentry/admin_setup()
@@ -253,7 +253,7 @@
 			var/turf/open/chasm/cloud/M = F
 			M.TerraformTurf(/turf/open/floor/plating/asteroid/layenia, /turf/open/floor/plating/asteroid/layenia)
 	gps = new /obj/item/gps/internal(src)
-	addtimer(CALLBACK(src,PROC_REF(delayedInitialize)), 4 SECONDS) 
+	addtimer(CALLBACK(src,PROC_REF(delayedInitialize)), 4 SECONDS)
 
 /obj/structure/spawner/crystalline/deconstruct(disassembled)
 	new /obj/effect/cloud_collapse(loc)

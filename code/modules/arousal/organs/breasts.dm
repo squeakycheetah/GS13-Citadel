@@ -11,9 +11,11 @@
 	size = BREASTS_SIZE_DEF // "c". Refer to the breast_values static list below for the cups associated number values
 	fluid_id = /datum/reagent/consumable/milk
 	fluid_rate = MILK_RATE
+	producing = TRUE
 	shape = DEF_BREASTS_SHAPE
 	genital_flags = CAN_MASTURBATE_WITH|CAN_CLIMAX_WITH|GENITAL_FUID_PRODUCTION|GENITAL_CAN_AROUSE|UPDATE_OWNER_APPEARANCE|GENITAL_UNDIES_HIDDEN
 	masturbation_verb = "massage"
+	can_climax				= TRUE
 	arousal_verb = "Your breasts start feeling sensitive"
 	unarousal_verb = "Your breasts no longer feel sensitive"
 	orgasm_verb = "leaking"
@@ -73,7 +75,7 @@
 //this is far too lewd wah
 
 /obj/item/organ/genital/breasts/modify_size(modifier, min = -INFINITY, max = INFINITY)
-	var/new_value = clamp(cached_size + modifier, min, max)
+	var/new_value = clamp(cached_size + modifier, starting_size, max) //GS13 EDIT
 	if(new_value == cached_size)
 		return
 	prev_size = cached_size
@@ -113,6 +115,7 @@
 	else
 		color = "#[D.features["breasts_color"]]"
 	size = D.features["breasts_size"]
+	starting_size = D.features["breasts_size"]
 	shape = D.features["breasts_shape"]
 	if(!D.features["breasts_producing"])
 		genital_flags &= ~ (GENITAL_FUID_PRODUCTION|CAN_CLIMAX_WITH|CAN_MASTURBATE_WITH)
@@ -123,6 +126,11 @@
 		size = breast_values[size]
 	prev_size = cached_size
 	toggle_visibility(D.features["breasts_visibility"], FALSE)
+
+	// GS13 EDIT START
+	if(D?.features["breasts_fluid"])
+		fluid_id = D?.features["breasts_fluid"]
+	// GS13 EDIT END
 
 #undef BREASTS_ICON_MIN_SIZE
 #undef BREASTS_ICON_MAX_SIZE

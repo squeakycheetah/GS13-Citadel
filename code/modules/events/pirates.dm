@@ -2,9 +2,9 @@
 	name = "Space Pirates"
 	typepath = /datum/round_event/pirates
 	weight = 8
-	max_occurrences = 1
-	min_players = 10
-	earliest_start = 30 MINUTES
+	max_occurrences = 0 //GS13 - no antags, thanks
+	min_players = 20
+	earliest_start = 50 MINUTES
 	dynamic_should_hijack = TRUE
 	category = EVENT_CATEGORY_INVASION
 	description = "The crew will either pay up, or face a pirate assault."

@@ -1,6 +1,6 @@
 /obj/item/banner
 	name = "banner"
-	desc = "A banner with Nanotrasen's logo on it."
+	desc = "A banner with GATO's logo on it." //GS13 - Nanotrasen to GATO
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "banner"
 	item_state = "banner"
@@ -140,7 +140,7 @@
 	desc = "The banner of Command, a staunch and ancient line of bueraucratic kings and queens."
 	//No icon state here since the default one is the NT banner
 	job_loyalties = list("Captain", "Head of Personnel", "Chief Engineer", "Head of Security", "Research Director", "Chief Medical Officer")
-	warcry = "Hail Nanotrasen!"
+	warcry = "Hail GATO!" //GS13 - Nanotrasen to GATO
 
 /obj/item/banner/command/mundane
 	inspiration_available = FALSE
@@ -161,8 +161,8 @@
 	desc = "A banner with the logo of the blue deity."
 
 /obj/item/storage/backpack/bannerpack
-	name = "nanotrasen banner backpack"
-	desc = "It's a backpack with lots of extra room.  A banner with Nanotrasen's logo is attached, that can't be removed."
+	name = "GATO banner backpack" //GS13 - Nanotrasen to GATO
+	desc = "It's a backpack with lots of extra room.  A banner with GATO's logo is attached, that can't be removed." //GS13 - Nanotrasen to GATO
 	icon_state = "bannerpack"
 
 /obj/item/storage/backpack/bannerpack/Initialize(mapload)

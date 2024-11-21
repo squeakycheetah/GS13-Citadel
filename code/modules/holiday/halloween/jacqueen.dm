@@ -34,7 +34,7 @@
 /mob/living/simple_animal/jacq
 	name = "Jacqueline the Pumpqueen"
 	real_name = "Jacqueline"
-	icon = 'icons/obj/halloween_items.dmi'
+	icon = 'GainStation13/icons/obj/halloween_items.dmi' //GS13 Edit: Fat Jacqueline
 	icon_state = "jacqueline"
 	maxHealth = 25
 	health = 25

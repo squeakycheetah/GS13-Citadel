@@ -175,6 +175,15 @@
 #define NUTRITION_LEVEL_START_MIN 250
 #define NUTRITION_LEVEL_START_MAX 400
 
+//GS13 Port - Hyperstation Thirst
+#define THIRST_LEVEL_THRESHOLD	800		//Set to 0 to stop clamping
+#define THIRST_LEVEL_QUENCHED	450
+#define THIRST_LEVEL_THIRSTY	250
+#define THIRST_LEVEL_PARCHED	150
+
+#define THIRST_LEVEL_START_MIN	250
+#define THIRST_LEVEL_START_MAX	400
+
 // Disgust levels for humans
 #define DISGUST_LEVEL_MAXEDOUT  150
 #define DISGUST_LEVEL_DISGUSTED	 75
@@ -288,7 +297,7 @@
 #define OFFSET_MUTPARTS	"mutantparts"
 
 // MINOR TWEAKS/MISC
-#define AGE_MIN					18	// youngest a character can be // CITADEL EDIT - 17 --> 18
+#define AGE_MIN					21	// youngest a character can be // CITADEL EDIT - 17 --> 18 //GS13 EDIT - 18 --> 21
 #define AGE_MAX					85	// oldest a character can be randomly generated
 #define AGE_MAX_INPUT			85	// oldest a character's age can be manually set
 #define WIZARD_AGE_MIN			30	// youngest a wizard can be
@@ -388,6 +397,7 @@
 #define FULLNESS_LEVEL_FILLED 40
 #define FULLNESS_LEVEL_HALF_FULL 20
 #define FULLNESS_LEVEL_EMPTY 0
+#define FULLNESS_STUFFED_EXTRA_SPRITE_SIZES 2 //GS13 - Stuffed sprite range
 
 //Fullness emote cooldown
 #define FULLNESS_REDUCTION_COOLDOWN 50

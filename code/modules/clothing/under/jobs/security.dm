@@ -16,7 +16,7 @@
 
 /obj/item/clothing/under/rank/security/officer
 	name = "security jumpsuit"
-	desc = "A tactical security jumpsuit for officers complete with Nanotrasen belt buckle."
+	desc = "A tactical security jumpsuit for officers complete with GATO belt buckle." //GS13 - Nanotrasen to GATO
 	icon_state = "rsecurity"
 	item_state = "r_suit"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 30, ACID = 30, WOUND = 10)
@@ -30,7 +30,7 @@
 
 /obj/item/clothing/under/rank/security/officer/grey
 	name = "grey security jumpsuit"
-	desc = "A tactical relic of years past before Nanotrasen decided it was cheaper to dye the suits red instead of washing out the blood."
+	desc = "A tactical relic of years past before GATO decided it was cheaper to dye the suits red instead of washing out the blood." //GS13 - Nanotrasen to GATO
 	icon_state = "security"
 	item_state = "gy_suit"
 
@@ -102,20 +102,20 @@
 
 /obj/item/clothing/under/rank/security/warden
 	name = "security suit"
-	desc = "A formal security suit for officers complete with Nanotrasen belt buckle."
+	desc = "A formal security suit for officers complete with GATO belt buckle." //GS13 - Nanotrasen to GATO
 	icon_state = "rwarden"
 	item_state = "r_suit"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 30, ACID = 30, WOUND = 10)
 
 /obj/item/clothing/under/rank/security/warden/grey
 	name = "grey security suit"
-	desc = "A formal relic of years past before Nanotrasen decided it was cheaper to dye the suits red instead of washing out the blood."
+	desc = "A formal relic of years past before GATO decided it was cheaper to dye the suits red instead of washing out the blood." //GS13 - Nanotrasen to GATO
 	icon_state = "warden"
 	item_state = "gy_suit"
 
 /obj/item/clothing/under/rank/security/warden/skirt
 	name = "warden's suitskirt"
-	desc = "A formal security suitskirt for officers complete with Nanotrasen belt buckle."
+	desc = "A formal security suitskirt for officers complete with GATO belt buckle." //GS13 - Nanotrasen to GATO
 	icon_state = "rwarden_skirt"
 	item_state = "r_suit"
 	body_parts_covered = CHEST|GROIN|ARMS

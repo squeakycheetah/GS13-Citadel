@@ -1,6 +1,8 @@
+//GS13 EDIT, we changed the default sofa sprite here.
+
 /obj/structure/chair/sofa
 	name = "old ratty sofa"
-	icon_state = "sofamiddle"
+	icon_state = "corp_sofamiddle"
 	icon = 'icons/obj/sofa.dmi'
 	buildstackamount = 1
 	item_chair = null
@@ -25,13 +27,13 @@
 	update_armrest()
 
 /obj/structure/chair/sofa/left
-	icon_state = "sofaend_left"
+	icon_state = "corp_sofaend_left"
 
 /obj/structure/chair/sofa/right
-	icon_state = "sofaend_right"
+	icon_state = "corp_sofaend_right"
 
 /obj/structure/chair/sofa/corner
-	icon_state = "sofacorner"
+	icon_state = "corp_sofacorner"
 
 /obj/structure/chair/sofa/corner/handle_layer() //only the armrest/back of this chair should cover the mob.
 	return

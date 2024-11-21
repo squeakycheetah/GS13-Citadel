@@ -4,7 +4,6 @@
 	icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	mob_overlay_icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	icon_state = "haydee_helmet"
-	item_state = "item_haydee_helmet"
 	armor = list("melee" = 10, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 25, "fire" = 25, "acid" = 25)
 	slowdown = 0
 	mutantrace_variation = NONE
@@ -13,11 +12,12 @@
 /obj/item/clothing/suit/space/hardsuit/engine/haydee
 	name = "Haydee Suit"
 	desc = "A strangely voluptous suit. Offers little to no protection. It also appears to have minor flab-compressing properties."
+	icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	mob_overlay_icon =  'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	anthro_mob_worn_overlay = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	icon_state = "haydee_suit1"
 	item_state = "item_haydee"
-	armor = list("melee" = 10, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 0, "rad" = 25, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 25, "fire" = 5, "acid" = 5)
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals)
 	actions_types = list(/datum/action/item_action/toggle_helmet)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/engine/haydee

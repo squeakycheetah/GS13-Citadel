@@ -262,7 +262,7 @@
 
 /obj/item/storage/bag/sheetsnatcher
 	name = "sheet snatcher"
-	desc = "A patented Nanotrasen storage system designed for any kind of mineral sheet."
+	desc = "A patented GATO storage system designed for any kind of mineral sheet." //GS13 - Nanotrasen to GATO
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "sheetsnatcher"
 
@@ -388,7 +388,7 @@
 	name = "bluespace tray"
 	icon_state = "bluespace_tray"
 	desc = "A tray created using bluespace technology to fit more food on it."
-	max_items = 30 // far more items
+	max_items = 100 //GS13 - we loooove our mountains of food here
 	custom_materials = list(/datum/material/iron = 2000, /datum/material/bluespace = 500)
 
 /*

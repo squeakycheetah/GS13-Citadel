@@ -29,7 +29,7 @@
 	availability_prob = 50
 
 /datum/blackmarket_item/clothing/full_spacesuit_set
-	name = "Nanotrasen Branded Spacesuit Box"
+	name = "GATO Branded Spacesuit Box" //GS13 - Nanotrasen to GATO
 	desc = "A few boxes of \"Old Style\" space suits fell off the back of a space truck."
 	item = /obj/item/storage/box
 	price_min = 1500
@@ -40,7 +40,7 @@
 /datum/blackmarket_item/clothing/full_spacesuit_set/spawn_item(loc)
 	var/obj/item/storage/box/B = ..()
 	B.name = "Spacesuit Box"
-	B.desc = "It has a NT logo on it."
+	B.desc = "It has a GT logo on it." //GS13 - NT to GT
 	new /obj/item/clothing/suit/space(B)
 	new /obj/item/clothing/head/helmet/space(B)
 	return B

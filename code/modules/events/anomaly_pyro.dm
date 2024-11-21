@@ -2,8 +2,8 @@
 	name = "Anomaly: Pyroclastic"
 	typepath = /datum/round_event/anomaly/anomaly_pyro
 
-	min_players = 5
-	max_occurrences = 5
+	min_players = 10 //GS13 Edit: tweak
+	max_occurrences = 0 //GS13 Edit: Disabling this for now.
 	weight = 20
 	description = "This anomaly sets things on fire, and creates a pyroclastic slime."
 

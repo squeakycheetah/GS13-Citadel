@@ -2,7 +2,8 @@
 	name = "Clogged Vents: Normal"
 	typepath = /datum/round_event/vent_clog
 	weight = 10
-	max_occurrences = 3
+	max_occurrences = 2 //GS13 - pain in the ass, occurences nerfed until a less disruptive variant is made
+	min_players = 16 //GS13 - pain in the ass, occurences nerfed until a less disruptive variant is made
 	category = EVENT_CATEGORY_HEALTH
 	description = "All the scrubbers onstation spit random chemicals in smoke form."
 
@@ -24,8 +25,9 @@
 		/datum/reagent/drug/mushroomhallucinogen,
 		/datum/reagent/lube,
 		/datum/reagent/glitter/pink,
+		/datum/reagent/glitter/pink_subtle, //GS13 Add: Add our subtle variants of glitter.
 		/datum/reagent/cryptobiolin,
-		/datum/reagent/toxin/plantbgone,
+		//datum/reagent/toxin/plantbgone, //GS13 Remove: Annoying Reagent
 		/datum/reagent/blood,
 		/datum/reagent/medicine/charcoal,
 		/datum/reagent/drug/space_drugs,
@@ -49,6 +51,7 @@
 		/datum/reagent/hair_dye,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/glitter/white,
+		/datum/reagent/glitter/white_subtle, //GS13 ADD: Add our subtle variants of glitter. ...Why is this separate from the other glitter, anyhow? Blue glitter's also missing, so I wont add it.
 		/datum/reagent/growthserum,
 		/datum/reagent/consumable/cornoil,
 		/datum/reagent/uranium,
@@ -107,7 +110,7 @@
 	name = "Clogged Vents: Threatening"
 	typepath = /datum/round_event/vent_clog/threatening
 	weight = 4
-	min_players = 15
+	min_players = 18
 	max_occurrences = 1
 	earliest_start = 35 MINUTES
 	description = "Extra dangerous chemicals come out of the scrubbers."

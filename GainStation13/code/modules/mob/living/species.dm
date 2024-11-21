@@ -239,7 +239,10 @@
 				fatness_delay += (H.fatness / FATNESS_LEVEL_IMMOBILE) * FATNESS_WEAKLEGS_MODIFIER
 				fatness_delay = min(fatness_delay, 60)
 
-	H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/fatness, TRUE, fatness_delay)
+	if(fatness_delay)
+		H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/fatness, TRUE, fatness_delay)
+	else
+		H.remove_movespeed_modifier(/datum/movespeed_modifier/fatness)
 
 	if(HAS_TRAIT(H, TRAIT_BLOB))
 		handle_fatness_trait(

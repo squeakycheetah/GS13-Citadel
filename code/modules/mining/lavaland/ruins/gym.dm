@@ -19,6 +19,12 @@
 		SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "exercise", /datum/mood_event/exercise)
 		L.apply_status_effect(STATUS_EFFECT_EXERCISED)
 
+		//GS13
+		var/mob/living/carbon/puncher = user
+		if(puncher)
+			puncher.adjust_fatness(-loss_per_punch, FATTENING_TYPE_WEIGHT_LOSS)
+
+
 /obj/structure/weightmachine
 	desc = "Just looking at this thing makes you feel tired."
 	icon = 'icons/obj/fitness.dmi'

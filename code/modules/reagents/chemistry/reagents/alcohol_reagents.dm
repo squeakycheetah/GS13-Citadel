@@ -1040,7 +1040,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 /datum/reagent/consumable/ethanol/grog
 	name = "Grog"
-	description = "Watered down rum, Nanotrasen approves!"
+	description = "Watered down rum, GATO approves!" //GS13 - Nanotrasen to GATO
 	color = "#664300" // rgb: 102, 67, 0
 	boozepwr = 1 //Basically nothing
 	taste_description = "a poor excuse for alcohol"
@@ -1091,11 +1091,11 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = "stomach acid"
 	glass_icon_state = "acidspitglass"
 	glass_name = "Acid Spit"
-	glass_desc = "A drink from Nanotrasen. Made from live aliens."
+	glass_desc = "A drink from GATO. Made from live aliens." //GS13 - Nanotrasen to GATO
 
 /datum/reagent/consumable/ethanol/amasec
 	name = "Amasec"
-	description = "Official drink of the Nanotrasen Gun-Club!"
+	description = "Official drink of the GATO Gun-Club!" //GS13 - Nanotrasen to GATO
 	color = "#664300" // rgb: 102, 67, 0
 	boozepwr = 35
 	quality = DRINK_GOOD
@@ -1317,7 +1317,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = "da bomb"
 	glass_icon_state = "atomicbombglass"
 	glass_name = "Atomic Bomb"
-	glass_desc = "Nanotrasen cannot take legal responsibility for your actions after imbibing."
+	glass_desc = "GATO cannot take legal responsibility for your actions after imbibing." //GS13 - Nanotrasen to GATO
 	value = REAGENT_VALUE_RARE
 
 /datum/reagent/consumable/ethanol/atomicbomb/on_mob_life(mob/living/carbon/M)
@@ -1888,7 +1888,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = "seduction"
 	glass_icon_state = "between_the_sheets"
 	glass_name = "Between the Sheets"
-	glass_desc = "The only drink that comes with a label reminding you of Nanotrasen's zero-tolerance promiscuity policy."
+	glass_desc = "The only drink that comes with a label reminding you of GATO's zero-tolerance promiscuity policy." //GS13 - Nanotrasen to GATO
 
 /datum/reagent/consumable/ethanol/between_the_sheets/on_mob_life(mob/living/L)
 	..()

@@ -24,13 +24,13 @@
 /obj/structure/artilleryplaceholder/decorative
 	density = FALSE
 
-/obj/machinery/artillerycontrol/ui_interact(mob/user)
+/obj/machinery/artillerycontrol/ui_interact(mob/user) //GS13 - Nanotrasen to GATO
 	. = ..()
 	var/dat = "<B>Bluespace Artillery Control:</B><BR>"
 	dat += "Locked on<BR>"
 	dat += "<B>Charge progress: [reload]/[reload_cooldown]:</B><BR>"
 	dat += "<A href='byond://?src=[REF(src)];fire=1'>Open Fire</A><BR>"
-	dat += "Deployment of weapon authorized by <br>Nanotrasen Naval Command<br><br>Remember, friendly fire is grounds for termination of your contract and life.<HR>"
+	dat += "Deployment of weapon authorized by <br>GATO Naval Command<br><br>Remember, friendly fire is grounds for termination of your contract and life.<HR>"
 	user << browse(dat, "window=scroll")
 	onclose(user, "scroll")
 

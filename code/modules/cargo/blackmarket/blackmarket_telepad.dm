@@ -11,7 +11,7 @@
 
 /obj/machinery/ltsrbt
 	name = "Long-To-Short-Range-Bluespace-Transciever"
-	desc = "The LTSRBT is a compact teleportation machine for recieving and sending items outside the station and inside the station.\nUsing teleportation frequencies stolen from NT it is near undetectable.\nEssential for any illegal market operations on NT stations.\n"
+	desc = "The LTSRBT is a compact teleportation machine for recieving and sending items outside the station and inside the station.\nUsing teleportation frequencies stolen from GT it is near undetectable.\nEssential for any illegal market operations on GT stations.\n" //GS13 - NT to GT
 	icon_state = "exonet_node"
 	circuit = /obj/item/circuitboard/machine/ltsrbt
 	density = TRUE

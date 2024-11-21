@@ -59,7 +59,7 @@
 
 /datum/design/inducer
 	name = "Inducer"
-	desc = "The NT-75 Electromagnetic Power Inducer can wirelessly induce electric charge in an object, allowing you to recharge power cells without having to remove them."
+	desc = "The GT-75 Electromagnetic Power Inducer can wirelessly induce electric charge in an object, allowing you to recharge power cells without having to remove them." //GS13 - NT to GT
 	id = "inducer"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 3000, /datum/material/glass = 1000)
@@ -69,7 +69,7 @@
 
 /datum/design/inducercombat
 	name = "Combat Ready Inducer"
-	desc = "The improved NT-8475 Electromagnetic Power Inducer can this one has been SCIENCED to allow for combat. It still comes printed with SCIENCED colors!"
+	desc = "The improved GT-8475 Electromagnetic Power Inducer can this one has been SCIENCED to allow for combat. It still comes printed with SCIENCED colors!" //GS13 - NT to GT
 	id = "combatinducer"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 13000, /datum/material/glass = 10000,  /datum/material/silver = 1500,  /datum/material/gold = 1250, /datum/material/diamond = 500, /datum/material/titanium = 1200)

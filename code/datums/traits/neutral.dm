@@ -162,6 +162,15 @@
 	gain_text = "<span class='notice'>You feel like munching on a can of soda.</span>"
 	lose_text = "<span class='notice'>You no longer feel like you should be eating trash.</span>"
 	mob_trait = TRAIT_TRASHCAN
+	medical_record_text = "Patient has been observed eating inedible garbage."
+
+// GS13 EDIT START
+/datum/quirk/trashcan/add()
+	add_verb(quirk_holder, /mob/living/proc/eat_trash)
+
+/datum/quirk/trashcan/remove()
+	remove_verb(quirk_holder, /mob/living/proc/eat_trash)
+// GS13 EDIT END
 
 // Moved Colorist quirk to a loadout item
 

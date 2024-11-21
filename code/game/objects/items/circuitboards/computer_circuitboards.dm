@@ -582,7 +582,7 @@
 	build_path = /obj/machinery/computer/cargo/request
 
 /obj/item/circuitboard/computer/bounty
-	name = "Nanotrasen Bounty Console (Computer Board)"
+	name = "GATO Bounty Console (Computer Board)" //GS13 - Nanotrasen to GATO
 	build_path = /obj/machinery/computer/bounty
 
 /obj/item/circuitboard/computer/ferry

@@ -126,7 +126,7 @@
 
 /obj/item/clothing/under/dress/corset
 	name = "black corset"
-	desc = "Nanotrasen is not resposible for any organ damage."
+	desc = "GATO is not resposible for any organ damage." //GS13 - Nanotrasen to GATO
 	icon_state = "corset"
 	body_parts_covered = CHEST|GROIN
 	fitted = FEMALE_UNIFORM_TOP

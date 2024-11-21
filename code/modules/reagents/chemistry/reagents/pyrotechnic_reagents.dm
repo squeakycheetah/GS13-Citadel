@@ -301,7 +301,7 @@
 
 /datum/reagent/firefighting_foam
 	name = "Firefighting Foam"
-	description = "A historical fire suppressant. Originally believed to simply displace oxygen to starve fires, it actually interferes with the combustion reaction itself. Vastly superior to the cheap water-based extinguishers found on NT vessels."
+	description = "A historical fire suppressant. Originally believed to simply displace oxygen to starve fires, it actually interferes with the combustion reaction itself. Vastly superior to the cheap water-based extinguishers found on GT vessels." //GS13 - NT to GT
 	reagent_state = LIQUID
 	color = "#A6FAFF55"
 	taste_description = "the inside of a fire extinguisher"

@@ -19,7 +19,7 @@
 /datum/reagent/consumable/on_mob_life(mob/living/carbon/M)
 	if(!HAS_TRAIT(M, TRAIT_NO_PROCESS_FOOD))
 		current_cycle++
-		M.adjust_nutrition(nutriment_factor, max_nutrition)
+		M.adjust_nutrition((nutriment_factor * M.nutri_mult), max_nutrition)	//GS13 nutriment multiplier to make nutrition stronger based on certain effects
 	M.CheckBloodsuckerEatFood(nutriment_factor)
 	holder.remove_reagent(type, metabolization_rate)
 

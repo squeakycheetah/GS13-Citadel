@@ -107,7 +107,7 @@
 	icon = 'icons/obj/device.dmi'
 	icon_state = "beacon"
 	template_id = "reactor"
-	
+
 //Pod objects
 
 //Window
@@ -314,7 +314,7 @@
 //Signs
 /obj/structure/sign/mining
 	name = "nanotrasen mining corps sign"
-	desc = "A sign of relief for weary miners, and a warning for would-be competitors to Nanotrasen's mining claims."
+	desc = "A sign of relief for weary miners, and a warning for would-be competitors to GATO's mining claims." //GS13 - Nanotrasen to GATO
 	icon = 'icons/turf/walls/survival_pod_walls.dmi'
 	icon_state = "ntpod"
 	buildable_sign = FALSE

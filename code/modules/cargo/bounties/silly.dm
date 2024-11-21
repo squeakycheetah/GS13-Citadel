@@ -49,7 +49,7 @@
 
 /datum/bounty/item/silly/strange_object
 	name = "Strange Object"
-	description = "Nanotrasen has taken an interest in strange objects. Find one in maint, and ship it off to CentCom right away."
+	description = "GATO has taken an interest in strange objects. Find one in maint, and ship it off to CentCom right away." //GS13 - Nanotrasen to GATO
 	reward = 1000
 	wanted_types = list(/obj/item/relic)
 
@@ -61,6 +61,6 @@
 
 /datum/bounty/item/silly/toy_swords
 	name = "Toy Swords"
-	description = "Nanotrasen has secured a contract in a reenactment of a famous movie, but we only have lethal energy based swords. Send us some convincing replicas so we save on medical costs."
+	description = "GATO has secured a contract in a reenactment of a famous movie, but we only have lethal energy based swords. Send us some convincing replicas so we save on medical costs." //GS13 - Nanotrasen to GATO
 	reward = 1200
 	required_count = 3

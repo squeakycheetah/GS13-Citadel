@@ -8,6 +8,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/client/parent
 	//doohickeys for savefiles
 	var/path
+	var/clientckey //GS13 EDIT
 	var/vr_path
 	var/default_slot = 1				//Holder so it doesn't default to slot 1, rather the last one used
 	var/max_save_slots = 24
@@ -101,6 +102,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/pda_style = MONO
 	var/pda_color = "#808000"
 	var/pda_skin = PDA_SKIN_ALT
+	var/list/alt_titles_preferences = list()
 
 	var/uses_glasses_colour = 0
 
@@ -132,7 +134,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/eye_type = DEFAULT_EYES_TYPE	//Eye type
 	var/split_eye_colors = FALSE
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
-	var/list/features = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF", "mcolor3" = "FFFFFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "horns_color" = "85615a", "ears" = "None", "wings" = "None", "wings_color" = "FFF", "frills" = "None", "deco_wings" = "None", "spines" = "None", "legs" = "Plantigrade", "insect_wings" = "Plain", "insect_fluff" = "None", "insect_markings" = "None", "arachnid_legs" = "Plain", "arachnid_spinneret" = "Plain", "arachnid_mandibles" = "Plain", "mam_body_markings" = list(), "mam_ears" = "None", "mam_snouts" = "None", "mam_tail" = "None", "mam_tail_animated" = "None", "xenodorsal" = "Standard", "xenohead" = "Standard", "xenotail" = "Xenomorph Tail", "taur" = "None", "genitals_use_skintone" = FALSE, "has_cock" = FALSE, "cock_shape" = DEF_COCK_SHAPE, "cock_length" = COCK_SIZE_DEF, "cock_diameter_ratio" = COCK_DIAMETER_RATIO_DEF, "cock_color" = "ffffff", "cock_taur" = FALSE, "has_balls" = FALSE, "balls_color" = "ffffff", "balls_shape" = DEF_BALLS_SHAPE, "balls_size" = BALLS_SIZE_DEF, "balls_cum_rate" = CUM_RATE, "balls_cum_mult" = CUM_RATE_MULT, "balls_efficiency" = CUM_EFFICIENCY, "has_breasts" = FALSE, "breasts_color" = "ffffff", "breasts_size" = BREASTS_SIZE_DEF, "breasts_shape" = DEF_BREASTS_SHAPE, "breasts_producing" = FALSE, "has_vag" = FALSE, "vag_shape" = DEF_VAGINA_SHAPE, "vag_color" = "ffffff", "has_womb" = FALSE,  "has_butt" = FALSE, "butt_color" = "ffffff", "butt_size" = BUTT_SIZE_DEF, "balls_visibility"	= GEN_VISIBLE_NO_UNDIES, "breasts_visibility"= GEN_VISIBLE_NO_UNDIES, "cock_visibility"	= GEN_VISIBLE_NO_UNDIES, "vag_visibility"	= GEN_VISIBLE_NO_UNDIES, "butt_visibility" = GEN_VISIBLE_NO_UNDIES, "ipc_screen" = "Sunburst", "ipc_antenna" = "None", "flavor_text" = "", "silicon_flavor_text" = "", "ooc_notes" = "", "meat_type" = "Mammalian", "body_model" = MALE, "body_size" = RESIZE_DEFAULT_SIZE, "color_scheme" = OLD_CHARACTER_COLORING)
+	var/list/features = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF", "mcolor3" = "FFFFFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "horns_color" = "85615a", "ears" = "None", "wings" = "None", "wings_color" = "FFF", "frills" = "None", "deco_wings" = "None", "spines" = "None", "legs" = "Plantigrade", "insect_wings" = "Plain", "insect_fluff" = "None", "insect_markings" = "None", "arachnid_legs" = "Plain", "arachnid_spinneret" = "Plain", "arachnid_mandibles" = "Plain", "mam_body_markings" = list(), "mam_ears" = "None", "mam_snouts" = "None", "mam_tail" = "None", "mam_tail_animated" = "None", "xenodorsal" = "Standard", "xenohead" = "Standard", "xenotail" = "Xenomorph Tail", "taur" = "None", "genitals_use_skintone" = FALSE, "has_cock" = FALSE, "cock_shape" = DEF_COCK_SHAPE, "cock_length" = COCK_SIZE_DEF, "cock_diameter_ratio" = COCK_DIAMETER_RATIO_DEF, "cock_color" = "ffffff", "cock_taur" = FALSE, "has_balls" = FALSE, "balls_color" = "ffffff", "balls_shape" = DEF_BALLS_SHAPE, "balls_size" = BALLS_SIZE_DEF, "balls_cum_rate" = CUM_RATE, "balls_cum_mult" = CUM_RATE_MULT, "balls_efficiency" = CUM_EFFICIENCY, "has_breasts" = FALSE, "breasts_color" = "ffffff", "breasts_size" = BREASTS_SIZE_DEF, "breasts_shape" = DEF_BREASTS_SHAPE, "breasts_fluid" = /datum/reagent/consumable/milk,  "breasts_producing" = FALSE, "has_vag" = FALSE, "vag_shape" = DEF_VAGINA_SHAPE, "vag_color" = "ffffff", "has_womb" = FALSE,  "has_butt" = FALSE, "butt_color" = "ffffff", "butt_size" = BUTT_SIZE_DEF, "balls_visibility"	= GEN_VISIBLE_NO_UNDIES, "breasts_visibility"= GEN_VISIBLE_NO_UNDIES, "cock_visibility"	= GEN_VISIBLE_NO_UNDIES, "vag_visibility"	= GEN_VISIBLE_NO_UNDIES, "butt_visibility" = GEN_VISIBLE_NO_UNDIES, "ipc_screen" = "Sunburst", "ipc_antenna" = "None", "flavor_text" = "", "silicon_flavor_text" = "", "ooc_notes" = "", "meat_type" = "Mammalian", "body_model" = MALE, "body_size" = RESIZE_DEFAULT_SIZE, "color_scheme" = OLD_CHARACTER_COLORING, "belly_size" = BELLY_SIZE_DEF, "belly_shape" = DEF_BELLY_SHAPE, "inflatable_belly" = FALSE, "belly_visibility" = GEN_VISIBLE_NO_UNDIES)
 
 	var/custom_speech_verb = "default" //if your say_mod is to be something other than your races
 	var/custom_tongue = "default" //if your tongue is to be something other than your races
@@ -176,7 +178,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	var/list/ignoring = list()
 
-	var/clientfps = 0
+	var/clientfps = 60 //GS13 Change
 
 	var/parallax = PARALLAX_INSANE
 
@@ -229,7 +231,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	///loadout stuff
 	var/gear_points = 10
 	var/list/gear_categories
-	var/list/loadout_data = list()
+	var/list/loadout_data
 	var/list/unlockable_loadout_data = list()
 	var/loadout_slot = 1 //goes from 1 to MAXIMUM_LOADOUT_SAVES
 	var/gear_category
@@ -280,6 +282,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	if(istype(C))
 		if(!IsGuestKey(C.key))
 			load_path(C.ckey)
+			clientckey = C.ckey //GS13 EDIT
 			unlock_content = C.IsByondMember()
 			if(unlock_content)
 				max_save_slots = 32
@@ -404,7 +407,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				//calculate your gear points from the chosen item
 				gear_points = CONFIG_GET(number/initial_gear_points)
 				var/list/chosen_gear = loadout_data["SAVE_[loadout_slot]"]
-				if(chosen_gear)
+				if(islist(chosen_gear))
 					loadout_errors = 0
 					for(var/loadout_item in chosen_gear)
 						var/loadout_item_path = loadout_item[LOADOUT_ITEM]
@@ -794,6 +797,29 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							dat += "<b>Breasts Shape:</b><a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_shape;task=input'>[features["breasts_shape"]]</a>"
 							dat += "<b>Breasts Visibility:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=breasts_visibility;task=input'>[features["breasts_visibility"]]</a>"
 							dat += "<b>Lactates:</b><a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_producing'>[features["breasts_producing"] == TRUE ? "Yes" : "No"]</a>"
+							if(features["breasts_producing"])
+								switch(features["breasts_fluid"])
+									if(/datum/reagent/consumable/milk)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Milk</a>"
+									if(/datum/reagent/water)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Water</a>"
+									if(/datum/reagent/consumable/semen)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Semen</a>"
+									if(/datum/reagent/consumable/semen/femcum)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Femcum</a>"
+									if(/datum/reagent/consumable/alienhoney)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Honey</a>"
+									if(/datum/reagent/consumable/milk/pinkmilk)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Strawberry Milk</a>"
+									if(/datum/reagent/consumable/nutriment)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nutriment</a>"
+									if(/datum/reagent/blueberry_juice)
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Berry Juice</a>"
+									else
+										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nothing?</a>"
+									//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
+									//DO NOT REMOVE IT UNLESS YOU HAVE A GOOD IDEA
+
 						dat += "</td>"
 						dat += APPEARANCE_CATEGORY_COLUMN
 						dat += "<h3>Butt</h3>"
@@ -809,24 +835,25 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							dat += "<b>Butt Visibility:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=butt_visibility;task=input'>[features["butt_visibility"]]</a>"
 						dat += "</td>"
 					dat += "</td>"
-					dat += "</tr></table>"
 					// GS13 EDIT BELLY START
 					dat += APPEARANCE_CATEGORY_COLUMN
 					dat += "<h3>Belly</h3>"
 					dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=has_belly'>[features["has_belly"] == TRUE ? "Yes" : "No"]</a>"
 					if(features["has_belly"])
-						dat += "<b>Belly Size:</b> <a style='display:block;width:120px' href='?_src_=prefs;preference=belly_size;task=input'>[features["belly_size"]]</a>"
+						dat += "<b>Color:</b></a><BR>"
 						if(pref_species.use_skintones && features["genitals_use_skintone"] == TRUE)
-							dat += "<b>Color:</b></a><BR>"
-							dat += "<span style='border: 1px solid #161616; background-color: #[SKINTONE2HEX(skin_tone)];'>&nbsp;&nbsp;&nbsp;</span>(Skin tone overriding)<br>"
+							dat += "<span style='border: 1px solid #161616; background-color: [SKINTONE2HEX(skin_tone)];'><font color='[color_hex2num(SKINTONE2HEX(skin_tone)) < 200 ? "FFFFFF" : "000000"]'>[SKINTONE2HEX(skin_tone)]</font></span>(Skin tone overriding)<br>"
 						else
-							dat += "<b>Color:</b></a><BR>"
-							dat += "<span style='border: 1px solid #161616; background-color: #[features["belly_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=belly_color;task=input'>Change</a><br>"
-							dat += "<b>Belly Visibility:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=belly_visibility;task=input'>[features["belly_visibility"]]</a>"
+							dat += "<span style='border: 1px solid #161616; background-color: #[features["belly_color"]];'><font color='[color_hex2num(features["belly_color"]) < 200 ? "FFFFFF" : "000000"]'>#[features["belly_color"]]</font></span> <a href='?_src_=prefs;preference=belly_color;task=input'>Change</a><br>"
+						dat += "<b>Belly Size:</b> <a style='display:block;width:120px' href='?_src_=prefs;preference=belly_size;task=input'>[features["belly_size"]]</a>"
+						dat += "<b>Belly Shape:</b> <a style='display:block;width:120px' href='?_src_=prefs;preference=belly_shape;task=input'>[features["belly_shape"]]</a>"
+						dat += "<b>Belly Visibility:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=belly_visibility;task=input'>[features["belly_visibility"]]</a>"
 						// GS13: tweak inflation description
-						//dat += "<b>Inflation (climax with and manual belly size change in arousal menu):</b><a style='display:block;width:50px' href='?_src_=prefs;preference=inflatable_belly'>[features["inflatable_belly"] == 1 ? "Yes" : "No"]</a>"
+						dat += "<b>Inflation (climax with and manual belly size change in arousal menu):</b><a style='display:block;width:50px' href='?_src_=prefs;preference=inflatable_belly'>[features["inflatable_belly"] == 1 ? "Yes" : "No"]</a>"
+
 
 					dat += "</td>"
+					dat += "</tr></table>"
 
 				//Markings
 				if(MARKINGS_CHAR_TAB)
@@ -969,6 +996,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</tr></table>"
 				if(LOADOUT_CHAR_TAB)
 					dat += "<table align='center' width='100%'>"
+					dat += "<tr><td colspan=4><center><b>Loadout slot</b></center></td></tr>"
+					dat += "<tr><td colspan=4><center>"
+					for(var/iteration in 1 to MAXIMUM_LOADOUT_SAVES)
+						dat += "<a [loadout_slot == iteration ? "class='linkOn'" : "href='?_src_=prefs;preference=gear;select_slot=[iteration]'"]>[iteration]</a>"
+					dat += "</center></td></tr>"
 					dat += "<tr><td colspan=4><center><i style=\"color: grey;\">You can only choose one item per category, unless it's an item that spawns in your backpack or hands.</center></td></tr>"
 					dat += "<tr><td colspan=4><center><b>"
 
@@ -1353,6 +1385,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<h2>Weight prefs</h2>"
 					dat += "<b>Maximum Weight:</b><a href='?_src_=prefs;preference=max_fatness'>[max_weight == FALSE ? "None" : max_weight]</a><BR>"
 					dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Show that you want to be confronted:</b><a href='?_src_=prefs;preference=trouble_seeker'>[trouble_seeker == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Bot Feeding:</b><a href='?_src_=prefs;preference=bot_feeding'>[bot_feeding == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Blueberry Inflation:</b><a href='?_src_=prefs;preference=blueberry_inflation'>[blueberry_inflation == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
@@ -1376,6 +1409,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<br></br>"
 					dat += "This preference functions similar to the one before but allows for items with more drastic effects. <b>Do not enable this if you aren't okay with more drastic things happening to your character.</b><BR>"
 					dat += "<b>Extreme Fatness Vulnerability:</b><a href='?_src_=prefs;preference=extreme_fatness_vulnerable'>[extreme_fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<br></br>"
+					dat += "<b>Object TF:</b><a href='?_src_=prefs;preference=object_tf'>[object_tf == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<br></br>"
 					dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Persistent Fat (endround/cryo weight becomes your new start weight):</b><a href='?_src_=prefs;preference=weight_gain_persistent'>[weight_gain_persistent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -1554,6 +1589,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			HTML += "<tr bgcolor='[job.selection_color]'><td width='60%' align='right'>"
 			var/rank = job.title
+			var/displayed_rank = rank
+			if(job.alt_titles.len && (rank in alt_titles_preferences))
+				displayed_rank = alt_titles_preferences[rank]
 			lastJob = job
 			if(jobban_isbanned(user, rank))
 				HTML += "<font color=red>[rank]</font></td><td><a href='?_src_=prefs;bancheck=[rank]'> BANNED</a></td></tr>"
@@ -1575,10 +1613,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			if((job_preferences["[SSjob.overflow_role]"] == JP_LOW) && (rank != SSjob.overflow_role) && !jobban_isbanned(user, SSjob.overflow_role))
 				HTML += "<font color=orange>[rank]</font></td><td></td></tr>"
 				continue
+			var/rank_title_line = "[displayed_rank]"
 			if((rank in GLOB.command_positions) || (rank == "AI"))//Bold head jobs
-				HTML += "<b><span class='dark'>[rank]</span></b>"
+				rank_title_line = "<b>[rank_title_line]</b>"
+			if(job.alt_titles.len)
+				rank_title_line = "<a href='?_src_=prefs;preference=job;task=alt_title;job_title=[job.title]'>[rank_title_line]</a>"
+
 			else
-				HTML += "<span class='dark'>[rank]</span>"
+				rank_title_line = "<span class='dark'>[rank_title_line]</span>" //Make it dark if we're not adding a button for alt titles
+			HTML += rank_title_line
 
 			HTML += "</td><td width='40%'>"
 
@@ -1832,6 +1875,21 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				SetChoices(user)
 			if("setJobLevel")
 				UpdateJobPreference(user, href_list["text"], text2num(href_list["level"]))
+			if("alt_title")
+				var/job_title = href_list["job_title"]
+				var/titles_list = list(job_title)
+				var/datum/job/J = SSjob.GetJob(job_title)
+				for(var/i in J.alt_titles)
+					titles_list += i
+				var/chosen_title
+				chosen_title = input(user, "Choose your job's title:", "Job Preference") as null|anything in titles_list
+				if(chosen_title)
+					if(chosen_title == job_title)
+						if(alt_titles_preferences[job_title])
+							alt_titles_preferences.Remove(job_title)
+					else
+						alt_titles_preferences[job_title] = chosen_title
+				SetChoices(user)
 			else
 				SetChoices(user)
 		return TRUE
@@ -2615,6 +2673,29 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_shape)
 						features["breasts_shape"] = new_shape
 
+				// GS13 EDIT START
+				if("breasts_fluid")
+					var/new_shape
+					new_shape = input(user, "Breast Fluid", "Character Preference") as null|anything in GLOB.genital_fluids_list
+					switch(new_shape)
+						if("Milk")
+							features["breasts_fluid"] = /datum/reagent/consumable/milk
+						if("Water")
+							features["breasts_fluid"] = /datum/reagent/water
+						if("Semen")
+							features["breasts_fluid"] = /datum/reagent/consumable/semen
+						if("Femcum")
+							features["breasts_fluid"] = /datum/reagent/consumable/semen/femcum
+						if("Honey")
+							features["breasts_fluid"] = /datum/reagent/consumable/alienhoney
+						if("Strawberry Milk")
+							features["breasts_fluid"] = /datum/reagent/consumable/milk/pinkmilk
+						if("Nutriment")
+							features["breasts_fluid"] = /datum/reagent/consumable/nutriment
+						if("Berry Juice")
+							features["breasts_fluid"] = /datum/reagent/blueberry_juice
+				// GS13 EDIT EN
+
 				if("breasts_color")
 					var/new_breasts_color = input(user, "Breast Color:", "Character Preference","#"+features["breasts_color"]) as color|null
 					if(new_breasts_color)
@@ -2683,7 +2764,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(new_bellycolor == "#000000")
 							features["belly_color"] = pref_species.default_color
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3])
-							features["belly_color"] = sanitize_hexcolor(new_bellycolor)
+							features["belly_color"] = sanitize_hexcolor(new_bellycolor, 6)
 						else
 							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
@@ -2691,7 +2772,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					// GS13: Adjust sprite ranges in char setup
 					var/new_bellysize = input(user, "Belly size :\n(1-10)", "Character Preference") as num|null
 					if(new_bellysize)
-						features["belly_size"] = clamp(new_bellysize, 1, 10)
+						features["belly_size"] = clamp(round(new_bellysize), 1, 10)
+
+				if("belly_shape") //GS13 - belly shapes
+					var/new_shape
+					new_shape = input(user, "Belly Type", "Character Preference") as null|anything in GLOB.belly_shapes_list
+					if(new_shape)
+						features["belly_shape"] = new_shape
 
 				if("belly_visibility")
 					var/n_vis = input(user, "Belly Visibility", "Character Preference") as null|anything in CONFIG_GET(str_list/safe_visibility_toggles)
@@ -3005,6 +3092,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					features["has_butt"] = !features["has_butt"]
 				if("has_belly")
 					features["has_belly"] = !features["has_belly"]
+				if("inflatable_belly")
+					features["inflatable_belly"] = !features["inflatable_belly"]
 				if("widescreenpref")
 					widescreenpref = !widescreenpref
 					user.client.view_size.setDefault(getScreenSize(widescreenpref))
@@ -3346,6 +3435,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_permanent = !weight_gain_permanent
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
+				if("trouble_seeker")
+					trouble_seeker = !trouble_seeker
 				if("bot_feeding")
 					bot_feeding = !bot_feeding
 				if("stuckage")
@@ -3356,6 +3447,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					fatness_vulnerable = !fatness_vulnerable
 				if("extreme_fatness_vulnerable")
 					extreme_fatness_vulnerable = !extreme_fatness_vulnerable
+
+				if("object_tf")
+					object_tf = !object_tf
 
 				if("blueberry_inflation")
 					blueberry_inflation = !blueberry_inflation
@@ -3452,6 +3546,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						preferences_tab = text2num(href_list["tab"])
 
 	if(href_list["preference"] == "gear")
+		if(href_list["select_slot"])
+			var/chosen = text2num(href_list["select_slot"])
+			if(!chosen)
+				return
+			chosen = floor(chosen)
+			if(chosen > MAXIMUM_LOADOUT_SAVES || chosen < 1)
+				return
+			loadout_slot = chosen
 		if(href_list["clear_loadout"])
 			loadout_data["SAVE_[loadout_slot]"] = list()
 			save_preferences()
@@ -3654,6 +3756,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	if(character.custom_body_size)
 		character.resize(character.custom_body_size)
 
+	//GS13 Port - Add back arousal
+	if(NOAROUSAL in pref_species.species_traits)
+		character.canbearoused = FALSE
+	else
+		character.canbearoused = arousable
+
 	//speech stuff
 	if(custom_tongue != "default")
 		var/new_tongue = GLOB.roundstart_tongues[custom_tongue]
@@ -3676,6 +3784,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.vocal_speed = bark_speed
 	character.vocal_pitch = bark_pitch
 	character.vocal_pitch_range = bark_variance
+
+	// GS13 EDIT
+	character.fatness = starting_weight
+	character.fatness_real = starting_weight
+	if(weight_gain_permanent)
+		character.fatness_perma = permanent_fat
+	character.weight_gain_rate = wg_rate
+	character.weight_loss_rate = wl_rate
+	character.savekey = clientckey
+	character.ckeyslot = ckeyslot
+	// GS13 EDIT - END
+
 
 	//limb stuff, only done when initially spawning in
 	if(initial_spawn)

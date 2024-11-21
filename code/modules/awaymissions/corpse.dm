@@ -32,6 +32,7 @@
 	var/banType = "lavaland"
 	var/ghost_usable = TRUE
 	var/skip_reentry_check = FALSE //Skips the ghost role blacklist time for people who ghost/suicide/cryo
+	var/mirrorcanloadappearance = TRUE //GS13 EDIT
 
 ///override this to add special spawn conditions to a ghost role
 /obj/effect/mob_spawn/proc/allow_spawn(mob/user, silent = FALSE)
@@ -139,6 +140,7 @@
 			M.mind.assigned_role = assignedrole
 		special(M, name)
 		MM.name = M.real_name
+		M.checkloadappearance() // GS13 EDIT
 	if(uses > 0)
 		uses--
 	if(!permanent && !uses)
@@ -251,6 +253,10 @@
 			W.assignment = id_job
 		W.registered_name = H.real_name
 		W.update_label()
+	//GS13 EDIT START
+	if (mirrorcanloadappearance)
+		H.mirrorcanloadappearance = TRUE
+	//GS13 EDIT END
 
 //Instant version - use when spawning corpses during runtime
 /obj/effect/mob_spawn/human/corpse
@@ -468,11 +474,11 @@
 	uniform = /obj/item/clothing/under/pants/youngfolksjeans
 	id = /obj/item/card/id
 
-/datum/outfit/beachbum/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	..()
-	if(visualsOnly)
-		return
-	H.dna.add_mutation(STONER)
+// /datum/outfit/beachbum/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+// 	..()
+// 	if(visualsOnly)
+// 		return
+// 	H.dna.add_mutation(STONER) //GS13 - removes the stoner trait, it makes the role almost unplayable
 
 /////////////////Officers+Nanotrasen Security//////////////////////
 

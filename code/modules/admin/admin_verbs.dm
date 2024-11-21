@@ -91,6 +91,9 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/datum/admins/proc/open_borgopanel,
 	/datum/admins/proc/change_laws,	//change AI laws
 	/datum/admins/proc/display_tags,
+	/datum/admins/proc/BC_WhitelistKeyVerb,
+	/datum/admins/proc/BC_RemoveKeyVerb,
+	/datum/admins/proc/BC_ToggleState,
 	)
 GLOBAL_LIST_INIT(admin_verbs_ban, list(/client/proc/unban_panel, /client/proc/DB_ban_panel, /client/proc/stickybanpanel))
 GLOBAL_PROTECT(admin_verbs_ban)

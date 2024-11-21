@@ -1,14 +1,14 @@
 /datum/round_event_control/cat_surgeon
 	name = "Cat Surgeon"
 	typepath = /datum/round_event/cat_surgeon
-	max_occurrences = 1
+	max_occurrences = 0 //GS13 - this one's just cruel lmao
 	weight = 5
 	category = EVENT_CATEGORY_ENTITIES
 	description = "Spawns a crazy surgeon ready to perverse things with the crew."
 
 /datum/round_event/cat_surgeon/announce(fake)
 	priority_announce("One of our... ahem... 'special' cases has escaped. As it happens their last known location before their tracker went dead is your station so keep an eye out for them. On an unrelated note, has anyone seen our cats?",
-	sender_override = "Nanotrasen Psych Ward", has_important_message = TRUE)
+	sender_override = "GATO Psych Ward", has_important_message = TRUE) //GS13 - Nanotrasen to GATO
 
 /datum/round_event/cat_surgeon/start()
 	var/list/spawn_locs = list()

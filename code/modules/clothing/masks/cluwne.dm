@@ -62,7 +62,7 @@
 
 /obj/item/clothing/mask/gas/cluwne/happy_cluwne
 	name = "Happy Cluwne Mask"
-	desc = "The mask of a poor cluwne that has been scrubbed of its curse by the Nanotrasen supernatural machinations division. Guaranteed to be %99 curse free and %99.9 not haunted. "
+	desc = "The mask of a poor cluwne that has been scrubbed of its curse by the GATO supernatural machinations division. Guaranteed to be %99 curse free and %99.9 not haunted. " //GS13 - Nanotrasen to GATO
 	item_flags = ABSTRACT
 	var/can_cluwne = FALSE
 	var/is_cursed = FALSE //i don't care that this is *slightly* memory wasteful, it's just one more byte and it's not like some madman is going to spawn thousands of these

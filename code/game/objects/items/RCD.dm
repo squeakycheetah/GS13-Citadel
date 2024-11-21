@@ -38,6 +38,7 @@ RLD
 	var/ammo_sections = 10	//amount of divisions in the ammo indicator overlay/number of ammo indicator states
 	var/custom_range = 7
 	var/upgrade = FALSE
+	var/airlock_dir = 1 //GS13 - airlock direction function
 
 /obj/item/construction/Initialize(mapload)
 	. = ..()
@@ -283,6 +284,23 @@ RLD
 	//Not scaling these down to button size because they look horrible then, instead just bumping up radius.
 	return MA
 
+
+/obj/item/construction/rcd/proc/change_airlock_direction(mob/user) //GS13 - change airlock direction
+	if(!user)
+		return
+	var/list/airlock_dirs = list(
+		"North/South" = image(icon = 'icons/mob/radial.dmi', icon_state = "airlocknorthsouth"),
+		"East/West" = image(icon = 'icons/mob/radial.dmi', icon_state = "airlockeastwest")
+		)
+	var/airlockdirs = show_radial_menu(user, src, airlock_dirs, custom_check = CALLBACK(src,PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
+	if(!check_menu(user))
+		return
+	switch(airlockdirs)
+		if("North/South")
+			airlock_dir = 1
+		if("East/West")
+			airlock_dir = 4
+
 /obj/item/construction/rcd/proc/change_computer_dir(mob/user)
 	if(!user)
 		return
@@ -488,6 +506,7 @@ RLD
 	if(mode == RCD_AIRLOCK)
 		choices += list(
 		"Change Access" = image(icon = 'icons/mob/radial.dmi', icon_state = "access"),
+		"Change Direction" = image(icon = 'GainStation13/icons/mob/radial.dmi', icon_state = "airlockrotation"), //GS13 - adding airlock rotation
 		"Change Airlock Type" = image(icon = 'icons/mob/radial.dmi', icon_state = "airlocktype")
 		)
 	else if(mode == RCD_WINDOWGRILLE)
@@ -514,6 +533,9 @@ RLD
 			return
 		if("Change Access")
 			change_airlock_access(user)
+			return
+		if("Change Direction") //GS13 - adding airlock direction in RCD
+			change_airlock_direction(user)
 			return
 		if("Change Airlock Type")
 			change_airlock_setting(user)
@@ -668,6 +690,7 @@ RLD
 	icon_state = "arcd"
 	item_state = "oldrcd"
 	has_ammobar = FALSE
+	upgrade = TRUE
 
 
 // RAPID LIGHTING DEVICE

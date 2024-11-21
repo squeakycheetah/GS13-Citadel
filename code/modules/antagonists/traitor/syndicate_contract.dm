@@ -124,7 +124,7 @@
 			var/points_to_check = min(D.account_balance, ransom)
 			D.adjust_money(min(points_to_check, ransom))
 			priority_announce("One of your crew was captured by a rival organisation - we've needed to pay their ransom to bring them back. \
-							As is policy we've taken a portion of the station's funds to offset the overall cost.", null, "attention", null, "Nanotrasen Asset Protection")
+							As is policy we've taken a portion of the station's funds to offset the overall cost.", null, "attention", null, "GATO Asset Protection") //GS13 - Nanotrasen to GATO
 
 			sleep(30)
 

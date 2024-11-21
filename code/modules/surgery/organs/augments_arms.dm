@@ -340,7 +340,7 @@
 	if(!cell)
 		to_chat(H, "<span class='warning'>You try to siphon energy from [target], but your power cell is gone!</span>")
 		return
-	if(H.nutrition >= NUTRITION_LEVEL_WELL_FED)
+	if(H.nutrition >= NUTRITION_LEVEL_FAT) //GS13 EDIT, let them get fat
 		to_chat(user, "<span class='warning'>You are already fully charged!</span>")
 		return
 	if(istype(target, /obj/machinery/power/apc))

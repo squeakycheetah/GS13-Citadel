@@ -5,7 +5,7 @@
 
 /datum/tcg_card/pack_1/captain
 	name = "Captain"
-	desc = "Nanotrasen hires a captain for every station. However, most of the time they just drink wishkey and secure the disk."
+	desc = "GATO hires a captain for every station. However, most of the time they just drink wishkey and secure the disk." //GS13 - Nanotrasen to GATO
 	rules = "Human. Tap this card for 1 mana: inflict -1/-1 to an opposing creature card."
 	icon_state = "captain"
 
@@ -19,7 +19,7 @@
 
 /datum/tcg_card/pack_1/captain_hardsuit
 	name = "Apadyne Technologies Mk.2 R.I.O.T. Suit (Captain's Version)"
-	desc = "A heavily customised Apadyne Technologies Mk.2 R.I.O.T. Suit, rebuilt and refitted to Nanotrasen's highest standards for issue to Station Captains."
+	desc = "A heavily customised Apadyne Technologies Mk.2 R.I.O.T. Suit, rebuilt and refitted to GATO's highest standards for issue to Station Captains." //GS13 - Nanotrasen to GATO
 	rules = "On equip: Equipped unit gains +1/+1 for one turn"
 	icon_state = "captain_hardsuit"
 
@@ -89,7 +89,7 @@
 
 /datum/tcg_card/pack_1/hos
 	name = "Head of Security"
-	desc = "Nanotrasen hires most heads of staff based on their qualifications as being amicable, good at conflict resolution, ability to handle high-stakes situations, humanity, and desire to learn. Heads of Security only need a highschool degree."
+	desc = "GATO hires most heads of staff based on their qualifications as being amicable, good at conflict resolution, ability to handle high-stakes situations, humanity, and desire to learn. Heads of Security only need a highschool degree." //GS13 - Nanotrasen to GATO
 	rules = "Human. All opponent's cards cost 1 more until Head Of Security is removed from the battlefield."
 	icon_state = "hos"
 
@@ -178,7 +178,7 @@
 
 /datum/tcg_card/pack_1/ai
 	name = "AI"
-	desc = "The latest generation of NT's top secret artificial intelligence project this time with actual human brains in a jar! Don't tell the press though."
+	desc = "The latest generation of GT's top secret artificial intelligence project this time with actual human brains in a jar! Don't tell the press though." //GS13 - NT to GT
 	rules = "Asimov. All silicon cards gain +1/0 while this creature is alive."
 	icon_state = "ai"
 
@@ -234,7 +234,7 @@
 
 /datum/tcg_card/pack_1/cyborg_engi
 	name = "Cyborg (Engineering Shell)"
-	desc = "A common sight on Nanotrasen Stations Engineering Shells maintain critical station systems in hazardous conditions."
+	desc = "A common sight on GATO Stations Engineering Shells maintain critical station systems in hazardous conditions." //GS13 - Nanotrasen to GATO
 	rules = "Asimov."
 	icon_state = "borg_engi"
 
@@ -336,7 +336,7 @@
 
 /datum/tcg_card/pack_1/assistant
 	name = "Assistant"
-	desc = "The lowest ladder on the Nanotrasen Employment Ladder, Assistants are employed to help out with tasks deemed 'too menial for robots'."
+	desc = "The lowest ladder on the GATO Employment Ladder, Assistants are employed to help out with tasks deemed 'too menial for robots'." //GS13 - Nanotrasen to GATO
 	rules = "Greytide."
 	icon_state = "assistant"
 
@@ -350,7 +350,7 @@
 
 /datum/tcg_card/pack_1/greytider
 	name = "Greytider"
-	desc = "The lowest ladder on the Nanotrasen Employment Ladder, Assistants are employed to help out with tasks deemed 'too menial for robots'."
+	desc = "The lowest ladder on the GATO Employment Ladder, Assistants are employed to help out with tasks deemed 'too menial for robots'." //GS13 - Nanotrasen to GATO
 	rules = "Greytide. Instead of getting +1/+1 on the first turn, get it permanently."
 	icon_state = "greytider"
 
@@ -420,7 +420,7 @@
 
 /datum/tcg_card/pack_1/inquisitor
 	name = "Inquisitor's Hardsuit"
-	desc = "Nanotrasen officially doesn't believe in ghosts magic or anything that can't be solved with science. When you see someone show up in one of these let that remind you of that fact."
+	desc = "GATO officially doesn't believe in ghosts magic or anything that can't be solved with science. When you see someone show up in one of these let that remind you of that fact." //GS13 - Nanotrasen to GATO
 	rules = "Holy. First Strike."
 	icon_state = "inquisitor"
 
@@ -448,7 +448,7 @@
 
 /datum/tcg_card/pack_1/lawyer
 	name = "Lawyer"
-	desc = "Nanotrasen knows the value of a good lawyer. That's why they're all working hard at our home offices defending us from frivolous labor suits from lazy no-good employees who should be working hard instead of slacking off reading trading cards."
+	desc = "GATO knows the value of a good lawyer. That's why they're all working hard at our home offices defending us from frivolous labor suits from lazy no-good employees who should be working hard instead of slacking off reading trading cards." //GS13 - Nanotrasen to GATO
 	rules = "When an opponent attacks with a creature with 3 or more power this card gains Taunt."
 	icon_state = "lawyer"
 
@@ -462,7 +462,7 @@
 
 /datum/tcg_card/pack_1/clown
 	name = "Clown"
-	desc = "Every Nanotrasen station has a clown on board as high command believes that a source of entertainment will reduce instances of murder-suicide on board Spinward Stations. The results of this hypothesis are as of yet unproven."
+	desc = "Every GATO station has a clown on board as high command believes that a source of entertainment will reduce instances of murder-suicide on board Spinward Stations. The results of this hypothesis are as of yet unproven." //GS13 - Nanotrasen to GATO
 	rules = "Taunt. When killed, attacking creature dies as well"
 	icon_state = "clown"
 
@@ -504,7 +504,7 @@
 
 /datum/tcg_card/pack_1/cook
 	name = "Cook"
-	desc = "Every Nanotrasen chef is trained in 3 cuisines of their choosing upon being hired alongside the closely guarded secret of Close Quarters Cooking."
+	desc = "Every GATO chef is trained in 3 cuisines of their choosing upon being hired alongside the closely guarded secret of Close Quarters Cooking." //GS13 - Nanotrasen to GATO
 	rules = "First Strike. When attacked, gain +1/0."
 	icon_state = "cook"
 
@@ -518,7 +518,7 @@
 
 /datum/tcg_card/pack_1/curator
 	name = "Curator"
-	desc = "In Nanotrasen polls the Curator has ranked as the most pointless job on station much to the ire of the Curator's union. Thankfully we don't have to listen to them."
+	desc = "In GATO polls the Curator has ranked as the most pointless job on station much to the ire of the Curator's union. Thankfully we don't have to listen to them." //GS13 - Nanotrasen to GATO
 	rules = "On Summon: Draw a card. If it's a spell, discard it."
 	icon_state = "curator"
 
@@ -550,7 +550,7 @@
 
 /datum/tcg_card/pack_1/sec_officer
 	name = "Security Officer"
-	desc = "Nanotrasen would like to remind all employees to support their station security team; remember the boys in red keep you safe!"
+	desc = "GATO would like to remind all employees to support their station security team; remember the boys in red keep you safe!" //GS13 - Nanotrasen to GATO
 	rules = "Squad Tactics."
 	icon_state = "officer"
 
@@ -578,7 +578,7 @@
 
 /datum/tcg_card/pack_1/detective
 	name = "Security Officer"
-	desc = "Nanotrasen hires nothing but the best detectives to investigate crime on our stations. A penchant for cigarettes and outdated fashion isn't mandatory but is appreciated."
+	desc = "GATO hires nothing but the best detectives to investigate crime on our stations. A penchant for cigarettes and outdated fashion isn't mandatory but is appreciated." //GS13 - Nanotrasen to GATO
 	rules = "Deadeye."
 	icon_state = "detective"
 
@@ -610,7 +610,7 @@
 
 /datum/tcg_card/pack_1/scientist
 	name = "Scientist"
-	desc = "Rumours that Nanotrasen hires 'mad scientists' are greatly exaggerated. Scientists are regularly screened to ensure that their insanity remains within acceptable limits."
+	desc = "Rumours that GATO hires 'mad scientists' are greatly exaggerated. Scientists are regularly screened to ensure that their insanity remains within acceptable limits." //GS13 - Nanotrasen to GATO
 	rules = "When this card is targeted by an opponent's single target spell you gain 1 lifeshard."
 	icon_state = "scientist"
 
@@ -624,7 +624,7 @@
 
 /datum/tcg_card/pack_1/scientist_moth
 	name = "Scientist(Moth)"
-	desc = "Moths are a common sight in Nanotrasen research departments acting as integral ideas guys for new clothing designs and lighting innovations."
+	desc = "Moths are a common sight in GATO research departments acting as integral ideas guys for new clothing designs and lighting innovations." //GS13 - Nanotrasen to GATO
 	rules = ""
 	icon_state = "scientist_moth"
 
@@ -638,7 +638,7 @@
 
 /datum/tcg_card/pack_1/roboticist
 	name = "Roboticist"
-	desc = "The roboticist's work is as close as Nanotrasen legally allows its employees to come to necromancy."
+	desc = "The roboticist's work is as close as GATO legally allows its employees to come to necromancy." //GS13 - Nanotrasen to GATO
 	rules = "If a Asimov card on your side of the field is destroyed you may pay 2 mana and tap this card: Return that card to your hand."
 	icon_state = "roboticist"
 
@@ -652,7 +652,7 @@
 
 /datum/tcg_card/pack_1/monkey
 	name = "Monkey"
-	desc = "Nanotrasen seeks to phase out animal testing by 2570 in accordance with new TerraGov legislation. This will be replaced with more ethical solutions such as computer simulations or experimentation on Assistants."
+	desc = "GATO seeks to phase out animal testing by 2570 in accordance with new TerraGov legislation. This will be replaced with more ethical solutions such as computer simulations or experimentation on Assistants." //GS13 - Nanotrasen to GATO
 	rules = "Greytide. This card is considered Human with a Geneticist on your side of the field."
 	icon_state = "monkey"
 
@@ -666,7 +666,7 @@
 
 /datum/tcg_card/pack_1/geneticist
 	name = "Geneticist"
-	desc = "Geneticists are tasked with manipulating human DNA to produce special effects. Nanotrasen maintains a strict 'no superhero' policy for mutations following the Superhero Civil War of 2150."
+	desc = "Geneticists are tasked with manipulating human DNA to produce special effects. GATO maintains a strict 'no superhero' policy for mutations following the Superhero Civil War of 2150." //GS13 - Nanotrasen to GATO
 	rules = "Tap this card and pay 3 mana: Give a friendly creature Human until this card leaves the field."
 	icon_state = "geneticist"
 
@@ -698,7 +698,7 @@
 
 /datum/tcg_card/pack_1/doctor
 	name = "Medical Doctor"
-	desc = "Nanotrasen's doctors are well known for their ability to treat almost any ailment known to mankind... as well as causing a fair few in the process."
+	desc = "GATO's doctors are well known for their ability to treat almost any ailment known to mankind... as well as causing a fair few in the process." //GS13 - Nanotrasen to GATO
 	rules = "Tap this card: Select a card that has less attack than this card from your graveyard and summon it to your side of the field."
 	icon_state = "doctor"
 
@@ -754,7 +754,7 @@
 
 /datum/tcg_card/pack_1/paramedic
 	name = "Paramedic"
-	desc = "Nanotrasen encourages all paramedics to think of others before themselves- if this means running through a plasma fire to save a colleague so be it."
+	desc = "GATO encourages all paramedics to think of others before themselves- if this means running through a plasma fire to save a colleague so be it." //GS13 - Nanotrasen to GATO
 	rules = "Taunt, First Strike"
 	icon_state = "paramedic"
 
@@ -888,7 +888,7 @@
 
 /datum/tcg_card/pack_1/quartermaster
 	name = "Quartermaster"
-	desc = "Every Nanotrasen station has a Quartermaster who controls the flow of cargo to and from the station and by extension to and from the hands of the crew. He's not given the distinction of being a head though. His job isn't hard enough."
+	desc = "Every GATO station has a Quartermaster who controls the flow of cargo to and from the station and by extension to and from the hands of the crew. He's not given the distinction of being a head though. His job isn't hard enough." //GS13 - Nanotrasen to GATO
 	rules = "Permanently tap this card. All cargo cards on your side gain +2/+2 until this card leaves the play."
 	icon_state = "quartermaster"
 
@@ -902,7 +902,7 @@
 
 /datum/tcg_card/pack_1/explorer
 	name = "Explorer"
-	desc = "The Nanotrasen Explorers Corps boldly goes where humanity has never gone before. Or would if they weren't buried under mounds of bureaucracy."
+	desc = "The GATO Explorers Corps boldly goes where humanity has never gone before. Or would if they weren't buried under mounds of bureaucracy." //GS13 - Nanotrasen to GATO
 	rules = "Tap this card: Flip a coin if heads gain 4 mana this turn, if tails tap this card for 2 turns."
 	icon_state = "explorer"
 
@@ -920,7 +920,7 @@
 
 /datum/tcg_card/pack_1/intern
 	name = "Intern"
-	desc = "All Nanotrasen interns come with 3 things: A resume a desire to learn and vague promises that they're getting paid at some point. So don't be too rough on them."
+	desc = "All GATO interns come with 3 things: A resume a desire to learn and vague promises that they're getting paid at some point. So don't be too rough on them." //GS13 - Nanotrasen to GATO
 	rules = "First Strike. Greytide."
 	icon_state = "intern"
 
@@ -933,7 +933,7 @@
 	card_type = "Unit"
 
 /datum/tcg_card/pack_1/ert_command
-	name = "NT P.A.V. Suit (Command)"
+	name = "GT P.A.V. Suit (Command)" //GS13 - NT to GT
 	desc = "Issued to members of Emergency Response Teams the P.A.V. Suit gives superior protection from any threat the galaxy can throw at it. This particular model is outfitted with a sidearm holster and a sleek blue finish."
 	rules = "While equipped give the equipped unit Squad Tactics and First Strike."
 	icon_state = "ert_command"
@@ -947,7 +947,7 @@
 	card_type = "Equipment"
 
 /datum/tcg_card/pack_1/ert_sec
-	name = "NT P.A.V. Suit (Security)"
+	name = "GT P.A.V. Suit (Security)" //GS13 - NT to GT
 	desc = "Issued to members of Emergency Response Teams the P.A.V. Suit gives superior protection from any threat the galaxy can throw at it. This particular model is outfitted with bulletproof padding and an intimidating red finish."
 	rules = "While equipped give the equipped unit Squad Tactics."
 	icon_state = "ert_sec"
@@ -961,7 +961,7 @@
 	card_type = "Equipment"
 
 /datum/tcg_card/pack_1/ert_med
-	name = "NT P.A.V. Suit (Medical)"
+	name = "GT P.A.V. Suit (Medical)" //GS13 - NT to GT
 	desc = "Issued to members of Emergency Response Teams the P.A.V. Suit gives superior protection from any threat the galaxy can throw at it. This particular model is outfitted with a sterile coating and a calming white finish."
 	rules = "While equipped give the equipped unit Squad Tactics."
 	icon_state = "ert_med"
@@ -975,7 +975,7 @@
 	card_type = "Equipment"
 
 /datum/tcg_card/pack_1/ert_engi
-	name = "NT P.A.V. Suit (Engineering)"
+	name = "GT P.A.V. Suit (Engineering)" //GS13 - NT to GT
 	desc = "Issued to members of Emergency Response Teams the P.A.V. Suit gives superior protection from any threat the galaxy can throw at it. This particular model is outfitted with a welding screen and a flashy yellow finish."
 	rules = "While equipped give the equipped unit Squad Tactics."
 	icon_state = "ert_engi"
@@ -1372,7 +1372,7 @@
 
 /datum/tcg_card/pack_1/tough_choices
 	name = "Tough Choices"
-	desc = "Every Nanotrasen employee will at some point be forced to make a tough choice. Make sure you make the right one!"
+	desc = "Every GATO employee will at some point be forced to make a tough choice. Make sure you make the right one!" //GS13 - Nanotrasen to GATO
 	rules = "Draw the top three cards from your deck. Summon one at no cost and discard the other two."
 	icon_state = "tough_choices"
 

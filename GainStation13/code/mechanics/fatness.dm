@@ -21,10 +21,8 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/command/bridge, /area/mainten
 	var/doorstuck = 0
 
 	var/fullness = FULLNESS_LEVEL_HALF_FULL
-	var/fullness_reduction_timer = 0
 	var/burpslurring = 0
-
-	var/fullness_reducion_timer = 0 // When was the last time they emoted to reduce their fullness
+	var/fullness_reduction_timer = 0 // When was the last time they emoted to reduce their fullness
 
 /**
 * Adjusts the fatness level of the parent mob.
@@ -60,6 +58,25 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/command/bridge, /area/mainten
 	perma_apply()	//Check and apply for permanent fat
 	xwg_resize()	//Apply XWG
 
+	// Handle Awards
+	if(client)
+		if(fatness > FATNESS_LEVEL_BLOB)
+			client.give_award(/datum/award/achievement/fat/blob, src)
+		if(fatness > 10000)
+			client.give_award(/datum/award/achievement/fat/milestone_one, src)
+		if(fatness > 25000)
+			client.give_award(/datum/award/achievement/fat/milestone_two, src)
+		if(fatness > 50000)
+			client.give_award(/datum/award/achievement/fat/milestone_three, src)
+		if(fatness > 100000)
+			client.give_award(/datum/award/achievement/fat/milestone_four, src)
+		if(fatness > 500000)
+			client.give_award(/datum/award/achievement/fat/milestone_five, src)
+		if(fatness > 1000000)
+			client.give_award(/datum/award/achievement/fat/milestone_six, src)
+		if(fatness > 10000000)
+			client.give_award(/datum/award/achievement/fat/milestone_seven, src)
+
 	return TRUE
 
 /mob/living/carbon/fully_heal(admin_revive)
@@ -76,6 +93,9 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/command/bridge, /area/mainten
 		return FALSE
 
 	switch(type_of_fattening)
+		if(FATTENING_TYPE_ALMIGHTY)
+			return TRUE
+
 		if(FATTENING_TYPE_ITEM)
 			if(!client?.prefs?.weight_gain_items)
 				return FALSE

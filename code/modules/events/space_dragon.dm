@@ -2,8 +2,8 @@
 	name = "Spawn Space Dragon"
 	typepath = /datum/round_event/ghost_role/space_dragon
 	weight = 8
-	max_occurrences = 1
-	min_players = 20
+	max_occurrences = 0 //GS13 - no antags, thanks
+	min_players = 25
 	dynamic_should_hijack = TRUE
 	category = EVENT_CATEGORY_ENTITIES
 	description = "Spawns a space dragon, which will try to take over the station."

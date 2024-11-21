@@ -21,7 +21,7 @@
 
 /obj/item/clothing/under/rank/prisoner
 	name = "prison jumpsuit"
-	desc = "It's standardised Nanotrasen prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
+	desc = "It's standardised GATO prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position." //GS13 - Nanotrasen to GATO
 	icon_state = "prisoner"
 	item_state = "prisoner"
 	sensor_mode = SENSOR_COORDS
@@ -29,7 +29,7 @@
 
 /obj/item/clothing/under/rank/prisoner/skirt
 	name = "prison jumpskirt"
-	desc = "It's standardised Nanotrasen prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
+	desc = "It's standardised GATO prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position." //GS13 - Nanotrasen to GATO
 	icon_state = "prisoner_skirt"
 	item_state = "prisoner_skirt"
 	body_parts_covered = CHEST|GROIN|ARMS

@@ -362,7 +362,7 @@ AI MODULES
 /obj/item/ai_module/core/full/asimov
 	name = "'Asimov' Core AI Module"
 	law_id = "asimov"
-	var/subject = "person of an NT approved crew species"		//CITADEL CHANGED FROM HUMANS!
+	var/subject = "person of an GT approved crew species"		//CITADEL CHANGED FROM HUMANS! //GS13 - NT to GT
 
 /obj/item/ai_module/core/full/asimov/attack_self(var/mob/user as mob)
 	var/targName = stripped_input(user, "Please enter a new subject that asimov is concerned with.", "Asimov to whom?", subject)

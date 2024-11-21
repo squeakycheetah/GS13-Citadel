@@ -24,7 +24,7 @@
 		dumped = TRUE
 
 /obj/structure/checkoutmachine
-	name = "\improper Nanotrasen Space-Coin Market"
+	name = "\improper GATO Space-Coin Market" //GS13 - Nanotrasen to GATO
 	desc = "This is good for spacecoin because"
 	icon = 'icons/obj/money_machine.dmi'
 	icon_state = "bogdanoff"

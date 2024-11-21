@@ -296,20 +296,40 @@
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_HEAD)
 			var/datum/species/S
+			S = dna.species
 			if(ishuman(src))
-				S = dna.species
+				var/mob/living/carbon/human/H = src
+				//GS13 Port - Headpat slut stuff
+				if(HAS_TRAIT(H, TRAIT_DISTANT)) //No mood buff since you're not really liking it.
+					M.visible_message("<span class='notice'>[M] gives [H] a pat on the head to make [p_them()] feel better! They seem annoyed...</span>", \
+						"<span class='warning'>You give [H] a pat on the head to make [p_them()] feel better! They seem annoyed as they're now glaring towards you...</span>")
+					H.adjustArousal(-5) //Why are you touching me?
+					if(prob(5))
+						M.visible_message("<span class='warning'>[H] quickly twists [M]\'s arm!</span>", \
+							"<span class='boldwarning'>Your arm gets twisted in [H]\'s grasp. Maybe you should have taken the hint...</span>")
+						playsound(get_turf(H), 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
+						M.emote("scream")
+						M.dropItemToGround(M.get_active_held_item())
+						M.apply_damage(50, STAMINA, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
+						M.Knockdown(60)//STOP TOUCHING ME! For those spam head pat individuals
+				else if(HAS_TRAIT(H, TRAIT_HEADPAT_SLUT))
+					M.visible_message("<span class='notice'>[M] gives [H] a pat on the head to make [p_them()] feel better! They seem incredibly pleased!</span>", \
+								"<span class='notice'>You give [H] a pat on the head to make [p_them()] feel better! They seem to like it way too much</span>")
+					SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "lewd_headpat", /datum/mood_event/lewd_headpat)
+					H.adjustArousal(5) //Headpats are hot af
+				else
+					M.visible_message("<span class='notice'>[M] gives [H] a pat on the head to make [p_them()] feel better!</span>", \
+							"<span class='notice'>You give [H] a pat on the head to make [p_them()] feel better!</span>")
+					SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "headpat", /datum/mood_event/headpat)
 
-			M.visible_message("<span class='notice'>[M] gives [src] a pat on the head to make [p_them()] feel better!</span>", \
-						"<span class='notice'>You give [src] a pat on the head to make [p_them()] feel better!</span>", target = src,
-						target_message = "<span class='notice'>[M] gives you a pat on the head to make you feel better!</span>")
-			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "headpat", /datum/mood_event/headpat)
 			friendly_check = TRUE
-			if(!(client?.prefs.cit_toggles & NO_AUTO_WAG))
-				if(S?.can_wag_tail(src) && !dna.species.is_wagging_tail())
-					var/static/list/many_tails = list("tail_human", "tail_lizard", "mam_tail")
-					for(var/T in many_tails)
-						if(S.mutant_bodyparts[T] && dna.features[T] != "None")
-							emote("wag")
+			if(!(HAS_TRAIT(src, TRAIT_DISTANT)))
+				if(!(client?.prefs.cit_toggles & NO_AUTO_WAG))
+					if(S?.can_wag_tail(src) && !dna.species.is_wagging_tail())
+						var/static/list/many_tails = list("tail_human", "tail_lizard", "mam_tail")
+						for(var/T in many_tails)
+							if(S.mutant_bodyparts[T] && dna.features[T] != "None")
+								emote("wag")
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_R_ARM || check_zone(M.zone_selected) == BODY_ZONE_L_ARM)
 			if((pulling == M) && (grab_state == GRAB_PASSIVE))

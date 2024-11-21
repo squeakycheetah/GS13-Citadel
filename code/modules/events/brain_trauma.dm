@@ -2,7 +2,8 @@
 	name = "Spontaneous Brain Trauma"
 	typepath = /datum/round_event/brain_trauma
 	weight = 25
-	min_players = 5
+	min_players = 20 //GS13 Edit: 8 to 20. You cant really fix this on your own if you arnt medical.
+	max_occurrences = 0 //GS13 Edit: Disabling this.
 	category = EVENT_CATEGORY_HEALTH
 	description = "A crewmember gains a random trauma."
 

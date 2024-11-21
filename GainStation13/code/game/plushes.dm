@@ -1,8 +1,8 @@
 /obj/item/toy/plush/gs13
-		icon = 'icons/obj/plushes.dmi'
+		icon = 'GainStation13/icons/obj/plushes.dmi'
 
 /obj/item/toy/plush/gs13/metha
-	name = "Magical Captain plush/gs13ie"
+	name = "Magical Captain plushie"
 	desc = "A NEW GATO TOY FROM GATO CORPORATION, FEEL THE MAGIC OF THIS COOL TOY!"
 	icon_state = "metha"
 	attack_verb = list("fattened","Metha'd", "Brigged")
@@ -45,32 +45,39 @@
 	squeak_override = list('modular_citadel/sound/voice/weh.ogg' = 1)
 
 /obj/item/toy/plush/gs13/kinichi
-	desc = "A silly looking plush/gs13ie of an adorable lizard janitor. His smile is heartwarming to look at."
+	desc = "A silly looking plushie of an adorable lizard janitor. His smile is heartwarming to look at."
 	icon_state = "kinichi"
 	attack_verb = list("hissed","squished", "hugged")
 
 /obj/item/toy/plush/gs13/lgo
-	desc = "An attempt to market one of cleaning machines from the local market, in the form of a purchasable plush/gs13ie."
+	desc = "An attempt to market one of cleaning machines from the local market, in the form of a purchasable plushie."
 	icon_state = "lgo"
 	attack_verb = list("gronkled","beeped", "brushed")
 
 /obj/item/toy/plush/gs13/oliver
-	desc = "A plush/gs13 of a silly shark with a stylish bandanna."
+	desc = "A plush of a silly shark with a stylish bandanna."
 	icon_state = "oliver"
 	attack_verb = list("chomped", "bit")
 
 /obj/item/toy/plush/gs13/chloe
-	desc = "A plush/gs13 of a chunky red-haired botanist."
+	desc = "A plush of a chunky red-haired botanist."
 	icon_state = "chloe"
 	attack_verb = list("squished", "hugged", "smushed")
 
 /obj/item/toy/plush/gs13/mammal/fox
 	icon_state = "fox"
 
+/obj/item/toy/plush/gs13/delta
+	desc = "A plush of a chunky greaseball."
+	icon_state = "delta"
+	attack_verb = list("squished", "hugged", "smushed")
 
-/obj/item/toy/plush/mothplushie/moffplush
-	name = "moth plushie"
-	desc = "A plushie depicting an adorable mothperson. It's a huggable bug!"
-	icon_state = "moffplush"
-	item_state = "moffplush"
-	squeak_override = list('modular_citadel/sound/voice/scream_moth.ogg' = 1)
+/obj/item/toy/plush/gs13/metis
+	desc = "A plush of black-furred nerdy goat."
+	icon_state = "metis"
+	attack_verb = list("squished", "goated", "baah'd")
+
+/obj/item/toy/plush/gs13/crowbars
+	desc = "A plush of a silly-eyed xeno seccie."
+	icon_state = "crowbars"
+	attack_verb = list("squished", "crowbared", "beno'd")

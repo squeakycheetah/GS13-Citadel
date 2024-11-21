@@ -2,7 +2,7 @@
 	name = "Spontaneous Appendicitis"
 	typepath = /datum/round_event/spontaneous_appendicitis
 	weight = 20
-	max_occurrences = 4
+	max_occurrences = 0 //GS13 - a bit too disruptive for people who wanna RP in peace
 	earliest_start = 10 MINUTES
 	min_players = 5 // To make your chance of getting help a bit higher.
 	category = EVENT_CATEGORY_HEALTH

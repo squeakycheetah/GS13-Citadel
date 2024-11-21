@@ -493,7 +493,7 @@
 		if(!arrivals_docked)
 			var/atom/movable/screen/splash/Spl = new(character.client, TRUE)
 			Spl.Fade(TRUE)
-			character.playsound_local(get_turf(character), 'sound/voice/ApproachingTG.ogg', 25)
+			character.playsound_local(get_turf(character), 'GainStation13/sound/voice/Approaching.ogg', 25) //GS13 - "now approaching, general station 13"
 
 	job.standard_assign_skills(character.mind)
 
@@ -606,6 +606,9 @@
 					dept_dat += "<a class='job[command_bold]' style='display:block;width:170px'  href='byond://?src=[REF(src)];SelectedJob=[job_datum.title]'><span class='priority'>[job_datum.title] ([num_positions_current]/[num_positions_total])</span></a>"
 				else
 					dept_dat += "<a class='job[command_bold]' style='display:block;width:170px' href='byond://?src=[REF(src)];SelectedJob=[job_datum.title]'>[job_datum.title] ([num_positions_current]/[num_positions_total])</a>"
+				if(client && client.prefs && client?.prefs?.alt_titles_preferences[job_datum.title])
+					dept_dat += "<br><span style='color:#BBBBBB; font-style: italic;'>(as [client?.prefs?.alt_titles_preferences[job_datum.title]])</span>"
+
 		if(!dept_dat.len)
 			dept_dat += "<span class='nopositions'>No positions open.</span>"
 		dat += jointext(dept_dat, "")

@@ -25,8 +25,8 @@
 /mob/dead/observer/proc/render_news_channel(datum/news/feed_channel/FC)
 	var/list/content = list()
 	content += "<B>[FC.channel_name]: </B><FONT SIZE=1>\[created by: <FONT COLOR='maroon'>[FC.returnAuthor(-1)]</FONT>\]</FONT><HR>"
-	if(FC.censored)
-		content += "<FONT COLOR='red'><B>ATTENTION: </B></FONT>This channel has been deemed as threatening to the welfare of the station, and marked with a Nanotrasen D-Notice.<BR>"
+	if(FC.censored) //GS13 - Nanotrasen to GATO
+		content += "<FONT COLOR='red'><B>ATTENTION: </B></FONT>This channel has been deemed as threatening to the welfare of the station, and marked with a GATO D-Notice.<BR>"
 		content += "No further feed story additions are allowed while the D-Notice is in effect.</FONT><BR><BR>"
 	if(!length(FC.messages))
 		content += "<b>This channel is empty.<b><BR>"

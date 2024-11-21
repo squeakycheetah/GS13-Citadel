@@ -160,15 +160,15 @@
 
 /obj/item/clothing/suit/hooded/explorer/heva
 	name = "HEVA suit"
-	desc = "The Hazardous Environments extra-Vehicular Activity suit, developed by WanTon & Sons Perilous Mining and sold to Nanotrasen for missions within inhospitable, mineral-rich zones. \
-			Its sleek plating deflects most biological - radioactive - and chemical substances and materials. Most notably, this will negate the effects of ash storms and give goliaths better grip against you."
+	desc = "The Hazardous Environments extra-Vehicular Activity suit, developed by WanTon & Sons Perilous Mining and sold to GATO for missions within inhospitable, mineral-rich zones. \
+			Its sleek plating deflects most biological - radioactive - and chemical substances and materials. Most notably, this will negate the effects of ash storms and give goliaths better grip against you." //GS13 - Nanotrasen to GATO
 	icon_state = "heva"
 	item_state = "heva"
 	w_class = WEIGHT_CLASS_BULKY
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	hoodtype = /obj/item/clothing/head/hooded/explorer/heva
 	armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 20, BIO = 100, RAD = 80, FIRE = 100, ACID = 80)
-	resistance_flags = FIRE_PROOF | GOLIATH_WEAKNESS
+	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/head/hooded/explorer/heva
 	name = "HEVA hood"
@@ -178,7 +178,7 @@
 	item_state = "heva"
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 20, BIO = 100, RAD = 20, FIRE = 60, ACID = 20)
-	resistance_flags = FIRE_PROOF | GOLIATH_WEAKNESS
+	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/head/hooded/explorer/heva/equipped(mob/living/carbon/human/user, slot)
 	..()

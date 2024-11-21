@@ -2,8 +2,8 @@
 	name = "Travelling Trader"
 	typepath = /datum/round_event/travelling_trader
 	weight = 8
-	max_occurrences = 2
-	earliest_start = 0 MINUTES
+	max_occurrences = 6 //GS13 - more occurences, because why not
+	earliest_start = 10 MINUTES
 	category = EVENT_CATEGORY_FRIENDLY
 	description = "A mysterious figure requests something to the crew and rewards them with something for getting it done."
 

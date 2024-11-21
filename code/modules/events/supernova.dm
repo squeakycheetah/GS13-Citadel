@@ -2,7 +2,7 @@
 	name = "Supernova"
 	typepath = /datum/round_event/supernova
 	weight = 5
-	max_occurrences = 1
+	max_occurrences = 0 //GS13 - fuck no (this is just more intense radstorm)
 	min_players = 2
 	category = EVENT_CATEGORY_SPACE
 	description = "Several modified radstorms hit the station."
@@ -35,7 +35,7 @@
 /datum/round_event/supernova/announce()
 	var/message = "[station_name()]: Our tachyon-doppler array has detected a supernova in your vicinity. Peak flux from the supernova estimated to be [round(power,0.1)] times current solar flux; if the supernova is close to your sun in the sky, your solars may receive this as a power boost.[power > 1 ? " Short burts of radiation may be possible, so please prepare accordingly." : "We expect no radiation bursts from this one."] We hope you enjoy the light."
 	if(prob(power * 25))
-		priority_announce(message, sender_override = "Nanotrasen Meteorology Division", has_important_message = TRUE)
+		priority_announce(message, sender_override = "GATO Meteorology Division", has_important_message = TRUE) //GS13 - Nanotrasen to GATO
 		announced = TRUE
 	else
 		print_command_report(message)
@@ -69,7 +69,7 @@
 	qdel(supernova)
 	if(announced)
 		priority_announce("The supernova's flux is now negligible. Radiation storms have ceased. Have a pleasant shift, [station_name()], and thank you for bearing with nature.",
-		sender_override = "Nanotrasen Meteorology Division")
+		sender_override = "GATO Meteorology Division") //GS13 - Nanotrasen to GATO
 
 /datum/weather/rad_storm/supernova
 	weather_duration_lower = 50

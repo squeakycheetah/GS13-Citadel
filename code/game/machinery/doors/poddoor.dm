@@ -1,7 +1,7 @@
 /obj/machinery/door/poddoor
 	name = "blast door"
 	desc = "A heavy duty blast door that opens mechanically."
-	icon = 'icons/obj/doors/blastdoor.dmi'
+	icon = 'GainStation13/icons/obj/doors/blastdoor.dmi' //GS13 Edit: perspective sprites
 	icon_state = "closed"
 	var/id = 1
 	layer = BLASTDOOR_LAYER

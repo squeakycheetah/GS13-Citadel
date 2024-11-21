@@ -1,10 +1,10 @@
 /datum/round_event_control/space_ninja
 	name = "Spawn Space Ninja"
 	typepath = /datum/round_event/ghost_role/space_ninja
-	max_occurrences = 1
+	max_occurrences = 0 //GS13 - no antags, thanks
 	weight = 10
 	earliest_start = 20 MINUTES
-	min_players = 15
+	min_players = 25
 	dynamic_should_hijack = TRUE
 	category = EVENT_CATEGORY_INVASION
 	description = "A space ninja infiltrates the station."

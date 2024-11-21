@@ -1,6 +1,6 @@
 /obj/structure/closet/wardrobe
 	name = "wardrobe"
-	desc = "It's a storage unit for standard-issue Nanotrasen attire."
+	desc = "It's a storage unit for standard-issue GATO attire." //GS13 - Nanotrasen to GATO
 	icon_door = "blue"
 /obj/structure/closet/wardrobe/PopulateContents()
 	..()
@@ -60,7 +60,7 @@
 	return
 /obj/structure/closet/wardrobe/orange
 	name = "prison wardrobe"
-	desc = "It's a storage unit for Nanotrasen-regulation prisoner attire."
+	desc = "It's a storage unit for GATO-regulation prisoner attire." //GS13 - Nanotrasen to GATO
 	icon_door = "orange"
 /obj/structure/closet/wardrobe/orange/PopulateContents()
 	for(var/i in 1 to 3)

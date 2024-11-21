@@ -169,6 +169,7 @@
 			setSanity(sanity+0.4, maximum=SANITY_AMAZING)
 
 	HandleNutrition(owner)
+	HandleFatness(owner) //GS13 EDIT
 
 /datum/component/mood/proc/setSanity(amount, minimum=SANITY_INSANE, maximum=SANITY_NEUTRAL)//I'm sure bunging this in here will have no negative repercussions.
 	var/mob/living/master = parent
@@ -315,6 +316,19 @@
 /datum/component/mood/proc/hud_click(datum/source, location, control, params, mob/user)
 	print_mood(user)
 
+//GS13 EDIT START
+/datum/component/mood/proc/HandleFatness(mob/living/carbon/L) // GS13
+	if(!L)
+		return FALSE
+
+	switch(L.fatness)
+		if(FATNESS_LEVEL_FAT to INFINITY)
+			if(HAS_TRAIT(L, TRAIT_FAT_GOOD))
+				add_event(null, "fatness", /datum/mood_event/fat_good)
+			else if(HAS_TRAIT(L, TRAIT_FAT_BAD))
+				add_event(null, "fatness", /datum/mood_event/fat_bad)
+
+//GS13 EDIT END
 
 /datum/component/mood/proc/HandleNutrition(mob/living/L)
 	if(isethereal(L))

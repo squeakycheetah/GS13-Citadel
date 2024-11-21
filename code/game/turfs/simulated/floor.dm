@@ -3,7 +3,7 @@
 	//- you should use istype() if you want to find out whether a floor has a certain type
 	//- floor_tile is now a path, and not a tile obj
 	name = "floor"
-	icon = 'icons/turf/floors.dmi'
+	icon = 'GainStation13/icons/turf/floors.dmi' //GS13 change (so our floors are used instead)
 	baseturfs = /turf/open/floor/plating
 	dirt_buildup_allowed = TRUE
 
@@ -203,7 +203,10 @@
 	var/old_icon = icon_regular_floor
 	var/old_dir = dir
 	var/turf/open/floor/W = ..()
-	W.icon_regular_floor = old_icon
+	//GS13 EDIT START
+	if(!(W.type in subtypesof(/turf/open/floor/plasteel)))
+		W.icon_regular_floor = old_icon
+	//GS13 EDIT END
 	W.setDir(old_dir)
 	W.update_icon()
 	return W
@@ -311,6 +314,7 @@
 			to_chat(user, "<span class='notice'>You build an airlock.</span>")
 			var/obj/machinery/door/airlock/A = new the_rcd.airlock_type(src)
 
+			A.setDir(the_rcd.airlock_dir) //GS13 - directional airlocks edit
 			A.electronics = new/obj/item/electronics/airlock(A)
 
 			if(the_rcd.conf_access)

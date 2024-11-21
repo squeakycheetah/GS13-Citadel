@@ -208,7 +208,7 @@
 
 /datum/supply_pack/security/armory/swat
 	name = "SWAT Crate"
-	desc = "Contains two fullbody sets of tough, fireproof, pressurized suits designed in a joint effort by IS-ERI and Nanotrasen. Each set contains a suit, helmet, mask, combat belt, and combat gloves. Requires Armory access to open."
+	desc = "Contains two fullbody sets of tough, fireproof, pressurized suits designed in a joint effort by IS-ERI and GATO. Each set contains a suit, helmet, mask, combat belt, and combat gloves. Requires Armory access to open." //GS13 - Nanotrasen to GATO
 	cost = 6000
 	contains = list(/obj/item/clothing/head/helmet/swat/nanotrasen,
 					/obj/item/clothing/head/helmet/swat/nanotrasen,

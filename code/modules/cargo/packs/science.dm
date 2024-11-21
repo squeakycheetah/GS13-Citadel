@@ -144,7 +144,7 @@
 
 /datum/supply_pack/science/rped
 	name = "RPED crate"
-	desc = "Need to rebuild the ORM but science got annihilated after a bomb test? Buy this for the most advanced parts NT can give you."
+	desc = "Need to rebuild the ORM but science got annihilated after a bomb test? Buy this for the most advanced parts GT can give you." //GS13 - NT to GT
 	cost = 1500
 	contains = list(/obj/item/storage/part_replacer/cargo)
 	crate_name = "\improper RPED crate"

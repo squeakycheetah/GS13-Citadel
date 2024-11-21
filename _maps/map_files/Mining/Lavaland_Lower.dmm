@@ -4742,7 +4742,8 @@
 /obj/machinery/quantumpad{
 	map_pad_id = "xenoarch";
 	map_pad_link_id = "station";
-	mapped_quantum_pads = list("station","xenoarch")
+	mapped_quantum_pads = list("station","xenoarch");
+	name = "To station"
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
@@ -4758,9 +4759,10 @@
 /turf/open/floor/plating,
 /area/xenoarch/gen)
 "kT" = (
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "xenoarch"
+/obj/machinery/quantumpad/always_powered{
+	name = "To mining";
+	map_pad_id = "to_mining";
+	map_pad_link_id = "from_mining"
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)

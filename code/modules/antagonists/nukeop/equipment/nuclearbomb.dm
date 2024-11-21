@@ -514,8 +514,8 @@
 		return CINEMATIC_SELFDESTRUCT_MISS
 
 /obj/machinery/nuclearbomb/beer
-	name = "\improper Nanotrasen-brand nuclear fission explosive"
-	desc = "One of the more successful achievements of the Nanotrasen Corporate Warfare Division, their nuclear fission explosives are renowned for being cheap to produce and devastatingly effective. Signs explain that though this particular device has been decommissioned, every Nanotrasen station is equipped with an equivalent one, just in case. All Captains carefully guard the disk needed to detonate them - at least, the sign says they do. There seems to be a tap on the back."
+	name = "\improper GATO-brand nuclear fission explosive" //GS13 - Nanotrasen to GATO
+	desc = "One of the more successful achievements of the GATO Corporate Warfare Division, their nuclear fission explosives are renowned for being cheap to produce and devastatingly effective. Signs explain that though this particular device has been decommissioned, every GATO station is equipped with an equivalent one, just in case. All Captains carefully guard the disk needed to detonate them - at least, the sign says they do. There seems to be a tap on the back." //GS13 - Nanotrasen to GATO
 	proper_bomb = FALSE
 	var/obj/structure/reagent_dispensers/beerkeg/keg
 
@@ -632,6 +632,7 @@ This is here to make the tiles around the station mininuke change when it's arme
 	var/turf/lastlocation
 	var/last_disk_move
 	var/process_tick = 0
+	var/spawn_operative = FALSE //GS13 EDIT
 
 /obj/item/disk/nuclear/Initialize(mapload)
 	. = ..()
@@ -666,7 +667,7 @@ This is here to make the tiles around the station mininuke change when it's arme
 		if(disk_comfort_level >= 2) //Sleep tight, disky.
 			if(!(process_tick % 30))
 				visible_message("<span class='notice'>[src] sleeps soundly. Sleep tight, disky.</span>")
-		if(last_disk_move < world.time - 5000 && prob((world.time - 5000 - last_disk_move)*0.0001 / max(disk_comfort_level,1)))
+		if(last_disk_move < world.time - 5000 && prob((world.time - 5000 - last_disk_move)*0.0001 / max(disk_comfort_level,1)) && spawn_operative)
 			var/datum/round_event_control/operative/loneop = locate(/datum/round_event_control/operative) in SSevents.control
 			if(istype(loneop) && loneop.occurrences < loneop.max_occurrences)
 				loneop.weight += 1

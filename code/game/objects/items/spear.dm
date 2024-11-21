@@ -130,7 +130,7 @@
 /obj/item/spear/grey_tide
 	icon_state = "spearglass0"
 	name = "\improper Grey Tide"
-	desc = "Recovered from the aftermath of a revolt aboard Defense Outpost Theta Aegis, in which a seemingly endless tide of Assistants caused heavy casualities among Nanotrasen military forces."
+	desc = "Recovered from the aftermath of a revolt aboard Defense Outpost Theta Aegis, in which a seemingly endless tide of Assistants caused heavy casualities among GATO military forces." //GS13 - Nanotrasen to GATO
 	throwforce = 20
 	throw_speed = 4
 	attack_verb = list("gored")

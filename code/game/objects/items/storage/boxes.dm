@@ -1282,7 +1282,7 @@
 		new /obj/item/tank/internals/emergency_oxygen/engi(src) //in case anyone ever wants to do anything with spawning them, apart from crafting the box
 
 /obj/item/storage/box/mre //base MRE type.
-	name = "Nanotrasen MRE Ration Kit Menu 0"
+	name = "GATO MRE Ration Kit Menu 0" //GS13 - Nanotrasen to GATO
 	desc = "A package containing food suspended in an outdated bluespace pocket which lasts for centuries. If you're lucky you may even be able to enjoy the meal without getting food poisoning."
 	icon_state = "mre"
 	illustration = null
@@ -1308,7 +1308,7 @@
 					S.foodtype |= TOXIC
 
 /obj/item/storage/box/mre/menu1
-	name = "\improper Nanotrasen MRE Ration Kit Menu 1"
+	name = "\improper GATO MRE Ration Kit Menu 1" //GS13 - Nanotrasen to GATO
 
 /obj/item/storage/box/mre/menu1/safe
 	desc = "A package containing food suspended in a bluespace pocket capable of lasting till the end of time."
@@ -1323,7 +1323,7 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu2
-	name = "\improper Nanotrasen MRE Ration Kit Menu 2"
+	name = "\improper GATO MRE Ration Kit Menu 2" //GS13 - Nanotrasen to GATO
 
 /obj/item/storage/box/mre/menu2/safe
 	spawner_chance = 0
@@ -1338,8 +1338,8 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu3
-	name = "\improper Nanotrasen MRE Ration Kit Menu 3"
-	desc = "The holy grail of MREs. This item contains the fabled MRE pizza, spicy nachos and a sample of coffee instant type 2. Any NT employee lucky enough to get their hands on one of these is truly blessed."
+	name = "\improper GATO MRE Ration Kit Menu 3" //GS13 - Nanotrasen to GATO
+	desc = "The holy grail of MREs. This item contains the fabled MRE pizza, spicy nachos and a sample of coffee instant type 2. Any GT employee lucky enough to get their hands on one of these is truly blessed." //GS13 - NT to GT
 	icon_state = "menu3"
 	can_expire = FALSE //always fresh, never expired.
 	spawner_chance = 1
@@ -1353,7 +1353,7 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu4
-	name = "\improper Nanotrasen MRE Ration Kit Menu 4"
+	name = "\improper GATO MRE Ration Kit Menu 4" //GS13 - Nanotrasen to GATO
 
 /obj/item/storage/box/mre/menu4/safe
 	spawner_chance = 0

@@ -2,8 +2,8 @@
 	name = "Supermatter Surge"
 	typepath = /datum/round_event/supermatter_surge
 	weight = 20
-	max_occurrences = 5
-	earliest_start = 10 MINUTES
+	max_occurrences = 0 //GS13 - engineering isn't always omni present here due to lowpop
+	earliest_start = 40 MINUTES
 	category = EVENT_CATEGORY_ENGINEERING
 	description = "Randomly modifies the supermatter's power, giving the engineers a lot of headaches."
 

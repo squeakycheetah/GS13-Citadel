@@ -54,7 +54,7 @@
 				R.depletion = depletion
 				if(prob(1))
 					R.name = "Plush-239 Fuel Rod"
-					R.desc = "NanoTrasen would like to remind you that it is not liable for any permanent radioactive damage done to its employees."
+					R.desc = "GATO would like to remind you that it is not liable for any permanent radioactive damage done to its employees." //GS13 - Nanotrasen to GATO
 					R.icon = 'icons/obj/plushes.dmi'
 					R.icon_state = "romanian"
 					R.fuel_power = 0.25 //Funny easter egg, slightly more powerful too.
