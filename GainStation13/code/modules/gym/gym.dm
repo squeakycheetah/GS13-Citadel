@@ -22,7 +22,7 @@
 	if(!using)
 		using = TRUE
 		to_chat(user, "<span>You do a rep with the [src]. YEEEEEAH!!!</span>")
-		if(do_after(usr, CLICK_CD_RESIST-reps, usr))
+		if(do_after(usr, CLICK_CD_RESIST-reps, 0, usr, 1))
 			if(iscarbon(user))
 				var/mob/living/carbon/U = user
 				U.adjust_fatness(-10, FATTENING_TYPE_WEIGHT_LOSS)
@@ -83,7 +83,7 @@
 
 /obj/item/circuitboard/machine/treadmill
 	name = "Treadmill (Machine Board)"
-	build_path = /obj/machinery/autolathe
+	build_path = /obj/machinery/treadmill
 	req_components = list(/obj/item/stock_parts/manipulator = 1)
 
 /datum/design/treadmill
