@@ -388,7 +388,7 @@
 	name = "bluespace tray"
 	icon_state = "bluespace_tray"
 	desc = "A tray created using bluespace technology to fit more food on it."
-	max_items = 50 //GS13 - we loooove our mountains of food here
+	max_items = 100 //GS13 - we loooove our mountains of food here
 	custom_materials = list(/datum/material/iron = 2000, /datum/material/bluespace = 500)
 
 /*
