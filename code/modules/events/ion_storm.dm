@@ -4,7 +4,7 @@
 	name = "Ion Storm"
 	typepath = /datum/round_event/ion_storm
 	weight = 15
-	min_players = 2
+	min_players = 5 //GS13 - increasing pop so it's more likely someone has a chance to fix the laws
 	category = EVENT_CATEGORY_AI
 	description = "Gives the AI a new, randomized law."
 

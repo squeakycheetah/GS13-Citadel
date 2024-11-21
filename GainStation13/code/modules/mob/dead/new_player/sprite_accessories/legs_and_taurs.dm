@@ -7,6 +7,7 @@
 	icon_state = "gator"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
+	hide_legs = FALSE
 
 /datum/sprite_accessory/taur/fatdrake //ported from Vorestation
 	name = "Fat Drake"
@@ -46,3 +47,17 @@
 	icon = 'GainStation13/icons/mob/markings/mam_taur.dmi'
 	icon_state = "bigleggy"
 	color_src = MUTCOLORS
+
+/datum/sprite_accessory/taur/fatnaga //ported from Vorestation
+	name = "Fat Naga"
+	icon = 'GainStation13/icons/mob/markings/mam_taur.dmi'
+	icon_state = "fatnaga"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/taur/altnaga //ported from Vorestation
+	name = "Alt Naga"
+	icon = 'GainStation13/icons/mob/markings/mam_taur.dmi'
+	icon_state = "altnaga"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN

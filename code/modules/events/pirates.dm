@@ -2,7 +2,7 @@
 	name = "Space Pirates"
 	typepath = /datum/round_event/pirates
 	weight = 8
-	max_occurrences = 1
+	max_occurrences = 0 //GS13 - no antags, thanks
 	min_players = 20
 	earliest_start = 50 MINUTES
 	dynamic_should_hijack = TRUE

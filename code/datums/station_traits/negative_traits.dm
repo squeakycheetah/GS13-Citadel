@@ -284,4 +284,4 @@
 	weight = 2
 	event_control_path = /datum/round_event_control/radiation_storm
 	weight_multiplier = 1.5
-	max_occurrences_modifier = 2
+	max_occurrences_modifier = 0 //GS13 - radstorm bad

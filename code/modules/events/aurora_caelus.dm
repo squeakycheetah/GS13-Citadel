@@ -1,7 +1,7 @@
 /datum/round_event_control/aurora_caelus
 	name = "Aurora Caelus"
 	typepath = /datum/round_event/aurora_caelus
-	max_occurrences = 2
+	max_occurrences = 4 //GS13 - pretty lights, why not
 	weight = 4
 	earliest_start = 20 MINUTES
 	category = EVENT_CATEGORY_FRIENDLY

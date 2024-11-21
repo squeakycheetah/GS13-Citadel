@@ -4,7 +4,7 @@
 	weight = 15
 	max_occurrences = 2
 	earliest_start = 20 MINUTES
-	min_players = 5
+	min_players = 8 //GS13 - really annoying on low-lowpop considering they jolt back and forth
 	category = EVENT_CATEGORY_ENTITIES
 	description = "Annoying little creatures go around the station causing havoc and hacking everything."
 
