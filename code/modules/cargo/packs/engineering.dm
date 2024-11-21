@@ -91,8 +91,8 @@
 	crate_type = /obj/structure/closet/crate/secure/engineering
 
 /datum/supply_pack/engineering/inducers
-	name = "GT-75 Electromagnetic Power Inducers Crate"
-	desc = "No rechargers? No problem, with the GT-75 EPI, you can recharge any standard cell-based equipment anytime, anywhere. Contains two Inducers."
+	name = "GT-75 Electromagnetic Power Inducers Crate" //GS13 - NT to GT
+	desc = "No rechargers? No problem, with the GT-75 EPI, you can recharge any standard cell-based equipment anytime, anywhere. Contains two Inducers." //GS13 - NT to GT
 	cost = 2300
 	contains = list(/obj/item/inducer/sci/supply, /obj/item/inducer/sci/supply)
 	crate_name = "inducer crate"

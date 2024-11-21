@@ -429,7 +429,7 @@
 
 /datum/map_template/shuttle/emergency/wabbajack
 	suffix = "wabbajack"
-	name = "GT Lepton Violet"
+	name = "GT Lepton Violet" //GS13 - NT to GT
 	description = "The research team based on this vessel went missing one day, and no amount of investigation could discover what happened to them. \
 	The only occupants were a number of dead rodents, who appeared to have clawed each other to death. \
 	Needless to say, no engineering team wanted to go near the thing, and it's only being used as an Emergency Escape Shuttle because there is literally nothing else available."
@@ -509,11 +509,11 @@
 
 /datum/map_template/shuttle/whiteship/pubby
 	suffix = "pubby"
-	name = "GT White UFO"
+	name = "GT White UFO" //GS13 - NT to GT
 
 /datum/map_template/shuttle/whiteship/cere
 	suffix = "cere"
-	name = "GT Construction Vessel"
+	name = "GT Construction Vessel" //GS13 - NT to GT
 
 // /datum/map_template/shuttle/whiteship/kilo
 // 	suffix = "kilo"
@@ -525,7 +525,7 @@
 
 /datum/map_template/shuttle/whiteship/delta
 	suffix = "delta"
-	name = "GT Frigate"
+	name = "GT Frigate" //GS13 - NT to GT
 
 /datum/map_template/shuttle/whiteship/pod
 	suffix = "whiteship_pod"
@@ -533,7 +533,7 @@
 
 /datum/map_template/shuttle/whiteship/cog
 	suffix = "cog"
-	name = "GT Prisoner Transport"
+	name = "GT Prisoner Transport" //GS13 - NT to GT
 
 /datum/map_template/shuttle/cargo/kilo
 	suffix = "kilo"

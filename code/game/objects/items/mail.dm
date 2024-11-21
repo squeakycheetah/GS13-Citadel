@@ -154,12 +154,12 @@
 		. += span_notice("<i>You notice the postmarking on the front of the mail...</i>")
 	var/datum/mind/recipient = recipient_ref.resolve()
 	if(recipient)
-		. += span_info("[postmarked ? "Certified GT" : "Uncertified"] mail for [recipient].")
+		. += span_info("[postmarked ? "Certified GT" : "Uncertified"] mail for [recipient].") //GS13 - NT to GT
 	else if(postmarked)
 		. += span_info("Certified mail for [GLOB.station_name].")
 	else
 		. += span_info("This is a dead letter mail with no recipient.")
-	. += span_info("Distribute by hand or via destination tagger using the certified GT disposal system.")
+	. += span_info("Distribute by hand or via destination tagger using the certified GT disposal system.") //GS13 - NT to GT
 
 /// Accepts a mind to initialize goodies for a piece of mail.
 /obj/item/mail/proc/initialize_for_recipient(datum/mind/recipient)

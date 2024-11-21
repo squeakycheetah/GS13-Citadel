@@ -46,7 +46,7 @@
 
 /obj/item/gun/energy/laser/hellgun
 	name ="hellfire laser gun"
-	desc = "A relic of a weapon, built before GT began installing regulators on its laser weaponry. This pattern of laser gun became infamous for the gruesome burn wounds it caused, and was quietly discontinued once it began to affect GT's reputation."
+	desc = "A relic of a weapon, built before GT began installing regulators on its laser weaponry. This pattern of laser gun became infamous for the gruesome burn wounds it caused, and was quietly discontinued once it began to affect GT's reputation." //GS13 - NT to GT
 	icon_state = "hellgun"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hellfire)
 

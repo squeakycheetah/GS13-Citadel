@@ -496,7 +496,7 @@ GLOBAL_LIST_INIT(ballmer_good_msg, list("Hey guys, what if we rolled out a blues
 										"If we can make better bombs with heated plasma, oxygen, and tritium, then why do station nukes still use plutonium?",
  										"We should port all our GT programs to modular consoles and do away with computers. They're way more customizable, support cross-platform usage, and would allow crazy amounts of multitasking.",
 										"Wait, if we use more manipulators in something, then it prints for cheaper, right? So what if we just made a new type of printer that has like 12 manipulators inside of it to print stuff for really cheap?"
-										))
+										)) //GS13 - NT to GT
 GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put a webserver that's automatically turned on with default admin passwords into every PDA?",
 											"So like, you know how we separate our codebase from the master copy that runs on our consumer boxes? What if we merged the two and undid the separation between codebase and server?",
 											"Dude, radical idea: H.O.N.K mechs but with no bananium required.",
