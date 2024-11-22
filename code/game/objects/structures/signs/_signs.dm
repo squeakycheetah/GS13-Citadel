@@ -122,10 +122,11 @@
 	. = ..()
 	setDir(turn(dir, 90))
 
-/obj/structure/sign/nanotrasen
-	name = "\improper Nanotrasen Logo"
-	desc = "A sign with the Nanotrasen Logo on it. Glory to Nanotrasen!"
-	icon_state = "nanotrasen"
+/obj/structure/sign/nanotrasen //GS13 rebranded this whole thing, it's easier to just gato-ify it than replace every single instance of it on every map
+	name = "\improper GATO Logo"
+	desc = "A sign with the GATO Logo on it. Glory to GATO!"
+	icon = 'GainStation13/icons/obj/decals.dmi'
+	icon_state = "gato"
 
 /obj/structure/sign/logo
 	name = "nanotrasen logo"

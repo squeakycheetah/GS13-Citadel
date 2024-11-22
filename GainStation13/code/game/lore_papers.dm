@@ -555,3 +555,10 @@
 /obj/item/paper/fluff/chocoslime_research
 	name = "Stained Research Papers"
 	info = "<b>AUDIO LOG OF CHOCOLATE SLIME REPORT NO.3</b>. Despite possessing no obvious combat capabilities, the chocolate slime can feed itself to its victim, possibly rupturing its st-- mmhfph- grhm... ...(AUDIO LOG END)."
+
+
+//gs13 - solar defence crate
+
+/obj/item/paper/guides/jobs/engi/solar_defence
+	name = "Info on Satellite Defence"
+	info = "<h1>Welcome</h1><p>With this crate, you will be able to protect the station's solar arrays from constant barrages of space sand. The set-up is simple. Drag around all the satellites in front of solar panel arrays, preferably in direction open to space (the best spot is near the solar tracker and outside of the grilles), as that is where the space sand will come from. It's advised to set down just 1 satellite for each solar array. Once you set the satellite down, you can activate it by flicking on the switch. The crate also provides you with an OPTIONAL computer board to keep track of your defence satellites. Voila!</p>"

@@ -2205,6 +2205,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/item/beacon,
 /turf/open/floor/carpet,
 /area/xenoarch/gen)
 "eZ" = (
@@ -4759,10 +4760,9 @@
 /turf/open/floor/plating,
 /area/xenoarch/gen)
 "kT" = (
-/obj/machinery/quantumpad/always_powered{
-	name = "To mining";
-	map_pad_id = "to_mining";
-	map_pad_link_id = "from_mining"
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "xenoarch"
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
@@ -7297,6 +7297,10 @@
 	},
 /turf/open/floor/engine,
 /area/xenoarch/caloriteresearch_powered)
+"rx" = (
+/obj/item/beacon,
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
 "ry" = (
 /obj/item/bodypart/l_leg{
 	pixel_y = 8;
@@ -9488,6 +9492,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"Cd" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "xenoarch"
+	},
+/turf/closed/wall,
+/area/xenoarch/gen)
 "Cg" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -18936,7 +18947,7 @@ ab
 ab
 ab
 ab
-Sy
+Cd
 dv
 dv
 aR
@@ -20504,7 +20515,7 @@ nN
 Pa
 fK
 rc
-el
+rx
 EY
 xn
 nZ

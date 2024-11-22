@@ -55,6 +55,3 @@
 	desc = "Some nice metal shelves."
 	icon = 'hyperstation/icons/obj/objects.dmi'
 	icon_state = "shelf"
-
-/obj/structure/chair/comfy/blue
-	color = rgb(50, 64, 255)
