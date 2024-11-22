@@ -954,6 +954,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["object_tf"] >> object_tf
 	S["blueberry_inflation"] >> blueberry_inflation
 	S["feature_breasts_fluid"]			>> features["breasts_fluid"]
+	S["feature_balls_fluid"]			>> features["balls_fluid"]
 	S["alt_titles_preferences"] 		>> alt_titles_preferences
 	//gear loadout
 	if(istext(S["loadout"]))
@@ -1284,6 +1285,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["feature_balls_shape"], features["balls_shape"])
 	WRITE_FILE(S["feature_balls_size"], features["balls_size"])
 	WRITE_FILE(S["feature_balls_visibility"], features["balls_visibility"])
+	WRITE_FILE(S["feature_balls_fluid"], features["balls_fluid"])
 
 	WRITE_FILE(S["feature_has_breasts"], features["has_breasts"])
 	WRITE_FILE(S["feature_breasts_size"], features["breasts_size"])
