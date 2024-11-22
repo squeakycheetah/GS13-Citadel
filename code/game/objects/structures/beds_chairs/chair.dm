@@ -256,6 +256,12 @@
 /obj/structure/chair/comfy/blue //GS13 - better comfy chairs
 	paddingcolor = rgb(125, 137, 218)
 
+/obj/structure/chair/comfy/green //GS13 - better comfy chairs
+	paddingcolor = rgb(102, 137, 81)
+
+/obj/structure/chair/comfy/purple //GS13 - better comfy chairs
+	paddingcolor = rgb(130, 86, 171)
+
 /obj/structure/chair/comfy/plywood
 	name = "plywood chair"
 	desc = "A relaxing plywood chair."
