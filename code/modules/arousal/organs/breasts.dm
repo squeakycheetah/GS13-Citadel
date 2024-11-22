@@ -1,11 +1,11 @@
 #define BREASTS_ICON_MIN_SIZE 1
-#define BREASTS_ICON_MAX_SIZE 6
+#define BREASTS_ICON_MAX_SIZE 30
 
 /obj/item/organ/genital/breasts
 	name = "breasts"
 	desc = "Female milk producing organs."
 	icon_state = "breasts"
-	icon = 'icons/obj/genitals/breasts.dmi'
+	icon = 'GainStation13/icons/obj/genitals/breasts.dmi' //GS13 - hyperstation boobers
 	zone = BODY_ZONE_CHEST
 	slot = ORGAN_SLOT_BREASTS
 	size = BREASTS_SIZE_DEF // "c". Refer to the breast_values static list below for the cups associated number values
@@ -20,7 +20,7 @@
 	unarousal_verb = "Your breasts no longer feel sensitive"
 	orgasm_verb = "leaking"
 	fluid_transfer_factor = 0.5
-	var/static/list/breast_values = list("a" =  1, "b" = 2, "c" = 3, "d" = 4, "e" = 5, "f" = 6, "g" = 7, "h" = 8, "i" = 9, "j" = 10, "k" = 11, "l" = 12, "m" = 13, "n" = 14, "o" = 15, "huge" = 16, "flat" = 0)
+	var/static/list/breast_values = list("a" =  1, "b" = 2, "c" = 3, "d" = 4, "e" = 5, "f" = 6, "g" = 7, "h" = 8, "i" = 9, "j" = 10, "k" = 11, "l" = 12, "m" = 13, "n" = 14, "o" = 15, "huge" = 16, "massive" = 17, "giga" = 25, "impossible" = 30, "flat" = 0)
 	var/cached_size //these two vars pertain size modifications and so should be expressed in NUMBERS.
 	var/prev_size //former cached_size value, to allow update_size() to early return should be there no significant changes.
 
