@@ -4759,10 +4759,9 @@
 /turf/open/floor/plating,
 /area/xenoarch/gen)
 "kT" = (
-/obj/machinery/quantumpad/always_powered{
-	name = "To mining";
-	map_pad_id = "to_mining";
-	map_pad_link_id = "from_mining"
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "xenoarch"
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
