@@ -31,3 +31,11 @@
 	suffix = "lavaland_surface_blueberryarea.dmm"
 	allow_duplicates = TRUE
 	cost = 0
+
+/datum/map_template/ruin/lavaland/cozy_cabin //HS13 (I think?)
+	name = "Cozy Cabin"
+	id = "cozycabin"
+	description = "A comfy lil cabin, amidst the barren hot landscape."
+	suffix = "lavaland_surface_cozy_cabin.dmm"
+	allow_duplicates = TRUE
+	cost = 0
