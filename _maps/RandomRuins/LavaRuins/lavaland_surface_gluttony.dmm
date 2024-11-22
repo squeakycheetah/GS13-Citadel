@@ -8,117 +8,340 @@
 "c" = (
 /turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)
+"d" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "e" = (
 /turf/open/lava/smooth,
-/area/ruin/lavaland/powered/gluttony)
+/area/ruin/powered/gluttony)
 "f" = (
-/obj/item/reagent_containers/syringe/gluttony,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/item/reagent_containers/syringe/gluttony{
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/beaker/lipoifier{
+	pixel_y = 8
+	},
+/turf/open/floor/mineral/calorite/hide,
+/area/ruin/powered/gluttony)
 "g" = (
 /obj/effect/gluttony,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/turf/open/floor/mineral/basaltstone_floor,
+/area/ruin/powered/gluttony)
 "h" = (
-/obj/item/trash/boritos,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/item/veilrender/vealrender,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "i" = (
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/turf/open/floor/mineral/basaltstone_floor,
+/area/ruin/powered/gluttony)
 "j" = (
 /obj/item/trash/plate,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"k" = (
+/turf/closed/wall/mineral/calorite,
+/area/ruin/powered/gluttony)
 "l" = (
 /obj/item/trash/candy,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "m" = (
 /obj/item/trash/raisins,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "n" = (
 /obj/item/trash/pistachios,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/turf/open/floor/mineral/basaltstone_floor,
+/area/ruin/powered/gluttony)
 "o" = (
 /obj/item/trash/popcorn,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "p" = (
 /obj/item/trash/semki,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "q" = (
 /obj/item/trash/syndi_cakes,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "r" = (
 /obj/effect/gluttony,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "t" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/trash/plate/alt,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"u" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "v" = (
 /obj/machinery/light/small,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"x" = (
+/obj/effect/gluttony,
+/turf/open/floor/mineral/calorite/hide,
+/area/ruin/powered/gluttony)
 "z" = (
 /obj/item/trash/plate,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "A" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "B" = (
-/obj/item/veilrender/vealrender,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"C" = (
+/obj/effect/gluttony,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"D" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "E" = (
-/obj/machinery/light/small,
-/obj/item/trash/cheesie,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/item/trash/candy,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"F" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/gluttony,
+/turf/open/floor/mineral/calorite/hide,
+/area/ruin/powered/gluttony)
 "G" = (
-/obj/item/trash/waffles,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/gluttony,
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"H" = (
+/obj/item/trash/candy,
+/turf/open/floor/mineral/basaltstone_floor,
+/area/ruin/powered/gluttony)
+"I" = (
+/obj/item/trash/raisins,
+/turf/open/floor/mineral/basaltstone_floor,
+/area/ruin/powered/gluttony)
+"K" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "L" = (
-/obj/machinery/light/small,
-/obj/item/trash/plate/alt,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
-"N" = (
-/obj/item/trash/cheesie,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"O" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/gluttony,
+/turf/open/floor/mineral/calorite/hide,
+/area/ruin/powered/gluttony)
+"P" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 "R" = (
-/turf/closed/indestructible/riveted/uranium,
-/area/ruin/lavaland/powered/gluttony)
+/obj/structure/statue/calorite/fatty,
+/obj/item/book/granter/spell/fattening/transfer,
+/turf/open/floor/mineral/calorite/hide,
+/area/ruin/powered/gluttony)
 "S" = (
-/obj/machinery/door/airlock/uranium,
 /obj/structure/fans/tiny/invisible,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
-"Z" = (
-/obj/item/trash/plate/alt,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/lavaland/powered/gluttony)
+/obj/structure/mineral_door/calorite,
+/turf/open/floor/mineral/basaltstone_floor,
+/area/ruin/powered/gluttony)
+"T" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/gluttony,
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"U" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/gluttony,
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"V" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/gluttony,
+/turf/open/floor/mineral/calorite/hide,
+/area/ruin/powered/gluttony)
+"W" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
+"X" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/gluttony,
+/turf/open/floor/mineral/calorite/hide,
+/area/ruin/powered/gluttony)
+"Y" = (
+/obj/effect/gluttony,
+/obj/effect/turf_decal/tile/brown,
+/turf/open/floor/plasteel,
+/area/ruin/powered/gluttony)
 
 (1,1,1) = {"
 a
@@ -195,11 +418,11 @@ b
 b
 b
 c
-R
-R
+k
+k
 S
-R
-R
+k
+k
 c
 b
 a
@@ -217,11 +440,11 @@ a
 b
 b
 c
-R
-j
+k
+h
 i
 o
-R
+k
 c
 b
 a
@@ -239,11 +462,11 @@ a
 b
 b
 c
-R
-h
-G
-L
-R
+k
+B
+i
+v
+k
 c
 b
 b
@@ -261,11 +484,11 @@ b
 b
 b
 c
-R
-i
-l
-i
-R
+k
+B
+H
+K
+k
 c
 b
 b
@@ -275,7 +498,7 @@ b
 a
 "}
 (8,1,1) = {"
-a
+b
 b
 c
 c
@@ -283,11 +506,11 @@ c
 c
 c
 c
-R
+k
 t
-N
+i
 m
-R
+k
 c
 c
 c
@@ -298,63 +521,63 @@ b
 "}
 (9,1,1) = {"
 b
-b
 c
-R
-R
-R
-R
-R
-R
-g
-m
+c
+k
+k
+k
+k
+k
+k
+U
+I
 v
-R
-R
-R
-R
-R
-R
+k
+k
+k
+k
+k
+k
 c
 b
 "}
 (10,1,1) = {"
-a
 b
 c
-R
+k
+k
 e
-R
-r
+k
+O
+V
+V
+T
 g
-g
-g
-g
-i
+d
 p
-G
+D
 z
 l
-Z
-R
+W
+k
 c
 b
 "}
 (11,1,1) = {"
-a
 b
 c
+k
 R
 f
+x
+x
+x
+x
 g
-g
-g
-g
-g
-B
 n
 i
-h
+i
+i
 i
 i
 i
@@ -363,51 +586,51 @@ b
 b
 "}
 (12,1,1) = {"
-a
 b
 c
-R
+k
+k
 e
-R
-r
-g
-g
-g
-N
-g
+k
+X
+F
+F
+G
 i
-l
+Y
+L
+E
 A
-Z
+L
 q
-R
+k
 c
 b
 "}
 (13,1,1) = {"
-a
 b
 c
-R
-R
-R
-R
-R
-R
-g
-h
+c
+k
+k
+k
+k
+k
+k
+C
+i
 v
-R
-R
-R
-R
-R
-R
+k
+k
+k
+k
+k
+k
 c
 b
 "}
 (14,1,1) = {"
-a
+b
 b
 c
 c
@@ -415,11 +638,11 @@ c
 c
 c
 c
-R
+k
 r
 i
-q
-R
+K
+k
 c
 c
 c
@@ -437,11 +660,11 @@ b
 b
 b
 c
-R
-i
+k
+B
 g
-i
-R
+K
+k
 c
 b
 b
@@ -459,11 +682,11 @@ b
 b
 b
 c
-R
+k
 j
 i
-E
-R
+v
+k
 c
 b
 b
@@ -481,11 +704,11 @@ b
 b
 b
 c
-R
-i
+k
+u
 n
-i
-R
+P
+k
 c
 b
 b
@@ -503,11 +726,11 @@ b
 b
 b
 c
-R
-R
+k
+k
 S
-R
-R
+k
+k
 c
 b
 b

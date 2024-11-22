@@ -14,6 +14,7 @@
 "ly" = (/turf/open/floor/carpet/red,/area/ruin/unpowered/caloriteshrine)
 "mR" = (/turf/template_noop,/area/template_noop)
 "mS" = (/obj/structure/table/bronze,/obj/item/trash/cheesie,/turf/open/floor/carpet/red,/area/ruin/unpowered/caloriteshrine)
+"nW" = (/obj/item/trash/soy_food,/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/yellow,/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "ok" = (/obj/item/trash/cheesie,/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "pw" = (/obj/structure/mineral_door/calorite,/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "pI" = (/obj/effect/decal/cleanable/ash/large,/turf/open/floor/plating/asteroid/basalt,/area/template_noop)
@@ -70,7 +71,7 @@ mRmRmRmRmRmRmRmRmRmRmRpVpVpVpVpVpVAqAqAqAqAqAqAqAqAqAqAqpVpVpVpVpVpVmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRpVpVpVpVpVAqAqAqAqbtbtbtbtbtbtbtbtbtAqAqAqAqpVpVpVmRmRmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRpVpVpVpVAqAqbtbtbtJxSwSwZLdaZLSwSwkBbtbtbtAqAqpVpVpVmRmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRpVpVpVpVAqbtYeSwSwkFTWcscscscscsTWaFSwSwkBbtAqTnpVpVmRmRmRmRmRmRmRmRmRmR
-mRmRmRmRmRmRmRmRmRpVpVpVAqAqbthdcscsQMPaPaPaPaPaPaPahocscseFbtAqAqpVpVpVmRmRmRmRmRmRmRmRmR
+mRmRmRmRmRmRmRmRmRpVpVpVAqAqbthdcscsQMnWPaPaPaPaPaPahocscseFbtAqAqpVpVpVmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRpVpVAqAqbtYecscsAqyrlyyRyRlyyRyRlyhdAqcsaFkBbtAqAqpVTnmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRpVTnAqbtwtcscscscsyrlykzWzkzAdkzlyhdSUcscsaFTLbtAqpVpVmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRpVpVAqAqbthdTWcscscsyrsukzsIkzsIPYsAhdcsOccsTWeFbtAqAqpVmRmRmRmRmRmRmRmRmR
