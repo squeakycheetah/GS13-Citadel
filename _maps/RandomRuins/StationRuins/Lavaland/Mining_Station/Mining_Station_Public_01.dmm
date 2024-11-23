@@ -2576,6 +2576,9 @@
 /obj/structure/sign/poster/official/twelve_gauge{
 	pixel_y = 32
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "xP" = (
@@ -4037,9 +4040,9 @@
 	dir = 8;
 	dwidth = 3;
 	height = 5;
-	id = "mining_away";
 	name = "lavaland mine";
-	width = 7
+	width = 7;
+	shuttle_id = "mining_away"
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
@@ -5169,9 +5172,6 @@
 	icon_state = "drain";
 	name = "drain"
 	},
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "UI" = (
@@ -5553,7 +5553,8 @@
 	},
 /obj/machinery/door/airlock/medical/glass{
 	name = "Manual Smelter";
-	req_access_txt = "48"
+	req_access_txt = "48";
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
