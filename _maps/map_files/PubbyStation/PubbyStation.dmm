@@ -22054,10 +22054,14 @@
 /turf/open/floor/plasteel,
 /area/cargo/office)
 "aTe" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/machinery/mineral/ore_redemption{
+	input_dir = 4;
+	output_dir = 8
+	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/cargo/office)
 "aTg" = (
@@ -23515,12 +23519,9 @@
 /turf/open/floor/plasteel,
 /area/cargo/office)
 "aWv" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/mineral/ore_redemption{
-	input_dir = 4;
-	output_dir = 8
-	},
-/turf/open/floor/plasteel/dark,
+/obj/effect/turf_decal/tile/brown,
+/obj/machinery/piratepad/civilian,
+/turf/open/floor/plasteel,
 /area/cargo/office)
 "aWw" = (
 /obj/effect/turf_decal/tile/brown,
@@ -32321,12 +32322,9 @@
 /turf/open/floor/plasteel/white,
 /area/science/explab)
 "bpg" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/item/paper_bin,
-/obj/item/pen,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -32337,6 +32335,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/machinery/rnd/bepis,
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
 "bph" = (
@@ -63513,6 +63512,13 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engineering/storage/tech)
+"tEB" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/machinery/computer/piratepad_control/civilian{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/cargo/office)
 "tGK" = (
 /turf/open/floor/plasteel/dark,
 /area/service/library)
@@ -103091,7 +103097,7 @@ aSe
 aTc
 iHJ
 aVp
-bfH
+aWv
 bLW
 aYr
 sMp
@@ -103348,7 +103354,7 @@ aSf
 aTd
 aUn
 aVr
-bfH
+tEB
 xWc
 aYs
 aZk
@@ -103605,7 +103611,7 @@ jLr
 aTe
 aaR
 aVs
-aWv
+bLW
 xWc
 bLW
 aaS

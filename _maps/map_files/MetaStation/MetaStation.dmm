@@ -15276,6 +15276,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
+/obj/machinery/piratepad/civilian,
 /turf/open/floor/plasteel/dark/corner{
 	dir = 4
 	},
@@ -15713,15 +15714,14 @@
 /turf/open/floor/plasteel/dark/side,
 /area/hallway/primary/port)
 "bkw" = (
-/obj/structure/closet/crate{
-	icon_state = "crateopen"
-	},
-/obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
 /obj/structure/medkit_cabinet{
 	pixel_x = 24
+	},
+/obj/machinery/computer/piratepad_control/civilian{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
@@ -29333,13 +29333,8 @@
 /turf/open/floor/plasteel,
 /area/science/explab)
 "cmR" = (
-/obj/structure/table/reinforced,
-/obj/item/paper_bin{
-	pixel_x = -2;
-	pixel_y = 6
-	},
-/obj/item/pen,
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/rnd/bepis,
 /turf/open/floor/plasteel,
 /area/science/explab)
 "cmS" = (

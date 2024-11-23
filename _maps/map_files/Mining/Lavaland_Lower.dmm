@@ -9623,13 +9623,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
-"Cd" = (
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "xenoarch"
-	},
-/turf/closed/wall,
-/area/xenoarch/gen)
 "Cg" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -19499,7 +19492,7 @@ ab
 ab
 ab
 ab
-Cd
+Sy
 dv
 dv
 aR
