@@ -1,4 +1,5 @@
 ## Breast cups selectable from the character creation menu. Keep em lowercase.
+## GS13 edit - added twice as many breast sizes
 BREASTS_CUPS_PREFS a
 BREASTS_CUPS_PREFS b
 BREASTS_CUPS_PREFS c
@@ -7,10 +8,22 @@ BREASTS_CUPS_PREFS e
 BREASTS_CUPS_PREFS f
 BREASTS_CUPS_PREFS g
 BREASTS_CUPS_PREFS h
+BREASTS_CUPS_PREFS i
+BREASTS_CUPS_PREFS j
+BREASTS_CUPS_PREFS k
+BREASTS_CUPS_PREFS l
+BREASTS_CUPS_PREFS m
+BREASTS_CUPS_PREFS n
+BREASTS_CUPS_PREFS o
+##BREASTS_CUPS_PREFS huge
+##BREASTS_CUPS_PREFS massive
+##BREASTS_CUPS_PREFS giga
+##BREASTS_CUPS_PREFS impossible
 
 ## Minimum and maximum limits for penis length from the character creation menu.
+## GS13 edit - 36 inches
 PENIS_MIN_INCHES_PREFS 1
-PENIS_MAX_INCHES_PREFS 24
+PENIS_MAX_INCHES_PREFS 36
 
 ## Minimum and maximum limits for butt size from the character creation menu. If there's bigger butt sizes out there, change the max accordingly.
 BUTT_MIN_SIZE_PREFS 1

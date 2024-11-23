@@ -236,6 +236,10 @@
 /obj/item/stack/packageWrap,
 /obj/item/stack/packageWrap,
 /obj/item/stack/packageWrap,
+/obj/item/storage/fancy/cigarettes/gatito,
+/obj/item/storage/fancy/cigarettes/gatito,
+/obj/item/storage/fancy/cigarettes/gatito,
+/obj/item/storage/fancy/cigarettes/gatito,
 /turf/open/floor/mineral/titanium,
 /area/ruin/powered/snackstore)
 "bh" = (

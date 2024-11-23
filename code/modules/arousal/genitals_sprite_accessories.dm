@@ -9,7 +9,7 @@
 
 //DICKS,COCKS,PENISES,WHATEVER YOU WANT TO CALL THEM
 /datum/sprite_accessory/penis
-	icon = 'icons/obj/genitals/penis_onmob.dmi'
+	icon = 'GainStation13/icons/obj/genitals/penis_onmob.dmi' //GS13 - Hyperstation cocks
 	name = "penis"			//the preview name of the accessory
 	color_src = "cock_color"
 	alt_aroused = TRUE
@@ -22,13 +22,13 @@
 /datum/sprite_accessory/penis/knotted
 	icon_state = "knotted"
 	name = "Knotted"
-	taur_icon = 'icons/obj/genitals/taur_penis_onmob.dmi'
+	taur_icon = 'GainStation13/icons/obj/genitals/taur_penis_onmob.dmi' //GS13 - Hyperstation cocks
 	taur_dimension_x = 64
 
 /datum/sprite_accessory/penis/flared
 	icon_state = "flared"
 	name = "Flared"
-	taur_icon = 'icons/obj/genitals/taur_penis_onmob.dmi'
+	taur_icon = 'GainStation13/icons/obj/genitals/taur_penis_onmob.dmi' //GS13 - Hyperstation cocks
 	taur_dimension_x = 64
 
 /datum/sprite_accessory/penis/barbknot
@@ -38,7 +38,7 @@
 /datum/sprite_accessory/penis/tapered
 	icon_state = "tapered"
 	name = "Tapered"
-	taur_icon = 'icons/obj/genitals/taur_penis_onmob.dmi'
+	taur_icon = 'GainStation13/icons/obj/genitals/taur_penis_onmob.dmi' //GS13 - Hyperstation cocks
 	taur_dimension_x = 64
 
 /datum/sprite_accessory/penis/tentacle
@@ -55,7 +55,7 @@
 
 //Testicles
 /datum/sprite_accessory/testicles
-	icon = 'icons/obj/genitals/testicles_onmob.dmi'
+	icon = 'GainStation13/icons/obj/genitals/testicles_onmob.dmi' //GS13 - Hyperstation cocks
 	icon_state = "testicle"
 	name = "testicle"		//the preview name of the accessory
 	color_src = "balls_color"
@@ -70,7 +70,7 @@
 
 //Vaginas
 /datum/sprite_accessory/vagina
-	icon = 'icons/obj/genitals/vagina_onmob.dmi'
+	icon = 'GainStation13/icons/obj/genitals/vagina_onmob.dmi' //GS13 - Hyperstation cocks
 	name = "vagina"
 	color_src = "vag_color"
 	alt_aroused = TRUE
@@ -108,7 +108,7 @@
 
 //BREASTS BE HERE
 /datum/sprite_accessory/breasts
-	icon = 'icons/obj/genitals/breasts_onmob.dmi'
+	icon = 'GainStation13/icons/obj/genitals/breasts_onmob.dmi' //GS13 - Hyperstation cocks
 	name = "breasts"
 	color_src = "breasts_color"
 

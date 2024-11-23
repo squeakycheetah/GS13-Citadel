@@ -238,7 +238,7 @@
 "fs" = (/obj/machinery/door/firedoor,/obj/structure/cable/yellow{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/door/airlock/mining/glass{name = "Supply Station"; req_access_txt = "150"},/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/turf/open/floor/plasteel/dark,/area/ruin/unpowered/syndicate_lava_base/cargo)
 "ft" = (/obj/structure/grille,/obj/structure/window/plastitanium,/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/ruin/unpowered/syndicate_lava_base/cargo)
 "fu" = (/obj/structure/extinguisher_cabinet{pixel_x = -27; pixel_y = 1},/obj/structure/table,/obj/item/folder/yellow,/obj/item/stack/wrapping_paper{pixel_y = 5},/obj/item/stack/packageWrap,/obj/item/hand_labeler,/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown{dir = 8},/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/cargo)
-"fv" = (/obj/structure/table,/obj/item/paper_bin,/obj/item/pen,/obj/effect/turf_decal/tile/brown{dir = 1},/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/cargo)
+"fv" = (/obj/structure/table,/obj/item/paper_bin,/obj/item/pen,/obj/effect/turf_decal/tile/brown{dir = 1},/obj/item/stack/credits{amount = 30},/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/cargo)
 "fw" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/cargo)
 "fx" = (/obj/structure/sign/warning/fire{pixel_y = 32},/obj/structure/sign/warning/xeno_mining{pixel_y = -32},/turf/open/floor/plating,/area/ruin/unpowered/syndicate_lava_base/cargo)
 "fy" = (/obj/machinery/vending/medical/syndicate_access,/turf/open/floor/plasteel/white/side{dir = 4},/area/ruin/unpowered/syndicate_lava_base/virology)
@@ -520,7 +520,7 @@
 "ms" = (/obj/machinery/door/airlock/external{req_access_txt = "150"},/obj/structure/fans/tiny,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 1},/turf/open/floor/plating,/area/ruin/unpowered/syndicate_lava_base/arrivals)
 "mu" = (/obj/machinery/door/airlock/public/glass{name = "Bar"},/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/bar)
 "mv" = (/obj/structure/grille,/obj/structure/window/plastitanium,/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/ruin/unpowered/syndicate_lava_base/bar)
-"mw" = (/obj/structure/table,/obj/item/clothing/gloves/combat{pixel_y = -6},/obj/item/tank/internals/emergency_oxygen{pixel_x = 4; pixel_y = 4},/obj/item/clothing/mask/breath{pixel_x = -2; pixel_y = 4},/turf/open/floor/plasteel/white/side,/area/ruin/unpowered/syndicate_lava_base/main)
+"mw" = (/obj/structure/table,/obj/item/clothing/gloves/combat{pixel_y = -6},/obj/item/tank/internals/emergency_oxygen{pixel_x = 4; pixel_y = 4},/obj/item/clothing/mask/breath{pixel_x = -2; pixel_y = 4},/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/obj/item/stack/credits,/turf/open/floor/plasteel/white/side,/area/ruin/unpowered/syndicate_lava_base/main)
 "mx" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/fullupgrade{dir = 1},/turf/open/floor/wood,/area/ruin/unpowered/syndicate_lava_base/bar)
 "mz" = (/obj/structure/rack{dir = 8},/obj/item/storage/toolbox/mechanical,/obj/item/stack/cable_coil/yellow{pixel_x = 2; pixel_y = -3},/obj/item/multitool,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 8},/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/arrivals)
 "mA" = (/obj/structure/sign/departments/medbay/alt,/turf/closed/wall/mineral/plastitanium/nodiagonal,/area/ruin/unpowered/syndicate_lava_base/medbay)
@@ -642,6 +642,7 @@
 "KA" = (/obj/effect/turf_decal/stripes/corner{dir = 4},/obj/effect/turf_decal/stripes/white/corner{dir = 4},/turf/open/floor/circuit/telecomms,/area/ruin/unpowered/syndicate_lava_base/nanites)
 "Ml" = (/obj/effect/turf_decal/stripes/corner{dir = 1},/obj/effect/turf_decal/stripes/white/corner{dir = 1},/turf/open/floor/circuit/telecomms,/area/ruin/unpowered/syndicate_lava_base/nanites)
 "Mn" = (/turf/closed/wall/mineral/plastitanium/explosive,/area/ruin/unpowered/syndicate_lava_base/bar)
+"MY" = (/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 4},/obj/machinery/atm{pixel_y = 30},/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/arrivals)
 "Nf" = (/obj/effect/turf_decal/stripes/line{dir = 10},/turf/open/floor/engine,/area/ruin/unpowered/syndicate_lava_base/cargo)
 "NH" = (/obj/machinery/portable_atmospherics/scrubber,/obj/effect/turf_decal/bot,/turf/open/floor/engine,/area/ruin/unpowered/syndicate_lava_base/engineering)
 "NZ" = (/obj/machinery/button/door{id = "lavalandsyndi_telecomms"; name = "Telecomms Blast Door Control"; pixel_x = 26; req_access_txt = "150"},/obj/item/storage/box/disks_nanite,/obj/item/storage/box/disks_nanite,/obj/item/nanite_scanner,/obj/item/nanite_remote/comm,/obj/item/nanite_remote,/obj/structure/closet/crate,/turf/open/floor/plasteel/dark,/area/ruin/unpowered/syndicate_lava_base/nanites)
@@ -717,7 +718,7 @@ aaabababababababababababdGleopjyorjZjNlhlilZlkouovjZozjykPkQaDlnmEmEoAjulqlrlskZ
 aaabababababababababababhalwlwjyjyoHjZlzlAlBlCaklElFuBjykPkQlHlImElKkQlLlMlNlOlOlPSulQlRnGjuabababaa
 aaababababmnmnmnRuRuRuRumnlTgsmOjynSjNlWlXlZlZmajymcjyjyTpkQmeUgmfYjkUjumhlNlOlOlODGjujujujuabababaa
 aaabababiimnunmnmpeHIaNZmnmsmsmTjymvmumvjyvxmxjyjyjyjymzocmAlHmCmEmEutjumImHmImJmImIjuababababababaa
-aaabababmnunKAmPTimQmRWtmSzVzVyqmUmUEFZvjyjyMnjyvDXamXmYzymZnauXnbnbRajucGneRVjuNHNHjuababababababaa
+aaabababmnunKAmPTimQmRWtmSzVzVyqMYmUEFZvjyjyMnjyvDXamXmYzymZnauXnbnbRajucGneRVjuNHNHjuababababababaa
 aaabababmnFbZKaEnknknkmonnrFnonpBkBknrpiQmjPJAnsntRsRsnwhWnynzmERYmECDjunDnEtWjuamRDjuababababababaa
 aaabababmnVuMlmnnIOAOAnLmnmTnQmTfPfPPaarPanTnUnXnXnXfKauhXmTobfkaVcDszjujujujujujujuhBababababababaa
 aaabababgmmnVumnoiojokmnmnmTGYPaPaPaPaJccIPamTgWgWgWgWgXmTmTmTmTmTmTmTmTjujuFRababababababababababaa

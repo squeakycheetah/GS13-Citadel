@@ -2,11 +2,11 @@
 	name = "penis"
 	desc = "A male reproductive organ."
 	icon_state = "penis"
-	icon = 'icons/obj/genitals/penis.dmi'
+	icon = 'GainStation13/icons/obj/genitals/penis.dmi'
 	zone = BODY_ZONE_PRECISE_GROIN
 	slot = ORGAN_SLOT_PENIS
 	masturbation_verb = "stroke"
-	can_climax				= TRUE
+	can_climax = TRUE
 	arousal_verb = "You pop a boner"
 	unarousal_verb = "Your boner goes down"
 	genital_flags = CAN_MASTURBATE_WITH|CAN_CLIMAX_WITH|GENITAL_CAN_AROUSE|UPDATE_OWNER_APPEARANCE|GENITAL_UNDIES_HIDDEN|GENITAL_CAN_TAUR
@@ -16,7 +16,6 @@
 	size = 2 //arbitrary value derived from length and diameter for sprites.
 	layer_index = PENIS_LAYER_INDEX
 	var/length = 6 //inches
-
 	var/prev_length = 6 //really should be renamed to prev_length
 	var/diameter = 4.38
 	var/diameter_ratio = COCK_DIAMETER_RATIO_DEF //0.25; check citadel_defines.dm
@@ -41,14 +40,18 @@
 	var/rounded_length = round(length)
 	var/new_size
 	switch(rounded_length)
-		if(0 to 6) //If modest size
+		if(0 to 4) //If modest size
 			new_size = 1
-		if(7 to 11) //If large
+		if(5 to 10) //If large
 			new_size = 2
-		if(12 to 36) //If massive
+		if(11 to 18) //If massive
 			new_size = 3
-		if(37 to INFINITY) //If comical
-			new_size = 4 //no new sprites for anything larger yet
+		if(18 to 26) //If massive
+			new_size = 3
+		if(26 to 34) //If massive
+			new_size = 4
+		if(34 to INFINITY) //If comical
+			new_size = 5 //no new sprites for anything larger yet
 
 	if(linked_organ)
 		linked_organ.size = clamp(size + new_size, BALLS_SIZE_MIN, BALLS_SIZE_MAX)

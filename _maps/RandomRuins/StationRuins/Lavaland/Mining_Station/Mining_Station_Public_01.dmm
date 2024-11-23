@@ -1,11 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ad" = (
 /obj/structure/table,
-/obj/effect/turf_decal/loading_area{
-	dir = 8;
-	icon_state = "drain";
-	name = "drain"
-	},
 /obj/item/ashtray{
 	name = "candle holder"
 	},
@@ -14,6 +9,11 @@
 	},
 /obj/effect/turf_decal/tile/bar{
 	dir = 4
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "drain";
+	name = "drain"
 	},
 /turf/open/floor/plasteel/checker,
 /area/mine/living_quarters)
@@ -104,10 +104,11 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /obj/machinery/door/airlock{
+	dir = 4;
 	name = "Labor Camp External Access"
 	},
-/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
 "ba" = (
@@ -134,16 +135,16 @@
 /area/mine/eva)
 "bn" = (
 /obj/structure/chair,
-/obj/effect/turf_decal/loading_area{
-	dir = 8;
-	icon_state = "drain";
-	name = "drain"
-	},
 /obj/effect/turf_decal/tile/bar{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/bar{
 	dir = 4
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "drain";
+	name = "drain"
 	},
 /turf/open/floor/plasteel/checker,
 /area/mine/living_quarters)
@@ -202,6 +203,10 @@
 	},
 /obj/machinery/airalarm{
 	pixel_y = 23
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "steel_decals"
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
@@ -337,20 +342,10 @@
 /obj/item/ashtray{
 	name = "candle holder"
 	},
-/turf/open/floor/plasteel,
-/area/mine/living_quarters)
-"cZ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/purple{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/light,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
@@ -358,16 +353,16 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/loading_area{
-	dir = 8;
-	icon_state = "drain";
-	name = "drain"
-	},
 /obj/effect/turf_decal/tile/bar{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/bar{
 	dir = 4
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "drain";
+	name = "drain"
 	},
 /turf/open/floor/plasteel/checker,
 /area/mine/living_quarters)
@@ -789,6 +784,10 @@
 	dir = 8;
 	pixel_y = 3
 	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "hy" = (
@@ -900,6 +899,11 @@
 	},
 /obj/effect/turf_decal/tile/purple,
 /obj/machinery/vending/mealdor,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "iv" = (
@@ -1229,15 +1233,12 @@
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
 "lI" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/effect/turf_decal/loading_area{
-	dir = 2;
-	icon_state = "drain";
-	name = "drain"
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
+/obj/effect/decal/medium_gato,
 /turf/open/floor/plasteel,
-/area/mine/living_quarters)
+/area/mine/laborcamp)
 "lQ" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -1374,6 +1375,10 @@
 /obj/item/kirbyplants{
 	icon_state = "plant-10"
 	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "mR" = (
@@ -1457,6 +1462,11 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "nJ" = (
@@ -1630,6 +1640,9 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
 "pu" = (
@@ -1703,6 +1716,10 @@
 	},
 /obj/effect/turf_decal/tile/bar{
 	dir = 8
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "steel_decals"
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
@@ -2012,6 +2029,18 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "steel_decals"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 9;
+	icon_state = "steel_decals10"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 6;
+	icon_state = "steel_decals10"
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "sR" = (
@@ -2064,6 +2093,10 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
+/obj/effect/turf_decal/loading_area{
+	dir = 2;
+	icon_state = "steel_decals"
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
@@ -2097,6 +2130,10 @@
 	},
 /obj/item/kirbyplants{
 	icon_state = "plant-10"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
@@ -2385,9 +2422,6 @@
 /turf/open/floor/plasteel/checker,
 /area/mine/living_quarters)
 "wE" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/structure/rack/shelf,
 /obj/item/mop,
 /obj/item/reagent_containers/glass/bucket,
@@ -2457,16 +2491,16 @@
 /turf/open/floor/plasteel/dark,
 /area/mine/laborcamp/security)
 "xq" = (
-/obj/machinery/door/airlock/external{
-	glass = 1;
-	name = "Mining External Airlock";
-	opacity = 0;
-	req_access_txt = "54"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
 /obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external{
+	glass = 1;
+	name = "Mining External Airlock";
+	opacity = 0;
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/mine/eva)
 "xs" = (
@@ -2523,6 +2557,10 @@
 	name = "Mining Station Port Wing APC";
 	pixel_x = 1;
 	pixel_y = 23
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "steel_decals"
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
@@ -2821,6 +2859,14 @@
 /obj/machinery/airalarm{
 	pixel_y = 24
 	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "Ao" = (
@@ -2972,15 +3018,16 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "BD" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Mining Station Maintenance";
-	req_access_txt = "48"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance{
+	name = "Mining Station Maintenance";
+	req_access_txt = "48";
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/mine/laborcamp/security)
@@ -3086,6 +3133,18 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "steel_decals"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_decals10"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 10;
+	icon_state = "steel_decals10"
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "CB" = (
@@ -3138,20 +3197,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
-"CV" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
-/obj/effect/turf_decal/loading_area{
-	dir = 1;
-	icon_state = "drain";
-	name = "drain"
-	},
-/turf/open/floor/plasteel,
-/area/mine/living_quarters)
 "Dc" = (
-/obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
+	},
+/obj/machinery/door/airlock/external/glass{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/mine/living_quarters)
@@ -3542,6 +3593,11 @@
 	icon_state = "drain";
 	name = "drain"
 	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "drain";
+	name = "drain"
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "HO" = (
@@ -3781,6 +3837,11 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "JJ" = (
@@ -3903,6 +3964,10 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "steel_decals"
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "KP" = (
@@ -3927,9 +3992,9 @@
 /obj/machinery/door/airlock/external{
 	glass = 1;
 	name = "Mining Shuttle Airlock";
-	opacity = 0
+	opacity = 0;
+	dir = 8
 	},
-/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/mine/production)
 "KS" = (
@@ -3944,12 +4009,6 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "KU" = (
-/obj/machinery/door/airlock/external{
-	glass = 1;
-	name = "Mining External Airlock";
-	opacity = 0;
-	req_access_txt = "54"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
@@ -3959,6 +4018,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
+	},
+/obj/machinery/door/airlock/external{
+	glass = 1;
+	name = "Mining External Airlock";
+	opacity = 0;
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/mine/eva)
@@ -4300,6 +4365,10 @@
 /obj/structure/chair{
 	dir = 4
 	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "NB" = (
@@ -4405,6 +4474,10 @@
 	},
 /obj/effect/turf_decal/tile/bar{
 	dir = 8
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "steel_decals"
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
@@ -4782,6 +4855,11 @@
 	dir = 8
 	},
 /obj/machinery/vending/gato,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "Sg" = (
@@ -4903,18 +4981,22 @@
 /obj/structure/table,
 /obj/item/trash/plate,
 /obj/item/kitchen/fork,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
 "Tm" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/obj/structure/fans/tiny,
 /obj/machinery/door/airlock/external{
 	glass = 1;
 	name = "Mining Shuttle Airlock";
-	opacity = 0
+	opacity = 0;
+	dir = 4
 	},
-/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/mine/production)
 "Tn" = (
@@ -5069,6 +5151,9 @@
 	},
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/checker,
 /area/mine/living_quarters)
 "UD" = (
@@ -5083,6 +5168,9 @@
 	dir = 1;
 	icon_state = "drain";
 	name = "drain"
+	},
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
@@ -5139,7 +5227,8 @@
 /obj/machinery/door/airlock/external{
 	glass = 1;
 	name = "Mining External Airlock";
-	opacity = 0
+	opacity = 0;
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/mine/living_quarters)
@@ -5181,11 +5270,24 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/purple{
-	dir = 1
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_decals10"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 9;
+	icon_state = "steel_decals10"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 10;
+	icon_state = "steel_decals10"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 6;
+	icon_state = "steel_decals10"
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
@@ -5198,11 +5300,6 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "Vj" = (
-/obj/machinery/door/airlock/external{
-	glass = 1;
-	name = "Mining External Airlock";
-	opacity = 0
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
@@ -5212,6 +5309,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
+	},
+/obj/machinery/door/airlock/external{
+	glass = 1;
+	name = "Mining External Airlock";
+	opacity = 0;
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/mine/living_quarters)
@@ -5395,6 +5498,11 @@
 /obj/machinery/vending/cigarette,
 /obj/effect/turf_decal/loading_area{
 	dir = 2;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
 	icon_state = "drain";
 	name = "drain"
 	},
@@ -5657,11 +5765,13 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "YP" = (
-/obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
 /obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external/glass{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "YV" = (
@@ -5672,6 +5782,10 @@
 	dir = 2;
 	icon_state = "drain";
 	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "steel_decals"
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
@@ -6366,7 +6480,7 @@ VT
 VT
 VT
 VT
-VT
+Lm
 VT
 VT
 VT
@@ -6414,6 +6528,7 @@ VT
 VT
 VT
 VT
+Lm
 VT
 VT
 VT
@@ -6424,10 +6539,9 @@ VT
 VT
 VT
 VT
-VT
-VT
-VT
-VT
+Lm
+Lm
+Lm
 VT
 VT
 VT
@@ -6469,6 +6583,8 @@ VT
 VT
 VT
 VT
+Lm
+Lm
 VT
 VT
 VT
@@ -6480,10 +6596,8 @@ VT
 VT
 VT
 VT
-VT
-VT
-VT
-VT
+Lm
+Lm
 VT
 VT
 VT
@@ -6525,9 +6639,9 @@ VT
 VT
 VT
 VT
-VT
-VT
-VT
+Lm
+Lm
+Lm
 VT
 VT
 VT
@@ -6581,7 +6695,7 @@ VT
 VT
 VT
 VT
-VT
+Lm
 VT
 VT
 VT
@@ -7021,7 +7135,7 @@ fO
 ow
 iv
 Cl
-Cl
+lI
 gn
 vo
 ly
@@ -7170,7 +7284,7 @@ my
 my
 VT
 VT
-VT
+Lm
 VT
 VT
 VT
@@ -7227,7 +7341,7 @@ my
 my
 VT
 VT
-VT
+Lm
 VT
 VT
 VT
@@ -7283,7 +7397,7 @@ my
 my
 VT
 VT
-VT
+Lm
 VT
 VT
 VT
@@ -7781,9 +7895,9 @@ rU
 lX
 jJ
 et
-CV
+iG
 uj
-lI
+Dr
 Un
 Dd
 IY
@@ -7792,8 +7906,8 @@ VN
 VN
 VN
 VN
+JP
 my
-VT
 VT
 VT
 VT
@@ -7849,9 +7963,9 @@ KV
 JP
 JP
 JP
+JP
+JP
 my
-VT
-VT
 VT
 VT
 VT
@@ -7905,8 +8019,8 @@ VN
 VN
 JP
 JP
-my
-my
+JP
+JP
 VT
 VT
 VT
@@ -7963,7 +8077,7 @@ JP
 JP
 JP
 my
-VT
+my
 VT
 VT
 VT
@@ -8002,9 +8116,9 @@ JY
 my
 VT
 VT
-VT
-VT
 my
+JP
+JP
 JP
 JP
 KV
@@ -8060,7 +8174,7 @@ my
 VT
 VT
 VT
-VT
+my
 my
 JP
 JP
@@ -8075,8 +8189,8 @@ fU
 JP
 JP
 JP
+JP
 my
-VT
 VT
 VT
 VT
@@ -8131,11 +8245,11 @@ KV
 JP
 JP
 JP
+JP
+JP
+JP
 my
 my
-VT
-VT
-VT
 VT
 VT
 VT
@@ -8189,9 +8303,9 @@ JP
 JP
 my
 my
-VT
-VT
-VT
+JP
+my
+my
 VT
 VT
 VT
@@ -8231,8 +8345,8 @@ VT
 VT
 VT
 VT
-VT
 my
+JP
 JP
 JP
 VN
@@ -8248,7 +8362,7 @@ my
 VT
 VT
 VT
-VT
+my
 VT
 VT
 VT
@@ -8352,14 +8466,14 @@ JP
 JP
 JP
 KV
-cZ
+Vf
 KV
 JP
 JP
 JP
+JP
+JP
 my
-VT
-VT
 VT
 VT
 VT

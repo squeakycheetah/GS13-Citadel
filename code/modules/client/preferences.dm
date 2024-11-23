@@ -769,6 +769,22 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 									dat += "<span style='border: 1px solid #161616; background-color: #[features["balls_color"]];'><font color='[color_hex2num(features["balls_color"]) < 200 ? "FFFFFF" : "000000"]'>#[features["balls_color"]]</font></span> <a href='?_src_=prefs;preference=balls_color;task=input'>Change</a><br>"
 								dat += "<b>Testicles Shape:</b> <a style='display:block;width:120px' href='?_src_=prefs;preference=balls_shape;task=input'>[features["balls_shape"]]</a>"
 								dat += "<b>Testicles Visibility:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=balls_visibility;task=input'>[features["balls_visibility"]]</a>"
+								dat += "<b>Produces:</b>"
+							switch(features["balls_fluid"])
+								if(/datum/reagent/consumable/milk)
+									dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Milk</a>"
+								if(/datum/reagent/water)
+									dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Water</a>"
+								if(/datum/reagent/consumable/semen)
+									dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Semen</a>"
+								if(/datum/reagent/consumable/alienhoney)
+									dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Honey</a>"
+								if(/datum/reagent/consumable/nutriment)
+									dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nutriment</a>"
+								if(/datum/reagent/blueberry_juice)
+									dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Berry Juice</a>"
+								else
+									dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nothing?</a>"
 						dat += APPEARANCE_CATEGORY_COLUMN
 						dat += "<h3>Vagina</h3>"
 						dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=has_vag'>[features["has_vag"] == TRUE ? "Yes" : "No"]</a>"
@@ -809,8 +825,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Femcum</a>"
 									if(/datum/reagent/consumable/alienhoney)
 										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Honey</a>"
-									if(/datum/reagent/consumable/milk/pinkmilk)
-										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Strawberry Milk</a>"
 									if(/datum/reagent/consumable/nutriment)
 										dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nutriment</a>"
 									if(/datum/reagent/blueberry_juice)
@@ -2656,6 +2670,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_shape = input(user, "Testicle Shape", "Character Preference") as null|anything in GLOB.balls_shapes_list
 					if(new_shape)
 						features["balls_shape"] = new_shape
+
+				if("balls_fluid")
+					var/new_shape
+					new_shape = input(user, "Balls Fluid", "Character Preference") as null|anything in GLOB.genital_fluids_list
+					switch(new_shape)
+						if("Milk")
+							features["balls_fluid"] = /datum/reagent/consumable/milk
+						if("Water")
+							features["balls_fluid"] = /datum/reagent/water
+						if("Semen")
+							features["balls_fluid"] = /datum/reagent/consumable/semen
+						if("Honey")
+							features["balls_fluid"] = /datum/reagent/consumable/alienhoney
+						if("Nutriment")
+							features["balls_fluid"] = /datum/reagent/consumable/nutriment
+						if("Berry Juice")
+							features["balls_fluid"] = /datum/reagent/blueberry_juice
 
 				if("balls_visibility")
 					var/n_vis = input(user, "Testicles Visibility", "Character Preference") as null|anything in CONFIG_GET(str_list/safe_visibility_toggles)

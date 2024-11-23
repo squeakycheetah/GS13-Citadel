@@ -46,10 +46,10 @@
 #define DEF_BALLS_SHAPE		"Single"
 
 #define BALLS_SIZE_MIN		1
-#define BALLS_SIZE_DEF		2
-#define BALLS_SIZE_MAX		3
+#define BALLS_SIZE_DEF		8 //GS13 - changed from 2
+#define BALLS_SIZE_MAX		40 //GS13 - changed from 3
 
-#define CUM_RATE			2 // units per 10 seconds
+#define CUM_RATE			5 // units per 10 seconds //GS13 - upping the production rate
 #define CUM_RATE_MULT		1
 #define CUM_EFFICIENCY		1 //amount of nutrition required per life()
 
@@ -60,7 +60,7 @@
 
 #define DEF_BREASTS_SHAPE	"Pair"
 
-#define MILK_RATE			3
+#define MILK_RATE			5 //GS13 - production rate
 #define MILK_RATE_MULT		1
 #define MILK_EFFICIENCY		1
 
