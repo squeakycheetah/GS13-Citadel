@@ -22646,9 +22646,9 @@
 	dir = 4;
 	dwidth = 5;
 	height = 7;
-	id = "supply_home";
 	name = "Cargo Bay";
-	width = 12
+	width = 12;
+	shuttle_id = "supply_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -27761,10 +27761,10 @@
 	dir = 4;
 	dwidth = 3;
 	height = 5;
-	id = "mining_home";
 	name = "mining shuttle bay";
 	roundstart_template = /datum/map_template/shuttle/mining/delta;
-	width = 7
+	width = 7;
+	shuttle_id = "mining_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -62637,10 +62637,10 @@
 	dir = 1;
 	dwidth = 4;
 	height = 9;
-	id = "aux_base_zone";
 	name = "aux base zone";
 	roundstart_template = /datum/map_template/shuttle/aux_base/small;
-	width = 9
+	width = 9;
+	shuttle_id = "aux_base_zone"
 	},
 /turf/open/floor/plating,
 /area/construction/mining/aux_base)

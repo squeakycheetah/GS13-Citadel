@@ -1289,8 +1289,8 @@
 /area/security/detectives_office)
 "acy" = (
 /obj/docking_port/stationary/random{
-	id = "pod_lavaland3";
-	name = "lavaland"
+	name = "lavaland";
+	shuttle_id = "pod_lavaland3"
 	},
 /turf/open/space,
 /area/space/nearstation)
@@ -40229,9 +40229,9 @@
 	dir = 8;
 	dwidth = 2;
 	height = 11;
-	id = "ferry_home";
 	name = "port bay 2";
-	width = 5
+	width = 5;
+	shuttle_id = "ferry_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -63738,8 +63738,8 @@
 "ccg" = (
 /obj/docking_port/stationary/random{
 	dir = 8;
-	id = "pod_lavaland2";
-	name = "lavaland"
+	name = "lavaland";
+	shuttle_id = "pod_lavaland2"
 	},
 /turf/open/space,
 /area/space/nearstation)
@@ -78304,8 +78304,8 @@
 "cGA" = (
 /obj/docking_port/stationary/random{
 	dir = 2;
-	id = "pod_lavaland1";
-	name = "lavaland"
+	name = "lavaland";
+	shuttle_id = "pod_lavaland1"
 	},
 /turf/open/space,
 /area/space/nearstation)
@@ -79255,10 +79255,10 @@
 	dir = 8;
 	dwidth = 4;
 	height = 9;
-	id = "aux_base_zone";
 	name = "aux base zone";
 	roundstart_template = /datum/map_template/shuttle/aux_base/default;
-	width = 9
+	width = 9;
+	shuttle_id = "aux_base_zone"
 	},
 /turf/open/floor/plating,
 /area/construction/mining/aux_base)
@@ -80715,8 +80715,8 @@
 "cOd" = (
 /obj/docking_port/stationary/random{
 	dir = 4;
-	id = "pod_lavaland4";
-	name = "lavaland"
+	name = "lavaland";
+	shuttle_id = "pod_lavaland4"
 	},
 /turf/open/space,
 /area/space/nearstation)
