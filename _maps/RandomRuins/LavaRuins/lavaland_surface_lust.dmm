@@ -12,15 +12,16 @@
 /turf/open/floor/wood,
 /area/ruin/unpowered)
 "c" = (
-/obj/item/bdsm_whip/ridingcrop/fattening,
 /obj/structure/table/bronze,
-/turf/open/floor/grass/fairy/red,
+/obj/item/melee/curator_whip,
+/turf/open/floor/wood,
 /area/ruin/unpowered)
 "d" = (
 /turf/closed/wall/mineral/wood,
 /area/ruin/unpowered)
 "e" = (
-/turf/open/floor/grass/fairy/red,
+/obj/item/reagent_containers/glass/bottle/crocin,
+/turf/open/floor/wood,
 /area/ruin/unpowered)
 "h" = (
 /obj/effect/decal/cleanable/semen,
@@ -150,6 +151,10 @@
 	pixel_y = 7
 	},
 /obj/structure/table/wood/fancy/purple,
+/turf/open/floor/wood,
+/area/ruin/unpowered)
+"H" = (
+/obj/item/reagent_containers/glass/bottle/hexacrocin,
 /turf/open/floor/wood,
 /area/ruin/unpowered)
 "I" = (
@@ -426,7 +431,7 @@ i
 i
 d
 d
-O
+H
 O
 O
 x
@@ -449,7 +454,7 @@ d
 d
 e
 O
-O
+H
 K
 A
 m
@@ -469,7 +474,7 @@ V
 i
 d
 c
-e
+O
 O
 h
 I
@@ -491,8 +496,8 @@ u
 i
 d
 d
-e
 O
+H
 O
 K
 M

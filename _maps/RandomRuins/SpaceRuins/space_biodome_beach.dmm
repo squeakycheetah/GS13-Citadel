@@ -117,6 +117,7 @@
 "sy" = (/obj/effect/turf_decal/caution{dir = 4},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel,/area/ruin/powered/beach)
 "sO" = (/obj/machinery/jukebox/disco/indestructible,/turf/open/floor/light/colour_cycle,/area/ruin/powered/beach)
 "tK" = (/obj/machinery/vending/cola/red,/turf/open/floor/wood,/area/ruin/powered/beach)
+"ud" = (/obj/effect/mob_spawn/human/beach/alive,/turf/open/floor/carpet/orange,/area/ruin/powered/beach)
 "uH" = (/obj/machinery/vending/mealdor,/turf/open/floor/wood,/area/ruin/powered/beach)
 "vl" = (/obj/structure/closet/athletic_mixed,/obj/effect/turf_decal/sand,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "vY" = (/obj/machinery/hydroponics/constructable,/turf/open/floor/wood,/area/ruin/powered/beach)
@@ -129,7 +130,7 @@
 "Cy" = (/obj/machinery/light{dir = 4},/obj/effect/overlay/water,/obj/effect/overlay/water/top,/turf/open/floor/plating/beach/water,/area/ruin/powered/beach)
 "CP" = (/obj/effect/turf_decal/sand,/obj/machinery/light{dir = 8},/turf/open/floor/plasteel,/area/ruin/powered/beach)
 "Dc" = (/obj/effect/turf_decal/sand,/obj/machinery/shower{pixel_y = 24},/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
-"Dl" = (/obj/effect/mob_spawn/human/bartender/alive,/turf/closed/wall/mineral/sandstone,/area/ruin/powered/beach)
+"Dl" = (/obj/structure/chair/comfy/plywood,/obj/item/toy/plush/gs13/metha,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "Dp" = (/obj/machinery/light{dir = 8},/obj/structure/rack,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "Ec" = (/obj/machinery/vending/clothing,/turf/open/floor/wood,/area/ruin/powered/beach)
 "Ga" = (/obj/effect/turf_decal/caution{dir = 8},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel,/area/ruin/powered/beach)
@@ -160,11 +161,11 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaabWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWaaaaaaaaaaaa
 aaaaaaaabWbWbWadajaeafagahaiajakajalamanaoajcdQSQSQSQSQSQSQSQSQScsbWbWbWaaaaaaaa
 aaaaaabWbWaqararajabasasasatajjFavauauauauajarQSpUTtqTQSTPEcQRQSaCaCvYbWbWaaaaaa
-aaaabWbWadarapchajajajawajaxajajajajajajayajcgQSmLbebezwaCaCcWQSbmaCaCZhbWbWaaaa
+aaaabWbWadarapchajajajawajaxajajajajajajayajcgQSmLudbezwaCaCcWQSbmaCaCZhbWbWaaaa
 aaaabWapararazarcefEajaCaDhYaFaEaHaIajaJaKcearQSbebeKfQSaCaCaCQSQSfrQSQSQSbWaaaa
 aabWbWarararararaAaKajaCaCaCaCaCaCaMajaNaKaAapQSQSQSQSQSaCaCaCQSaAaAaAaAmHbWbWaa
 aabWaparaOaraOaraAgSajItaQaPaRajaCaSajaTaKaAapQSpUacqTQSaCaCaCQSxUararaqaAapbWaa
-aabWcgararaVararaAaKOlaWaWaWaWDlaCaXajaYaKaAarQSmLbebezwaCaCaGQSaAbEaZaraAchbWaa
+aabWcgararaVararaAaKOlaWaWaWaWajaCaXajaYaKaAarQSmLbebezwaCaCaGQSaAbEaZaraAchbWaa
 lFbWararbbarbbaraAaKaKaKoKaKaKbcRObdajSXaKaAarQSbebeKfQSaCaCAIQSaAararoDaAapbWXr
 aabWararararararaAaKaKGasOsygSajbgajajCPaKaAaUQSQSQSQSQSaCaCuHQSaAararaAaAarbWaa
 bWbWbWbWDparararaAaKaKaKblaKaKcjaBaBcjaKaKaAarQSpUacqTQSaCaCtKQSaAbzarWRbWbWbWbW
@@ -175,7 +176,7 @@ bWpgGcdwaAarararararararbxaparararaZararapararDcDcDcDcaAaAaAaAxUaAaparaAmoGccfbW
 pIGcwYmhBlararararaparmMararararaUarararararararararaparogararararararoTmhGcGcpI
 bWiwVOmhaAbzararapbxchbWcgarapararararbAbBarararaUararchbWcgarararaZaraAmhcuVNbW
 bWlMZlmhaAararararararPbararbEararbFchbGbHcgmbaparararapPbararaUarararaAmhlMcRbW
-bWbWbWbWcgbJareDarbJarbJbKbJarbJapararbLbMarararXparbJarbJarbJarbJarbJUMbWbWbWbW
+bWbWbWbWcgDlareDarbJarbJbKbJarbJapararbLbMarararXparbJarbJarbJarbJarbJUMbWbWbWbW
 aabWadapbNararbEbOararararararararbzarararbPararararararararaparararararapbNbWaa
 lFbWbQbRbRbSbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbSbRbRbRbWXr
 aabWbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbTbWaa

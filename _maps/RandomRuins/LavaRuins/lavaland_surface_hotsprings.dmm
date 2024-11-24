@@ -5,6 +5,10 @@
 "c" = (
 /turf/open/water,
 /area/lavaland/surface/outdoors)
+"k" = (
+/obj/structure/bed/double,
+/turf/open/floor/plating/beach/sand,
+/area/lavaland/surface/outdoors)
 "I" = (
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
@@ -35,7 +39,7 @@ I
 I
 a
 a
-I
+a
 a
 a
 I
@@ -46,11 +50,11 @@ I
 I
 I
 a
-U
-U
-U
-U
-U
+c
+c
+c
+c
+c
 a
 I
 I
@@ -58,32 +62,32 @@ I
 (4,1,1) = {"
 I
 a
-U
-L
 c
 c
 c
-L
-U
+c
+c
+c
+c
 a
 I
 "}
 (5,1,1) = {"
 I
 a
-U
 c
 c
 c
 c
 c
-U
+c
+c
 a
 I
 "}
 (6,1,1) = {"
 I
-I
+a
 U
 c
 c
@@ -91,20 +95,20 @@ c
 c
 c
 U
-I
+a
 I
 "}
 (7,1,1) = {"
 I
-a
 U
-c
-c
-c
-c
-c
 U
-a
+k
+k
+U
+k
+k
+U
+U
 I
 "}
 (8,1,1) = {"
@@ -112,9 +116,9 @@ I
 a
 U
 L
-c
-c
-c
+U
+U
+U
 L
 U
 a
@@ -139,7 +143,7 @@ I
 I
 a
 a
-I
+U
 a
 a
 I

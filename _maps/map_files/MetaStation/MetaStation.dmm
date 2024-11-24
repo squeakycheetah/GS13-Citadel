@@ -72023,7 +72023,7 @@
 /area/service/lawoffice)
 "rCF" = (
 /obj/structure/chair/sofa/corner{
-	dir = 1
+	dir = 4
 	},
 /turf/open/floor/carpet/red,
 /area/commons/locker)
