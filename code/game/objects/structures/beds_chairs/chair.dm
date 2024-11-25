@@ -14,8 +14,6 @@
 	var/buildstackamount = 1
 	var/item_chair = /obj/item/chair // if null it can't be picked up
 	layer = OBJ_LAYER
-	var/paddingcolor = "" //GS13 - better comfy chairs
-	var/mutable_appearance/lower
 
 /obj/structure/chair/examine(mob/user)
 	. = ..()
@@ -27,14 +25,6 @@
 	. = ..()
 	if(!anchored)	//why would you put these on the shuttle?
 		addtimer(CALLBACK(src, PROC_REF(RemoveFromLatejoin)), 0)
-
-	lower = GetLower() //if the chair has a lower part.
-	lower.layer = TABLE_LAYER
-	add_overlay(lower)
-	return ..()
-
-/obj/structure/chair/proc/GetLower()
-	return mutable_appearance('GainStation13/icons/obj/chairs.dmi', "[icon_state]_lower") //GS13 - better chairs
 
 /obj/structure/chair/ComponentInitialize()
 	. = ..()
@@ -200,25 +190,15 @@
 	max_integrity = 70
 	buildstackamount = 2
 	item_chair = null
-	paddingcolor = "#e82d2d" //GS13 - better comfy chairs
 	var/mutable_appearance/armrest
-	var/mutable_appearance/padding
 
-/obj/structure/chair/comfy/Initialize(mapload) //GS13 - better comfy chairs
-	padding = GetPadding()
-	padding.color = paddingcolor
-	if(paddingcolor)
-		add_overlay(padding)
-
+/obj/structure/chair/comfy/Initialize(mapload)
 	armrest = GetArmrest()
 	armrest.layer = ABOVE_MOB_LAYER
 	return ..()
 
 /obj/structure/chair/comfy/proc/GetArmrest()
 	return mutable_appearance('GainStation13/icons/obj/chairs.dmi', "comfychair_armrest") //GS13 - better comfy chairs
-
-/obj/structure/chair/comfy/proc/GetPadding()
-	return mutable_appearance('GainStation13/icons/obj/chairs.dmi', "comfychair_padding") //GS13 - better comfy chairs
 
 /obj/structure/chair/comfy/Destroy()
 	QDEL_NULL(armrest)
@@ -238,29 +218,27 @@
 	. = ..()
 	update_armrest()
 
-/obj/structure/chair/comfy/brown //GS13 - better comfy chairs
-	paddingcolor = rgb(255,113,0)
+/obj/structure/chair/comfy/brown
+	color = rgb(197, 130, 76)
 
-/obj/structure/chair/comfy/beige //GS13 - better comfy chairs
-	paddingcolor = rgb(255,253,195)
+/obj/structure/chair/comfy/beige
+	color = rgb(193, 191, 153)
 
-/obj/structure/chair/comfy/teal //GS13 - better comfy chairs
-	paddingcolor = rgb(0,255,255)
+/obj/structure/chair/comfy/teal
+	color = rgb(71, 190, 190)
 
-/obj/structure/chair/comfy/black //GS13 - better comfy chairs
-	paddingcolor = rgb(167,164,153)
+/obj/structure/chair/comfy/black
+	color = rgb(167,164,153)
 
-/obj/structure/chair/comfy/lime //GS13 - better comfy chairs
-	paddingcolor = rgb(255,251,0)
+/obj/structure/chair/comfy/lime
+	color = rgb(194, 192, 78)
 
-/obj/structure/chair/comfy/blue //GS13 - better comfy chairs
-	paddingcolor = rgb(125, 137, 218)
+/obj/structure/chair/comfy/purple
+	color = rgb(173, 85, 163)
 
-/obj/structure/chair/comfy/green //GS13 - better comfy chairs
-	paddingcolor = rgb(102, 137, 81)
+/obj/structure/chair/comfy/green
+	color = rgb(110, 148, 99)
 
-/obj/structure/chair/comfy/purple //GS13 - better comfy chairs
-	paddingcolor = rgb(130, 86, 171)
 
 /obj/structure/chair/comfy/plywood
 	name = "plywood chair"
@@ -277,7 +255,6 @@
 	name = "shuttle seat"
 	desc = "A comfortable, secure seat. It has a more sturdy looking buckling system, for smoother flights."
 	icon_state = "shuttle_chair"
-	paddingcolor = "" //gs13 - padding appearance
 
 /obj/structure/chair/comfy/shuttle/GetArmrest()
 	return mutable_appearance('icons/obj/chairs.dmi', "shuttle_chair_armrest")
