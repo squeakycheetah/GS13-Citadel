@@ -301,6 +301,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 
 	// Delete them from datacore.
 	var/announce_rank = null
+	var/rank = null
 	for(var/datum/data/record/medical_record as anything in GLOB.data_core.medical)
 		if(medical_record.fields["name"] == mob_occupant.real_name)
 			qdel(medical_record)
@@ -309,7 +310,8 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 			qdel(security_record)
 	for(var/datum/data/record/general_record as anything in GLOB.data_core.general)
 		if(general_record.fields["name"] == mob_occupant.real_name)
-			announce_rank = general_record.fields["rank"]
+			announce_rank = general_record.fields["job_title"]
+			rank = general_record.fields["rank"]
 			qdel(general_record)
 
 	var/obj/machinery/computer/cryopod/control_computer = control_computer_weakref?.resolve()
@@ -321,7 +323,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	// Make an announcement and log the person entering storage.
 	if(GLOB.announcement_systems.len && alert_comms) //GS13 EDIT
 		var/obj/machinery/announcement_system/announcer = pick(GLOB.announcement_systems)
-		announcer.announce("CRYOSTORAGE", mob_occupant.real_name, announce_rank, list())
+		announcer.announce("CRYOSTORAGE", mob_occupant.real_name, rank, announce_rank, list())
 
 	visible_message(span_notice("[src] hums and hisses as it moves [mob_occupant.real_name] into storage."))
 
