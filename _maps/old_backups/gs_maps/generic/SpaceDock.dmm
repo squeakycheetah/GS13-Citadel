@@ -8,10 +8,10 @@
 	dir = 2;
 	dwidth = 11;
 	height = 22;
-	shuttle_id = "whiteship_away";
-	json_key = "whiteship";
+	id = "whiteship_away";
 	name = "Deep Space";
-	width = 35
+	width = 35;
+	json_key = "whiteship"
 	},
 /turf/open/space,
 /area/space)
