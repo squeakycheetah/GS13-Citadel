@@ -359,13 +359,22 @@
 					if("belly_color")
 						genital_overlay.color = "#[dna.features["belly_color"]]"
 
-			//GS13 Port - Specific check for belly since we need organ values specifically and not sprite_accessories, maybe can rewrite this more generically later?
-			// In any case I don't want any specific calculations done here
+			//GS13 -	Because each genital's file has different naming schemes for their icon_states,
+			//			I've made it so each type is checked and the icon_state built based on which genital it is
 			if(G.slot == "belly")
 				genital_overlay.icon = G.icon
 				genital_overlay.icon_state = "[G.icon_state]_[aroused_state]_[layertext]"
 			else
-				genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size][(dna.species.use_skintones && !dna.skin_tone_override) ? "_s" : ""]_[aroused_state]_[layertext]"
+				if(G.slot == "breasts")
+					genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size][(dna.species.use_skintones && !dna.skin_tone_override) ? "-s" : ""]_[aroused_state]_[layertext]"
+				else
+					if(G.slot == "penis")
+						genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
+					else
+						if(G.slot == "vagina")
+							genital_overlay.icon_state = "[G.slot][(dna.species.use_skintones && !dna.skin_tone_override) ? "-s" : ""]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
+						else
+							genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size][(dna.species.use_skintones && !dna.skin_tone_override) ? "_s" : ""]_[aroused_state]_[layertext]"
 
 			if(layers_num[layer] == GENITALS_FRONT_LAYER && G.genital_flags & GENITAL_THROUGH_CLOTHES)
 				genital_overlay.layer = -GENITALS_EXPOSED_LAYER
