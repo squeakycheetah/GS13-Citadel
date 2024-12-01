@@ -19,7 +19,7 @@
 	name = "GATO Badge - Correspondent"
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
-	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny", "Not Number", "Not_Number", "NotNumber",)
+	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny", "Not Number", "Not_Number", "NotNumber", "PointNshoot", "Plapp", "CubicP1sa", "colorlessspy", "M16nPregnant")
 
 /datum/gear/donator/halsey_overcoat
 	name = "Halsey's Commander Overcoat"
@@ -43,7 +43,7 @@
 	name = "Dezir Rose Plush"
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/toy/plush/gs13/rose
-	ckeywhitelist = list("eremitanovem", "sonoida")
+	ckeywhitelist = list("eremitanovem", "sonoida", "Absolutely_Free")
 
 /datum/gear/donator/chloe_plush
 	name = "Chloe Plush"
@@ -135,3 +135,4 @@
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/weldingtool/bronze
 	ckeywhitelist = list("almaniak", "Almaniak", "AlManiak")
+
