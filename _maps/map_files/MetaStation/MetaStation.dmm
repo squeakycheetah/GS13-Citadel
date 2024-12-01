@@ -74477,6 +74477,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/machinery/vending/wardrobe/cap_wardrobe,
 /turf/open/floor/carpet,
 /area/command/heads_quarters/captain/private)
 "tcb" = (

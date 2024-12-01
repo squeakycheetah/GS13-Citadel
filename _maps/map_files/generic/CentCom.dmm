@@ -28422,9 +28422,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
-"vkp" = (
-/turf/open/space/basic,
-/area/centcom/prison)
 "vkB" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/neutral,
@@ -86066,9 +86063,9 @@ ntl
 ntl
 ntl
 ntl
-vkp
-vkp
-vkp
+uKm
+uKm
+uKm
 uKm
 uKm
 uKm
