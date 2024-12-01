@@ -61308,6 +61308,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/engineering/main)
+"oUc" = (
+/obj/effect/landmark/carpspawn,
+/turf/open/space/basic,
+/area/space/station_ruins)
 "oVH" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -78625,7 +78629,7 @@ uIu
 uIu
 uIu
 uIu
-uIu
+oUc
 uIu
 uIu
 uIu
@@ -90454,7 +90458,7 @@ aaa
 aaa
 aaa
 kyV
-afJ
+mZE
 aby
 aaa
 oMQ

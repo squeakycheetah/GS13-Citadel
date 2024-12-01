@@ -61420,6 +61420,10 @@
 /area/security/courtroom{
 	name = "Park"
 	})
+"lyC" = (
+/obj/effect/landmark/carpspawn,
+/turf/open/space/basic,
+/area/space)
 "lyF" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -113005,7 +113009,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+lMJ
 aaa
 aaf
 aaf
@@ -113262,7 +113266,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+bpu
 aaf
 aaf
 aaa
@@ -113519,7 +113523,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cEA
 aaa
 aaf
 aaa
@@ -113760,7 +113764,7 @@ pNo
 pNo
 pNo
 pNo
-ffs
+vcw
 pNo
 pNo
 pNo
@@ -113776,7 +113780,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cEA
 aaa
 aaf
 aaa
@@ -114033,7 +114037,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+bpu
 aaa
 aaf
 aaf
@@ -114290,7 +114294,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cEA
 aaa
 aaf
 aaa
@@ -114547,7 +114551,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cEA
 aaf
 aaf
 aaa
@@ -114804,7 +114808,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+bpu
 aaa
 aaf
 aaa
@@ -115061,7 +115065,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+lMJ
 aaa
 aaf
 aaa
@@ -123021,7 +123025,7 @@ pNo
 aaa
 aaa
 aaa
-aaa
+lyC
 aaa
 aaa
 aaa
