@@ -21,13 +21,17 @@
 	var/able_to_struggle_out = TRUE
 	/// Transfer to vore belly when eaten
 	var/transfer_to_vore = TRUE
+	/// Has the mob already been removed?
+	var/mob_removed = FALSE
 
 /datum/component/transformation_item/Initialize()
 	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, PROC_REF(examine))
-	RegisterSignal(parent, COMSIG_PARENT_QDELETING, PROC_REF(remove_mob))
+	RegisterSignal(parent, COMSIG_PARENT_PREQDELETED, PROC_REF(remove_mob))
 
 /datum/component/transformation_item/Destroy(force, silent)
-	remove_mob()
+	if(!mob_removed)
+		remove_mob()
+
 	return ..()
 
 /datum/component/transformation_item/proc/examine(datum/source, mob/user, list/examine_list)
@@ -51,6 +55,7 @@
 	ADD_TRAIT(mob_to_register, TRAIT_RESISTCOLD, src)
 	ADD_TRAIT(mob_to_register, TRAIT_RESISTLOWPRESSURE, src)
 	ADD_TRAIT(mob_to_register, TRAIT_LOWPRESSURECOOLING, src)
+	ADD_TRAIT(mob_to_register, TRAIT_NOBREATH, src)
 
 	if(!able_to_speak)
 		ADD_TRAIT(mob_to_register, TRAIT_MUTE, src)
@@ -91,6 +96,7 @@
 	REMOVE_TRAIT(transformed_mob, TRAIT_RESISTCOLD, src)
 	REMOVE_TRAIT(transformed_mob, TRAIT_RESISTLOWPRESSURE, src)
 	REMOVE_TRAIT(transformed_mob, TRAIT_LOWPRESSURECOOLING, src)
+	REMOVE_TRAIT(transformed_mob, TRAIT_NOBREATH, src)
 
 	var/mob/living/carbon/human/human_mob = transformed_mob
 	if(istype(human_mob))
@@ -99,7 +105,11 @@
 		human_mob.update_disabled_bodyparts()
 
 	var/atom/parent_atom = parent
-	transformed_mob.forceMove(parent_atom.loc)
+	var/turf/parent_turf = get_turf(parent_atom)
+
+	transformed_mob.forceMove(parent_turf)
 	if(scale_object)
 		parent_atom.transform = null
 
+	mob_removed = TRUE
+	qdel(src)

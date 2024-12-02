@@ -36992,7 +36992,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/machinery/vending/mealdor,
+/obj/machinery/vending/wardrobe/cap_wardrobe,
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/captain)
 "bjP" = (
@@ -99551,7 +99551,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+aaB
 aaa
 aaa
 aaa
@@ -103137,7 +103137,7 @@ aeo
 aaa
 aaa
 aaa
-aaB
+aaa
 aaa
 aaa
 aaa
