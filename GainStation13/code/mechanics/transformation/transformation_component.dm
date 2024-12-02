@@ -101,7 +101,9 @@
 		human_mob.update_disabled_bodyparts()
 
 	var/atom/parent_atom = parent
-	transformed_mob.forceMove(parent_atom.loc)
+	var/turf/parent_turf = get_turf(parent_atom)
+
+	transformed_mob.forceMove(parent_turf)
 	if(scale_object)
 		parent_atom.transform = null
 
