@@ -7554,17 +7554,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
-"fLo" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 2;
-	height = 7;
-	name = "recovery ship";
-	width = 5;
-	shuttle_id = "pod_away"
-	},
-/turf/open/floor/plating,
-/area/centcom/control)
 "fLE" = (
 /obj/structure/table,
 /obj/item/reagent_containers/glass/beaker/lipoifier,
@@ -10420,17 +10409,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/control)
-"hYv" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 1;
-	height = 4;
-	name = "recovery ship";
-	width = 3;
-	shuttle_id = "pod2_away"
-	},
-/turf/open/floor/plating,
-/area/centcom/control)
 "hYx" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/donut_box,
@@ -13196,17 +13174,6 @@
 "jWB" = (
 /turf/closed/indestructible/wood,
 /area/awaymission/jungleresort)
-"jXc" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 1;
-	height = 4;
-	name = "recovery ship";
-	width = 3;
-	shuttle_id = "pod3_away"
-	},
-/turf/open/floor/plating,
-/area/centcom/control)
 "jXk" = (
 /obj/machinery/light{
 	dir = 8
@@ -26149,17 +26116,6 @@
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel,
 /area/syndicate_mothership)
-"tvK" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 1;
-	height = 4;
-	name = "recovery ship";
-	width = 3;
-	shuttle_id = "pod4_away"
-	},
-/turf/open/floor/plating,
-/area/centcom/control)
 "twJ" = (
 /obj/item/banner/gato,
 /turf/open/floor/plasteel,
@@ -81692,19 +81648,19 @@ ntl
 ntl
 mKC
 vsN
-fLo
+vsN
 vsN
 mpw
 vsN
-hYv
+vsN
 vsN
 mpw
 vsN
-jXc
+vsN
 vsN
 mpw
 vsN
-tvK
+vsN
 vsN
 aHU
 xMy

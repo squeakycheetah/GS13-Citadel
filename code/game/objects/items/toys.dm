@@ -684,7 +684,7 @@
 /obj/item/toy/cards/deck
 	name = "deck of cards"
 	desc = "A deck of space-grade playing cards."
-	icon = 'icons/obj/toys/toy.dmi'
+	icon = 'GainStation13/icons/obj/toys/toy.dmi' //GS13 - GATO sprite
 	deckstyle = "nanotrasen"
 	icon_state = "deck_nanotrasen_full"
 	w_class = WEIGHT_CLASS_SMALL
@@ -815,7 +815,7 @@
 /obj/item/toy/cards/cardhand
 	name = "hand of cards"
 	desc = "A number of cards not in a deck, customarily held in ones hand."
-	icon = 'icons/obj/toys/toy.dmi'
+	icon = 'GainStation13/icons/obj/toys/toy.dmi' //GS13 - GATO sprite
 	icon_state = "none"
 	w_class = WEIGHT_CLASS_TINY
 	var/list/currenthand = list()
@@ -912,7 +912,7 @@
 /obj/item/toy/cards/singlecard
 	name = "card"
 	desc = "a card"
-	icon = 'icons/obj/toys/toy.dmi'
+	icon = 'GainStation13/icons/obj/toys/toy.dmi' //GS13 - GATO sprite
 	icon_state = "singlecard_down_nanotrasen"
 	w_class = WEIGHT_CLASS_TINY
 	var/cardname = null
