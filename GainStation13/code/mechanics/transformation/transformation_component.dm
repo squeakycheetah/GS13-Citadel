@@ -51,6 +51,7 @@
 	ADD_TRAIT(mob_to_register, TRAIT_RESISTCOLD, src)
 	ADD_TRAIT(mob_to_register, TRAIT_RESISTLOWPRESSURE, src)
 	ADD_TRAIT(mob_to_register, TRAIT_LOWPRESSURECOOLING, src)
+	ADD_TRAIT(mob_to_register, TRAIT_NOBREATH, src)
 
 	if(!able_to_speak)
 		ADD_TRAIT(mob_to_register, TRAIT_MUTE, src)
@@ -91,6 +92,7 @@
 	REMOVE_TRAIT(transformed_mob, TRAIT_RESISTCOLD, src)
 	REMOVE_TRAIT(transformed_mob, TRAIT_RESISTLOWPRESSURE, src)
 	REMOVE_TRAIT(transformed_mob, TRAIT_LOWPRESSURECOOLING, src)
+	REMOVE_TRAIT(transformed_mob, TRAIT_NOBREATH, src)
 
 	var/mob/living/carbon/human/human_mob = transformed_mob
 	if(istype(human_mob))
