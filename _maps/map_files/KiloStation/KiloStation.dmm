@@ -59126,23 +59126,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/dark,
 /area/engineering/atmos)
-"bUU" = (
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 8
-	},
-/turf/open/floor/plasteel)
 "bUV" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -113641,7 +113624,7 @@ atr
 auG
 xIS
 bsP
-bUU
+bQx
 bOF
 bYW
 seV
