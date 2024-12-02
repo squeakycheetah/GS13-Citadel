@@ -21,13 +21,17 @@
 	var/able_to_struggle_out = TRUE
 	/// Transfer to vore belly when eaten
 	var/transfer_to_vore = TRUE
+	/// Has the mob already been removed?
+	var/mob_removed = FALSE
 
 /datum/component/transformation_item/Initialize()
 	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, PROC_REF(examine))
-	RegisterSignal(parent, COMSIG_PARENT_QDELETING, PROC_REF(remove_mob))
+	RegisterSignal(parent, COMSIG_PARENT_PREQDELETED, PROC_REF(remove_mob))
 
 /datum/component/transformation_item/Destroy(force, silent)
-	remove_mob()
+	if(!mob_removed)
+		remove_mob()
+
 	return ..()
 
 /datum/component/transformation_item/proc/examine(datum/source, mob/user, list/examine_list)
@@ -107,3 +111,5 @@
 	if(scale_object)
 		parent_atom.transform = null
 
+	mob_removed = TRUE
+	qdel(src)
