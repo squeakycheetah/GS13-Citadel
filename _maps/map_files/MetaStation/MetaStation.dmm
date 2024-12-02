@@ -9756,13 +9756,13 @@
 	dir = 8
 	},
 /obj/structure/flora/junglebush,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
 "aIN" = (
 /obj/structure/flora/rock,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -9779,13 +9779,13 @@
 /obj/machinery/camera{
 	c_tag = "Courtroom"
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
 "aIQ" = (
 /obj/structure/flora/ausbushes/reedbush,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -9794,13 +9794,13 @@
 	dir = 8
 	},
 /obj/structure/railing,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
 "aIS" = (
 /obj/structure/flora/junglebush/c,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -9916,7 +9916,7 @@
 	on = 1;
 	pixel_x = 20
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -9928,13 +9928,13 @@
 	})
 "aKb" = (
 /obj/structure/flora/rock/pile,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
 "aKc" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -9942,7 +9942,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -10140,12 +10140,12 @@
 /area/cargo/storage)
 "aLB" = (
 /obj/structure/flora/junglebush,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
 "aLC" = (
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -10262,13 +10262,13 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
 "aMN" = (
 /obj/structure/railing,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -10277,7 +10277,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -21090,7 +21090,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
@@ -61416,10 +61416,14 @@
 	dir = 4
 	},
 /obj/structure/railing,
-/turf/open/water,
+/turf/open/water/decorative,
 /area/security/courtroom{
 	name = "Park"
 	})
+"lyC" = (
+/obj/effect/landmark/carpspawn,
+/turf/open/space/basic,
+/area/space)
 "lyF" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -74477,6 +74481,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/machinery/vending/wardrobe/cap_wardrobe,
 /turf/open/floor/carpet,
 /area/command/heads_quarters/captain/private)
 "tcb" = (
@@ -113004,7 +113009,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+lMJ
 aaa
 aaf
 aaf
@@ -113261,7 +113266,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+bpu
 aaf
 aaf
 aaa
@@ -113518,7 +113523,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cEA
 aaa
 aaf
 aaa
@@ -113759,7 +113764,7 @@ pNo
 pNo
 pNo
 pNo
-ffs
+vcw
 pNo
 pNo
 pNo
@@ -113775,7 +113780,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cEA
 aaa
 aaf
 aaa
@@ -114032,7 +114037,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+bpu
 aaa
 aaf
 aaf
@@ -114289,7 +114294,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cEA
 aaa
 aaf
 aaa
@@ -114546,7 +114551,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cEA
 aaf
 aaf
 aaa
@@ -114803,7 +114808,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+bpu
 aaa
 aaf
 aaa
@@ -115060,7 +115065,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+lMJ
 aaa
 aaf
 aaa
@@ -123020,7 +123025,7 @@ pNo
 aaa
 aaa
 aaa
-aaa
+lyC
 aaa
 aaa
 aaa

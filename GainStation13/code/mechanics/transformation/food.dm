@@ -4,12 +4,12 @@
 		return FALSE
 
 	var/mob/living/food_mob = transformation_component.transformed_mob
-	if(!istype(food_mob) || !(food_mob?.vore_flags & DEVOURABLE) || (eater?.vore_flags & NO_VORE) || !istype(eater.vore_selected))
+	var/obj/belly/vore_belly = eater?.vore_selected
+	if(!istype(food_mob) || !(food_mob?.vore_flags & DEVOURABLE) || (eater?.vore_flags & NO_VORE) || !istype(vore_belly))
 		return FALSE
 
 	qdel(transformation_component)
-	var/obj/belly/vore_belly = eater.vore_selected
-	if(!vore_belly.nom_mob(food_mob,eater))
+	if(!vore_belly?.nom_mob(food_mob,eater))
 		return FALSE
 
 	return TRUE

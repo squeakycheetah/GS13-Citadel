@@ -361,21 +361,21 @@
 
 			//GS13 -	Because each genital's file has different naming schemes for their icon_states,
 			//			I've made it so each type is checked and the icon_state built based on which genital it is
-			if(G.slot == "belly")
-				genital_overlay.icon = G.icon
-				genital_overlay.icon_state = "[G.icon_state]_[aroused_state]_[layertext]"
-			else
-				if(G.slot == "breasts")
+			switch(G.slot)
+				if("belly")
+					genital_overlay.icon = G.icon
+					genital_overlay.icon_state = "[G.icon_state]_[aroused_state]_[layertext]"
+				if("breasts")
 					genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size][(dna.species.use_skintones && !dna.skin_tone_override) ? "-s" : ""]_[aroused_state]_[layertext]"
-				else
-					if(G.slot == "penis")
-						genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
-					else
-						if(G.slot == "vagina")
-							genital_overlay.icon_state = "[G.slot][(dna.species.use_skintones && !dna.skin_tone_override) ? "-s" : ""]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
-						else
-							genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size][(dna.species.use_skintones && !dna.skin_tone_override) ? "_s" : ""]_[aroused_state]_[layertext]"
-
+				if("penis")
+					genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
+				if("testicles")
+					genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
+				if("vagina")
+					genital_overlay.icon_state = "[G.slot][(dna.species.use_skintones && !dna.skin_tone_override) ? "-s" : ""]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
+				if("butt")
+					genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size][(dna.species.use_skintones && !dna.skin_tone_override) ? "_s" : ""]_[aroused_state]_[layertext]"
+			//GS13 END
 			if(layers_num[layer] == GENITALS_FRONT_LAYER && G.genital_flags & GENITAL_THROUGH_CLOTHES)
 				genital_overlay.layer = -GENITALS_EXPOSED_LAYER
 				LAZYADD(fully_exposed, genital_overlay)
