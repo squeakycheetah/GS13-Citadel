@@ -3977,6 +3977,7 @@
 #include "GainStation13\code\machinery\feeding_tube.dm"
 #include "GainStation13\code\machinery\feeding_tube_industrial.dm"
 #include "GainStation13\code\machinery\gym.dm"
+#include "GainStation13\code\machinery\doors\airlock_types.dm"
 #include "GainStation13\code\machinery\powered_quantum_pad.dm"
 #include "GainStation13\code\machinery\supply_teleporter.dm"
 #include "GainStation13\code\mechanics\calorite.dm"
