@@ -144,7 +144,8 @@
 	dir = 4
 	},
 /obj/machinery/shieldwallgen,
-/turf/open/floor/plasteel/dark)
+/turf/open/floor/plasteel/dark,
+/area/command/teleporter)
 "aar" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/blobstart,
@@ -54392,9 +54393,6 @@
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/junction/yjunction{
-	dir = 1
-	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
@@ -56109,8 +56107,8 @@
 	},
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 9
+/obj/structure/disposalpipe/junction/yjunction{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
