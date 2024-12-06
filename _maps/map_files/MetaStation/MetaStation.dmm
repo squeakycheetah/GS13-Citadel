@@ -1226,6 +1226,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/fore)
 "aeg" = (
@@ -2823,6 +2824,7 @@
 	req_access_txt = "10; 13"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "ake" = (
@@ -5408,6 +5410,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "arZ" = (
@@ -5450,6 +5453,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "asd" = (
@@ -5844,6 +5848,7 @@
 /obj/machinery/door/airlock/external{
 	req_access_txt = "13"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "ato" = (
@@ -6783,11 +6788,13 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "avY" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
 /obj/machinery/door/airlock/external{
 	name = "Labor Camp Shuttle Airlock";
-	req_access_txt = "2"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	req_access_txt = "2";
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -7139,15 +7146,17 @@
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/fore)
 "awY" = (
-/obj/machinery/door/airlock/external{
-	name = "Solar Maintenance";
-	req_access_txt = "10; 13"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external{
+	name = "Solar Maintenance";
+	req_access_txt = "10; 13";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/aft)
@@ -8261,8 +8270,10 @@
 /turf/open/space/basic,
 /area/space)
 "aAW" = (
+/obj/structure/fans/tiny,
 /obj/machinery/door/airlock/external{
-	name = "Labor Camp Shuttle Airlock"
+	name = "Labor Camp Shuttle Airlock";
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/fore)
@@ -9653,7 +9664,8 @@
 	},
 /obj/machinery/door/airlock/security{
 	name = "Security-Storage Backroom";
-	req_access_txt = "63"
+	req_access_txt = "63";
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/fore)
@@ -20435,7 +20447,8 @@
 "bGq" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Library Maintenance";
-	req_one_access_txt = "12;37"
+	req_one_access_txt = "12;37";
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
@@ -21537,12 +21550,14 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bOY" = (
-/obj/machinery/door/airlock/external{
-	req_access_txt = "13"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13";
+	dir = 4
+	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "bPf" = (
@@ -24201,10 +24216,6 @@
 /area/medical/storage)
 "cad" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/security/glass{
-	name = "Medbay Security Post";
-	req_access_txt = "63"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -24219,6 +24230,11 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/machinery/door/airlock/security/glass{
+	name = "Medbay Security Post";
+	req_access_txt = "63";
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -24817,7 +24833,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance{
-	req_one_access_txt = "12;5"
+	dir = 4;
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
@@ -24869,11 +24886,12 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cbI" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
 /obj/machinery/door/airlock{
 	name = "Medbay Emergency Storage";
-	req_access_txt = "5"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	req_access_txt = "5";
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -26506,9 +26524,12 @@
 /turf/open/space,
 /area/space/nearstation)
 "cfA" = (
-/obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external{
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -39692,11 +39713,13 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "13"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
@@ -44378,14 +44401,15 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/aft)
 "dbP" = (
-/obj/machinery/door/airlock/external{
-	name = "Solar Maintenance";
-	req_access_txt = "10; 13"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external{
+	name = "Solar Maintenance";
+	req_access_txt = "10; 13";
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -47217,10 +47241,11 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "13"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13";
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -48472,6 +48497,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "dYw" = (
@@ -52792,13 +52818,15 @@
 /turf/open/floor/plasteel/dark,
 /area/commons/fitness/recreation)
 "gBn" = (
-/obj/machinery/door/airlock/external{
-	req_access_txt = "24"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/machinery/door/airlock/external{
+	name = "Atmospherics External Airlock";
+	req_access_txt = "24";
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/engineering/atmos)
 "gBI" = (
@@ -54367,7 +54395,8 @@
 "hzS" = (
 /obj/machinery/door/poddoor{
 	id = "Secure Storage";
-	name = "Secure Storage"
+	name = "Secure Storage";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/engineering/main)
@@ -58247,10 +58276,11 @@
 /turf/open/floor/plasteel,
 /area/commons/toilet/auxiliary)
 "jKK" = (
-/obj/machinery/door/airlock/external{
-	req_access_txt = "13"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13";
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -64587,7 +64617,8 @@
 /area/commons/dorms)
 "nry" = (
 /obj/machinery/door/airlock{
-	id_tag = "AuxToilet1";
+	dir = 8;
+	id_tag = "Toilet1";
 	name = "Unit 1"
 	},
 /turf/open/floor/plasteel,
@@ -64669,7 +64700,8 @@
 "nxP" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
-	name = "Library"
+	name = "Library";
+	dir = 8
 	},
 /turf/open/floor/wood,
 /area/service/library)
@@ -66095,7 +66127,8 @@
 "olw" = (
 /obj/machinery/door/airlock/atmos/glass{
 	name = "Atmospherics Monitoring";
-	req_access_txt = "24"
+	req_access_txt = "24";
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
@@ -66338,7 +66371,8 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod Four";
-	req_access_txt = "32"
+	req_access_txt = "32";
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/engineering/break_room)
@@ -67920,11 +67954,12 @@
 /turf/open/floor/plasteel,
 /area/commons/fitness/recreation)
 "png" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
 /obj/machinery/door/airlock/external{
 	name = "Security External Airlock";
-	req_access_txt = "1"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	req_access_txt = "1";
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -68348,8 +68383,10 @@
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/hos)
 "pzj" = (
-/obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/external{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -68506,12 +68543,13 @@
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "pDb" = (
-/obj/machinery/door/airlock/external{
-	name = "Atmospherics External Airlock";
-	req_access_txt = "24"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
+	},
+/obj/machinery/door/airlock/external{
+	name = "Atmospherics External Airlock";
+	req_access_txt = "24";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/engineering/atmos)
@@ -70633,7 +70671,8 @@
 /area/service/bar)
 "qPs" = (
 /obj/machinery/door/airlock{
-	id_tag = "AuxToilet2";
+	dir = 8;
+	id_tag = "Toilet2";
 	name = "Unit 2"
 	},
 /turf/open/floor/plasteel,
@@ -78104,7 +78143,8 @@
 "vls" = (
 /obj/machinery/door/airlock{
 	id_tag = "AuxToilet3";
-	name = "Unit 3"
+	name = "Unit 3";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/commons/toilet/auxiliary)
@@ -79183,7 +79223,7 @@
 /area/science/server)
 "vWI" = (
 /obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/wood,
+/turf/open/floor/plating,
 /area/service/library)
 "vWO" = (
 /turf/closed/wall,
@@ -79644,12 +79684,14 @@
 /turf/open/floor/plasteel/dark,
 /area/engineering/storage/tech)
 "wiZ" = (
-/obj/machinery/door/airlock/external{
-	name = "Security External Airlock";
-	req_access_txt = "1"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external{
+	name = "Security External Airlock";
+	req_access_txt = "1";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/security/prison)
@@ -83511,6 +83553,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
 "ygd" = (
