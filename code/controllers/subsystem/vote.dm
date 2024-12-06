@@ -252,8 +252,11 @@ SUBSYSTEM_DEF(vote)
 	if(vote_system == HIGHEST_MEDIAN_VOTING)
 		calculate_highest_median(vote_title_text)
 	var/list/winners = list()
-	if(mode == "transfer") //GS13 - removed a bit of code that made it so extending the round requires an incremental amount of votes to win
-		if(choices[VOTE_TRANSFER] >= choices[VOTE_CONTINUE])
+	if(mode == "transfer")
+		var/amount_required = 1 + transfer_votes_done
+		transfer_votes_done = 0 //gs13 tweaked from 1 to 0 (also removed it incrementing with each vote)
+		text += "\nExtending requires at least [amount_required] votes to win."
+		if(choices[VOTE_CONTINUE] < amount_required || choices[VOTE_TRANSFER] >= choices[VOTE_CONTINUE])
 			winners = list(VOTE_TRANSFER)
 		else
 			winners = list(VOTE_CONTINUE)
