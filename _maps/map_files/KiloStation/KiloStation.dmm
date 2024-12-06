@@ -2563,6 +2563,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard/fore)
 "aeM" = (
@@ -9368,6 +9369,7 @@
 	req_access_txt = "10; 13";
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/fore)
 "aqq" = (
@@ -12063,6 +12065,7 @@
 	req_access_txt = "10; 13";
 	dir = 4
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "auP" = (
@@ -39048,6 +39051,7 @@
 	req_access_txt = "48";
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/cargo/miningoffice)
 "bnm" = (
@@ -47840,6 +47844,7 @@
 	name = "Toxins Launcher Bay Door"
 	},
 /obj/effect/turf_decal/delivery,
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard)
 "bBY" = (
@@ -51860,6 +51865,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/cargo/storage)
 "bIR" = (
@@ -55085,6 +55091,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/cargo/storage)
 "bOh" = (
@@ -62333,6 +62340,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/fore)
 "bZH" = (
@@ -62463,6 +62471,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
 "bZQ" = (
@@ -65983,6 +65992,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/atmos)
 "cgl" = (
@@ -67083,6 +67093,7 @@
 	req_access_txt = "10; 13";
 	dir = 4
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
 "chW" = (
@@ -67173,6 +67184,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
 "cig" = (
@@ -71910,6 +71922,7 @@
 	name = "Ferry Shuttle Airlock";
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/aft)
 "cqO" = (
@@ -74646,6 +74659,7 @@
 	req_access_txt = "10; 13";
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/aft)
 "cwc" = (
@@ -75372,6 +75386,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/security/processing)
 "cxt" = (
@@ -75413,6 +75428,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/security/processing)
 "cxD" = (
@@ -82793,6 +82809,7 @@
 	req_access_txt = "13";
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard)
 "lrR" = (
@@ -83353,6 +83370,15 @@
 	},
 /turf/open/space,
 /area/solars/port/aft)
+"pdD" = (
+/obj/machinery/door/poddoor{
+	id = "chapelgun";
+	name = "Chapel Launcher Door"
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/dark,
+/area/service/chapel/office)
 "pei" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -107094,7 +107120,7 @@ aaa
 aaa
 aaa
 acK
-tdM
+pdD
 cuQ
 cxY
 tdM
