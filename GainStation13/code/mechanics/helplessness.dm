@@ -9,7 +9,7 @@
 		to_chat(H, "<span class='warning'>You are too fat to wear anything on your back.</span>")
 		return FALSE
 
-	if(!istype(I, /obj/item/clothing/under/color/grey/modular) && HAS_TRAIT(H, TRAIT_NO_JUMPSUIT) && slot == ITEM_SLOT_ICLOTHING)
+	if(HAS_TRAIT(H, TRAIT_NO_JUMPSUIT) && slot == ITEM_SLOT_ICLOTHING)
 		to_chat(H, "<span class='warning'>You are too fat to wear [I].</span>")
 		return FALSE
 
