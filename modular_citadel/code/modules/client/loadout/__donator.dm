@@ -19,7 +19,7 @@
 	name = "GATO Badge - Correspondent"
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
-	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny", "Not Number", "Not_Number", "NotNumber", "PointNshoot", "Plapp", "CubicP1sa", "colorlessspy", "M16nPregnant")
+	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny", "Not Number", "Not_Number", "NotNumber", "PointNshoot", "Plapp", "CubicP1sa", "cubicp1sa", "plapp", "colorlessspy", "M16nPregnant")
 
 /datum/gear/donator/halsey_overcoat
 	name = "Halsey's Commander Overcoat"
