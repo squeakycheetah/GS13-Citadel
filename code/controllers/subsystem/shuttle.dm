@@ -668,7 +668,7 @@ SUBSYSTEM_DEF(shuttle)
 		priority_announce("The shift has come to an end and the shuttle called. [GLOB.security_level == SEC_LEVEL_RED ? "Red Alert state confirmed: Dispatching priority shuttle. " : "" ]It will arrive in [emergency.timeLeft(600)] minutes.", null, "shuttlecalled", "Priority")
 		log_game("Round end vote passed. Shuttle has been auto-called.")
 		message_admins("Round end vote passed. Shuttle has been auto-called.")
-	emergencyNoRecall = TRUE
+	//emergencyNoRecall = TRUE	//GS13 Edit - To ensure admins can recall vote-called shuttle this assignment will be skipped
 	endvote_passed = TRUE
 
 /datum/controller/subsystem/shuttle/proc/action_load(datum/map_template/shuttle/loading_template, obj/docking_port/stationary/destination_port, replace = FALSE)

@@ -32,7 +32,7 @@
 			var/mob/living/carbon/C = m
 			if(C)
 				C.perma_fat_save(C)
-	..()
+	. = ..()
 
 /obj/machinery/cryopod/despawn_occupant()
 	var/mob/living/mob_occupant = occupant
@@ -40,7 +40,7 @@
 		var/mob/living/carbon/C = mob_occupant
 		if(C)
 			C.perma_fat_save(C)
-	..()
+	. = ..()
 
 /*
 /datum/preferences/proc/perma_fat_save(character)
