@@ -131,48 +131,48 @@
 		U.modular_items -= src
 
 /obj/item/clothing/under/color/grey
+	name = "grey jumpsuit (Modular)"
 	modular_icon_location = 'GainStation13/icons/mob/modclothes/modular_grey.dmi'
+	desc = "A tasteful grey jumpsuit that reminds you of the good old days."
 
 /obj/item/clothing/under/color/grey/service
-	name = "service grey suit"
+	name = "service grey jumpsuit (Modular)"
 	desc = "Grey only in name"
 	color = "#6AD427"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 5)
 
 /obj/item/clothing/under/color/grey/medical
-	name = "medical grey suit"
+	name = "medical grey jumpsuit (Modular)"
 	desc = "Grey only in name"
 	color = "#5A96BB"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 10, RAD = 0, FIRE = 0, ACID = 0, WOUND = 5)
 
 /obj/item/clothing/under/color/grey/cargo
-	name = "cargo grey suit"
+	name = "cargo grey jumpsuit (Modular)"
 	desc = "Grey only in name"
 	color = "#BB9042"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 80, ACID = 0, WOUND = 10)
 
 /obj/item/clothing/under/color/grey/engi
-	name = "engineering grey suit"
+	name = "engineering grey jumpsuit (Modular)"
 	desc = "Grey only in name"
 	color = "#FF8800"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 10, FIRE = 60, ACID = 20, WOUND = 5)
 
 /obj/item/clothing/under/color/grey/science
-	name = "science grey suit"
+	name = "science grey jumpsuit (Modular)"
 	desc = "Grey only in name"
 	color = "#9900FF"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 5)
 
 /obj/item/clothing/under/color/grey/security
-	name = "security grey suit"
+	name = "security grey jumpsuit (Modular)"
 	desc = "Grey only in name"
 	color = "#F4080C"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 30, ACID = 30, WOUND = 10)
 
 /obj/item/clothing/under/color/grey/command
-	name = "command grey suit"
+	name = "command grey jumpsuit (Modular)"
 	desc = "Grey only in name"
 	color = "#004B8F"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 15)
-
-
