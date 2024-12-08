@@ -1,6 +1,11 @@
 /mob/living/carbon
 	var/nutri_mult = 1
 
+/obj/item/seeds/cannabis
+	mutatelist = list(/obj/item/seeds/cannabis/rainbow,
+						/obj/item/seeds/cannabis/death,
+						/obj/item/seeds/cannabis/munchies)
+
 /datum/plant_gene/trait/glow/orange
 	name = "Orange Bioluminescence"
 	glow_color = "#ff9166"

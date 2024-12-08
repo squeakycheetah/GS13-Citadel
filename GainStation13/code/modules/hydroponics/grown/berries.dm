@@ -1,3 +1,6 @@
+/obj/item/seeds/berry
+	mutatelist = list(/obj/item/seeds/berry/glow, /obj/item/seeds/berry/poison, /obj/item/seeds/berry/blueberry)
+
 /obj/item/seeds/berry/blueberry
 	name = "pack of blueberry seeds"
 	desc = "These seeds grow into blueberry bushes."
