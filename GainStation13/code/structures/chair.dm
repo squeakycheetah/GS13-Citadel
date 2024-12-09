@@ -55,3 +55,18 @@
 	desc = "Some nice metal shelves."
 	icon = 'hyperstation/icons/obj/objects.dmi'
 	icon_state = "shelf"
+
+/obj/structure/chair/beanbag
+	name = "beanbag chair"
+	desc = "A comfy beanbag chair. Almost as soft as your fat ass."
+	icon = 'GainStation13/icons/obj/chairs.dmi'
+	icon_state = "beanbag"
+	color = "#ffffff"
+	anchored = FALSE
+	buildstackamount = 5
+	item_chair = null
+
+/obj/structure/chair/beanbag/gato
+	name = "GATO beanbag chair"
+	desc = "A comfy beanbag chair. This one seems to a super duper cutesy GATO mascot."
+	icon_state = "beanbag_gato"
