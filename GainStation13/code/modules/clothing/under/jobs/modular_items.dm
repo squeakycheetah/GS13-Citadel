@@ -1,8 +1,7 @@
 /mob/living/carbon
 	var/modular_items = list()
 
-/mob/living/carbon/adjust_fatness(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM)
-	..()
+/mob/living/carbon/proc/handle_modular_items(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM)
 	for(var/obj/item/item in modular_items)
 		item.update_modular_overlays(src)
 
