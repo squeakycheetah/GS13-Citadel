@@ -13714,20 +13714,14 @@
 	req_access_txt = "0"
 	},
 /obj/effect/spawner/lootdrop/bedsheet,
-/turf/open/floor/plasteel/grimy,
+/turf/open/floor/wood,
 /area/commons/dorms)
 "aBN" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/chair/beanbag/red{
+	dir = 8
 	},
-/obj/structure/sign/plaques/deempisi{
-	pixel_y = 28
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/open/floor/plasteel/grimy,
-/area/commons/dorms)
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "aBO" = (
 /obj/machinery/button/door{
 	id = "Dorm1";
@@ -13741,7 +13735,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/plasteel/grimy,
+/turf/open/floor/wood,
 /area/commons/dorms)
 "aBP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -14372,20 +14366,21 @@
 "aDb" = (
 /obj/structure/table/wood,
 /obj/item/storage/book/bible,
-/turf/open/floor/plasteel/grimy,
+/turf/open/floor/wood,
 /area/commons/dorms)
 "aDc" = (
 /obj/structure/chair/wood/normal{
 	dir = 8
 	},
-/turf/open/floor/plasteel/grimy,
+/turf/open/floor/wood,
 /area/commons/dorms)
 "aDd" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 4
+/obj/structure/sign/painting/library{
+	pixel_x = -32
 	},
-/turf/open/floor/plasteel/grimy,
-/area/commons/dorms)
+/obj/structure/chair/beanbag/green,
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "aDe" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/radio/intercom{
@@ -55911,6 +55906,10 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+"ehP" = (
+/obj/structure/chair/beanbag/purple,
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "ekq" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
@@ -57022,9 +57021,7 @@
 /obj/structure/light_construct/small{
 	dir = 8
 	},
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
+/obj/structure/chair/beanbag/black,
 /turf/open/floor/carpet,
 /area/maintenance/department/crew_quarters/dorms)
 "gxq" = (
@@ -58700,9 +58697,7 @@
 /turf/open/floor/carpet,
 /area/service/lawoffice)
 "jTI" = (
-/obj/structure/chair/wood/normal{
-	dir = 4
-	},
+/obj/structure/chair/beanbag/red,
 /turf/open/floor/plasteel/dark,
 /area/service/chapel/main/monastery)
 "jUV" = (
@@ -59993,7 +59988,7 @@
 /turf/open/floor/plating,
 /area/tcommsat/computer)
 "mEe" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/beanbag/red{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -63611,7 +63606,7 @@
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "uaC" = (
-/obj/structure/chair/comfy/black{
+/obj/structure/chair/beanbag{
 	dir = 8
 	},
 /turf/open/floor/carpet,
@@ -65680,6 +65675,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
+"ygb" = (
+/obj/structure/chair/beanbag/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "ygZ" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance{
@@ -80298,7 +80299,7 @@ crM
 cux
 ihQ
 yaJ
-crg
+ihQ
 aoa
 qdm
 qdm
@@ -82123,8 +82124,8 @@ efY
 mIG
 tGK
 uTz
-uTz
-tGK
+aDd
+ehP
 czH
 tGK
 mUw
@@ -83151,8 +83152,8 @@ tGK
 tGK
 tGK
 tGK
-tGK
-tGK
+aBN
+ygb
 tGK
 mum
 hDL
@@ -103338,7 +103339,7 @@ mef
 ayk
 azs
 mef
-aBN
+avf
 aDc
 mef
 poI
@@ -103596,7 +103597,7 @@ ayl
 azt
 mef
 aBO
-aDd
+beB
 mef
 aEU
 aFE

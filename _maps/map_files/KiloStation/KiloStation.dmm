@@ -5066,10 +5066,8 @@
 /turf/open/floor/plasteel,
 /area/security/office)
 "aiL" = (
-/obj/structure/chair{
-	dir = 4
-	},
 /obj/effect/landmark/start/security_officer,
+/obj/structure/chair/beanbag/red,
 /turf/open/floor/plasteel,
 /area/security/office)
 "aiM" = (
@@ -20628,7 +20626,7 @@
 /obj/effect/landmark/start/assistant,
 /obj/structure/bed/double,
 /obj/item/bedsheet/double_gato,
-/turf/open/floor/carpet/purple,
+/turf/open/floor/carpet/gato,
 /area/commons/locker)
 "aJw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -33669,8 +33667,8 @@
 /turf/open/floor/plasteel/dark,
 /area/science/storage)
 "beo" = (
-/obj/item/kirbyplants/random,
-/turf/open/floor/carpet/purple,
+/obj/structure/chair/beanbag/gato,
+/turf/open/floor/carpet/gato,
 /area/commons/locker)
 "bep" = (
 /obj/effect/turf_decal/tile/purple,
@@ -52690,7 +52688,7 @@
 	pixel_x = 1;
 	pixel_y = 5
 	},
-/turf/open/floor/carpet/purple,
+/turf/open/floor/carpet/gato,
 /area/commons/locker)
 "bKl" = (
 /obj/structure/flora/rock/pile,
@@ -58802,7 +58800,7 @@
 /turf/closed/wall,
 /area/hallway/secondary/entry)
 "bUa" = (
-/turf/open/floor/carpet/purple,
+/turf/open/floor/carpet/gato,
 /area/commons/locker)
 "bUb" = (
 /obj/effect/turf_decal/tile/red,
@@ -81189,7 +81187,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
 	dir = 1
 	},
-/obj/structure/chair/stool,
+/obj/structure/chair/beanbag/red,
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
@@ -84076,6 +84074,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard)
+"sMB" = (
+/obj/structure/chair/beanbag/black{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/commons/vacant_room/office)
 "sNb" = (
 /obj/machinery/door/airlock/public/glass{
 	dir = 4
@@ -85166,7 +85170,9 @@
 /turf/open/space/basic,
 /area/solars/port/fore)
 "ykB" = (
-/obj/structure/chair/stool,
+/obj/structure/chair/beanbag/red{
+	dir = 8
+	},
 /turf/open/floor/wood,
 /area/commons/vacant_room/office)
 "ylS" = (
@@ -124147,9 +124153,9 @@ aqg
 fkk
 ppP
 qCS
-ykB
+aqg
 kXo
-ykB
+sMB
 diq
 bPJ
 bUN
