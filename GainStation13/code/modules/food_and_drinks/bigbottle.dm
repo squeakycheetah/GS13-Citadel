@@ -13,35 +13,34 @@
 	list_reagents = list(/datum/reagent/consumable/space_cola = 25)
 	custom_materials = list(/datum/material/plastic=200)
 	foodtype = SUGAR
+	isGlass = FALSE
+	volume = 100
 
 /obj/item/reagent_containers/food/drinks/bigbottle/starkist
 	name = "StarKist Bottle"
 	desc = "A big bottle of Sunkist - for all your chuggin' needs."
 	icon_state = "bigbottle_fan"
-	list_reagents = list(/datum/reagent/consumable/space_cola = 40, /datum/reagent/consumable/orangejuice = 40)
-	foodtype = SUGAR
+	list_reagents = list(/datum/reagent/consumable/sodawater = 20, /datum/reagent/consumable/orangejuice = 60)
 
 /obj/item/reagent_containers/food/drinks/bigbottle/cola
 	name = "GT-Cola Bottle"
 	desc = "A big bottle of GT-Cola - for all your chuggin' needs."
 	icon_state = "bigbottle_cola"
 	list_reagents = list(/datum/reagent/consumable/space_cola = 80)
-	foodtype = SUGAR
 
 /obj/item/reagent_containers/food/drinks/bigbottle/spaceup
 	name = "Space-Up! Bottle"
 	desc = "A big bottle of Space-Up! - for all your chuggin' needs."
 	icon_state = "bigbottle_spr"
-	list_reagents = list(/datum/reagent/consumable/space_up = 80)
-	foodtype = SUGAR
+	list_reagents = list(/datum/reagent/consumable/space_up = 60, /datum/reagent/consumable/sodawater = 20)
 
-/obj/item/reagent_containers/food/drinks/bigbottle/update_icon()
+/obj/item/reagent_containers/food/drinks/bigbottle/on_reagent_change()
   cut_overlays()
   var/mutable_appearance/reagent_overlay = mutable_appearance(icon, "reagent")
   if(reagents.reagent_list.len)
     var/datum/reagent/R = reagents.get_master_reagent()
     if(!renamedByPlayer)
-      name = "bottle of" + R.name
+      name = "bottle of " + R.name
       desc = R.glass_desc
 
     var/percent = round((reagents.total_volume / volume) * 100)
