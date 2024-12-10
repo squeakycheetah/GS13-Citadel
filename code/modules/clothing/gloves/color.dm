@@ -11,7 +11,7 @@
 	resistance_flags = NONE
 	var/can_be_cut = 1
 	custom_price = PRICE_EXPENSIVE
-	custom_premium_price = PRICE_ALMOST_ONE_GRAND
+	custom_premium_price = PRICE_ABOVE_EXPENSIVE //GS13 tweak
 
 /obj/item/toy/sprayoncan
 	name = "spray-on insulation applicator"

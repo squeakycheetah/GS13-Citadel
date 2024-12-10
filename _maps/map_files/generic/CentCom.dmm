@@ -1630,7 +1630,7 @@
 /turf/open/floor/plasteel/white,
 /area/fatlab)
 "bqq" = (
-/obj/structure/chair/comfy/black{
+/obj/structure/chair/beanbag/gato{
 	dir = 8
 	},
 /turf/open/floor/carpet/gato,
@@ -8108,6 +8108,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/centcom/holding)
+"giQ" = (
+/obj/structure/chair/beanbag/black{
+	dir = 8
+	},
+/turf/open/floor/carpet/black,
+/area/centcom/ferry)
 "gjk" = (
 /obj/structure/sign/barsign{
 	pixel_y = 32
@@ -8164,6 +8170,9 @@
 "glD" = (
 /obj/structure/window{
 	dir = 1
+	},
+/obj/structure/chair/beanbag/gato{
+	dir = 8
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/ferry)
@@ -20611,9 +20620,7 @@
 /turf/open/floor/plasteel/dark,
 /area/fatlab)
 "prT" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
+/obj/structure/chair/beanbag/gato,
 /turf/open/floor/carpet/gato,
 /area/centcom/evac)
 "ptJ" = (
@@ -72725,7 +72732,7 @@ gao
 xIK
 wLr
 cnu
-cnu
+giQ
 cnu
 lSM
 eNU

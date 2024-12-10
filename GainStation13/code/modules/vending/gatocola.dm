@@ -6,12 +6,15 @@
 	product_slogans = "Meow~, time for some cola!"
 	vend_reply = "Meow~ Meow~"
 	products = list(
-	            /obj/item/reagent_containers/food/drinks/beer = 10,
 	            /obj/item/reagent_containers/food/drinks/soda_cans/cola = 10,
 	            /obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb = 10,
 				/obj/item/reagent_containers/food/drinks/soda_cans/starkist = 10,
 				/obj/item/reagent_containers/food/drinks/soda_cans/space_up = 10,
 				/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game = 10,
+				/obj/item/reagent_containers/food/drinks/bigbottle/starkist = 6,
+				/obj/item/reagent_containers/food/drinks/bigbottle/cola = 6,
+				/obj/item/reagent_containers/food/drinks/bigbottle/spaceup = 6,
+				/obj/item/reagent_containers/food/drinks/bigbottle/fizz = 3,
 				)
 	contraband = list(
 				/obj/item/organ/ears/cat = 2,

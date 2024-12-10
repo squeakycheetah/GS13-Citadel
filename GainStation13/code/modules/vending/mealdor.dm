@@ -5,6 +5,7 @@
 	icon_state = "mealdor"
 	product_slogans = "Are you hungry? Eat some of my food!;Be sure to eat one of our tasty treats!;Was that your stomach? Go ahead, get some food!"
 	vend_reply = "Enjoy your meal."
+	free = TRUE
 	products = list(
 
 				/obj/item/reagent_containers/food/snacks/fries = 4,

@@ -50879,7 +50879,7 @@
 /area/command/heads_quarters/ce)
 "fpF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/structure/chair/bench/right,
+/obj/structure/chair/pew/right,
 /turf/open/floor/plasteel/chapel{
 	dir = 4
 	},
@@ -51434,13 +51434,9 @@
 /turf/open/floor/carpet/purple,
 /area/maintenance/port/fore)
 "fKu" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
-/turf/open/floor/plasteel/chapel{
-	dir = 4
-	},
-/area/service/chapel/main)
+/obj/structure/chair/beanbag/black,
+/turf/open/floor/wood,
+/area/service/library)
 "fKv" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -52039,7 +52035,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/command/bridge)
 "gdi" = (
-/obj/structure/chair/bench/left,
+/obj/structure/chair/pew/left,
 /turf/open/floor/plasteel/chapel{
 	dir = 8
 	},
@@ -55855,7 +55851,7 @@
 /area/service/hydroponics)
 "iqU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/chair/bench/left,
+/obj/structure/chair/pew/left,
 /turf/open/floor/plasteel/chapel{
 	dir = 8
 	},
@@ -58384,7 +58380,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/office)
 "jMs" = (
-/obj/structure/chair/bench/left,
+/obj/structure/chair/pew/left,
 /turf/open/floor/plasteel/chapel{
 	dir = 1
 	},
@@ -58828,7 +58824,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/obj/structure/chair/bench/right,
+/obj/structure/chair/pew/right,
 /turf/open/floor/plasteel/chapel{
 	dir = 4
 	},
@@ -60718,9 +60714,7 @@
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "kZv" = (
-/obj/structure/chair/wood/normal{
-	dir = 4
-	},
+/obj/structure/chair/beanbag/gato,
 /turf/open/floor/carpet/gato,
 /area/commons/dorms)
 "kZR" = (
@@ -61284,7 +61278,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/event_spawn,
-/obj/structure/chair/bench/left,
+/obj/structure/chair/pew/left,
 /turf/open/floor/plasteel/chapel{
 	dir = 1
 	},
@@ -63989,7 +63983,7 @@
 /area/maintenance/port/aft)
 "mWm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/structure/chair/bench/right,
+/obj/structure/chair/pew/right,
 /turf/open/floor/plasteel/chapel,
 /area/service/chapel/main)
 "mWy" = (
@@ -66788,7 +66782,7 @@
 	},
 /area/engineering/break_room)
 "oJk" = (
-/obj/structure/chair/bench/right,
+/obj/structure/chair/pew/right,
 /turf/open/floor/plasteel/chapel{
 	dir = 4
 	},
@@ -69451,9 +69445,6 @@
 /area/commons/storage/primary)
 "qfP" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
 /turf/open/floor/plasteel/chapel{
 	dir = 4
 	},
@@ -72698,11 +72689,11 @@
 /turf/closed/wall,
 /area/commons/toilet/restrooms)
 "rVx" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
 /obj/machinery/camera{
 	c_tag = "Chapel - Starboard";
+	dir = 8
+	},
+/obj/structure/chair/bench{
 	dir = 8
 	},
 /turf/open/floor/plasteel/chapel{
@@ -73430,7 +73421,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/storage/eva)
 "spZ" = (
-/obj/structure/chair/bench/right,
+/obj/structure/chair/pew/right,
 /turf/open/floor/plasteel/chapel,
 /area/service/chapel/main)
 "sqe" = (
@@ -76721,7 +76712,7 @@
 /area/security/prison)
 "urB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/chair/bench/left,
+/obj/structure/chair/pew/left,
 /turf/open/floor/plasteel/chapel{
 	dir = 1
 	},
@@ -80484,6 +80475,9 @@
 	name = "Station Intercom (General)";
 	pixel_x = 29
 	},
+/obj/structure/chair/bench/left{
+	dir = 8
+	},
 /turf/open/floor/plasteel/chapel,
 /area/service/chapel/main)
 "wDM" = (
@@ -82038,8 +82032,10 @@
 /turf/open/floor/plasteel,
 /area/commons/fitness/recreation)
 "xuF" = (
-/obj/structure/chair/comfy/black,
 /obj/effect/landmark/start/assistant,
+/obj/structure/chair/beanbag/black{
+	dir = 8
+	},
 /turf/open/floor/wood,
 /area/service/library)
 "xuP" = (
@@ -83448,6 +83444,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
+"yeu" = (
+/obj/structure/chair/bench/right{
+	dir = 8
+	},
+/turf/open/floor/plasteel/chapel,
+/area/service/chapel/main)
 "yeJ" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -104373,7 +104375,7 @@ glc
 sqe
 txq
 glc
-fEX
+fKu
 yhY
 vfr
 iHr
@@ -108287,10 +108289,10 @@ gcI
 fvo
 fvo
 qfP
-qrc
+yeu
 rVx
 wDJ
-fKu
+eRk
 fvo
 aaa
 aaa
