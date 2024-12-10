@@ -14,6 +14,7 @@
 				/obj/item/reagent_containers/food/drinks/bigbottle/starkist = 6,
 				/obj/item/reagent_containers/food/drinks/bigbottle/cola = 6,
 				/obj/item/reagent_containers/food/drinks/bigbottle/spaceup = 6,
+				/obj/item/reagent_containers/food/drinks/bigbottle/fizz = 3,
 				)
 	contraband = list(
 				/obj/item/organ/ears/cat = 2,

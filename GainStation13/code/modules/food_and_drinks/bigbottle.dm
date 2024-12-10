@@ -9,7 +9,7 @@
 	name = "Bottle"
 	desc = "You shouldn't see this."
 	icon = 'GainStation13/icons/obj/food/bigbottle.dmi'
-	icon_state = "bigbottle"
+	icon_state = "bigbottle_default"
 	list_reagents = list(/datum/reagent/consumable/space_cola = 25)
 	custom_materials = list(/datum/material/plastic=200)
 	foodtype = SUGAR
@@ -34,6 +34,14 @@
 	icon_state = "bigbottle_spr"
 	list_reagents = list(/datum/reagent/consumable/space_up = 60, /datum/reagent/consumable/sodawater = 20)
 
+/obj/item/reagent_containers/food/drinks/bigbottle/fizz
+	name = "Fizz-Wizz Bottle"
+	desc = "A big bottle of Fizz-Wizz - for all your chuggin' needs."
+	icon_state = "bigbottle_fizz"
+	list_reagents = list(/datum/reagent/consumable/space_cola = 50, /datum/reagent/consumable/fizulphite = 30)
+
+
+//code for overlays
 /obj/item/reagent_containers/food/drinks/bigbottle/on_reagent_change()
   cut_overlays()
   var/mutable_appearance/reagent_overlay = mutable_appearance(icon, "reagent")
