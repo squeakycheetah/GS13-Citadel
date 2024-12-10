@@ -39,9 +39,9 @@
   var/mutable_appearance/reagent_overlay = mutable_appearance(icon, "reagent")
   if(reagents.reagent_list.len)
     var/datum/reagent/R = reagents.get_master_reagent()
-    if(!renamedByPlayer)
+    /*if(!renamedByPlayer)
       name = "bottle of " + R.name
-      desc = R.glass_desc
+      desc = R.glass_desc*/
 
     var/percent = round((reagents.total_volume / volume) * 100)
     switch(percent)
