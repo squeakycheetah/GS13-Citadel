@@ -222,6 +222,7 @@
 
 /datum/species/proc/handle_fatness(mob/living/carbon/human/H)
 	handle_helplessness(H)
+	H.handle_modular_items()
 
 	// update movement speed
 	var/fatness_delay = 0

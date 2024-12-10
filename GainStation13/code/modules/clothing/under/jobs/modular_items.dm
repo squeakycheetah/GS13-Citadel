@@ -1,23 +1,31 @@
 /mob/living/carbon
 	var/modular_items = list()
 
-/mob/living/carbon/adjust_fatness(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM)
-	..()
+/mob/living/carbon/proc/handle_modular_items(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM)
 	for(var/obj/item/item in modular_items)
 		item.update_modular_overlays(src)
 
 /obj/item
 	var/modular_icon_location = null
 	var/mod_overlays = list()
+	var/mod_breasts_size = 0
+	var/mod_butt_size = 0
+	var/mod_belly_size = 0
 
 /obj/item/equipped(mob/user, slot)
 	if(modular_icon_location != null && slot == slot_flags) //if(slot == ITEM_SLOT_ICLOTHING)
-		update_modular_overlays(user)
+		add_modular_item(user)
 	..()
 
 /obj/item/dropped(mob/user)
-	remove_modular_overlays(user)
+	remove_modular_item(user)
 	..()
+
+/obj/item/proc/add_modular_item(mob/user)
+	mod_breasts_size = 0
+	mod_butt_size = 0
+	mod_belly_size = 0
+	update_modular_overlays(user)
 
 /obj/item/proc/add_modular_overlay(mob/living/carbon/U, modular_icon, modular_layer, sprite_color)
 	var/mutable_appearance/mod_overlay = mutable_appearance(modular_icon_location, modular_icon, -(modular_layer), color = sprite_color)
@@ -88,25 +96,45 @@
 	if(!iscarbon(user))
 		return
 	var/mob/living/carbon/U = user
+
+	var/list/genitals_list
+	var/build_modular = FALSE
+
+	var/obj/item/organ/genital/O
+	for(O in U.internal_organs)
+		if(istype(O, /obj/item/organ/genital/belly))
+			genitals_list += list(O)
+			if(O.size != mod_belly_size)
+				mod_belly_size = O.size
+				build_modular = TRUE
+		if(istype(O, /obj/item/organ/genital/butt))
+			genitals_list += list(O)
+			if(O.size != mod_butt_size)
+				mod_butt_size = O.size
+				build_modular = TRUE
+		if(istype(O, /obj/item/organ/genital/breasts))
+			genitals_list += list(O)
+			var/obj/item/organ/genital/breasts/G = O
+			if(G.cached_size != mod_breasts_size)
+				mod_breasts_size = G.cached_size
+				build_modular = TRUE
+	if(!build_modular)
+		return
 	delete_modular_overlays(U)
 
 	if(!(src in U.modular_items))
 		U.modular_items += src
-	var/obj/item/organ/O
 	var/obj/item/organ/genital/G
-	for(O in U.internal_organs) //check the user for the organs they have
-		if(istype(O, /obj/item/organ/genital/belly)) //if that organ is a belly
-			G = O //treat that organ as a genital
+	for(G in genitals_list) //check the user for the organs they have
+		if(istype(G, /obj/item/organ/genital/belly)) //if that organ is a belly
 			var/modular_sprite = get_modular_belly(G)
 			add_modular_overlay(U, modular_sprite, MODULAR_BELLY_LAYER, color)
 			add_modular_overlay(U, "[modular_sprite]_SOUTH", BELLY_FRONT_LAYER, color)
-		if(istype(O, /obj/item/organ/genital/butt)) //if that organ is the butt
-			G = O
+		if(istype(G, /obj/item/organ/genital/butt)) //if that organ is the butt
 			var/modular_sprite = get_modular_butt(G)
 			add_modular_overlay(U, modular_sprite, MODULAR_BUTT_LAYER, color)
 			add_modular_overlay(U, "[modular_sprite]_NORTH", BUTT_BEHIND_LAYER, color)
-		if(istype(O, /obj/item/organ/genital/breasts)) //if the organ is the breasts
-			G = O
+		if(istype(G, /obj/item/organ/genital/breasts)) //if the organ is the breasts
 			var/modular_sprite = get_modular_breasts(G)
 			add_modular_overlay(U, modular_sprite, MODULAR_BREASTS_LAYER, color)
 			add_modular_overlay(U, "[modular_sprite]_NORTH", BREASTS_BEHIND_LAYER, color)
@@ -122,7 +150,7 @@
 		U.cut_overlay(overlay)
 	mod_overlays -= mod_overlays
 
-/obj/item/proc/remove_modular_overlays(mob/user)
+/obj/item/proc/remove_modular_item(mob/user)
 	if(!iscarbon(user))
 		return
 	delete_modular_overlays(user)
