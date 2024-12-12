@@ -4241,4 +4241,5 @@
 #include "GainStation13\code\__DEFINES\atmospherics.dm"
 #include "GainStation13\code\modules\atmospherics\auxgm\gas_types.dm"
 #include "GainStation13\code\modules\atmospherics\gasmixtures\reactions.dm"
+#include "GainStation13\code\mechanics\lipoifium.dm"
 // END_INCLUDE
