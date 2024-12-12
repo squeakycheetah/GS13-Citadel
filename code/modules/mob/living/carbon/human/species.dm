@@ -1862,8 +1862,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/aim_for_groin  = user.zone_selected == "groin"
 	var/target_aiming_for_groin = target.zone_selected == "groin"
 
-	//GS13 edit, slap gut
-	var/opposite_dir = user.dir == DIRFLIP(target.dir)
+	var/opposite_dir = user.dir == DIRFLIP(target.dir) //GS13 edit, slap gut
 
 	if(target.check_martial_melee_block()) //END EDIT
 		target.visible_message("<span class='warning'>[target] blocks [user]'s disarm attempt!</span>", target = user, \
@@ -1886,8 +1885,9 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		if (!HAS_TRAIT(target, TRAIT_PERMABONER))
 			stop_wagging_tail(target)
 		return FALSE
-	else if(aim_for_groin && (target_on_help || target_restrained || target_aiming_for_groin))
-		if(target == user || target.lying || same_dir)
+	//GS13 edit - checks for opposite_dir in else if, and then again to determine whether it's gut or ass slap.
+	else if(aim_for_groin && (target == user || target.lying || same_dir || opposite_dir) && (target_on_help || target_restrained || target_aiming_for_groin))
+		if(!opposite_dir)
 			if(target.client?.prefs.cit_toggles & NO_ASS_SLAP)
 				to_chat(user,"A force stays your hand, preventing you from slapping \the [target]'s ass!")
 				return FALSE
@@ -1905,8 +1905,10 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				"<span class='notice'>[user] slaps your ass! </span>",\
 				"You hear a slap.", target = user, target_message = "<span class='notice'>You slap [user == target ? "your own" : "\the [target]'s"] ass! </span>")
 
+			return FALSE
 
-		else if(opposite_dir)
+
+		else
 			if(target.client?.prefs.cit_toggles & NO_ASS_SLAP)
 				to_chat(user,"A force stays your hand, preventing you from slapping \the [target]'s gut!")
 				return FALSE
@@ -1926,7 +1928,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			to_chat(target, "<span class='danger'><B>The pressure on your stomach causes you to belch!</B></span>")
 			target.emote(pick("belch","burp"))
 
-		return FALSE
+			return FALSE
+	//end of GS13 edit
 
 	else
 		user.do_attack_animation(target, ATTACK_EFFECT_DISARM)
