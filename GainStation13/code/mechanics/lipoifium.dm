@@ -6,8 +6,10 @@
 		#define PP(air, gas) PP_MOLES(air.get_moles(gas))
 		var/gas_breathed = PP(breath, GAS_FAT)
 		if(gas_breathed > 0)
-			H.adjust_fatness(5 * gas_breathed)
-			breath.adjust_moles(GAS_FAT, -5 * gas_breathed)
+			// investigate_log("Supermatter shard consumed by singularity.", INVESTIGATE_SINGULO)
+			// message_admins("gas breathed is: [gas_breathed]")
+			H.adjust_fatness(gas_breathed)
+			breath.adjust_moles(GAS_FAT, -gas_breathed)
 
 /obj/item/organ/lungs/check_breath(datum/gas_mixture/breath, mob/living/carbon/human/H)
 	lipoifium_breathing(breath, H)
