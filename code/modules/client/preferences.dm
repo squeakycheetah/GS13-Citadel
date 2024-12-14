@@ -1411,6 +1411,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<b>Magic:</b><a href='?_src_=prefs;preference=weight_gain_magic'>[weight_gain_magic == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Viruses:</b><a href='?_src_=prefs;preference=weight_gain_viruses'>[weight_gain_viruses == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Nanites:</b><a href='?_src_=prefs;preference=weight_gain_nanites'>[weight_gain_nanites == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+					dat += "<b>Atmos gasses:</b><a href='?_src_=prefs;preference=weight_gain_atmos'>[weight_gain_atmos == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "</td>"
 
 					dat +="<td width='300px' height='300px' valign='top'>"
@@ -3458,6 +3459,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_viruses = !weight_gain_viruses
 				if("weight_gain_nanites")
 					weight_gain_nanites = !weight_gain_nanites
+				if("weight_gain_atmos")
+					weight_gain_atmos = !weight_gain_atmos
 				if("weight_gain_extreme")
 					weight_gain_extreme = !weight_gain_extreme
 				if("weight_gain_persistent")
