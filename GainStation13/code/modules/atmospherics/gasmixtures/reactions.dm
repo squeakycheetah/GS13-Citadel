@@ -5,8 +5,8 @@
 
 /datum/gas_reaction/lipoifium_formation/init_reqs()
 	min_requirements = list(// TODO: change this shit
-		GAS_PLASMA = 20,
-		GAS_N2 = 20
+		GAS_BZ = 15,
+		GAS_TRITIUM = 15
 	)
 
 /datum/gas_reaction/lipoifium_formation/react(datum/gas_mixture/air)
