@@ -3,13 +3,11 @@
 		var/pressure = breath.return_pressure()
 		var/total_moles = breath.total_moles()
 		#define PP_MOLES(X) ((X / total_moles) * pressure)
-		var/gas_breathed = PP_MOLES(breath.get_moles(GAS_FAT))
+		var/gas_breathed = PP_MOLES(breath.get_moles(GAS_FAT)) // this does the same thing as the bit below but I think this is more readable
 		// #define PP(air, gas) PP_MOLES(air.get_moles(gas))
 		// var/gas_breathed = PP(breath, GAS_FAT)
 		if(gas_breathed > 0)
-			// investigate_log("Supermatter shard consumed by singularity.", INVESTIGATE_SINGULO)
-			// message_admins("gas breathed is: [gas_breathed]")
-			H.adjust_fatness(5 * gas_breathed)
+			H.adjust_fatness(5 * gas_breathed, FATTENING_TYPE_ATMOS)
 			breath.adjust_moles(GAS_FAT, -gas_breathed)
 
 /obj/item/organ/lungs/check_breath(datum/gas_mixture/breath, mob/living/carbon/human/H)
