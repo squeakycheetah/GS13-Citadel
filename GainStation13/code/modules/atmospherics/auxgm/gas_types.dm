@@ -4,6 +4,7 @@
 	name = "Lipoifium"
 	moles_visible = MOLES_GAS_VISIBLE
 	// gas_overlay = "miasma"
-	color = "#963"
+	color = "#e2e1b1"
 	odor = "lard"
+	odor_strength = 5
 
