@@ -60,8 +60,10 @@
 		"caution" = /obj/machinery/portable_atmospherics/canister,
 		"miasma" = /obj/machinery/portable_atmospherics/canister/miasma,
 		"methane" = /obj/machinery/portable_atmospherics/canister/methane,
-		"methyl bromide" = /obj/machinery/portable_atmospherics/canister/methyl_bromide
-		"lipoifium" = /obj/machinery/portable_atmospherics/canister/lipoifium
+		"methyl bromide" = /obj/machinery/portable_atmospherics/canister/methyl_bromide,
+		// GS13 - edit
+		"lipoifium" = /obj/machinery/portable_atmospherics/canister/lipoifium // :D
+		//GS13 - end edit
 	)
 
 /obj/machinery/portable_atmospherics/canister/interact(mob/user)
@@ -167,12 +169,6 @@
 	desc = "Methyl bromide. A potent toxin to most, essential for the Kharmaan to live."
 	icon_state = "purplecyan"
 	gas_type = GAS_METHYL_BROMIDE
-
-/obj/machinery/portable_atmospherics/canister/lipoifium
-	name = "lipoifium canister"
-	desc = "Lipoifium. Inhaling causes quick buildup of adipose in one's body."
-	icon_state = "yellowblack"
-	gas_type = GAS_FAT
 
 /obj/machinery/portable_atmospherics/canister/proc/get_time_left()
 	if(timing)
@@ -403,6 +399,9 @@
 					investigate_log("was relabelled to [initial(replacement.name)] by [key_name(usr)].", INVESTIGATE_ATMOS)
 					name = initial(replacement.name)
 					desc = initial(replacement.desc)
+					// GS13 - edit
+					icon = initial(replacement.icon) // GS13 - added for the canister to change the icon file
+					// GS13 - end edit
 					icon_state = initial(replacement.icon_state)
 		if("restricted")
 			restricted = !restricted
