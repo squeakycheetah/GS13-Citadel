@@ -5,5 +5,5 @@
 	moles_visible = MOLES_GAS_VISIBLE
 	color = "#e2e1b1"
 	odor = "lard"
-	odor_strength = 20 // TODO: doesn't work for now
+	odor_strength = 2 // TODO: doesn't work for now
 
