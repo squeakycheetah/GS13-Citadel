@@ -21,11 +21,13 @@
 		S["weight_gain_persistent"] >> persi
 		if(persi)
 			WRITE_FILE(S["starting_weight"]			, fatness_real)
+			client.prefs.starting_weight = fatness_real
 			to_chat(src, span_notice("Your starting weight has been updated!"))
 		var/perma
 		S["weight_gain_permanent"] >> perma
 		if(S["weight_gain_permanent"])
 			WRITE_FILE(S["permanent_fat"]			, fatness_perma)
+			client.prefs.permanent_fat = fatness_perma
 			to_chat(src, span_notice("Your permanent fat has been updated!"))
 
 /mob/living/carbon/proc/queue_perma_save()
