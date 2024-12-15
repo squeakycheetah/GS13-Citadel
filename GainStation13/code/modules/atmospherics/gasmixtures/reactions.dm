@@ -5,7 +5,7 @@
 
 /datum/gas_reaction/lipoifium_formation/init_reqs()
 	min_requirements = list(
-		"MAX_TEMP" = 100
+		"MAX_TEMP" = 100,
 		GAS_BZ = 15,
 		GAS_TRITIUM = 15
 	)
