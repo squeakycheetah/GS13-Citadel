@@ -61,6 +61,7 @@
 		"miasma" = /obj/machinery/portable_atmospherics/canister/miasma,
 		"methane" = /obj/machinery/portable_atmospherics/canister/methane,
 		"methyl bromide" = /obj/machinery/portable_atmospherics/canister/methyl_bromide
+		"lipoifium" = /obj/machinery/portable_atmospherics/canister/lipoifium
 	)
 
 /obj/machinery/portable_atmospherics/canister/interact(mob/user)
@@ -166,6 +167,12 @@
 	desc = "Methyl bromide. A potent toxin to most, essential for the Kharmaan to live."
 	icon_state = "purplecyan"
 	gas_type = GAS_METHYL_BROMIDE
+
+/obj/machinery/portable_atmospherics/canister/lipoifium
+	name = "lipoifium canister"
+	desc = "Lipoifium. Inhaling causes quick buildup of adipose in one's body."
+	icon_state = "yellowblack"
+	gas_type = GAS_FAT
 
 /obj/machinery/portable_atmospherics/canister/proc/get_time_left()
 	if(timing)
