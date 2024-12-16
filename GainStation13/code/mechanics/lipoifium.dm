@@ -2,13 +2,22 @@
 	if(breath)
 		var/pressure = breath.return_pressure()
 		var/total_moles = breath.total_moles()
+		var/lipoifium_moles = breath.get_moles(GAS_FAT)
 		#define PP_MOLES(X) ((X / total_moles) * pressure)
-		var/gas_breathed = PP_MOLES(breath.get_moles(GAS_FAT)) // this does the same thing as the bit below but I think this is more readable
+		var/gas_breathed = PP_MOLES(lipoifium_moles) // this does the same thing as the bit below but I think this is more readable
 		// #define PP(air, gas) PP_MOLES(air.get_moles(gas))
 		// var/gas_breathed = PP(breath, GAS_FAT)
 		if(gas_breathed > 0)
-			H.adjust_fatness(5 * gas_breathed, FATTENING_TYPE_ATMOS)
+			// listen I know I can debug this but sometimes having this show up in chat without a pause is more convenient
+			// message_admins("Lipoifium pp is [gas_breathed]")
+			// message_admins("Lipoifium moles are [lipoifium_moles]")
+			H.adjust_fatness(2 * gas_breathed, FATTENING_TYPE_ATMOS)
 			breath.adjust_moles(GAS_FAT, -gas_breathed)
+			// TODO: the entire code below is a workaround for default odor not working
+			var/smell_chance = min(lipoifium_moles * 100 / total_moles, 20)
+			if(prob(smell_chance))
+				to_chat(owner, "<span class='notice'>You can smell lard.</span>")
+
 
 /obj/item/organ/lungs/check_breath(datum/gas_mixture/breath, mob/living/carbon/human/H)
 	lipoifium_breathing(breath, H)
