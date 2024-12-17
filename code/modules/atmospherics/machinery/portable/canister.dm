@@ -400,7 +400,11 @@
 					name = initial(replacement.name)
 					desc = initial(replacement.desc)
 					// GS13 - edit
-					icon = initial(replacement.icon) // GS13 - added for the canister to change the icon file
+					cut_overlays() // removes all overlays (connector, tank...).
+					icon = initial(replacement.icon) // changes icon file
+					// you may notice that we do not add the overlays back after removing them,
+					// yet they stay when we relabel a can. How? I have no idea. But it works,
+					// and as such, I won't question it
 					// GS13 - end edit
 					icon_state = initial(replacement.icon_state)
 		if("restricted")
