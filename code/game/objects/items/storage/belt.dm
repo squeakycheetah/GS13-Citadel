@@ -6,6 +6,7 @@
 	item_state = "utility"
 	lefthand_file = 'icons/mob/inhands/equipment/belt_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/belt_righthand.dmi'
+	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BELT
 	attack_verb = list("whipped", "lashed", "disciplined")
 	max_integrity = 300
@@ -52,7 +53,7 @@
 	STR.max_items = 11
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.max_combined_w_class = 24
-	var/static/list/can_hold = typecacheof(list(
+	STR.can_hold = typecacheof(list(
 		/obj/item/crowbar,
 		/obj/item/screwdriver,
 		/obj/item/weldingtool,
@@ -67,25 +68,23 @@
 		/obj/item/extinguisher/mini,
 		/obj/item/radio,
 		/obj/item/clothing/gloves,
-		/obj/item/holosign_creator
+		/obj/item/holosign_creator,
 		/obj/item/forcefield_projector,
 		/obj/item/assembly/signaler,
 		// original ones above, new ones below
 		/obj/item/lightreplacer,
-		/obj/item/construction/rcd,
-		/obj/item/construction/rld,
-		/obj/item/construction/plumbing,
+		/obj/item/construction
 		/obj/item/pipe_dispenser,
 		/obj/item/inducer,
 		/obj/item/grenade/chem_grenade/smart_metal_foam,
 		/obj/item/grenade/chem_grenade/metalfoam,
-		/obj/item/carpentry/handsaw,
-		/obj/item/carpentry/hammer,
-		/obj/item/carpentry/glue,
-		/obj/item/carpentry/borer,
-		/obj/item/carpentry/sandpaper
+		// these seem to not exist
+		// /obj/item/carpentry/handsaw,
+		// /obj/item/carpentry/hammer,
+		// /obj/item/carpentry/glue,
+		// /obj/item/carpentry/borer,
+		// /obj/item/carpentry/sandpaper
 		))
-	STR.can_hold = can_hold
 
 /obj/item/storage/belt/utility/chief
 	name = "\improper Chief Engineer's toolbelt" //"the Chief Engineer's toolbelt", because "Chief Engineer's toolbelt" is not a proper noun
@@ -467,7 +466,7 @@
 
 /obj/item/storage/belt/durathread
 	name = "durathread toolbelt"
-	desc = "A toolbelt made out of durathread, it seems robust enough to hold bigger tools like RCDs or RPDs, with enough pouches to hold more gear than a normal belt."
+	desc = "A toolbelt made out of durathread, it seems robust enough to hold an assortment of different tools, with enough pouches to hold more gear than a normal belt."
 	icon_state = "webbing-durathread"
 	item_state = "webbing-durathread"
 	resistance_flags = FIRE_PROOF
@@ -502,11 +501,11 @@
 		/obj/item/inducer,
 		/obj/item/grenade/chem_grenade/smart_metal_foam,
 		/obj/item/grenade/chem_grenade/metalfoam,
-		/obj/item/carpentry/handsaw,
-		/obj/item/carpentry/hammer,
-		/obj/item/carpentry/glue,
-		/obj/item/carpentry/borer,
-		/obj/item/carpentry/sandpaper
+		// /obj/item/carpentry/handsaw,
+		// /obj/item/carpentry/hammer,
+		// /obj/item/carpentry/glue,
+		// /obj/item/carpentry/borer,
+		// /obj/item/carpentry/sandpaper,
 		/obj/item/rcd_ammo,
 		/obj/item/construction,
 		/obj/item/stack/rods,
