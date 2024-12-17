@@ -15,6 +15,8 @@
 	var/weight_gain_viruses = FALSE
 	///Weight gain from nanites
 	var/weight_gain_nanites = FALSE
+	//Weight gain from atmos gasses
+	var/weight_gain_atmos = FALSE
 	///Blueberry Inflation
 	var/blueberry_inflation = FALSE
 	///Extreme weight gain

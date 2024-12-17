@@ -60,7 +60,10 @@
 		"caution" = /obj/machinery/portable_atmospherics/canister,
 		"miasma" = /obj/machinery/portable_atmospherics/canister/miasma,
 		"methane" = /obj/machinery/portable_atmospherics/canister/methane,
-		"methyl bromide" = /obj/machinery/portable_atmospherics/canister/methyl_bromide
+		"methyl bromide" = /obj/machinery/portable_atmospherics/canister/methyl_bromide,
+		// GS13 - edit
+		"lipoifium" = /obj/machinery/portable_atmospherics/canister/lipoifium // :D
+		//GS13 - end edit
 	)
 
 /obj/machinery/portable_atmospherics/canister/interact(mob/user)
@@ -396,6 +399,13 @@
 					investigate_log("was relabelled to [initial(replacement.name)] by [key_name(usr)].", INVESTIGATE_ATMOS)
 					name = initial(replacement.name)
 					desc = initial(replacement.desc)
+					// GS13 - edit
+					cut_overlays() // removes all overlays (connector, tank...).
+					icon = initial(replacement.icon) // changes icon file
+					// you may notice that we do not add the overlays back after removing them,
+					// yet they stay when we relabel a can. How? I have no idea. But it works,
+					// and as such, I won't question it
+					// GS13 - end edit
 					icon_state = initial(replacement.icon_state)
 		if("restricted")
 			restricted = !restricted

@@ -593,6 +593,7 @@ GLOBAL_LIST_INIT(pda_reskins, list(
 #define FATTENING_TYPE_MAGIC "magic"
 #define FATTENING_TYPE_VIRUS "virus"
 #define FATTENING_TYPE_NANITES "nanites"
+#define FATTENING_TYPE_ATMOS "atmos"	// yeah I'm taking the name atmos instead of gasses, because fuck you I'm not calling my pref "inflation type gas", some people will get confused, if you wanna do inflation just call it that lol
 #define FATTENING_TYPE_RADIATIONS "radiations"
 #define FATTENING_TYPE_WEIGHT_LOSS "weight_loss"
 #define FATTENING_TYPE_ALMIGHTY "almighty" //This ignores prefs, please only use this for smites and other admin controlled instances.
