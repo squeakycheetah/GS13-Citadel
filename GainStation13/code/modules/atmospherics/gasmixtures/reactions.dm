@@ -23,8 +23,8 @@
 
 	var/energy_released = reaction_efficiency*FIRE_CARBON_ENERGY_RELEASED
 	air.adjust_moles(GAS_FAT, reaction_efficiency)
-	air.adjust_moles(GAS_PLASMA, -reaction_efficiency / 2)
-	air.adjust_moles(GAS_N2, -reaction_efficiency / 2)
+	air.adjust_moles(GAS_TRITIUM, -reaction_efficiency / 2)
+	air.adjust_moles(GAS_BZ, -reaction_efficiency / 2)
 	var/heat_capacity = air.heat_capacity()
 	air.set_temperature(max(temperature + energy_released / heat_capacity, TCMB))
 
