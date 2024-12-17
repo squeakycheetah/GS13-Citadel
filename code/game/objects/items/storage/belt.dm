@@ -64,9 +64,23 @@
 		/obj/item/extinguisher/mini,
 		/obj/item/radio,
 		/obj/item/clothing/gloves,
-		/obj/item/holosign_creator,
+		/obj/item/holosign_creator
 		/obj/item/forcefield_projector,
-		/obj/item/assembly/signaler
+		/obj/item/assembly/signaler,
+		// original ones above, new ones below
+		/obj/item/lightreplacer,
+		/obj/item/construction/rcd,
+		/obj/item/construction/rld,
+		/obj/item/construction/plumbing,
+		/obj/item/pipe_dispenser,
+		/obj/item/inducer,
+		/obj/item/grenade/chem_grenade/smart_metal_foam,
+		/obj/item/grenade/chem_grenade/metalfoam,
+		/obj/item/carpentry/handsaw,
+		/obj/item/carpentry/hammer,
+		/obj/item/carpentry/glue,
+		/obj/item/carpentry/borer,
+		/obj/item/carpentry/sandpaper
 		))
 	STR.can_hold = can_hold
 
