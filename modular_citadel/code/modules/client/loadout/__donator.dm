@@ -1,6 +1,5 @@
 //This is the file that handles donator loadout items.
-//GS13 temporarily placed files here, will solve it eventually
-
+//GS13 temporarily placed files here, will solve it eventually :clueless:
 
 /datum/gear/donator
 	name = "IF YOU SEE THIS, PING A CODER RIGHT NOW!"
@@ -19,7 +18,7 @@
 	name = "GATO Badge - Correspondent"
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
-	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny", "Not Number", "Not_Number", "NotNumber", "PointNshoot", "Plapp", "CubicP1sa", "cubicp1sa", "plapp", "colorlessspy", "M16nPregnant")
+	ckeywhitelist = list("johnjimjim", "sonoida", "Sonoida", "SONOIDA", "yeeny", "Not Number", "Not_Number", "NotNumber", "PointNshoot", "pointnshoot", "POINTNSHOOT", "Plapp", "plapp", "PLAPP", "colorlessspy", "Colorlessspy", "COLORLESSSPY", "M16nPregnant", "m16npregnant", "M16NPREGNANT")
 
 /datum/gear/donator/halsey_overcoat
 	name = "Halsey's Commander Overcoat"
