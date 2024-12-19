@@ -392,7 +392,7 @@
 	dir = 2;
 	dwidth = 4;
 	height = 17;
-	id = "arrivals_stationary";
+	shuttle_id = "arrivals_stationary";
 	name = "delta arrivals";
 	roundstart_template = /datum/map_template/shuttle/arrival/delta;
 	width = 9
