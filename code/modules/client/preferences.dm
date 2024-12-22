@@ -2820,7 +2820,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						features["belly_size"] = clamp(round(new_bellysize), 1, 10)
 
 				if("max_belly_size")
-					var/new_bellymax = input(user, "Max belly fat size :\n(0-10, 0 = none)", "Character Preference") as num|null
+					var/new_bellymax = input(user, "Max belly fat size :\n(0-9)", "Character Preference") as num|null
 					if(new_bellymax)
 						features["max_belly_size"] = clamp(round(new_bellymax), 0, 10)
 

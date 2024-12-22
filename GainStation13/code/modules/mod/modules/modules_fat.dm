@@ -51,7 +51,7 @@
 	name = "Hydraulic Assistance Module"
 	id = "mod_hydraulic"
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 200)
-	build_path = /datum/design/module/hydraulic_movement
+	build_path = /obj/item/mod/module/hydraulic_movement
 	desc = "A GATO-designed module that supports plumper bodies and allows easier movement."
 
 /obj/item/mod/module/calovoltaic
@@ -139,7 +139,7 @@
 	min_cold_protection_temperature = -1
 	permeability_coefficient = 1
 	siemens_coefficient = 1
-	slowdown_inactive = 0.5
+	slowdown_inactive = 0
 	slowdown_active = 0
 	inbuilt_modules = list(/obj/item/mod/module/hydraulic_movement, /obj/item/mod/module/calovoltaic, /obj/item/mod/module/storage)
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals)
