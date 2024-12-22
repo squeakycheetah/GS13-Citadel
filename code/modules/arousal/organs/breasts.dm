@@ -9,6 +9,7 @@
 	zone = BODY_ZONE_CHEST
 	slot = ORGAN_SLOT_BREASTS
 	size = BREASTS_SIZE_DEF // "c". Refer to the breast_values static list below for the cups associated number values
+	var/max_size = 0 //GS13 Edit
 	fluid_id = /datum/reagent/consumable/milk
 	fluid_rate = MILK_RATE
 	producing = TRUE
@@ -115,6 +116,7 @@
 	else
 		color = "#[D.features["breasts_color"]]"
 	size = D.features["breasts_size"]
+	max_size = D.features["max_breasts_size"]
 	starting_size = D.features["breasts_size"]
 	shape = D.features["breasts_shape"]
 	if(!D.features["breasts_producing"])
