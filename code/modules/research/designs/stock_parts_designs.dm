@@ -3,6 +3,7 @@
 ////////////////////////////////////////
 
 /datum/design/RPED
+        // ORIGINAL name = "Rapid Part Exchange Device"
 	name = "Rapid Part Exchange Device (RPED)"
 	desc = "Special mechanical module made to store, sort, and apply standard machine parts."
 	id = "rped"
