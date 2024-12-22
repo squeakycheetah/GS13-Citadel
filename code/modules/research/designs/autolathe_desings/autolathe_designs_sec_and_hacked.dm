@@ -58,7 +58,7 @@
 	build_path = /obj/item/construction/rcd
 	category = list("hacked", "Construction")
 
-/datum/design/rpd_autolathe
+/datum/design/rpd_autolathe //ORIGINAL /datum/design/rpd
 	name = "Rapid Pipe Dispenser (RPD)"
 	id = "rpd_autolathe"
 	build_type = AUTOLATHE | NO_PUBLIC_LATHE
