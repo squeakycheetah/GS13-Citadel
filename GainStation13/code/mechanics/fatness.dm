@@ -231,7 +231,7 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/command/bridge, /area/mainten
 	if(fatness_amount < FATNESS_LEVEL_MORBIDLY_OBESE)
 		return "Obese"
 	if(fatness_amount < FATNESS_LEVEL_EXTREMELY_OBESE)
-		return "Morbidly Obese"
+		return "Very Obese"
 	if(fatness_amount < FATNESS_LEVEL_BARELYMOBILE)
 		return "Extremely Obese"
 	if(fatness_amount < FATNESS_LEVEL_IMMOBILE)
