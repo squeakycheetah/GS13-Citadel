@@ -7464,8 +7464,9 @@
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "axL" = (
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/maintenance/central)
+/area/engineering/main)
 "axM" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -49009,7 +49010,7 @@
 /obj/structure/reflector/double/anchored{
 	dir = 5
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/engineering/main)
 "erD" = (
 /obj/machinery/reagentgrinder,
@@ -51567,7 +51568,7 @@
 /obj/structure/reflector/box/anchored{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/engineering/main)
 "fQZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -54630,7 +54631,10 @@
 	pixel_y = -22
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/turf/open/floor/catwalk_floor,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plating,
 /area/engineering/main)
 "hJA" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -60695,7 +60699,10 @@
 /area/service/hydroponics)
 "lcm" = (
 /obj/item/wrench,
-/turf/open/floor/catwalk_floor,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plating,
 /area/engineering/main)
 "lcv" = (
 /obj/structure/table,
@@ -65350,10 +65357,11 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "nWG" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/engineering/main)
 "nWX" = (
 /obj/machinery/shower{
 	dir = 8
@@ -74400,7 +74408,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/open/floor/catwalk_floor,
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating,
 /area/engineering/main)
 "taX" = (
 /obj/structure/noticeboard{
@@ -78337,7 +78346,8 @@
 	name = "Station Intercom (General)";
 	pixel_y = 21
 	},
-/turf/open/floor/catwalk_floor,
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating,
 /area/engineering/main)
 "vwK" = (
 /obj/machinery/door/firedoor,
@@ -115342,7 +115352,7 @@ bcg
 bcg
 bcg
 bcg
-axL
+bcg
 bcg
 bcg
 bTS
@@ -116559,7 +116569,7 @@ aaa
 aaa
 xAw
 lMJ
-nWG
+lMJ
 lMJ
 lMJ
 lMJ
@@ -128408,19 +128418,19 @@ aaf
 aaf
 aaf
 iET
-bWx
+axL
 tJj
 bWx
-roz
-roz
-roz
+nWG
+ghb
+ghb
 fQx
 eqJ
-roz
-roz
+ghb
+axL
 bWx
 tJj
-bWx
+nWG
 mzH
 aWK
 dgk
@@ -128668,13 +128678,13 @@ mlA
 taH
 mKw
 jng
-roz
-roz
-roz
-roz
-roz
-roz
-roz
+nWG
+ghb
+ghb
+ghb
+ghb
+ghb
+axL
 omQ
 uYg
 hJe
@@ -128925,13 +128935,13 @@ ocS
 vvU
 mKw
 lRl
-roz
-roz
-roz
+nWG
+ghb
+ghb
 fQx
-roz
-roz
-roz
+ghb
+ghb
+axL
 usB
 uYg
 lcm
@@ -129179,19 +129189,19 @@ aaa
 aaa
 aaa
 ocS
-bWx
+axL
 xCf
 dVP
-ghb
+nWG
 ghb
 vIC
 ocS
 kAA
 ghb
-ghb
+axL
 uGl
 skV
-bWx
+nWG
 ocS
 dgh
 dgk
@@ -131543,7 +131553,7 @@ bzj
 bKK
 bzj
 bzj
-anS
+lMJ
 aaa
 aaa
 aaa
