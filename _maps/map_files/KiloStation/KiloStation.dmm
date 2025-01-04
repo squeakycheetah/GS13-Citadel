@@ -8145,7 +8145,6 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/storage/briefcase,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -8153,6 +8152,8 @@
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
+/obj/item/book/manual/gato_spacelaw,
+/obj/item/storage/briefcase,
 /turf/open/floor/plasteel/dark,
 /area/service/lawoffice)
 "aol" = (
@@ -8237,7 +8238,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /obj/item/taperecorder{
 	pixel_x = 5
 	},
@@ -8309,13 +8309,13 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/book/manual/wiki/security_space_law,
-/obj/item/taperecorder{
-	pixel_x = 5
-	},
 /obj/structure/table,
 /obj/machinery/newscaster{
 	pixel_y = 30
+	},
+/obj/item/book/manual/gato_spacelaw,
+/obj/item/taperecorder{
+	pixel_x = 5
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/courtroom)
