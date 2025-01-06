@@ -54,7 +54,7 @@
 	name = "Overcoat of the Destitute"
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/clothing/suit/storage/blueshield/grimmy
-	ckeywhitelist = list("bbgrimmy")
+	ckeywhitelist = list("bbgrimmy", "BBGrimmy", "Bbgrimmy")
 
 /datum/gear/donator/cosmic_coat
 	name = "Cosmic Coat"
