@@ -56,6 +56,12 @@
 	path = /obj/item/clothing/suit/storage/blueshield/grimmy
 	ckeywhitelist = list("bbgrimmy")
 
+/datum/gear/donator/cosmic_coat
+	name = "Cosmic Coat"
+	category = LOADOUT_CATEGORY_DONATOR
+	path = /obj/item/clothing/suit/hooded/wintercoat/cosmic
+	ckeywhitelist = list("Neun", "neun", "NEUN")
+
 /datum/gear/donator/tarek_gps
 	name = "Tarek's GPS"
 	category = LOADOUT_CATEGORY_DONATOR
