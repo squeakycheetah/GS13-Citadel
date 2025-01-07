@@ -39,7 +39,7 @@
 	ckeywhitelist = list("lumu", "sonoida")
 
 /datum/gear/donator/rose_plush
-	name = "Dezir Rose Plush"
+	name = "Dezir Rose Plussh"
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/toy/plush/gs13/rose
 	ckeywhitelist = list("eremitanovem", "sonoida", "Absolutely_Free", "absolutely_free", "ABSOLUTELY_FREE")
