@@ -212,4 +212,4 @@
 	name = "MOD exoskeleton"
 	category = LOADOUT_CATEGORY_HANDS
 	path = /obj/item/mod/control/pre_equipped/exoskeleton
-	cost = 4
+	cost = 3

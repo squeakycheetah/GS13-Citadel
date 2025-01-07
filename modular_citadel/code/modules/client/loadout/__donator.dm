@@ -39,7 +39,7 @@
 	ckeywhitelist = list("lumu", "sonoida")
 
 /datum/gear/donator/rose_plush
-	name = "Dezir Rose Plush"
+	name = "Dezir Rose Plussh"
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/toy/plush/gs13/rose
 	ckeywhitelist = list("eremitanovem", "sonoida", "Absolutely_Free", "absolutely_free", "ABSOLUTELY_FREE")
@@ -54,7 +54,13 @@
 	name = "Overcoat of the Destitute"
 	category = LOADOUT_CATEGORY_DONATOR
 	path = /obj/item/clothing/suit/storage/blueshield/grimmy
-	ckeywhitelist = list("bbgrimmy")
+	ckeywhitelist = list("bbgrimmy", "BBGrimmy", "Bbgrimmy")
+
+/datum/gear/donator/cosmic_coat
+	name = "Cosmic Coat"
+	category = LOADOUT_CATEGORY_DONATOR
+	path = /obj/item/clothing/suit/hooded/wintercoat/cosmic
+	ckeywhitelist = list("Neun", "neun", "NEUN")
 
 /datum/gear/donator/tarek_gps
 	name = "Tarek's GPS"
