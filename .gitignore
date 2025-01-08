@@ -1,4 +1,4 @@
-###Files and folders specified here will never be tracked.
+/###Files and folders specified here will never be tracked.
 
 #Ignore everything in datafolder and subdirectories
 /data/**/*
@@ -198,4 +198,3 @@ Temporary Items
 /tools/LinuxOneShot/TGS_Logs
 tools/UnstandardnessTestForDM/UnstandardnessTestForDM/obj/x86/Debug/UnstandardnessTestForDM.csproj.AssemblyReference.cache
 tools/UnstandardnessTestForDM/UnstandardnessTestForDM/obj/x86/Debug/.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cs
-/config
