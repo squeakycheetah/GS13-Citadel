@@ -68708,9 +68708,7 @@
 	},
 /area/engineering/main)
 "oxn" = (
-/obj/machinery/door/window/westright{
-	dir = 1
-	},
+/obj/machinery/door/window/westright,
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain/private)
 "oxr" = (
