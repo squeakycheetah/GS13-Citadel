@@ -8,6 +8,7 @@
 
 	mutantears = /obj/item/organ/ears/cat
 	mutanttail = /obj/item/organ/tail/cat
+	mutanttongue = /obj/item/organ/tongue/kitty
 
 	tail_type = "mam_tail"
 	wagging_type = "mam_waggingtail"
