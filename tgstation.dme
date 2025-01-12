@@ -4037,6 +4037,7 @@
 #include "GainStation13\code\modules\loadout\tablet.dm"
 #include "GainStation13\code\modules\mapping\areas.dm"
 #include "GainStation13\code\modules\mapping\ghost_roles.dm"
+#include "GainStation13\code\modules\mob\mob_helpers.dm"
 #include "GainStation13\code\modules\mob\dead\new_player\sprite_accessories\ears.dm"
 #include "GainStation13\code\modules\mob\dead\new_player\sprite_accessories\frills.dm"
 #include "GainStation13\code\modules\mob\dead\new_player\sprite_accessories\hair_face.dm"
