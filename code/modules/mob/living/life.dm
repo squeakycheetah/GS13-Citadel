@@ -163,6 +163,9 @@
 	if(slurring)
 		slurring = max(slurring-1,0)
 
+	if(burpslurring) // GS13
+		burpslurring = max(burpslurring-1,0)
+
 	if(cultslurring)
 		cultslurring = max(cultslurring-1, 0)
 

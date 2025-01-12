@@ -434,6 +434,9 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	if(slurring)
 		message = slur(message,slurring)
 
+	if(burpslurring)
+		message = burpslur(message,burpslurring) //GS13
+
 	if(cultslurring)
 		message = cultslur(message)
 
