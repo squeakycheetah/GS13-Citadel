@@ -468,7 +468,6 @@
 /obj/structure/table/wood,
 /obj/item/radio/intercom,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel,
 /area/security/courtroom)
 "aaW" = (
@@ -5247,6 +5246,7 @@
 /area/service/chapel/office)
 "ajf" = (
 /obj/structure/table/reinforced,
+/obj/item/book/manual/wiki/security_space_law,
 /obj/item/taperecorder,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -7257,7 +7257,6 @@
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = 30
 	},
-/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/hos)
 "amI" = (
@@ -8257,7 +8256,6 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/service/lawoffice)
 "aos" = (
@@ -9082,7 +9080,6 @@
 	dir = 1
 	},
 /obj/item/storage/fancy/donut_box,
-/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/security/courtroom)
 "apR" = (
@@ -9571,7 +9568,6 @@
 	name = "Station Intercom (Command)";
 	pixel_x = 1
 	},
-/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "aqE" = (
@@ -9582,7 +9578,6 @@
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/machinery/keycard_auth,
-/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "aqF" = (
@@ -12268,7 +12263,7 @@
 /area/medical/genetics)
 "avj" = (
 /obj/structure/table/wood,
-/obj/item/book/manual/gato_spacelaw,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/carpet,
 /area/command/heads_quarters/captain)
 "avk" = (
@@ -12418,6 +12413,7 @@
 	dir = 1
 	},
 /obj/item/storage/briefcase,
+/obj/item/book/manual/wiki/security_space_law,
 /obj/machinery/airalarm{
 	dir = 8;
 	pixel_x = 24
@@ -22261,7 +22257,7 @@
 	pixel_y = -30
 	},
 /obj/item/crowbar,
-/obj/item/book/manual/gato_spacelaw,
+/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/engineering)
 "aMi" = (
