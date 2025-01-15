@@ -6228,6 +6228,7 @@
 "amt" = (
 /obj/structure/table/wood,
 /obj/item/book/lorebooks/welcome_to_gato,
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/carpet,
 /area/command/heads_quarters/captain)
 "amu" = (
@@ -6262,7 +6263,7 @@
 /area/command/heads_quarters/hos)
 "amx" = (
 /obj/structure/table/wood,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/carpet,
 /area/command/heads_quarters/hos)
 "amy" = (
