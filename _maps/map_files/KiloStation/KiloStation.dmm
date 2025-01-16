@@ -41429,7 +41429,8 @@
 	},
 /obj/machinery/door/airlock/maintenance/external{
 	name = "mass driver intersection";
-	req_access_txt = "12"
+	req_access_txt = "12";
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -76510,7 +76511,8 @@
 	},
 /obj/machinery/door/airlock/maintenance/external{
 	name = "mass driver intersection";
-	req_access_txt = "12"
+	req_access_txt = "12";
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -77746,11 +77748,11 @@
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "cEp" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12";
-	welded = 1
+	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard/fore)
 "cEr" = (

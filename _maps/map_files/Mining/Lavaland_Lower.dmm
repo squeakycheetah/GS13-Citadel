@@ -2949,7 +2949,7 @@
 	pixel_x = -32
 	},
 /obj/structure/dresser,
-/turf/open/floor/carpet/gato,
+/turf/open/indestructible/hotelwood,
 /area/xenoarch/gen)
 "gB" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -3243,7 +3243,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/carpet/gato,
+/turf/open/indestructible/hotelwood,
 /area/xenoarch/gen)
 "hl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -3463,7 +3463,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
 	},
-/turf/open/floor/carpet/gato,
+/turf/open/indestructible/hotelwood,
 /area/xenoarch/gen)
 "hM" = (
 /obj/effect/turf_decal/box,
@@ -3512,7 +3512,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
 	dir = 8
 	},
-/turf/open/floor/carpet/gato,
+/turf/open/indestructible/hotelwood,
 /area/xenoarch/gen)
 "hR" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -3549,7 +3549,7 @@
 	pixel_x = 24;
 	specialfunctions = 4
 	},
-/turf/open/floor/carpet/gato,
+/turf/open/indestructible/hotelwood,
 /area/xenoarch/gen)
 "hX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -13591,6 +13591,10 @@
 "Qr" = (
 /turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_unpowered)
+"Qx" = (
+/obj/machinery/light/small,
+/turf/open/floor/plating,
+/area/xenoarch/arch)
 "Qy" = (
 /obj/machinery/shower{
 	pixel_y = 19
@@ -14545,6 +14549,12 @@
 	},
 /turf/open/floor/carpet,
 /area/xenoarch/gen)
+"Ub" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/xenoarch/arch)
 "Ud" = (
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -15052,6 +15062,10 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/xenoarch/caloriteresearch_powered)
+"Wd" = (
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/damturf/platdmg1,
+/area/xenoarch/arch)
 "We" = (
 /obj/effect/turf_decal/candy/bluewhite1,
 /turf/open/candyfloor,
@@ -18257,7 +18271,7 @@ fX
 Sy
 gC
 hs
-hs
+mP
 ic
 fK
 hS
@@ -22334,7 +22348,7 @@ ab
 ab
 ab
 fL
-bG
+Ub
 ZR
 wq
 VM
@@ -22346,7 +22360,7 @@ wq
 wq
 VM
 th
-sw
+Wd
 fL
 Kg
 qI
@@ -24390,7 +24404,7 @@ ab
 ab
 ab
 fL
-bG
+Ub
 ZR
 aC
 Di
@@ -24402,7 +24416,7 @@ Th
 sY
 sY
 th
-bG
+Qx
 fL
 aB
 aZ
