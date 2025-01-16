@@ -81992,9 +81992,6 @@
 "hNk" = (
 /turf/closed/wall/r_wall/rust,
 /area/security/prison)
-"hOQ" = (
-/turf/open/floor/catwalk_floor,
-/area/space/station_ruins)
 "hPN" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -87965,7 +87962,7 @@ uoV
 uoV
 uoV
 uoV
-hOQ
+uoV
 uoV
 uoV
 uoV
