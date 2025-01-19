@@ -90,3 +90,42 @@
 				if(HAS_TRAIT(L, TRAIT_VORACIOUS))
 					fullness_add = fullness_add * 0.67
 				L.fullness += (fullness_add)
+
+
+
+//should probably put this in elsewhere or whatever, but for now it'll do
+
+/mob/living/simple_animal/hostile/fatten/magehand
+	name = "Magehand"
+	desc = "It's a floating mage hand of strange, crackling orange energy..."
+	icon = 'GainStation13/icons/mob/fathand.dmi'
+	icon_state = "fathand"
+	icon_living = "fathand"
+	icon_dead = "fathand_dead"
+	speak_emote = list("crackles")
+	emote_hear = list("crackles")
+	speak_chance = 5
+	turns_per_move = 5
+	aggro_vision_range = 10
+	see_in_dark = 10
+	maxHealth = 50
+	health = 50
+	del_on_death = TRUE
+	movement_type = FLYING
+	attack_verb_continuous = "fattens"
+	attack_verb_simple = "fattens"
+	pass_flags = PASSTABLE
+	move_to_delay = 2
+	attack_sound = 'sound/weapons/pulse.ogg'
+	unique_name = 1
+	faction = list("cult")
+	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
+
+/mob/living/simple_animal/hostile/fatten
+	var/fat_per_hit = 30
+
+/mob/living/simple_animal/hostile/fatten/AttackingTarget()
+	. = ..()
+	var/mob/living/carbon/L = target
+	if(L.client?.prefs?.weight_gain_magic)
+		L.adjust_fatness(fat_per_hit)
