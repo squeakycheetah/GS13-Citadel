@@ -486,6 +486,7 @@
 	filling_color = "#CD853F"
 	tastes = list("meat" = 2, "dough" = 2, "laziness" = 1)
 	foodtype = GRAIN
+	use_gs_icon = TRUE
 	var/list/cached_reagents_amount
 	var/previous_typepath
 
@@ -529,6 +530,7 @@
 	cooked_type = null
 	tastes = list("meat" = 2, "dough" = 2, "laziness" = 1)
 	foodtype = GRAIN | ANTITOXIC
+	use_gs_icon = TRUE
 
 /obj/item/reagent_containers/food/snacks/dankpocket
 	name = "\improper Dank-pocket"
