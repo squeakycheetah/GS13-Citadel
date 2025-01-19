@@ -81602,6 +81602,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/service/theater)
+"fVp" = (
+/obj/effect/turf_decal/vg_decals/atmos/nitrogen,
+/turf/open/floor/engine/n2{
+	initial_gas_mix = "n2=1000;TEMP=293.15"
+	},
+/area/engineering/atmos)
 "fXq" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -82623,6 +82629,12 @@
 /obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/cargo/storage)
+"kBh" = (
+/obj/effect/turf_decal/vg_decals/atmos/nitrous_oxide,
+/turf/open/floor/engine/n2o{
+	initial_gas_mix = "n2o=1000;TEMP=293.15"
+	},
+/area/engineering/atmos)
 "kFQ" = (
 /turf/open/space/basic,
 /area/solars/starboard/aft)
@@ -83179,6 +83191,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit/departure_lounge)
+"ohq" = (
+/obj/effect/turf_decal/vg_decals/atmos/carbon_dioxide,
+/turf/open/floor/engine/co2{
+	initial_gas_mix = "co2=1000;TEMP=293.15"
+	},
+/area/engineering/atmos)
 "ohv" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt,
@@ -83990,6 +84008,12 @@
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/space/nearstation)
+"sqP" = (
+/obj/effect/turf_decal/vg_decals/atmos/oxygen,
+/turf/open/floor/engine/o2{
+	initial_gas_mix = "o2=1000;TEMP=293.15"
+	},
+/area/engineering/atmos)
 "ssF" = (
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
@@ -84038,6 +84062,10 @@
 "sAn" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/plating,
+/area/engineering/atmos)
+"sCq" = (
+/obj/effect/turf_decal/vg_decals/atmos/air,
+/turf/open/floor/engine/air,
 /area/engineering/atmos)
 "sDr" = (
 /obj/machinery/cryopod/tele,
@@ -84290,6 +84318,12 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/port/aft)
+"tUa" = (
+/obj/effect/turf_decal/vg_decals/atmos/plasma,
+/turf/open/floor/engine/plasma{
+	initial_gas_mix = "plasma=1000;TEMP=293.15"
+	},
+/area/engineering/atmos)
 "tVh" = (
 /obj/structure/sign/warning/nosmoking,
 /turf/closed/wall,
@@ -111053,15 +111087,15 @@ bFa
 cBb
 bFa
 aFM
-aDz
+fVp
 aDA
 aML
 aFM
-aDC
+sqP
 aDD
 aMO
 aFM
-aMY
+sCq
 bUQ
 aMY
 bFP
@@ -113898,7 +113932,7 @@ acm
 sAn
 aHe
 aFm
-aFc
+ohq
 caK
 acK
 acm
@@ -114926,7 +114960,7 @@ acm
 sAn
 aHh
 aFn
-aFd
+tUa
 ccT
 acK
 aaa
@@ -115954,7 +115988,7 @@ acm
 sAn
 aHk
 aFo
-aFe
+kBh
 ctr
 acK
 acm

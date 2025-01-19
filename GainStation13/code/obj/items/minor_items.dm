@@ -38,6 +38,21 @@
 /obj/item/reagent_containers/glass/beaker/flatulose
 	list_reagents = list(/datum/reagent/consumable/flatulose = 50)
 
+/obj/item/reagent_containers/glass/beaker/galbanic
+	list_reagents = list(/datum/reagent/fermi_fat = 50)
+
+/obj/item/reagent_containers/glass/beaker/macarenic
+	list_reagents = list(/datum/reagent/fermi_slim = 50)
+
+//evil fucking donut
+
+/obj/item/reagent_containers/food/snacks/donut/evil_superfat
+	name = "Evil Fuckin' Donut"
+	desc = "Merely looking at this thing makes you feel like you're getting fat..."
+	bitesize = 100 // Always eat it in one bite
+	list_reagents = list(/datum/reagent/fermi_fat = 120, /datum/reagent/consumable/lipoifier = 70, /datum/reagent/consumable/cornoil = 70)
+	tastes = list("imminent immobility" = 10)
+
 //blueberry gum snack
 
 /obj/item/reagent_containers/food/snacks/blueberry_gum
