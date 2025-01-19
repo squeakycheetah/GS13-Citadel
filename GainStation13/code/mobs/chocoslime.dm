@@ -108,17 +108,18 @@
 	turns_per_move = 5
 	aggro_vision_range = 10
 	see_in_dark = 10
-	maxHealth = 50
-	health = 50
+	maxHealth = 20
+	health = 20
 	del_on_death = TRUE
 	movement_type = FLYING
-	attack_verb_continuous = "fattens"
-	attack_verb_simple = "fattens"
+	attack_verb_continuous = "pokes"
+	attack_verb_simple = "pokes"
+	a_intent = INTENT_HARM
 	pass_flags = PASSTABLE
 	move_to_delay = 2
 	attack_sound = 'sound/weapons/pulse.ogg'
 	unique_name = 1
-	faction = list("cult")
+	faction = list(ROLE_WIZARD)
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 
 /mob/living/simple_animal/hostile/fatten

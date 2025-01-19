@@ -10,6 +10,8 @@
 "gI" = (/obj/structure/chair/sofa/right/old,/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "hd" = (/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "ho" = (/obj/effect/turf_decal/tile/yellow{dir = 8},/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
+"iJ" = (/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/yellow,/mob/living/simple_animal/hostile/fatten/magehand,/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
+"jP" = (/mob/living/simple_animal/hostile/fatten/magehand,/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "kf" = (/obj/structure/bonfire,/turf/open/floor/carpet/red,/area/ruin/unpowered/caloriteshrine)
 "kz" = (/obj/structure/table/bronze,/turf/open/floor/carpet/red,/area/ruin/unpowered/caloriteshrine)
 "kB" = (/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 2},/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
@@ -55,6 +57,7 @@
 "FP" = (/obj/item/trash/blueberry_gum,/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/yellow,/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "FU" = (/turf/open/floor/plating/asteroid/basalt,/area/lavaland/surface/outdoors)
 "Go" = (/turf/open/indestructible/cobble/corner{dir = 4},/area/lavaland/surface/outdoors)
+"Gv" = (/mob/living/simple_animal/hostile/fatten/magehand,/turf/open/floor/carpet/red,/area/ruin/unpowered/caloriteshrine)
 "IX" = (/obj/item/flashlight/lantern{anchored = 1; icon_state = null; icon = null},/turf/open/floor/plating/asteroid/basalt,/area/lavaland/surface/outdoors)
 "Jx" = (/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/item/reagent_containers/food/drinks/soda_cans/fizzwiz,/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "JC" = (/obj/item/trash/blueberry_gum,/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/effect/turf_decal/tile/yellow,/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
@@ -103,12 +106,12 @@ mRmRmRmRmRmRmRmRmRmRmRmRpVpVpVpVpVpVpVpVpVpVpVpVpVpVpVpVpVpVpVpVpVmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRmRmRpVpVpVpVpVpVAqAqAqAqAqAqAqAqAqAqAqpVpVpVpVpVpVmRmRmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRpVpVpVpVpVAqAqAqAqbtbtbtbtgsbtbtbtbtAqAqAqAqpVpVpVmRmRmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRpVpVpVpVAqAqbtbtbtJxSwBzZLdaZLBzSwkBbtbtbtAqAqpVpVpVmRmRmRmRmRmRmRmRmRmR
-mRmRmRmRmRmRmRmRmRpVpVpVpVAqbtYeSwSwkFTWcssfsfsfcsTWaFSwSwkBbtAqTnpVpVmRmRmRmRmRmRmRmRmRmR
-mRmRmRmRmRmRmRmRmRpVpVpVAqAqbthdcscsQMPaPaPaPaPaPaPahocscseFbtAqAqpVpVpVmRmRmRmRmRmRmRmRmR
-mRmRmRmRmRmRmRmRmRpVpVAqAqbtYecscsAqyrlynWlyAQlyyRlyhdAqcsYMsqbtAqAqpVTnmRmRmRmRmRmRmRmRmR
+mRmRmRmRmRmRmRmRmRpVpVpVpVAqbtYeSwSwkFTWcssfsfsfjPTWaFSwSwkBbtAqTnpVpVmRmRmRmRmRmRmRmRmRmR
+mRmRmRmRmRmRmRmRmRpVpVpVAqAqbthdcscsQMiJPaPaPaPaPaPahocscseFbtAqAqpVpVpVmRmRmRmRmRmRmRmRmR
+mRmRmRmRmRmRmRmRmRpVpVAqAqbtYecscsAqyrlynWlyAQGvyRlyhdAqcsYMsqbtAqAqpVTnmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRmRpVTnAqbtwtcsgIYzuLyrsuWNrhkzAdkzsAhdSUcscsYMTLbtAqpVpVmRmRmRmRmRmRmRmRmR
-mRmRmRmRmRmRmRmRpVpVAqAqbthdTWZUvNkGpFlykzWaCTWaPYVIhdcsOccsTWeFbtAqAqpVmRmRmRmRmRmRmRmRmR
-mRmRmRmRmRmRmRmRpVpVAqbtYekFcscsSUUlyrsuQKlykflyoHlyhdcsgIRVcsaFVLbtAqpVmRmRmRmRmRmRmRmRmR
+mRmRmRmRmRmRmRmRpVpVAqAqbthdTWZUvNkGpFlykzWaCTWaPYVIhdcsOcjPTWeFbtAqAqpVmRmRmRmRmRmRmRmRmR
+mRmRmRmRmRmRmRmRpVpVAqbtYekFcsjPSUUlyrsuQKlykflyoHlyhdcsgIRVcsaFVLbtAqpVmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRpVpVAqbthdcsAqcscscsyrlyWzlykfmSQTlychcsXXsaAqcsNIbtAqpVmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRpVpVAqbthdqXAqcscscsJCsuDJuDlyWakzlyokcsZUsaAqcsNIbtAqpVmRmRmRmRmRmRmRmRmR
 mRmRmRmRmRmRmRmRpVpVAqbtushocscscscsyrlysIkzlyWzVxsAhdcsxBkGcsQMaGbtAqpVmRmRmRmRmRmRmRmRmR

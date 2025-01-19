@@ -9495,6 +9495,10 @@
 /obj/structure/flora/rock/pile,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
+"zD" = (
+/mob/living/simple_animal/hostile/fatten/magehand,
+/turf/open/floor/carpet/orange,
+/area/lavaland/surface/outdoors)
 "zF" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/ore_box,
@@ -13882,6 +13886,10 @@
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
+"RK" = (
+/mob/living/simple_animal/hostile/fatten/magehand,
+/turf/open/floor/plating,
+/area/lavaland/surface/outdoors)
 "RL" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -14247,6 +14255,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
+"Td" = (
+/mob/living/simple_animal/hostile/fatten/magehand,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
 "Te" = (
 /obj/structure/table/wood,
 /obj/item/trash/candle,
@@ -46062,7 +46074,7 @@ ab
 ab
 Aw
 FN
-DV
+RK
 vZ
 Aw
 Aw
@@ -47345,11 +47357,11 @@ lQ
 Ui
 lQ
 Aw
-ZH
+zD
 Aw
 Fo
 Aw
-DV
+RK
 Aw
 ab
 ab
@@ -50262,7 +50274,7 @@ BP
 zm
 lQ
 lQ
-lQ
+Td
 lQ
 lQ
 lQ
@@ -59250,7 +59262,7 @@ vx
 ab
 lQ
 lQ
-lQ
+Td
 lQ
 lQ
 lQ
@@ -60802,7 +60814,7 @@ ab
 ab
 Mz
 lQ
-lQ
+Td
 lQ
 ab
 ab
