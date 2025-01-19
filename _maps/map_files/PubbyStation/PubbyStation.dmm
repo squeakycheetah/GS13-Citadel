@@ -49156,14 +49156,17 @@
 /area/engineering/main)
 "ccm" = (
 /obj/machinery/light/small,
+/obj/effect/turf_decal/vg_decals/atmos/nitrogen,
 /turf/open/floor/engine/n2,
 /area/engineering/atmos)
 "ccn" = (
 /obj/machinery/light/small,
+/obj/effect/turf_decal/vg_decals/atmos/oxygen,
 /turf/open/floor/engine/o2,
 /area/engineering/atmos)
 "cco" = (
 /obj/machinery/light/small,
+/obj/effect/turf_decal/vg_decals/atmos/air,
 /turf/open/floor/engine/air,
 /area/engineering/atmos)
 "ccp" = (
@@ -56053,6 +56056,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
+"eHO" = (
+/obj/effect/turf_decal/vg_decals/atmos/plasma,
+/turf/open/floor/engine/co2,
+/area/engineering/atmos)
 "eIL" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 1
@@ -58876,6 +58883,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit/departure_lounge)
+"kAD" = (
+/obj/effect/turf_decal/vg_decals/atmos/nitrous_oxide,
+/turf/open/floor/engine/n2o,
+/area/engineering/atmos)
 "kBe" = (
 /obj/structure/reflector/double/anchored{
 	dir = 9
@@ -63932,6 +63943,10 @@
 /obj/effect/turf_decal/plaque,
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+"uNj" = (
+/obj/effect/turf_decal/vg_decals/atmos/plasma,
+/turf/open/floor/engine/plasma,
+/area/engineering/atmos)
 "uQa" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -105610,15 +105625,15 @@ bLe
 bJP
 bPh
 bQa
-bPh
+kAD
 bJP
 bSk
 bSX
-bSk
+uNj
 bJP
 bVo
 bWf
-bVo
+eHO
 bJP
 aht
 bYw
