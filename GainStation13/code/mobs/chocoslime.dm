@@ -112,13 +112,14 @@
 	see_in_dark = 10
 	maxHealth = 20
 	health = 20
-	del_on_death = TRUE
+	blood_volume = 0 //don't want it to bleed
+	del_on_death = TRUE //it's an apparition, shouldn't have a body
 	movement_type = FLYING
 	attack_verb_continuous = "pokes"
 	attack_verb_simple = "pokes"
 	a_intent = INTENT_HARM
 	pass_flags = PASSTABLE
-	move_to_delay = 2
+	move_to_delay = 2 //very fast
 	attack_sound = 'sound/weapons/pulse.ogg'
 	unique_name = 1
 	faction = list(ROLE_WIZARD)
