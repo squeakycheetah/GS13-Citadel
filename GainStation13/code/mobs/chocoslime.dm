@@ -105,6 +105,8 @@
 	speak_emote = list("crackles")
 	emote_hear = list("crackles")
 	speak_chance = 5
+	mob_biotypes = MOB_SPIRIT
+	pressure_resistance = 9000
 	turns_per_move = 5
 	aggro_vision_range = 10
 	see_in_dark = 10
@@ -121,6 +123,9 @@
 	unique_name = 1
 	faction = list(ROLE_WIZARD)
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	minbodytemp = 0
+	maxbodytemp = INFINITY
 
 /mob/living/simple_animal/hostile/fatten
 	var/fat_per_hit = 30

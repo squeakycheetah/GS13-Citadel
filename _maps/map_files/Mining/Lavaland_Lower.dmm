@@ -8168,7 +8168,7 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/arch)
 "uG" = (
-/obj/item/projectile/beam/fattening/cannon,
+/obj/structure/trap/fattening,
 /turf/open/floor/mineral/calorite,
 /area/xenoarch/caloriteresearch_powered)
 "uH" = (
@@ -8469,9 +8469,13 @@
 /turf/closed/wall,
 /area/xenoarch/gen)
 "vQ" = (
-/obj/structure/trap/fattening,
-/turf/open/floor/carpet/orange,
-/area/lavaland/surface/outdoors)
+/obj/structure/lattice/catwalk,
+/obj/effect/turf_decal{
+	dir = 4
+	},
+/obj/structure/trap/belch,
+/turf/open/floor/plating,
+/area/xenoarch/caloriteresearch_powered)
 "vS" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
@@ -8519,9 +8523,9 @@
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "vZ" = (
-/obj/structure/flora/rock,
-/turf/open/floor/carpet/orange,
-/area/lavaland/surface/outdoors)
+/obj/structure/trap/belch,
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/caloriteresearch_powered)
 "wd" = (
 /obj/structure/table,
 /obj/item/bikehorn/rubberducky,
@@ -9496,9 +9500,16 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "zD" = (
-/mob/living/simple_animal/hostile/fatten/magehand,
-/turf/open/floor/carpet/orange,
-/area/lavaland/surface/outdoors)
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "fatchamber"
+	},
+/obj/structure/trap/belch,
+/turf/open/floor/plating,
+/area/xenoarch/caloriteresearch_powered)
 "zF" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/ore_box,
@@ -11083,7 +11094,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "FN" = (
 /obj/item/stack/ore/calorite,
-/turf/open/floor/carpet/orange,
+/turf/open/floor/plating,
 /area/lavaland/surface/outdoors)
 "FP" = (
 /obj/effect/turf_decal/loading_area{
@@ -13887,9 +13898,9 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "RK" = (
-/mob/living/simple_animal/hostile/fatten/magehand,
-/turf/open/floor/plating,
-/area/lavaland/surface/outdoors)
+/obj/structure/trap/belch,
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
 "RL" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -14716,6 +14727,9 @@
 "UF" = (
 /obj/structure/table/wood,
 /obj/item/book/granter/spell/fattening/traps,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
 /turf/open/floor/mineral/calorite,
 /area/lavaland/surface/outdoors)
 "UG" = (
@@ -15273,7 +15287,7 @@
 /area/xenoarch/caloriteresearch_unpowered)
 "Xc" = (
 /obj/structure/flora/rock/pile,
-/turf/open/floor/carpet/orange,
+/turf/open/floor/plating,
 /area/lavaland/surface/outdoors)
 "Xd" = (
 /obj/machinery/conveyor_switch{
@@ -15916,7 +15930,8 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "ZH" = (
-/turf/open/floor/carpet/orange,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/turf/open/floor/mineral/calorite,
 /area/lavaland/surface/outdoors)
 "ZI" = (
 /obj/effect/turf_decal/stripes/corner,
@@ -45045,11 +45060,11 @@ lQ
 lQ
 lQ
 lQ
+ab
 lQ
 lQ
-lQ
-lQ
-lQ
+ab
+ab
 lQ
 lQ
 lQ
@@ -45304,9 +45319,9 @@ lQ
 lQ
 lQ
 lQ
-lQ
-lQ
-lQ
+ab
+ab
+ab
 lQ
 lQ
 lQ
@@ -45816,9 +45831,9 @@ lQ
 lQ
 ab
 Aw
-vQ
-vQ
-vQ
+Fo
+Fo
+Fo
 Aw
 lQ
 ab
@@ -46074,8 +46089,8 @@ ab
 ab
 Aw
 FN
-RK
-vZ
+DV
+yP
 Aw
 Aw
 ab
@@ -46329,7 +46344,7 @@ lQ
 lQ
 ab
 Aw
-vQ
+Fo
 DV
 ab
 ab
@@ -46586,11 +46601,11 @@ BP
 lQ
 jV
 Aw
-ZH
+DV
 Aw
 ab
 ab
-vQ
+Fo
 Aw
 ab
 ab
@@ -46841,13 +46856,13 @@ ab
 ab
 lQ
 lQ
-lQ
+ab
 Aw
-vQ
-vQ
+DV
+DV
 Xc
 ab
-ZH
+DV
 Aw
 ab
 ab
@@ -47098,12 +47113,12 @@ ab
 ab
 lQ
 lQ
-lQ
+ab
 Aw
-ZH
+ab
 DV
 DV
-vQ
+DV
 FN
 Aw
 ab
@@ -47357,11 +47372,11 @@ lQ
 Ui
 lQ
 Aw
-zD
+ab
 Aw
-Fo
+DV
 Aw
-RK
+ab
 Aw
 ab
 ab
@@ -47615,9 +47630,9 @@ lQ
 lQ
 Aw
 yP
-zv
+ZH
 RV
-zv
+ZH
 DV
 Aw
 ab
@@ -67514,7 +67529,7 @@ UM
 TV
 TV
 NU
-Ls
+RK
 Cj
 wj
 Lu
@@ -68565,7 +68580,7 @@ AY
 YV
 Kf
 YV
-AY
+vQ
 Kf
 jV
 ab
@@ -69815,7 +69830,7 @@ Kt
 Kt
 Kt
 tN
-Kt
+zD
 Fq
 MV
 qu
@@ -70586,7 +70601,7 @@ Kt
 Kt
 Kt
 Kt
-Kt
+zD
 Fq
 MV
 qu
@@ -70601,7 +70616,7 @@ To
 Vt
 Vt
 Vt
-Vt
+uG
 SG
 TJ
 vw
@@ -72134,7 +72149,7 @@ HJ
 wI
 tm
 Vh
-wI
+vZ
 sa
 Ls
 Ls
