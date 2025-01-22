@@ -83,7 +83,7 @@
 	cached_size = new_value
 	update()
 	..()
-//"massive" = 17, "giga" = 25, "impossible" = 30
+
 /obj/item/organ/genital/breasts/update_size()//wah
 	var/rounded_cached = round(cached_size)
 	if(cached_size < 0)//I don't actually know what round() does to negative numbers, so to be safe!!fixed
