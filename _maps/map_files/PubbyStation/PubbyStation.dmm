@@ -8366,6 +8366,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
+/obj/machinery/computer/gateway_control{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
 "aqR" = (
@@ -28387,10 +28390,7 @@
 /area/security/office)
 "bgU" = (
 /obj/structure/table/wood,
-/obj/item/flashlight/lamp/green{
-	pixel_x = 1;
-	pixel_y = 5
-	},
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/grimy,
 /area/commons/lounge)
 "bgV" = (
@@ -28413,15 +28413,12 @@
 /area/commons/lounge)
 "bgY" = (
 /obj/structure/table/wood,
-/obj/item/flashlight/lamp/green{
-	pixel_x = 1;
-	pixel_y = 5
-	},
 /obj/machinery/button/door{
 	id = "loungeshutters";
 	name = "Privacy Shutters";
 	pixel_y = 25
 	},
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/grimy,
 /area/commons/lounge)
 "bgZ" = (
@@ -60149,7 +60146,6 @@
 /area/maintenance/department/security/brig)
 "niy" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/snacks/cookie,
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
@@ -60163,6 +60159,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit/departure_lounge)
 "nkk" = (

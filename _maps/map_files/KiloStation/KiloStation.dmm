@@ -58436,10 +58436,7 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/item/toy/figure/assistant{
-	pixel_x = 8;
-	pixel_y = 6
-	},
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "bTD" = (
@@ -58615,6 +58612,10 @@
 	pixel_y = 4
 	},
 /obj/item/pen,
+/obj/item/toy/figure/assistant{
+	pixel_x = 8;
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "bTO" = (
@@ -74512,6 +74513,9 @@
 	dir = 8;
 	pixel_x = 32
 	},
+/obj/machinery/computer/gateway_control{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
 "cvR" = (
@@ -81137,6 +81141,17 @@
 "cZm" = (
 /turf/closed/wall/rust,
 /area/security/prison)
+"day" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/item/book/lorebooks/welcome_to_gato,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
 "dbY" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
 	dir = 1
@@ -127781,7 +127796,7 @@ bPf
 bQZ
 bQZ
 wHR
-bQZ
+day
 bWA
 bXB
 bPe
