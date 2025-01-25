@@ -59,3 +59,8 @@
 	set_luminosity = 4
 	set_cap = 2.5
 	light_color = LIGHT_COLOR_TUNGSTEN
+
+/turf/closed/indestructible/junglemineral
+	name = "tough rock"
+	icon = 'icons/turf/mining.dmi'
+	icon_state = "rock"
