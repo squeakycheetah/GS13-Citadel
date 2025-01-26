@@ -8,13 +8,30 @@
 	icon_icon = 'icons/mob/screen_gen_old.dmi'
 	button_icon_state = "health1"		//You can change this if you want
 	background_icon_state = "bg_alien"	//But keep this as a distinct background
-	var/small = FALSE
-	var/image/small_icon
 
 /datum/action/resize_others/Trigger()
 	..()
 	owner.see_resized_others = !owner.see_resized_others
+	if(owner.see_resized_others)
+		for(var/mob/living/L in GLOB.mob_living_list)
+			if(L.size_multiplier > 1)
+				L.add_alt_appearance(/datum/atom_hud/alternate_appearance/basic/showSmall, "gscode_smallsprite", GenerateSprite(L), FALSE)
+				var/datum/atom_hud/alternate_appearance/AA = L.alternate_appearances["gscode_smallsprite"]
+				if(L != owner)
+					AA.add_to_single_hud(owner, L)
+	else
+		for(var/mob/living/L in GLOB.mob_living_list)
+			if(L.size_multiplier > 1)
+				var/datum/atom_hud/alternate_appearance/AA = L.alternate_appearances["gscode_smallsprite"]
+				if(AA)
+					AA.remove_from_single_hud(owner, L)
 	return TRUE
+
+/datum/action/resize_others/proc/GenerateSprite(mob/living/L)
+	var/image/I = image(icon=L.icon,icon_state=L.icon_state,loc=L,layer=L.layer,pixel_x=L.pixel_x,pixel_y=L.pixel_y)
+	I.overlays += L.overlays
+	I.override = TRUE
+	return I
 
 /datum/atom_hud/alternate_appearance/basic/showSmall
 
@@ -24,21 +41,5 @@
 		if(mobShouldSee(mob))
 			add_hud_to(mob)
 
-/datum/atom_hud/alternate_appearance/basic/blessedAware/mobShouldSee(mob/M)
-	if(M.mind)
-		if(M.see_resized_others == TRUE)
-			return TRUE
+/datum/atom_hud/alternate_appearance/basic/showSmall/mobShouldSee(mob/M)
 	return FALSE
-
-/datum/action/sizecode_resize/Grant(mob/M, safety=FALSE)
-	if(ishuman(M) && !safety)	//this probably gets called before a person gets overlays on roundstart, so try again
-		if(!LAZYLEN(M.overlays))
-			addtimer(CALLBACK(src,PROC_REF(Grant), M, TRUE), 5)	//https://www.youtube.com/watch?v=QQ-aYZzlDeo
-			return
-
-	..()
-	if(!owner)
-		return
-
-	owner.add_alt_appearance(/datum/atom_hud/alternate_appearance/basic/showSmall, "gscode_smallsprite", small_icon, FALSE)
-	message_admins("generated")
