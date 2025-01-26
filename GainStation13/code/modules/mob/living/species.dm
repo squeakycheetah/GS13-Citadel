@@ -271,13 +271,7 @@
 	fatness_delay = min(fatness_delay, delay_cap)
 	return fatness_delay
 
-/datum/species/proc/grant_resize_others(mob/living/carbon/human/H)
-	if(!H.resize_others)
-		H.resize_others = new(src)
-		H.resize_others.Grant(H)
-
 /datum/species/proc/handle_fatness(mob/living/carbon/human/H)
-	grant_resize_others(H)
 	handle_helplessness(H)
 	H.handle_modular_items()
 
