@@ -1,12 +1,8 @@
-/mob/
-	var/datum/action/resize_others/resize_others
-	var/see_resized_others = FALSE
+GLOBAL_LIST_EMPTY(enabled_smallsprite)
+GLOBAL_LIST_EMPTY(see_toggle_smallsprite)
 
-/datum/action/resize_others/proc/GenerateSprite(mob/living/L)
-	var/image/I = image(icon=L.icon,icon_state=L.icon_state,loc=L,layer=L.layer,pixel_x=L.pixel_x,pixel_y=L.pixel_y)
-	I.overlays += L.overlays
-	I.override = TRUE
-	return I
+/mob/
+	var/see_resized_others = FALSE
 
 /datum/atom_hud/alternate_appearance/basic/showSmall
 
@@ -23,30 +19,51 @@
 	set name = "Toggle Others' Giant Sprite"
 	set category = "Preferences"
 	set desc = "Change display settings to and from displaying others' giant sprites."
-	message_admins("Working")
-	mob.see_resized_others = !mob.see_resized_others
-	if(mob.see_resized_others)
-		for(var/mob/living/L in GLOB.mob_living_list)
-			if(L && L.size_multiplier > 1)
-				L.add_alt_appearance(/datum/atom_hud/alternate_appearance/basic/showSmall, "gscode_smallsprite", GenerateSprite(L), FALSE)
+	if(!mob.see_resized_others)
+		mob.see_resized_others = !mob.see_resized_others
+		GLOB.see_toggle_smallsprite += mob
+		for(var/mob/living/L in GLOB.enabled_smallsprite)
+			if(L && L != mob && L.alternate_appearances && L.alternate_appearances["gscode_smallsprite"])
 				var/datum/atom_hud/alternate_appearance/AA = L.alternate_appearances["gscode_smallsprite"]
-				if(L != mob)
-					message_admins(mob.name)
-					AA.add_to_single_hud(mob, L)
-					message_admins("Done")
+				AA.add_to_single_hud(mob, L)
 	else
-		for(var/mob/living/L in GLOB.mob_living_list)
-			if(L && L.size_multiplier > 1 && L.alternate_appearances)
-				message_admins(L.name)
+		mob.see_resized_others = !mob.see_resized_others
+		GLOB.see_toggle_smallsprite -= mob
+		for(var/mob/living/L in GLOB.enabled_smallsprite)
+			if(L && L.alternate_appearances && L.alternate_appearances["gscode_smallsprite"])
 				var/datum/atom_hud/alternate_appearance/AA = L.alternate_appearances["gscode_smallsprite"]
-				if(AA)
-					AA.remove_from_single_hud(mob, L)
-					message_admins("Removed")
+				AA.remove_from_single_hud(mob, L)
 
-/client/proc/GenerateSprite(mob/living/L)
-	if(!L)
-		return
-	var/image/I = image(icon=L.icon,icon_state=L.icon_state,loc=L,layer=L.layer,pixel_x=L.pixel_x,pixel_y=L.pixel_y)
-	I.overlays += L.overlays
+/mob/living/proc/regenerate_smallsprite()
+	if(alternate_appearances && alternate_appearances["gscode_smallsprite"])
+		for(var/mob/M in GLOB.see_toggle_smallsprite)
+			var/datum/atom_hud/alternate_appearance/AA = alternate_appearances["gscode_smallsprite"]
+			AA.remove_from_single_hud(M, src)
+		remove_alt_appearance("gscode_smallsprite")
+	if(size_multiplier > 1)
+		if(!GLOB.enabled_smallsprite[src])
+			GLOB.enabled_smallsprite += src
+		add_alt_appearance(/datum/atom_hud/alternate_appearance/basic/showSmall, "gscode_smallsprite", generate_smallsprite(), FALSE)
+		for(var/mob/M in GLOB.see_toggle_smallsprite)
+			if(M != src)
+				var/datum/atom_hud/alternate_appearance/AA = alternate_appearances["gscode_smallsprite"]
+				AA.add_to_single_hud(M, src)
+		return TRUE
+	else
+		if(GLOB.enabled_smallsprite[src])
+			GLOB.enabled_smallsprite -= src
+		return FALSE
+
+/mob/living/proc/generate_smallsprite()
+	var/image/I = image(icon=icon, icon_state=icon_state, loc=src, layer=layer, pixel_x=pixel_x, pixel_y=pixel_y)
+	I.overlays += overlays
 	I.override = TRUE
+	var/matrix/ntransform = matrix(lying, MATRIX_ROTATE)
+	if(lying != 0)
+		ntransform.Translate(0, -get_standard_pixel_y_offset(lying))
+	I.transform = ntransform
 	return I
+
+/mob/living/BiologicalLife(delta_time, times_fired)
+	. = ..()
+	regenerate_smallsprite()
