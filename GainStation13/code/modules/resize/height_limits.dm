@@ -44,7 +44,7 @@ GLOBAL_LIST_EMPTY(see_toggle_smallsprite)
 * * If the size_multiplier was not higher than one then remove the mob from the list of smallsprite mobs
 */
 /mob/living/proc/regenerate_smallsprite()
-	if(alternate_appearances && alternate_appearances["gscode_smallsprite"])
+	if(length(alternate_appearances) && alternate_appearances["gscode_smallsprite"])
 		for(var/mob/M in GLOB.see_toggle_smallsprite)
 			var/datum/atom_hud/alternate_appearance/AA = alternate_appearances["gscode_smallsprite"]
 			AA.remove_from_single_hud(M, src)
