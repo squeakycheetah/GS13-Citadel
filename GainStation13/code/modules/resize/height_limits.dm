@@ -36,11 +36,13 @@ GLOBAL_LIST_EMPTY(see_toggle_smallsprite)
 				AA.remove_from_single_hud(mob, L)
 		to_chat(src, "Resize others view toggled OFF.")
 
-//Call to regenerate the sprites and update huds.
-//If present, remove the old sprite from the huds and from the mob
-//If the size_multiplier is still higher than 1, check if the mob is in the list of smallsprite mobs and add it if not
-// add a new sprite by generating it, then go through the list of mobs with smallsprites toggled on and it to their hud
-//If the size_multiplier was not higher than one then remove the mob from the list of smallsprite mobs
+/**
+* Call to regenerate the sprites and update huds.
+* * If present, remove the old sprite from the huds and from the mob
+* * If the size_multiplier is still higher than 1, check if the mob is in the list of smallsprite mobs and add it if not
+* * add a new sprite by generating it, then go through the list of mobs with smallsprites toggled on and it to their hud
+* * If the size_multiplier was not higher than one then remove the mob from the list of smallsprite mobs
+*/
 /mob/living/proc/regenerate_smallsprite()
 	if(alternate_appearances && alternate_appearances["gscode_smallsprite"])
 		for(var/mob/M in GLOB.see_toggle_smallsprite)
