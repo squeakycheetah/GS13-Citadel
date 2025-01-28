@@ -63,8 +63,7 @@ GLOBAL_LIST_EMPTY(see_toggle_smallsprite)
 			GLOB.enabled_smallsprite -= src
 		return FALSE
 
-//Generate the image based on the mob's current icon and apply matrix transformations
-// to adjust its position and angle
+///Generate the image based on the mob's current icon and apply matrix transformations to adjust its position and angle
 /mob/living/proc/generate_smallsprite()
 	var/image/I = image(icon=icon, icon_state=icon_state, loc=src, layer=layer, pixel_x=pixel_x, pixel_y=pixel_y)
 	I.overlays += overlays
