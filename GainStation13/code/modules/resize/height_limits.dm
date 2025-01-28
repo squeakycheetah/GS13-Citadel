@@ -6,8 +6,8 @@
 GLOBAL_LIST_EMPTY(enabled_smallsprite)
 GLOBAL_LIST_EMPTY(see_toggle_smallsprite)
 
-//var to know if one has the toggle activated or not
 /mob/
+	///var to know if one has the toggle activated or not
 	var/see_resized_others = FALSE
 
 /datum/atom_hud/alternate_appearance/basic/showSmall
