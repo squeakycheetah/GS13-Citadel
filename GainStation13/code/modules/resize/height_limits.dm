@@ -17,7 +17,7 @@ GLOBAL_LIST_EMPTY(see_toggle_smallsprite)
 //When switched off, remove from the list and remove smallsprites for the user's hud.
 /client/verb/toggle_others_giant()
 	set name = "Toggle Others' Giant Sprite"
-	set category = "Preferences"
+	set category = "Preferences.GS13"
 	set desc = "Change display settings to and from displaying others' giant sprites."
 	if(!mob.see_resized_others)
 		mob.see_resized_others = !mob.see_resized_others
