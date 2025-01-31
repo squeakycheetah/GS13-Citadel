@@ -1,7 +1,7 @@
 /obj/item/gun/ballistic/liberator
 	name = "liberator pistol"
 	desc = "Hey, it's better than no gun, right?"
-	icon = 'GainStation13/icons/obj/weapons/gun.dmi'
+	icon = 'GainStation13/icons/obj/weapons/gun.dmi' // Sprites were made by Static and Lew
 	icon_state = "liberator"
 	w_class = WEIGHT_CLASS_SMALL // It's not really much of a gun...
 	mag_type = /obj/item/ammo_box/magazine/m10mm/ramrod
