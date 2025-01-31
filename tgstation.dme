@@ -4084,6 +4084,7 @@
 #include "GainStation13\code\modules\vending\mealdor.dm"
 #include "GainStation13\code\modules\vore\fatten_vore.dm"
 #include "GainStation13\code\modules\weapons\grenades.dm"
+#include "GainStation13\code\modules\weapons\pistols.dm"
 #include "GainStation13\code\obj\items\bluespace_belt.dm"
 #include "GainStation13\code\obj\items\circuits.dm"
 #include "GainStation13\code\obj\items\floor_tiles.dm"
