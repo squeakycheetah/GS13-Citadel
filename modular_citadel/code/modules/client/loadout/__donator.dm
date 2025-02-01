@@ -109,7 +109,7 @@
 /datum/gear/donator/white_eyepatch_cabal
 	name = "Cabal's Eyepatch"
 	category = LOADOUT_CATEGORY_DONATOR
-	path = /obj/item/clothing/glasses/eyepatch/cabal
+	path = /obj/item/clothing/glasses/eyepatch/white/cabal
 	ckeywhitelist = list("spess_lizurd", "SPESS LIZURD", "spess lizurd", "SPESS_LIZURD", "spesslizurd", "sonoida")
 
 /datum/gear/white_eyepatch //accessible to anyone, at donator's request
@@ -141,3 +141,7 @@
 	path = /obj/item/weldingtool/bronze
 	ckeywhitelist = list("almaniak", "Almaniak", "AlManiak")
 
+/datum/gear/suit/labcoat
+	name = "Labcoat"
+	category = LOADOUT_CATEGORY_SUIT
+	path = /obj/item/clothing/suit/toggle/labcoat
