@@ -210,11 +210,15 @@
 	if(clogged)
 		clog(H.contents)
 	else
+		var/start_pumping = FALSE
 		for(var/atom/movable/AM in H.contents)
 			pump_stuff += AM // Get ready to pump!
 			AM.forceMove(src)
 			if(!pumping) //Lets start a new pump cycle if we arnt pumping. Otherwise, it'll just be added to the queue.
-				pump()
+				start_pumping = TRUE
+				pumping = TRUE
+		if(start_pumping)
+			pump()
 	qdel(H)
 
 /obj/structure/disposaloutlet/industrial_feeding_tube/proc/pump(repeat = TRUE, unlimited = FALSE)
